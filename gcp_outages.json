@@ -3,13 +3,13 @@
     "begin": "2020-11-19T16:49:41Z",
     "created": "2020-11-19T18:18:03Z",
     "end": null,
-    "external_desc": "Cloud Logging delays on log ingestion in the us-central1 region and 25% of the global region. Projects in us-central1 may experience failures running queries.",
-    "modified": "2020-11-19T18:29:12Z",
+    "external_desc": "Cloud Logging delays on log ingestion affecting 25% of projects.",
+    "modified": "2020-11-19T18:47:43Z",
     "most-recent-update": {
-      "created": "2020-11-19T18:18:04Z",
-      "modified": "2020-11-19T18:18:04Z",
-      "text": "Description: Mitigation work is currently underway by our engineering team, the current focus is on stabilizing new requests, then proceeding to process backlog.\n\nWe do not have an ETA for mitigation at this point.\n\nWe will provide more information by Thursday, 2020-11-19 11:45 US/Pacific.\n\nDiagnosis: Log writes and reads in us-central1 experiencing latency. 25% of customers may also see similar symptoms in other locations when using the global logging region.\n\nWorkaround: None at this time.",
-      "when": "2020-11-19T18:18:04Z"
+      "created": "2020-11-19T18:47:43Z",
+      "modified": "2020-11-19T18:47:43Z",
+      "text": "Description: Mitigation work is currently underway by our engineering team, the current focus is on stabilizing new requests, then proceeding to process backlog.\n\nWe do not have an ETA for mitigation at this point.\n\nWe will provide more information by Thursday, 2020-11-19 11:50 US/Pacific.\n\nDiagnosis: Log writes and reads experiencing latency. 25% of customers may see symptoms.\n\nWorkaround: None at this time.",
+      "when": "2020-11-19T18:47:43Z"
     },
     "number": 20009,
     "public": true,
@@ -17,6 +17,12 @@
     "service_name": "Operations",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2020-11-19T18:47:43Z",
+        "modified": "2020-11-19T18:47:43Z",
+        "text": "Description: Mitigation work is currently underway by our engineering team, the current focus is on stabilizing new requests, then proceeding to process backlog.\n\nWe do not have an ETA for mitigation at this point.\n\nWe will provide more information by Thursday, 2020-11-19 11:50 US/Pacific.\n\nDiagnosis: Log writes and reads experiencing latency. 25% of customers may see symptoms.\n\nWorkaround: None at this time.",
+        "when": "2020-11-19T18:47:43Z"
+      },
       {
         "created": "2020-11-19T18:18:04Z",
         "modified": "2020-11-19T18:18:04Z",
