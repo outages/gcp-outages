@@ -4,12 +4,12 @@
     "created": "2020-11-19T18:18:03Z",
     "end": null,
     "external_desc": "Cloud Logging delays on log ingestion affecting 25% of projects.",
-    "modified": "2020-11-19T23:14:03Z",
+    "modified": "2020-11-20T00:38:53Z",
     "most-recent-update": {
-      "created": "2020-11-19T23:14:03Z",
-      "modified": "2020-11-19T23:14:03Z",
-      "text": "Description: The backlog has been fully processed, but we are still seeing elevated error rates on queries with new data. Mitigation efforts are still ongoing. \n\nWe will provide more information by Thursday, 2020-11-19 16:45 US/Pacific.\n\nDiagnosis: Log writes and reads experiencing latency on logs ingested after 2020-11-19 08:41 US/Pacific. 25% of customers are affected and may see incomplete queries. \n\nWorkaround: None at this time.",
-      "when": "2020-11-19T23:14:03Z"
+      "created": "2020-11-20T00:38:53Z",
+      "modified": "2020-11-20T00:38:53Z",
+      "text": "Description: We believe the issue with Cloud Logging is partially resolved. Additional cleanup and prevention efforts are ongoing, but the majority of users should see their log data available and queries succeeding. \n\nWe do not have an ETA for full resolution at this point.\n\nWe will provide an update by Thursday, 2020-11-19 18:30 US/Pacific with current details.\n\nDiagnosis: Log writes and reads experiencing latency on logs ingested after 2020-11-19 08:41 US/Pacific. 25% of customers are affected and may see incomplete queries. \n\nWorkaround: None at this time.",
+      "when": "2020-11-20T00:38:53Z"
     },
     "number": 20009,
     "public": true,
@@ -17,6 +17,12 @@
     "service_name": "Operations",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2020-11-20T00:38:53Z",
+        "modified": "2020-11-20T00:38:53Z",
+        "text": "Description: We believe the issue with Cloud Logging is partially resolved. Additional cleanup and prevention efforts are ongoing, but the majority of users should see their log data available and queries succeeding. \n\nWe do not have an ETA for full resolution at this point.\n\nWe will provide an update by Thursday, 2020-11-19 18:30 US/Pacific with current details.\n\nDiagnosis: Log writes and reads experiencing latency on logs ingested after 2020-11-19 08:41 US/Pacific. 25% of customers are affected and may see incomplete queries. \n\nWorkaround: None at this time.",
+        "when": "2020-11-20T00:38:53Z"
+      },
       {
         "created": "2020-11-19T23:14:03Z",
         "modified": "2020-11-19T23:14:03Z",
