@@ -4,12 +4,12 @@
     "created": "2020-12-14T13:34:13Z",
     "end": "2020-12-14T14:23:42Z",
     "external_desc": "Google Cloud services are experiencing issues and we have an other update at 5:30 PDT",
-    "modified": "2020-12-14T14:45:23Z",
+    "modified": "2020-12-14T20:26:36Z",
     "most-recent-update": {
-      "created": "2020-12-14T14:23:42Z",
-      "modified": "2020-12-14T14:23:42Z",
-      "text": "As of 4:32 PST the system affected was restored and all services recovered shortly afterwards.",
-      "when": "2020-12-14T14:23:42Z"
+      "created": "2020-12-14T20:17:52Z",
+      "modified": "2020-12-14T20:26:36Z",
+      "text": "Preliminary Incident Statement while full Incident Report is prepared. \r\n\r\n(All Times US/Pacific)  \r\nIncident Start: 2020-12-14 03:45   \r\nIncident End: 2020-12-14 04:35  \r\nDuration: 50 minutes;   \r\n\r\n### Affected:  \r\n  \r\n- Services: Google Cloud Platform, Google Workspace  \r\n- Features: Account login and authentication to all Cloud services  \r\n- Regions/Zones: Global  \r\n\r\n\r\n  \r\n### Description:   \r\n  \r\nGoogle Cloud Platform and Google Workspace experienced a global outage affecting all services which require Google account authentication for a duration of 50 minutes. The root cause was an issue in our automated quota management system which reduced capacity for Google's central identity management system, causing it to return errors globally. As a result, we couldn’t verify that user requests were authenticated and served errors to our users. \r\n\r\n\r\n  \r\n### Customer Impact:  \r\n  \r\n- GCP services (including Cloud Console, Cloud Storage, BigQuery, Google Kubernetes Engine) requiring authentication would have returned an error for all users.    \r\n- Google Workspace services (including Gmail, Calendar, Meet, Docs and Drive) requiring authentication would have returned an error for all users.    \r\n\r\n\r\n\r\n### Additional Details:    \r\n\r\n- Many of our internal users and tools experienced similar errors, which added delays to our outage external communication.  \r\n- We will publish an analysis of this incident once we have completed our internal investigation.  ",
+      "when": "2020-12-14T20:17:52Z"
     },
     "number": 20013,
     "public": true,
@@ -17,6 +17,12 @@
     "service_name": "Google Cloud Infrastructure Components",
     "severity": "high",
     "updates": [
+      {
+        "created": "2020-12-14T20:17:52Z",
+        "modified": "2020-12-14T20:26:36Z",
+        "text": "Preliminary Incident Statement while full Incident Report is prepared. \r\n\r\n(All Times US/Pacific)  \r\nIncident Start: 2020-12-14 03:45   \r\nIncident End: 2020-12-14 04:35  \r\nDuration: 50 minutes;   \r\n\r\n### Affected:  \r\n  \r\n- Services: Google Cloud Platform, Google Workspace  \r\n- Features: Account login and authentication to all Cloud services  \r\n- Regions/Zones: Global  \r\n\r\n\r\n  \r\n### Description:   \r\n  \r\nGoogle Cloud Platform and Google Workspace experienced a global outage affecting all services which require Google account authentication for a duration of 50 minutes. The root cause was an issue in our automated quota management system which reduced capacity for Google's central identity management system, causing it to return errors globally. As a result, we couldn’t verify that user requests were authenticated and served errors to our users. \r\n\r\n\r\n  \r\n### Customer Impact:  \r\n  \r\n- GCP services (including Cloud Console, Cloud Storage, BigQuery, Google Kubernetes Engine) requiring authentication would have returned an error for all users.    \r\n- Google Workspace services (including Gmail, Calendar, Meet, Docs and Drive) requiring authentication would have returned an error for all users.    \r\n\r\n\r\n\r\n### Additional Details:    \r\n\r\n- Many of our internal users and tools experienced similar errors, which added delays to our outage external communication.  \r\n- We will publish an analysis of this incident once we have completed our internal investigation.  ",
+        "when": "2020-12-14T20:17:52Z"
+      },
       {
         "created": "2020-12-14T14:23:42Z",
         "modified": "2020-12-14T14:23:42Z",
