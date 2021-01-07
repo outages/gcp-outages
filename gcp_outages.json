@@ -6205,44 +6205,5 @@
       }
     ],
     "uri": "/incident/cloud-spanner/20001"
-  },
-  {
-    "begin": "2020-01-07T14:35:48Z",
-    "created": "2020-01-07T18:12:02Z",
-    "end": "2020-01-07T19:10:19Z",
-    "external_desc": "We've received a report of an issue with Google Cloud Functions, Google App Engine, and Firebase Cloud Functions deployments failing for some customers.",
-    "modified": "2020-01-07T19:10:20Z",
-    "most-recent-update": {
-      "created": "2020-01-07T19:10:19Z",
-      "modified": "2020-01-07T19:10:19Z",
-      "text": "The issue with Google Cloud Functions Google App Engine, and Firebase Cloud Functions deployments has been resolved for all affected users as of Tuesday, 2020-01-07 11:05 US/Pacific.\n\nWe thank you for your patience while we've worked on resolving the issue.",
-      "when": "2020-01-07T19:10:19Z"
-    },
-    "number": 20001,
-    "public": true,
-    "service_key": "cloud-functions",
-    "service_name": "Google Cloud Functions",
-    "severity": "medium",
-    "updates": [
-      {
-        "created": "2020-01-07T19:10:19Z",
-        "modified": "2020-01-07T19:10:19Z",
-        "text": "The issue with Google Cloud Functions Google App Engine, and Firebase Cloud Functions deployments has been resolved for all affected users as of Tuesday, 2020-01-07 11:05 US/Pacific.\n\nWe thank you for your patience while we've worked on resolving the issue.",
-        "when": "2020-01-07T19:10:19Z"
-      },
-      {
-        "created": "2020-01-07T18:29:16Z",
-        "modified": "2020-01-07T18:29:16Z",
-        "text": "Description: We are experiencing an issue with Google Cloud Functions, Google App Engine, and Firebase Cloud Functions deployments failing for some customers beginning at Tuesday, 2020-01-07 04:45 US/Pacific. \n\nMitigation work is still underway. The engineering team is rolling back a release to attempt to mitigate this issue. We are seeing a reduction in error rates as the rollback progresses. \n\nWe will provide more information by Tuesday, 2020-01-07 11:30 US/Pacific.\n\nDiagnosis: Google App Engine deployments will fail with the error message \"The image has failed to build or could not be uploaded to the Google Container Registry.\"\nGoogle Cloud Functions deployments will fail with error message \"Build failed.\"\nFirebase Cloud Functions deployments will fail.\n\nWorkaround: None at this time.",
-        "when": "2020-01-07T18:29:16Z"
-      },
-      {
-        "created": "2020-01-07T18:12:02Z",
-        "modified": "2020-01-07T18:12:02Z",
-        "text": "Description: Mitigation work is still underway. The engineering team is rolling back a release to attempt to mitigate this issue. An ETA for completion is not available at this time.\n\nWe will provide more information by Tuesday, 2020-01-07 10:30 US/Pacific.\n\nDiagnosis: Google App Engine deployments will fail with the error message \"The image has failed to build or could not be uploaded to the Google Container Registry.\"\nGoogle Cloud Functions deployments will fail with error message \"Build failed.\"\n\nWorkaround: None at this time.",
-        "when": "2020-01-07T18:12:02Z"
-      }
-    ],
-    "uri": "/incident/cloud-functions/20001"
   }
 ]
