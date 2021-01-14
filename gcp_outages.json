@@ -1,5 +1,32 @@
 [
   {
+    "begin": "2021-01-14T01:05:22Z",
+    "created": "2021-01-14T20:15:47Z",
+    "end": null,
+    "external_desc": "We are experiencing an issue with Cloud SDK Versions 321, 322 and 323 Installed on Windows.",
+    "modified": "2021-01-14T20:15:48Z",
+    "most-recent-update": {
+      "created": "2021-01-14T20:15:48Z",
+      "modified": "2021-01-14T20:15:48Z",
+      "text": "Description: Mitigation work is still underway by our engineering team.\n\nThe mitigation is expected to complete by Tuesday, 2021-01-19 12:00 US/Pacific.\n\nPlease see the workaround section below for more details.\n\n\nDiagnosis: The command \"gcloud components update\" fails for Cloud SDK versions 321, 322 and 323 installed on Windows.\n\nWorkaround: Please run the following commands in a PowerShell window:\n\n$gcloudDir = Get-Command gcloud | Select -ExpandProperty \"Source\" | Split-Path | Split-Path\nattrib -r \"$gcloudDir\\platform\\kuberun_licenses\\*.*\" /s\nattrib -r \"$gcloudDir\\lib\\kuberun\\*.*\" /s\nattrib -r \"$gcloudDir\\..\\google-cloud-sdk.staging\\platform\\kuberun_licenses\\*.*\" /s\nattrib -r \"$gcloudDir\\..\\google-cloud-sdk.staging\\lib\\kuberun\\*.*\" /s\nRemove-Item \"$gcloudDir\\..\\google-cloud-sdk.staging\" -Recurse\n\nIf any of the commands fail, proceed with running the remaining commands.\n\nAfter running the PowerShell script, run the following in a regular Command Prompt (not PowerShell):\n\ngcloud components update --version 320.0.0\n\nPlease note, after applying this workaround, do not run 'gcloud components update' as this will re-trigger the issue. Please wait until the fix is released before updating components.",
+      "when": "2021-01-14T20:15:48Z"
+    },
+    "number": 21001,
+    "public": true,
+    "service_key": "support",
+    "service_name": "Google Cloud Support",
+    "severity": "medium",
+    "updates": [
+      {
+        "created": "2021-01-14T20:15:48Z",
+        "modified": "2021-01-14T20:15:48Z",
+        "text": "Description: Mitigation work is still underway by our engineering team.\n\nThe mitigation is expected to complete by Tuesday, 2021-01-19 12:00 US/Pacific.\n\nPlease see the workaround section below for more details.\n\n\nDiagnosis: The command \"gcloud components update\" fails for Cloud SDK versions 321, 322 and 323 installed on Windows.\n\nWorkaround: Please run the following commands in a PowerShell window:\n\n$gcloudDir = Get-Command gcloud | Select -ExpandProperty \"Source\" | Split-Path | Split-Path\nattrib -r \"$gcloudDir\\platform\\kuberun_licenses\\*.*\" /s\nattrib -r \"$gcloudDir\\lib\\kuberun\\*.*\" /s\nattrib -r \"$gcloudDir\\..\\google-cloud-sdk.staging\\platform\\kuberun_licenses\\*.*\" /s\nattrib -r \"$gcloudDir\\..\\google-cloud-sdk.staging\\lib\\kuberun\\*.*\" /s\nRemove-Item \"$gcloudDir\\..\\google-cloud-sdk.staging\" -Recurse\n\nIf any of the commands fail, proceed with running the remaining commands.\n\nAfter running the PowerShell script, run the following in a regular Command Prompt (not PowerShell):\n\ngcloud components update --version 320.0.0\n\nPlease note, after applying this workaround, do not run 'gcloud components update' as this will re-trigger the issue. Please wait until the fix is released before updating components.",
+        "when": "2021-01-14T20:15:48Z"
+      }
+    ],
+    "uri": "/incident/support/21001"
+  },
+  {
     "begin": "2021-01-08T20:27:14Z",
     "created": "2021-01-08T20:27:16Z",
     "end": "2021-01-08T21:20:56Z",
