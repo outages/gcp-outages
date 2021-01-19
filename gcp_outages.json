@@ -1,5 +1,32 @@
 [
   {
+    "begin": "2021-01-19T19:12:54Z",
+    "created": "2021-01-19T20:06:01Z",
+    "end": null,
+    "external_desc": "We are experiencing network latency in us-central1 and us-east1",
+    "modified": "2021-01-19T20:06:03Z",
+    "most-recent-update": {
+      "created": "2021-01-19T20:06:02Z",
+      "modified": "2021-01-19T20:06:02Z",
+      "text": "Description: We are experiencing an intermittent issue with Google Cloud infrastructure components, the issue manifests itself as periods of increased latency every 30 minutes, beginning at Tuesday, 2021-01-19 07:50:00 US/Pacific.\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Tuesday, 2021-01-19 13:30 US/Pacific with current details.\n\nDiagnosis: Traffic going through us-central1 and us-east1 shows increased latency.\n\nWorkaround: None at this time.",
+      "when": "2021-01-19T20:06:02Z"
+    },
+    "number": 21002,
+    "public": true,
+    "service_key": "zall",
+    "service_name": "Google Cloud Infrastructure Components",
+    "severity": "high",
+    "updates": [
+      {
+        "created": "2021-01-19T20:06:02Z",
+        "modified": "2021-01-19T20:06:02Z",
+        "text": "Description: We are experiencing an intermittent issue with Google Cloud infrastructure components, the issue manifests itself as periods of increased latency every 30 minutes, beginning at Tuesday, 2021-01-19 07:50:00 US/Pacific.\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Tuesday, 2021-01-19 13:30 US/Pacific with current details.\n\nDiagnosis: Traffic going through us-central1 and us-east1 shows increased latency.\n\nWorkaround: None at this time.",
+        "when": "2021-01-19T20:06:02Z"
+      }
+    ],
+    "uri": "/incident/zall/21002"
+  },
+  {
     "begin": "2021-01-15T13:29:29Z",
     "created": "2021-01-15T13:34:25Z",
     "end": "2021-01-15T15:05:47Z",
@@ -43,12 +70,12 @@
     "created": "2021-01-14T20:15:47Z",
     "end": null,
     "external_desc": "We are experiencing an issue with Cloud SDK Versions 321, 322 and 323 Installed on Windows.",
-    "modified": "2021-01-14T20:15:48Z",
+    "modified": "2021-01-19T20:57:50Z",
     "most-recent-update": {
-      "created": "2021-01-14T20:15:48Z",
-      "modified": "2021-01-14T20:15:48Z",
-      "text": "Description: Mitigation work is still underway by our engineering team.\n\nThe mitigation is expected to complete by Tuesday, 2021-01-19 12:00 US/Pacific.\n\nPlease see the workaround section below for more details.\n\n\nDiagnosis: The command \"gcloud components update\" fails for Cloud SDK versions 321, 322 and 323 installed on Windows.\n\nWorkaround: Please run the following commands in a PowerShell window:\n\n$gcloudDir = Get-Command gcloud | Select -ExpandProperty \"Source\" | Split-Path | Split-Path\nattrib -r \"$gcloudDir\\platform\\kuberun_licenses\\*.*\" /s\nattrib -r \"$gcloudDir\\lib\\kuberun\\*.*\" /s\nattrib -r \"$gcloudDir\\..\\google-cloud-sdk.staging\\platform\\kuberun_licenses\\*.*\" /s\nattrib -r \"$gcloudDir\\..\\google-cloud-sdk.staging\\lib\\kuberun\\*.*\" /s\nRemove-Item \"$gcloudDir\\..\\google-cloud-sdk.staging\" -Recurse\n\nIf any of the commands fail, proceed with running the remaining commands.\n\nAfter running the PowerShell script, run the following in a regular Command Prompt (not PowerShell):\n\ngcloud components update --version 320.0.0\n\nPlease note, after applying this workaround, do not run 'gcloud components update' as this will re-trigger the issue. Please wait until the fix is released before updating components.",
-      "when": "2021-01-14T20:15:48Z"
+      "created": "2021-01-19T20:57:49Z",
+      "modified": "2021-01-19T20:57:49Z",
+      "text": "Description: Mitigation work has been completed by our engineering team.\n\nFor mitigation steps please see workaround.\n\nWe will provide an update by Tuesday, 2021-01-19 13:10 US/Pacific with current details.\n\nDiagnosis: The command \"gcloud components update\" fails for Cloud SDK versions 321, 322 and 323 installed on Windows.\n\nWorkaround: Please run the following commands in a PowerShell window:\n```\n$gcloudDir = Get-Command gcloud | Select -ExpandProperty \"Source\" | Split-Path | Split-Path\nattrib -r \"$gcloudDir\\platform\\kuberun_licenses\\*.*\" /s\nattrib -r \"$gcloudDir\\lib\\kuberun\\*.*\" /s\nattrib -r \"$gcloudDir\\..\\google-cloud-sdk.staging\\platform\\kuberun_licenses\\*.*\" /s\nattrib -r \"$gcloudDir\\..\\google-cloud-sdk.staging\\lib\\kuberun\\*.*\" /s\nRemove-Item \"$gcloudDir\\..\\google-cloud-sdk.staging\" -Recurse\n\nIf any of the commands fail, proceed with running the remaining commands. After running the PowerShell script, run the following in a regular Command Prompt (not PowerShell):\n```\ngcloud components update --version 324.0.0\n```",
+      "when": "2021-01-19T20:57:49Z"
     },
     "number": 21001,
     "public": true,
@@ -56,6 +83,12 @@
     "service_name": "Google Cloud Support",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2021-01-19T20:57:49Z",
+        "modified": "2021-01-19T20:57:49Z",
+        "text": "Description: Mitigation work has been completed by our engineering team.\n\nFor mitigation steps please see workaround.\n\nWe will provide an update by Tuesday, 2021-01-19 13:10 US/Pacific with current details.\n\nDiagnosis: The command \"gcloud components update\" fails for Cloud SDK versions 321, 322 and 323 installed on Windows.\n\nWorkaround: Please run the following commands in a PowerShell window:\n```\n$gcloudDir = Get-Command gcloud | Select -ExpandProperty \"Source\" | Split-Path | Split-Path\nattrib -r \"$gcloudDir\\platform\\kuberun_licenses\\*.*\" /s\nattrib -r \"$gcloudDir\\lib\\kuberun\\*.*\" /s\nattrib -r \"$gcloudDir\\..\\google-cloud-sdk.staging\\platform\\kuberun_licenses\\*.*\" /s\nattrib -r \"$gcloudDir\\..\\google-cloud-sdk.staging\\lib\\kuberun\\*.*\" /s\nRemove-Item \"$gcloudDir\\..\\google-cloud-sdk.staging\" -Recurse\n\nIf any of the commands fail, proceed with running the remaining commands. After running the PowerShell script, run the following in a regular Command Prompt (not PowerShell):\n```\ngcloud components update --version 324.0.0\n```",
+        "when": "2021-01-19T20:57:49Z"
+      },
       {
         "created": "2021-01-14T20:15:48Z",
         "modified": "2021-01-14T20:15:48Z",
