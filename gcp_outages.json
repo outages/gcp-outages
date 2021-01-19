@@ -4,19 +4,25 @@
     "created": "2021-01-19T20:06:01Z",
     "end": null,
     "external_desc": "We are experiencing network latency in us-central1 and us-east1",
-    "modified": "2021-01-19T20:06:03Z",
+    "modified": "2021-01-19T21:25:19Z",
     "most-recent-update": {
-      "created": "2021-01-19T20:06:02Z",
-      "modified": "2021-01-19T20:06:02Z",
-      "text": "Description: We are experiencing an intermittent issue with Google Cloud infrastructure components, the issue manifests itself as periods of increased latency every 30 minutes, beginning at Tuesday, 2021-01-19 07:50:00 US/Pacific.\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Tuesday, 2021-01-19 13:30 US/Pacific with current details.\n\nDiagnosis: Traffic going through us-central1 and us-east1 shows increased latency.\n\nWorkaround: None at this time.",
-      "when": "2021-01-19T20:06:02Z"
+      "created": "2021-01-19T21:25:19Z",
+      "modified": "2021-01-19T21:25:19Z",
+      "text": "Description: Our engineering team has determined that further investigation is required to mitigate the issue. The issue remains intermittent.\n\nWe will provide an update by Tuesday, 2021-01-19 14:00 US/Pacific with current details.\n\nDiagnosis: Traffic going through us-central1 and us-east1 shows increased latency.\n\nWorkaround: None at this time.",
+      "when": "2021-01-19T21:25:18Z"
     },
     "number": 21002,
     "public": true,
     "service_key": "zall",
     "service_name": "Google Cloud Infrastructure Components",
-    "severity": "high",
+    "severity": "medium",
     "updates": [
+      {
+        "created": "2021-01-19T21:25:19Z",
+        "modified": "2021-01-19T21:25:19Z",
+        "text": "Description: Our engineering team has determined that further investigation is required to mitigate the issue. The issue remains intermittent.\n\nWe will provide an update by Tuesday, 2021-01-19 14:00 US/Pacific with current details.\n\nDiagnosis: Traffic going through us-central1 and us-east1 shows increased latency.\n\nWorkaround: None at this time.",
+        "when": "2021-01-19T21:25:18Z"
+      },
       {
         "created": "2021-01-19T20:06:02Z",
         "modified": "2021-01-19T20:06:02Z",
@@ -68,14 +74,14 @@
   {
     "begin": "2021-01-14T01:05:22Z",
     "created": "2021-01-14T20:15:47Z",
-    "end": null,
+    "end": "2021-01-19T21:03:12Z",
     "external_desc": "We are experiencing an issue with Cloud SDK Versions 321, 322 and 323 Installed on Windows.",
-    "modified": "2021-01-19T20:57:50Z",
+    "modified": "2021-01-19T21:03:13Z",
     "most-recent-update": {
-      "created": "2021-01-19T20:57:49Z",
-      "modified": "2021-01-19T20:57:49Z",
-      "text": "Description: Mitigation work has been completed by our engineering team.\n\nFor mitigation steps please see workaround.\n\nWe will provide an update by Tuesday, 2021-01-19 13:10 US/Pacific with current details.\n\nDiagnosis: The command \"gcloud components update\" fails for Cloud SDK versions 321, 322 and 323 installed on Windows.\n\nWorkaround: Please run the following commands in a PowerShell window:\n```\n$gcloudDir = Get-Command gcloud | Select -ExpandProperty \"Source\" | Split-Path | Split-Path\nattrib -r \"$gcloudDir\\platform\\kuberun_licenses\\*.*\" /s\nattrib -r \"$gcloudDir\\lib\\kuberun\\*.*\" /s\nattrib -r \"$gcloudDir\\..\\google-cloud-sdk.staging\\platform\\kuberun_licenses\\*.*\" /s\nattrib -r \"$gcloudDir\\..\\google-cloud-sdk.staging\\lib\\kuberun\\*.*\" /s\nRemove-Item \"$gcloudDir\\..\\google-cloud-sdk.staging\" -Recurse\n\nIf any of the commands fail, proceed with running the remaining commands. After running the PowerShell script, run the following in a regular Command Prompt (not PowerShell):\n```\ngcloud components update --version 324.0.0\n```",
-      "when": "2021-01-19T20:57:49Z"
+      "created": "2021-01-19T21:03:12Z",
+      "modified": "2021-01-19T21:03:12Z",
+      "text": "The issue with Cloud Developer Tools has been resolved for all affected users as of Tuesday, 2021-01-19 12:58 US/Pacific.\n\nPlease see workaround for detailed instructions\n\nWe thank you for your patience while we worked on resolving the issue.",
+      "when": "2021-01-19T21:03:12Z"
     },
     "number": 21001,
     "public": true,
@@ -83,6 +89,18 @@
     "service_name": "Google Cloud Support",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2021-01-19T21:03:12Z",
+        "modified": "2021-01-19T21:03:12Z",
+        "text": "The issue with Cloud Developer Tools has been resolved for all affected users as of Tuesday, 2021-01-19 12:58 US/Pacific.\n\nPlease see workaround for detailed instructions\n\nWe thank you for your patience while we worked on resolving the issue.",
+        "when": "2021-01-19T21:03:12Z"
+      },
+      {
+        "created": "2021-01-19T21:02:48Z",
+        "modified": "2021-01-19T21:02:48Z",
+        "text": "Description: Mitigation work has been completed by our engineering team.\n\nFor mitigation steps please see workaround.\n\nWe will provide an update by Tuesday, 2021-01-19 13:10 US/Pacific with current details.\n\nDiagnosis: The command \"gcloud components update\" fails for Cloud SDK versions 321, 322 and 323 installed on Windows.\n\nWorkaround: Please run the following commands in a PowerShell window:\n```\n$gcloudDir = Get-Command gcloud | Select -ExpandProperty \"Source\" | Split-Path | Split-Path\nattrib -r \"$gcloudDir\\platform\\kuberun_licenses\\*.*\" /s\nattrib -r \"$gcloudDir\\lib\\kuberun\\*.*\" /s\nattrib -r \"$gcloudDir\\..\\google-cloud-sdk.staging\\platform\\kuberun_licenses\\*.*\" /s\nattrib -r \"$gcloudDir\\..\\google-cloud-sdk.staging\\lib\\kuberun\\*.*\" /s\nRemove-Item \"$gcloudDir\\..\\google-cloud-sdk.staging\" -Recurse\n\nIf any of the commands fail, proceed with running the remaining commands. After running the PowerShell script, run the following in a regular Command Prompt (not PowerShell):\n```\ngcloud components update\n```\n\nAfter running this command, ensure that your gcloud installation is at version 324.0.0 or higher.",
+        "when": "2021-01-19T21:02:48Z"
+      },
       {
         "created": "2021-01-19T20:57:49Z",
         "modified": "2021-01-19T20:57:49Z",
