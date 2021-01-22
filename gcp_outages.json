@@ -2,14 +2,14 @@
   {
     "begin": "2021-01-21T23:55:40Z",
     "created": "2021-01-22T00:26:46Z",
-    "end": null,
+    "end": "2021-01-22T03:17:48Z",
     "external_desc": "We are experiencing an issue with Cloud DNS CNAME chasing in multiple zones.",
-    "modified": "2021-01-22T02:16:10Z",
+    "modified": "2021-01-22T03:17:49Z",
     "most-recent-update": {
-      "created": "2021-01-22T02:16:10Z",
-      "modified": "2021-01-22T02:16:10Z",
-      "text": "Description: Customers using CNAME chasing may experience an issue with Cloud DNS. Querying for a record defined in one private zone that points to a record in another private zone does not return the final answer. See https://cloud.google.com/dns/docs/cnamechasing for more details about CNAME chasing.\n\nThe following zones are known to be impacted currently:\n\neurope-west1-c\nus-east1-d\nus-west1-a\n\nMitigation work is currently underway by our engineering team. The mitigation is expected to complete by Thursday, 2021-01-21 18:45 US/Pacific.\n\nWe will provide more information by Thursday, 2021-01-21 18:45 US/Pacific.\n\nDiagnosis: CNAME chasing between private zone to private zone is not working.\n\nWorkaround: None at this time.",
-      "when": "2021-01-22T02:16:10Z"
+      "created": "2021-01-22T03:17:49Z",
+      "modified": "2021-01-22T03:17:49Z",
+      "text": "The issue with Cloud DNS has been resolved for all affected projects as of Thursday, 2021-01-21 19:17 US/Pacific.\n\nWe thank you for your patience while we worked on resolving the issue.",
+      "when": "2021-01-22T03:17:48Z"
     },
     "number": 21001,
     "public": true,
@@ -17,6 +17,18 @@
     "service_name": "Google Cloud DNS",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2021-01-22T03:17:49Z",
+        "modified": "2021-01-22T03:17:49Z",
+        "text": "The issue with Cloud DNS has been resolved for all affected projects as of Thursday, 2021-01-21 19:17 US/Pacific.\n\nWe thank you for your patience while we worked on resolving the issue.",
+        "when": "2021-01-22T03:17:48Z"
+      },
+      {
+        "created": "2021-01-22T02:48:04Z",
+        "modified": "2021-01-22T02:48:04Z",
+        "text": "Description: Customers using CNAME chasing may experience an issue with Cloud DNS. Querying for a record defined in one private zone that points to a record in another private zone does not return the final answer. See https://cloud.google.com/dns/docs/cnamechasing for more details about CNAME chasing.\n\nThe following zones are known to be impacted currently: us-east1-d\n\nMitigation work is currently underway by our engineering team. The mitigation is expected to complete by Thursday, 2021-01-21 19:15 US/Pacific.\n\nWe will provide more information by Thursday, 2021-01-21 19:15 US/Pacific.\n\nDiagnosis: CNAME chasing between private zone to private zone is not working.\n\nWorkaround: None at this time.",
+        "when": "2021-01-22T02:48:04Z"
+      },
       {
         "created": "2021-01-22T02:16:10Z",
         "modified": "2021-01-22T02:16:10Z",
@@ -31,14 +43,14 @@
       },
       {
         "created": "2021-01-22T01:31:59Z",
-        "modified": "2021-01-22T01:40:17Z",
-        "text": "Description: Customers using CNAME chasing may experience an issue with Cloud DNS. Querying for a record defined in one private zone that points to a record in another private zone does not return the final answer. See https://cloud.google.com/dns/docs/cnamechasing for more details about CNAME chasing.\r\n\r\nMitigation work is currently underway by our engineering team.\r\n\r\nThe following zones are known to be impacted: \r\n\r\nasia-east1-a\r\nasia-east2-c\r\nasia-northeast1-a\r\nasia-northeast2-c\r\nasia-northeast3-c\r\nasia-south1-a\r\nasia-southeast1-a\r\nasia-southeast2-c\r\naustralia-southeast1-a\r\neurope-west1-c\r\neurope-west2-a\r\neurope-west3-a\r\neurope-west6-c\r\nsouthamerica-east1-a\r\nus-central1-d\r\nus-east1-a\r\nus-east1-d\r\nus-west1-a\r\nus-west2-c\r\nus-west3-c\r\nus-west4-c\r\n\r\nWe do not have an ETA for mitigation at this point.\r\n\r\nWe will provide more information by Thursday, 2021-01-21 18:00 US/Pacific.\r\n\r\nDiagnosis: CNAME chasing between private zone to private zone is not working.\r\n\r\nWorkaround: None at this time.",
+        "modified": "2021-01-22T02:17:49Z",
+        "text": "Description: Customers using CNAME chasing may experience an issue with Cloud DNS. Querying for a record defined in one private zone that points to a record in another private zone does not return the final answer. See https://cloud.google.com/dns/docs/cnamechasing for more details about CNAME chasing.\r\n\r\nMitigation work is currently underway by our engineering team.\r\n\r\nThe following zones are known to be impacted: \r\n\r\nasia-east1-a\r\nasia-east2-c\r\nasia-northeast1-a\r\nasia-northeast2-c\r\nasia-northeast3-c\r\nasia-south1-a\r\nasia-southeast1-a\r\nasia-southeast2-c\r\naustralia-southeast1-a\r\neurope-west1-c\r\neurope-west2-a\r\neurope-west3-a\r\neurope-west6-c\r\nsouthamerica-east1-a\r\nus-central1-d\r\nus-east1-d\r\nus-west1-a\r\nus-west2-c\r\nus-west3-c\r\nus-west4-c\r\n\r\nWe do not have an ETA for mitigation at this point.\r\n\r\nWe will provide more information by Thursday, 2021-01-21 18:00 US/Pacific.\r\n\r\nDiagnosis: CNAME chasing between private zone to private zone is not working.\r\n\r\nWorkaround: None at this time.",
         "when": "2021-01-22T01:31:59Z"
       },
       {
         "created": "2021-01-22T00:26:46Z",
-        "modified": "2021-01-22T00:41:21Z",
-        "text": "Description: Mitigation work is currently underway by our engineering team.\r\n\r\nThe following zones are known to be impacted: \r\n\r\nasia-east1-a  \r\nasia-east2-c  \r\nasia-northeast1-a  \r\nasia-northeast2-c  \r\nasia-northeast3-c  \r\nasia-south1-a  \r\nasia-southeast1-a  \r\nasia-southeast2-c  \r\naustralia-southeast1-a  \r\neurope-west1-c  \r\neurope-west2-a  \r\neurope-west3-a  \r\neurope-west6-c  \r\nsouthamerica-east1-a  \r\nus-central1-d  \r\nus-east1-a  \r\nus-east1-d  \r\nus-west1-a  \r\nus-west2-c  \r\nus-west3-c  \r\nus-west4-c  \r\n\r\nWe do not have an ETA for mitigation at this point.\r\n\r\nWe will provide more information by Thursday, 2021-01-21 17:30 US/Pacific.\r\n\r\nDiagnosis: CNAME chasing between private zone to private zone is not working.\r\n\r\nWorkaround: None at this time.",
+        "modified": "2021-01-22T02:18:23Z",
+        "text": "Description: Mitigation work is currently underway by our engineering team.\r\n\r\nThe following zones are known to be impacted: \r\n\r\nasia-east1-a  \r\nasia-east2-c  \r\nasia-northeast1-a  \r\nasia-northeast2-c  \r\nasia-northeast3-c  \r\nasia-south1-a  \r\nasia-southeast1-a  \r\nasia-southeast2-c  \r\naustralia-southeast1-a  \r\neurope-west1-c  \r\neurope-west2-a  \r\neurope-west3-a  \r\neurope-west6-c  \r\nsouthamerica-east1-a  \r\nus-central1-d    \r\nus-east1-d  \r\nus-west1-a  \r\nus-west2-c  \r\nus-west3-c  \r\nus-west4-c  \r\n\r\nWe do not have an ETA for mitigation at this point.\r\n\r\nWe will provide more information by Thursday, 2021-01-21 17:30 US/Pacific.\r\n\r\nDiagnosis: CNAME chasing between private zone to private zone is not working.\r\n\r\nWorkaround: None at this time.",
         "when": "2021-01-22T00:26:46Z"
       }
     ],
