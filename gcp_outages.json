@@ -3,13 +3,13 @@
     "begin": "2021-01-29T17:39:24Z",
     "created": "2021-01-29T20:52:13Z",
     "end": null,
-    "external_desc": "We are experiencing an issue with Cloud SQL API instance mutations and SQL Proxy operations in us-central1\n",
-    "modified": "2021-01-29T22:38:05Z",
+    "external_desc": "The issue with Cloud SQL API instance mutations and SQL Proxy operations in us-central1 has partially recovered",
+    "modified": "2021-01-29T23:31:04Z",
     "most-recent-update": {
-      "created": "2021-01-29T22:38:04Z",
-      "modified": "2021-01-29T22:38:04Z",
-      "text": "Description: We are experiencing an issue with Cloud SQL API instance mutations and SQL Proxy operations in us-central1. We believe impact began at 08:50 US/Pacific with the error rate increasing starting at 09:25 US/Pacific.\n\nOur engineering team continues to investigate the issue. Instance mutation operations (such as instances.create or instances.delete) as well as requests for certificates (sslCerts.createEphemeral) when using Cloud SQL Proxy are impacted. Existing connections to Cloud SQL instances should be unaffected. New connections without Cloud SQL Proxy are also unaffected.\n\nThe product team has identified a potential mitigation and is working to implement it. We believe the change will be finished rolling out by 15:00 US/Pacific, we will be continuously monitoring the service to evaluate the effectiveness of the mitigation. \n\nWe will provide an update by Friday, 2021-01-29 15:30 US/Pacific with current details.\n\n\nDiagnosis: Customers impacted by this issue may see increased latency or errors when performing Instance mutation requests, such as create, delete and update. Connection to Cloud SQL instances may be disrupted if a new ephemeral cert is required by the Cloud SQL Proxy. Errors returned may be 502 or 503.\n\n\nWorkaround: None at this time. We believe other regions are not impacted at this time.",
-      "when": "2021-01-29T22:38:04Z"
+      "created": "2021-01-29T23:31:04Z",
+      "modified": "2021-01-29T23:31:04Z",
+      "text": "Description: The issue with Cloud SQL API instance mutations and SQL Proxy operations in us-central1 has partially recovered. We believe impact began at 08:50 US/Pacific with the error rate increasing starting at 09:25 US/Pacific. Partial recovery occurred at 14:54 US/Pacific\n\nOur engineering team has rolled out a mitigation and partially resolved the issue. We believe most of the service has recovered. At this time we believe only instances.delete and instances.restart continue to be impacted. Some operations such as instances.patch which require an instance.restart may also be impacted. We are working on further mitigation to bring the service back to a nominal operating state.\n\nWe will provide an update by Friday, 2021-01-29 16:30 US/Pacific with current details.\n\n\nDiagnosis: Customers impacted by this issue may see increased latency or errors when performing Instance mutation requests, such as create, delete and update. Connection to Cloud SQL instances may be disrupted if a new ephemeral cert is required by the Cloud SQL Proxy. Errors returned may be 502 or 503.\n\nWorkaround: None at this time. We believe other regions are not impacted at this time.",
+      "when": "2021-01-29T23:31:04Z"
     },
     "number": 21002,
     "public": true,
@@ -17,6 +17,12 @@
     "service_name": "Google Cloud SQL",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2021-01-29T23:31:04Z",
+        "modified": "2021-01-29T23:31:04Z",
+        "text": "Description: The issue with Cloud SQL API instance mutations and SQL Proxy operations in us-central1 has partially recovered. We believe impact began at 08:50 US/Pacific with the error rate increasing starting at 09:25 US/Pacific. Partial recovery occurred at 14:54 US/Pacific\n\nOur engineering team has rolled out a mitigation and partially resolved the issue. We believe most of the service has recovered. At this time we believe only instances.delete and instances.restart continue to be impacted. Some operations such as instances.patch which require an instance.restart may also be impacted. We are working on further mitigation to bring the service back to a nominal operating state.\n\nWe will provide an update by Friday, 2021-01-29 16:30 US/Pacific with current details.\n\n\nDiagnosis: Customers impacted by this issue may see increased latency or errors when performing Instance mutation requests, such as create, delete and update. Connection to Cloud SQL instances may be disrupted if a new ephemeral cert is required by the Cloud SQL Proxy. Errors returned may be 502 or 503.\n\nWorkaround: None at this time. We believe other regions are not impacted at this time.",
+        "when": "2021-01-29T23:31:04Z"
+      },
       {
         "created": "2021-01-29T22:38:04Z",
         "modified": "2021-01-29T22:38:04Z",
