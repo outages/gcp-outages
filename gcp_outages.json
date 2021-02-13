@@ -1,15 +1,42 @@
 [
   {
-    "begin": "2021-02-12T23:17:10Z",
+    "begin": "2021-02-13T00:24:18Z",
+    "created": "2021-02-13T00:24:19Z",
+    "end": null,
+    "external_desc": "We are experiencing an issue with Google Cloud infrastructure components, beginning at Friday, 2021-02-12 14:50 US/Pacific.",
+    "modified": "2021-02-13T00:24:19Z",
+    "most-recent-update": {
+      "created": "2021-02-13T00:24:19Z",
+      "modified": "2021-02-13T00:24:19Z",
+      "text": "Description: We are experiencing an issue with Google Cloud infrastructure components, beginning at Friday, 2021-02-12 14:50 US/Pacific.\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Friday, 2021-02-12 17:00 US/Pacific with current details.\n\nWe apologize to all who are affected by the disruption.\n\nDiagnosis: None at this time.\n\nWorkaround: None at this time.",
+      "when": "2021-02-13T00:24:19Z"
+    },
+    "number": 21003,
+    "public": true,
+    "service_key": "zall",
+    "service_name": "Google Cloud Infrastructure Components",
+    "severity": "medium",
+    "updates": [
+      {
+        "created": "2021-02-13T00:24:19Z",
+        "modified": "2021-02-13T00:24:19Z",
+        "text": "Description: We are experiencing an issue with Google Cloud infrastructure components, beginning at Friday, 2021-02-12 14:50 US/Pacific.\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Friday, 2021-02-12 17:00 US/Pacific with current details.\n\nWe apologize to all who are affected by the disruption.\n\nDiagnosis: None at this time.\n\nWorkaround: None at this time.",
+        "when": "2021-02-13T00:24:19Z"
+      }
+    ],
+    "uri": "/incident/zall/21003"
+  },
+  {
+    "begin": "2021-02-12T22:50:10Z",
     "created": "2021-02-13T00:10:58Z",
     "end": null,
-    "external_desc": "We are experiencing an issue with Cloud Networking VPN, Network Load Balancer VIPs, and VM Instance Public IPs in multiple regions, beginning at Friday, 2021-02-12 14:50 US/Pacific.",
-    "modified": "2021-02-13T00:10:59Z",
+    "external_desc": "We are experiencing an issue with network configuration propagation for Cloud Networking VPN, Network Load Balancer VIPs, and VM Instance Public IPs in multiple regions beginning at Friday, 2021-02-12 14:50 US/Pacific.",
+    "modified": "2021-02-13T00:48:02Z",
     "most-recent-update": {
-      "created": "2021-02-13T00:10:59Z",
-      "modified": "2021-02-13T00:10:59Z",
-      "text": "Description: We are experiencing an issue with Cloud Networking VPN, Network Load Balancer VIPs, and VM Instance Public IPs in us-east1, us-central1, europe-west4, europe-west1, asia-east1, asia-northeast1, beginning at Friday, 2021-02-12 14:50 US/Pacific.\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Friday, 2021-02-12 17:00 US/Pacific with current details.\n\nWe apologize to all who are affected by the disruption.\n\nDiagnosis: Customers using Cloud VPN, creating new Network Load Balancer VIPs, and new VM Instances with external IPs may not be able to achieve external connectivity. Existing configurations should be unaffected. \n\nWorkaround: None at this time.",
-      "when": "2021-02-13T00:10:59Z"
+      "created": "2021-02-13T01:06:04Z",
+      "modified": "2021-02-13T01:06:04Z",
+      "text": "Description: Mitigation work is currently underway by our engineering team and we are starting to see recovery.\n\nWe do not have an ETA for mitigation at this point.\n\nCurrent known impacted products:\nCompute Engine\nCloud SQL\nDataproc\nMemorystore\nApp Engine Flex\nCloud Composer\nKubernetes Engine\n\nWe will provide more information by Friday, 2021-02-12 17:45 US/Pacific.\n\nDiagnosis: Customers using Cloud VPN, creating new Network Load Balancer VIPs, and new VM Instances with external IPs may not be able to achieve external connectivity. Existing configurations should be unaffected. \n\nThis issue would impact services that rely on instances to function, dataproc cluster creation, new dataflow jobs, and App Engine Flex deployments may also be impacted.\n\nWorkaround: No workaround at this time. However, to reduce the likelihood of impact customers should pause autoscalers and other systems which may cause changes such as upgrades or deployments.",
+      "when": "2021-02-13T01:06:04Z"
     },
     "number": 21002,
     "public": true,
@@ -18,6 +45,18 @@
     "severity": "medium",
     "updates": [
       {
+        "created": "2021-02-13T01:06:04Z",
+        "modified": "2021-02-13T01:06:04Z",
+        "text": "Description: Mitigation work is currently underway by our engineering team and we are starting to see recovery.\n\nWe do not have an ETA for mitigation at this point.\n\nCurrent known impacted products:\nCompute Engine\nCloud SQL\nDataproc\nMemorystore\nApp Engine Flex\nCloud Composer\nKubernetes Engine\n\nWe will provide more information by Friday, 2021-02-12 17:45 US/Pacific.\n\nDiagnosis: Customers using Cloud VPN, creating new Network Load Balancer VIPs, and new VM Instances with external IPs may not be able to achieve external connectivity. Existing configurations should be unaffected. \n\nThis issue would impact services that rely on instances to function, dataproc cluster creation, new dataflow jobs, and App Engine Flex deployments may also be impacted.\n\nWorkaround: No workaround at this time. However, to reduce the likelihood of impact customers should pause autoscalers and other systems which may cause changes such as upgrades or deployments.",
+        "when": "2021-02-13T01:06:04Z"
+      },
+      {
+        "created": "2021-02-13T00:45:03Z",
+        "modified": "2021-02-13T00:45:03Z",
+        "text": "Description: We are experiencing an issue with network configuration propagation for Cloud Networking VPN, Network Load Balancer VIPs, and VM Instance Public IPs in us-central1 with some impact in: us-east1, europe-west4, europe-west1, asia-east1, asia-northeast1, beginning at Friday, 2021-02-12 14:50 US/Pacific.\n\nConnectivity for existing configurations should not be impacted.\n\nCurrent known impacted products:\nCompute Engine\nCloud SQL\nDataproc\nMemorystore\nApp Engine Flex\nCloud Composer\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Friday, 2021-02-12 17:15 US/Pacific with current details.\n\nWe apologize to all who are affected by the disruption.\n\n\nDiagnosis: Customers using Cloud VPN, creating new Network Load Balancer VIPs, and new VM Instances with external IPs may not be able to achieve external connectivity. Existing configurations should be unaffected. \n\nThis issue would impact services that rely on instances to function, dataproc cluster creation, new dataflow jobs, and App Engine Flex deployments may also be impacted.\n\nWorkaround: No workaround at this time. However, to reduce the likelihood of impact customers should pause autoscalers and other systems which may cause changes such as upgrades or deployments.",
+        "when": "2021-02-13T00:45:03Z"
+      },
+      {
         "created": "2021-02-13T00:10:59Z",
         "modified": "2021-02-13T00:10:59Z",
         "text": "Description: We are experiencing an issue with Cloud Networking VPN, Network Load Balancer VIPs, and VM Instance Public IPs in us-east1, us-central1, europe-west4, europe-west1, asia-east1, asia-northeast1, beginning at Friday, 2021-02-12 14:50 US/Pacific.\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Friday, 2021-02-12 17:00 US/Pacific with current details.\n\nWe apologize to all who are affected by the disruption.\n\nDiagnosis: Customers using Cloud VPN, creating new Network Load Balancer VIPs, and new VM Instances with external IPs may not be able to achieve external connectivity. Existing configurations should be unaffected. \n\nWorkaround: None at this time.",
@@ -25,6 +64,87 @@
       }
     ],
     "uri": "/incident/cloud-networking/21002"
+  },
+  {
+    "begin": "2021-02-12T22:50:00Z",
+    "created": "2021-02-13T00:56:34Z",
+    "end": null,
+    "external_desc": "Our engineers have determined this issue to be linked to a single Google incident.  For regular status updates, please visit https://status.cloud.goog",
+    "modified": "2021-02-13T01:01:20Z",
+    "most-recent-update": {
+      "created": "2021-02-13T00:56:34Z",
+      "modified": "2021-02-13T00:56:34Z",
+      "text": "Our engineers have determined this issue to be linked to a single Google incident.  For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002.  No further\r\n updates will be made through this incident.",
+      "when": "2021-02-13T00:56:34Z"
+    },
+    "number": 21003,
+    "public": true,
+    "service_key": "appengine",
+    "service_name": "Google App Engine",
+    "severity": "medium",
+    "updates": [
+      {
+        "created": "2021-02-13T00:56:34Z",
+        "modified": "2021-02-13T00:56:34Z",
+        "text": "Our engineers have determined this issue to be linked to a single Google incident.  For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002.  No further\r\n updates will be made through this incident.",
+        "when": "2021-02-13T00:56:34Z"
+      }
+    ],
+    "uri": "/incident/appengine/21003"
+  },
+  {
+    "begin": "2021-02-12T22:50:00Z",
+    "created": "2021-02-13T00:55:29Z",
+    "end": null,
+    "external_desc": "Our engineers have determined this issue to be linked to a single Google incident.  For regular status updates, please visit https://status.cloud.goog",
+    "modified": "2021-02-13T01:03:24Z",
+    "most-recent-update": {
+      "created": "2021-02-13T00:55:29Z",
+      "modified": "2021-02-13T00:55:29Z",
+      "text": "Our engineers have determined this issue to be linked to a single Google incident.  For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002.  No further\r\n updates will be made through this incident.",
+      "when": "2021-02-13T00:55:29Z"
+    },
+    "number": 21002,
+    "public": true,
+    "service_key": "cloud-memorystore",
+    "service_name": "Cloud Memorystore",
+    "severity": "medium",
+    "updates": [
+      {
+        "created": "2021-02-13T00:55:29Z",
+        "modified": "2021-02-13T00:55:29Z",
+        "text": "Our engineers have determined this issue to be linked to a single Google incident.  For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002.  No further\r\n updates will be made through this incident.",
+        "when": "2021-02-13T00:55:29Z"
+      }
+    ],
+    "uri": "/incident/cloud-memorystore/21002"
+  },
+  {
+    "begin": "2021-02-12T22:50:00Z",
+    "created": "2021-02-13T01:06:56Z",
+    "end": null,
+    "external_desc": "Our engineers have determined this issue to be linked to a single Google incident.  For regular status updates, please visit https://status.cloud.goog",
+    "modified": "2021-02-13T01:06:56Z",
+    "most-recent-update": {
+      "created": "2021-02-13T01:06:56Z",
+      "modified": "2021-02-13T01:06:56Z",
+      "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
+      "when": "2021-02-13T01:06:56Z"
+    },
+    "number": 21003,
+    "public": true,
+    "service_key": "cloud-sql",
+    "service_name": "Google Cloud SQL",
+    "severity": "high",
+    "updates": [
+      {
+        "created": "2021-02-13T01:06:56Z",
+        "modified": "2021-02-13T01:06:56Z",
+        "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
+        "when": "2021-02-13T01:06:56Z"
+      }
+    ],
+    "uri": "/incident/cloud-sql/21003"
   },
   {
     "begin": "2021-02-11T19:50:44Z",
