@@ -1,42 +1,15 @@
 [
   {
-    "begin": "2021-02-13T00:24:18Z",
-    "created": "2021-02-13T00:24:19Z",
-    "end": null,
-    "external_desc": "We are experiencing an issue with Google Cloud infrastructure components, beginning at Friday, 2021-02-12 14:50 US/Pacific.",
-    "modified": "2021-02-13T00:24:19Z",
-    "most-recent-update": {
-      "created": "2021-02-13T00:24:19Z",
-      "modified": "2021-02-13T00:24:19Z",
-      "text": "Description: We are experiencing an issue with Google Cloud infrastructure components, beginning at Friday, 2021-02-12 14:50 US/Pacific.\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Friday, 2021-02-12 17:00 US/Pacific with current details.\n\nWe apologize to all who are affected by the disruption.\n\nDiagnosis: None at this time.\n\nWorkaround: None at this time.",
-      "when": "2021-02-13T00:24:19Z"
-    },
-    "number": 21003,
-    "public": true,
-    "service_key": "zall",
-    "service_name": "Google Cloud Infrastructure Components",
-    "severity": "medium",
-    "updates": [
-      {
-        "created": "2021-02-13T00:24:19Z",
-        "modified": "2021-02-13T00:24:19Z",
-        "text": "Description: We are experiencing an issue with Google Cloud infrastructure components, beginning at Friday, 2021-02-12 14:50 US/Pacific.\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Friday, 2021-02-12 17:00 US/Pacific with current details.\n\nWe apologize to all who are affected by the disruption.\n\nDiagnosis: None at this time.\n\nWorkaround: None at this time.",
-        "when": "2021-02-13T00:24:19Z"
-      }
-    ],
-    "uri": "/incident/zall/21003"
-  },
-  {
-    "begin": "2021-02-12T22:50:10Z",
+    "begin": "2021-02-12T23:17:10Z",
     "created": "2021-02-13T00:10:58Z",
     "end": null,
-    "external_desc": "We are experiencing an issue with network configuration propagation for Cloud Networking VPN, Network Load Balancer VIPs, and VM Instance Public IPs in multiple regions beginning at Friday, 2021-02-12 14:50 US/Pacific.",
-    "modified": "2021-02-13T00:48:02Z",
+    "external_desc": "We are experiencing an issue with network configuration propagating for Cloud Networking VPN, Network Load Balancer VIPs, and VM Instance Public IPs in multiple regions, beginning at Friday, 2021-02-12 14:50 US/Pacific.",
+    "modified": "2021-02-13T01:50:09Z",
     "most-recent-update": {
-      "created": "2021-02-13T01:06:04Z",
-      "modified": "2021-02-13T01:06:04Z",
-      "text": "Description: Mitigation work is currently underway by our engineering team and we are starting to see recovery.\n\nWe do not have an ETA for mitigation at this point.\n\nCurrent known impacted products:\nCompute Engine\nCloud SQL\nDataproc\nMemorystore\nApp Engine Flex\nCloud Composer\nKubernetes Engine\n\nWe will provide more information by Friday, 2021-02-12 17:45 US/Pacific.\n\nDiagnosis: Customers using Cloud VPN, creating new Network Load Balancer VIPs, and new VM Instances with external IPs may not be able to achieve external connectivity. Existing configurations should be unaffected. \n\nThis issue would impact services that rely on instances to function, dataproc cluster creation, new dataflow jobs, and App Engine Flex deployments may also be impacted.\n\nWorkaround: No workaround at this time. However, to reduce the likelihood of impact customers should pause autoscalers and other systems which may cause changes such as upgrades or deployments.",
-      "when": "2021-02-13T01:06:04Z"
+      "created": "2021-02-13T01:50:09Z",
+      "modified": "2021-02-13T01:50:09Z",
+      "text": "Description: Mitigation work is still underway by our engineering team and we are continuing to see recovery. We believe that mitigation has fully completed rolling out in the us-central1 region, and we are monitoring for recovery. Mitigation is continuing to roll out in other regions. We estimate mitigation to be fully complete by 19:00 US/Pacific.\n\nNetwork connectivity within us-central1 should be fully recovered, however, some connectivity issues to other regions may persist while the mitigation completes roll out.\n\nCurrent known impacted products:\nCompute Engine\nCloud SQL\nDataproc\nMemorystore\nApp Engine Flex\nCloud Composer\nKubernetes Engine\nCloud Data Fusion\n\nWe will provide an update by Friday, 2021-02-12 18:15 US/Pacific with current details.\n\nWe apologize to all who are affected by the disruption.\n\n\nDiagnosis: Customers using Cloud VPN, creating new Network Load Balancer VIPs, and new VM Instances with external IPs may not be able to achieve external connectivity. Existing configurations should be unaffected. Instances that have live-migrated within the impact period may experience connectivity loss. Cloud VPN tunnels may have been impacted between 14:50 and 15:31\n\nThis issue would impact services that rely on instances to function, dataproc cluster creation, new dataflow jobs, and App Engine Flex deployments may also be impacted.\n\nWorkaround: No workaround at this time. However, to reduce the likelihood of impact customers should pause autoscalers and other systems which may cause changes such as upgrades or deployments.",
+      "when": "2021-02-13T01:50:09Z"
     },
     "number": 21002,
     "public": true,
@@ -44,6 +17,12 @@
     "service_name": "Google Cloud Networking",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2021-02-13T01:50:09Z",
+        "modified": "2021-02-13T01:50:09Z",
+        "text": "Description: Mitigation work is still underway by our engineering team and we are continuing to see recovery. We believe that mitigation has fully completed rolling out in the us-central1 region, and we are monitoring for recovery. Mitigation is continuing to roll out in other regions. We estimate mitigation to be fully complete by 19:00 US/Pacific.\n\nNetwork connectivity within us-central1 should be fully recovered, however, some connectivity issues to other regions may persist while the mitigation completes roll out.\n\nCurrent known impacted products:\nCompute Engine\nCloud SQL\nDataproc\nMemorystore\nApp Engine Flex\nCloud Composer\nKubernetes Engine\nCloud Data Fusion\n\nWe will provide an update by Friday, 2021-02-12 18:15 US/Pacific with current details.\n\nWe apologize to all who are affected by the disruption.\n\n\nDiagnosis: Customers using Cloud VPN, creating new Network Load Balancer VIPs, and new VM Instances with external IPs may not be able to achieve external connectivity. Existing configurations should be unaffected. Instances that have live-migrated within the impact period may experience connectivity loss. Cloud VPN tunnels may have been impacted between 14:50 and 15:31\n\nThis issue would impact services that rely on instances to function, dataproc cluster creation, new dataflow jobs, and App Engine Flex deployments may also be impacted.\n\nWorkaround: No workaround at this time. However, to reduce the likelihood of impact customers should pause autoscalers and other systems which may cause changes such as upgrades or deployments.",
+        "when": "2021-02-13T01:50:09Z"
+      },
       {
         "created": "2021-02-13T01:06:04Z",
         "modified": "2021-02-13T01:06:04Z",
@@ -64,6 +43,33 @@
       }
     ],
     "uri": "/incident/cloud-networking/21002"
+  },
+  {
+    "begin": "2021-02-12T22:50:18Z",
+    "created": "2021-02-13T00:24:19Z",
+    "end": null,
+    "external_desc": "We are experiencing an issue with Google Cloud infrastructure components, beginning at Friday, 2021-02-12 14:50 US/Pacific.",
+    "modified": "2021-02-13T01:24:18Z",
+    "most-recent-update": {
+      "created": "2021-02-13T00:24:19Z",
+      "modified": "2021-02-13T00:24:19Z",
+      "text": "Description: We are experiencing an issue with Google Cloud infrastructure components, beginning at Friday, 2021-02-12 14:50 US/Pacific.\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Friday, 2021-02-12 17:00 US/Pacific with current details.\n\nWe apologize to all who are affected by the disruption.\n\nDiagnosis: None at this time.\n\nWorkaround: None at this time.",
+      "when": "2021-02-13T00:24:19Z"
+    },
+    "number": 21003,
+    "public": true,
+    "service_key": "zall",
+    "service_name": "Google Cloud Infrastructure Components",
+    "severity": "medium",
+    "updates": [
+      {
+        "created": "2021-02-13T00:24:19Z",
+        "modified": "2021-02-13T00:24:19Z",
+        "text": "Description: We are experiencing an issue with Google Cloud infrastructure components, beginning at Friday, 2021-02-12 14:50 US/Pacific.\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Friday, 2021-02-12 17:00 US/Pacific with current details.\n\nWe apologize to all who are affected by the disruption.\n\nDiagnosis: None at this time.\n\nWorkaround: None at this time.",
+        "when": "2021-02-13T00:24:19Z"
+      }
+    ],
+    "uri": "/incident/zall/21003"
   },
   {
     "begin": "2021-02-12T22:50:00Z",
@@ -91,6 +97,60 @@
       }
     ],
     "uri": "/incident/appengine/21003"
+  },
+  {
+    "begin": "2021-02-12T22:50:00Z",
+    "created": "2021-02-13T01:43:04Z",
+    "end": null,
+    "external_desc": "Our engineers have determined this issue to be linked to a single Google incident.  For regular status updates, please visit https://status.cloud.goog",
+    "modified": "2021-02-13T01:43:04Z",
+    "most-recent-update": {
+      "created": "2021-02-13T01:43:04Z",
+      "modified": "2021-02-13T01:43:04Z",
+      "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
+      "when": "2021-02-13T01:43:04Z"
+    },
+    "number": 21001,
+    "public": true,
+    "service_key": "cloud-data-fusion",
+    "service_name": "Cloud Data Fusion",
+    "severity": "medium",
+    "updates": [
+      {
+        "created": "2021-02-13T01:43:04Z",
+        "modified": "2021-02-13T01:43:04Z",
+        "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
+        "when": "2021-02-13T01:43:04Z"
+      }
+    ],
+    "uri": "/incident/cloud-data-fusion/21001"
+  },
+  {
+    "begin": "2021-02-12T22:50:00Z",
+    "created": "2021-02-13T01:11:09Z",
+    "end": null,
+    "external_desc": "Our engineers have determined this issue to be linked to a single Google incident.  For regular status updates, please visit https://status.cloud.goog",
+    "modified": "2021-02-13T01:26:16Z",
+    "most-recent-update": {
+      "created": "2021-02-13T01:11:09Z",
+      "modified": "2021-02-13T01:11:09Z",
+      "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
+      "when": "2021-02-13T01:11:09Z"
+    },
+    "number": 21002,
+    "public": true,
+    "service_key": "cloud-dataproc",
+    "service_name": "Google Cloud Dataproc",
+    "severity": "medium",
+    "updates": [
+      {
+        "created": "2021-02-13T01:11:09Z",
+        "modified": "2021-02-13T01:11:09Z",
+        "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
+        "when": "2021-02-13T01:11:09Z"
+      }
+    ],
+    "uri": "/incident/cloud-dataproc/21002"
   },
   {
     "begin": "2021-02-12T22:50:00Z",
@@ -124,7 +184,7 @@
     "created": "2021-02-13T01:06:56Z",
     "end": null,
     "external_desc": "Our engineers have determined this issue to be linked to a single Google incident.  For regular status updates, please visit https://status.cloud.goog",
-    "modified": "2021-02-13T01:06:56Z",
+    "modified": "2021-02-13T01:08:13Z",
     "most-recent-update": {
       "created": "2021-02-13T01:06:56Z",
       "modified": "2021-02-13T01:06:56Z",
@@ -135,7 +195,7 @@
     "public": true,
     "service_key": "cloud-sql",
     "service_name": "Google Cloud SQL",
-    "severity": "high",
+    "severity": "medium",
     "updates": [
       {
         "created": "2021-02-13T01:06:56Z",
@@ -145,6 +205,87 @@
       }
     ],
     "uri": "/incident/cloud-sql/21003"
+  },
+  {
+    "begin": "2021-02-12T22:50:00Z",
+    "created": "2021-02-13T01:14:15Z",
+    "end": null,
+    "external_desc": "Our engineers have determined this issue to be linked to a single Google incident.  For regular status updates, please visit https://status.cloud.goog",
+    "modified": "2021-02-13T01:14:41Z",
+    "most-recent-update": {
+      "created": "2021-02-13T01:14:15Z",
+      "modified": "2021-02-13T01:14:15Z",
+      "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
+      "when": "2021-02-13T01:14:15Z"
+    },
+    "number": 21001,
+    "public": true,
+    "service_key": "composer",
+    "service_name": "Google Cloud Composer",
+    "severity": "medium",
+    "updates": [
+      {
+        "created": "2021-02-13T01:14:15Z",
+        "modified": "2021-02-13T01:14:15Z",
+        "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
+        "when": "2021-02-13T01:14:15Z"
+      }
+    ],
+    "uri": "/incident/composer/21001"
+  },
+  {
+    "begin": "2021-02-12T22:50:00Z",
+    "created": "2021-02-13T01:16:51Z",
+    "end": null,
+    "external_desc": "Our engineers have determined this issue to be linked to a single Google incident.  For regular status updates, please visit https://status.cloud.goog",
+    "modified": "2021-02-13T01:26:27Z",
+    "most-recent-update": {
+      "created": "2021-02-13T01:16:51Z",
+      "modified": "2021-02-13T01:16:51Z",
+      "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
+      "when": "2021-02-13T01:16:51Z"
+    },
+    "number": 21001,
+    "public": true,
+    "service_key": "compute",
+    "service_name": "Google Compute Engine",
+    "severity": "medium",
+    "updates": [
+      {
+        "created": "2021-02-13T01:16:51Z",
+        "modified": "2021-02-13T01:16:51Z",
+        "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
+        "when": "2021-02-13T01:16:51Z"
+      }
+    ],
+    "uri": "/incident/compute/21001"
+  },
+  {
+    "begin": "2021-02-12T22:50:00Z",
+    "created": "2021-02-13T01:15:31Z",
+    "end": null,
+    "external_desc": "Our engineers have determined this issue to be linked to a single Google incident.  For regular status updates, please visit https://status.cloud.goog",
+    "modified": "2021-02-13T01:24:58Z",
+    "most-recent-update": {
+      "created": "2021-02-13T01:15:32Z",
+      "modified": "2021-02-13T01:15:32Z",
+      "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
+      "when": "2021-02-13T01:15:32Z"
+    },
+    "number": 21002,
+    "public": true,
+    "service_key": "container-engine",
+    "service_name": "Google Kubernetes Engine",
+    "severity": "medium",
+    "updates": [
+      {
+        "created": "2021-02-13T01:15:32Z",
+        "modified": "2021-02-13T01:15:32Z",
+        "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
+        "when": "2021-02-13T01:15:32Z"
+      }
+    ],
+    "uri": "/incident/container-engine/21002"
   },
   {
     "begin": "2021-02-11T19:50:44Z",
