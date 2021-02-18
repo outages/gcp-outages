@@ -1,5 +1,32 @@
 [
   {
+    "begin": "2021-12-18T20:13:00Z",
+    "created": "2021-02-18T23:05:15Z",
+    "end": null,
+    "external_desc": "We are experiencing an issue with Cloud AI in us-central1 starting at 12:13 US/Pacific.",
+    "modified": "2021-02-18T23:05:15Z",
+    "most-recent-update": {
+      "created": "2021-02-18T23:05:15Z",
+      "modified": "2021-02-18T23:05:15Z",
+      "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/compute/21002. No further updates will be made through this incident.",
+      "when": "2021-02-18T23:05:15Z"
+    },
+    "number": 21001,
+    "public": true,
+    "service_key": "cloud-ml",
+    "service_name": "Cloud Machine Learning",
+    "severity": "medium",
+    "updates": [
+      {
+        "created": "2021-02-18T23:05:15Z",
+        "modified": "2021-02-18T23:05:15Z",
+        "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/compute/21002. No further updates will be made through this incident.",
+        "when": "2021-02-18T23:05:15Z"
+      }
+    ],
+    "uri": "/incident/cloud-ml/21001"
+  },
+  {
     "begin": "2021-02-18T22:31:23Z",
     "created": "2021-02-18T22:46:21Z",
     "end": null,
@@ -57,13 +84,13 @@
     "begin": "2021-02-18T21:18:09Z",
     "created": "2021-02-18T22:17:54Z",
     "end": null,
-    "external_desc": "We are experiencing an issue with Google Compute Engine VM Instance creation in us-central1",
-    "modified": "2021-02-18T22:17:56Z",
+    "external_desc": "We are experiencing an issue with Google Compute Engine VM Instance creation in us-central1.",
+    "modified": "2021-02-18T22:51:52Z",
     "most-recent-update": {
-      "created": "2021-02-18T22:17:56Z",
-      "modified": "2021-02-18T22:17:56Z",
-      "text": "Description: We are experiencing an issue with Google Compute Engine VM Instance creation in us-central1 beginning at Thursday, 2021-02-18 12:13 US/Pacific.\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Thursday, 2021-02-18 14:45 US/Pacific with current details.\n\nDiagnosis: Users may be unable to create new VMs in us-central1, any products that rely on GCE will be impacted by this.\n\nWorkaround: None at this time.",
-      "when": "2021-02-18T22:17:56Z"
+      "created": "2021-02-18T22:51:52Z",
+      "modified": "2021-02-18T22:51:52Z",
+      "text": "Description: We are experiencing an issue with Google Compute Engine VM Instance creation in us-central1 beginning at Thursday, 2021-02-18 12:13 US/Pacific. We have begun rolling out a mitigation for the issue and are continuing to monitor.\n\nCurrent list of known impacted products:\nCompute Engine  \nKubernetes Engine  \nApp Engine Flex  \nCloud Functions  \nCloud AI  \n\nWe will provide an update by Thursday, 2021-02-18 15:15 US/Pacific with current details.\n\nDiagnosis: Users may be unable to create new VMs in us-central1, any products that rely on creating GCE instances in us-central1 as part of a workflow may also see an increase in errors. \n\nWorkaround: None at this time.",
+      "when": "2021-02-18T22:51:52Z"
     },
     "number": 21002,
     "public": true,
@@ -71,6 +98,12 @@
     "service_name": "Google Compute Engine",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2021-02-18T22:51:52Z",
+        "modified": "2021-02-18T22:51:52Z",
+        "text": "Description: We are experiencing an issue with Google Compute Engine VM Instance creation in us-central1 beginning at Thursday, 2021-02-18 12:13 US/Pacific. We have begun rolling out a mitigation for the issue and are continuing to monitor.\n\nCurrent list of known impacted products:\nCompute Engine  \nKubernetes Engine  \nApp Engine Flex  \nCloud Functions  \nCloud AI  \n\nWe will provide an update by Thursday, 2021-02-18 15:15 US/Pacific with current details.\n\nDiagnosis: Users may be unable to create new VMs in us-central1, any products that rely on creating GCE instances in us-central1 as part of a workflow may also see an increase in errors. \n\nWorkaround: None at this time.",
+        "when": "2021-02-18T22:51:52Z"
+      },
       {
         "created": "2021-02-18T22:17:56Z",
         "modified": "2021-02-18T22:17:56Z",
@@ -81,11 +114,11 @@
     "uri": "/incident/compute/21002"
   },
   {
-    "begin": "2021-02-16T20:13:00Z",
+    "begin": "2021-02-18T20:13:00Z",
     "created": "2021-02-18T22:44:37Z",
     "end": null,
     "external_desc": "We are experiencing an issue with Google Kubernetes Engine in us-central1 starting at 12:13 US/Pacific.",
-    "modified": "2021-02-18T22:47:15Z",
+    "modified": "2021-02-18T22:52:57Z",
     "most-recent-update": {
       "created": "2021-02-18T22:44:37Z",
       "modified": "2021-02-18T22:44:37Z",
