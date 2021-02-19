@@ -2,9 +2,9 @@
   {
     "begin": "2021-12-18T20:13:00Z",
     "created": "2021-02-18T23:05:15Z",
-    "end": null,
+    "end": "2021-02-19T00:48:39Z",
     "external_desc": "We are experiencing an issue with Cloud AI in us-central1 starting at 12:13 US/Pacific.",
-    "modified": "2021-02-18T23:05:15Z",
+    "modified": "2021-02-19T00:48:39Z",
     "most-recent-update": {
       "created": "2021-02-18T23:05:15Z",
       "modified": "2021-02-18T23:05:15Z",
@@ -113,14 +113,14 @@
   {
     "begin": "2021-02-18T21:18:09Z",
     "created": "2021-02-18T22:17:54Z",
-    "end": null,
-    "external_desc": "We believe the issue with Google Compute Engine VM instance creation and deletion is partially resolved as of 15:14 US/Pacific.",
-    "modified": "2021-02-18T23:54:35Z",
+    "end": "2021-02-19T00:59:43Z",
+    "external_desc": "The issue with Google Compute Engine VM instance creation and deletion is partially resolved as of 15:14 US/Pacific.",
+    "modified": "2021-02-19T00:59:44Z",
     "most-recent-update": {
-      "created": "2021-02-18T23:54:35Z",
-      "modified": "2021-02-18T23:54:35Z",
-      "text": "Description: We believe the issue with Google Compute Engine VM instance creation and deletion is partially resolved. New VM instance creation requests as of 15:14 US/Pacific should succeed. We are working through a backlog of creation requests that should complete in the next few hours.\n\nCurrent list of known impacted products in us-central1:\nCompute Engine  \nKubernetes Engine  \nCloud AI  \nCloud SQL  \nCloud Dataproc  \n\nWe will provide an update by Thursday, 2021-02-18 16:30 US/Pacific with current details.\n\nDiagnosis: Users impacted by this may have been unable to create new instances in us-central1, any products that rely on creating GCE instances in us-central1 as part of a workflow may also have seen an increase in errors. Delete operations may also have experienced latency.\n\nWorkaround: Retrying operations may succeed.",
-      "when": "2021-02-18T23:54:35Z"
+      "created": "2021-02-19T00:59:44Z",
+      "modified": "2021-02-19T00:59:44Z",
+      "text": "The issue with Google Compute Engine VM creation and deletion has been resolved for all affected projects as of Thursday, 2021-02-18 16:56 US/Pacific.\n\nWe thank you for your patience while we worked on resolving the issue.",
+      "when": "2021-02-19T00:59:43Z"
     },
     "number": 21002,
     "public": true,
@@ -128,6 +128,18 @@
     "service_name": "Google Compute Engine",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2021-02-19T00:59:44Z",
+        "modified": "2021-02-19T00:59:44Z",
+        "text": "The issue with Google Compute Engine VM creation and deletion has been resolved for all affected projects as of Thursday, 2021-02-18 16:56 US/Pacific.\n\nWe thank you for your patience while we worked on resolving the issue.",
+        "when": "2021-02-19T00:59:43Z"
+      },
+      {
+        "created": "2021-02-19T00:45:17Z",
+        "modified": "2021-02-19T00:45:17Z",
+        "text": "Description: The issue with Google Compute Engine VM instance creation and deletion is partially resolved. New VM instance creation and deletion requests as of 15:14 US/Pacific should succeed. \n\nWe are working through a backlog of creation and deletion requests that should complete in the next few hours and users may continue to see issues while we process this backlog.\n\nWe will provide an update by Thursday, 2021-02-18 18:00 US/Pacific with current details.\n\nDiagnosis: Users impacted by this may have been unable to create new instances in us-central1, any products that rely on creating GCE instances in us-central1 as part of a workflow may also have seen an increase in errors. Delete operations may also have experienced latency.\n\nWorkaround: Retrying operations may succeed.",
+        "when": "2021-02-19T00:45:17Z"
+      },
       {
         "created": "2021-02-18T23:54:35Z",
         "modified": "2021-02-18T23:54:35Z",
@@ -158,14 +170,14 @@
   {
     "begin": "2021-02-18T20:13:00Z",
     "created": "2021-02-18T23:21:40Z",
-    "end": null,
+    "end": "2021-02-19T00:47:04Z",
     "external_desc": "We are experiencing an issue with Cloud Dataproc in us-central1 starting at 12:13 US/Pacific.",
-    "modified": "2021-02-18T23:21:40Z",
+    "modified": "2021-02-19T00:47:05Z",
     "most-recent-update": {
-      "created": "2021-02-18T23:21:40Z",
-      "modified": "2021-02-18T23:21:40Z",
-      "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/compute/21002. No further updates will be made through this incident.",
-      "when": "2021-02-18T23:21:40Z"
+      "created": "2021-02-19T00:47:05Z",
+      "modified": "2021-02-19T00:47:05Z",
+      "text": "Our engineers have determined this issue was mitigated at 16:14 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
+      "when": "2021-02-19T00:47:04Z"
     },
     "number": 21003,
     "public": true,
@@ -173,6 +185,12 @@
     "service_name": "Google Cloud Dataproc",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2021-02-19T00:47:05Z",
+        "modified": "2021-02-19T00:47:05Z",
+        "text": "Our engineers have determined this issue was mitigated at 16:14 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
+        "when": "2021-02-19T00:47:04Z"
+      },
       {
         "created": "2021-02-18T23:21:40Z",
         "modified": "2021-02-18T23:21:40Z",
@@ -284,14 +302,14 @@
   {
     "begin": "2021-02-18T20:13:00Z",
     "created": "2021-02-18T22:44:37Z",
-    "end": null,
+    "end": "2021-02-19T00:15:35Z",
     "external_desc": "We are experiencing an issue with Google Kubernetes Engine in us-central1 starting at 12:13 US/Pacific.",
-    "modified": "2021-02-18T22:52:57Z",
+    "modified": "2021-02-19T00:15:35Z",
     "most-recent-update": {
-      "created": "2021-02-18T22:44:37Z",
-      "modified": "2021-02-18T22:44:37Z",
-      "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/compute/21002. No further updates will be made through this incident.",
-      "when": "2021-02-18T22:44:37Z"
+      "created": "2021-02-19T00:15:35Z",
+      "modified": "2021-02-19T00:15:35Z",
+      "text": "Our engineers have determined this issue was mitigated at 16:05 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
+      "when": "2021-02-19T00:15:35Z"
     },
     "number": 21003,
     "public": true,
@@ -299,6 +317,12 @@
     "service_name": "Google Kubernetes Engine",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2021-02-19T00:15:35Z",
+        "modified": "2021-02-19T00:15:35Z",
+        "text": "Our engineers have determined this issue was mitigated at 16:05 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
+        "when": "2021-02-19T00:15:35Z"
+      },
       {
         "created": "2021-02-18T22:44:37Z",
         "modified": "2021-02-18T22:44:37Z",
