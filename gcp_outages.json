@@ -29,14 +29,14 @@
   {
     "begin": "2021-02-18T22:31:23Z",
     "created": "2021-02-18T22:46:21Z",
-    "end": null,
+    "end": "2021-02-19T00:11:05Z",
     "external_desc": "Google App Engine Flex deployments are seeing increased errors in us-central1, us-east1 and us-east4, us-west3, europe-west6",
-    "modified": "2021-02-18T23:48:23Z",
+    "modified": "2021-02-19T00:11:06Z",
     "most-recent-update": {
-      "created": "2021-02-18T23:48:23Z",
-      "modified": "2021-02-18T23:48:23Z",
-      "text": "Description: We believe the issue with Google App Engine deployments in us-central1, us-east1 and us-east4, us-west3, europe-west6 is partially resolved and error rates are improving.\n\nWe do not have an ETA for full resolution at this point, but are monitoring for full recovery.\n\nWe will provide an update by Thursday, 2021-02-18 16:30 US/Pacific with current details.\n\nDiagnosis: Customers impacted by this issue may see an increase in errors when deploying new versions of App Engine Flex applications.\n\nWorkaround: None at this time.",
-      "when": "2021-02-18T23:48:23Z"
+      "created": "2021-02-19T00:11:05Z",
+      "modified": "2021-02-19T00:11:05Z",
+      "text": "The issue with Google App Engine Flex deployments seeing increased errors in us-central1, us-east1 and us-east4, us-west3, europe-west6 has been resolved for all affected users as of Thursday, 2021-02-18 15:00 US/Pacific.\n\nWe thank you for your patience while we worked on resolving the issue.",
+      "when": "2021-02-19T00:11:05Z"
     },
     "number": 21004,
     "public": true,
@@ -44,6 +44,12 @@
     "service_name": "Google App Engine",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2021-02-19T00:11:05Z",
+        "modified": "2021-02-19T00:11:05Z",
+        "text": "The issue with Google App Engine Flex deployments seeing increased errors in us-central1, us-east1 and us-east4, us-west3, europe-west6 has been resolved for all affected users as of Thursday, 2021-02-18 15:00 US/Pacific.\n\nWe thank you for your patience while we worked on resolving the issue.",
+        "when": "2021-02-19T00:11:05Z"
+      },
       {
         "created": "2021-02-18T23:48:23Z",
         "modified": "2021-02-18T23:48:23Z",
@@ -108,13 +114,13 @@
     "begin": "2021-02-18T21:18:09Z",
     "created": "2021-02-18T22:17:54Z",
     "end": null,
-    "external_desc": "We are experiencing an issue with Google Compute Engine VM Instance creation and deletion in us-central1 starting at 12:13 US/Pacific.",
-    "modified": "2021-02-18T23:11:33Z",
+    "external_desc": "We believe the issue with Google Compute Engine VM instance creation and deletion is partially resolved as of 15:14 US/Pacific.",
+    "modified": "2021-02-18T23:54:35Z",
     "most-recent-update": {
-      "created": "2021-02-18T23:11:33Z",
-      "modified": "2021-02-18T23:11:33Z",
-      "text": "Description: We are beginning to see recovery from applying the mitigation. We are continuing to monitor and exploring methods of increasing the rate of recovery.\n\nCurrent list of known impacted products in us-central1:\nCompute Engine  \nKubernetes Engine  \nApp Engine Flex  \nCloud Functions  \nCloud AI  \nCloud SQL  \nCloud Memorystore  \nCloud Filestore  \nCloud Dataproc  \nCloud Dataflow  \n\nWe will provide an update by Thursday, 2021-02-18 15:45 US/Pacific with current details.\n\nDiagnosis: Users may be unable to create new instances in us-central1, any products that rely on creating GCE instances in us-central1 as part of a workflow may also see an increase in errors. Delete operations may also experience latency.\n\nWorkaround: None at this time.",
-      "when": "2021-02-18T23:11:33Z"
+      "created": "2021-02-18T23:54:35Z",
+      "modified": "2021-02-18T23:54:35Z",
+      "text": "Description: We believe the issue with Google Compute Engine VM instance creation and deletion is partially resolved. New VM instance creation requests as of 15:14 US/Pacific should succeed. We are working through a backlog of creation requests that should complete in the next few hours.\n\nCurrent list of known impacted products in us-central1:\nCompute Engine  \nKubernetes Engine  \nCloud AI  \nCloud SQL  \nCloud Dataproc  \n\nWe will provide an update by Thursday, 2021-02-18 16:30 US/Pacific with current details.\n\nDiagnosis: Users impacted by this may have been unable to create new instances in us-central1, any products that rely on creating GCE instances in us-central1 as part of a workflow may also have seen an increase in errors. Delete operations may also have experienced latency.\n\nWorkaround: Retrying operations may succeed.",
+      "when": "2021-02-18T23:54:35Z"
     },
     "number": 21002,
     "public": true,
@@ -122,6 +128,12 @@
     "service_name": "Google Compute Engine",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2021-02-18T23:54:35Z",
+        "modified": "2021-02-18T23:54:35Z",
+        "text": "Description: We believe the issue with Google Compute Engine VM instance creation and deletion is partially resolved. New VM instance creation requests as of 15:14 US/Pacific should succeed. We are working through a backlog of creation requests that should complete in the next few hours.\n\nCurrent list of known impacted products in us-central1:\nCompute Engine  \nKubernetes Engine  \nCloud AI  \nCloud SQL  \nCloud Dataproc  \n\nWe will provide an update by Thursday, 2021-02-18 16:30 US/Pacific with current details.\n\nDiagnosis: Users impacted by this may have been unable to create new instances in us-central1, any products that rely on creating GCE instances in us-central1 as part of a workflow may also have seen an increase in errors. Delete operations may also have experienced latency.\n\nWorkaround: Retrying operations may succeed.",
+        "when": "2021-02-18T23:54:35Z"
+      },
       {
         "created": "2021-02-18T23:11:33Z",
         "modified": "2021-02-18T23:11:33Z",
@@ -173,14 +185,14 @@
   {
     "begin": "2021-02-18T20:13:00Z",
     "created": "2021-02-18T23:20:01Z",
-    "end": null,
+    "end": "2021-02-18T23:58:49Z",
     "external_desc": "We are experiencing an issue with Cloud Filestore in us-central1 starting at 12:13 US/Pacific.",
-    "modified": "2021-02-18T23:20:01Z",
+    "modified": "2021-02-18T23:58:49Z",
     "most-recent-update": {
-      "created": "2021-02-18T23:20:01Z",
-      "modified": "2021-02-18T23:20:01Z",
-      "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/compute/21002. No further updates will be made through this incident.",
-      "when": "2021-02-18T23:20:01Z"
+      "created": "2021-02-18T23:58:49Z",
+      "modified": "2021-02-18T23:58:49Z",
+      "text": "Our engineers have determined this issue was mitigated at 15:28 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
+      "when": "2021-02-18T23:58:49Z"
     },
     "number": 21001,
     "public": true,
@@ -188,6 +200,12 @@
     "service_name": "Cloud Filestore",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2021-02-18T23:58:49Z",
+        "modified": "2021-02-18T23:58:49Z",
+        "text": "Our engineers have determined this issue was mitigated at 15:28 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
+        "when": "2021-02-18T23:58:49Z"
+      },
       {
         "created": "2021-02-18T23:20:01Z",
         "modified": "2021-02-18T23:20:01Z",
@@ -200,14 +218,14 @@
   {
     "begin": "2021-02-18T20:13:00Z",
     "created": "2021-02-18T23:17:02Z",
-    "end": null,
+    "end": "2021-02-18T23:59:42Z",
     "external_desc": "We are experiencing an issue with Cloud Memorystore in us-central1 starting at 12:13 US/Pacific.",
-    "modified": "2021-02-18T23:17:02Z",
+    "modified": "2021-02-18T23:59:43Z",
     "most-recent-update": {
-      "created": "2021-02-18T23:17:02Z",
-      "modified": "2021-02-18T23:17:02Z",
-      "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/compute/21002. No further updates will be made through this incident.",
-      "when": "2021-02-18T23:17:02Z"
+      "created": "2021-02-18T23:59:43Z",
+      "modified": "2021-02-18T23:59:43Z",
+      "text": "Our engineers have determined this issue was mitigated at 15:28 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
+      "when": "2021-02-18T23:59:42Z"
     },
     "number": 21003,
     "public": true,
@@ -215,6 +233,12 @@
     "service_name": "Cloud Memorystore",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2021-02-18T23:59:43Z",
+        "modified": "2021-02-18T23:59:43Z",
+        "text": "Our engineers have determined this issue was mitigated at 15:28 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
+        "when": "2021-02-18T23:59:42Z"
+      },
       {
         "created": "2021-02-18T23:17:02Z",
         "modified": "2021-02-18T23:17:02Z",
@@ -227,14 +251,14 @@
   {
     "begin": "2021-02-18T20:13:00Z",
     "created": "2021-02-18T23:06:39Z",
-    "end": null,
+    "end": "2021-02-19T00:13:25Z",
     "external_desc": "We are experiencing an issue with Cloud SQL instances in us-central1 starting at 12:13 US/Pacific.",
-    "modified": "2021-02-18T23:06:40Z",
+    "modified": "2021-02-19T00:13:26Z",
     "most-recent-update": {
-      "created": "2021-02-18T23:06:39Z",
-      "modified": "2021-02-18T23:06:39Z",
-      "text": "Our engineers have determined this issue to be linked to a single Google\r\nincident.  For regular status updates, please visit https://status.cloud.google.com/incident/compute/21002. No further updates will be made through this incident.",
-      "when": "2021-02-18T23:06:39Z"
+      "created": "2021-02-19T00:13:25Z",
+      "modified": "2021-02-19T00:13:25Z",
+      "text": "Our engineers have determined this issue was mitigated at 15:46 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
+      "when": "2021-02-19T00:13:25Z"
     },
     "number": 21004,
     "public": true,
@@ -242,6 +266,12 @@
     "service_name": "Google Cloud SQL",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2021-02-19T00:13:25Z",
+        "modified": "2021-02-19T00:13:25Z",
+        "text": "Our engineers have determined this issue was mitigated at 15:46 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
+        "when": "2021-02-19T00:13:25Z"
+      },
       {
         "created": "2021-02-18T23:06:39Z",
         "modified": "2021-02-18T23:06:39Z",
