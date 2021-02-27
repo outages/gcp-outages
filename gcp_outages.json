@@ -6832,44 +6832,5 @@
       }
     ],
     "uri": "/incident/bigquery/20001"
-  },
-  {
-    "begin": "2020-02-27T23:05:25Z",
-    "created": "2020-02-28T01:14:26Z",
-    "end": "2020-02-28T02:06:13Z",
-    "external_desc": "We are investigating an alerting issue in Stackdriver Monitoring",
-    "modified": "2020-02-28T02:06:13Z",
-    "most-recent-update": {
-      "created": "2020-02-28T02:06:13Z",
-      "modified": "2020-02-28T02:06:13Z",
-      "text": "The issue with Stackdriver Monitoring has been resolved for all affected users as of Thursday, 2020-02-27 18:01 US/Pacific.\n\nWe thank you for your patience while we've worked on resolving the issue.",
-      "when": "2020-02-28T02:06:13Z"
-    },
-    "number": 20003,
-    "public": true,
-    "service_key": "google-stackdriver",
-    "service_name": "Operations",
-    "severity": "medium",
-    "updates": [
-      {
-        "created": "2020-02-28T02:06:13Z",
-        "modified": "2020-02-28T02:06:13Z",
-        "text": "The issue with Stackdriver Monitoring has been resolved for all affected users as of Thursday, 2020-02-27 18:01 US/Pacific.\n\nWe thank you for your patience while we've worked on resolving the issue.",
-        "when": "2020-02-28T02:06:13Z"
-      },
-      {
-        "created": "2020-02-28T01:36:42Z",
-        "modified": "2020-02-28T01:36:42Z",
-        "text": "Description: We are experiencing an issue with Stackdriver Monitoring.\n\nSymptoms: Some alerting policies are not being evaluated.\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Thursday, 2020-02-27 18:10 US/Pacific with current details.\n\nDiagnosis: Users with alerting policies that aggregate away all resource labels for certain resource types may be affected: gce_instance, gae_app, cloud_tasks_queue, cloudsql_database, gce_disk, vpn_gateway, pubsub_topic, pubsub_subscription, pubsub_snapshot.\n\nWorkaround: Adding a resource label, for instance project_id, to the Group By fields in the condition will enable the alerting policies to be evaluated.",
-        "when": "2020-02-28T01:36:42Z"
-      },
-      {
-        "created": "2020-02-28T01:14:26Z",
-        "modified": "2020-02-28T01:14:26Z",
-        "text": "Description: We are investigating a potential issue with Stackdriver Monitoring.\n\nWe will provide more information by Thursday, 2020-02-27 17:45 US/Pacific.",
-        "when": "2020-02-28T01:14:26Z"
-      }
-    ],
-    "uri": "/incident/google-stackdriver/20003"
   }
 ]
