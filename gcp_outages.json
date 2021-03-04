@@ -4,12 +4,12 @@
     "created": "2021-03-04T18:37:57Z",
     "end": null,
     "external_desc": "Increased latency and possible partial results when listing Cloud SQL instances in us-central1 and us-east1",
-    "modified": "2021-03-04T21:38:09Z",
+    "modified": "2021-03-04T23:01:27Z",
     "most-recent-update": {
-      "created": "2021-03-04T21:38:09Z",
-      "modified": "2021-03-04T21:38:09Z",
-      "text": "Description: We are experiencing an issue with Cloud SQL beginning at Tuesday, 2021-03-02 05:30:00 US/Pacific.\n\nListing Cloud SQL instances in regions us-central1 and us-east1 may experience latency and/or a warning error \"REGION_UNREACHABLE\" with partial results.\n\nOther operations that do not rely on .List will continue to work.\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Thursday, 2021-03-04 15:00 US/Pacific with current details.\n\nDiagnosis: Increased latency when listing Cloud SQL instances and/or a warning error \"REGION_UNREACHABLE\" with partial results.\n\nWorkaround: None at this time",
-      "when": "2021-03-04T21:38:09Z"
+      "created": "2021-03-04T23:01:27Z",
+      "modified": "2021-03-04T23:01:27Z",
+      "text": "Description: Mitigation work is currently underway by our engineering team. We are continuing to monitor to verify is this helps decrease latency.\n\nWe will provide more information by Thursday, 2021-03-04 16:30 US/Pacific.\n\nDiagnosis: Increased latency when listing Cloud SQL instances and/or a warning error \"REGION_UNREACHABLE\" with partial results.\n\nWorkaround: None at this time",
+      "when": "2021-03-04T23:01:27Z"
     },
     "number": 21005,
     "public": true,
@@ -17,6 +17,12 @@
     "service_name": "Google Cloud SQL",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2021-03-04T23:01:27Z",
+        "modified": "2021-03-04T23:01:27Z",
+        "text": "Description: Mitigation work is currently underway by our engineering team. We are continuing to monitor to verify is this helps decrease latency.\n\nWe will provide more information by Thursday, 2021-03-04 16:30 US/Pacific.\n\nDiagnosis: Increased latency when listing Cloud SQL instances and/or a warning error \"REGION_UNREACHABLE\" with partial results.\n\nWorkaround: None at this time",
+        "when": "2021-03-04T23:01:27Z"
+      },
       {
         "created": "2021-03-04T21:38:09Z",
         "modified": "2021-03-04T21:38:09Z",
