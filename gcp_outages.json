@@ -2,14 +2,14 @@
   {
     "begin": "2021-03-17T16:19:15Z",
     "created": "2021-03-17T16:23:50Z",
-    "end": null,
+    "end": "2021-03-17T18:16:28Z",
     "external_desc": "Increased latency and packet loss",
-    "modified": "2021-03-17T17:55:26Z",
+    "modified": "2021-03-17T18:16:28Z",
     "most-recent-update": {
-      "created": "2021-03-17T17:55:26Z",
-      "modified": "2021-03-17T17:55:26Z",
-      "text": "Description: We are experiencing an intermittent issue with Google Cloud Networking impacting traffic between regions and Google from/to the internet. The issue started occurring intermittently at 08:26 US/Pacific. The issue is impacting Google’s Backbone network and may impact various services when accessing them from a different region or from the internet. Impacted services include Cloud Services (Workspace, Firebase, GCP) as well as other Google properties.\n\nConnectivity within a zone should not be impacted.\n\nOur engineering team has implemented a mitigation and is now monitoring the effectiveness of the change.\n\nWe will provide an update by Wednesday, 2021-03-17 11:30 US/Pacific with current details.\n\n\nDiagnosis: Customers impacted by this issue may see high latency, packet loss, and service unavailable errors. The issue manifests itself intermittently and different regions and locations may experience the issue at different times.\n\nWorkaround: None at this time.",
-      "when": "2021-03-17T17:55:26Z"
+      "created": "2021-03-17T18:16:28Z",
+      "modified": "2021-03-17T18:16:28Z",
+      "text": "Our engineering team has implemented a mitigation and is now confident that the issue will not recur.\n\nImpact to Cloud Networking started improving starting at 10:45 US/Pacific with complete resolution for all users by 11:00 US/Pacific. We will publish an analysis of this incident once we have completed our internal investigation.\n\nWe thank you for your patience while we worked on resolving the issue.",
+      "when": "2021-03-17T18:16:28Z"
     },
     "number": 21006,
     "public": true,
@@ -17,6 +17,12 @@
     "service_name": "Google Cloud Networking",
     "severity": "high",
     "updates": [
+      {
+        "created": "2021-03-17T18:16:28Z",
+        "modified": "2021-03-17T18:16:28Z",
+        "text": "Our engineering team has implemented a mitigation and is now confident that the issue will not recur.\n\nImpact to Cloud Networking started improving starting at 10:45 US/Pacific with complete resolution for all users by 11:00 US/Pacific. We will publish an analysis of this incident once we have completed our internal investigation.\n\nWe thank you for your patience while we worked on resolving the issue.",
+        "when": "2021-03-17T18:16:28Z"
+      },
       {
         "created": "2021-03-17T17:55:26Z",
         "modified": "2021-03-17T17:55:26Z",
