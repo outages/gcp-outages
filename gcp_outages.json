@@ -1,15 +1,15 @@
 [
   {
-    "begin": "2021-03-17T16:19:15Z",
+    "begin": "2021-03-17T15:26:15Z",
     "created": "2021-03-17T16:23:50Z",
-    "end": "2021-03-17T18:16:28Z",
+    "end": "2021-03-17T18:00:28Z",
     "external_desc": "Increased latency and packet loss",
-    "modified": "2021-03-17T18:16:28Z",
+    "modified": "2021-03-17T21:26:06Z",
     "most-recent-update": {
-      "created": "2021-03-17T18:16:28Z",
-      "modified": "2021-03-17T18:16:28Z",
-      "text": "Our engineering team has implemented a mitigation and is now confident that the issue will not recur.\n\nImpact to Cloud Networking started improving starting at 10:45 US/Pacific with complete resolution for all users by 11:00 US/Pacific. We will publish an analysis of this incident once we have completed our internal investigation.\n\nWe thank you for your patience while we worked on resolving the issue.",
-      "when": "2021-03-17T18:16:28Z"
+      "created": "2021-03-17T21:25:16Z",
+      "modified": "2021-03-17T21:25:16Z",
+      "text": "Preliminary Incident Statement while full Incident Report is prepared. \r\n\r\n(All Times US/Pacific)  \r\nIncident Start: 2021-03-17 08:26   \r\nIncident End: 2021-03-17 11:00  \r\nDuration: 2 hours, 34 minutes;   \r\n\r\n\r\n### Affected:  \r\n\r\n- Services: Cloud Networking and Cloud Services that depend on Google's backbone network including: Firebase, GCP (Cloud Interconnect, Cloud Partner Interconnect, Cloud VPN, Cloud CDN, Cloud Load Balancers, App Engine, etc.)\r\n- Features: Network Connectivity  \r\n- Regions/Zones: Multi-region  \r\n\r\n  \r\n### Description:   \r\n\r\nGoogle Cloud Platform experienced a multi-region service disruption resulting in intermittent connectivity issues. The root cause was an invalid route that triggered a previously unknown defect in routers of a specific vendor in Google's backbone network causing some to reboot. We have mitigated the issue by isolating the origin of the invalid route and have observed networks stabilize.\r\n\r\n\r\n### Customer Impact:  \r\n\r\nGoogle Cloud Networking experienced increased latency, packet loss, and service unavailable errors for traffic between regions and from Google to external endpoints including on-premises environments and the internet. Connectivity within a zone was not impacted.   \r\n\r\n\r\n### Additional Details:    \r\n\r\nWe communicated during the disruption that Google Workspace was impacted, however upon further analysis, we have determined that the impact to Google Workspace was negligible. \r\n\r\nGoogle systems are built with a defense in depth strategy in mind. In this disruption, a diverse set of router vendors in our network helped reduce the length and severity of this issue. We will publish an analysis of this incident once we have completed our internal investigation.",
+      "when": "2021-03-17T21:25:16Z"
     },
     "number": 21006,
     "public": true,
@@ -17,6 +17,12 @@
     "service_name": "Google Cloud Networking",
     "severity": "high",
     "updates": [
+      {
+        "created": "2021-03-17T21:25:16Z",
+        "modified": "2021-03-17T21:25:16Z",
+        "text": "Preliminary Incident Statement while full Incident Report is prepared. \r\n\r\n(All Times US/Pacific)  \r\nIncident Start: 2021-03-17 08:26   \r\nIncident End: 2021-03-17 11:00  \r\nDuration: 2 hours, 34 minutes;   \r\n\r\n\r\n### Affected:  \r\n\r\n- Services: Cloud Networking and Cloud Services that depend on Google's backbone network including: Firebase, GCP (Cloud Interconnect, Cloud Partner Interconnect, Cloud VPN, Cloud CDN, Cloud Load Balancers, App Engine, etc.)\r\n- Features: Network Connectivity  \r\n- Regions/Zones: Multi-region  \r\n\r\n  \r\n### Description:   \r\n\r\nGoogle Cloud Platform experienced a multi-region service disruption resulting in intermittent connectivity issues. The root cause was an invalid route that triggered a previously unknown defect in routers of a specific vendor in Google's backbone network causing some to reboot. We have mitigated the issue by isolating the origin of the invalid route and have observed networks stabilize.\r\n\r\n\r\n### Customer Impact:  \r\n\r\nGoogle Cloud Networking experienced increased latency, packet loss, and service unavailable errors for traffic between regions and from Google to external endpoints including on-premises environments and the internet. Connectivity within a zone was not impacted.   \r\n\r\n\r\n### Additional Details:    \r\n\r\nWe communicated during the disruption that Google Workspace was impacted, however upon further analysis, we have determined that the impact to Google Workspace was negligible. \r\n\r\nGoogle systems are built with a defense in depth strategy in mind. In this disruption, a diverse set of router vendors in our network helped reduce the length and severity of this issue. We will publish an analysis of this incident once we have completed our internal investigation.",
+        "when": "2021-03-17T21:25:16Z"
+      },
       {
         "created": "2021-03-17T18:16:28Z",
         "modified": "2021-03-17T18:16:28Z",
