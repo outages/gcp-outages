@@ -2,14 +2,14 @@
   {
     "begin": "2021-03-24T22:50:34Z",
     "created": "2021-03-24T22:50:39Z",
-    "end": null,
+    "end": "2021-03-25T01:10:59Z",
     "external_desc": "Customers may experience increased failures when executing Cloud Tasks scheduler jobs in us-central1.",
-    "modified": "2021-03-25T00:23:59Z",
+    "modified": "2021-03-25T01:10:59Z",
     "most-recent-update": {
-      "created": "2021-03-25T00:23:59Z",
-      "modified": "2021-03-25T00:23:59Z",
-      "text": "Description: We are experiencing an intermittent issue affecting the execution of Cloud Tasks scheduler jobs in us-central1 beginning on Wednesday, 2021-03-24 13:40 US/Pacific.\n\nMitigation work currently underway by our engineering team.\n\nThe mitigation is expected to complete by Wednesday, 2021-03-24 18:15 US/Pacific.\n\nWe will provide more information by Wednesday, 2021-03-24 18:30 US/Pacific.\n\nDiagnosis: Customers impacted by this issue may see cloud scheduler jobs and App Engine Task Queues not being able to be executed.\n\nWorkaround: None at this time.",
-      "when": "2021-03-25T00:23:59Z"
+      "created": "2021-03-25T01:10:59Z",
+      "modified": "2021-03-25T01:10:59Z",
+      "text": "The issue affecting job execution for Cloud Tasks. Cloud Scheduler, Appengine Queue and AppEngine Cron should be resolved for all affected users as of Wednesday, 2021-03-24 17:40 US/Pacific.\n\nJobs impacted by this issue between 13:40 and 17:40 US/Pacific time will need to be manually retried. Jobs scheduled after 17:40 US/Pacific time should not be affected by this issue.\n\nWe thank you for your patience while we worked on resolving the issue.",
+      "when": "2021-03-25T01:10:59Z"
     },
     "number": 21001,
     "public": true,
@@ -17,6 +17,12 @@
     "service_name": "Google Cloud Tasks",
     "severity": "medium",
     "updates": [
+      {
+        "created": "2021-03-25T01:10:59Z",
+        "modified": "2021-03-25T01:10:59Z",
+        "text": "The issue affecting job execution for Cloud Tasks. Cloud Scheduler, Appengine Queue and AppEngine Cron should be resolved for all affected users as of Wednesday, 2021-03-24 17:40 US/Pacific.\n\nJobs impacted by this issue between 13:40 and 17:40 US/Pacific time will need to be manually retried. Jobs scheduled after 17:40 US/Pacific time should not be affected by this issue.\n\nWe thank you for your patience while we worked on resolving the issue.",
+        "when": "2021-03-25T01:10:59Z"
+      },
       {
         "created": "2021-03-25T00:23:59Z",
         "modified": "2021-03-25T00:23:59Z",
