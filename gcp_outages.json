@@ -43,12 +43,62 @@
     "uri": "incidents/HU4hHMTWVXLBpo8gJL21"
   },
   {
+    "id": "B7cMek751d8KtnSn9gdZ",
+    "number": "5169355527023825286",
+    "begin": "2021-05-20T13:10:13+00:00",
+    "created": "2021-05-20T13:41:00+00:00",
+    "end": "2021-05-20T14:40:23+00:00",
+    "modified": "2021-05-20T14:40:23+00:00",
+    "external_desc": "External HTTP Load Balancer and Cloud Armor configuration changes are being delayed",
+    "updates": [
+      {
+        "created": "2021-05-20T14:40:20+00:00",
+        "modified": "2021-05-20T14:40:22+00:00",
+        "when": "2021-05-20T14:40:20+00:00",
+        "text": "This incident with Cloud Networking was found to be a direct cause of another incident causing issues with multiple products.\nThat incident is tracked at: https://status.cloud.google.com/incidents/bhMb6ab2NNyBPFCaUhgV",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-05-20T13:56:35+00:00",
+        "modified": "2021-05-20T13:56:38+00:00",
+        "when": "2021-05-20T13:56:35+00:00",
+        "text": "Summary: External HTTP Load Balancer and Cloud Armor configuration changes are being delayed\n\nDescription: Mitigation work is currently underway by our engineering team.\n\nWe do not have an ETA for mitigation at this point.\n\nWe will provide more information by Thursday, 2021-05-20 07:30 US/Pacific.\n\nDiagnosis: External HTTP Load Balancer and Cloud Armor configuration changes are not going in effect timely.\n\nWorkaround: The configuration changes will eventually be propagated.",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-05-20T13:40:47+00:00",
+        "modified": "2021-05-20T13:41:00+00:00",
+        "when": "2021-05-20T13:40:47+00:00",
+        "text": "Summary: External HTTP Load Balancer configuration changes are being delayed\n\nDescription: We are experiencing an issue with External HTTP Load Balancing beginning at Thursday, 2021-05-20 06:01 US/Pacific.\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Thursday, 2021-05-20 07:00 US/Pacific with current details.\n\nWe apologize to all who are affected by the disruption.\n\nDiagnosis: HTTP Load Balancer configuration changes are not going in effect timely.\n\nWorkaround: The configuration changes will eventually be propagated.",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-05-20T14:40:20+00:00",
+      "modified": "2021-05-20T14:40:22+00:00",
+      "when": "2021-05-20T14:40:20+00:00",
+      "text": "This incident with Cloud Networking was found to be a direct cause of another incident causing issues with multiple products.\nThat incident is tracked at: https://status.cloud.google.com/incidents/bhMb6ab2NNyBPFCaUhgV",
+      "status": "AVAILABLE"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "VNJxzcH58QmTt5H6pnT6",
+    "service_name": "Google Cloud Networking",
+    "affected_products": [
+      {
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
+      }
+    ],
+    "uri": "incidents/B7cMek751d8KtnSn9gdZ"
+  },
+  {
     "id": "bhMb6ab2NNyBPFCaUhgV",
     "number": "8021841938161207797",
-    "begin": "2021-05-20T14:29:00+00:00",
+    "begin": "2021-05-20T12:28:00+00:00",
     "created": "2021-05-20T14:29:22+00:00",
-    "end": "2021-05-21T00:34:40+00:00",
-    "modified": "2021-05-21T19:36:46+00:00",
+    "end": "2021-05-20T22:33:40+00:00",
+    "modified": "2021-05-21T20:03:42+00:00",
     "external_desc": "Issue with multiple Google Cloud infrastructure components.",
     "updates": [
       {
@@ -238,56 +288,6 @@
       }
     ],
     "uri": "incidents/bhMb6ab2NNyBPFCaUhgV"
-  },
-  {
-    "id": "B7cMek751d8KtnSn9gdZ",
-    "number": "5169355527023825286",
-    "begin": "2021-05-20T13:10:13+00:00",
-    "created": "2021-05-20T13:41:00+00:00",
-    "end": "2021-05-20T14:40:23+00:00",
-    "modified": "2021-05-20T14:40:23+00:00",
-    "external_desc": "External HTTP Load Balancer and Cloud Armor configuration changes are being delayed",
-    "updates": [
-      {
-        "created": "2021-05-20T14:40:20+00:00",
-        "modified": "2021-05-20T14:40:22+00:00",
-        "when": "2021-05-20T14:40:20+00:00",
-        "text": "This incident with Cloud Networking was found to be a direct cause of another incident causing issues with multiple products.\nThat incident is tracked at: https://status.cloud.google.com/incidents/bhMb6ab2NNyBPFCaUhgV",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-05-20T13:56:35+00:00",
-        "modified": "2021-05-20T13:56:38+00:00",
-        "when": "2021-05-20T13:56:35+00:00",
-        "text": "Summary: External HTTP Load Balancer and Cloud Armor configuration changes are being delayed\n\nDescription: Mitigation work is currently underway by our engineering team.\n\nWe do not have an ETA for mitigation at this point.\n\nWe will provide more information by Thursday, 2021-05-20 07:30 US/Pacific.\n\nDiagnosis: External HTTP Load Balancer and Cloud Armor configuration changes are not going in effect timely.\n\nWorkaround: The configuration changes will eventually be propagated.",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-05-20T13:40:47+00:00",
-        "modified": "2021-05-20T13:41:00+00:00",
-        "when": "2021-05-20T13:40:47+00:00",
-        "text": "Summary: External HTTP Load Balancer configuration changes are being delayed\n\nDescription: We are experiencing an issue with External HTTP Load Balancing beginning at Thursday, 2021-05-20 06:01 US/Pacific.\n\nOur engineering team continues to investigate the issue.\n\nWe will provide an update by Thursday, 2021-05-20 07:00 US/Pacific with current details.\n\nWe apologize to all who are affected by the disruption.\n\nDiagnosis: HTTP Load Balancer configuration changes are not going in effect timely.\n\nWorkaround: The configuration changes will eventually be propagated.",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-05-20T14:40:20+00:00",
-      "modified": "2021-05-20T14:40:22+00:00",
-      "when": "2021-05-20T14:40:20+00:00",
-      "text": "This incident with Cloud Networking was found to be a direct cause of another incident causing issues with multiple products.\nThat incident is tracked at: https://status.cloud.google.com/incidents/bhMb6ab2NNyBPFCaUhgV",
-      "status": "AVAILABLE"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "VNJxzcH58QmTt5H6pnT6",
-    "service_name": "Google Cloud Networking",
-    "affected_products": [
-      {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
-      }
-    ],
-    "uri": "incidents/B7cMek751d8KtnSn9gdZ"
   },
   {
     "id": "sqeWSRmcrJZyE2zSrJ74",
