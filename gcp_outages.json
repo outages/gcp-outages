@@ -4,9 +4,16 @@
     "number": "10141672634385226653",
     "begin": "2021-06-11T10:34:18+00:00",
     "created": "2021-06-11T10:34:23+00:00",
-    "modified": "2021-06-11T13:35:40+00:00",
+    "modified": "2021-06-11T18:58:35+00:00",
     "external_desc": "Queries fail with RESOURCE_EXCEEDED",
     "updates": [
+      {
+        "created": "2021-06-11T18:58:35+00:00",
+        "modified": "2021-06-11T18:58:36+00:00",
+        "when": "2021-06-11T18:58:35+00:00",
+        "text": "Summary: Queries fail with RESOURCE_EXCEEDED\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2021-06-11 13:06 US/Pacific.\nDiagnosis: The users will see an error message similar to:\n```\n[RESOURCES_UNAVAILABLE], Reason: code=RESOURCES_UNAVAILABLE message=RESOURCES_EXCEEDED_WITH_CONTEXT: [The query could not be executed in the allotted memory. Peak usage: 101% of limit.\\nTop memory consumer(s):\\n query parsing and optimization: 12%\\n table/storage metadata: 6%\\n other/unattributed: 82%\\n]\n```\nWorkaround: Retrying the job may help but not necessarily immediately.",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-06-11T13:35:40+00:00",
         "modified": "2021-06-11T13:35:42+00:00",
@@ -37,10 +44,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-06-11T13:35:40+00:00",
-      "modified": "2021-06-11T13:35:42+00:00",
-      "when": "2021-06-11T13:35:40+00:00",
-      "text": "Summary: Queries fail with RESOURCE_EXCEEDED\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2021-06-11 12:06 US/Pacific.\nDiagnosis: The users will see an error message similar to:\n```\n[RESOURCES_UNAVAILABLE], Reason: code=RESOURCES_UNAVAILABLE message=RESOURCES_EXCEEDED_WITH_CONTEXT: [The query could not be executed in the allotted memory. Peak usage: 101% of limit.\\nTop memory consumer(s):\\n query parsing and optimization: 12%\\n table/storage metadata: 6%\\n other/unattributed: 82%\\n]\n```\nWorkaround: Retrying the job may help but not necessarily immediately.",
+      "created": "2021-06-11T18:58:35+00:00",
+      "modified": "2021-06-11T18:58:36+00:00",
+      "when": "2021-06-11T18:58:35+00:00",
+      "text": "Summary: Queries fail with RESOURCE_EXCEEDED\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2021-06-11 13:06 US/Pacific.\nDiagnosis: The users will see an error message similar to:\n```\n[RESOURCES_UNAVAILABLE], Reason: code=RESOURCES_UNAVAILABLE message=RESOURCES_EXCEEDED_WITH_CONTEXT: [The query could not be executed in the allotted memory. Peak usage: 101% of limit.\\nTop memory consumer(s):\\n query parsing and optimization: 12%\\n table/storage metadata: 6%\\n other/unattributed: 82%\\n]\n```\nWorkaround: Retrying the job may help but not necessarily immediately.",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
