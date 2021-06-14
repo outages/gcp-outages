@@ -4,9 +4,16 @@
     "number": "10141672634385226653",
     "begin": "2021-06-11T10:34:18+00:00",
     "created": "2021-06-11T10:34:23+00:00",
-    "modified": "2021-06-14T16:57:11+00:00",
+    "modified": "2021-06-14T23:03:32+00:00",
     "external_desc": "Queries fail with RESOURCE_EXCEEDED",
     "updates": [
+      {
+        "created": "2021-06-14T23:03:32+00:00",
+        "modified": "2021-06-14T23:03:32+00:00",
+        "when": "2021-06-14T23:03:32+00:00",
+        "text": "Summary: Some BigQuery queries fail with RESOURCE_EXCEEDED errors\nDescription: We believe the issue with Google BigQuery is partially resolved. We are evaluating the projects impacted by this issue and performing mitigation as needed. We do not have an ETA for full resolution at this point.\nWe will provide an update by Monday, 2021-06-14 21:00 US/Pacific with current details.\nDiagnosis: The users will see an error message similar to:\n```\n[RESOURCES_UNAVAILABLE], Reason: code=RESOURCES_UNAVAILABLE message=RESOURCES_EXCEEDED_WITH_CONTEXT: [The query could not be executed in the allotted memory. Peak usage: 101% of limit.\\nTop memory consumer(s):\\n query parsing and optimization: 12%\\n table/storage metadata: 6%\\n other/unattributed: 82%\\n]\n```\nWorkaround: No workarounds. Retries may eventually succeed as the issue seems to be intermittent",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-06-14T16:57:11+00:00",
         "modified": "2021-06-14T16:57:11+00:00",
@@ -93,10 +100,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-06-14T16:57:11+00:00",
-      "modified": "2021-06-14T16:57:11+00:00",
-      "when": "2021-06-14T16:57:11+00:00",
-      "text": "Summary: Some BigQuery queries fail with RESOURCE_EXCEEDED errors\nDescription: We believe the issue with Google BigQuery is partially resolved. However, mitigation work is still underway by our engineering team. We do not have an ETA for full resolution at this point.\nWe will provide an update by Monday, 2021-06-14 16:00 US/Pacific with current details.\nDiagnosis: The users will see an error message similar to:\n```\n[RESOURCES_UNAVAILABLE], Reason: code=RESOURCES_UNAVAILABLE message=RESOURCES_EXCEEDED_WITH_CONTEXT: [The query could not be executed in the allotted memory. Peak usage: 101% of limit.\\nTop memory consumer(s):\\n query parsing and optimization: 12%\\n table/storage metadata: 6%\\n other/unattributed: 82%\\n]\n```\nWorkaround: No workarounds. Retries may eventually succeed as the issue seems to be intermittent",
+      "created": "2021-06-14T23:03:32+00:00",
+      "modified": "2021-06-14T23:03:32+00:00",
+      "when": "2021-06-14T23:03:32+00:00",
+      "text": "Summary: Some BigQuery queries fail with RESOURCE_EXCEEDED errors\nDescription: We believe the issue with Google BigQuery is partially resolved. We are evaluating the projects impacted by this issue and performing mitigation as needed. We do not have an ETA for full resolution at this point.\nWe will provide an update by Monday, 2021-06-14 21:00 US/Pacific with current details.\nDiagnosis: The users will see an error message similar to:\n```\n[RESOURCES_UNAVAILABLE], Reason: code=RESOURCES_UNAVAILABLE message=RESOURCES_EXCEEDED_WITH_CONTEXT: [The query could not be executed in the allotted memory. Peak usage: 101% of limit.\\nTop memory consumer(s):\\n query parsing and optimization: 12%\\n table/storage metadata: 6%\\n other/unattributed: 82%\\n]\n```\nWorkaround: No workarounds. Retries may eventually succeed as the issue seems to be intermittent",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
