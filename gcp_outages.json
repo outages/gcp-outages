@@ -4,9 +4,16 @@
     "number": "11674600762170121866",
     "begin": "2021-06-21T13:47:59+00:00",
     "created": "2021-06-21T23:32:25+00:00",
-    "modified": "2021-06-22T01:22:40+00:00",
+    "modified": "2021-06-22T02:00:39+00:00",
     "external_desc": "Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.",
     "updates": [
+      {
+        "created": "2021-06-22T02:00:39+00:00",
+        "modified": "2021-06-22T02:00:39+00:00",
+        "when": "2021-06-22T02:00:39+00:00",
+        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: A partial mitigation has been identified by the engineering team and is currently underway. We do not have an ETA for the partial mitigation at this point.\nWe will provide more information by Monday, 2021-06-21 20:30 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-06-22T01:22:40+00:00",
         "modified": "2021-06-22T01:22:40+00:00",
@@ -23,10 +30,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-06-22T01:22:40+00:00",
-      "modified": "2021-06-22T01:22:40+00:00",
-      "when": "2021-06-22T01:22:40+00:00",
-      "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: A partial mitigation is identified by the engineering team and is currently underway. We do not have an ETA for the same at this point.\nWe will provide more information by Monday, 2021-06-21 20:00 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.",
+      "created": "2021-06-22T02:00:39+00:00",
+      "modified": "2021-06-22T02:00:39+00:00",
+      "when": "2021-06-22T02:00:39+00:00",
+      "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: A partial mitigation has been identified by the engineering team and is currently underway. We do not have an ETA for the partial mitigation at this point.\nWe will provide more information by Monday, 2021-06-21 20:30 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
