@@ -2,12 +2,19 @@
   {
     "id": "N6EJou2rCwoEt8nowd2o",
     "number": "10748825742161305679",
-    "begin": "2021-06-22T03:26:31+00:00",
+    "begin": "2021-06-21T19:21:00+00:00",
     "created": "2021-06-22T03:26:34+00:00",
-    "end": "2021-06-22T04:46:17+00:00",
-    "modified": "2021-06-22T04:46:17+00:00",
+    "end": "2021-06-22T04:55:00+00:00",
+    "modified": "2021-06-22T22:02:31+00:00",
     "external_desc": "We are experiencing an issue with Cloud Monitoring beginning at Monday, 2021-06-21 00:00 US/Pacific.",
     "updates": [
+      {
+        "created": "2021-06-22T22:02:10+00:00",
+        "modified": "2021-06-22T22:02:10+00:00",
+        "when": "2021-06-22T22:02:10+00:00",
+        "text": "**Incident Start:** 21 June 2021 12:01\n**Incident End:** 21 June 2021 21:55\n**Duration:** 9 hours, 54 minutes\n**Affected Services and Features:**\nGoogle Cloud Monitoring, Cloud EKM\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Monitoring experienced intermittent API errors with a gradually increasing error rate on a limited set of internal endpoints for 9 hours and 54 minutes. The Cloud Monitoring section in the Cloud Console experienced intermittent errors when loading pages due to the underlying API errors. This included the following pages; Monitoring Homepage, Dashboard Builder, GKE Dashboard, Metrics Explorer, Network Topology, Uptime Checks Service. Additionally, attempting to create the first Cloud EKM key [1] in a project would fail during this period. If a project already has (or at some point had) Cloud EKM keys, they can continue to create keys in those projects and use them. The root cause of the issue is suspected to be the rollout of a permission change which incorrectly restricted access to the underlying database which stores metadata information about the affected APIs.\n**Customer Impact:**\n- Cloud Console errors on up to 10% of the listed page loads or equivalent API’s.\n**Additional details:**\n- Workaround: Retrying failed requests with exponential backup returned successful results for some customers.\n- Workaround: Before attempting to create the first Cloud EKM key, running gcloud beta services identity create --service=cloudkms.googleapis.com --project $KEY_PROJECT_ID” prevented the failure.\n**Reference(s):**\n[1] https://cloud.google.com/service-usage/docs/reference/rest/v1beta1/services/generateServiceIdentity",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-06-22T04:46:17+00:00",
         "modified": "2021-06-22T04:46:17+00:00",
@@ -31,10 +38,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-06-22T04:46:17+00:00",
-      "modified": "2021-06-22T04:46:17+00:00",
-      "when": "2021-06-22T04:46:17+00:00",
-      "text": "The issue with Cloud Monitoring has been resolved for all affected projects as of Monday, 2021-06-21 21:46 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-06-22T22:02:10+00:00",
+      "modified": "2021-06-22T22:02:10+00:00",
+      "when": "2021-06-22T22:02:10+00:00",
+      "text": "**Incident Start:** 21 June 2021 12:01\n**Incident End:** 21 June 2021 21:55\n**Duration:** 9 hours, 54 minutes\n**Affected Services and Features:**\nGoogle Cloud Monitoring, Cloud EKM\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Monitoring experienced intermittent API errors with a gradually increasing error rate on a limited set of internal endpoints for 9 hours and 54 minutes. The Cloud Monitoring section in the Cloud Console experienced intermittent errors when loading pages due to the underlying API errors. This included the following pages; Monitoring Homepage, Dashboard Builder, GKE Dashboard, Metrics Explorer, Network Topology, Uptime Checks Service. Additionally, attempting to create the first Cloud EKM key [1] in a project would fail during this period. If a project already has (or at some point had) Cloud EKM keys, they can continue to create keys in those projects and use them. The root cause of the issue is suspected to be the rollout of a permission change which incorrectly restricted access to the underlying database which stores metadata information about the affected APIs.\n**Customer Impact:**\n- Cloud Console errors on up to 10% of the listed page loads or equivalent API’s.\n**Additional details:**\n- Workaround: Retrying failed requests with exponential backup returned successful results for some customers.\n- Workaround: Before attempting to create the first Cloud EKM key, running gcloud beta services identity create --service=cloudkms.googleapis.com --project $KEY_PROJECT_ID” prevented the failure.\n**Reference(s):**\n[1] https://cloud.google.com/service-usage/docs/reference/rest/v1beta1/services/generateServiceIdentity",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
@@ -54,9 +61,16 @@
     "number": "11674600762170121866",
     "begin": "2021-06-21T13:47:59+00:00",
     "created": "2021-06-21T23:32:25+00:00",
-    "modified": "2021-06-22T19:57:24+00:00",
+    "modified": "2021-06-22T21:57:25+00:00",
     "external_desc": "Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.",
     "updates": [
+      {
+        "created": "2021-06-22T21:57:25+00:00",
+        "modified": "2021-06-22T21:57:26+00:00",
+        "when": "2021-06-22T21:57:25+00:00",
+        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-{b,c}, us-east4-a. We are still working to mitigate impact in these three remaining zones, ETA by end of day 2021-06-22 US/Pacific hours.\nWe will provide more information by Tuesday, 2021-06-22 16:00 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-06-22T19:57:24+00:00",
         "modified": "2021-06-22T19:57:24+00:00",
@@ -150,10 +164,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-06-22T19:57:24+00:00",
-      "modified": "2021-06-22T19:57:24+00:00",
-      "when": "2021-06-22T19:57:24+00:00",
-      "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-{b,c}, us-east4-a. We are still working to mitigate impact in these three remaining zones, ETA by end of day 2021-06-22 US/Pacific hours.\nWe will provide more information by Tuesday, 2021-06-22 15:00 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
+      "created": "2021-06-22T21:57:25+00:00",
+      "modified": "2021-06-22T21:57:26+00:00",
+      "when": "2021-06-22T21:57:25+00:00",
+      "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-{b,c}, us-east4-a. We are still working to mitigate impact in these three remaining zones, ETA by end of day 2021-06-22 US/Pacific hours.\nWe will provide more information by Tuesday, 2021-06-22 16:00 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
