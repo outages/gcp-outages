@@ -54,9 +54,16 @@
     "number": "11674600762170121866",
     "begin": "2021-06-21T13:47:59+00:00",
     "created": "2021-06-21T23:32:25+00:00",
-    "modified": "2021-06-22T08:30:56+00:00",
+    "modified": "2021-06-22T09:30:21+00:00",
     "external_desc": "Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.",
     "updates": [
+      {
+        "created": "2021-06-22T09:30:21+00:00",
+        "modified": "2021-06-22T09:30:29+00:00",
+        "when": "2021-06-22T09:30:21+00:00",
+        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-b and us-east4-a. We are still working to mitigate impact in these two remaining zones.\nWe will provide more information by Tuesday, 2021-06-22 03:30 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-06-22T08:30:56+00:00",
         "modified": "2021-06-22T08:31:03+00:00",
@@ -101,10 +108,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-06-22T08:30:56+00:00",
-      "modified": "2021-06-22T08:31:03+00:00",
-      "when": "2021-06-22T08:30:56+00:00",
-      "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation should be working currently in us-east1-c and us-west1-c. We are working on mitigating impact in other affected zones.\nWe will provide more information by Tuesday, 2021-06-22 02:30 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
+      "created": "2021-06-22T09:30:21+00:00",
+      "modified": "2021-06-22T09:30:29+00:00",
+      "when": "2021-06-22T09:30:21+00:00",
+      "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-b and us-east4-a. We are still working to mitigate impact in these two remaining zones.\nWe will provide more information by Tuesday, 2021-06-22 03:30 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
