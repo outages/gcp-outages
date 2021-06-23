@@ -2,17 +2,17 @@
   {
     "id": "bqmX2EZrwgkPwZxutSk6",
     "number": "7467022363546712602",
-    "begin": "2021-06-23T03:14:33+00:00",
+    "begin": "2021-06-23T02:38:00+00:00",
     "created": "2021-06-23T03:45:31+00:00",
-    "end": "2021-06-23T04:53:55+00:00",
-    "modified": "2021-06-23T21:41:14+00:00",
+    "end": "2021-06-23T03:51:00+00:00",
+    "modified": "2021-06-23T21:41:47+00:00",
     "external_desc": "High latency and increased error rates in northamerica multi-region.",
     "updates": [
       {
         "created": "2021-06-23T21:40:42+00:00",
-        "modified": "2021-06-23T21:41:14+00:00",
+        "modified": "2021-06-23T21:41:47+00:00",
         "when": "2021-06-23T21:40:42+00:00",
-        "text": "**Incident Start:** 22 June 2021 19:38\n**Incident End:** 22 June 2021 20:51\n**Duration:** 1 hours, 13 minutes\n**Affected Services and Features:**\nGoogle Cloud Firestore\n**Regions/Zones:** nam5 multi-region\n**Description:**\nGoogle Cloud Firestore experienced elevated latency and error rates on up top 50% of projects in the nam5 multi-region for a duration of 1 hour and 13 minutes. The root cause of the issue was a traffic spike from an internal daily batch job which performs quota adjustments. This caused lock contention on the backend databases which, in conjunction with poor traffic distribution and misdirected traffic, ultimately overloaded the service.\n**Customer Impact:**\nAffected customers may see “Deadline Exceeded” errors and degraded performance.",
+        "text": "**Incident Start:** 22 June 2021 19:38\n**Incident End:** 22 June 2021 20:51\n**Duration:** 1 hours, 13 minutes\n**Affected Services and Features:**\nGoogle Cloud Firestore\n**Regions/Zones:** nam5 multi-region\n**Description:**\nGoogle Cloud Firestore experienced elevated latency and error rates on up top 50% of projects in the nam5 multi-region for a duration of 1 hour and 13 minutes. The root cause of the issue was a traffic spike from an internal daily batch job which performs quota adjustments. This caused lock contention on the backend databases which, in conjunction with poor traffic distribution and misdirected traffic, ultimately overloaded the service.\n**Customer Impact:**\n- Affected customers may see “Deadline Exceeded” errors and degraded performance.",
         "status": "AVAILABLE"
       },
       {
@@ -39,9 +39,9 @@
     ],
     "most_recent_update": {
       "created": "2021-06-23T21:40:42+00:00",
-      "modified": "2021-06-23T21:41:14+00:00",
+      "modified": "2021-06-23T21:41:47+00:00",
       "when": "2021-06-23T21:40:42+00:00",
-      "text": "**Incident Start:** 22 June 2021 19:38\n**Incident End:** 22 June 2021 20:51\n**Duration:** 1 hours, 13 minutes\n**Affected Services and Features:**\nGoogle Cloud Firestore\n**Regions/Zones:** nam5 multi-region\n**Description:**\nGoogle Cloud Firestore experienced elevated latency and error rates on up top 50% of projects in the nam5 multi-region for a duration of 1 hour and 13 minutes. The root cause of the issue was a traffic spike from an internal daily batch job which performs quota adjustments. This caused lock contention on the backend databases which, in conjunction with poor traffic distribution and misdirected traffic, ultimately overloaded the service.\n**Customer Impact:**\nAffected customers may see “Deadline Exceeded” errors and degraded performance.",
+      "text": "**Incident Start:** 22 June 2021 19:38\n**Incident End:** 22 June 2021 20:51\n**Duration:** 1 hours, 13 minutes\n**Affected Services and Features:**\nGoogle Cloud Firestore\n**Regions/Zones:** nam5 multi-region\n**Description:**\nGoogle Cloud Firestore experienced elevated latency and error rates on up top 50% of projects in the nam5 multi-region for a duration of 1 hour and 13 minutes. The root cause of the issue was a traffic spike from an internal daily batch job which performs quota adjustments. This caused lock contention on the backend databases which, in conjunction with poor traffic distribution and misdirected traffic, ultimately overloaded the service.\n**Customer Impact:**\n- Affected customers may see “Deadline Exceeded” errors and degraded performance.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
