@@ -116,12 +116,19 @@
   {
     "id": "YtfZu9rttTf5zDYGe57n",
     "number": "11674600762170121866",
-    "begin": "2021-06-21T13:47:59+00:00",
+    "begin": "2021-06-20T06:00:00+00:00",
     "created": "2021-06-21T23:32:25+00:00",
-    "end": "2021-06-24T00:06:44+00:00",
-    "modified": "2021-06-24T00:06:44+00:00",
+    "end": "2021-06-23T16:06:00+00:00",
+    "modified": "2021-06-24T18:16:34+00:00",
     "external_desc": "Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc, and Apigee X in those same regions",
     "updates": [
+      {
+        "created": "2021-06-24T18:10:58+00:00",
+        "modified": "2021-06-24T18:16:34+00:00",
+        "when": "2021-06-24T18:10:58+00:00",
+        "text": "(All Times US/Pacific)\n**Incident Start:** 19 June 2021 23:00\n**Incident End:** 23 June 2021 09:06\n**Duration:** 3 days, 10 hours, 6 minutes\n**Affected Services and Features:**\n* Google Compute Engine (GCE) - New Virtual Machine (VM) creations using PD SSD.\n* Google Kubernetes Engine (GKE) - New cluster creations, node pools creation, scaling GKE node pools\n* Cloud Composer - Composer environment creations\n* Cloud SQL - Cluster creations\n* Dataproc - Cluster creations\n* Dataflow - Job creations\n* Cloud Build - Builds using custom size VMs or workerpools\n* Persistent Disk (PD) - New PD-SSD device creation\n**Regions/Zones:** us-east1-{a,b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a\n**Description:**\nMultiple Google Cloud services experienced intermittent problems with creating new Persistent Disk Solid-State Drive (PD-SSD) devices. This issue impacted creation of resources that depend on PD-SSD. The root cause of the issue was an unexpected increase in utilization of PD-SSD, which led to unavailability of SSD capacity for some users in the impacted zones.\n**Customer Impact:**\n* Google Compute Engine (GCE) : * Issues with new VM creations as boot disk creations failed. * Auto-scaling of VMs was impacted due to failure with new VM creations. * Intermittent reduction in write throughput. * Issues with expanding SSD-backed device sizes.\n* Cloud Composer: * Failed Cloud Composer environment creations.\n* Cloud SQL: * Intermittent create operation failures. * PD-SSD disk size increases failures.\n* Cloud Build: * Cloud Builds using custom size VMs or using workerpools experienced failures.\n* Google Kubernetes Engine: * Intermittent issues with cluster creation. * Intermittent issues with creation and scaling of node pools with PD-SSD nodes.\n* Dataproc/Dataflow: * Dataproc cluster creation and Dataflow jobs may have failed due to underlying errors regarding disk creation failures.\n**Additional details:**\nTo prevent unexpected spike in utilization from impacting PD-SSD capacity availability, the following actions and safety measures were implemented:\n* Engineering team has identified and throttled the source of the unexpected spike in PD-SSD utilization.\n* Additional SSD capacity added for higher tolerance to spikes in utilization.\n* Increased rebalancing to make additional SSD capacity available.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-06-24T00:06:43+00:00",
         "modified": "2021-06-24T00:06:44+00:00",
@@ -292,10 +299,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-06-24T00:06:43+00:00",
-      "modified": "2021-06-24T00:06:44+00:00",
-      "when": "2021-06-24T00:06:43+00:00",
-      "text": "This issue has been fully mitigated by our product team. For any ongoing issues, please open a Support case for further troubleshooting.",
+      "created": "2021-06-24T18:10:58+00:00",
+      "modified": "2021-06-24T18:16:34+00:00",
+      "when": "2021-06-24T18:10:58+00:00",
+      "text": "(All Times US/Pacific)\n**Incident Start:** 19 June 2021 23:00\n**Incident End:** 23 June 2021 09:06\n**Duration:** 3 days, 10 hours, 6 minutes\n**Affected Services and Features:**\n* Google Compute Engine (GCE) - New Virtual Machine (VM) creations using PD SSD.\n* Google Kubernetes Engine (GKE) - New cluster creations, node pools creation, scaling GKE node pools\n* Cloud Composer - Composer environment creations\n* Cloud SQL - Cluster creations\n* Dataproc - Cluster creations\n* Dataflow - Job creations\n* Cloud Build - Builds using custom size VMs or workerpools\n* Persistent Disk (PD) - New PD-SSD device creation\n**Regions/Zones:** us-east1-{a,b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a\n**Description:**\nMultiple Google Cloud services experienced intermittent problems with creating new Persistent Disk Solid-State Drive (PD-SSD) devices. This issue impacted creation of resources that depend on PD-SSD. The root cause of the issue was an unexpected increase in utilization of PD-SSD, which led to unavailability of SSD capacity for some users in the impacted zones.\n**Customer Impact:**\n* Google Compute Engine (GCE) : * Issues with new VM creations as boot disk creations failed. * Auto-scaling of VMs was impacted due to failure with new VM creations. * Intermittent reduction in write throughput. * Issues with expanding SSD-backed device sizes.\n* Cloud Composer: * Failed Cloud Composer environment creations.\n* Cloud SQL: * Intermittent create operation failures. * PD-SSD disk size increases failures.\n* Cloud Build: * Cloud Builds using custom size VMs or using workerpools experienced failures.\n* Google Kubernetes Engine: * Intermittent issues with cluster creation. * Intermittent issues with creation and scaling of node pools with PD-SSD nodes.\n* Dataproc/Dataflow: * Dataproc cluster creation and Dataflow jobs may have failed due to underlying errors regarding disk creation failures.\n**Additional details:**\nTo prevent unexpected spike in utilization from impacting PD-SSD capacity availability, the following actions and safety measures were implemented:\n* Engineering team has identified and throttled the source of the unexpected spike in PD-SSD utilization.\n* Additional SSD capacity added for higher tolerance to spikes in utilization.\n* Increased rebalancing to make additional SSD capacity available.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
