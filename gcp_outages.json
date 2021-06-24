@@ -118,9 +118,17 @@
     "number": "11674600762170121866",
     "begin": "2021-06-21T13:47:59+00:00",
     "created": "2021-06-21T23:32:25+00:00",
-    "modified": "2021-06-23T17:18:44+00:00",
-    "external_desc": "Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.",
+    "end": "2021-06-24T00:06:44+00:00",
+    "modified": "2021-06-24T00:06:44+00:00",
+    "external_desc": "Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc, and Apigee X in those same regions",
     "updates": [
+      {
+        "created": "2021-06-24T00:06:43+00:00",
+        "modified": "2021-06-24T00:06:44+00:00",
+        "when": "2021-06-24T00:06:43+00:00",
+        "text": "This issue has been fully mitigated by our product team. For any ongoing issues, please open a Support case for further troubleshooting.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-06-23T17:18:44+00:00",
         "modified": "2021-06-23T17:18:45+00:00",
@@ -284,11 +292,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-06-23T17:18:44+00:00",
-      "modified": "2021-06-23T17:18:45+00:00",
-      "when": "2021-06-23T17:18:44+00:00",
-      "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc, and Apigee X in those same regions\nDescription: The issue with creating SSD PDs is now mitigated in all affected zones for all affected customers.\nWe are currently monitoring the environment performance and will provide a final status update by Wednesday, 2021-06-23 17:00 US/Pacific.\nDiagnosis: Affected users might be unable to create new VMs in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Compute Engine, such as Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc and Apigee X in those regions.\nWorkaround: Customers may attempt to create resources in unaffected zones or regions.",
-      "status": "SERVICE_DISRUPTION"
+      "created": "2021-06-24T00:06:43+00:00",
+      "modified": "2021-06-24T00:06:44+00:00",
+      "when": "2021-06-24T00:06:43+00:00",
+      "text": "This issue has been fully mitigated by our product team. For any ongoing issues, please open a Support case for further troubleshooting.",
+      "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
