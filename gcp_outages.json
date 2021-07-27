@@ -2,11 +2,26 @@
   {
     "id": "eJ8bnwiB1kQXo8fet4Zg",
     "number": "2129730558922264261",
-    "begin": "2021-07-27T15:29:31+00:00",
+    "begin": "2021-07-27T15:29:00+00:00",
     "created": "2021-07-27T15:29:36+00:00",
-    "modified": "2021-07-27T15:29:36+00:00",
-    "external_desc": "Some Cloud Scheduler Pub/Sub jobs fail with permission denied",
+    "end": "2021-07-27T16:00:00+00:00",
+    "modified": "2021-07-27T16:06:29+00:00",
+    "external_desc": "Global: Cloud Scheduler Pub/Sub jobs fail with permission denied",
     "updates": [
+      {
+        "created": "2021-07-27T16:00:01+00:00",
+        "modified": "2021-07-27T16:05:13+00:00",
+        "when": "2021-07-27T16:00:01+00:00",
+        "text": "The issue with Cloud Scheduler has been resolved for some projects as of Tuesday, 2021-07-27 08:59 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-07-27T15:56:01+00:00",
+        "modified": "2021-07-27T15:56:07+00:00",
+        "when": "2021-07-27T15:56:01+00:00",
+        "text": "Summary: Global: Cloud Scheduler Pub/Sub jobs fail with permission denied\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Tuesday, 2021-07-27 09:37 US/Pacific.\nDiagnosis: Receiving Cloud Scheduler PERMISSION_DENIED\nWorkaround: Add publisher role to Cloud Scheduler service account. The service account has the form service-PROJECT_NUMBER@gcp-sa-cloudscheduler.iam.gserviceaccount.com",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-07-27T15:29:34+00:00",
         "modified": "2021-07-27T15:29:37+00:00",
@@ -16,11 +31,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-07-27T15:29:34+00:00",
-      "modified": "2021-07-27T15:29:37+00:00",
-      "when": "2021-07-27T15:29:34+00:00",
-      "text": "Summary: Some Cloud Scheduler Pub/Sub jobs fail with permission denied\nDescription: We are experiencing an issue with Cloud Scheduler\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2021-07-27 09:00 US/Pacific with current details.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
-      "status": "SERVICE_DISRUPTION"
+      "created": "2021-07-27T16:00:01+00:00",
+      "modified": "2021-07-27T16:05:13+00:00",
+      "when": "2021-07-27T16:00:01+00:00",
+      "text": "The issue with Cloud Scheduler has been resolved for some projects as of Tuesday, 2021-07-27 08:59 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
