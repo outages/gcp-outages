@@ -53,9 +53,16 @@
     "number": "13858523345881857527",
     "begin": "2021-07-27T17:35:27+00:00",
     "created": "2021-07-27T18:00:25+00:00",
-    "modified": "2021-07-27T19:37:37+00:00",
+    "modified": "2021-07-27T20:26:21+00:00",
     "external_desc": "GCS is returning stale version of object for bucket in us-central1",
     "updates": [
+      {
+        "created": "2021-07-27T20:26:21+00:00",
+        "modified": "2021-07-27T20:26:25+00:00",
+        "when": "2021-07-27T20:26:21+00:00",
+        "text": "Summary: us-central1: GCS is returning stale version of object for bucket\nDescription: Our engineering team is currently investigating the issue.\nThis issue affects get object requests that hit the us-central1 region and us multi region buckets.\nWe will provide an update by Tuesday, 2021-07-27 15:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: GCS is intermittently serving older deleted versions of objects, or not serving 404 for deleted objects.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-07-27T19:37:37+00:00",
         "modified": "2021-07-27T19:37:37+00:00",
@@ -79,10 +86,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-07-27T19:37:37+00:00",
-      "modified": "2021-07-27T19:37:37+00:00",
-      "when": "2021-07-27T19:37:37+00:00",
-      "text": "Summary: us-central1: GCS is returning stale version of object for bucket\nDescription: Our engineering team is currently investigating the issue.\nThis issue affects get object requests that hit the us-central1 region and us multi region buckets.\nWe will provide an update by Tuesday, 2021-07-27 13:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: GCS is intermittently serving older deleted versions of objects, or not serving 404 for deleted objects.\nWorkaround: None at this time.",
+      "created": "2021-07-27T20:26:21+00:00",
+      "modified": "2021-07-27T20:26:25+00:00",
+      "when": "2021-07-27T20:26:21+00:00",
+      "text": "Summary: us-central1: GCS is returning stale version of object for bucket\nDescription: Our engineering team is currently investigating the issue.\nThis issue affects get object requests that hit the us-central1 region and us multi region buckets.\nWe will provide an update by Tuesday, 2021-07-27 15:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: GCS is intermittently serving older deleted versions of objects, or not serving 404 for deleted objects.\nWorkaround: None at this time.",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
