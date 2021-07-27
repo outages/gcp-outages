@@ -68,9 +68,16 @@
     "number": "13858523345881857527",
     "begin": "2021-07-27T17:35:27+00:00",
     "created": "2021-07-27T18:00:25+00:00",
-    "modified": "2021-07-27T20:26:21+00:00",
+    "modified": "2021-07-27T22:07:26+00:00",
     "external_desc": "GCS is returning stale version of object for bucket in us-central1",
     "updates": [
+      {
+        "created": "2021-07-27T22:07:26+00:00",
+        "modified": "2021-07-27T22:07:31+00:00",
+        "when": "2021-07-27T22:07:26+00:00",
+        "text": "Summary: us-central1: GCS is returning stale version of object for bucket\nDescription: We believe the issue with Google Cloud Storage is partially resolved.\nWe do not have an ETA for full resolution at this point.\nWe will provide an update by Tuesday, 2021-07-27 15:56 US/Pacific with current details.\nDiagnosis: GCS is intermittently serving older deleted versions of objects, or not serving 404 for deleted objects.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-07-27T20:26:21+00:00",
         "modified": "2021-07-27T20:26:25+00:00",
@@ -101,10 +108,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-07-27T20:26:21+00:00",
-      "modified": "2021-07-27T20:26:25+00:00",
-      "when": "2021-07-27T20:26:21+00:00",
-      "text": "Summary: us-central1: GCS is returning stale version of object for bucket\nDescription: Our engineering team is currently investigating the issue.\nThis issue affects get object requests that hit the us-central1 region and us multi region buckets.\nWe will provide an update by Tuesday, 2021-07-27 15:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: GCS is intermittently serving older deleted versions of objects, or not serving 404 for deleted objects.\nWorkaround: None at this time.",
+      "created": "2021-07-27T22:07:26+00:00",
+      "modified": "2021-07-27T22:07:31+00:00",
+      "when": "2021-07-27T22:07:26+00:00",
+      "text": "Summary: us-central1: GCS is returning stale version of object for bucket\nDescription: We believe the issue with Google Cloud Storage is partially resolved.\nWe do not have an ETA for full resolution at this point.\nWe will provide an update by Tuesday, 2021-07-27 15:56 US/Pacific with current details.\nDiagnosis: GCS is intermittently serving older deleted versions of objects, or not serving 404 for deleted objects.\nWorkaround: None at this time.",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
@@ -124,9 +131,16 @@
     "number": "8304108178110052490",
     "begin": "2021-07-27T16:10:35+00:00",
     "created": "2021-07-27T16:10:36+00:00",
-    "modified": "2021-07-27T20:20:24+00:00",
+    "modified": "2021-07-27T22:23:54+00:00",
     "external_desc": "Global: Cloud Scheduler Pub/Sub jobs fail with permission denied",
     "updates": [
+      {
+        "created": "2021-07-27T22:23:54+00:00",
+        "modified": "2021-07-27T22:23:55+00:00",
+        "when": "2021-07-27T22:23:54+00:00",
+        "text": "Summary: Global: Cloud Scheduler Pub/Sub jobs fail with permission denied\nDescription: We believe the issue with Cloud Scheduler is partially resolved.\nWe do not have an ETA for full resolution at this point.\nWe will provide an update by Tuesday, 2021-07-27 16:01 US/Pacific with current details.\nDiagnosis: Receiving Cloud Scheduler PERMISSION_DENIED\nWorkaround: Add the permission pubsub.topics.publish to Cloud Scheduler service account (service-PROJECT_NUMBER@gcp-sa-cloudscheduler.iam.gserviceaccount.com).",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-07-27T20:20:24+00:00",
         "modified": "2021-07-27T20:20:24+00:00",
@@ -157,10 +171,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-07-27T20:20:24+00:00",
-      "modified": "2021-07-27T20:20:24+00:00",
-      "when": "2021-07-27T20:20:24+00:00",
-      "text": "Summary: Global: Cloud Scheduler Pub/Sub jobs fail with permission denied\nDescription: We believe the issue with Cloud Scheduler is partially resolved and there is no further impact observed.\nAction:\n- Customers should utilize the Cloud Services Robot account for authentication.\nWe will provide an update by Tuesday, 2021-07-27 15:30 US/Pacific with current details.\nDiagnosis: Receiving Cloud Scheduler PERMISSION_DENIED\nWorkaround: Add the permission pubsub.topics.publish to Cloud Scheduler service account (service-PROJECT_NUMBER@gcp-sa-cloudscheduler.iam.gserviceaccount.com).",
+      "created": "2021-07-27T22:23:54+00:00",
+      "modified": "2021-07-27T22:23:55+00:00",
+      "when": "2021-07-27T22:23:54+00:00",
+      "text": "Summary: Global: Cloud Scheduler Pub/Sub jobs fail with permission denied\nDescription: We believe the issue with Cloud Scheduler is partially resolved.\nWe do not have an ETA for full resolution at this point.\nWe will provide an update by Tuesday, 2021-07-27 16:01 US/Pacific with current details.\nDiagnosis: Receiving Cloud Scheduler PERMISSION_DENIED\nWorkaround: Add the permission pubsub.topics.publish to Cloud Scheduler service account (service-PROJECT_NUMBER@gcp-sa-cloudscheduler.iam.gserviceaccount.com).",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
