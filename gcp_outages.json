@@ -76,9 +76,16 @@
     "begin": "2021-07-27T16:10:35+00:00",
     "created": "2021-07-27T16:10:36+00:00",
     "end": "2021-07-27T22:46:11+00:00",
-    "modified": "2021-07-27T22:46:11+00:00",
+    "modified": "2021-07-28T20:32:51+00:00",
     "external_desc": "Global: Cloud Scheduler Pub/Sub jobs fail with permission denied",
     "updates": [
+      {
+        "created": "2021-07-28T20:32:51+00:00",
+        "modified": "2021-07-28T20:32:51+00:00",
+        "when": "2021-07-28T20:32:51+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 21 July 2021 19:22\n**Incident End:** 27 July 2021 15:28\n**Duration:** 5 days, 20 hours, 6 minutes\n**Affected Services and Features:**\nGoogle Cloud Scheduler Pub/Sub\n**Regions/Zones:** All Regions\n**Description:**\nGoogle Cloud Scheduler jobs experienced increased errors globally when publishing messages to Pub/Sub topics for a duration of 5 days, 20 hours, 6 minutes. From preliminary analysis, the root cause of the issue is due to a configuration change that updated the service agent used when publishing to Pub/Sub. Projects using the new service agent without the correct permissions resulted in PERMISSION_DENIED errors for tasks that required publishing to Pub/Sub.\n**Customer Impact:**\nAll customers with Cloud Scheduler jobs with a Pub/Sub topic as a target that did not grant the Cloud Scheduler Google-managed service account access to that Pub/Sub topic saw PERMISSION_DENIED errors.\n**Additional details:**\nThe issue was fully resolved on 27 July 2021 at 15:28 US/Pacific after a rollback of the change was completed.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-07-27T22:46:11+00:00",
         "modified": "2021-07-27T22:46:11+00:00",
@@ -123,10 +130,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-07-27T22:46:11+00:00",
-      "modified": "2021-07-27T22:46:11+00:00",
-      "when": "2021-07-27T22:46:11+00:00",
-      "text": "The issue with Cloud Scheduler has been resolved for all affected projects as of Tuesday, 2021-07-27 15:43 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-07-28T20:32:51+00:00",
+      "modified": "2021-07-28T20:32:51+00:00",
+      "when": "2021-07-28T20:32:51+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 21 July 2021 19:22\n**Incident End:** 27 July 2021 15:28\n**Duration:** 5 days, 20 hours, 6 minutes\n**Affected Services and Features:**\nGoogle Cloud Scheduler Pub/Sub\n**Regions/Zones:** All Regions\n**Description:**\nGoogle Cloud Scheduler jobs experienced increased errors globally when publishing messages to Pub/Sub topics for a duration of 5 days, 20 hours, 6 minutes. From preliminary analysis, the root cause of the issue is due to a configuration change that updated the service agent used when publishing to Pub/Sub. Projects using the new service agent without the correct permissions resulted in PERMISSION_DENIED errors for tasks that required publishing to Pub/Sub.\n**Customer Impact:**\nAll customers with Cloud Scheduler jobs with a Pub/Sub topic as a target that did not grant the Cloud Scheduler Google-managed service account access to that Pub/Sub topic saw PERMISSION_DENIED errors.\n**Additional details:**\nThe issue was fully resolved on 27 July 2021 at 15:28 US/Pacific after a rollback of the change was completed.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
