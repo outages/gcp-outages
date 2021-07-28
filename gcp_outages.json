@@ -71,84 +71,6 @@
     "uri": "incidents/MfiGCW4E26MPGRnCJ8by"
   },
   {
-    "id": "fEXXEicMtx5SaVZz2Gt7",
-    "number": "8304108178110052490",
-    "begin": "2021-07-27T16:10:35+00:00",
-    "created": "2021-07-27T16:10:36+00:00",
-    "end": "2021-07-27T22:46:11+00:00",
-    "modified": "2021-07-28T20:32:51+00:00",
-    "external_desc": "Global: Cloud Scheduler Pub/Sub jobs fail with permission denied",
-    "updates": [
-      {
-        "created": "2021-07-28T20:32:51+00:00",
-        "modified": "2021-07-28T20:32:51+00:00",
-        "when": "2021-07-28T20:32:51+00:00",
-        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 21 July 2021 19:22\n**Incident End:** 27 July 2021 15:28\n**Duration:** 5 days, 20 hours, 6 minutes\n**Affected Services and Features:**\nGoogle Cloud Scheduler Pub/Sub\n**Regions/Zones:** All Regions\n**Description:**\nGoogle Cloud Scheduler jobs experienced increased errors globally when publishing messages to Pub/Sub topics for a duration of 5 days, 20 hours, 6 minutes. From preliminary analysis, the root cause of the issue is due to a configuration change that updated the service agent used when publishing to Pub/Sub. Projects using the new service agent without the correct permissions resulted in PERMISSION_DENIED errors for tasks that required publishing to Pub/Sub.\n**Customer Impact:**\nAll customers with Cloud Scheduler jobs with a Pub/Sub topic as a target that did not grant the Cloud Scheduler Google-managed service account access to that Pub/Sub topic saw PERMISSION_DENIED errors.\n**Additional details:**\nThe issue was fully resolved on 27 July 2021 at 15:28 US/Pacific after a rollback of the change was completed.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-07-27T22:46:11+00:00",
-        "modified": "2021-07-27T22:46:11+00:00",
-        "when": "2021-07-27T22:46:11+00:00",
-        "text": "The issue with Cloud Scheduler has been resolved for all affected projects as of Tuesday, 2021-07-27 15:43 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-07-27T22:23:54+00:00",
-        "modified": "2021-07-27T22:23:55+00:00",
-        "when": "2021-07-27T22:23:54+00:00",
-        "text": "Summary: Global: Cloud Scheduler Pub/Sub jobs fail with permission denied\nDescription: We believe the issue with Cloud Scheduler is partially resolved.\nWe do not have an ETA for full resolution at this point.\nWe will provide an update by Tuesday, 2021-07-27 16:01 US/Pacific with current details.\nDiagnosis: Receiving Cloud Scheduler PERMISSION_DENIED\nWorkaround: Add the permission pubsub.topics.publish to Cloud Scheduler service account (service-PROJECT_NUMBER@gcp-sa-cloudscheduler.iam.gserviceaccount.com).",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-07-27T20:20:24+00:00",
-        "modified": "2021-07-27T20:20:24+00:00",
-        "when": "2021-07-27T20:20:24+00:00",
-        "text": "Summary: Global: Cloud Scheduler Pub/Sub jobs fail with permission denied\nDescription: We believe the issue with Cloud Scheduler is partially resolved and there is no further impact observed.\nAction:\n- Customers should utilize the Cloud Services Robot account for authentication.\nWe will provide an update by Tuesday, 2021-07-27 15:30 US/Pacific with current details.\nDiagnosis: Receiving Cloud Scheduler PERMISSION_DENIED\nWorkaround: Add the permission pubsub.topics.publish to Cloud Scheduler service account (service-PROJECT_NUMBER@gcp-sa-cloudscheduler.iam.gserviceaccount.com).",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-07-27T19:28:06+00:00",
-        "modified": "2021-07-27T19:28:06+00:00",
-        "when": "2021-07-27T19:28:06+00:00",
-        "text": "Summary: Global: Cloud Scheduler Pub/Sub jobs fail with permission denied\nDescription: We believe the issue with Cloud Scheduler is partially resolved and there is no further impact observed.\nAction:\n- Customers should utilize the Cloud Services Robot account for authentication.\nWe will provide an update by Tuesday, 2021-07-27 13:30 US/Pacific with current details.\nDiagnosis: Receiving Cloud Scheduler PERMISSION_DENIED\nWorkaround: Add the permission pubsub.topics.publish to Cloud Scheduler service account (service-PROJECT_NUMBER@gcp-sa-cloudscheduler.iam.gserviceaccount.com).",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-07-27T18:03:31+00:00",
-        "modified": "2021-07-27T18:03:31+00:00",
-        "when": "2021-07-27T18:03:31+00:00",
-        "text": "Summary: Global: Cloud Scheduler Pub/Sub jobs fail with permission denied\nDescription: Mitigation work is still underway by our engineering team.\nThe rollback activity is currently 50% complete and ongoing.\nWe will provide more information by Tuesday, 2021-07-27 13:00 US/Pacific.\nDiagnosis: Receiving Cloud Scheduler PERMISSION_DENIED\nWorkaround: Add publisher role to Cloud Scheduler service account. The service account has the form service-PROJECT_NUMBER@gcp-sa-cloudscheduler.iam.gserviceaccount.com",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-07-27T16:10:35+00:00",
-        "modified": "2021-07-27T16:10:37+00:00",
-        "when": "2021-07-27T16:10:35+00:00",
-        "text": "Summary: Global: Cloud Scheduler Pub/Sub jobs fail with permission denied\nDescription: This is a continuation of the previous post for incident \"Global: Cloud Scheduler Pub/Sub jobs fail with permission denied\" that was closed as resolved.\nWe have received updates from our engineering team that the Mitigation work is still underway for some regions and are currently waiting for an ETA.\nWe will provide more information by Tuesday, 2021-07-27 11:00 US/Pacific.\nDiagnosis: Receiving Cloud Scheduler PERMISSION_DENIED\nWorkaround: Add publisher role to Cloud Scheduler service account. The service account has the form service-PROJECT_NUMBER@gcp-sa-cloudscheduler.iam.gserviceaccount.com",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-07-28T20:32:51+00:00",
-      "modified": "2021-07-28T20:32:51+00:00",
-      "when": "2021-07-28T20:32:51+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 21 July 2021 19:22\n**Incident End:** 27 July 2021 15:28\n**Duration:** 5 days, 20 hours, 6 minutes\n**Affected Services and Features:**\nGoogle Cloud Scheduler Pub/Sub\n**Regions/Zones:** All Regions\n**Description:**\nGoogle Cloud Scheduler jobs experienced increased errors globally when publishing messages to Pub/Sub topics for a duration of 5 days, 20 hours, 6 minutes. From preliminary analysis, the root cause of the issue is due to a configuration change that updated the service agent used when publishing to Pub/Sub. Projects using the new service agent without the correct permissions resulted in PERMISSION_DENIED errors for tasks that required publishing to Pub/Sub.\n**Customer Impact:**\nAll customers with Cloud Scheduler jobs with a Pub/Sub topic as a target that did not grant the Cloud Scheduler Google-managed service account access to that Pub/Sub topic saw PERMISSION_DENIED errors.\n**Additional details:**\nThe issue was fully resolved on 27 July 2021 at 15:28 US/Pacific after a rollback of the change was completed.",
-      "status": "AVAILABLE"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "Y9fKAQ6BVTQUYomrNN9A",
-    "service_name": "Google Cloud Scheduler",
-    "affected_products": [
-      {
-        "title": "Google Cloud Scheduler",
-        "id": "Y9fKAQ6BVTQUYomrNN9A"
-      }
-    ],
-    "uri": "incidents/fEXXEicMtx5SaVZz2Gt7"
-  },
-  {
     "id": "txaxJMs7eNMV5cHwgfRP",
     "number": "1839278878480132730",
     "begin": "2021-07-27T16:02:00+00:00",
@@ -225,9 +147,16 @@
     "begin": "2021-07-27T15:29:00+00:00",
     "created": "2021-07-27T15:29:36+00:00",
     "end": "2021-07-27T16:00:00+00:00",
-    "modified": "2021-07-27T16:06:29+00:00",
+    "modified": "2021-07-28T20:45:04+00:00",
     "external_desc": "Global: Cloud Scheduler Pub/Sub jobs fail with permission denied",
     "updates": [
+      {
+        "created": "2021-07-28T20:45:04+00:00",
+        "modified": "2021-07-28T20:45:04+00:00",
+        "when": "2021-07-28T20:45:04+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident here: https://status.cloud.google.com/incidents/fEXXEicMtx5SaVZz2Gt7.\nPlease note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-07-27T16:00:01+00:00",
         "modified": "2021-07-27T16:05:13+00:00",
@@ -251,10 +180,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-07-27T16:00:01+00:00",
-      "modified": "2021-07-27T16:05:13+00:00",
-      "when": "2021-07-27T16:00:01+00:00",
-      "text": "The issue with Cloud Scheduler has been resolved for some projects as of Tuesday, 2021-07-27 08:59 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-07-28T20:45:04+00:00",
+      "modified": "2021-07-28T20:45:04+00:00",
+      "when": "2021-07-28T20:45:04+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident here: https://status.cloud.google.com/incidents/fEXXEicMtx5SaVZz2Gt7.\nPlease note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
@@ -382,6 +311,84 @@
       }
     ],
     "uri": "incidents/UPG5wxRnLGjqqVFMW7Kq"
+  },
+  {
+    "id": "fEXXEicMtx5SaVZz2Gt7",
+    "number": "8304108178110052490",
+    "begin": "2021-07-22T02:22:00+00:00",
+    "created": "2021-07-27T16:10:36+00:00",
+    "end": "2021-07-27T22:28:00+00:00",
+    "modified": "2021-07-28T20:33:45+00:00",
+    "external_desc": "Global: Cloud Scheduler Pub/Sub jobs fail with permission denied",
+    "updates": [
+      {
+        "created": "2021-07-28T20:32:51+00:00",
+        "modified": "2021-07-28T20:32:51+00:00",
+        "when": "2021-07-28T20:32:51+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 21 July 2021 19:22\n**Incident End:** 27 July 2021 15:28\n**Duration:** 5 days, 20 hours, 6 minutes\n**Affected Services and Features:**\nGoogle Cloud Scheduler Pub/Sub\n**Regions/Zones:** All Regions\n**Description:**\nGoogle Cloud Scheduler jobs experienced increased errors globally when publishing messages to Pub/Sub topics for a duration of 5 days, 20 hours, 6 minutes. From preliminary analysis, the root cause of the issue is due to a configuration change that updated the service agent used when publishing to Pub/Sub. Projects using the new service agent without the correct permissions resulted in PERMISSION_DENIED errors for tasks that required publishing to Pub/Sub.\n**Customer Impact:**\nAll customers with Cloud Scheduler jobs with a Pub/Sub topic as a target that did not grant the Cloud Scheduler Google-managed service account access to that Pub/Sub topic saw PERMISSION_DENIED errors.\n**Additional details:**\nThe issue was fully resolved on 27 July 2021 at 15:28 US/Pacific after a rollback of the change was completed.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-07-27T22:46:11+00:00",
+        "modified": "2021-07-27T22:46:11+00:00",
+        "when": "2021-07-27T22:46:11+00:00",
+        "text": "The issue with Cloud Scheduler has been resolved for all affected projects as of Tuesday, 2021-07-27 15:43 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-07-27T22:23:54+00:00",
+        "modified": "2021-07-27T22:23:55+00:00",
+        "when": "2021-07-27T22:23:54+00:00",
+        "text": "Summary: Global: Cloud Scheduler Pub/Sub jobs fail with permission denied\nDescription: We believe the issue with Cloud Scheduler is partially resolved.\nWe do not have an ETA for full resolution at this point.\nWe will provide an update by Tuesday, 2021-07-27 16:01 US/Pacific with current details.\nDiagnosis: Receiving Cloud Scheduler PERMISSION_DENIED\nWorkaround: Add the permission pubsub.topics.publish to Cloud Scheduler service account (service-PROJECT_NUMBER@gcp-sa-cloudscheduler.iam.gserviceaccount.com).",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-07-27T20:20:24+00:00",
+        "modified": "2021-07-27T20:20:24+00:00",
+        "when": "2021-07-27T20:20:24+00:00",
+        "text": "Summary: Global: Cloud Scheduler Pub/Sub jobs fail with permission denied\nDescription: We believe the issue with Cloud Scheduler is partially resolved and there is no further impact observed.\nAction:\n- Customers should utilize the Cloud Services Robot account for authentication.\nWe will provide an update by Tuesday, 2021-07-27 15:30 US/Pacific with current details.\nDiagnosis: Receiving Cloud Scheduler PERMISSION_DENIED\nWorkaround: Add the permission pubsub.topics.publish to Cloud Scheduler service account (service-PROJECT_NUMBER@gcp-sa-cloudscheduler.iam.gserviceaccount.com).",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-07-27T19:28:06+00:00",
+        "modified": "2021-07-27T19:28:06+00:00",
+        "when": "2021-07-27T19:28:06+00:00",
+        "text": "Summary: Global: Cloud Scheduler Pub/Sub jobs fail with permission denied\nDescription: We believe the issue with Cloud Scheduler is partially resolved and there is no further impact observed.\nAction:\n- Customers should utilize the Cloud Services Robot account for authentication.\nWe will provide an update by Tuesday, 2021-07-27 13:30 US/Pacific with current details.\nDiagnosis: Receiving Cloud Scheduler PERMISSION_DENIED\nWorkaround: Add the permission pubsub.topics.publish to Cloud Scheduler service account (service-PROJECT_NUMBER@gcp-sa-cloudscheduler.iam.gserviceaccount.com).",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-07-27T18:03:31+00:00",
+        "modified": "2021-07-27T18:03:31+00:00",
+        "when": "2021-07-27T18:03:31+00:00",
+        "text": "Summary: Global: Cloud Scheduler Pub/Sub jobs fail with permission denied\nDescription: Mitigation work is still underway by our engineering team.\nThe rollback activity is currently 50% complete and ongoing.\nWe will provide more information by Tuesday, 2021-07-27 13:00 US/Pacific.\nDiagnosis: Receiving Cloud Scheduler PERMISSION_DENIED\nWorkaround: Add publisher role to Cloud Scheduler service account. The service account has the form service-PROJECT_NUMBER@gcp-sa-cloudscheduler.iam.gserviceaccount.com",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-07-27T16:10:35+00:00",
+        "modified": "2021-07-27T16:10:37+00:00",
+        "when": "2021-07-27T16:10:35+00:00",
+        "text": "Summary: Global: Cloud Scheduler Pub/Sub jobs fail with permission denied\nDescription: This is a continuation of the previous post for incident \"Global: Cloud Scheduler Pub/Sub jobs fail with permission denied\" that was closed as resolved.\nWe have received updates from our engineering team that the Mitigation work is still underway for some regions and are currently waiting for an ETA.\nWe will provide more information by Tuesday, 2021-07-27 11:00 US/Pacific.\nDiagnosis: Receiving Cloud Scheduler PERMISSION_DENIED\nWorkaround: Add publisher role to Cloud Scheduler service account. The service account has the form service-PROJECT_NUMBER@gcp-sa-cloudscheduler.iam.gserviceaccount.com",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-07-28T20:32:51+00:00",
+      "modified": "2021-07-28T20:32:51+00:00",
+      "when": "2021-07-28T20:32:51+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 21 July 2021 19:22\n**Incident End:** 27 July 2021 15:28\n**Duration:** 5 days, 20 hours, 6 minutes\n**Affected Services and Features:**\nGoogle Cloud Scheduler Pub/Sub\n**Regions/Zones:** All Regions\n**Description:**\nGoogle Cloud Scheduler jobs experienced increased errors globally when publishing messages to Pub/Sub topics for a duration of 5 days, 20 hours, 6 minutes. From preliminary analysis, the root cause of the issue is due to a configuration change that updated the service agent used when publishing to Pub/Sub. Projects using the new service agent without the correct permissions resulted in PERMISSION_DENIED errors for tasks that required publishing to Pub/Sub.\n**Customer Impact:**\nAll customers with Cloud Scheduler jobs with a Pub/Sub topic as a target that did not grant the Cloud Scheduler Google-managed service account access to that Pub/Sub topic saw PERMISSION_DENIED errors.\n**Additional details:**\nThe issue was fully resolved on 27 July 2021 at 15:28 US/Pacific after a rollback of the change was completed.",
+      "status": "AVAILABLE"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "Y9fKAQ6BVTQUYomrNN9A",
+    "service_name": "Google Cloud Scheduler",
+    "affected_products": [
+      {
+        "title": "Google Cloud Scheduler",
+        "id": "Y9fKAQ6BVTQUYomrNN9A"
+      }
+    ],
+    "uri": "incidents/fEXXEicMtx5SaVZz2Gt7"
   },
   {
     "id": "WXwFb7tx1XvHyGaxwdYs",
