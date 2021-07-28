@@ -1,69 +1,5 @@
 [
   {
-    "id": "txaxJMs7eNMV5cHwgfRP",
-    "number": "1839278878480132730",
-    "begin": "2021-07-27T18:53:53+00:00",
-    "created": "2021-07-27T18:53:54+00:00",
-    "end": "2021-07-27T21:48:15+00:00",
-    "modified": "2021-07-27T21:48:15+00:00",
-    "external_desc": "Global: Cloud Logging Query timing out",
-    "updates": [
-      {
-        "created": "2021-07-27T21:48:09+00:00",
-        "modified": "2021-07-27T21:48:15+00:00",
-        "when": "2021-07-27T21:48:09+00:00",
-        "text": "The issue with Cloud Logging has been resolved for all affected projects as of Tuesday, 2021-07-27 14:46 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-07-27T20:59:54+00:00",
-        "modified": "2021-07-27T20:59:54+00:00",
-        "when": "2021-07-27T20:59:54+00:00",
-        "text": "Summary: Global: Cloud Logging Query timing out\nDescription: We believe the issue with Cloud Logging is partially resolved and there is no further impact observed.\nThe ETA for full resolution is end of week July 30th.\nWe will provide an update by Friday, July 30th with current details.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-07-27T19:58:38+00:00",
-        "modified": "2021-07-27T19:58:38+00:00",
-        "when": "2021-07-27T19:58:38+00:00",
-        "text": "Summary: Global: Cloud Logging Query timing out\nDescription: We believe the issue with Cloud Logging is partially resolved and there is no further impact observed.\nThe ETA for full resolution is unknown at this time.\nWe will provide an update by Tuesday, 2021-07-27 14:00 US/Pacific with current details.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-07-27T19:22:33+00:00",
-        "modified": "2021-07-27T19:22:34+00:00",
-        "when": "2021-07-27T19:22:33+00:00",
-        "text": "Summary: Global: Cloud Logging Query timing out\nDescription: We believe the issue with Cloud Logging is partially resolved and there is no further impact observed.\nWe will provide an update by Tuesday, 2021-07-27 13:00 US/Pacific with current details.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-07-27T18:53:54+00:00",
-        "modified": "2021-07-27T18:53:55+00:00",
-        "when": "2021-07-27T18:53:54+00:00",
-        "text": "Summary: Global: Cloud Logging Query timing out\nDescription: We are investigating a potential issue with Cloud Logging.\nWe will provide more information by Tuesday, 2021-07-27 12:25 US/Pacific.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-07-27T21:48:09+00:00",
-      "modified": "2021-07-27T21:48:15+00:00",
-      "when": "2021-07-27T21:48:09+00:00",
-      "text": "The issue with Cloud Logging has been resolved for all affected projects as of Tuesday, 2021-07-27 14:46 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-      "status": "AVAILABLE"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "DixAowEQm45KgqXKP5tR",
-    "service_name": "Operations",
-    "affected_products": [
-      {
-        "title": "Operations",
-        "id": "DixAowEQm45KgqXKP5tR"
-      }
-    ],
-    "uri": "incidents/txaxJMs7eNMV5cHwgfRP"
-  },
-  {
     "id": "MfiGCW4E26MPGRnCJ8by",
     "number": "13858523345881857527",
     "begin": "2021-07-27T17:35:27+00:00",
@@ -204,6 +140,77 @@
       }
     ],
     "uri": "incidents/fEXXEicMtx5SaVZz2Gt7"
+  },
+  {
+    "id": "txaxJMs7eNMV5cHwgfRP",
+    "number": "1839278878480132730",
+    "begin": "2021-07-27T16:02:00+00:00",
+    "created": "2021-07-27T18:53:54+00:00",
+    "end": "2021-07-27T20:14:00+00:00",
+    "modified": "2021-07-28T16:48:58+00:00",
+    "external_desc": "Global: Cloud Logging Query timing out",
+    "updates": [
+      {
+        "created": "2021-07-28T16:47:26+00:00",
+        "modified": "2021-07-28T16:48:58+00:00",
+        "when": "2021-07-28T16:47:26+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 27 July 2021 09:02\n**Incident End:** 27 July 2021 13:14\n**Duration:** 4 hours, 12 minutes\n**Affected Services and Features:**\nCloud Logging\n**Regions/Zones:** Global\n**Description:**\nCloud Logging experienced query timeouts globally for a duration of 4 hours, 12 minutes. From preliminary analysis, the root cause of the issue is a configuration change in the backend component used for indexing and cataloging the logs.\n**Customer Impact:**\n* Cloud Logging - Query timeouts\n* Cloud Console - Elevated errors for Activity Stream due to Cloud Logging query timeouts.\n* Kubernetes, Cloud Run- Elevated logging errors due to Cloud Logging query timeouts.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-07-27T21:48:09+00:00",
+        "modified": "2021-07-27T21:48:15+00:00",
+        "when": "2021-07-27T21:48:09+00:00",
+        "text": "The issue with Cloud Logging has been resolved for all affected projects as of Tuesday, 2021-07-27 14:46 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-07-27T20:59:54+00:00",
+        "modified": "2021-07-27T20:59:54+00:00",
+        "when": "2021-07-27T20:59:54+00:00",
+        "text": "Summary: Global: Cloud Logging Query timing out\nDescription: We believe the issue with Cloud Logging is partially resolved and there is no further impact observed.\nThe ETA for full resolution is end of week July 30th.\nWe will provide an update by Friday, July 30th with current details.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-07-27T19:58:38+00:00",
+        "modified": "2021-07-27T19:58:38+00:00",
+        "when": "2021-07-27T19:58:38+00:00",
+        "text": "Summary: Global: Cloud Logging Query timing out\nDescription: We believe the issue with Cloud Logging is partially resolved and there is no further impact observed.\nThe ETA for full resolution is unknown at this time.\nWe will provide an update by Tuesday, 2021-07-27 14:00 US/Pacific with current details.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-07-27T19:22:33+00:00",
+        "modified": "2021-07-27T19:22:34+00:00",
+        "when": "2021-07-27T19:22:33+00:00",
+        "text": "Summary: Global: Cloud Logging Query timing out\nDescription: We believe the issue with Cloud Logging is partially resolved and there is no further impact observed.\nWe will provide an update by Tuesday, 2021-07-27 13:00 US/Pacific with current details.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-07-27T18:53:54+00:00",
+        "modified": "2021-07-27T18:53:55+00:00",
+        "when": "2021-07-27T18:53:54+00:00",
+        "text": "Summary: Global: Cloud Logging Query timing out\nDescription: We are investigating a potential issue with Cloud Logging.\nWe will provide more information by Tuesday, 2021-07-27 12:25 US/Pacific.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-07-28T16:47:26+00:00",
+      "modified": "2021-07-28T16:48:58+00:00",
+      "when": "2021-07-28T16:47:26+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 27 July 2021 09:02\n**Incident End:** 27 July 2021 13:14\n**Duration:** 4 hours, 12 minutes\n**Affected Services and Features:**\nCloud Logging\n**Regions/Zones:** Global\n**Description:**\nCloud Logging experienced query timeouts globally for a duration of 4 hours, 12 minutes. From preliminary analysis, the root cause of the issue is a configuration change in the backend component used for indexing and cataloging the logs.\n**Customer Impact:**\n* Cloud Logging - Query timeouts\n* Cloud Console - Elevated errors for Activity Stream due to Cloud Logging query timeouts.\n* Kubernetes, Cloud Run- Elevated logging errors due to Cloud Logging query timeouts.",
+      "status": "AVAILABLE"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "DixAowEQm45KgqXKP5tR",
+    "service_name": "Operations",
+    "affected_products": [
+      {
+        "title": "Operations",
+        "id": "DixAowEQm45KgqXKP5tR"
+      }
+    ],
+    "uri": "incidents/txaxJMs7eNMV5cHwgfRP"
   },
   {
     "id": "eJ8bnwiB1kQXo8fet4Zg",
