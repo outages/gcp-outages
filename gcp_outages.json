@@ -2,12 +2,19 @@
   {
     "id": "ZJoBx7kocBokFxS1ZN5p",
     "number": "7204119448599013942",
-    "begin": "2021-07-30T15:17:00+00:00",
+    "begin": "2021-07-29T02:24:00+00:00",
     "created": "2021-07-30T15:27:02+00:00",
-    "end": "2021-07-31T02:03:29+00:00",
-    "modified": "2021-07-31T02:04:20+00:00",
+    "end": "2021-07-31T01:52:00+00:00",
+    "modified": "2021-08-02T18:46:57+00:00",
     "external_desc": "Multi-region: Accessing Component Gateway fails with 400 (Bad Request). Unable to access clusters details page after cluster creation.",
     "updates": [
+      {
+        "created": "2021-08-02T18:45:48+00:00",
+        "modified": "2021-08-02T18:46:57+00:00",
+        "when": "2021-08-02T18:45:48+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 28 July 2021 19:24\n**Incident End:** 30 July 2021 18:52\n**Duration:** 1 day, 23 hours and 28 minutes\n**Affected Services and Features:**\nGoogle Cloud Dataproc - Ability to view and access Component Gateway URLs [1]\n**Regions/Zones:**\nasia-east1, asia-east2, asia-northeast1, asia-northeast3, asia-south1, asia-southeast1, asia-southeast2, australia-southeast1, europe-north1, europe-west1, europe-west2, europe-west4, europe-west6, northamerica-northeast1, southamerica-east1, us-central1, us-east1, us-east4, us-west1\n**Description:**\nGoogle Cloud Dataproc experienced elevated 400 errors indicating “Bad Requests” when accessing the component gateway URLs[1] for a duration of around 2 days. From preliminary analysis, the root cause of the issue was a rollout that started on 28 July 2021 at 12:45. The rollout was paused preventing further regions from being affected and a rollback started on 30 July 2021 at 9:18 to mitigate the issue in affected regions . During the incident, a workaround was provided which was to use the SSH SOCKS proxy as described in doc [2] to access the component gateway URLs.\n**Customer Impact:**\nGoogle Cloud Dataproc- Accessing component gateway URLs failed with 400 errors.\n**References:**\n[1] https://cloud.google.com/dataproc/docs/concepts/accessing/dataproc-gateways#viewing_and_accessing_component_gateway_urls\n[2] https://cloud.google.com/dataproc/docs/concepts/accessing/cluster-web-interfaces",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-07-31T02:04:20+00:00",
         "modified": "2021-07-31T02:04:20+00:00",
@@ -94,10 +101,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-07-31T02:04:20+00:00",
-      "modified": "2021-07-31T02:04:20+00:00",
-      "when": "2021-07-31T02:04:20+00:00",
-      "text": "The issue with Cloud Dataproc has been resolved for all affected projects as of Friday, 2021-07-30 19:03 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-08-02T18:45:48+00:00",
+      "modified": "2021-08-02T18:46:57+00:00",
+      "when": "2021-08-02T18:45:48+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 28 July 2021 19:24\n**Incident End:** 30 July 2021 18:52\n**Duration:** 1 day, 23 hours and 28 minutes\n**Affected Services and Features:**\nGoogle Cloud Dataproc - Ability to view and access Component Gateway URLs [1]\n**Regions/Zones:**\nasia-east1, asia-east2, asia-northeast1, asia-northeast3, asia-south1, asia-southeast1, asia-southeast2, australia-southeast1, europe-north1, europe-west1, europe-west2, europe-west4, europe-west6, northamerica-northeast1, southamerica-east1, us-central1, us-east1, us-east4, us-west1\n**Description:**\nGoogle Cloud Dataproc experienced elevated 400 errors indicating “Bad Requests” when accessing the component gateway URLs[1] for a duration of around 2 days. From preliminary analysis, the root cause of the issue was a rollout that started on 28 July 2021 at 12:45. The rollout was paused preventing further regions from being affected and a rollback started on 30 July 2021 at 9:18 to mitigate the issue in affected regions . During the incident, a workaround was provided which was to use the SSH SOCKS proxy as described in doc [2] to access the component gateway URLs.\n**Customer Impact:**\nGoogle Cloud Dataproc- Accessing component gateway URLs failed with 400 errors.\n**References:**\n[1] https://cloud.google.com/dataproc/docs/concepts/accessing/dataproc-gateways#viewing_and_accessing_component_gateway_urls\n[2] https://cloud.google.com/dataproc/docs/concepts/accessing/cluster-web-interfaces",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
