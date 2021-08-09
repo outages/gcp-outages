@@ -2,12 +2,19 @@
   {
     "id": "yC6jA5p6Taoij6pPgSSW",
     "number": "12084164814980114469",
-    "begin": "2021-08-06T22:11:38+00:00",
+    "begin": "2021-08-06T21:25:00+00:00",
     "created": "2021-08-06T22:11:39+00:00",
-    "end": "2021-08-07T04:32:21+00:00",
-    "modified": "2021-08-07T04:32:21+00:00",
+    "end": "2021-08-07T03:53:00+00:00",
+    "modified": "2021-08-09T16:02:47+00:00",
     "external_desc": "Elevated error rate across all monitoring API endpoints globally",
     "updates": [
+      {
+        "created": "2021-08-09T16:02:22+00:00",
+        "modified": "2021-08-09T16:02:22+00:00",
+        "when": "2021-08-09T16:02:22+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 06 August 2021 14:25\n**Incident End:** 06 August 2021 20:53\n**Duration:** 6 hours, 28 minutes\n**Affected Services and Features:**\nGoogle Cloud Monitoring\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Monitoring experienced increased latency and error rates for monitoring endpoints globally for 6 hours, 28 minutes. From preliminary analysis, the root cause of the issue is an overload of a monitoring API dependency that serves metric and monitored resource descriptors.\n**Customer Impact:**\nRequests against the monitoring API would have seen increased timeouts, errors, and latency.\nCloud Monitoring dashboards would have failed to load due to timeout.\n**Additional details:**\nThis service disruption was mitigated by increasing the resources available to the affected dependency, and we are confident that there will not be a recurrence.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-08-07T04:32:21+00:00",
         "modified": "2021-08-07T04:32:21+00:00",
@@ -52,10 +59,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-08-07T04:32:21+00:00",
-      "modified": "2021-08-07T04:32:21+00:00",
-      "when": "2021-08-07T04:32:21+00:00",
-      "text": "The issue with Cloud Monitoring has been resolved for all affected users as of Friday, 2021-08-06 20:53 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-08-09T16:02:22+00:00",
+      "modified": "2021-08-09T16:02:22+00:00",
+      "when": "2021-08-09T16:02:22+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 06 August 2021 14:25\n**Incident End:** 06 August 2021 20:53\n**Duration:** 6 hours, 28 minutes\n**Affected Services and Features:**\nGoogle Cloud Monitoring\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Monitoring experienced increased latency and error rates for monitoring endpoints globally for 6 hours, 28 minutes. From preliminary analysis, the root cause of the issue is an overload of a monitoring API dependency that serves metric and monitored resource descriptors.\n**Customer Impact:**\nRequests against the monitoring API would have seen increased timeouts, errors, and latency.\nCloud Monitoring dashboards would have failed to load due to timeout.\n**Additional details:**\nThis service disruption was mitigated by increasing the resources available to the affected dependency, and we are confident that there will not be a recurrence.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_OUTAGE",
