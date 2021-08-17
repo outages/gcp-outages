@@ -5,9 +5,16 @@
     "begin": "2021-08-16T08:19:00+00:00",
     "created": "2021-08-17T15:17:36+00:00",
     "end": "2021-08-17T15:55:00+00:00",
-    "modified": "2021-08-17T20:47:07+00:00",
+    "modified": "2021-08-17T21:08:01+00:00",
     "external_desc": "Cloud Router creations are failing in southamerica-east1",
     "updates": [
+      {
+        "created": "2021-08-17T21:06:04+00:00",
+        "modified": "2021-08-17T21:08:01+00:00",
+        "when": "2021-08-17T21:06:04+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 16 August 2021 01:19\n**Incident End:** 17 August 2021 08:55\n**Duration:** 1 day, 7 hours, 36 minutes\n**Affected Services and Features:** Cloud Router\n**Regions/Zones:** southamerica-east1\n**Description:**\nGoogle Cloud Router experienced failures creating or modifying routers in southamerica-east1 for a duration of 1 day, 7 hours and 36 minutes. New Cloud router creations or modifications to existing Cloud Routers would have been impacted. From preliminary analysis, the root cause of the issue is related to a rollout within the virtual routing control plane for the region, which had a configuration mismatch as part of an ongoing migration.\n**Customer Impact:**\n- Customers were unable to create or modify existing Cloud Routers from 16 August 2021 01:19 to 17 August 2021 08:34.\n- Router status requests [1] which rely on the getRouterStatus [2] API may have also returned errors during the incident\n- All existing routers that had completed programming continued to work throughout the entire duration.\n- Dynamic routing functionality [3] using BGP routes continued to work as expected.\n**Additional details:**\n- In order to prevent a recurrence, we are fixing outdated automations used during migrations\n- In order to reduce detection delays, we are improving our control plane probers to ensure we are alerted promptly\n**Reference(s):**\n[1] https://cloud.google.com/network-connectivity/docs/router/how-to/viewing-router-details#viewing-router-status\n[2] https://cloud.google.com/compute/docs/reference/rest/v1/routers/getRouterStatus\n[3] https://cloud.google.com/vpc/docs/routes#dynamic_routes",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-08-17T17:14:20+00:00",
         "modified": "2021-08-17T17:14:21+00:00",
@@ -31,10 +38,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-08-17T17:14:20+00:00",
-      "modified": "2021-08-17T17:14:21+00:00",
-      "when": "2021-08-17T17:14:20+00:00",
-      "text": "The issue with Cloud Router has been resolved for all affected projects as of Tuesday, 2021-08-17 10:00 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-08-17T21:06:04+00:00",
+      "modified": "2021-08-17T21:08:01+00:00",
+      "when": "2021-08-17T21:06:04+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 16 August 2021 01:19\n**Incident End:** 17 August 2021 08:55\n**Duration:** 1 day, 7 hours, 36 minutes\n**Affected Services and Features:** Cloud Router\n**Regions/Zones:** southamerica-east1\n**Description:**\nGoogle Cloud Router experienced failures creating or modifying routers in southamerica-east1 for a duration of 1 day, 7 hours and 36 minutes. New Cloud router creations or modifications to existing Cloud Routers would have been impacted. From preliminary analysis, the root cause of the issue is related to a rollout within the virtual routing control plane for the region, which had a configuration mismatch as part of an ongoing migration.\n**Customer Impact:**\n- Customers were unable to create or modify existing Cloud Routers from 16 August 2021 01:19 to 17 August 2021 08:34.\n- Router status requests [1] which rely on the getRouterStatus [2] API may have also returned errors during the incident\n- All existing routers that had completed programming continued to work throughout the entire duration.\n- Dynamic routing functionality [3] using BGP routes continued to work as expected.\n**Additional details:**\n- In order to prevent a recurrence, we are fixing outdated automations used during migrations\n- In order to reduce detection delays, we are improving our control plane probers to ensure we are alerted promptly\n**Reference(s):**\n[1] https://cloud.google.com/network-connectivity/docs/router/how-to/viewing-router-details#viewing-router-status\n[2] https://cloud.google.com/compute/docs/reference/rest/v1/routers/getRouterStatus\n[3] https://cloud.google.com/vpc/docs/routes#dynamic_routes",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
