@@ -38,12 +38,19 @@
   {
     "id": "CWYZQhBtU4sf2cYJ8AAf",
     "number": "6700504986737780589",
-    "begin": "2021-08-18T20:10:00+00:00",
+    "begin": "2021-08-18T18:15:00+00:00",
     "created": "2021-08-18T20:42:34+00:00",
-    "end": "2021-08-18T22:47:31+00:00",
-    "modified": "2021-08-18T22:48:26+00:00",
+    "end": "2021-08-18T22:06:00+00:00",
+    "modified": "2021-08-19T19:05:10+00:00",
     "external_desc": "The issue with Cloud Logging has been resolved for all affected projects.",
     "updates": [
+      {
+        "created": "2021-08-19T19:03:54+00:00",
+        "modified": "2021-08-19T19:05:10+00:00",
+        "when": "2021-08-19T19:03:54+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 18 August 2021 11:15\n**Incident End:** 18 August 2021 15:06\n**Duration:** 3 hours, 51 minutes\n**Affected Services and Features:** Cloud Logging\n**Regions/Zones:** Global\n**Description:**\nCloud Logging experienced increased read errors globally for 3 hours, 51 minutes. From preliminary analysis, the root cause of the issue was due to a large increase in work from an internal service which overwhelmed the available capacity on a backend database. Log ingestion was not impacted.\n**Customer Impact:**\n* Customers experienced elevated read failures when attempting to query logs.\n* Customers were unable to access logs in the Cloud Console due to query timeouts.\n**Additional details:**\nThe issue has been mitigated and the problematic service has been identified and canceled. Query operations have returned to normal.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-08-18T22:48:26+00:00",
         "modified": "2021-08-18T22:48:26+00:00",
@@ -81,10 +88,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-08-18T22:48:26+00:00",
-      "modified": "2021-08-18T22:48:26+00:00",
-      "when": "2021-08-18T22:48:26+00:00",
-      "text": "The issue with Cloud Logging has been resolved for all affected projects as of Wednesday, 2021-08-18 15:30 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-08-19T19:03:54+00:00",
+      "modified": "2021-08-19T19:05:10+00:00",
+      "when": "2021-08-19T19:03:54+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 18 August 2021 11:15\n**Incident End:** 18 August 2021 15:06\n**Duration:** 3 hours, 51 minutes\n**Affected Services and Features:** Cloud Logging\n**Regions/Zones:** Global\n**Description:**\nCloud Logging experienced increased read errors globally for 3 hours, 51 minutes. From preliminary analysis, the root cause of the issue was due to a large increase in work from an internal service which overwhelmed the available capacity on a backend database. Log ingestion was not impacted.\n**Customer Impact:**\n* Customers experienced elevated read failures when attempting to query logs.\n* Customers were unable to access logs in the Cloud Console due to query timeouts.\n**Additional details:**\nThe issue has been mitigated and the problematic service has been identified and canceled. Query operations have returned to normal.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
