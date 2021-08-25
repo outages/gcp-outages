@@ -2,12 +2,19 @@
   {
     "id": "vcRkm91DVuWNGWMw9w84",
     "number": "1183468118352922339",
-    "begin": "2021-08-25T10:39:00+00:00",
+    "begin": "2021-08-25T08:37:00+00:00",
     "created": "2021-08-25T10:39:11+00:00",
-    "end": "2021-08-25T11:43:00+00:00",
-    "modified": "2021-08-25T15:22:33+00:00",
-    "external_desc": "Dataflow job querying and creation impacted in us-west1",
+    "end": "2021-08-25T11:14:00+00:00",
+    "modified": "2021-08-25T18:20:08+00:00",
+    "external_desc": "Google Cloud Dataflow elevated errors starting new or querying existing dataflow jobs in us-west1, asia-east1, asia-northeast1, and europe-west1.",
     "updates": [
+      {
+        "created": "2021-08-25T18:18:50+00:00",
+        "modified": "2021-08-25T18:18:50+00:00",
+        "when": "2021-08-25T18:18:50+00:00",
+        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 25 August 2021 01:37\n**Incident End:** 25 August 2021 04:14\n**Duration:** 2 hours, 37 minutes\n**Affected Services and Features:**\n- Google Cloud Dataflow\n- Dataproc Metastore\n**Regions/Zones:** us-west1, asia-east1, asia-northeast1, europe-west1\n**Description:**\nGoogle Cloud Dataflow experienced elevated errors starting new or querying existing dataflow jobs in us-west1, asia-east1, asia-northeast1, and europe-west1 for a duration of 2 hours and 37 minutes. From preliminary analysis, the root cause of the issue was a misconfiguration triggered by a rollout.\n**Customer Impact:**\n- 500 errors when launching new dataflow jobs.\n- 500 errors querying existing dataflow jobs.\n- The majority of the impact for customers was in us-west1, with 33% of job creation and query traffic reporting errors.\n- Dataproc Metastore uses underlying Dataflow jobs for some features, and thus experienced elevated errors of up to 100% on the following API’s in us-west1 from 01:27 to 03:53; Restore, Import (from SQL, Avro), and Export (to Avro).\n- There was a slight re-occurance in europe-west1 between 06:06 and 08:02 with a peak error rate of 3.5%.\n- Existing jobs continued to progress without issue.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-08-25T11:43:02+00:00",
         "modified": "2021-08-25T15:18:15+00:00",
@@ -31,10 +38,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-08-25T11:43:02+00:00",
-      "modified": "2021-08-25T15:18:15+00:00",
-      "when": "2021-08-25T11:43:02+00:00",
-      "text": "The issue with Google Cloud Dataflow has been resolved for all affected projects as of Wednesday, 2021-08-25 04:42 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-08-25T18:18:50+00:00",
+      "modified": "2021-08-25T18:18:50+00:00",
+      "when": "2021-08-25T18:18:50+00:00",
+      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 25 August 2021 01:37\n**Incident End:** 25 August 2021 04:14\n**Duration:** 2 hours, 37 minutes\n**Affected Services and Features:**\n- Google Cloud Dataflow\n- Dataproc Metastore\n**Regions/Zones:** us-west1, asia-east1, asia-northeast1, europe-west1\n**Description:**\nGoogle Cloud Dataflow experienced elevated errors starting new or querying existing dataflow jobs in us-west1, asia-east1, asia-northeast1, and europe-west1 for a duration of 2 hours and 37 minutes. From preliminary analysis, the root cause of the issue was a misconfiguration triggered by a rollout.\n**Customer Impact:**\n- 500 errors when launching new dataflow jobs.\n- 500 errors querying existing dataflow jobs.\n- The majority of the impact for customers was in us-west1, with 33% of job creation and query traffic reporting errors.\n- Dataproc Metastore uses underlying Dataflow jobs for some features, and thus experienced elevated errors of up to 100% on the following API’s in us-west1 from 01:27 to 03:53; Restore, Import (from SQL, Avro), and Export (to Avro).\n- There was a slight re-occurance in europe-west1 between 06:06 and 08:02 with a peak error rate of 3.5%.\n- Existing jobs continued to progress without issue.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
