@@ -1,5 +1,40 @@
 [
   {
+    "id": "A27EJTBQ6anaCdeNX6zp",
+    "number": "4326509736320173557",
+    "begin": "2021-08-26T13:49:00+00:00",
+    "created": "2021-08-26T13:49:30+00:00",
+    "modified": "2021-08-26T13:51:19+00:00",
+    "external_desc": "Anthos On-Prem customers unable to login to admin workstation (starting 2021-08-25 for customers using Anthos OP v1.7.2)",
+    "updates": [
+      {
+        "created": "2021-08-26T13:49:22+00:00",
+        "modified": "2021-08-26T13:51:17+00:00",
+        "when": "2021-08-26T13:49:22+00:00",
+        "text": "Summary: Anthos On-Prem customers unable to login to admin workstation (starting 2021-08-25 for customers using Anthos OP v1.7.2)\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Thursday, 2021-08-26 07:25 US/Pacific.\nDiagnosis: Customers are unable to login to their admin workstation in both their prod and non-prod environments.\nWorkaround: Mitigation steps for the admin workstation:\nUse a temporary VM to perform the following steps. If you don’t have a VM, you can create an admin workstation at 1.7.1-gke.4 as the temporary VM.\n1)Ensure the VM and the problematic 1.7.2-gke.2 admin workstation are in power off state.\n2)Attach the boot disk of the problematic admin workstation to the VM. The boot disk is the one with the label Hard disk 1.\n3)Mount the boot disk inside the VM. sudo mkdir -p /mnt/boot-disk sudo mount /dev/sdc1 /mnt/boot-disk, assuming the boot disk is identified as dev/sdc1.\n4)Set the ubuntu user expiration date to unlimited. sudo chroot /mnt/boot-disk chage -M 99999 ubuntu\n5)Shutdown the temporary VM.\n6)Power on the admin workstation. You should be able to SSH to the admin workstation as usual.\n7)[Clean up] Delete the temporary VM.\nNote that this fix will break the CIS benchmark rule[1] 5.4.1.1 Ensure password expiration is 365 days or less.\n[1]https://cloud.google.com/anthos/clusters/docs/on-prem/1.7/concepts/cis-ubuntu-benchmark\nMitigation steps for non admin workstation nodes (including cluster nodes and Seesaw VM):\nLogin onto each node (or use SSH) to run the following command on the node sudo chroot /mnt/boot-disk chage -M 99999 ubuntu\nNote that if the non admin workstation nodes are not SSHable due to the error, you will have to use the mitigation step for admin workstation.",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-08-26T13:49:22+00:00",
+      "modified": "2021-08-26T13:51:17+00:00",
+      "when": "2021-08-26T13:49:22+00:00",
+      "text": "Summary: Anthos On-Prem customers unable to login to admin workstation (starting 2021-08-25 for customers using Anthos OP v1.7.2)\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Thursday, 2021-08-26 07:25 US/Pacific.\nDiagnosis: Customers are unable to login to their admin workstation in both their prod and non-prod environments.\nWorkaround: Mitigation steps for the admin workstation:\nUse a temporary VM to perform the following steps. If you don’t have a VM, you can create an admin workstation at 1.7.1-gke.4 as the temporary VM.\n1)Ensure the VM and the problematic 1.7.2-gke.2 admin workstation are in power off state.\n2)Attach the boot disk of the problematic admin workstation to the VM. The boot disk is the one with the label Hard disk 1.\n3)Mount the boot disk inside the VM. sudo mkdir -p /mnt/boot-disk sudo mount /dev/sdc1 /mnt/boot-disk, assuming the boot disk is identified as dev/sdc1.\n4)Set the ubuntu user expiration date to unlimited. sudo chroot /mnt/boot-disk chage -M 99999 ubuntu\n5)Shutdown the temporary VM.\n6)Power on the admin workstation. You should be able to SSH to the admin workstation as usual.\n7)[Clean up] Delete the temporary VM.\nNote that this fix will break the CIS benchmark rule[1] 5.4.1.1 Ensure password expiration is 365 days or less.\n[1]https://cloud.google.com/anthos/clusters/docs/on-prem/1.7/concepts/cis-ubuntu-benchmark\nMitigation steps for non admin workstation nodes (including cluster nodes and Seesaw VM):\nLogin onto each node (or use SSH) to run the following command on the node sudo chroot /mnt/boot-disk chage -M 99999 ubuntu\nNote that if the non admin workstation nodes are not SSHable due to the error, you will have to use the mitigation step for admin workstation.",
+      "status": "SERVICE_DISRUPTION"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "LCSbT57h59oR4W98NHuz",
+    "service_name": "Google Kubernetes Engine",
+    "affected_products": [
+      {
+        "title": "Google Kubernetes Engine",
+        "id": "LCSbT57h59oR4W98NHuz"
+      }
+    ],
+    "uri": "incidents/A27EJTBQ6anaCdeNX6zp"
+  },
+  {
     "id": "vcRkm91DVuWNGWMw9w84",
     "number": "1183468118352922339",
     "begin": "2021-08-25T08:37:00+00:00",
@@ -444,6 +479,42 @@
     "uri": "incidents/RPBQJ6t6qkJGkKG21Quv"
   },
   {
+    "id": "NJJp8jkNzFStMyiJZWWD",
+    "number": "16011761144916808084",
+    "begin": "2021-08-24T03:14:00+00:00",
+    "created": "2021-08-24T04:21:20+00:00",
+    "end": "2021-08-24T03:41:13+00:00",
+    "modified": "2021-08-24T05:48:13+00:00",
+    "external_desc": "The issue with Cloud Networking has been resolved for all affected users as of Monday, 2021-08-23 20:41:13 PDT.\nWe thank you for your patience while we worked on resolving the issue.",
+    "updates": [
+      {
+        "created": "2021-08-24T04:21:20+00:00",
+        "modified": "2021-08-24T04:21:20+00:00",
+        "when": "2021-08-24T04:21:20+00:00",
+        "text": "Description: We are experiencing an issue with Cloud Networking at australia-southeast2\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/8DhiwfKvD987f5tJrj1G, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-08-24T04:21:20+00:00",
+      "modified": "2021-08-24T04:21:20+00:00",
+      "when": "2021-08-24T04:21:20+00:00",
+      "text": "Description: We are experiencing an issue with Cloud Networking at australia-southeast2\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/8DhiwfKvD987f5tJrj1G, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
+      "status": "SERVICE_DISRUPTION"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "VNJxzcH58QmTt5H6pnT6",
+    "service_name": "Google Cloud Networking",
+    "affected_products": [
+      {
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
+      }
+    ],
+    "uri": "incidents/NJJp8jkNzFStMyiJZWWD"
+  },
+  {
     "id": "9FtLfPznLEsy2pwmzfYp",
     "number": "695108566094988677",
     "begin": "2021-08-24T03:14:00+00:00",
@@ -485,42 +556,6 @@
       }
     ],
     "uri": "incidents/9FtLfPznLEsy2pwmzfYp"
-  },
-  {
-    "id": "NJJp8jkNzFStMyiJZWWD",
-    "number": "16011761144916808084",
-    "begin": "2021-08-24T03:14:00+00:00",
-    "created": "2021-08-24T04:21:20+00:00",
-    "end": "2021-08-24T03:41:13+00:00",
-    "modified": "2021-08-24T05:48:13+00:00",
-    "external_desc": "The issue with Cloud Networking has been resolved for all affected users as of Monday, 2021-08-23 20:41:13 PDT.\nWe thank you for your patience while we worked on resolving the issue.",
-    "updates": [
-      {
-        "created": "2021-08-24T04:21:20+00:00",
-        "modified": "2021-08-24T04:21:20+00:00",
-        "when": "2021-08-24T04:21:20+00:00",
-        "text": "Description: We are experiencing an issue with Cloud Networking at australia-southeast2\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/8DhiwfKvD987f5tJrj1G, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-08-24T04:21:20+00:00",
-      "modified": "2021-08-24T04:21:20+00:00",
-      "when": "2021-08-24T04:21:20+00:00",
-      "text": "Description: We are experiencing an issue with Cloud Networking at australia-southeast2\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/8DhiwfKvD987f5tJrj1G, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
-      "status": "SERVICE_DISRUPTION"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "VNJxzcH58QmTt5H6pnT6",
-    "service_name": "Google Cloud Networking",
-    "affected_products": [
-      {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
-      }
-    ],
-    "uri": "incidents/NJJp8jkNzFStMyiJZWWD"
   },
   {
     "id": "8DhiwfKvD987f5tJrj1G",
