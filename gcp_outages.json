@@ -4,9 +4,16 @@
     "number": "1393196405563089999",
     "begin": "2021-09-02T16:22:26+00:00",
     "created": "2021-09-02T16:22:29+00:00",
-    "modified": "2021-09-02T19:03:24+00:00",
+    "modified": "2021-09-02T20:34:06+00:00",
     "external_desc": "us-central1, europe-west1, us-west1, asia-east1, asia-southeast1: Issue with VM maintenance on Google Compute Engine.",
     "updates": [
+      {
+        "created": "2021-09-02T20:34:06+00:00",
+        "modified": "2021-09-02T20:34:06+00:00",
+        "when": "2021-09-02T20:34:06+00:00",
+        "text": "Summary: us-central1, europe-west1, us-west1, asia-east1, asia-southeast1: Issue with VM maintenance on Google Compute Engine.\nDescription: Mitigation work is currently under progress. Engineering has confirmed that pausing the VM maintenance has mitigated current customer impact.\nCustomers may observe loss of local SSD on VM termination till the full resolution is deployed.\nWe will provide more information by Friday, 2021-09-03 13:30 US/Pacific.\nDiagnosis: Customers may see on VM termination/maintenance, replacement VMs cannot acquire Local SSD in order to initialize and therefore VMs will not be able to restart.\nWorkaround: No workaround available at this time.",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-09-02T19:03:24+00:00",
         "modified": "2021-09-02T19:03:24+00:00",
@@ -37,10 +44,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-09-02T19:03:24+00:00",
-      "modified": "2021-09-02T19:03:24+00:00",
-      "when": "2021-09-02T19:03:24+00:00",
-      "text": "Summary: us-central1, europe-west1, us-west1, asia-east1, asia-southeast1: Issue with VM maintenance on Google Compute Engine.\nDescription: Mitigation work is currently under progress. Engineering team continues to pause the regular VM maintenance operations for SSD machines to mitigate the customer impact.\nWe do not have an ETA for completion of mitigation activities at this point.\nWe will provide more information by Thursday, 2021-09-02 13:30 US/Pacific.\nDiagnosis: Customers may see on VM termination/maintenance, replacement VMs cannot acquire Local SSD in order to initialize and therefore VMs will not be able to restart.\nWorkaround: No workaround available at this time.",
+      "created": "2021-09-02T20:34:06+00:00",
+      "modified": "2021-09-02T20:34:06+00:00",
+      "when": "2021-09-02T20:34:06+00:00",
+      "text": "Summary: us-central1, europe-west1, us-west1, asia-east1, asia-southeast1: Issue with VM maintenance on Google Compute Engine.\nDescription: Mitigation work is currently under progress. Engineering has confirmed that pausing the VM maintenance has mitigated current customer impact.\nCustomers may observe loss of local SSD on VM termination till the full resolution is deployed.\nWe will provide more information by Friday, 2021-09-03 13:30 US/Pacific.\nDiagnosis: Customers may see on VM termination/maintenance, replacement VMs cannot acquire Local SSD in order to initialize and therefore VMs will not be able to restart.\nWorkaround: No workaround available at this time.",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
