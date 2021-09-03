@@ -137,12 +137,19 @@
   {
     "id": "9dSqbyLnq9ALkVnD84eF",
     "number": "1544920841042535714",
-    "begin": "2021-09-02T15:25:15+00:00",
+    "begin": "2021-09-02T09:00:00+00:00",
     "created": "2021-09-02T15:25:22+00:00",
-    "end": "2021-09-02T15:37:39+00:00",
-    "modified": "2021-09-02T15:37:39+00:00",
+    "end": "2021-09-02T19:00:00+00:00",
+    "modified": "2021-09-03T16:57:50+00:00",
     "external_desc": "Google Cloud Storage UI is experiencing some issues",
     "updates": [
+      {
+        "created": "2021-09-03T16:57:38+00:00",
+        "modified": "2021-09-03T16:57:38+00:00",
+        "when": "2021-09-03T16:57:38+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 02 Sep 2021 02:00\n**Incident End:** 02 Sep 2021 12:00\n**Duration:** 10 hours\n**Affected Services and Features:**\n- Google Cloud Storage - Cloud Console UI\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Storage (GCS) experienced up to an 85% failure rate globally when creating buckets from the GCS Console UI or other service UI’s which create buckets programmatically. From preliminary analysis, the increased failure rate was due to a GCS API rollout.\n**Customer Impact:**\n- Customers experienced errors including “RPO is not supported” when creating new GCS buckets using the Cloud Console UI.\n**Additional details:**\n- Customer workarounds included using the gcloud CLI (gsutil), or the API (such as via client libraries).\n- Retrying failed requests may have also succeeded\n- The GCS API rollout has been rolled back which fully restored the service.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-09-02T15:37:32+00:00",
         "modified": "2021-09-02T15:37:38+00:00",
@@ -159,10 +166,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-09-02T15:37:32+00:00",
-      "modified": "2021-09-02T15:37:38+00:00",
-      "when": "2021-09-02T15:37:32+00:00",
-      "text": "The issue with Google Cloud Storage is believed to be affecting only the user interface and has a workaround to use gsutil on CLI. Our Engineering Team is currently working on the resolution.\nIf you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we're working on resolving the issue.",
+      "created": "2021-09-03T16:57:38+00:00",
+      "modified": "2021-09-03T16:57:38+00:00",
+      "when": "2021-09-03T16:57:38+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 02 Sep 2021 02:00\n**Incident End:** 02 Sep 2021 12:00\n**Duration:** 10 hours\n**Affected Services and Features:**\n- Google Cloud Storage - Cloud Console UI\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Storage (GCS) experienced up to an 85% failure rate globally when creating buckets from the GCS Console UI or other service UI’s which create buckets programmatically. From preliminary analysis, the increased failure rate was due to a GCS API rollout.\n**Customer Impact:**\n- Customers experienced errors including “RPO is not supported” when creating new GCS buckets using the Cloud Console UI.\n**Additional details:**\n- Customer workarounds included using the gcloud CLI (gsutil), or the API (such as via client libraries).\n- Retrying failed requests may have also succeeded\n- The GCS API rollout has been rolled back which fully restored the service.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
