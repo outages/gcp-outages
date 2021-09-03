@@ -2,12 +2,19 @@
   {
     "id": "WzDzgmTjQfAKPJha6Rbb",
     "number": "3409436363697907976",
-    "begin": "2021-09-03T13:00:07+00:00",
+    "begin": "2021-09-03T12:40:00+00:00",
     "created": "2021-09-03T13:39:38+00:00",
-    "end": "2021-09-03T14:17:32+00:00",
-    "modified": "2021-09-03T14:17:32+00:00",
+    "end": "2021-09-03T13:20:00+00:00",
+    "modified": "2021-09-03T19:27:11+00:00",
     "external_desc": "europe-west2-c: Cloud networking is currently experiencing issues.",
     "updates": [
+      {
+        "created": "2021-09-03T19:27:00+00:00",
+        "modified": "2021-09-03T19:27:00+00:00",
+        "when": "2021-09-03T19:27:00+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 03 September 2021 05:40\n**Incident End:** 03 September 2021 06:20\n**Duration:** 40 minutes\n**Affected Services and Features:**\n- Cloud Networking\n- Compute Engine\n- Persistent Disk\n- Kubernetes Engine\n- App Engine\n- Cloud Run\n- Cloud Bigtable\n- Cloud Storage\n- Cloud Filestore\n- Cloud MemoryStore\n- Cloud Monitoring\n- Cloud VPN\n**Regions/Zones:** europe-west2-c\n**Description:**\nGoogle Cloud Networking experienced elevated packet loss and latency in europe-west2-c for a duration of 40 minutes. Additional Cloud services that use Cloud Networking experienced similar symptoms. From preliminary analysis, the root cause of the issue was a sudden redirection of traffic from a datacenter that was experiencing an issue.\n**Customer Impact:**\n- Affected customers may have experienced elevated packet loss and latency as their traffic was temporarily redirected.\n- Google Compute Engine instances experienced failed connectivity and packet loss on ingress, egress, and inter-zonal traffic. Autoscaling was also impacted and may have failed to make decisions.\n- Persistent Disk experienced elevated I/O latency on regional and zonal disks\n- Google Kubernetes Engine clusters experienced 30% of zonal and 5% of regional clusters reporting as unhealthy.\n- Google App Engine and Cloud Run served elevated 500 errors within europe-west2.\n- Cloud Bigtable experienced an elevated error rate and latency on operations within europe-west2.\n- Cloud SQL experienced issues connecting to instances in europe-west2. Affected instances may have lost telemetry data, and HA instances failed over if the primary was in the affected zone.\n- Google Cloud Storage experienced elevated read errors of up to 2.3% in europe-west2.\n- Cloud Filestore instances within europe-west2-c may have been unreachable.\n- Cloud MemoryStore instances within europe-west2 may have been unreachable.\n- Cloud Monitoring experienced delayed or missing metrics from resources in the zone.\n- Cloud VPN experienced a short duration where tunnels went down for a short time before being reestablished.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-09-03T14:17:31+00:00",
         "modified": "2021-09-03T14:17:32+00:00",
@@ -38,10 +45,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-09-03T14:17:31+00:00",
-      "modified": "2021-09-03T14:17:32+00:00",
-      "when": "2021-09-03T14:17:31+00:00",
-      "text": "The issue with Cloud Networking has been resolved for all affected users as of Friday, 2021-09-03 06:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-09-03T19:27:00+00:00",
+      "modified": "2021-09-03T19:27:00+00:00",
+      "when": "2021-09-03T19:27:00+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 03 September 2021 05:40\n**Incident End:** 03 September 2021 06:20\n**Duration:** 40 minutes\n**Affected Services and Features:**\n- Cloud Networking\n- Compute Engine\n- Persistent Disk\n- Kubernetes Engine\n- App Engine\n- Cloud Run\n- Cloud Bigtable\n- Cloud Storage\n- Cloud Filestore\n- Cloud MemoryStore\n- Cloud Monitoring\n- Cloud VPN\n**Regions/Zones:** europe-west2-c\n**Description:**\nGoogle Cloud Networking experienced elevated packet loss and latency in europe-west2-c for a duration of 40 minutes. Additional Cloud services that use Cloud Networking experienced similar symptoms. From preliminary analysis, the root cause of the issue was a sudden redirection of traffic from a datacenter that was experiencing an issue.\n**Customer Impact:**\n- Affected customers may have experienced elevated packet loss and latency as their traffic was temporarily redirected.\n- Google Compute Engine instances experienced failed connectivity and packet loss on ingress, egress, and inter-zonal traffic. Autoscaling was also impacted and may have failed to make decisions.\n- Persistent Disk experienced elevated I/O latency on regional and zonal disks\n- Google Kubernetes Engine clusters experienced 30% of zonal and 5% of regional clusters reporting as unhealthy.\n- Google App Engine and Cloud Run served elevated 500 errors within europe-west2.\n- Cloud Bigtable experienced an elevated error rate and latency on operations within europe-west2.\n- Cloud SQL experienced issues connecting to instances in europe-west2. Affected instances may have lost telemetry data, and HA instances failed over if the primary was in the affected zone.\n- Google Cloud Storage experienced elevated read errors of up to 2.3% in europe-west2.\n- Cloud Filestore instances within europe-west2-c may have been unreachable.\n- Cloud MemoryStore instances within europe-west2 may have been unreachable.\n- Cloud Monitoring experienced delayed or missing metrics from resources in the zone.\n- Cloud VPN experienced a short duration where tunnels went down for a short time before being reestablished.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
