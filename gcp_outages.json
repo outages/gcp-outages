@@ -64,14 +64,71 @@
     "uri": "incidents/WzDzgmTjQfAKPJha6Rbb"
   },
   {
+    "id": "9dSqbyLnq9ALkVnD84eF",
+    "number": "1544920841042535714",
+    "begin": "2021-09-02T09:00:00+00:00",
+    "created": "2021-09-02T15:25:22+00:00",
+    "end": "2021-09-02T19:00:00+00:00",
+    "modified": "2021-09-03T16:57:50+00:00",
+    "external_desc": "Google Cloud Storage UI is experiencing some issues",
+    "updates": [
+      {
+        "created": "2021-09-03T16:57:38+00:00",
+        "modified": "2021-09-03T16:57:38+00:00",
+        "when": "2021-09-03T16:57:38+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 02 Sep 2021 02:00\n**Incident End:** 02 Sep 2021 12:00\n**Duration:** 10 hours\n**Affected Services and Features:**\n- Google Cloud Storage - Cloud Console UI\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Storage (GCS) experienced up to an 85% failure rate globally when creating buckets from the GCS Console UI or other service UI’s which create buckets programmatically. From preliminary analysis, the increased failure rate was due to a GCS API rollout.\n**Customer Impact:**\n- Customers experienced errors including “RPO is not supported” when creating new GCS buckets using the Cloud Console UI.\n**Additional details:**\n- Customer workarounds included using the gcloud CLI (gsutil), or the API (such as via client libraries).\n- Retrying failed requests may have also succeeded\n- The GCS API rollout has been rolled back which fully restored the service.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-09-02T15:37:32+00:00",
+        "modified": "2021-09-02T15:37:38+00:00",
+        "when": "2021-09-02T15:37:32+00:00",
+        "text": "The issue with Google Cloud Storage is believed to be affecting only the user interface and has a workaround to use gsutil on CLI. Our Engineering Team is currently working on the resolution.\nIf you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we're working on resolving the issue.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-09-02T15:25:19+00:00",
+        "modified": "2021-09-02T15:25:23+00:00",
+        "when": "2021-09-02T15:25:19+00:00",
+        "text": "Summary: Google Cloud Storage UI is experiencing some issues\nDescription: We are experiencing an issue with Google Cloud Storage beginning at Thursday, 2021-09-02 07:45:57 PDT US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2021-09-02 08:55 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Users attempting to create gcs buckets in pantheon are getting errors\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-09-03T16:57:38+00:00",
+      "modified": "2021-09-03T16:57:38+00:00",
+      "when": "2021-09-03T16:57:38+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 02 Sep 2021 02:00\n**Incident End:** 02 Sep 2021 12:00\n**Duration:** 10 hours\n**Affected Services and Features:**\n- Google Cloud Storage - Cloud Console UI\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Storage (GCS) experienced up to an 85% failure rate globally when creating buckets from the GCS Console UI or other service UI’s which create buckets programmatically. From preliminary analysis, the increased failure rate was due to a GCS API rollout.\n**Customer Impact:**\n- Customers experienced errors including “RPO is not supported” when creating new GCS buckets using the Cloud Console UI.\n**Additional details:**\n- Customer workarounds included using the gcloud CLI (gsutil), or the API (such as via client libraries).\n- Retrying failed requests may have also succeeded\n- The GCS API rollout has been rolled back which fully restored the service.",
+      "status": "AVAILABLE"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "UwaYoXQ5bHYHG6EdiPB8",
+    "service_name": "Google Cloud Storage",
+    "affected_products": [
+      {
+        "title": "Google Cloud Storage",
+        "id": "UwaYoXQ5bHYHG6EdiPB8"
+      }
+    ],
+    "uri": "incidents/9dSqbyLnq9ALkVnD84eF"
+  },
+  {
     "id": "gwKjX9Lukav15SaFPbBF",
     "number": "1393196405563089999",
-    "begin": "2021-09-02T16:22:26+00:00",
+    "begin": "2021-09-01T02:35:00+00:00",
     "created": "2021-09-02T16:22:29+00:00",
-    "end": "2021-09-03T16:04:17+00:00",
-    "modified": "2021-09-03T16:04:18+00:00",
-    "external_desc": "us-central1, europe-west1, us-west1, asia-east1, asia-southeast1: Issue with VM maintenance on Google Compute Engine.",
+    "end": "2021-09-03T03:55:00+00:00",
+    "modified": "2021-09-07T21:39:46+00:00",
+    "external_desc": "us-central1, europe-west1, us-west1, asia-east1: Issue with Local SSDs on Google Compute Engine.",
     "updates": [
+      {
+        "created": "2021-09-07T21:39:46+00:00",
+        "modified": "2021-09-07T21:39:46+00:00",
+        "when": "2021-09-07T21:39:46+00:00",
+        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 31 August 2021 19:35\n**Incident End:** 2 September 2021 20:55\n**Duration:** 2 days, 1 hours, 20 minutes\n**Affected Services and Features:**\n- Google Compute Engine - Local SSD\n**Regions/Zones:**\n- us-central1-{a|b|f}\n- europe-west1-b\n- us-west1-a\n- asia-east1-b\n**Description:**\nGoogle Compute Engine (GCE) experienced local solid-state drive (SSD) unavailability for new instances in select zones intermittently for a duration of 2 days, 1 hours, and 20 minutes. From preliminary analysis, the root cause is due to latent issues within the GCE capacity management system.\n**Customer Impact:**\n- Unable to add Local SSDs to existing/new instances.\n**Additional details:**\n- The asia-southeast1-b zone was not impacted despite previous communication that suggested it was.\n- Existing instances, or instances that rebooted, were not impacted.\n- Low priority maintenance events on host machines were paused to prevent further impact to customer instances.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-09-03T16:04:17+00:00",
         "modified": "2021-09-03T16:04:17+00:00",
@@ -123,10 +180,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-09-03T16:04:17+00:00",
-      "modified": "2021-09-03T16:04:17+00:00",
-      "when": "2021-09-03T16:04:17+00:00",
-      "text": "The issue with VM maintenance on Google Compute Engine has been resolved for all affected users as of Friday, 2021-09-03 08:31 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-09-07T21:39:46+00:00",
+      "modified": "2021-09-07T21:39:46+00:00",
+      "when": "2021-09-07T21:39:46+00:00",
+      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 31 August 2021 19:35\n**Incident End:** 2 September 2021 20:55\n**Duration:** 2 days, 1 hours, 20 minutes\n**Affected Services and Features:**\n- Google Compute Engine - Local SSD\n**Regions/Zones:**\n- us-central1-{a|b|f}\n- europe-west1-b\n- us-west1-a\n- asia-east1-b\n**Description:**\nGoogle Compute Engine (GCE) experienced local solid-state drive (SSD) unavailability for new instances in select zones intermittently for a duration of 2 days, 1 hours, and 20 minutes. From preliminary analysis, the root cause is due to latent issues within the GCE capacity management system.\n**Customer Impact:**\n- Unable to add Local SSDs to existing/new instances.\n**Additional details:**\n- The asia-southeast1-b zone was not impacted despite previous communication that suggested it was.\n- Existing instances, or instances that rebooted, were not impacted.\n- Low priority maintenance events on host machines were paused to prevent further impact to customer instances.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
@@ -140,56 +197,6 @@
       }
     ],
     "uri": "incidents/gwKjX9Lukav15SaFPbBF"
-  },
-  {
-    "id": "9dSqbyLnq9ALkVnD84eF",
-    "number": "1544920841042535714",
-    "begin": "2021-09-02T09:00:00+00:00",
-    "created": "2021-09-02T15:25:22+00:00",
-    "end": "2021-09-02T19:00:00+00:00",
-    "modified": "2021-09-03T16:57:50+00:00",
-    "external_desc": "Google Cloud Storage UI is experiencing some issues",
-    "updates": [
-      {
-        "created": "2021-09-03T16:57:38+00:00",
-        "modified": "2021-09-03T16:57:38+00:00",
-        "when": "2021-09-03T16:57:38+00:00",
-        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 02 Sep 2021 02:00\n**Incident End:** 02 Sep 2021 12:00\n**Duration:** 10 hours\n**Affected Services and Features:**\n- Google Cloud Storage - Cloud Console UI\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Storage (GCS) experienced up to an 85% failure rate globally when creating buckets from the GCS Console UI or other service UI’s which create buckets programmatically. From preliminary analysis, the increased failure rate was due to a GCS API rollout.\n**Customer Impact:**\n- Customers experienced errors including “RPO is not supported” when creating new GCS buckets using the Cloud Console UI.\n**Additional details:**\n- Customer workarounds included using the gcloud CLI (gsutil), or the API (such as via client libraries).\n- Retrying failed requests may have also succeeded\n- The GCS API rollout has been rolled back which fully restored the service.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-09-02T15:37:32+00:00",
-        "modified": "2021-09-02T15:37:38+00:00",
-        "when": "2021-09-02T15:37:32+00:00",
-        "text": "The issue with Google Cloud Storage is believed to be affecting only the user interface and has a workaround to use gsutil on CLI. Our Engineering Team is currently working on the resolution.\nIf you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we're working on resolving the issue.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-09-02T15:25:19+00:00",
-        "modified": "2021-09-02T15:25:23+00:00",
-        "when": "2021-09-02T15:25:19+00:00",
-        "text": "Summary: Google Cloud Storage UI is experiencing some issues\nDescription: We are experiencing an issue with Google Cloud Storage beginning at Thursday, 2021-09-02 07:45:57 PDT US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2021-09-02 08:55 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Users attempting to create gcs buckets in pantheon are getting errors\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-09-03T16:57:38+00:00",
-      "modified": "2021-09-03T16:57:38+00:00",
-      "when": "2021-09-03T16:57:38+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 02 Sep 2021 02:00\n**Incident End:** 02 Sep 2021 12:00\n**Duration:** 10 hours\n**Affected Services and Features:**\n- Google Cloud Storage - Cloud Console UI\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Storage (GCS) experienced up to an 85% failure rate globally when creating buckets from the GCS Console UI or other service UI’s which create buckets programmatically. From preliminary analysis, the increased failure rate was due to a GCS API rollout.\n**Customer Impact:**\n- Customers experienced errors including “RPO is not supported” when creating new GCS buckets using the Cloud Console UI.\n**Additional details:**\n- Customer workarounds included using the gcloud CLI (gsutil), or the API (such as via client libraries).\n- Retrying failed requests may have also succeeded\n- The GCS API rollout has been rolled back which fully restored the service.",
-      "status": "AVAILABLE"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "UwaYoXQ5bHYHG6EdiPB8",
-    "service_name": "Google Cloud Storage",
-    "affected_products": [
-      {
-        "title": "Google Cloud Storage",
-        "id": "UwaYoXQ5bHYHG6EdiPB8"
-      }
-    ],
-    "uri": "incidents/9dSqbyLnq9ALkVnD84eF"
   },
   {
     "id": "5yL8cbrpS3ssbYjRZQJv",
