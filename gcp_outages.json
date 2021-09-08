@@ -2,12 +2,19 @@
   {
     "id": "mRTeQ94fZRLdx2Q7NLLX",
     "number": "6101118185948634658",
-    "begin": "2021-09-07T22:52:02+00:00",
+    "begin": "2021-09-07T22:04:00+00:00",
     "created": "2021-09-07T22:57:42+00:00",
-    "end": "2021-09-07T23:16:22+00:00",
-    "modified": "2021-09-07T23:16:22+00:00",
-    "external_desc": "Regions: (Asia, Western US) <-> (Eastern US, Europe). Packet loss on inter region traffic. Issue stands resolved.",
+    "end": "2021-09-07T22:45:00+00:00",
+    "modified": "2021-09-08T17:26:25+00:00",
+    "external_desc": "Regions: (Asia, Western US) <-> (Eastern US, Europe). Packet loss on inter region traffic.",
     "updates": [
+      {
+        "created": "2021-09-08T17:25:57+00:00",
+        "modified": "2021-09-08T17:25:57+00:00",
+        "when": "2021-09-08T17:25:57+00:00",
+        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 07 September 2021 15:04\n**Incident End:** 07 September 2021 15:45\n**Duration:** 41 minutes\n**Affected Services and Features:**\n- Google Cloud Networking - Cloud VPC, Cloud Interconnect.\n- Ingress and Egress traffic of any Google Cloud services to and from the affected regions.\n**Regions/Zones:**\nThe traffic between multiple regions (inter-region) was affected, while the traffic within each region (intra-region) remained unaffected. The regions asia-east, asia-northeast, asia-southeast, australia-southeast, us-west, and us-central had trouble connecting to the regions of us-east, northamerica-northeast, europe-central, europe-north, and europe-west, and vice-versa.\n**Description:**\nGoogle Cloud Networking experienced elevated packet loss for traffic between multiple regions for a duration of 41 minutes. Preliminary analysis indicates that during routine and typically non-disruptive router maintenance, a software issue occurred which unintentionally impacted packet forwarding.\n**Customer Impact:**\n- Google Cloud Networking - elevated packet loss\n- Other services using Cloud Networking - elevated latencies or other networking related delays.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-09-07T23:16:21+00:00",
         "modified": "2021-09-07T23:16:21+00:00",
@@ -38,10 +45,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-09-07T23:16:21+00:00",
-      "modified": "2021-09-07T23:16:21+00:00",
-      "when": "2021-09-07T23:16:21+00:00",
-      "text": "The issue with Cloud Networking has been resolved for all affected projects as of Tuesday, 2021-09-07 15:45 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-09-08T17:25:57+00:00",
+      "modified": "2021-09-08T17:25:57+00:00",
+      "when": "2021-09-08T17:25:57+00:00",
+      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 07 September 2021 15:04\n**Incident End:** 07 September 2021 15:45\n**Duration:** 41 minutes\n**Affected Services and Features:**\n- Google Cloud Networking - Cloud VPC, Cloud Interconnect.\n- Ingress and Egress traffic of any Google Cloud services to and from the affected regions.\n**Regions/Zones:**\nThe traffic between multiple regions (inter-region) was affected, while the traffic within each region (intra-region) remained unaffected. The regions asia-east, asia-northeast, asia-southeast, australia-southeast, us-west, and us-central had trouble connecting to the regions of us-east, northamerica-northeast, europe-central, europe-north, and europe-west, and vice-versa.\n**Description:**\nGoogle Cloud Networking experienced elevated packet loss for traffic between multiple regions for a duration of 41 minutes. Preliminary analysis indicates that during routine and typically non-disruptive router maintenance, a software issue occurred which unintentionally impacted packet forwarding.\n**Customer Impact:**\n- Google Cloud Networking - elevated packet loss\n- Other services using Cloud Networking - elevated latencies or other networking related delays.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
