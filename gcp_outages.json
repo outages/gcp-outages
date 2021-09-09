@@ -5,9 +5,16 @@
     "begin": "2021-09-09T19:06:03+00:00",
     "created": "2021-09-09T19:06:04+00:00",
     "end": "2021-09-09T19:54:38+00:00",
-    "modified": "2021-09-09T19:54:38+00:00",
+    "modified": "2021-09-09T22:25:23+00:00",
     "external_desc": "europe-central2, europe-west3: Elevated error rates for GKE control plane",
     "updates": [
+      {
+        "created": "2021-09-09T22:25:23+00:00",
+        "modified": "2021-09-09T22:25:24+00:00",
+        "when": "2021-09-09T22:25:23+00:00",
+        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 09 September 2021 10:46\n**Incident End:** 09 September 2021 12:44\n**Duration:** 1 hour, 58 minutes\n**Affected Services and Features:**\n- Google Kubernetes Engine (GKE) - Cluster operations\n**Regions/Zones:** europe-west3 , europe-central2\n**Description:**\nGoogle Kubernetes Engine (GKE) experienced elevated error rates intermittently in europe-west3 and europe-central2 for a duration of 1 hour, 58 minutes. From preliminary analysis, the issue was caused by an ongoing rollout in the backend authentication service. The backend authentication service was rolled back, ending impact at 12:44.\n**Customer Impact:**\n- Less than 0.5% of cluster operations that require an authentication token experienced elevated error rates.\n- Elevated error rates on GKE master pods that required authorization to change GCE resources.\n**Additional details:**\nA retry of the failed operation would have completed successfully.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-09-09T19:54:37+00:00",
         "modified": "2021-09-09T19:54:38+00:00",
@@ -45,10 +52,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-09-09T19:54:37+00:00",
-      "modified": "2021-09-09T19:54:38+00:00",
-      "when": "2021-09-09T19:54:37+00:00",
-      "text": "The issue with Google Kubernetes Engine has been resolved for all affected projects as of Thursday, 2021-09-09 12:53 US/Pacific.\nThere is no further impact to our customers.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-09-09T22:25:23+00:00",
+      "modified": "2021-09-09T22:25:24+00:00",
+      "when": "2021-09-09T22:25:23+00:00",
+      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 09 September 2021 10:46\n**Incident End:** 09 September 2021 12:44\n**Duration:** 1 hour, 58 minutes\n**Affected Services and Features:**\n- Google Kubernetes Engine (GKE) - Cluster operations\n**Regions/Zones:** europe-west3 , europe-central2\n**Description:**\nGoogle Kubernetes Engine (GKE) experienced elevated error rates intermittently in europe-west3 and europe-central2 for a duration of 1 hour, 58 minutes. From preliminary analysis, the issue was caused by an ongoing rollout in the backend authentication service. The backend authentication service was rolled back, ending impact at 12:44.\n**Customer Impact:**\n- Less than 0.5% of cluster operations that require an authentication token experienced elevated error rates.\n- Elevated error rates on GKE master pods that required authorization to change GCE resources.\n**Additional details:**\nA retry of the failed operation would have completed successfully.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
