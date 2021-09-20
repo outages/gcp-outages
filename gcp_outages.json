@@ -73,12 +73,19 @@
   {
     "id": "nkUtGfx3WQcAB1iLEtcd",
     "number": "17175204310165775620",
-    "begin": "2021-09-17T06:42:00+00:00",
+    "begin": "2021-09-13T17:20:00+00:00",
     "created": "2021-09-17T20:10:07+00:00",
-    "end": "2021-09-18T09:47:00+00:00",
-    "modified": "2021-09-18T10:02:07+00:00",
+    "end": "2021-09-18T08:27:00+00:00",
+    "modified": "2021-09-20T19:27:09+00:00",
     "external_desc": "Global: Cloud Networking connectivity issues for customers using packet mirroring.",
     "updates": [
+      {
+        "created": "2021-09-20T19:25:32+00:00",
+        "modified": "2021-09-20T19:25:32+00:00",
+        "when": "2021-09-20T19:25:32+00:00",
+        "text": "We apologize for the inconvenience this service outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 13 September 2021 10:20\n**Incident End:** 18 September 2021 01:27\n**Duration:** 4 days, 15 hours, 7 minutes\n**Affected Services and Features:**\n- Google Compute Engine – Access to Google Cloud services such as Google Cloud Storage, Cloud Bigtable, Cloud Spanner, and Google Container Registry were affected for Virtual Machine (VMs) with packet mirroring enabled.\n- Google Kubernetes Engine – Clusters with mirroring enabled had issues accessing Google endpoints including Google Container Registry and Google Cloud storage buckets.\n**Regions/Zones:** Global\n**Description:**\nGoogle Compute Engine (GCE) VM instances and Google Kubernetes Engine (GKE) instances were unable to access Google Cloud services if the packet mirroring feature was enabled.\nFrom preliminary analysis, the root cause was identified as an issue in the packet mirroring functionality that resulted in packet drops for VM to Google Cloud Services endpoint connections.\n**Customer Impact:**\n* GCE VMs with packet mirroring enabled were unable to access Google services. * Affected VMs were unable to retrieve Google Container Registry (GCR) images. * Affected VMs experienced timeouts when accessing Google Services.\n* GKE clusters with packet mirroring enabled were unable to access Google services.\n**Additional details:**\n* As a workaround, customers were informed to disable packet mirroring (if enabled) in order to reduce the impact on affected projects.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-09-18T09:47:54+00:00",
         "modified": "2021-09-18T10:01:57+00:00",
@@ -116,10 +123,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-09-18T09:47:54+00:00",
-      "modified": "2021-09-18T10:01:57+00:00",
-      "when": "2021-09-18T09:47:54+00:00",
-      "text": "The issue with Cloud Networking has been mitigated for all affected projects and there is no customer impact as of Saturday, 2021-09-18 01:29 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-09-20T19:25:32+00:00",
+      "modified": "2021-09-20T19:25:32+00:00",
+      "when": "2021-09-20T19:25:32+00:00",
+      "text": "We apologize for the inconvenience this service outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 13 September 2021 10:20\n**Incident End:** 18 September 2021 01:27\n**Duration:** 4 days, 15 hours, 7 minutes\n**Affected Services and Features:**\n- Google Compute Engine – Access to Google Cloud services such as Google Cloud Storage, Cloud Bigtable, Cloud Spanner, and Google Container Registry were affected for Virtual Machine (VMs) with packet mirroring enabled.\n- Google Kubernetes Engine – Clusters with mirroring enabled had issues accessing Google endpoints including Google Container Registry and Google Cloud storage buckets.\n**Regions/Zones:** Global\n**Description:**\nGoogle Compute Engine (GCE) VM instances and Google Kubernetes Engine (GKE) instances were unable to access Google Cloud services if the packet mirroring feature was enabled.\nFrom preliminary analysis, the root cause was identified as an issue in the packet mirroring functionality that resulted in packet drops for VM to Google Cloud Services endpoint connections.\n**Customer Impact:**\n* GCE VMs with packet mirroring enabled were unable to access Google services. * Affected VMs were unable to retrieve Google Container Registry (GCR) images. * Affected VMs experienced timeouts when accessing Google Services.\n* GKE clusters with packet mirroring enabled were unable to access Google services.\n**Additional details:**\n* As a workaround, customers were informed to disable packet mirroring (if enabled) in order to reduce the impact on affected projects.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
