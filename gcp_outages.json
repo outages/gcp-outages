@@ -101,12 +101,19 @@
   {
     "id": "AQ2XT5utr5zovdxoE64s",
     "number": "1346994744969028346",
-    "begin": "2021-09-22T14:00:38+00:00",
+    "begin": "2021-09-22T10:30:00+00:00",
     "created": "2021-09-22T14:43:18+00:00",
-    "end": "2021-09-23T21:47:09+00:00",
-    "modified": "2021-09-23T21:47:09+00:00",
+    "end": "2021-09-23T18:49:00+00:00",
+    "modified": "2021-09-24T17:25:07+00:00",
     "external_desc": "Google Engineers identified an issue with Cloud Build Github Pull Request Triggers.",
     "updates": [
+      {
+        "created": "2021-09-24T17:25:03+00:00",
+        "modified": "2021-09-24T17:25:03+00:00",
+        "when": "2021-09-24T17:25:03+00:00",
+        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 22 September 2021 03:30\n**Incident End:** 23 September 2021 11:49\n**Duration:** 1 day, 8 hours, 19 minutes\n**Affected Services and Features:**\n- Google Cloud Platform - Cloud Build service triggers failed\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Build service, used to run builds on Google Cloud Platform (GCP), experienced integration issues with GitHub. In this case, the Pull Request Triggers – with comment control enabled – failed for some users with the ‘writer’ role. From preliminary analysis, the issue was caused by an unexpected response received from the GitHub collaborator API call used to validate user permissions.\n**Customer Impact:**\n- GCP builds failed to initiate when GitHub Pull Requests were created by users granted ‘write’ permissions on a repository via team permissions.\n- “Needs /gcbrun from a collaborator” error message was displayed after Triggers failed.\n**Additional details:**\n- The issue was mitigated after our engineering team rolled out a mitigation to unblock comment controlled triggers that are invoked by users with the ‘writer’ role.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-09-23T21:47:08+00:00",
         "modified": "2021-09-23T21:47:09+00:00",
@@ -214,10 +221,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-09-23T21:47:08+00:00",
-      "modified": "2021-09-23T21:47:09+00:00",
-      "when": "2021-09-23T21:47:08+00:00",
-      "text": "The issue with Cloud Build has been resolved for all affected users as of Thursday, 2021-09-23 14:45 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-09-24T17:25:03+00:00",
+      "modified": "2021-09-24T17:25:03+00:00",
+      "when": "2021-09-24T17:25:03+00:00",
+      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 22 September 2021 03:30\n**Incident End:** 23 September 2021 11:49\n**Duration:** 1 day, 8 hours, 19 minutes\n**Affected Services and Features:**\n- Google Cloud Platform - Cloud Build service triggers failed\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Build service, used to run builds on Google Cloud Platform (GCP), experienced integration issues with GitHub. In this case, the Pull Request Triggers – with comment control enabled – failed for some users with the ‘writer’ role. From preliminary analysis, the issue was caused by an unexpected response received from the GitHub collaborator API call used to validate user permissions.\n**Customer Impact:**\n- GCP builds failed to initiate when GitHub Pull Requests were created by users granted ‘write’ permissions on a repository via team permissions.\n- “Needs /gcbrun from a collaborator” error message was displayed after Triggers failed.\n**Additional details:**\n- The issue was mitigated after our engineering team rolled out a mitigation to unblock comment controlled triggers that are invoked by users with the ‘writer’ role.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
