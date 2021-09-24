@@ -4,9 +4,16 @@
     "number": "10314800147357781421",
     "begin": "2021-09-24T01:14:13+00:00",
     "created": "2021-09-24T03:26:12+00:00",
-    "modified": "2021-09-24T03:28:30+00:00",
+    "modified": "2021-09-24T04:59:58+00:00",
     "external_desc": "Specific GKE Clusters upgraded from 1.19 to 1.20 (lower than 1.20.9-gke.2100) may experience pods restarting when Docker restarts.",
     "updates": [
+      {
+        "created": "2021-09-24T04:59:58+00:00",
+        "modified": "2021-09-24T04:59:58+00:00",
+        "when": "2021-09-24T04:59:58+00:00",
+        "text": "Summary: Specific GKE Clusters upgraded from 1.19 to 1.20 (lower than 1.20.9-gke.2100) may experience pods restarting when Docker restarts.\nDescription: We are experiencing an issue with GKE clusters upgraded from 1.19 to 1.20(lower than 1.20.9-gke.2100). Clusters may see pods restarting when Dockers are restarted.\nProblematic versions:\n* All 1.20.0.* - 1.20.8.*\n* 1.20.9.* below 1.20.9-gke.1600\n**Action required:**\nDo not upgrade from 1.19 -> 1.20.x (lower than 1.20.9-gke.2100)\nCustomers can upgrade to 1.20.9-gke.2100+ or 1.20.10-gke.301 to mitigate the issue.\nOur engineering team continues to investigate the issue at the back end.\nWe will provide an update by Friday, 2021-09-24 00:00 US/Pacific.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may see GKE Cluster pods restarting when Docker restarts.\nWorkaround: Customers can upgrade to 1.20.9-gke.2100+ or 1.20.10-gke.301 to mitigate the issue.",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-09-24T03:28:30+00:00",
         "modified": "2021-09-24T03:28:30+00:00",
@@ -23,10 +30,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-09-24T03:28:30+00:00",
-      "modified": "2021-09-24T03:28:30+00:00",
-      "when": "2021-09-24T03:28:30+00:00",
-      "text": "Summary: Specific GKE Clusters upgraded from 1.19 to 1.20 (lower than 1.20.9-gke.2100) may experience pods restarting when Docker restarts.\nDescription: We are experiencing an issue with GKE clusters upgraded from 1.19 to 1.20(lower than 1.20.9-gke.2100). Clusters may see pods restarting when Dockers are restarted.\nProblematic versions:\n* All 1.20.0.* - 1.20.8.*\n* 1.20.9.* below 1.20.9-gke.1600\n**Action required:**\nDo not upgrade from 1.19 -> 1.20.x (lower than 1.20.9-gke.2100)\nTo mitigate a cluster already upgraded to a problematic version, upgrade master and nodes to 1.20.10-gke.301.\nAvailable versions with fix:\n* 1.20.9-gke.210\n* 1.20.10+\nOur engineering team continues to investigate the issue at the back end.\nWe will provide an update by Thursday, 2021-09-23 22:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may see GKE Cluster pods restarting when Docker restarts.\nWorkaround: Do not upgrade from 1.19 -> 1.20.x (lower than 1.20.9-gke.2100)\nTo mitigate a cluster already upgraded, to a problematic version, upgrade master and nodes to 1.20.10-gke.301. Versions above 1.20.9-gke.2100 is not impacted.",
+      "created": "2021-09-24T04:59:58+00:00",
+      "modified": "2021-09-24T04:59:58+00:00",
+      "when": "2021-09-24T04:59:58+00:00",
+      "text": "Summary: Specific GKE Clusters upgraded from 1.19 to 1.20 (lower than 1.20.9-gke.2100) may experience pods restarting when Docker restarts.\nDescription: We are experiencing an issue with GKE clusters upgraded from 1.19 to 1.20(lower than 1.20.9-gke.2100). Clusters may see pods restarting when Dockers are restarted.\nProblematic versions:\n* All 1.20.0.* - 1.20.8.*\n* 1.20.9.* below 1.20.9-gke.1600\n**Action required:**\nDo not upgrade from 1.19 -> 1.20.x (lower than 1.20.9-gke.2100)\nCustomers can upgrade to 1.20.9-gke.2100+ or 1.20.10-gke.301 to mitigate the issue.\nOur engineering team continues to investigate the issue at the back end.\nWe will provide an update by Friday, 2021-09-24 00:00 US/Pacific.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may see GKE Cluster pods restarting when Docker restarts.\nWorkaround: Customers can upgrade to 1.20.9-gke.2100+ or 1.20.10-gke.301 to mitigate the issue.",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
