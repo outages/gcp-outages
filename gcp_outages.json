@@ -4,9 +4,16 @@
     "number": "4634903035067246523",
     "begin": "2021-09-27T17:17:46+00:00",
     "created": "2021-09-28T13:05:15+00:00",
-    "modified": "2021-09-28T13:05:15+00:00",
+    "modified": "2021-09-28T19:02:22+00:00",
     "external_desc": "Global: We have identified a Networking connectivity issue that impacts Docker workloads inside GKE and potentially GCE.",
     "updates": [
+      {
+        "created": "2021-09-28T19:02:22+00:00",
+        "modified": "2021-09-28T19:02:22+00:00",
+        "when": "2021-09-28T19:02:22+00:00",
+        "text": "Summary: Global: We have identified a Networking connectivity issue that impacts Docker workloads inside GKE and potentially GCE.\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2021-09-30 18:00 US/Pacific\nWe will provide more information by Tuesday, 2021-09-28 18:00 US/Pacific.\nDiagnosis: Some customers might experience a connection failure in Docker workflow to Fastly destinations such as debian.org, github.com with a timeout error.\nWorkaround: If you are impacted, please try adding an init container manifest into docker in docker deployment.This will ensures packets are sent with a proper MTU that will work with Fastly destinations.",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-09-28T13:05:07+00:00",
         "modified": "2021-09-28T13:05:16+00:00",
@@ -16,10 +23,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-09-28T13:05:07+00:00",
-      "modified": "2021-09-28T13:05:16+00:00",
-      "when": "2021-09-28T13:05:07+00:00",
-      "text": "Summary: Global: We have identified a Networking connectivity issue that impacts Docker workloads inside GKE and potentially GCE.\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2021-09-30 18:00 US/Pacific\nWe will provide more information by Tuesday, 2021-09-28 12:00 US/Pacific.\nDiagnosis: Some customers might experience a connection failure in Docker workflow to Fastly destinations such as debian.org, github.com with a timeout error.\nWorkaround: If you are impacted, please try adding an init container manifest into docker in docker deployment.This will ensures packets are sent with a proper MTU that will work with Fastly destinations.",
+      "created": "2021-09-28T19:02:22+00:00",
+      "modified": "2021-09-28T19:02:22+00:00",
+      "when": "2021-09-28T19:02:22+00:00",
+      "text": "Summary: Global: We have identified a Networking connectivity issue that impacts Docker workloads inside GKE and potentially GCE.\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2021-09-30 18:00 US/Pacific\nWe will provide more information by Tuesday, 2021-09-28 18:00 US/Pacific.\nDiagnosis: Some customers might experience a connection failure in Docker workflow to Fastly destinations such as debian.org, github.com with a timeout error.\nWorkaround: If you are impacted, please try adding an init container manifest into docker in docker deployment.This will ensures packets are sent with a proper MTU that will work with Fastly destinations.",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
