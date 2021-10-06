@@ -2,12 +2,19 @@
   {
     "id": "ty5QqQdPZaypH55Mifkz",
     "number": "4922318955216512507",
-    "begin": "2021-10-05T22:53:09+00:00",
+    "begin": "2021-10-05T22:53:00+00:00",
     "created": "2021-10-05T23:25:10+00:00",
-    "end": "2021-10-06T01:24:13+00:00",
-    "modified": "2021-10-06T01:24:13+00:00",
+    "end": "2021-10-06T01:23:00+00:00",
+    "modified": "2021-10-06T17:07:11+00:00",
     "external_desc": "Global: Jobs failing with internal error for GKE version 1.18",
     "updates": [
+      {
+        "created": "2021-10-06T17:06:48+00:00",
+        "modified": "2021-10-06T17:06:48+00:00",
+        "when": "2021-10-06T17:06:48+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 05 October 2021 15:53\n**Incident End:** 05 October 2021 18:23\n**Duration:** 2 hours, 30 minutes\n**Affected Services and Features:**\n- Google Cloud AI: Training Jobs\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud AI experienced an issue with Distributed training jobs, Bring your own service account (BYOSA) jobs and VPC peering jobs that run on GKE v1.18 which failed with an internal error for a duration of 2 hours, 30 minutes. From preliminary analysis, the root cause of this issue was the removal of certain GKE v1.18 releases as an available GKE cluster configuration. The issue has been fixed by rolling Cloud AI forward to use GKE v1.19 for training jobs.\n**Customer Impact:**\n- Google Cloud AI Training jobs (Distributed training jobs, BYOSA jobs and VPC peering jobs) that run on GKE v1.18 would fail with an internal error.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-10-06T01:24:12+00:00",
         "modified": "2021-10-06T01:24:13+00:00",
@@ -38,10 +45,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-10-06T01:24:12+00:00",
-      "modified": "2021-10-06T01:24:13+00:00",
-      "when": "2021-10-06T01:24:12+00:00",
-      "text": "The issue with Cloud AI has been resolved for all affected projects as of Tuesday, 2021-10-05 18:23 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-10-06T17:06:48+00:00",
+      "modified": "2021-10-06T17:06:48+00:00",
+      "when": "2021-10-06T17:06:48+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 05 October 2021 15:53\n**Incident End:** 05 October 2021 18:23\n**Duration:** 2 hours, 30 minutes\n**Affected Services and Features:**\n- Google Cloud AI: Training Jobs\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud AI experienced an issue with Distributed training jobs, Bring your own service account (BYOSA) jobs and VPC peering jobs that run on GKE v1.18 which failed with an internal error for a duration of 2 hours, 30 minutes. From preliminary analysis, the root cause of this issue was the removal of certain GKE v1.18 releases as an available GKE cluster configuration. The issue has been fixed by rolling Cloud AI forward to use GKE v1.19 for training jobs.\n**Customer Impact:**\n- Google Cloud AI Training jobs (Distributed training jobs, BYOSA jobs and VPC peering jobs) that run on GKE v1.18 would fail with an internal error.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
