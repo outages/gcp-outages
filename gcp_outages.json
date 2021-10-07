@@ -2,12 +2,19 @@
   {
     "id": "TQ7kUbAPqaEXrxqGKTP9",
     "number": "8484543035619786647",
-    "begin": "2021-10-07T00:28:44+00:00",
+    "begin": "2021-10-06T20:50:00+00:00",
     "created": "2021-10-07T00:51:30+00:00",
-    "end": "2021-10-07T01:28:30+00:00",
-    "modified": "2021-10-07T01:28:30+00:00",
+    "end": "2021-10-07T00:42:00+00:00",
+    "modified": "2021-10-07T17:33:56+00:00",
     "external_desc": "us-central1-a,c: Cloud spanner jobs reporting high read latencies. Incident mitigated.",
     "updates": [
+      {
+        "created": "2021-10-07T17:33:43+00:00",
+        "modified": "2021-10-07T17:33:43+00:00",
+        "when": "2021-10-07T17:33:43+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 06 October 2021 13:50\n**Incident End:** 06 October 2021 17:42\n**Duration:** 3 hours, 52 minutes\n**Affected Services and Features:**\n- Cloud Spanner: Latency\n**Regions/Zones:** us-central1\n**Description:**\nCloud Spanner experienced elevated p99.9 read latencies in us-central1 in some limited cases for a duration of 3 hours, 52 minutes. From preliminary analysis, the root cause of the issue was a resource contention issue on a small portion of the Spanner frontend servers in us-central1 that affected p99.9 latency for some customers.\n**Customer Impact:**\nA small portion of the regional Cloud Spanner instances in us-central1 experienced increased p99.9 latency for read requests. Multi-regional Cloud Spanner instances (nam6, nam7, nam9, nam10, nam11, nam12, and nam-eur-asia1) where the requests were routed to the impacted frontend servers in us-central1 were affected similarly.\n**Additional details:**\nThe issue has been fully mitigated by isolating the impacted frontend servers, and we do not believe there is a risk of recurrence at this time.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-10-07T01:28:30+00:00",
         "modified": "2021-10-07T01:28:30+00:00",
@@ -24,10 +31,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-10-07T01:28:30+00:00",
-      "modified": "2021-10-07T01:28:30+00:00",
-      "when": "2021-10-07T01:28:30+00:00",
-      "text": "The issue with Cloud Spanner has been resolved for all affected projects as of Wednesday, 2021-10-06 17:42 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-10-07T17:33:43+00:00",
+      "modified": "2021-10-07T17:33:43+00:00",
+      "when": "2021-10-07T17:33:43+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 06 October 2021 13:50\n**Incident End:** 06 October 2021 17:42\n**Duration:** 3 hours, 52 minutes\n**Affected Services and Features:**\n- Cloud Spanner: Latency\n**Regions/Zones:** us-central1\n**Description:**\nCloud Spanner experienced elevated p99.9 read latencies in us-central1 in some limited cases for a duration of 3 hours, 52 minutes. From preliminary analysis, the root cause of the issue was a resource contention issue on a small portion of the Spanner frontend servers in us-central1 that affected p99.9 latency for some customers.\n**Customer Impact:**\nA small portion of the regional Cloud Spanner instances in us-central1 experienced increased p99.9 latency for read requests. Multi-regional Cloud Spanner instances (nam6, nam7, nam9, nam10, nam11, nam12, and nam-eur-asia1) where the requests were routed to the impacted frontend servers in us-central1 were affected similarly.\n**Additional details:**\nThe issue has been fully mitigated by isolating the impacted frontend servers, and we do not believe there is a risk of recurrence at this time.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
