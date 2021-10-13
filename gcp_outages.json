@@ -4,9 +4,17 @@
     "number": "5462201987187757443",
     "begin": "2021-10-13T12:24:00+00:00",
     "created": "2021-10-13T16:45:23+00:00",
-    "modified": "2021-10-13T18:04:25+00:00",
-    "external_desc": "Global: Some Cloud Monitoring metric calculations are delayed",
+    "end": "2021-10-13T14:11:51+00:00",
+    "modified": "2021-10-13T18:33:07+00:00",
+    "external_desc": "Global: Some Cloud Monitoring metric calculations are delayed or missing for multiple Cloud Services",
     "updates": [
+      {
+        "created": "2021-10-13T18:33:05+00:00",
+        "modified": "2021-10-13T18:33:06+00:00",
+        "when": "2021-10-13T18:33:05+00:00",
+        "text": "The issue with Cloud Monitoring has been resolved for all affected projects as of Wednesday, 2021-10-13 11:21 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-10-13T18:04:25+00:00",
         "modified": "2021-10-13T18:04:25+00:00",
@@ -30,11 +38,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-10-13T18:04:25+00:00",
-      "modified": "2021-10-13T18:04:25+00:00",
-      "when": "2021-10-13T18:04:25+00:00",
-      "text": "Summary: Global: Some Cloud Monitoring metric calculations are delayed or missing for multiple Cloud Services\nDescription: Mitigation work is currently underway by our engineering team, as we believe we have identified the root cause.\nWe will provide more information by Wednesday, 2021-10-13 13:00 US/Pacific.\nDiagnosis: Affected customers may notice services such as Google Bigtable, Cloud Pub/Sub, and App Engine Flexible not exporting metrics to Cloud Monitoring. Additional services with monitoring data that is aggregated by location may also be impacted. Configured alerts based on affected metrics may get incorrect alert signals based on the alert definition.\nWorkaround: None at this time.",
-      "status": "SERVICE_DISRUPTION"
+      "created": "2021-10-13T18:33:05+00:00",
+      "modified": "2021-10-13T18:33:06+00:00",
+      "when": "2021-10-13T18:33:05+00:00",
+      "text": "The issue with Cloud Monitoring has been resolved for all affected projects as of Wednesday, 2021-10-13 11:21 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
