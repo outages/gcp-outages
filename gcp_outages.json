@@ -2,12 +2,19 @@
   {
     "id": "rXqQALuw55aCKd2QHfM3",
     "number": "5462201987187757443",
-    "begin": "2021-10-13T12:24:00+00:00",
+    "begin": "2021-10-13T12:25:00+00:00",
     "created": "2021-10-13T16:45:23+00:00",
-    "end": "2021-10-13T14:11:51+00:00",
-    "modified": "2021-10-13T18:33:07+00:00",
+    "end": "2021-10-13T17:50:00+00:00",
+    "modified": "2021-10-14T14:42:33+00:00",
     "external_desc": "Global: Some Cloud Monitoring metric calculations are delayed or missing for multiple Cloud Services",
     "updates": [
+      {
+        "created": "2021-10-14T14:42:33+00:00",
+        "modified": "2021-10-14T14:42:33+00:00",
+        "when": "2021-10-14T14:42:33+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 13 October 2021 05:25\n**Incident End:** 13 October 2021 10:50\n**Duration:** 5 hours, 25 minutes\n**Affected Services and Features:**\n- Cloud Monitoring\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Monitoring experienced degraded monitoring data availability globally for a duration of 5 hours and 25 minutes. During the disruption, impacted customers would have experienced missing monitoring metric data and missed monitoring alerts. The root cause was identified as a failed configuration on a standby task. A leadership change caused an unhealthy task to take over. The issue was mitigated by restarting the leader which allowed a healthy task to take back control which restored the service.\n**Customer Impact:**\n- Missing data for some monitoring metrics\n- Missed monitoring alerts",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-10-13T18:33:05+00:00",
         "modified": "2021-10-13T18:33:06+00:00",
@@ -38,10 +45,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-10-13T18:33:05+00:00",
-      "modified": "2021-10-13T18:33:06+00:00",
-      "when": "2021-10-13T18:33:05+00:00",
-      "text": "The issue with Cloud Monitoring has been resolved for all affected projects as of Wednesday, 2021-10-13 11:21 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-10-14T14:42:33+00:00",
+      "modified": "2021-10-14T14:42:33+00:00",
+      "when": "2021-10-14T14:42:33+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 13 October 2021 05:25\n**Incident End:** 13 October 2021 10:50\n**Duration:** 5 hours, 25 minutes\n**Affected Services and Features:**\n- Cloud Monitoring\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Monitoring experienced degraded monitoring data availability globally for a duration of 5 hours and 25 minutes. During the disruption, impacted customers would have experienced missing monitoring metric data and missed monitoring alerts. The root cause was identified as a failed configuration on a standby task. A leadership change caused an unhealthy task to take over. The issue was mitigated by restarting the leader which allowed a healthy task to take back control which restored the service.\n**Customer Impact:**\n- Missing data for some monitoring metrics\n- Missed monitoring alerts",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
