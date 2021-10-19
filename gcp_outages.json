@@ -74,9 +74,16 @@
     "number": "3843619539238907325",
     "begin": "2021-10-19T18:38:33+00:00",
     "created": "2021-10-19T19:05:47+00:00",
-    "modified": "2021-10-19T19:51:08+00:00",
+    "modified": "2021-10-19T20:07:21+00:00",
     "external_desc": "Global: Cloud Monitoring elevated errors requesting underlying monitoring data",
     "updates": [
+      {
+        "created": "2021-10-19T20:07:21+00:00",
+        "modified": "2021-10-19T20:07:22+00:00",
+        "when": "2021-10-19T20:07:21+00:00",
+        "text": "Summary: Global: Cloud Monitoring elevated errors requesting underlying monitoring data\nDescription: All customer impact is mitigated as of Tuesday, 2021-10-19 12:45 US/Pacific. Missing precomputed data from between 11:00 to 12:45 is expected, but can still be viewed via a raw query. Users might see lingering impact when running queries with large windows. Users may have received false alerts during that window based on the underlying monitoring data.\nWe will continue to monitor the situation. We do not have an ETA for full resolution at this point.\nWe will provide an update by Tuesday, 2021-10-19 14:00 US/Pacific with current details.\nDiagnosis: Affected customers may see errors when trying to query their monitoring data.\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE"
+      },
       {
         "created": "2021-10-19T19:51:08+00:00",
         "modified": "2021-10-19T19:51:08+00:00",
@@ -93,10 +100,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-10-19T19:51:08+00:00",
-      "modified": "2021-10-19T19:51:08+00:00",
-      "when": "2021-10-19T19:51:08+00:00",
-      "text": "Summary: Global: Cloud Monitoring elevated errors requesting underlying monitoring data\nDescription: We believe the issue with Cloud Monitoring is partially resolved and the mitigation is continuing to reduce the error rate. We will continue to monitor the situation.\nWe do not have an ETA for full resolution at this point.\nWe will provide an update by Tuesday, 2021-10-19 14:00 US/Pacific with current details.\nDiagnosis: Affected customers may see errors when trying to query their monitoring data.\nWorkaround: None at this time.",
+      "created": "2021-10-19T20:07:21+00:00",
+      "modified": "2021-10-19T20:07:22+00:00",
+      "when": "2021-10-19T20:07:21+00:00",
+      "text": "Summary: Global: Cloud Monitoring elevated errors requesting underlying monitoring data\nDescription: All customer impact is mitigated as of Tuesday, 2021-10-19 12:45 US/Pacific. Missing precomputed data from between 11:00 to 12:45 is expected, but can still be viewed via a raw query. Users might see lingering impact when running queries with large windows. Users may have received false alerts during that window based on the underlying monitoring data.\nWe will continue to monitor the situation. We do not have an ETA for full resolution at this point.\nWe will provide an update by Tuesday, 2021-10-19 14:00 US/Pacific with current details.\nDiagnosis: Affected customers may see errors when trying to query their monitoring data.\nWorkaround: None at this time.",
       "status": "SERVICE_OUTAGE"
     },
     "status_impact": "SERVICE_OUTAGE",
