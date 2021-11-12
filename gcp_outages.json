@@ -221,9 +221,24 @@
     "number": "1942372389113677880",
     "begin": "2021-11-12T09:40:06+00:00",
     "created": "2021-11-12T09:42:26+00:00",
-    "modified": "2021-11-12T10:57:04+00:00",
+    "end": "2021-11-12T11:44:24+00:00",
+    "modified": "2021-11-12T11:44:25+00:00",
     "external_desc": "We are experiencing Networking issues",
     "updates": [
+      {
+        "created": "2021-11-12T11:44:23+00:00",
+        "modified": "2021-11-12T11:44:26+00:00",
+        "when": "2021-11-12T11:44:23+00:00",
+        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-11-12T11:38:17+00:00",
+        "modified": "2021-11-12T11:38:20+00:00",
+        "when": "2021-11-12T11:38:17+00:00",
+        "text": "Summary: We are experiencing Networking issues\nDescription: We believe the issue with Google Cloud infrastructure components is partially resolved with the exception of the Google App Engine that is also recovering.\nWe will provide an update by Friday, 2021-11-12 04:10 US/Pacific with current details.\nDiagnosis: Customers might face connectivity issues.\nWorkaround: None",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-11-12T10:57:04+00:00",
         "modified": "2021-11-12T10:57:06+00:00",
@@ -268,11 +283,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-11-12T10:57:04+00:00",
-      "modified": "2021-11-12T10:57:06+00:00",
-      "when": "2021-11-12T10:57:04+00:00",
-      "text": "Summary: We are experiencing Networking issues\nDescription: Mitigation work is currently underway by our engineering team. We do not have an ETA for mitigation at this point but the services should be improving at this point.\nThe issue is affecting:\n- Cloud App Engine : Customers may see traffic drop for us-central1 and europe-west1.\n- Cloud Bigtable: mitigation still in progress, ETA for resolution still unknown\n- Cloud Monitoring UI: There is a mitigation in place at the GFE infrastructure level that is rolling out and is expected to resolve this issue.\n- Cloud Console: All Cloud Console paths may be unavailable.\n- Cloud Spanner: Customers coming through GFE (not CFE or cloud interconnect) will experience UNAVAILABLE error and latency for both DATA and ADMIN operations\n- Cloud Functions: Customers may see traffic drop for us-central1 and europe-west1.\n- Cloud Run: Cloud Run users are seeing increased HTTP 500s and authentication failures when trying to access apps.\n- Google Cloud Endpoints : Cloud Endpoints may be unavailable in europe-west1 and europe-west4 (most affected regions)\n- Cloud SQL:Regions europe-west1,europe-west4 and europe-west5 (could be more). Workaround: Users should retry failed operations.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2021-11-12 03:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers might face connectivity issues.\nWorkaround: None",
-      "status": "SERVICE_DISRUPTION"
+      "created": "2021-11-12T11:44:23+00:00",
+      "modified": "2021-11-12T11:44:26+00:00",
+      "when": "2021-11-12T11:44:23+00:00",
+      "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
