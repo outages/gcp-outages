@@ -1,48 +1,5 @@
 [
   {
-    "id": "o44ZUgX95KF11F7cqd5v",
-    "number": "16591718137333047668",
-    "begin": "2021-11-13T22:19:38+00:00",
-    "created": "2021-11-14T00:47:59+00:00",
-    "end": "2021-11-14T05:17:05+00:00",
-    "modified": "2021-11-14T05:17:06+00:00",
-    "external_desc": "us-central1, us-west1, us-west1, us-east1: Cloud Spanner missing stackdriver CPU, memory and disk metrics.",
-    "updates": [
-      {
-        "created": "2021-11-14T05:17:05+00:00",
-        "modified": "2021-11-14T05:17:07+00:00",
-        "when": "2021-11-14T05:17:05+00:00",
-        "text": "The issue with Cloud Spanner has been resolved for all affected users as of Saturday, 2021-11-13 21:16 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-11-14T00:47:58+00:00",
-        "modified": "2021-11-14T00:48:00+00:00",
-        "when": "2021-11-14T00:47:58+00:00",
-        "text": "Summary: us-central1, us-west1, us-west1, us-east1: Cloud Spanner missing stackdriver CPU, memory and disk metrics.\nDescription: Mitigation work is currently underway by our engineering team.\nCurrent data indicates that customers in us-central1, us-west1, us-west1 and us-east1 are affected by this issue.\nWe will provide more information by Saturday, 2021-11-13 23:00 US/Pacific.\nDiagnosis: Missing Stackdriver metrics on the dashboard.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-11-14T05:17:05+00:00",
-      "modified": "2021-11-14T05:17:07+00:00",
-      "when": "2021-11-14T05:17:05+00:00",
-      "text": "The issue with Cloud Spanner has been resolved for all affected users as of Saturday, 2021-11-13 21:16 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-      "status": "AVAILABLE"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "EcNGGUgBtBLrtm4mWvqC",
-    "service_name": "Cloud Spanner",
-    "affected_products": [
-      {
-        "title": "Cloud Spanner",
-        "id": "EcNGGUgBtBLrtm4mWvqC"
-      }
-    ],
-    "uri": "incidents/o44ZUgX95KF11F7cqd5v"
-  },
-  {
     "id": "ZoUf49v2qbJ9xRK63kaM",
     "number": "9650429565293316538",
     "begin": "2021-11-13T07:14:48+00:00",
@@ -91,6 +48,56 @@
       }
     ],
     "uri": "incidents/ZoUf49v2qbJ9xRK63kaM"
+  },
+  {
+    "id": "o44ZUgX95KF11F7cqd5v",
+    "number": "16591718137333047668",
+    "begin": "2021-11-13T02:45:00+00:00",
+    "created": "2021-11-14T00:47:59+00:00",
+    "end": "2021-11-14T04:39:00+00:00",
+    "modified": "2021-11-15T21:27:23+00:00",
+    "external_desc": "us-central1, us-west1, us-west1, us-east1: Cloud Spanner missing stackdriver CPU, memory and disk metrics.",
+    "updates": [
+      {
+        "created": "2021-11-15T21:26:47+00:00",
+        "modified": "2021-11-15T21:26:47+00:00",
+        "when": "2021-11-15T21:26:47+00:00",
+        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 18:45\n**Incident End:** 13 November 2021 20:39\n**Duration:** 1 day, 1 hours, 54 minutes\n**Affected Services and Features:**\n- Cloud Spanner - Missing/Incorrect Cloud Monitoring metrics for CPU, memory and disk\n**Regions/Zones:**\n- us-central1\n- us-east1\n- Global\n**Description:**\nCloud Spanner experienced unavailable and incorrect monitoring metrics for instance resources including cpu, memory and disk for a duration of 1 day, 1 hours and 54 minutes. From preliminary analysis, the root cause of the issue is a rollout flag which incorrectly modified how metrics are exported.\n**Customer Impact:**\n- us-central1: Experienced missing metrics during the impact duration until mitigation at 13 November 2021 18:30\n- us-east1: Experienced missing metrics during the impact duration until mitigation at 13 November 2021 17:45\n- All other regions: Many customers globally experienced metrics that incorrectly under-reported actual values until full resolution at 13 November 2021 20:39",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-11-14T05:17:05+00:00",
+        "modified": "2021-11-14T05:17:07+00:00",
+        "when": "2021-11-14T05:17:05+00:00",
+        "text": "The issue with Cloud Spanner has been resolved for all affected users as of Saturday, 2021-11-13 21:16 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-11-14T00:47:58+00:00",
+        "modified": "2021-11-14T00:48:00+00:00",
+        "when": "2021-11-14T00:47:58+00:00",
+        "text": "Summary: us-central1, us-west1, us-west1, us-east1: Cloud Spanner missing stackdriver CPU, memory and disk metrics.\nDescription: Mitigation work is currently underway by our engineering team.\nCurrent data indicates that customers in us-central1, us-west1, us-west1 and us-east1 are affected by this issue.\nWe will provide more information by Saturday, 2021-11-13 23:00 US/Pacific.\nDiagnosis: Missing Stackdriver metrics on the dashboard.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-11-15T21:26:47+00:00",
+      "modified": "2021-11-15T21:26:47+00:00",
+      "when": "2021-11-15T21:26:47+00:00",
+      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 18:45\n**Incident End:** 13 November 2021 20:39\n**Duration:** 1 day, 1 hours, 54 minutes\n**Affected Services and Features:**\n- Cloud Spanner - Missing/Incorrect Cloud Monitoring metrics for CPU, memory and disk\n**Regions/Zones:**\n- us-central1\n- us-east1\n- Global\n**Description:**\nCloud Spanner experienced unavailable and incorrect monitoring metrics for instance resources including cpu, memory and disk for a duration of 1 day, 1 hours and 54 minutes. From preliminary analysis, the root cause of the issue is a rollout flag which incorrectly modified how metrics are exported.\n**Customer Impact:**\n- us-central1: Experienced missing metrics during the impact duration until mitigation at 13 November 2021 18:30\n- us-east1: Experienced missing metrics during the impact duration until mitigation at 13 November 2021 17:45\n- All other regions: Many customers globally experienced metrics that incorrectly under-reported actual values until full resolution at 13 November 2021 20:39",
+      "status": "AVAILABLE"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "EcNGGUgBtBLrtm4mWvqC",
+    "service_name": "Cloud Spanner",
+    "affected_products": [
+      {
+        "title": "Cloud Spanner",
+        "id": "EcNGGUgBtBLrtm4mWvqC"
+      }
+    ],
+    "uri": "incidents/o44ZUgX95KF11F7cqd5v"
   },
   {
     "id": "u4oEtmqmJ1fmY8bjzxxa",
