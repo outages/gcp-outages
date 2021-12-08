@@ -4,9 +4,16 @@
     "number": "13045675828271798087",
     "begin": "2021-12-07T20:44:21+00:00",
     "created": "2021-12-07T21:14:09+00:00",
-    "modified": "2021-12-07T22:36:00+00:00",
-    "external_desc": "Global: Issues with Cloud SQL migrating to MySQL version 5.7.36",
+    "modified": "2021-12-08T00:35:08+00:00",
+    "external_desc": "Global: Issues with Cloud SQL migrating to MySQL version 5.7.36.",
     "updates": [
+      {
+        "created": "2021-12-08T00:35:07+00:00",
+        "modified": "2021-12-08T00:35:08+00:00",
+        "when": "2021-12-08T00:35:07+00:00",
+        "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36.\nDescription: Our engineering team continues to investigate the issue that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021\nWe will provide an update by Tuesday, 2021-12-07 19:30 US/Pacific with current details.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL MySQL 5.7 with GTID replication may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those data during replication phase, the migration job may fail.\nWorkaround: Customers may need to start a new migration by dumping the data from source mysql 5.7.35 or lower versions to Google Cloud Storage (GCS) manually, using mysqldump, and then migrate the file to destination mysql version.",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-12-07T22:36:00+00:00",
         "modified": "2021-12-07T22:36:01+00:00",
@@ -23,10 +30,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-12-07T22:36:00+00:00",
-      "modified": "2021-12-07T22:36:01+00:00",
-      "when": "2021-12-07T22:36:00+00:00",
-      "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36\nDescription: Our engineering team continues to investigate the issue that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021.\nWe will provide an update by Tuesday, 2021-12-07 16:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL MySQL 5.7 with GTID replication may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those data during replication phase, the migration job may fail.\nWorkaround: Customers need to start a new migration by dumping the data from source mysql 5.7.35 or lower versions to Google Cloud Storage (GCS) manually, using mysqldump, and then migrate the file to destination mysql version.",
+      "created": "2021-12-08T00:35:07+00:00",
+      "modified": "2021-12-08T00:35:08+00:00",
+      "when": "2021-12-08T00:35:07+00:00",
+      "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36.\nDescription: Our engineering team continues to investigate the issue that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021\nWe will provide an update by Tuesday, 2021-12-07 19:30 US/Pacific with current details.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL MySQL 5.7 with GTID replication may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those data during replication phase, the migration job may fail.\nWorkaround: Customers may need to start a new migration by dumping the data from source mysql 5.7.35 or lower versions to Google Cloud Storage (GCS) manually, using mysqldump, and then migrate the file to destination mysql version.",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
