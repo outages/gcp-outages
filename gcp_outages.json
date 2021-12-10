@@ -448,113 +448,6 @@
     "uri": "incidents/4qh2oE7kwsMoMNXScfoT"
   },
   {
-    "id": "u4oEtmqmJ1fmY8bjzxxa",
-    "number": "1802042647669406530",
-    "begin": "2021-11-12T08:30:00+00:00",
-    "created": "2021-11-12T10:19:16+00:00",
-    "end": "2021-11-12T10:14:00+00:00",
-    "modified": "2021-11-13T01:14:11+00:00",
-    "external_desc": "Issue with Google Cloud SQL",
-    "updates": [
-      {
-        "created": "2021-11-13T00:32:46+00:00",
-        "modified": "2021-11-13T01:14:11+00:00",
-        "when": "2021-11-13T00:32:46+00:00",
-        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-11-12T11:46:17+00:00",
-        "modified": "2021-11-12T11:46:18+00:00",
-        "when": "2021-11-12T11:46:17+00:00",
-        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-11-12T10:19:14+00:00",
-        "modified": "2021-11-13T00:34:27+00:00",
-        "when": "2021-11-12T10:19:14+00:00",
-        "text": "Summary: Issue with Google Cloud SQL\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:30 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue. For regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None\nWorkaround: None",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-11-13T00:32:46+00:00",
-      "modified": "2021-11-13T01:14:11+00:00",
-      "when": "2021-11-13T00:32:46+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-      "status": "AVAILABLE"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "hV87iK5DcEXKgWU2kDri",
-    "service_name": "Google Cloud SQL",
-    "affected_products": [
-      {
-        "title": "Google Cloud SQL",
-        "id": "hV87iK5DcEXKgWU2kDri"
-      }
-    ],
-    "uri": "incidents/u4oEtmqmJ1fmY8bjzxxa"
-  },
-  {
-    "id": "A1HUEnN25xk8XiSmjmsj",
-    "number": "14307305938107923640",
-    "begin": "2021-11-12T08:30:00+00:00",
-    "created": "2021-11-12T09:54:31+00:00",
-    "end": "2021-11-12T10:14:00+00:00",
-    "modified": "2021-11-13T01:12:22+00:00",
-    "external_desc": "We are experiencing an issue with multiple Google Cloud components.",
-    "updates": [
-      {
-        "created": "2021-11-13T00:50:51+00:00",
-        "modified": "2021-11-13T01:12:22+00:00",
-        "when": "2021-11-13T00:50:51+00:00",
-        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-11-12T11:52:25+00:00",
-        "modified": "2021-11-12T11:52:25+00:00",
-        "when": "2021-11-12T11:52:25+00:00",
-        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-11-12T10:11:51+00:00",
-        "modified": "2021-11-12T14:05:29+00:00",
-        "when": "2021-11-12T10:11:51+00:00",
-        "text": "Summary: We are experiencing an issue with .\nmultiple Google Cloud components\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: n/a\nWorkaround: n/a",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-11-12T09:54:29+00:00",
-        "modified": "2021-11-12T14:05:15+00:00",
-        "when": "2021-11-12T09:54:29+00:00",
-        "text": "Summary: We are experiencing an issue with .\nmultiple Google Cloud components\nDescription: We are experiencing an issue with .\nmultiple Google Cloud components\nOur engineering team continues to investigate the issue.",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-11-13T00:50:51+00:00",
-      "modified": "2021-11-13T01:12:22+00:00",
-      "when": "2021-11-13T00:50:51+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-      "status": "AVAILABLE"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "VNJxzcH58QmTt5H6pnT6",
-    "service_name": "Google Cloud Networking",
-    "affected_products": [
-      {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
-      }
-    ],
-    "uri": "incidents/A1HUEnN25xk8XiSmjmsj"
-  },
-  {
     "id": "PgiLpR4P4S1x7QgwXamt",
     "number": "5068446511008051635",
     "begin": "2021-11-12T08:30:00+00:00",
@@ -603,6 +496,56 @@
       }
     ],
     "uri": "incidents/PgiLpR4P4S1x7QgwXamt"
+  },
+  {
+    "id": "cJwQRK4bgybhu7nNQ5W4",
+    "number": "13388333705131857687",
+    "begin": "2021-11-12T08:30:00+00:00",
+    "created": "2021-11-12T09:57:58+00:00",
+    "end": "2021-11-12T10:14:00+00:00",
+    "modified": "2021-11-13T01:13:29+00:00",
+    "external_desc": "Issue with Eventarc",
+    "updates": [
+      {
+        "created": "2021-11-13T00:36:10+00:00",
+        "modified": "2021-11-13T01:13:29+00:00",
+        "when": "2021-11-13T00:36:10+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-11-12T11:47:23+00:00",
+        "modified": "2021-11-12T11:47:25+00:00",
+        "when": "2021-11-12T11:47:23+00:00",
+        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-11-12T09:57:56+00:00",
+        "modified": "2021-11-12T09:57:58+00:00",
+        "when": "2021-11-12T09:57:56+00:00",
+        "text": "Summary: Issue with Eventarc\nDescription: beginning at Friday, 2021-11-12 00:36 US/Pacific US/Pacific\nWe are experiencing an issue with Google Cloud components.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7\nDiagnosis: None at this time\nWorkaround: None at this time",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-11-13T00:36:10+00:00",
+      "modified": "2021-11-13T01:13:29+00:00",
+      "when": "2021-11-13T00:36:10+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+      "status": "AVAILABLE"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "YaFawoMaXnqgY4keUBnW",
+    "service_name": "Eventarc",
+    "affected_products": [
+      {
+        "title": "Eventarc",
+        "id": "YaFawoMaXnqgY4keUBnW"
+      }
+    ],
+    "uri": "incidents/cJwQRK4bgybhu7nNQ5W4"
   },
   {
     "id": "1xkAB1KmLrh5g3v9ZEZ7",
@@ -688,6 +631,56 @@
       }
     ],
     "uri": "incidents/1xkAB1KmLrh5g3v9ZEZ7"
+  },
+  {
+    "id": "MHS8ukmQamTNoZ9uqHvF",
+    "number": "18047497303663607236",
+    "begin": "2021-11-12T08:30:00+00:00",
+    "created": "2021-11-12T10:14:42+00:00",
+    "end": "2021-11-12T10:14:00+00:00",
+    "modified": "2021-11-13T01:12:49+00:00",
+    "external_desc": "Issue with Google Cloud components",
+    "updates": [
+      {
+        "created": "2021-11-13T00:41:50+00:00",
+        "modified": "2021-11-13T01:12:49+00:00",
+        "when": "2021-11-13T00:41:50+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-11-12T11:49:52+00:00",
+        "modified": "2021-11-12T11:49:53+00:00",
+        "when": "2021-11-12T11:49:52+00:00",
+        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-11-12T10:14:41+00:00",
+        "modified": "2021-11-12T10:14:43+00:00",
+        "when": "2021-11-12T10:14:41+00:00",
+        "text": "Summary: Issue with Google Cloud components\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue. For regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-11-13T00:41:50+00:00",
+      "modified": "2021-11-13T01:12:49+00:00",
+      "when": "2021-11-13T00:41:50+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+      "status": "AVAILABLE"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "DixAowEQm45KgqXKP5tR",
+    "service_name": "Operations",
+    "affected_products": [
+      {
+        "title": "Operations",
+        "id": "DixAowEQm45KgqXKP5tR"
+      }
+    ],
+    "uri": "incidents/MHS8ukmQamTNoZ9uqHvF"
   },
   {
     "id": "8hZjcddmMVe9W1jh8SCN",
@@ -854,104 +847,111 @@
     "uri": "incidents/qgC4WYnmToo6fkqEnqYf"
   },
   {
-    "id": "MHS8ukmQamTNoZ9uqHvF",
-    "number": "18047497303663607236",
+    "id": "u4oEtmqmJ1fmY8bjzxxa",
+    "number": "1802042647669406530",
     "begin": "2021-11-12T08:30:00+00:00",
-    "created": "2021-11-12T10:14:42+00:00",
+    "created": "2021-11-12T10:19:16+00:00",
     "end": "2021-11-12T10:14:00+00:00",
-    "modified": "2021-11-13T01:12:49+00:00",
-    "external_desc": "Issue with Google Cloud components",
+    "modified": "2021-11-13T01:14:11+00:00",
+    "external_desc": "Issue with Google Cloud SQL",
     "updates": [
       {
-        "created": "2021-11-13T00:41:50+00:00",
-        "modified": "2021-11-13T01:12:49+00:00",
-        "when": "2021-11-13T00:41:50+00:00",
+        "created": "2021-11-13T00:32:46+00:00",
+        "modified": "2021-11-13T01:14:11+00:00",
+        "when": "2021-11-13T00:32:46+00:00",
         "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
         "status": "AVAILABLE"
       },
       {
-        "created": "2021-11-12T11:49:52+00:00",
-        "modified": "2021-11-12T11:49:53+00:00",
-        "when": "2021-11-12T11:49:52+00:00",
+        "created": "2021-11-12T11:46:17+00:00",
+        "modified": "2021-11-12T11:46:18+00:00",
+        "when": "2021-11-12T11:46:17+00:00",
         "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE"
       },
       {
-        "created": "2021-11-12T10:14:41+00:00",
-        "modified": "2021-11-12T10:14:43+00:00",
-        "when": "2021-11-12T10:14:41+00:00",
-        "text": "Summary: Issue with Google Cloud components\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue. For regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
+        "created": "2021-11-12T10:19:14+00:00",
+        "modified": "2021-11-13T00:34:27+00:00",
+        "when": "2021-11-12T10:19:14+00:00",
+        "text": "Summary: Issue with Google Cloud SQL\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:30 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue. For regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None\nWorkaround: None",
         "status": "SERVICE_DISRUPTION"
       }
     ],
     "most_recent_update": {
-      "created": "2021-11-13T00:41:50+00:00",
-      "modified": "2021-11-13T01:12:49+00:00",
-      "when": "2021-11-13T00:41:50+00:00",
+      "created": "2021-11-13T00:32:46+00:00",
+      "modified": "2021-11-13T01:14:11+00:00",
+      "when": "2021-11-13T00:32:46+00:00",
       "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
-    "service_key": "DixAowEQm45KgqXKP5tR",
-    "service_name": "Operations",
+    "service_key": "hV87iK5DcEXKgWU2kDri",
+    "service_name": "Google Cloud SQL",
     "affected_products": [
       {
-        "title": "Operations",
-        "id": "DixAowEQm45KgqXKP5tR"
+        "title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri"
       }
     ],
-    "uri": "incidents/MHS8ukmQamTNoZ9uqHvF"
+    "uri": "incidents/u4oEtmqmJ1fmY8bjzxxa"
   },
   {
-    "id": "cJwQRK4bgybhu7nNQ5W4",
-    "number": "13388333705131857687",
+    "id": "A1HUEnN25xk8XiSmjmsj",
+    "number": "14307305938107923640",
     "begin": "2021-11-12T08:30:00+00:00",
-    "created": "2021-11-12T09:57:58+00:00",
+    "created": "2021-11-12T09:54:31+00:00",
     "end": "2021-11-12T10:14:00+00:00",
-    "modified": "2021-11-13T01:13:29+00:00",
-    "external_desc": "Issue with Eventarc",
+    "modified": "2021-11-13T01:12:22+00:00",
+    "external_desc": "We are experiencing an issue with multiple Google Cloud components.",
     "updates": [
       {
-        "created": "2021-11-13T00:36:10+00:00",
-        "modified": "2021-11-13T01:13:29+00:00",
-        "when": "2021-11-13T00:36:10+00:00",
+        "created": "2021-11-13T00:50:51+00:00",
+        "modified": "2021-11-13T01:12:22+00:00",
+        "when": "2021-11-13T00:50:51+00:00",
         "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
         "status": "AVAILABLE"
       },
       {
-        "created": "2021-11-12T11:47:23+00:00",
-        "modified": "2021-11-12T11:47:25+00:00",
-        "when": "2021-11-12T11:47:23+00:00",
-        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
+        "created": "2021-11-12T11:52:25+00:00",
+        "modified": "2021-11-12T11:52:25+00:00",
+        "when": "2021-11-12T11:52:25+00:00",
+        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE"
       },
       {
-        "created": "2021-11-12T09:57:56+00:00",
-        "modified": "2021-11-12T09:57:58+00:00",
-        "when": "2021-11-12T09:57:56+00:00",
-        "text": "Summary: Issue with Eventarc\nDescription: beginning at Friday, 2021-11-12 00:36 US/Pacific US/Pacific\nWe are experiencing an issue with Google Cloud components.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7\nDiagnosis: None at this time\nWorkaround: None at this time",
+        "created": "2021-11-12T10:11:51+00:00",
+        "modified": "2021-11-12T14:05:29+00:00",
+        "when": "2021-11-12T10:11:51+00:00",
+        "text": "Summary: We are experiencing an issue with .\nmultiple Google Cloud components\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: n/a\nWorkaround: n/a",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-11-12T09:54:29+00:00",
+        "modified": "2021-11-12T14:05:15+00:00",
+        "when": "2021-11-12T09:54:29+00:00",
+        "text": "Summary: We are experiencing an issue with .\nmultiple Google Cloud components\nDescription: We are experiencing an issue with .\nmultiple Google Cloud components\nOur engineering team continues to investigate the issue.",
         "status": "SERVICE_DISRUPTION"
       }
     ],
     "most_recent_update": {
-      "created": "2021-11-13T00:36:10+00:00",
-      "modified": "2021-11-13T01:13:29+00:00",
-      "when": "2021-11-13T00:36:10+00:00",
+      "created": "2021-11-13T00:50:51+00:00",
+      "modified": "2021-11-13T01:12:22+00:00",
+      "when": "2021-11-13T00:50:51+00:00",
       "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
-    "service_key": "YaFawoMaXnqgY4keUBnW",
-    "service_name": "Eventarc",
+    "service_key": "VNJxzcH58QmTt5H6pnT6",
+    "service_name": "Google Cloud Networking",
     "affected_products": [
       {
-        "title": "Eventarc",
-        "id": "YaFawoMaXnqgY4keUBnW"
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
       }
     ],
-    "uri": "incidents/cJwQRK4bgybhu7nNQ5W4"
+    "uri": "incidents/A1HUEnN25xk8XiSmjmsj"
   },
   {
     "id": "sXRB8Ty5Xzb13t8DCrD8",
@@ -995,6 +995,77 @@
       }
     ],
     "uri": "incidents/sXRB8Ty5Xzb13t8DCrD8"
+  },
+  {
+    "id": "aFfDakd653GfsyCBJnZq",
+    "number": "3605126490861261353",
+    "begin": "2021-10-27T09:00:00+00:00",
+    "created": "2021-10-28T18:33:03+00:00",
+    "end": "2021-10-30T19:00:00+00:00",
+    "modified": "2021-11-01T19:27:39+00:00",
+    "external_desc": "Multi-region/US: BigQuery queries may show latencies during execution.",
+    "updates": [
+      {
+        "created": "2021-11-01T19:27:36+00:00",
+        "modified": "2021-11-01T19:27:36+00:00",
+        "when": "2021-11-01T19:27:36+00:00",
+        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 27 Oct 2021 02:00\n**Incident End:** 30 Oct 2021 12:00\n**Duration:** 82 hours\n**Affected Services and Features:**\nGoogle BigQuery\n**Regions/Zones:** US Multi-region\n**Description:**\nGoogle BigQuery service performance experienced an increase in latency for queries in multiple regions in the US for 82 hours. From preliminary analysis, the root cause of the issue was capacity increase that caused rebalancing of workload and increased the scheduler processing time. This caused delays in query execution.\n**Customer Impact:** - Queries exhibited higher than normal latency. - Customers were unable to fully utilize their reserved slots.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-10-29T00:58:59+00:00",
+        "modified": "2021-10-29T00:59:00+00:00",
+        "when": "2021-10-29T00:58:59+00:00",
+        "text": "The issue with BigQuery queries showing latencies, has been resolved for all affected projects as of Thursday, 2021-10-28 17:45 US/Pacific.\nIf you have any further questions or are still impacted, please open a case with the Support Team and we will work with you until the issue is resolved.\nWe thank you for your patience while we worked towards resolving the issue.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-10-28T23:01:30+00:00",
+        "modified": "2021-10-28T23:01:31+00:00",
+        "when": "2021-10-28T23:01:30+00:00",
+        "text": "Summary: Multi-region/US: BigQuery queries may show latencies during execution.\nDescription: Mitigation work is progressing and our Engineering teams continue to monitor the system performance.\nWe do not have an ETA for mitigation completion at this moment.\nWe will provide more information by Thursday, 2021-10-28 18:00 US/Pacific.\nDiagnosis: Some queries may may exhibit higher than normal latencies during execution.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-10-28T21:49:53+00:00",
+        "modified": "2021-10-28T21:49:53+00:00",
+        "when": "2021-10-28T21:49:53+00:00",
+        "text": "Summary: Multi-region/US: BigQuery queries may show latencies during execution.\nDescription: Mitigation work is progressing and our Engineering teams continue to monitor the system performance.\nWe do not have an ETA for mitigation completion at this moment.\nWe will provide more information by Thursday, 2021-10-28 16:00 US/Pacific.\nDiagnosis: Some queries may may exhibit higher than normal latencies during execution.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-10-28T20:18:06+00:00",
+        "modified": "2021-10-28T20:18:07+00:00",
+        "when": "2021-10-28T20:18:06+00:00",
+        "text": "Summary: Multi-region/US: BigQuery queries may show latencies during execution.\nDescription: Engineering has confirmed that the mitigation work is progressing and we are continuing to monitor the system performance.\nWe do not have an ETA for the mitigation of the impact.\nWe will provide more information by Thursday, 2021-10-28 15:00 US/Pacific.\nDiagnosis: Some queries may may exhibit higher than normal latencies during execution.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-10-28T18:33:02+00:00",
+        "modified": "2021-10-28T18:33:03+00:00",
+        "when": "2021-10-28T18:33:02+00:00",
+        "text": "Summary: Multi-region/US: BigQuery queries may show latencies during execution.\nDescription: Mitigation work is still underway by our engineering team. The issue is affecting the US region and is currently under investigation.\nWe do not have an ETA for the mitigation of the impact.\nWe will provide more information by Thursday, 2021-10-28 13:30 US/Pacific.\nDiagnosis: Some queries may may exhibit higher than normal latencies during execution.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-11-01T19:27:36+00:00",
+      "modified": "2021-11-01T19:27:36+00:00",
+      "when": "2021-11-01T19:27:36+00:00",
+      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 27 Oct 2021 02:00\n**Incident End:** 30 Oct 2021 12:00\n**Duration:** 82 hours\n**Affected Services and Features:**\nGoogle BigQuery\n**Regions/Zones:** US Multi-region\n**Description:**\nGoogle BigQuery service performance experienced an increase in latency for queries in multiple regions in the US for 82 hours. From preliminary analysis, the root cause of the issue was capacity increase that caused rebalancing of workload and increased the scheduler processing time. This caused delays in query execution.\n**Customer Impact:** - Queries exhibited higher than normal latency. - Customers were unable to fully utilize their reserved slots.",
+      "status": "AVAILABLE"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "9CcrhHUcFevXPSVaSxkf",
+    "service_name": "Google BigQuery",
+    "affected_products": [
+      {
+        "title": "Google BigQuery",
+        "id": "9CcrhHUcFevXPSVaSxkf"
+      }
+    ],
+    "uri": "incidents/aFfDakd653GfsyCBJnZq"
   },
   {
     "id": "b29RZjsCa4Xuq874upMd",
@@ -1080,77 +1151,6 @@
       }
     ],
     "uri": "incidents/b29RZjsCa4Xuq874upMd"
-  },
-  {
-    "id": "aFfDakd653GfsyCBJnZq",
-    "number": "3605126490861261353",
-    "begin": "2021-10-27T09:00:00+00:00",
-    "created": "2021-10-28T18:33:03+00:00",
-    "end": "2021-10-30T19:00:00+00:00",
-    "modified": "2021-11-01T19:27:39+00:00",
-    "external_desc": "Multi-region/US: BigQuery queries may show latencies during execution.",
-    "updates": [
-      {
-        "created": "2021-11-01T19:27:36+00:00",
-        "modified": "2021-11-01T19:27:36+00:00",
-        "when": "2021-11-01T19:27:36+00:00",
-        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 27 Oct 2021 02:00\n**Incident End:** 30 Oct 2021 12:00\n**Duration:** 82 hours\n**Affected Services and Features:**\nGoogle BigQuery\n**Regions/Zones:** US Multi-region\n**Description:**\nGoogle BigQuery service performance experienced an increase in latency for queries in multiple regions in the US for 82 hours. From preliminary analysis, the root cause of the issue was capacity increase that caused rebalancing of workload and increased the scheduler processing time. This caused delays in query execution.\n**Customer Impact:** - Queries exhibited higher than normal latency. - Customers were unable to fully utilize their reserved slots.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-10-29T00:58:59+00:00",
-        "modified": "2021-10-29T00:59:00+00:00",
-        "when": "2021-10-29T00:58:59+00:00",
-        "text": "The issue with BigQuery queries showing latencies, has been resolved for all affected projects as of Thursday, 2021-10-28 17:45 US/Pacific.\nIf you have any further questions or are still impacted, please open a case with the Support Team and we will work with you until the issue is resolved.\nWe thank you for your patience while we worked towards resolving the issue.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-10-28T23:01:30+00:00",
-        "modified": "2021-10-28T23:01:31+00:00",
-        "when": "2021-10-28T23:01:30+00:00",
-        "text": "Summary: Multi-region/US: BigQuery queries may show latencies during execution.\nDescription: Mitigation work is progressing and our Engineering teams continue to monitor the system performance.\nWe do not have an ETA for mitigation completion at this moment.\nWe will provide more information by Thursday, 2021-10-28 18:00 US/Pacific.\nDiagnosis: Some queries may may exhibit higher than normal latencies during execution.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-10-28T21:49:53+00:00",
-        "modified": "2021-10-28T21:49:53+00:00",
-        "when": "2021-10-28T21:49:53+00:00",
-        "text": "Summary: Multi-region/US: BigQuery queries may show latencies during execution.\nDescription: Mitigation work is progressing and our Engineering teams continue to monitor the system performance.\nWe do not have an ETA for mitigation completion at this moment.\nWe will provide more information by Thursday, 2021-10-28 16:00 US/Pacific.\nDiagnosis: Some queries may may exhibit higher than normal latencies during execution.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-10-28T20:18:06+00:00",
-        "modified": "2021-10-28T20:18:07+00:00",
-        "when": "2021-10-28T20:18:06+00:00",
-        "text": "Summary: Multi-region/US: BigQuery queries may show latencies during execution.\nDescription: Engineering has confirmed that the mitigation work is progressing and we are continuing to monitor the system performance.\nWe do not have an ETA for the mitigation of the impact.\nWe will provide more information by Thursday, 2021-10-28 15:00 US/Pacific.\nDiagnosis: Some queries may may exhibit higher than normal latencies during execution.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-10-28T18:33:02+00:00",
-        "modified": "2021-10-28T18:33:03+00:00",
-        "when": "2021-10-28T18:33:02+00:00",
-        "text": "Summary: Multi-region/US: BigQuery queries may show latencies during execution.\nDescription: Mitigation work is still underway by our engineering team. The issue is affecting the US region and is currently under investigation.\nWe do not have an ETA for the mitigation of the impact.\nWe will provide more information by Thursday, 2021-10-28 13:30 US/Pacific.\nDiagnosis: Some queries may may exhibit higher than normal latencies during execution.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-11-01T19:27:36+00:00",
-      "modified": "2021-11-01T19:27:36+00:00",
-      "when": "2021-11-01T19:27:36+00:00",
-      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 27 Oct 2021 02:00\n**Incident End:** 30 Oct 2021 12:00\n**Duration:** 82 hours\n**Affected Services and Features:**\nGoogle BigQuery\n**Regions/Zones:** US Multi-region\n**Description:**\nGoogle BigQuery service performance experienced an increase in latency for queries in multiple regions in the US for 82 hours. From preliminary analysis, the root cause of the issue was capacity increase that caused rebalancing of workload and increased the scheduler processing time. This caused delays in query execution.\n**Customer Impact:** - Queries exhibited higher than normal latency. - Customers were unable to fully utilize their reserved slots.",
-      "status": "AVAILABLE"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "9CcrhHUcFevXPSVaSxkf",
-    "service_name": "Google BigQuery",
-    "affected_products": [
-      {
-        "title": "Google BigQuery",
-        "id": "9CcrhHUcFevXPSVaSxkf"
-      }
-    ],
-    "uri": "incidents/aFfDakd653GfsyCBJnZq"
   },
   {
     "id": "gFhaHLtkkPrs5N5dNMRG",
@@ -3528,6 +3528,42 @@
     "uri": "incidents/RPBQJ6t6qkJGkKG21Quv"
   },
   {
+    "id": "NJJp8jkNzFStMyiJZWWD",
+    "number": "16011761144916808084",
+    "begin": "2021-08-24T03:14:00+00:00",
+    "created": "2021-08-24T04:21:20+00:00",
+    "end": "2021-08-24T03:41:13+00:00",
+    "modified": "2021-08-24T05:48:13+00:00",
+    "external_desc": "The issue with Cloud Networking has been resolved for all affected users as of Monday, 2021-08-23 20:41:13 PDT.\nWe thank you for your patience while we worked on resolving the issue.",
+    "updates": [
+      {
+        "created": "2021-08-24T04:21:20+00:00",
+        "modified": "2021-08-24T04:21:20+00:00",
+        "when": "2021-08-24T04:21:20+00:00",
+        "text": "Description: We are experiencing an issue with Cloud Networking at australia-southeast2\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/8DhiwfKvD987f5tJrj1G, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-08-24T04:21:20+00:00",
+      "modified": "2021-08-24T04:21:20+00:00",
+      "when": "2021-08-24T04:21:20+00:00",
+      "text": "Description: We are experiencing an issue with Cloud Networking at australia-southeast2\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/8DhiwfKvD987f5tJrj1G, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
+      "status": "SERVICE_DISRUPTION"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "VNJxzcH58QmTt5H6pnT6",
+    "service_name": "Google Cloud Networking",
+    "affected_products": [
+      {
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
+      }
+    ],
+    "uri": "incidents/NJJp8jkNzFStMyiJZWWD"
+  },
+  {
     "id": "9FtLfPznLEsy2pwmzfYp",
     "number": "695108566094988677",
     "begin": "2021-08-24T03:14:00+00:00",
@@ -3569,42 +3605,6 @@
       }
     ],
     "uri": "incidents/9FtLfPznLEsy2pwmzfYp"
-  },
-  {
-    "id": "NJJp8jkNzFStMyiJZWWD",
-    "number": "16011761144916808084",
-    "begin": "2021-08-24T03:14:00+00:00",
-    "created": "2021-08-24T04:21:20+00:00",
-    "end": "2021-08-24T03:41:13+00:00",
-    "modified": "2021-08-24T05:48:13+00:00",
-    "external_desc": "The issue with Cloud Networking has been resolved for all affected users as of Monday, 2021-08-23 20:41:13 PDT.\nWe thank you for your patience while we worked on resolving the issue.",
-    "updates": [
-      {
-        "created": "2021-08-24T04:21:20+00:00",
-        "modified": "2021-08-24T04:21:20+00:00",
-        "when": "2021-08-24T04:21:20+00:00",
-        "text": "Description: We are experiencing an issue with Cloud Networking at australia-southeast2\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/8DhiwfKvD987f5tJrj1G, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-08-24T04:21:20+00:00",
-      "modified": "2021-08-24T04:21:20+00:00",
-      "when": "2021-08-24T04:21:20+00:00",
-      "text": "Description: We are experiencing an issue with Cloud Networking at australia-southeast2\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/8DhiwfKvD987f5tJrj1G, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
-      "status": "SERVICE_DISRUPTION"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "VNJxzcH58QmTt5H6pnT6",
-    "service_name": "Google Cloud Networking",
-    "affected_products": [
-      {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
-      }
-    ],
-    "uri": "incidents/NJJp8jkNzFStMyiJZWWD"
   },
   {
     "id": "8DhiwfKvD987f5tJrj1G",
@@ -7089,49 +7089,6 @@
     "uri": "incidents/8PE2WjKBY7g4bVzMQfab"
   },
   {
-    "id": "bWW1KUmjBhZWnE9cHWfV",
-    "number": "17891349094795474682",
-    "begin": "2021-02-18T20:13:00+00:00",
-    "created": "2021-02-18T23:17:02+00:00",
-    "end": "2021-02-18T23:59:42+00:00",
-    "modified": "2021-02-18T23:59:43+00:00",
-    "external_desc": "We are experiencing an issue with Cloud Memorystore in us-central1 starting at 12:13 US/Pacific.",
-    "updates": [
-      {
-        "created": "2021-02-18T23:59:43+00:00",
-        "modified": "2021-02-18T23:59:43+00:00",
-        "when": "2021-02-18T23:59:43+00:00",
-        "text": "Our engineers have determined this issue was mitigated at 15:28 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-02-18T23:17:02+00:00",
-        "modified": "2021-02-18T23:17:02+00:00",
-        "when": "2021-02-18T23:17:02+00:00",
-        "text": "Our engineers have determined this issue to be linked to a single Google\nincident. For regular status updates, please visit https://status.cloud.google.com/incident/compute/21002. No further updates will be made through this incident.",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-02-18T23:59:43+00:00",
-      "modified": "2021-02-18T23:59:43+00:00",
-      "when": "2021-02-18T23:59:43+00:00",
-      "text": "Our engineers have determined this issue was mitigated at 15:28 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
-      "status": "AVAILABLE"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "LGPLu3M5pcUAKU1z6eP3",
-    "service_name": "Cloud Memorystore",
-    "affected_products": [
-      {
-        "title": "Cloud Memorystore",
-        "id": "LGPLu3M5pcUAKU1z6eP3"
-      }
-    ],
-    "uri": "incidents/bWW1KUmjBhZWnE9cHWfV"
-  },
-  {
     "id": "hY79QaoMeJj48m2SXvmB",
     "number": "6726739196998586419",
     "begin": "2021-02-18T20:13:00+00:00",
@@ -7173,6 +7130,92 @@
       }
     ],
     "uri": "incidents/hY79QaoMeJj48m2SXvmB"
+  },
+  {
+    "id": "HQ2CbcaHVXG6HHCnAchB",
+    "number": "10292813218239098276",
+    "begin": "2021-02-18T20:13:00+00:00",
+    "created": "2021-02-18T23:06:39+00:00",
+    "end": "2021-02-19T00:13:25+00:00",
+    "modified": "2021-02-19T00:13:26+00:00",
+    "external_desc": "We are experiencing an issue with Cloud SQL instances in us-central1 starting at 12:13 US/Pacific.",
+    "updates": [
+      {
+        "created": "2021-02-19T00:13:25+00:00",
+        "modified": "2021-02-19T00:13:25+00:00",
+        "when": "2021-02-19T00:13:25+00:00",
+        "text": "Our engineers have determined this issue was mitigated at 15:46 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-02-18T23:06:39+00:00",
+        "modified": "2021-02-18T23:06:39+00:00",
+        "when": "2021-02-18T23:06:39+00:00",
+        "text": "Our engineers have determined this issue to be linked to a single Google\nincident. For regular status updates, please visit https://status.cloud.google.com/incident/compute/21002. No further updates will be made through this incident.",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-02-19T00:13:25+00:00",
+      "modified": "2021-02-19T00:13:25+00:00",
+      "when": "2021-02-19T00:13:25+00:00",
+      "text": "Our engineers have determined this issue was mitigated at 15:46 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
+      "status": "AVAILABLE"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "hV87iK5DcEXKgWU2kDri",
+    "service_name": "Google Cloud SQL",
+    "affected_products": [
+      {
+        "title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri"
+      }
+    ],
+    "uri": "incidents/HQ2CbcaHVXG6HHCnAchB"
+  },
+  {
+    "id": "dTWWxQj3YWmTvK1X8hE3",
+    "number": "2079265032955529488",
+    "begin": "2021-02-18T20:13:00+00:00",
+    "created": "2021-02-18T23:21:40+00:00",
+    "end": "2021-02-19T00:47:04+00:00",
+    "modified": "2021-02-19T00:47:05+00:00",
+    "external_desc": "We are experiencing an issue with Cloud Dataproc in us-central1 starting at 12:13 US/Pacific.",
+    "updates": [
+      {
+        "created": "2021-02-19T00:47:05+00:00",
+        "modified": "2021-02-19T00:47:05+00:00",
+        "when": "2021-02-19T00:47:05+00:00",
+        "text": "Our engineers have determined this issue was mitigated at 16:14 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-02-18T23:21:40+00:00",
+        "modified": "2021-02-18T23:21:40+00:00",
+        "when": "2021-02-18T23:21:40+00:00",
+        "text": "Our engineers have determined this issue to be linked to a single Google\nincident. For regular status updates, please visit https://status.cloud.google.com/incident/compute/21002. No further updates will be made through this incident.",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-02-19T00:47:05+00:00",
+      "modified": "2021-02-19T00:47:05+00:00",
+      "when": "2021-02-19T00:47:05+00:00",
+      "text": "Our engineers have determined this issue was mitigated at 16:14 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
+      "status": "AVAILABLE"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "yjXrEg3Yvy26BauMwr69",
+    "service_name": "Google Cloud Dataproc",
+    "affected_products": [
+      {
+        "title": "Google Cloud Dataproc",
+        "id": "yjXrEg3Yvy26BauMwr69"
+      }
+    ],
+    "uri": "incidents/dTWWxQj3YWmTvK1X8hE3"
   },
   {
     "id": "N6p8aF8qA3xcehTB6pPZ",
@@ -7254,90 +7297,47 @@
     "uri": "incidents/UK3LcXtsL7sW9g8TZkJM"
   },
   {
-    "id": "dTWWxQj3YWmTvK1X8hE3",
-    "number": "2079265032955529488",
+    "id": "bWW1KUmjBhZWnE9cHWfV",
+    "number": "17891349094795474682",
     "begin": "2021-02-18T20:13:00+00:00",
-    "created": "2021-02-18T23:21:40+00:00",
-    "end": "2021-02-19T00:47:04+00:00",
-    "modified": "2021-02-19T00:47:05+00:00",
-    "external_desc": "We are experiencing an issue with Cloud Dataproc in us-central1 starting at 12:13 US/Pacific.",
+    "created": "2021-02-18T23:17:02+00:00",
+    "end": "2021-02-18T23:59:42+00:00",
+    "modified": "2021-02-18T23:59:43+00:00",
+    "external_desc": "We are experiencing an issue with Cloud Memorystore in us-central1 starting at 12:13 US/Pacific.",
     "updates": [
       {
-        "created": "2021-02-19T00:47:05+00:00",
-        "modified": "2021-02-19T00:47:05+00:00",
-        "when": "2021-02-19T00:47:05+00:00",
-        "text": "Our engineers have determined this issue was mitigated at 16:14 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
+        "created": "2021-02-18T23:59:43+00:00",
+        "modified": "2021-02-18T23:59:43+00:00",
+        "when": "2021-02-18T23:59:43+00:00",
+        "text": "Our engineers have determined this issue was mitigated at 15:28 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
         "status": "AVAILABLE"
       },
       {
-        "created": "2021-02-18T23:21:40+00:00",
-        "modified": "2021-02-18T23:21:40+00:00",
-        "when": "2021-02-18T23:21:40+00:00",
+        "created": "2021-02-18T23:17:02+00:00",
+        "modified": "2021-02-18T23:17:02+00:00",
+        "when": "2021-02-18T23:17:02+00:00",
         "text": "Our engineers have determined this issue to be linked to a single Google\nincident. For regular status updates, please visit https://status.cloud.google.com/incident/compute/21002. No further updates will be made through this incident.",
         "status": "SERVICE_DISRUPTION"
       }
     ],
     "most_recent_update": {
-      "created": "2021-02-19T00:47:05+00:00",
-      "modified": "2021-02-19T00:47:05+00:00",
-      "when": "2021-02-19T00:47:05+00:00",
-      "text": "Our engineers have determined this issue was mitigated at 16:14 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
+      "created": "2021-02-18T23:59:43+00:00",
+      "modified": "2021-02-18T23:59:43+00:00",
+      "when": "2021-02-18T23:59:43+00:00",
+      "text": "Our engineers have determined this issue was mitigated at 15:28 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
-    "service_key": "yjXrEg3Yvy26BauMwr69",
-    "service_name": "Google Cloud Dataproc",
+    "service_key": "LGPLu3M5pcUAKU1z6eP3",
+    "service_name": "Cloud Memorystore",
     "affected_products": [
       {
-        "title": "Google Cloud Dataproc",
-        "id": "yjXrEg3Yvy26BauMwr69"
+        "title": "Cloud Memorystore",
+        "id": "LGPLu3M5pcUAKU1z6eP3"
       }
     ],
-    "uri": "incidents/dTWWxQj3YWmTvK1X8hE3"
-  },
-  {
-    "id": "HQ2CbcaHVXG6HHCnAchB",
-    "number": "10292813218239098276",
-    "begin": "2021-02-18T20:13:00+00:00",
-    "created": "2021-02-18T23:06:39+00:00",
-    "end": "2021-02-19T00:13:25+00:00",
-    "modified": "2021-02-19T00:13:26+00:00",
-    "external_desc": "We are experiencing an issue with Cloud SQL instances in us-central1 starting at 12:13 US/Pacific.",
-    "updates": [
-      {
-        "created": "2021-02-19T00:13:25+00:00",
-        "modified": "2021-02-19T00:13:25+00:00",
-        "when": "2021-02-19T00:13:25+00:00",
-        "text": "Our engineers have determined this issue was mitigated at 15:46 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-02-18T23:06:39+00:00",
-        "modified": "2021-02-18T23:06:39+00:00",
-        "when": "2021-02-18T23:06:39+00:00",
-        "text": "Our engineers have determined this issue to be linked to a single Google\nincident. For regular status updates, please visit https://status.cloud.google.com/incident/compute/21002. No further updates will be made through this incident.",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-02-19T00:13:25+00:00",
-      "modified": "2021-02-19T00:13:25+00:00",
-      "when": "2021-02-19T00:13:25+00:00",
-      "text": "Our engineers have determined this issue was mitigated at 15:46 PST. Please visit https://status.cloud.google.com/incident/compute/21002 for further details.",
-      "status": "AVAILABLE"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "hV87iK5DcEXKgWU2kDri",
-    "service_name": "Google Cloud SQL",
-    "affected_products": [
-      {
-        "title": "Google Cloud SQL",
-        "id": "hV87iK5DcEXKgWU2kDri"
-      }
-    ],
-    "uri": "incidents/HQ2CbcaHVXG6HHCnAchB"
+    "uri": "incidents/bWW1KUmjBhZWnE9cHWfV"
   },
   {
     "id": "tqwPWZHj8thosqR5MJkp",
@@ -7468,47 +7468,47 @@
     "uri": "incidents/vUyXMVpQyAe9ibYnYcCG"
   },
   {
-    "id": "PdFyr6FwVot63cx6Pcrs",
-    "number": "6679570468017856979",
+    "id": "aVUuw5cr7iMM6UbuwyYb",
+    "number": "9724640967198945251",
     "begin": "2021-02-12T22:50:00+00:00",
-    "created": "2021-02-13T00:56:34+00:00",
+    "created": "2021-02-13T01:43:04+00:00",
     "end": "2021-02-13T02:55:00+00:00",
-    "modified": "2021-02-13T03:28:03+00:00",
+    "modified": "2021-02-13T03:28:07+00:00",
     "external_desc": "Our engineers have determined this issue to be linked to a single Google incident. For regular status updates, please visit https://status.cloud.goog",
     "updates": [
       {
-        "created": "2021-02-13T03:28:03+00:00",
-        "modified": "2021-02-13T03:28:03+00:00",
-        "when": "2021-02-13T03:28:03+00:00",
+        "created": "2021-02-13T03:28:07+00:00",
+        "modified": "2021-02-13T03:28:07+00:00",
+        "when": "2021-02-13T03:28:07+00:00",
         "text": "Our engineers have determined this issue was mitigated at 18:55 PST. Please visit https://status.cloud.google.com/incident/cloud-networking/21002 for further details. No further updates will be made through this incident.",
         "status": "AVAILABLE"
       },
       {
-        "created": "2021-02-13T00:56:34+00:00",
-        "modified": "2021-02-13T00:56:34+00:00",
-        "when": "2021-02-13T00:56:34+00:00",
-        "text": "Our engineers have determined this issue to be linked to a single Google incident. For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
+        "created": "2021-02-13T01:43:04+00:00",
+        "modified": "2021-02-13T01:43:04+00:00",
+        "when": "2021-02-13T01:43:04+00:00",
+        "text": "Our engineers have determined this issue to be linked to a single Google\nincident. For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
         "status": "SERVICE_DISRUPTION"
       }
     ],
     "most_recent_update": {
-      "created": "2021-02-13T03:28:03+00:00",
-      "modified": "2021-02-13T03:28:03+00:00",
-      "when": "2021-02-13T03:28:03+00:00",
+      "created": "2021-02-13T03:28:07+00:00",
+      "modified": "2021-02-13T03:28:07+00:00",
+      "when": "2021-02-13T03:28:07+00:00",
       "text": "Our engineers have determined this issue was mitigated at 18:55 PST. Please visit https://status.cloud.google.com/incident/cloud-networking/21002 for further details. No further updates will be made through this incident.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
-    "service_key": "kchyUtnkMHJWaAva8aYc",
-    "service_name": "Google App Engine",
+    "service_key": "rLKDHeeaBiXTeutF1air",
+    "service_name": "Cloud Data Fusion",
     "affected_products": [
       {
-        "title": "Google App Engine",
-        "id": "kchyUtnkMHJWaAva8aYc"
+        "title": "Cloud Data Fusion",
+        "id": "rLKDHeeaBiXTeutF1air"
       }
     ],
-    "uri": "incidents/PdFyr6FwVot63cx6Pcrs"
+    "uri": "incidents/aVUuw5cr7iMM6UbuwyYb"
   },
   {
     "id": "baKKdbZ1M1We5j6y2G9k",
@@ -7554,90 +7554,47 @@
     "uri": "incidents/baKKdbZ1M1We5j6y2G9k"
   },
   {
-    "id": "aVUuw5cr7iMM6UbuwyYb",
-    "number": "9724640967198945251",
+    "id": "jmQo7Yt8Rhb7Bvb7itmF",
+    "number": "8783736191556432956",
     "begin": "2021-02-12T22:50:00+00:00",
-    "created": "2021-02-13T01:43:04+00:00",
+    "created": "2021-02-13T01:06:56+00:00",
     "end": "2021-02-13T02:55:00+00:00",
-    "modified": "2021-02-13T03:28:07+00:00",
+    "modified": "2021-02-13T03:28:26+00:00",
     "external_desc": "Our engineers have determined this issue to be linked to a single Google incident. For regular status updates, please visit https://status.cloud.goog",
     "updates": [
       {
-        "created": "2021-02-13T03:28:07+00:00",
-        "modified": "2021-02-13T03:28:07+00:00",
-        "when": "2021-02-13T03:28:07+00:00",
+        "created": "2021-02-13T03:28:26+00:00",
+        "modified": "2021-02-13T03:28:26+00:00",
+        "when": "2021-02-13T03:28:26+00:00",
         "text": "Our engineers have determined this issue was mitigated at 18:55 PST. Please visit https://status.cloud.google.com/incident/cloud-networking/21002 for further details. No further updates will be made through this incident.",
         "status": "AVAILABLE"
       },
       {
-        "created": "2021-02-13T01:43:04+00:00",
-        "modified": "2021-02-13T01:43:04+00:00",
-        "when": "2021-02-13T01:43:04+00:00",
+        "created": "2021-02-13T01:06:56+00:00",
+        "modified": "2021-02-13T01:06:56+00:00",
+        "when": "2021-02-13T01:06:56+00:00",
         "text": "Our engineers have determined this issue to be linked to a single Google\nincident. For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
         "status": "SERVICE_DISRUPTION"
       }
     ],
     "most_recent_update": {
-      "created": "2021-02-13T03:28:07+00:00",
-      "modified": "2021-02-13T03:28:07+00:00",
-      "when": "2021-02-13T03:28:07+00:00",
+      "created": "2021-02-13T03:28:26+00:00",
+      "modified": "2021-02-13T03:28:26+00:00",
+      "when": "2021-02-13T03:28:26+00:00",
       "text": "Our engineers have determined this issue was mitigated at 18:55 PST. Please visit https://status.cloud.google.com/incident/cloud-networking/21002 for further details. No further updates will be made through this incident.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
-    "service_key": "rLKDHeeaBiXTeutF1air",
-    "service_name": "Cloud Data Fusion",
+    "service_key": "hV87iK5DcEXKgWU2kDri",
+    "service_name": "Google Cloud SQL",
     "affected_products": [
       {
-        "title": "Cloud Data Fusion",
-        "id": "rLKDHeeaBiXTeutF1air"
+        "title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri"
       }
     ],
-    "uri": "incidents/aVUuw5cr7iMM6UbuwyYb"
-  },
-  {
-    "id": "exT9bwgm4CvWu7MzydD3",
-    "number": "11566717885938357240",
-    "begin": "2021-02-12T22:50:00+00:00",
-    "created": "2021-02-13T01:11:09+00:00",
-    "end": "2021-02-13T02:55:00+00:00",
-    "modified": "2021-02-13T03:27:32+00:00",
-    "external_desc": "Our engineers have determined this issue to be linked to a single Google incident. For regular status updates, please visit https://status.cloud.goog",
-    "updates": [
-      {
-        "created": "2021-02-13T03:27:32+00:00",
-        "modified": "2021-02-13T03:27:32+00:00",
-        "when": "2021-02-13T03:27:32+00:00",
-        "text": "Our engineers have determined this issue was mitigated at 18:55 PST. Please visit https://status.cloud.google.com/incident/cloud-networking/21002 for further details. No further updates will be made through this incident.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-02-13T01:11:09+00:00",
-        "modified": "2021-02-13T01:11:09+00:00",
-        "when": "2021-02-13T01:11:09+00:00",
-        "text": "Our engineers have determined this issue to be linked to a single Google\nincident. For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-02-13T03:27:32+00:00",
-      "modified": "2021-02-13T03:27:32+00:00",
-      "when": "2021-02-13T03:27:32+00:00",
-      "text": "Our engineers have determined this issue was mitigated at 18:55 PST. Please visit https://status.cloud.google.com/incident/cloud-networking/21002 for further details. No further updates will be made through this incident.",
-      "status": "AVAILABLE"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "yjXrEg3Yvy26BauMwr69",
-    "service_name": "Google Cloud Dataproc",
-    "affected_products": [
-      {
-        "title": "Google Cloud Dataproc",
-        "id": "yjXrEg3Yvy26BauMwr69"
-      }
-    ],
-    "uri": "incidents/exT9bwgm4CvWu7MzydD3"
+    "uri": "incidents/jmQo7Yt8Rhb7Bvb7itmF"
   },
   {
     "id": "PQE98n5aGQZ2gVWJqwi3",
@@ -7681,6 +7638,49 @@
       }
     ],
     "uri": "incidents/PQE98n5aGQZ2gVWJqwi3"
+  },
+  {
+    "id": "exT9bwgm4CvWu7MzydD3",
+    "number": "11566717885938357240",
+    "begin": "2021-02-12T22:50:00+00:00",
+    "created": "2021-02-13T01:11:09+00:00",
+    "end": "2021-02-13T02:55:00+00:00",
+    "modified": "2021-02-13T03:27:32+00:00",
+    "external_desc": "Our engineers have determined this issue to be linked to a single Google incident. For regular status updates, please visit https://status.cloud.goog",
+    "updates": [
+      {
+        "created": "2021-02-13T03:27:32+00:00",
+        "modified": "2021-02-13T03:27:32+00:00",
+        "when": "2021-02-13T03:27:32+00:00",
+        "text": "Our engineers have determined this issue was mitigated at 18:55 PST. Please visit https://status.cloud.google.com/incident/cloud-networking/21002 for further details. No further updates will be made through this incident.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-02-13T01:11:09+00:00",
+        "modified": "2021-02-13T01:11:09+00:00",
+        "when": "2021-02-13T01:11:09+00:00",
+        "text": "Our engineers have determined this issue to be linked to a single Google\nincident. For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-02-13T03:27:32+00:00",
+      "modified": "2021-02-13T03:27:32+00:00",
+      "when": "2021-02-13T03:27:32+00:00",
+      "text": "Our engineers have determined this issue was mitigated at 18:55 PST. Please visit https://status.cloud.google.com/incident/cloud-networking/21002 for further details. No further updates will be made through this incident.",
+      "status": "AVAILABLE"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "yjXrEg3Yvy26BauMwr69",
+    "service_name": "Google Cloud Dataproc",
+    "affected_products": [
+      {
+        "title": "Google Cloud Dataproc",
+        "id": "yjXrEg3Yvy26BauMwr69"
+      }
+    ],
+    "uri": "incidents/exT9bwgm4CvWu7MzydD3"
   },
   {
     "id": "QjGHpZrwAdM9i91v1QUy",
@@ -7769,47 +7769,47 @@
     "uri": "incidents/b3FNY44ruufUfCNBPvKQ"
   },
   {
-    "id": "jmQo7Yt8Rhb7Bvb7itmF",
-    "number": "8783736191556432956",
+    "id": "PdFyr6FwVot63cx6Pcrs",
+    "number": "6679570468017856979",
     "begin": "2021-02-12T22:50:00+00:00",
-    "created": "2021-02-13T01:06:56+00:00",
+    "created": "2021-02-13T00:56:34+00:00",
     "end": "2021-02-13T02:55:00+00:00",
-    "modified": "2021-02-13T03:28:26+00:00",
+    "modified": "2021-02-13T03:28:03+00:00",
     "external_desc": "Our engineers have determined this issue to be linked to a single Google incident. For regular status updates, please visit https://status.cloud.goog",
     "updates": [
       {
-        "created": "2021-02-13T03:28:26+00:00",
-        "modified": "2021-02-13T03:28:26+00:00",
-        "when": "2021-02-13T03:28:26+00:00",
+        "created": "2021-02-13T03:28:03+00:00",
+        "modified": "2021-02-13T03:28:03+00:00",
+        "when": "2021-02-13T03:28:03+00:00",
         "text": "Our engineers have determined this issue was mitigated at 18:55 PST. Please visit https://status.cloud.google.com/incident/cloud-networking/21002 for further details. No further updates will be made through this incident.",
         "status": "AVAILABLE"
       },
       {
-        "created": "2021-02-13T01:06:56+00:00",
-        "modified": "2021-02-13T01:06:56+00:00",
-        "when": "2021-02-13T01:06:56+00:00",
-        "text": "Our engineers have determined this issue to be linked to a single Google\nincident. For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
+        "created": "2021-02-13T00:56:34+00:00",
+        "modified": "2021-02-13T00:56:34+00:00",
+        "when": "2021-02-13T00:56:34+00:00",
+        "text": "Our engineers have determined this issue to be linked to a single Google incident. For regular status updates, please visit https://status.cloud.google.com/incident/cloud-networking/21002. No further updates will be made through this incident.",
         "status": "SERVICE_DISRUPTION"
       }
     ],
     "most_recent_update": {
-      "created": "2021-02-13T03:28:26+00:00",
-      "modified": "2021-02-13T03:28:26+00:00",
-      "when": "2021-02-13T03:28:26+00:00",
+      "created": "2021-02-13T03:28:03+00:00",
+      "modified": "2021-02-13T03:28:03+00:00",
+      "when": "2021-02-13T03:28:03+00:00",
       "text": "Our engineers have determined this issue was mitigated at 18:55 PST. Please visit https://status.cloud.google.com/incident/cloud-networking/21002 for further details. No further updates will be made through this incident.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
-    "service_key": "hV87iK5DcEXKgWU2kDri",
-    "service_name": "Google Cloud SQL",
+    "service_key": "kchyUtnkMHJWaAva8aYc",
+    "service_name": "Google App Engine",
     "affected_products": [
       {
-        "title": "Google Cloud SQL",
-        "id": "hV87iK5DcEXKgWU2kDri"
+        "title": "Google App Engine",
+        "id": "kchyUtnkMHJWaAva8aYc"
       }
     ],
-    "uri": "incidents/jmQo7Yt8Rhb7Bvb7itmF"
+    "uri": "incidents/PdFyr6FwVot63cx6Pcrs"
   },
   {
     "id": "zpowCsUWo6sthoEFHA7n",
@@ -8780,76 +8780,5 @@
       }
     ],
     "uri": "incidents/WEvPzYGLJV1ddhYzwSqz"
-  },
-  {
-    "id": "qRpmq9arsrCV7xWdfftF",
-    "number": "2176039009975666311",
-    "begin": "2020-12-10T02:31:38+00:00",
-    "created": "2020-12-10T03:17:41+00:00",
-    "end": "2020-12-10T03:55:02+00:00",
-    "modified": "2020-12-15T19:56:41+00:00",
-    "external_desc": "All Cloud Platform resources in europe-west2-a may be unreachable as of 2020-12-09 18:32 US/Pacific.",
-    "updates": [
-      {
-        "created": "2020-12-15T19:03:12+00:00",
-        "modified": "2020-12-15T19:56:41+00:00",
-        "when": "2020-12-15T19:03:12+00:00",
-        "text": "# ISSUE SUMMARY\nOn Wednesday 9 December, 2020, Google Cloud Platform experienced networking unavailability in zone europe-west2-a, resulting in some customers being unable to access their resources, for a duration of 1 hour 24 minutes. The following Google services had degraded service that extended beyond the initial 1 hour 24 minute network disruption:\n- 1.5% of Cloud Memorystore Redis instances were unhealthy for a total duration of 2 hours 24 minutes\n- 4.5% of Classic Cloud VPN tunnels in the europe-west2 region experienced unavailability after the main disruption had recovered and these tunnels remained down for a duration of 8 hours and 10 minutes\n- App Engine Flex experienced increased deployment error rates for a total duration of 1 hour 45 minutes\nWe apologize to our Cloud customers who were impacted during this disruption. We have conducted a thorough internal investigation and are taking immediate action to improve the resiliency and availability of our service.\n# ROOT CAUSE\nGoogle’s underlying networking control plane consists of multiple distributed components that make up the Software Defined Networking (SDN) stack. These components run on multiple machines so that failure of a machine or even multiple machines does not impact network capacity. To achieve this, the control plane elects a leader from a pool of machines to provide configuration to the various infrastructure components. The leader election process depends on a local instance of Google’s internal lock service to read various configurations and files for determining the leader. The control plane is responsible for Border Gateway Protocol (BGP) peering sessions between physical routers connecting a cloud zone to the Google backbone.\nGoogle’s internal lock service provides Access Control List (ACLs) mechanisms to control reading and writing of various files stored in the service. A change to the ACLs used by the network control plane caused the tasks responsible for leader election to no longer have access to the files required for the process. The production environment contained ACLs not present in the staging or canary environments due to those environments being rebuilt using updated processes during previous maintenance events. This meant that some of the ACLs removed in the change were in use in europe-west2-a, and the validation of the configuration change in testing and canary environments did not surface the issue.\nGoogle's resilience strategy relies on the principle of defense in depth. Specifically, despite the network control infrastructure being designed to be highly resilient, the network is designed to 'fail static' and run for a period of time without the control plane being present as an additional line of defense against failure. The network ran normally for a short period - several minutes - after the control plane had been unable to elect a leader task. After this period, BGP routing between europe-west2-a and the rest of the Google backbone network was withdrawn, resulting in isolation of the zone and inaccessibility of resources in the zone.\n# REMEDIATION AND PREVENTION\nGoogle engineers were automatically alerted to elevated error rates in europe-west2-a at 2020-12-09 18:29 US/Pacific and immediately started an investigation. The configuration change rollout was automatically halted as soon as the issue was detected, preventing it from reaching any other zones. At 19:30, mitigation was applied to rollback the configuration change in europe-west2-a. This completed at 19:55, mitigating the immediate issue. Some services such as Cloud MemoryStore and Cloud VPN took additional time to recover due to complications arising from the initial disruption. Services with extended recovery timelines are described in the “detailed description of impact” section below.\nWe are committed to preventing this situation from happening again and are implementing the following actions:\nIn addition to rolling back the configuration change responsible for this disruption, we are auditing all network ACLs to ensure they are consistent across environments. While the network continued to operate for a short time after the change was rolled out, we are improving the operating mode of the data plane when the control plane is unavailable for extended periods. Improvements in visibility to recent changes will be made to reduce the time to mitigation. Additional observability will be added to lock service ACLs allowing for additional validation when making changes to ACLs. We are also improving the canary and release process for future changes of this type to ensure these changes are made safely.\n# DETAILED DESCRIPTION OF IMPACT\nOn Wednesday 9 December, 2020 from 18:31 to 19:55 US/Pacific Google Cloud experienced unavailability for some Google services hosted in zone europe-west2-a as described in detail below. If impact time differs significantly, it will be mentioned specifically.\n## Compute Engine\n~60% of VMs in europe-west2-a were unreachable from outside the zone. Projects affected by this incident would have observed 100% of VMs in the zone being unreachable. Communication within the zone had minor issues, but largely worked normally. VM creation and deletion operations were stalled during the outage. VMs on hosts that had hardware or other faults during the outage were not repaired and restarted onto healthy hosts during the outage.\n## Persistent Disk\nVMs in europe-west2-a experienced stuck I/O operations for 59% of standard persistent disks located in that zone. 27% of regional persistent disks in europe-west2 briefly experienced high I/O latency at the start and end of the incident. Persistent Disk snapshot creation and restore for 59% of disks located in europe-west2-a failed during the incident. Additionally, snapshot creation for Regional Persistent Disks with one replica located in zone europe-west2-a was unavailable.\n## Cloud SQL\n~79% of HA Cloud SQL instances experienced <5 minutes of downtime due to autofailover with an additional ~5% experiencing <25m of downtime after manual recovery. ~13% of HA Cloud SQL instances with legacy HA configuration did not failover because the replicas were out of sync, and were unreachable for the full duration of the incident. The remaining HA Cloud SQL instances did not failover due to stuck operations. Overall, 97.5% of Regional PD based HA instances and 23% of legacy MySQL HA instances had <25m downtime with the remaining instances being unconnectable during the outage. Google engineering is committed to improving the successful failover rate for Cloud SQL HA instances for zonal outages like this.\n## Google App Engine\nApp Engine Flex apps in europe-west2 experienced increased deployment error rates between 10% and 100% from 18:44 to 20:29.\nApp Engine Standard apps running in the europe-west2 region experienced increased deployment error rates of up to 9.6% that lasted from 18:38 to 18:47. ~34.7% of App Engine Standard apps in the region experienced increased serving error rates between 18:32 and 18:38.\n## Cloud Functions\n34.8% of Cloud Functions served from europe-west2 experienced increased serving error rates between 18:32 and 18:38.\n## Cloud Run\n54.8% of Cloud Run apps served from europe-west2 experienced increased serving error rates between 18:32 and 18:38.\n## Cloud MemoryStore\n~10% of Redis instances in europe-west2, were unreachable during the outage. Both standard tier and basic tier instances were affected. After the main outage was mitigated, most instances recovered, but ~1.5% of instances remained unhealthy for 60 minutes before recovering on their own.\n## Cloud Filestore\n~16% of Filestore instances in europe-west2 were unhealthy. Instances in the zone were unreachable from outside the zone, but access within the zone was largely unaffected.\n## Cloud Bigtable\n100% of single-homed Cloud Bigtable instances in europe-west2-a were unavailable during the outage, translating into 100% error rate for customer instances located in this zone.\n## Kubernetes Engine\n~67% of cluster control planes in europe-west2-a and 10% of regional clusters in europe-west2 were unavailable for the duration of the incident. Investigation into the regional cluster control plane unavailability is still ongoing. Node creation and deletion operations were stalled due to the impact to Compute Engine operations.\n## Cloud Interconnect\nElevated packet loss for zones in europe-west2. Starting at 18:31 packets destined for resources in europe-west2-a experienced loss for the duration of the incident. Additionally, interconnect attachments in europe-west2 experienced regional loss for 7 minutes at 18:31 and 8 minutes at 19:53.\n## Cloud Dataflow\n~10% of jobs in europe-west2 failed or got stuck in cancellation during the outage. ~40% of Dataflow Streaming Engine jobs in the region were degraded over the course of the incident.\n## Cloud VPN\nA number of Cloud VPN tunnels were reset during the disruption and were automatically relocated to other zones in the region. This is within the design of the product, as the loss of one zone is planned. However once zone europe-west2-a reconnected to the network, a combination of bugs in the VPN control plane were triggered by some of the now stale VPN gateways in the zone. This caused an outage to 4.5% of Classic Cloud VPN tunnels in europe-west2 for a duration of 8 hours and 10 minutes after the main disruption had recovered.\n## Cloud Dataproc\n~0.01% of Dataproc API requests to europe-west2 returned UNAVAILABLE during the incident. The majority of these requests were read-only requests (ListClusters, ListJobs, etc.)\n# SLA CREDITS\nIf you believe your paid application experienced an SLA violation as a result of this incident, please submit the SLA credit request: https://support.google.com/cloud/contact/cloud_platform_sla\nA full list of all Google Cloud Platform Service Level Agreements can be found at https://cloud.google.com/terms/sla/",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2020-12-10T04:43:02+00:00",
-        "modified": "2020-12-10T04:43:02+00:00",
-        "when": "2020-12-10T04:43:02+00:00",
-        "text": "The issue with Google Cloud infrastructure components is believed to be resolved for all services, however a small number of Compute resources may still be affected and our Engineering Team is working on it.\nIf you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nNo further updates will be provided here.\nWe thank you for your patience while we're working on resolving the issue.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2020-12-10T04:30:03+00:00",
-        "modified": "2020-12-10T04:30:03+00:00",
-        "when": "2020-12-10T04:30:03+00:00",
-        "text": "Description: We believe the issue with Google Cloud infrastructure components is resolved for most services as of approximately 2020-12-09 20:21.\nWe do not have an ETA for full resolution at this point.\nWe will provide an update by Wednesday, 2020-12-09 22:07 US/Pacific with current details.\nDiagnosis: None at this time.\nWorkaround: Moving resources to another zone temporarily.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2020-12-10T04:11:39+00:00",
-        "modified": "2020-12-10T04:11:39+00:00",
-        "when": "2020-12-10T04:11:39+00:00",
-        "text": "Description: Mitigation work is still underway by our engineering team. We are starting to see recovery for some Google Cloud infrastructure components.\nWe do not have an ETA for full resolution at this point.\nWe will provide an update by Wednesday, 2020-12-09 21:40 US/Pacific with current details.\nDiagnosis: None at this time.\nWorkaround: Moving resources to another zone temporarily.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2020-12-10T03:51:18+00:00",
-        "modified": "2020-12-10T03:51:18+00:00",
-        "when": "2020-12-10T03:51:18+00:00",
-        "text": "Description: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2020-12-09 21:32 US/Pacific.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2020-12-10T03:17:42+00:00",
-        "modified": "2020-12-10T03:17:42+00:00",
-        "when": "2020-12-10T03:17:42+00:00",
-        "text": "Description: We are experiencing an issue with Google Cloud infrastructure components affecting resources located in europe-west2-a.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2020-12-09 20:46 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2020-12-15T19:03:12+00:00",
-      "modified": "2020-12-15T19:56:41+00:00",
-      "when": "2020-12-15T19:03:12+00:00",
-      "text": "# ISSUE SUMMARY\nOn Wednesday 9 December, 2020, Google Cloud Platform experienced networking unavailability in zone europe-west2-a, resulting in some customers being unable to access their resources, for a duration of 1 hour 24 minutes. The following Google services had degraded service that extended beyond the initial 1 hour 24 minute network disruption:\n- 1.5% of Cloud Memorystore Redis instances were unhealthy for a total duration of 2 hours 24 minutes\n- 4.5% of Classic Cloud VPN tunnels in the europe-west2 region experienced unavailability after the main disruption had recovered and these tunnels remained down for a duration of 8 hours and 10 minutes\n- App Engine Flex experienced increased deployment error rates for a total duration of 1 hour 45 minutes\nWe apologize to our Cloud customers who were impacted during this disruption. We have conducted a thorough internal investigation and are taking immediate action to improve the resiliency and availability of our service.\n# ROOT CAUSE\nGoogle’s underlying networking control plane consists of multiple distributed components that make up the Software Defined Networking (SDN) stack. These components run on multiple machines so that failure of a machine or even multiple machines does not impact network capacity. To achieve this, the control plane elects a leader from a pool of machines to provide configuration to the various infrastructure components. The leader election process depends on a local instance of Google’s internal lock service to read various configurations and files for determining the leader. The control plane is responsible for Border Gateway Protocol (BGP) peering sessions between physical routers connecting a cloud zone to the Google backbone.\nGoogle’s internal lock service provides Access Control List (ACLs) mechanisms to control reading and writing of various files stored in the service. A change to the ACLs used by the network control plane caused the tasks responsible for leader election to no longer have access to the files required for the process. The production environment contained ACLs not present in the staging or canary environments due to those environments being rebuilt using updated processes during previous maintenance events. This meant that some of the ACLs removed in the change were in use in europe-west2-a, and the validation of the configuration change in testing and canary environments did not surface the issue.\nGoogle's resilience strategy relies on the principle of defense in depth. Specifically, despite the network control infrastructure being designed to be highly resilient, the network is designed to 'fail static' and run for a period of time without the control plane being present as an additional line of defense against failure. The network ran normally for a short period - several minutes - after the control plane had been unable to elect a leader task. After this period, BGP routing between europe-west2-a and the rest of the Google backbone network was withdrawn, resulting in isolation of the zone and inaccessibility of resources in the zone.\n# REMEDIATION AND PREVENTION\nGoogle engineers were automatically alerted to elevated error rates in europe-west2-a at 2020-12-09 18:29 US/Pacific and immediately started an investigation. The configuration change rollout was automatically halted as soon as the issue was detected, preventing it from reaching any other zones. At 19:30, mitigation was applied to rollback the configuration change in europe-west2-a. This completed at 19:55, mitigating the immediate issue. Some services such as Cloud MemoryStore and Cloud VPN took additional time to recover due to complications arising from the initial disruption. Services with extended recovery timelines are described in the “detailed description of impact” section below.\nWe are committed to preventing this situation from happening again and are implementing the following actions:\nIn addition to rolling back the configuration change responsible for this disruption, we are auditing all network ACLs to ensure they are consistent across environments. While the network continued to operate for a short time after the change was rolled out, we are improving the operating mode of the data plane when the control plane is unavailable for extended periods. Improvements in visibility to recent changes will be made to reduce the time to mitigation. Additional observability will be added to lock service ACLs allowing for additional validation when making changes to ACLs. We are also improving the canary and release process for future changes of this type to ensure these changes are made safely.\n# DETAILED DESCRIPTION OF IMPACT\nOn Wednesday 9 December, 2020 from 18:31 to 19:55 US/Pacific Google Cloud experienced unavailability for some Google services hosted in zone europe-west2-a as described in detail below. If impact time differs significantly, it will be mentioned specifically.\n## Compute Engine\n~60% of VMs in europe-west2-a were unreachable from outside the zone. Projects affected by this incident would have observed 100% of VMs in the zone being unreachable. Communication within the zone had minor issues, but largely worked normally. VM creation and deletion operations were stalled during the outage. VMs on hosts that had hardware or other faults during the outage were not repaired and restarted onto healthy hosts during the outage.\n## Persistent Disk\nVMs in europe-west2-a experienced stuck I/O operations for 59% of standard persistent disks located in that zone. 27% of regional persistent disks in europe-west2 briefly experienced high I/O latency at the start and end of the incident. Persistent Disk snapshot creation and restore for 59% of disks located in europe-west2-a failed during the incident. Additionally, snapshot creation for Regional Persistent Disks with one replica located in zone europe-west2-a was unavailable.\n## Cloud SQL\n~79% of HA Cloud SQL instances experienced <5 minutes of downtime due to autofailover with an additional ~5% experiencing <25m of downtime after manual recovery. ~13% of HA Cloud SQL instances with legacy HA configuration did not failover because the replicas were out of sync, and were unreachable for the full duration of the incident. The remaining HA Cloud SQL instances did not failover due to stuck operations. Overall, 97.5% of Regional PD based HA instances and 23% of legacy MySQL HA instances had <25m downtime with the remaining instances being unconnectable during the outage. Google engineering is committed to improving the successful failover rate for Cloud SQL HA instances for zonal outages like this.\n## Google App Engine\nApp Engine Flex apps in europe-west2 experienced increased deployment error rates between 10% and 100% from 18:44 to 20:29.\nApp Engine Standard apps running in the europe-west2 region experienced increased deployment error rates of up to 9.6% that lasted from 18:38 to 18:47. ~34.7% of App Engine Standard apps in the region experienced increased serving error rates between 18:32 and 18:38.\n## Cloud Functions\n34.8% of Cloud Functions served from europe-west2 experienced increased serving error rates between 18:32 and 18:38.\n## Cloud Run\n54.8% of Cloud Run apps served from europe-west2 experienced increased serving error rates between 18:32 and 18:38.\n## Cloud MemoryStore\n~10% of Redis instances in europe-west2, were unreachable during the outage. Both standard tier and basic tier instances were affected. After the main outage was mitigated, most instances recovered, but ~1.5% of instances remained unhealthy for 60 minutes before recovering on their own.\n## Cloud Filestore\n~16% of Filestore instances in europe-west2 were unhealthy. Instances in the zone were unreachable from outside the zone, but access within the zone was largely unaffected.\n## Cloud Bigtable\n100% of single-homed Cloud Bigtable instances in europe-west2-a were unavailable during the outage, translating into 100% error rate for customer instances located in this zone.\n## Kubernetes Engine\n~67% of cluster control planes in europe-west2-a and 10% of regional clusters in europe-west2 were unavailable for the duration of the incident. Investigation into the regional cluster control plane unavailability is still ongoing. Node creation and deletion operations were stalled due to the impact to Compute Engine operations.\n## Cloud Interconnect\nElevated packet loss for zones in europe-west2. Starting at 18:31 packets destined for resources in europe-west2-a experienced loss for the duration of the incident. Additionally, interconnect attachments in europe-west2 experienced regional loss for 7 minutes at 18:31 and 8 minutes at 19:53.\n## Cloud Dataflow\n~10% of jobs in europe-west2 failed or got stuck in cancellation during the outage. ~40% of Dataflow Streaming Engine jobs in the region were degraded over the course of the incident.\n## Cloud VPN\nA number of Cloud VPN tunnels were reset during the disruption and were automatically relocated to other zones in the region. This is within the design of the product, as the loss of one zone is planned. However once zone europe-west2-a reconnected to the network, a combination of bugs in the VPN control plane were triggered by some of the now stale VPN gateways in the zone. This caused an outage to 4.5% of Classic Cloud VPN tunnels in europe-west2 for a duration of 8 hours and 10 minutes after the main disruption had recovered.\n## Cloud Dataproc\n~0.01% of Dataproc API requests to europe-west2 returned UNAVAILABLE during the incident. The majority of these requests were read-only requests (ListClusters, ListJobs, etc.)\n# SLA CREDITS\nIf you believe your paid application experienced an SLA violation as a result of this incident, please submit the SLA credit request: https://support.google.com/cloud/contact/cloud_platform_sla\nA full list of all Google Cloud Platform Service Level Agreements can be found at https://cloud.google.com/terms/sla/",
-      "status": "AVAILABLE"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "uoypgc4GWUyzAKRHPjEv",
-    "service_name": "Google Cloud Infrastructure Components",
-    "affected_products": [
-      {
-        "title": "Google Cloud Infrastructure Components",
-        "id": "uoypgc4GWUyzAKRHPjEv"
-      }
-    ],
-    "uri": "incidents/qRpmq9arsrCV7xWdfftF"
   }
 ]
