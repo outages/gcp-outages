@@ -67,9 +67,16 @@
     "number": "13045675828271798087",
     "begin": "2021-12-07T20:44:21+00:00",
     "created": "2021-12-07T21:14:09+00:00",
-    "modified": "2021-12-09T06:04:17+00:00",
+    "modified": "2021-12-13T22:00:09+00:00",
     "external_desc": "Global: Issues with Cloud SQL for MySQL instance migration to 5.7 when source databases have gtid_mode set to ON.",
     "updates": [
+      {
+        "created": "2021-12-13T22:00:09+00:00",
+        "modified": "2021-12-13T22:00:12+00:00",
+        "when": "2021-12-13T22:00:09+00:00",
+        "text": "Summary: Global: Issues with Cloud SQL for MySQL instance migration to 5.7 when source databases have gtid_mode set to ON.\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete over the next few days.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL for MySQL 5.7 with GTID replication using managed dumps may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those jobs during the replication phase, the migration job may fail.\nWorkaround: Customers should start a new migration by dumping the data from a source database instance running MySQL 5.7.35 or lower versions to Google Cloud Storage (GCS) manually (Cloud SQL, DMS), using a mysqldump file, and then migrate using the dump file to Cloud SQL for MySQL 5.7.",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-12-09T06:04:17+00:00",
         "modified": "2021-12-09T06:04:17+00:00",
@@ -128,10 +135,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-12-09T06:04:17+00:00",
-      "modified": "2021-12-09T06:04:17+00:00",
-      "when": "2021-12-09T06:04:17+00:00",
-      "text": "Summary: Global: Issues with Cloud SQL for MySQL instance migration to 5.7 when source databases have gtid_mode set to ON.\nDescription: Our engineering team continues to investigate the issue caused by a MySQL bug https://bugs.mysql.com/bug.php?id=105761 that may affect customers who migrated to MySQL 5.7.36 on or after November 2nd 2021, from a source database that had gtid_mode set to ON.\nThe issue is being observed when ALL of the following conditions are met:\n1. Cloud SQL for MySQL version migrated to is 5.7.36\n2. source database gtid_mode is ON\n3. The migration was a continuous migration (see DMS doc https://cloud.google.com/database-migration/docs/mysql/configure-source-database)\n4. The migration was performed using an auto-generated initial dump, also called a managed dump.\nWe will provide further updates by Monday, 2021-12-13 17:00 US/Pacific with details.\nIn the meantime, we recommend halting any migrations to Cloud SQL for MySQL 5.7 where the source database has gtid_mode set to ON and is using managed dumps, to prevent this scenario from occurring. The workaround outlined below may be used for these migrations instead.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL for MySQL 5.7 with GTID replication using managed dumps may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those jobs during the replication phase, the migration job may fail.\nWorkaround: Customers should start a new migration by dumping the data from a source database instance running MySQL 5.7.35 or lower versions to Google Cloud Storage (GCS) manually (Cloud SQL, DMS), using a mysqldump file, and then migrate using the dump file to Cloud SQL for MySQL 5.7.",
+      "created": "2021-12-13T22:00:09+00:00",
+      "modified": "2021-12-13T22:00:12+00:00",
+      "when": "2021-12-13T22:00:09+00:00",
+      "text": "Summary: Global: Issues with Cloud SQL for MySQL instance migration to 5.7 when source databases have gtid_mode set to ON.\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete over the next few days.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL for MySQL 5.7 with GTID replication using managed dumps may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those jobs during the replication phase, the migration job may fail.\nWorkaround: Customers should start a new migration by dumping the data from a source database instance running MySQL 5.7.35 or lower versions to Google Cloud Storage (GCS) manually (Cloud SQL, DMS), using a mysqldump file, and then migrate using the dump file to Cloud SQL for MySQL 5.7.",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
