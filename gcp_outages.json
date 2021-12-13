@@ -4,9 +4,16 @@
     "number": "4933937362309678094",
     "begin": "2021-12-13T13:41:10+00:00",
     "created": "2021-12-13T14:16:00+00:00",
-    "modified": "2021-12-13T16:21:19+00:00",
-    "external_desc": "GCP engineer are investigating an issue with auto-scaling pubsub.googleapis.com may not be working as intended.",
+    "modified": "2021-12-13T18:52:27+00:00",
+    "external_desc": "Global: pubsub.googleapis.com autoscaling not worked as expected",
     "updates": [
+      {
+        "created": "2021-12-13T18:52:25+00:00",
+        "modified": "2021-12-13T18:52:29+00:00",
+        "when": "2021-12-13T18:52:25+00:00",
+        "text": "Summary: Global: pubsub.googleapis.com autoscaling not worked as expected\nDescription: We believe the issue with Google Compute Engine is partially resolved for previously impacted projects. Newly created projects may still experience the issue until the rollout of the fix completes.\nFull resolution is expected to complete on Tuesday, 2021-12-14.\nDiagnosis: Customers that are use scaling on the pubsub.googleapis.com/subscription/num_undelivered_messages may see auto scaling not working.\nWorkaround: As known workarounds, if customers have a filter with resource.label.subscription_id = ... they could change it to resource.labels.subscription_id = ... to make auto-scaling work.",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-12-13T16:21:17+00:00",
         "modified": "2021-12-13T16:21:20+00:00",
@@ -37,10 +44,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-12-13T16:21:17+00:00",
-      "modified": "2021-12-13T16:21:20+00:00",
-      "when": "2021-12-13T16:21:17+00:00",
-      "text": "Summary: GCP engineer are investigating an issue with auto-scaling pubsub.googleapis.com may not be working as intended.\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Tuesday, 2021-12-14.\nDiagnosis: Customers that are use scaling on the pubsub.googleapis.com/subscription/num_undelivered_messages may see auto scaling not working.\nWorkaround: As known workarounds, if customers have a filter with resource.label.subscription_id = ... they could change it to resource.labels.subscription_id = ... to make auto-scaling work.",
+      "created": "2021-12-13T18:52:25+00:00",
+      "modified": "2021-12-13T18:52:29+00:00",
+      "when": "2021-12-13T18:52:25+00:00",
+      "text": "Summary: Global: pubsub.googleapis.com autoscaling not worked as expected\nDescription: We believe the issue with Google Compute Engine is partially resolved for previously impacted projects. Newly created projects may still experience the issue until the rollout of the fix completes.\nFull resolution is expected to complete on Tuesday, 2021-12-14.\nDiagnosis: Customers that are use scaling on the pubsub.googleapis.com/subscription/num_undelivered_messages may see auto scaling not working.\nWorkaround: As known workarounds, if customers have a filter with resource.label.subscription_id = ... they could change it to resource.labels.subscription_id = ... to make auto-scaling work.",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
