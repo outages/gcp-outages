@@ -4,9 +4,16 @@
     "number": "13628602836948027359",
     "begin": "2021-12-17T18:36:29+00:00",
     "created": "2021-12-17T18:43:10+00:00",
-    "modified": "2021-12-17T19:00:57+00:00",
-    "external_desc": "us: Elevated latency in us GCS buckets",
+    "modified": "2021-12-17T19:22:48+00:00",
+    "external_desc": "us multiregion: Elevated tail latency on read operations for GCS buckets",
     "updates": [
+      {
+        "created": "2021-12-17T19:22:47+00:00",
+        "modified": "2021-12-17T19:22:49+00:00",
+        "when": "2021-12-17T19:22:47+00:00",
+        "text": "Summary: us multiregion: Elevated tail latency on read operations for GCS buckets\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2021-12-17 13:00 US/Pacific.\nDiagnosis: Affected customers may experience elevated tail latency on read operations for buckets in the us multiregion.\nWorkaround: Retrying failed or slow requests may succeed due to the relatively low error rate.",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2021-12-17T19:00:57+00:00",
         "modified": "2021-12-17T19:01:04+00:00",
@@ -23,10 +30,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-12-17T19:00:57+00:00",
-      "modified": "2021-12-17T19:01:04+00:00",
-      "when": "2021-12-17T19:00:57+00:00",
-      "text": "Summary: us: Elevated latency in us GCS buckets\nDescription: We are experiencing an issue with Google Cloud Storage beginning at Friday, 2021-12-17 09:00 US/Pacific.\nOur engineering team continues to investigate the issue. Current estimates indicates that 1% of GCS requests are impacted.\nWe will provide an update by Friday, 2021-12-17 13:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers may experience elevated tail latency on their buckets in the us multiregion.\nWorkaround: None at this time.",
+      "created": "2021-12-17T19:22:47+00:00",
+      "modified": "2021-12-17T19:22:49+00:00",
+      "when": "2021-12-17T19:22:47+00:00",
+      "text": "Summary: us multiregion: Elevated tail latency on read operations for GCS buckets\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2021-12-17 13:00 US/Pacific.\nDiagnosis: Affected customers may experience elevated tail latency on read operations for buckets in the us multiregion.\nWorkaround: Retrying failed or slow requests may succeed due to the relatively low error rate.",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
