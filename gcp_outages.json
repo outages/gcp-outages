@@ -2,12 +2,19 @@
   {
     "id": "fniZhzAhYdcJuosEwwtZ",
     "number": "13628602836948027359",
-    "begin": "2021-12-17T18:36:29+00:00",
+    "begin": "2021-12-17T17:10:00+00:00",
     "created": "2021-12-17T18:43:10+00:00",
-    "end": "2021-12-17T20:49:56+00:00",
-    "modified": "2021-12-17T20:49:57+00:00",
+    "end": "2021-12-18T06:11:00+00:00",
+    "modified": "2021-12-20T18:05:19+00:00",
     "external_desc": "us multiregion: Elevated tail latency on read operations for GCS buckets",
     "updates": [
+      {
+        "created": "2021-12-20T18:04:45+00:00",
+        "modified": "2021-12-20T18:04:45+00:00",
+        "when": "2021-12-20T18:04:45+00:00",
+        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 17 December 2021 09:10\n**Incident End:** 17 December 2021 22:11\n**Incident Duration:** 13 hours, 1 minute\n**Affected Services and Features:**\nGoogle Cloud Storage (GCS) - Read and Write object operations\n**Regions/Zones:** US multi-region\n**Description:**\nGoogle Cloud Storage buckets experienced elevated tail latency on read and write object operations for a total duration of 13 hours, 1 minute. From preliminary analysis, an internal job incorrectly placed a significant load on the backend database.\nThis originally presented as increased tailed latency. The database was significantly overloaded leading to elevated 5xx errors for a 47 minute period between 10:50 and 11:37. The 5XX errors were resolved at 11:37 by adding additional resources and stopping the offending job. However, the job caused an extended backlog of work, which took until 22:11 to clear.\n**Customer Impact:**\n* Elevated 5xx errors related to read timeouts between 10:50 and 11:37\n* Elevated tail latency on read operations from GCS buckets for the duration of the incident.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2021-12-17T20:49:56+00:00",
         "modified": "2021-12-17T20:49:57+00:00",
@@ -45,10 +52,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2021-12-17T20:49:56+00:00",
-      "modified": "2021-12-17T20:49:57+00:00",
-      "when": "2021-12-17T20:49:56+00:00",
-      "text": "The issue with Google Cloud Storage has been resolved for all affected users as of Friday, 2021-12-17 11:36 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2021-12-20T18:04:45+00:00",
+      "modified": "2021-12-20T18:04:45+00:00",
+      "when": "2021-12-20T18:04:45+00:00",
+      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 17 December 2021 09:10\n**Incident End:** 17 December 2021 22:11\n**Incident Duration:** 13 hours, 1 minute\n**Affected Services and Features:**\nGoogle Cloud Storage (GCS) - Read and Write object operations\n**Regions/Zones:** US multi-region\n**Description:**\nGoogle Cloud Storage buckets experienced elevated tail latency on read and write object operations for a total duration of 13 hours, 1 minute. From preliminary analysis, an internal job incorrectly placed a significant load on the backend database.\nThis originally presented as increased tailed latency. The database was significantly overloaded leading to elevated 5xx errors for a 47 minute period between 10:50 and 11:37. The 5XX errors were resolved at 11:37 by adding additional resources and stopping the offending job. However, the job caused an extended backlog of work, which took until 22:11 to clear.\n**Customer Impact:**\n* Elevated 5xx errors related to read timeouts between 10:50 and 11:37\n* Elevated tail latency on read operations from GCS buckets for the duration of the incident.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
