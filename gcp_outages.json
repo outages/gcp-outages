@@ -71,105 +71,6 @@
     "uri": "incidents/fniZhzAhYdcJuosEwwtZ"
   },
   {
-    "id": "aCXLk4u6GJoLn9PqSMm1",
-    "number": "13045675828271798087",
-    "begin": "2021-12-07T20:44:21+00:00",
-    "created": "2021-12-07T21:14:09+00:00",
-    "end": "2021-12-16T21:13:02+00:00",
-    "modified": "2021-12-16T21:13:02+00:00",
-    "external_desc": "Global: Issues with Cloud SQL for MySQL instance migration to 5.7 when source databases have gtid_mode set to ON.",
-    "updates": [
-      {
-        "created": "2021-12-16T21:13:01+00:00",
-        "modified": "2021-12-16T21:13:04+00:00",
-        "when": "2021-12-16T21:13:01+00:00",
-        "text": "The issue with Cloud SQL has been resolved as of Thursday, 2021-12-16 12:25 US/Pacific.\nNew instances will no longer experience this issue, but please follow the recommended workaround for existing instances that are impacted. We will be sending out targeted communications to the affected customers.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-12-13T22:00:09+00:00",
-        "modified": "2021-12-13T22:00:12+00:00",
-        "when": "2021-12-13T22:00:09+00:00",
-        "text": "Summary: Global: Issues with Cloud SQL for MySQL instance migration to 5.7 when source databases have gtid_mode set to ON.\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete over the next few days.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL for MySQL 5.7 with GTID replication using managed dumps may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those jobs during the replication phase, the migration job may fail.\nWorkaround: Customers should start a new migration by dumping the data from a source database instance running MySQL 5.7.35 or lower versions to Google Cloud Storage (GCS) manually (Cloud SQL, DMS), using a mysqldump file, and then migrate using the dump file to Cloud SQL for MySQL 5.7.",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-12-09T06:04:17+00:00",
-        "modified": "2021-12-09T06:04:17+00:00",
-        "when": "2021-12-09T06:04:17+00:00",
-        "text": "Summary: Global: Issues with Cloud SQL for MySQL instance migration to 5.7 when source databases have gtid_mode set to ON.\nDescription: Our engineering team continues to investigate the issue caused by a MySQL bug https://bugs.mysql.com/bug.php?id=105761 that may affect customers who migrated to MySQL 5.7.36 on or after November 2nd 2021, from a source database that had gtid_mode set to ON.\nThe issue is being observed when ALL of the following conditions are met:\n1. Cloud SQL for MySQL version migrated to is 5.7.36\n2. source database gtid_mode is ON\n3. The migration was a continuous migration (see DMS doc https://cloud.google.com/database-migration/docs/mysql/configure-source-database)\n4. The migration was performed using an auto-generated initial dump, also called a managed dump.\nWe will provide further updates by Monday, 2021-12-13 17:00 US/Pacific with details.\nIn the meantime, we recommend halting any migrations to Cloud SQL for MySQL 5.7 where the source database has gtid_mode set to ON and is using managed dumps, to prevent this scenario from occurring. The workaround outlined below may be used for these migrations instead.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL for MySQL 5.7 with GTID replication using managed dumps may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those jobs during the replication phase, the migration job may fail.\nWorkaround: Customers should start a new migration by dumping the data from a source database instance running MySQL 5.7.35 or lower versions to Google Cloud Storage (GCS) manually (Cloud SQL, DMS), using a mysqldump file, and then migrate using the dump file to Cloud SQL for MySQL 5.7.",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-12-09T01:21:58+00:00",
-        "modified": "2021-12-09T01:21:59+00:00",
-        "when": "2021-12-09T01:21:58+00:00",
-        "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36 from source databases that have gtid_mode set to ON.\nDescription: Our engineering team continues to investigate the issue caused by a MySQL bug https://bugs.mysql.com/bug.php?id=105761 that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021, from a source database that had gtid_mode set to ON.\nThe issue is being observed when ALL of the following conditions are met:\n1. Cloud SQL MySQL version migrated to is 5.7.36\n2. source database gtid_mode is ON\n3. Customer is running continuous migration (see DMS doc https://cloud.google.com/database-migration/docs/postgres/create-migration-job)\n4. Customer is not migrating with a file, i.e. migration is using a managed dump.\nWe will provide further updates by Monday, 2021-12-13 17:00 US/Pacific with details.\nIn the meantime, we recommend halting any migrations to Cloud SQL MySQL version 5.7 where the source database has gtid_mode set to ON to prevent this scenario from occurring. The workaround outlined below may be used for these migrations.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL MySQL 5.7 with GTID replication may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those jobs during the replication phase, the migration job may fail.\nWorkaround: Customers should start a new migration by dumping the data from source MySQL 5.7.35 or lower versions to Google Cloud Storage (GCS) manually (Cloud SQL, DMS), using mysqldump, and then migrate using the file to Cloud SQL MySQL 5.7 version.",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-12-08T21:59:06+00:00",
-        "modified": "2021-12-08T21:59:12+00:00",
-        "when": "2021-12-08T21:59:06+00:00",
-        "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36.\nDescription: Our engineering team continues to investigate the issue that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021\nWe will provide an update by Wednesday, 2021-12-08 17:00 US/Pacific with current details.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL MySQL 5.7 with GTID replication may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those data during replication phase, the migration job may fail.\nWorkaround: Customers may need to start a new migration by dumping the data from source mysql 5.7.35 or lower versions to Google Cloud Storage (GCS) manually, using mysqldump, and then migrate the file to destination mysql version.",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-12-08T06:28:36+00:00",
-        "modified": "2021-12-08T06:28:37+00:00",
-        "when": "2021-12-08T06:28:36+00:00",
-        "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36.\nDescription: Our engineering team continues to investigate the issue that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021\nWe will provide an update by Wednesday, 2021-12-08 14:00 US/Pacific with current details.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL MySQL 5.7 with GTID replication may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those data during replication phase, the migration job may fail.\nWorkaround: Customers may need to start a new migration by dumping the data from source mysql 5.7.35 or lower versions to Google Cloud Storage (GCS) manually, using mysqldump, and then migrate the file to destination mysql version.",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-12-08T03:31:31+00:00",
-        "modified": "2021-12-08T03:31:32+00:00",
-        "when": "2021-12-08T03:31:31+00:00",
-        "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36.\nDescription: Our engineering team continues to investigate the issue that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021\nWe will provide an update by Tuesday, 2021-12-07 23:30 US/Pacific with current details.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL MySQL 5.7 with GTID replication may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those data during replication phase, the migration job may fail.\nWorkaround: Customers may need to start a new migration by dumping the data from source mysql 5.7.35 or lower versions to Google Cloud Storage (GCS) manually, using mysqldump, and then migrate the file to destination mysql version.",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-12-08T00:35:07+00:00",
-        "modified": "2021-12-08T00:35:08+00:00",
-        "when": "2021-12-08T00:35:07+00:00",
-        "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36.\nDescription: Our engineering team continues to investigate the issue that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021\nWe will provide an update by Tuesday, 2021-12-07 19:30 US/Pacific with current details.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL MySQL 5.7 with GTID replication may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those data during replication phase, the migration job may fail.\nWorkaround: Customers may need to start a new migration by dumping the data from source mysql 5.7.35 or lower versions to Google Cloud Storage (GCS) manually, using mysqldump, and then migrate the file to destination mysql version.",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-12-07T22:36:00+00:00",
-        "modified": "2021-12-07T22:36:01+00:00",
-        "when": "2021-12-07T22:36:00+00:00",
-        "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36\nDescription: Our engineering team continues to investigate the issue that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021.\nWe will provide an update by Tuesday, 2021-12-07 16:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL MySQL 5.7 with GTID replication may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those data during replication phase, the migration job may fail.\nWorkaround: Customers need to start a new migration by dumping the data from source mysql 5.7.35 or lower versions to Google Cloud Storage (GCS) manually, using mysqldump, and then migrate the file to destination mysql version.",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-12-07T21:14:09+00:00",
-        "modified": "2021-12-07T21:14:10+00:00",
-        "when": "2021-12-07T21:14:09+00:00",
-        "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36\nDescription: We are experiencing an issue with Cloud SQL when migrating to MySQL version 5.7.36.\nThe issue may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2021-12-07 14:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who want to migrate to Cloud SQL MySQL 5.7 with GTID replication may experience data inconsistency (i.e. data in Cloud SQL may not be consistent with data on the source) issue if they have insert/update/delete transactions during the dump phase. Further more, if customer has updates to those inconsistent data during replication phase, the migration job may fail.\nWorkaround: Customers needs to start a new migration by dumping the data from source by themselves to Google Cloud Storage (GCS) and then migrate with the file.",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-12-16T21:13:01+00:00",
-      "modified": "2021-12-16T21:13:04+00:00",
-      "when": "2021-12-16T21:13:01+00:00",
-      "text": "The issue with Cloud SQL has been resolved as of Thursday, 2021-12-16 12:25 US/Pacific.\nNew instances will no longer experience this issue, but please follow the recommended workaround for existing instances that are impacted. We will be sending out targeted communications to the affected customers.\nWe thank you for your patience while we worked on resolving the issue.",
-      "status": "AVAILABLE"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "hV87iK5DcEXKgWU2kDri",
-    "service_name": "Google Cloud SQL",
-    "affected_products": [
-      {
-        "title": "Google Cloud SQL",
-        "id": "hV87iK5DcEXKgWU2kDri"
-      }
-    ],
-    "uri": "incidents/aCXLk4u6GJoLn9PqSMm1"
-  },
-  {
     "id": "SjJ3FN51MAEJy7cZmoss",
     "number": "4933937362309678094",
     "begin": "2021-12-07T09:56:00+00:00",
@@ -705,6 +606,56 @@
     "uri": "incidents/cJwQRK4bgybhu7nNQ5W4"
   },
   {
+    "id": "u4oEtmqmJ1fmY8bjzxxa",
+    "number": "1802042647669406530",
+    "begin": "2021-11-12T08:30:00+00:00",
+    "created": "2021-11-12T10:19:16+00:00",
+    "end": "2021-11-12T10:14:00+00:00",
+    "modified": "2021-11-13T01:14:11+00:00",
+    "external_desc": "Issue with Google Cloud SQL",
+    "updates": [
+      {
+        "created": "2021-11-13T00:32:46+00:00",
+        "modified": "2021-11-13T01:14:11+00:00",
+        "when": "2021-11-13T00:32:46+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-11-12T11:46:17+00:00",
+        "modified": "2021-11-12T11:46:18+00:00",
+        "when": "2021-11-12T11:46:17+00:00",
+        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-11-12T10:19:14+00:00",
+        "modified": "2021-11-13T00:34:27+00:00",
+        "when": "2021-11-12T10:19:14+00:00",
+        "text": "Summary: Issue with Google Cloud SQL\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:30 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue. For regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None\nWorkaround: None",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-11-13T00:32:46+00:00",
+      "modified": "2021-11-13T01:14:11+00:00",
+      "when": "2021-11-13T00:32:46+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+      "status": "AVAILABLE"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "hV87iK5DcEXKgWU2kDri",
+    "service_name": "Google Cloud SQL",
+    "affected_products": [
+      {
+        "title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri"
+      }
+    ],
+    "uri": "incidents/u4oEtmqmJ1fmY8bjzxxa"
+  },
+  {
     "id": "8hZjcddmMVe9W1jh8SCN",
     "number": "14767488434731058018",
     "begin": "2021-11-12T08:30:00+00:00",
@@ -812,54 +763,118 @@
     "uri": "incidents/9A7WPjqgreJGbpmA6FqJ"
   },
   {
-    "id": "u4oEtmqmJ1fmY8bjzxxa",
-    "number": "1802042647669406530",
+    "id": "4qh2oE7kwsMoMNXScfoT",
+    "number": "1318251267977763247",
     "begin": "2021-11-12T08:30:00+00:00",
-    "created": "2021-11-12T10:19:16+00:00",
+    "created": "2021-11-12T09:53:30+00:00",
     "end": "2021-11-12T10:14:00+00:00",
-    "modified": "2021-11-13T01:14:11+00:00",
-    "external_desc": "Issue with Google Cloud SQL",
+    "modified": "2021-11-13T01:10:53+00:00",
+    "external_desc": "We are experiencing an issue with multiple Google Cloud components {beginning on Friday}, 2021-11-12 00:36 US/Pacific US/Pacific.",
     "updates": [
       {
-        "created": "2021-11-13T00:32:46+00:00",
-        "modified": "2021-11-13T01:14:11+00:00",
-        "when": "2021-11-13T00:32:46+00:00",
+        "created": "2021-11-13T00:37:03+00:00",
+        "modified": "2021-11-13T01:10:53+00:00",
+        "when": "2021-11-13T00:37:03+00:00",
         "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
         "status": "AVAILABLE"
       },
       {
-        "created": "2021-11-12T11:46:17+00:00",
-        "modified": "2021-11-12T11:46:18+00:00",
-        "when": "2021-11-12T11:46:17+00:00",
-        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
+        "created": "2021-11-12T11:47:22+00:00",
+        "modified": "2021-11-12T11:47:23+00:00",
+        "when": "2021-11-12T11:47:22+00:00",
+        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE"
       },
       {
-        "created": "2021-11-12T10:19:14+00:00",
-        "modified": "2021-11-13T00:34:27+00:00",
-        "when": "2021-11-12T10:19:14+00:00",
-        "text": "Summary: Issue with Google Cloud SQL\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:30 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue. For regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None\nWorkaround: None",
+        "created": "2021-11-12T09:54:04+00:00",
+        "modified": "2021-11-12T11:06:52+00:00",
+        "when": "2021-11-12T09:54:04+00:00",
+        "text": "Summary: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None\nWorkaround: None",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-11-12T09:53:30+00:00",
+        "modified": "2021-11-12T14:03:37+00:00",
+        "when": "2021-11-12T09:53:30+00:00",
+        "text": "Summary: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None\nWorkaround: None",
         "status": "SERVICE_DISRUPTION"
       }
     ],
     "most_recent_update": {
-      "created": "2021-11-13T00:32:46+00:00",
-      "modified": "2021-11-13T01:14:11+00:00",
-      "when": "2021-11-13T00:32:46+00:00",
+      "created": "2021-11-13T00:37:03+00:00",
+      "modified": "2021-11-13T01:10:53+00:00",
+      "when": "2021-11-13T00:37:03+00:00",
       "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
-    "service_key": "hV87iK5DcEXKgWU2kDri",
-    "service_name": "Google Cloud SQL",
+    "service_key": "Wdsr1n5vyDvCt78qEifm",
+    "service_name": "Google Cloud Console",
     "affected_products": [
       {
-        "title": "Google Cloud SQL",
-        "id": "hV87iK5DcEXKgWU2kDri"
+        "title": "Google Cloud Console",
+        "id": "Wdsr1n5vyDvCt78qEifm"
       }
     ],
-    "uri": "incidents/u4oEtmqmJ1fmY8bjzxxa"
+    "uri": "incidents/4qh2oE7kwsMoMNXScfoT"
+  },
+  {
+    "id": "A1HUEnN25xk8XiSmjmsj",
+    "number": "14307305938107923640",
+    "begin": "2021-11-12T08:30:00+00:00",
+    "created": "2021-11-12T09:54:31+00:00",
+    "end": "2021-11-12T10:14:00+00:00",
+    "modified": "2021-11-13T01:12:22+00:00",
+    "external_desc": "We are experiencing an issue with multiple Google Cloud components.",
+    "updates": [
+      {
+        "created": "2021-11-13T00:50:51+00:00",
+        "modified": "2021-11-13T01:12:22+00:00",
+        "when": "2021-11-13T00:50:51+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-11-12T11:52:25+00:00",
+        "modified": "2021-11-12T11:52:25+00:00",
+        "when": "2021-11-12T11:52:25+00:00",
+        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-11-12T10:11:51+00:00",
+        "modified": "2021-11-12T14:05:29+00:00",
+        "when": "2021-11-12T10:11:51+00:00",
+        "text": "Summary: We are experiencing an issue with .\nmultiple Google Cloud components\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: n/a\nWorkaround: n/a",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-11-12T09:54:29+00:00",
+        "modified": "2021-11-12T14:05:15+00:00",
+        "when": "2021-11-12T09:54:29+00:00",
+        "text": "Summary: We are experiencing an issue with .\nmultiple Google Cloud components\nDescription: We are experiencing an issue with .\nmultiple Google Cloud components\nOur engineering team continues to investigate the issue.",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-11-13T00:50:51+00:00",
+      "modified": "2021-11-13T01:12:22+00:00",
+      "when": "2021-11-13T00:50:51+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+      "status": "AVAILABLE"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "VNJxzcH58QmTt5H6pnT6",
+    "service_name": "Google Cloud Networking",
+    "affected_products": [
+      {
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
+      }
+    ],
+    "uri": "incidents/A1HUEnN25xk8XiSmjmsj"
   },
   {
     "id": "1xkAB1KmLrh5g3v9ZEZ7",
@@ -945,120 +960,6 @@
       }
     ],
     "uri": "incidents/1xkAB1KmLrh5g3v9ZEZ7"
-  },
-  {
-    "id": "A1HUEnN25xk8XiSmjmsj",
-    "number": "14307305938107923640",
-    "begin": "2021-11-12T08:30:00+00:00",
-    "created": "2021-11-12T09:54:31+00:00",
-    "end": "2021-11-12T10:14:00+00:00",
-    "modified": "2021-11-13T01:12:22+00:00",
-    "external_desc": "We are experiencing an issue with multiple Google Cloud components.",
-    "updates": [
-      {
-        "created": "2021-11-13T00:50:51+00:00",
-        "modified": "2021-11-13T01:12:22+00:00",
-        "when": "2021-11-13T00:50:51+00:00",
-        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-11-12T11:52:25+00:00",
-        "modified": "2021-11-12T11:52:25+00:00",
-        "when": "2021-11-12T11:52:25+00:00",
-        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-11-12T10:11:51+00:00",
-        "modified": "2021-11-12T14:05:29+00:00",
-        "when": "2021-11-12T10:11:51+00:00",
-        "text": "Summary: We are experiencing an issue with .\nmultiple Google Cloud components\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: n/a\nWorkaround: n/a",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-11-12T09:54:29+00:00",
-        "modified": "2021-11-12T14:05:15+00:00",
-        "when": "2021-11-12T09:54:29+00:00",
-        "text": "Summary: We are experiencing an issue with .\nmultiple Google Cloud components\nDescription: We are experiencing an issue with .\nmultiple Google Cloud components\nOur engineering team continues to investigate the issue.",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-11-13T00:50:51+00:00",
-      "modified": "2021-11-13T01:12:22+00:00",
-      "when": "2021-11-13T00:50:51+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-      "status": "AVAILABLE"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "VNJxzcH58QmTt5H6pnT6",
-    "service_name": "Google Cloud Networking",
-    "affected_products": [
-      {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
-      }
-    ],
-    "uri": "incidents/A1HUEnN25xk8XiSmjmsj"
-  },
-  {
-    "id": "4qh2oE7kwsMoMNXScfoT",
-    "number": "1318251267977763247",
-    "begin": "2021-11-12T08:30:00+00:00",
-    "created": "2021-11-12T09:53:30+00:00",
-    "end": "2021-11-12T10:14:00+00:00",
-    "modified": "2021-11-13T01:10:53+00:00",
-    "external_desc": "We are experiencing an issue with multiple Google Cloud components {beginning on Friday}, 2021-11-12 00:36 US/Pacific US/Pacific.",
-    "updates": [
-      {
-        "created": "2021-11-13T00:37:03+00:00",
-        "modified": "2021-11-13T01:10:53+00:00",
-        "when": "2021-11-13T00:37:03+00:00",
-        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-11-12T11:47:22+00:00",
-        "modified": "2021-11-12T11:47:23+00:00",
-        "when": "2021-11-12T11:47:22+00:00",
-        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2021-11-12T09:54:04+00:00",
-        "modified": "2021-11-12T11:06:52+00:00",
-        "when": "2021-11-12T09:54:04+00:00",
-        "text": "Summary: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None\nWorkaround: None",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2021-11-12T09:53:30+00:00",
-        "modified": "2021-11-12T14:03:37+00:00",
-        "when": "2021-11-12T09:53:30+00:00",
-        "text": "Summary: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None\nWorkaround: None",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-11-13T00:37:03+00:00",
-      "modified": "2021-11-13T01:10:53+00:00",
-      "when": "2021-11-13T00:37:03+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-      "status": "AVAILABLE"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "Wdsr1n5vyDvCt78qEifm",
-    "service_name": "Google Cloud Console",
-    "affected_products": [
-      {
-        "title": "Google Cloud Console",
-        "id": "Wdsr1n5vyDvCt78qEifm"
-      }
-    ],
-    "uri": "incidents/4qh2oE7kwsMoMNXScfoT"
   },
   {
     "id": "qgC4WYnmToo6fkqEnqYf",
@@ -1159,6 +1060,112 @@
       }
     ],
     "uri": "incidents/sXRB8Ty5Xzb13t8DCrD8"
+  },
+  {
+    "id": "aCXLk4u6GJoLn9PqSMm1",
+    "number": "13045675828271798087",
+    "begin": "2021-11-02T12:13:00+00:00",
+    "created": "2021-12-07T21:14:09+00:00",
+    "end": "2021-12-16T20:25:00+00:00",
+    "modified": "2021-12-20T20:29:09+00:00",
+    "external_desc": "Global: Issues with Cloud SQL for MySQL instance migration to 5.7 when source databases have gtid_mode set to ON.",
+    "updates": [
+      {
+        "created": "2021-12-20T20:28:34+00:00",
+        "modified": "2021-12-20T20:28:34+00:00",
+        "when": "2021-12-20T20:28:34+00:00",
+        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 02 November 2021 04:13\n**Incident End:** 16 December 2021 12:25\n**Duration:** 44 days, 8 hours, 12 minutes\n**Affected Services and Features:**\nCloudSQL- MySQL instance migration.\n**Regions/Zones:** Global\n**Description:**\nCloudSQL experienced an issue with MySQL instance migration to 5.7.36 with source database gtid_mode set to ON for a duration of 44 days, 8 hours, 12 minutes. The root cause of the issue is a MySQL bug https://bugs.mysql.com/bug.php?id=105761 that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021, from a source database that had gtid_mode set to ON.\n**Customer Impact:**\nCloud SQL External Server or Database Migration Service (DMS) users who migrated to Cloud SQL for MySQL 5.7.36, with replication using managed dumps may have experienced replication failures if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those jobs during the replication phase, the migration job may have failed.\nThe issue was observed when ALL the following conditions are met:\n* Cloud SQL MySQL version migrated to is 5.7.36.\n* Source database gtid_mode is ON.\n* Customer is running continuous migration (see DMS doc https://cloud.google.com/database-migration/docs/mysql/create-migration-job).\n* Customer is not migrating with a file, i.e. migration is using a managed dump.\nNew instances should not experience this issue, but please follow the below recommended workaround for existing instances that are impacted. We will be sending out targeted communications to the affected customers.\n***Workaround:*** Customers should start a new migration by dumping the data from a source database instance running MySQL 5.7.35 or lower versions to Google Cloud Storage (GCS) manually (Cloud SQL, DMS), using a mysqldump file, and then migrate using the dump file to Cloud SQL for MySQL 5.7.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-12-16T21:13:01+00:00",
+        "modified": "2021-12-16T21:13:04+00:00",
+        "when": "2021-12-16T21:13:01+00:00",
+        "text": "The issue with Cloud SQL has been resolved as of Thursday, 2021-12-16 12:25 US/Pacific.\nNew instances will no longer experience this issue, but please follow the recommended workaround for existing instances that are impacted. We will be sending out targeted communications to the affected customers.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2021-12-13T22:00:09+00:00",
+        "modified": "2021-12-13T22:00:12+00:00",
+        "when": "2021-12-13T22:00:09+00:00",
+        "text": "Summary: Global: Issues with Cloud SQL for MySQL instance migration to 5.7 when source databases have gtid_mode set to ON.\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete over the next few days.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL for MySQL 5.7 with GTID replication using managed dumps may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those jobs during the replication phase, the migration job may fail.\nWorkaround: Customers should start a new migration by dumping the data from a source database instance running MySQL 5.7.35 or lower versions to Google Cloud Storage (GCS) manually (Cloud SQL, DMS), using a mysqldump file, and then migrate using the dump file to Cloud SQL for MySQL 5.7.",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-12-09T06:04:17+00:00",
+        "modified": "2021-12-09T06:04:17+00:00",
+        "when": "2021-12-09T06:04:17+00:00",
+        "text": "Summary: Global: Issues with Cloud SQL for MySQL instance migration to 5.7 when source databases have gtid_mode set to ON.\nDescription: Our engineering team continues to investigate the issue caused by a MySQL bug https://bugs.mysql.com/bug.php?id=105761 that may affect customers who migrated to MySQL 5.7.36 on or after November 2nd 2021, from a source database that had gtid_mode set to ON.\nThe issue is being observed when ALL of the following conditions are met:\n1. Cloud SQL for MySQL version migrated to is 5.7.36\n2. source database gtid_mode is ON\n3. The migration was a continuous migration (see DMS doc https://cloud.google.com/database-migration/docs/mysql/configure-source-database)\n4. The migration was performed using an auto-generated initial dump, also called a managed dump.\nWe will provide further updates by Monday, 2021-12-13 17:00 US/Pacific with details.\nIn the meantime, we recommend halting any migrations to Cloud SQL for MySQL 5.7 where the source database has gtid_mode set to ON and is using managed dumps, to prevent this scenario from occurring. The workaround outlined below may be used for these migrations instead.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL for MySQL 5.7 with GTID replication using managed dumps may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those jobs during the replication phase, the migration job may fail.\nWorkaround: Customers should start a new migration by dumping the data from a source database instance running MySQL 5.7.35 or lower versions to Google Cloud Storage (GCS) manually (Cloud SQL, DMS), using a mysqldump file, and then migrate using the dump file to Cloud SQL for MySQL 5.7.",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-12-09T01:21:58+00:00",
+        "modified": "2021-12-09T01:21:59+00:00",
+        "when": "2021-12-09T01:21:58+00:00",
+        "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36 from source databases that have gtid_mode set to ON.\nDescription: Our engineering team continues to investigate the issue caused by a MySQL bug https://bugs.mysql.com/bug.php?id=105761 that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021, from a source database that had gtid_mode set to ON.\nThe issue is being observed when ALL of the following conditions are met:\n1. Cloud SQL MySQL version migrated to is 5.7.36\n2. source database gtid_mode is ON\n3. Customer is running continuous migration (see DMS doc https://cloud.google.com/database-migration/docs/postgres/create-migration-job)\n4. Customer is not migrating with a file, i.e. migration is using a managed dump.\nWe will provide further updates by Monday, 2021-12-13 17:00 US/Pacific with details.\nIn the meantime, we recommend halting any migrations to Cloud SQL MySQL version 5.7 where the source database has gtid_mode set to ON to prevent this scenario from occurring. The workaround outlined below may be used for these migrations.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL MySQL 5.7 with GTID replication may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those jobs during the replication phase, the migration job may fail.\nWorkaround: Customers should start a new migration by dumping the data from source MySQL 5.7.35 or lower versions to Google Cloud Storage (GCS) manually (Cloud SQL, DMS), using mysqldump, and then migrate using the file to Cloud SQL MySQL 5.7 version.",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-12-08T21:59:06+00:00",
+        "modified": "2021-12-08T21:59:12+00:00",
+        "when": "2021-12-08T21:59:06+00:00",
+        "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36.\nDescription: Our engineering team continues to investigate the issue that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021\nWe will provide an update by Wednesday, 2021-12-08 17:00 US/Pacific with current details.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL MySQL 5.7 with GTID replication may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those data during replication phase, the migration job may fail.\nWorkaround: Customers may need to start a new migration by dumping the data from source mysql 5.7.35 or lower versions to Google Cloud Storage (GCS) manually, using mysqldump, and then migrate the file to destination mysql version.",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-12-08T06:28:36+00:00",
+        "modified": "2021-12-08T06:28:37+00:00",
+        "when": "2021-12-08T06:28:36+00:00",
+        "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36.\nDescription: Our engineering team continues to investigate the issue that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021\nWe will provide an update by Wednesday, 2021-12-08 14:00 US/Pacific with current details.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL MySQL 5.7 with GTID replication may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those data during replication phase, the migration job may fail.\nWorkaround: Customers may need to start a new migration by dumping the data from source mysql 5.7.35 or lower versions to Google Cloud Storage (GCS) manually, using mysqldump, and then migrate the file to destination mysql version.",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-12-08T03:31:31+00:00",
+        "modified": "2021-12-08T03:31:32+00:00",
+        "when": "2021-12-08T03:31:31+00:00",
+        "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36.\nDescription: Our engineering team continues to investigate the issue that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021\nWe will provide an update by Tuesday, 2021-12-07 23:30 US/Pacific with current details.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL MySQL 5.7 with GTID replication may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those data during replication phase, the migration job may fail.\nWorkaround: Customers may need to start a new migration by dumping the data from source mysql 5.7.35 or lower versions to Google Cloud Storage (GCS) manually, using mysqldump, and then migrate the file to destination mysql version.",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-12-08T00:35:07+00:00",
+        "modified": "2021-12-08T00:35:08+00:00",
+        "when": "2021-12-08T00:35:07+00:00",
+        "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36.\nDescription: Our engineering team continues to investigate the issue that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021\nWe will provide an update by Tuesday, 2021-12-07 19:30 US/Pacific with current details.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL MySQL 5.7 with GTID replication may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those data during replication phase, the migration job may fail.\nWorkaround: Customers may need to start a new migration by dumping the data from source mysql 5.7.35 or lower versions to Google Cloud Storage (GCS) manually, using mysqldump, and then migrate the file to destination mysql version.",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-12-07T22:36:00+00:00",
+        "modified": "2021-12-07T22:36:01+00:00",
+        "when": "2021-12-07T22:36:00+00:00",
+        "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36\nDescription: Our engineering team continues to investigate the issue that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021.\nWe will provide an update by Tuesday, 2021-12-07 16:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who migrate to Cloud SQL MySQL 5.7 with GTID replication may experience errors if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those data during replication phase, the migration job may fail.\nWorkaround: Customers need to start a new migration by dumping the data from source mysql 5.7.35 or lower versions to Google Cloud Storage (GCS) manually, using mysqldump, and then migrate the file to destination mysql version.",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2021-12-07T21:14:09+00:00",
+        "modified": "2021-12-07T21:14:10+00:00",
+        "when": "2021-12-07T21:14:09+00:00",
+        "text": "Summary: Global: Issues with Cloud SQL migrating to MySQL version 5.7.36\nDescription: We are experiencing an issue with Cloud SQL when migrating to MySQL version 5.7.36.\nThe issue may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2021-12-07 14:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Cloud SQL External Server or Database Migration Service (DMS) users who want to migrate to Cloud SQL MySQL 5.7 with GTID replication may experience data inconsistency (i.e. data in Cloud SQL may not be consistent with data on the source) issue if they have insert/update/delete transactions during the dump phase. Further more, if customer has updates to those inconsistent data during replication phase, the migration job may fail.\nWorkaround: Customers needs to start a new migration by dumping the data from source by themselves to Google Cloud Storage (GCS) and then migrate with the file.",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-12-20T20:28:34+00:00",
+      "modified": "2021-12-20T20:28:34+00:00",
+      "when": "2021-12-20T20:28:34+00:00",
+      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 02 November 2021 04:13\n**Incident End:** 16 December 2021 12:25\n**Duration:** 44 days, 8 hours, 12 minutes\n**Affected Services and Features:**\nCloudSQL- MySQL instance migration.\n**Regions/Zones:** Global\n**Description:**\nCloudSQL experienced an issue with MySQL instance migration to 5.7.36 with source database gtid_mode set to ON for a duration of 44 days, 8 hours, 12 minutes. The root cause of the issue is a MySQL bug https://bugs.mysql.com/bug.php?id=105761 that may affect customers who migrated to MySQL version 5.7.36 on or after November 2nd 2021, from a source database that had gtid_mode set to ON.\n**Customer Impact:**\nCloud SQL External Server or Database Migration Service (DMS) users who migrated to Cloud SQL for MySQL 5.7.36, with replication using managed dumps may have experienced replication failures if they have insert/update/delete transactions during the dump phase. Furthermore, if updates were made to those jobs during the replication phase, the migration job may have failed.\nThe issue was observed when ALL the following conditions are met:\n* Cloud SQL MySQL version migrated to is 5.7.36.\n* Source database gtid_mode is ON.\n* Customer is running continuous migration (see DMS doc https://cloud.google.com/database-migration/docs/mysql/create-migration-job).\n* Customer is not migrating with a file, i.e. migration is using a managed dump.\nNew instances should not experience this issue, but please follow the below recommended workaround for existing instances that are impacted. We will be sending out targeted communications to the affected customers.\n***Workaround:*** Customers should start a new migration by dumping the data from a source database instance running MySQL 5.7.35 or lower versions to Google Cloud Storage (GCS) manually (Cloud SQL, DMS), using a mysqldump file, and then migrate using the dump file to Cloud SQL for MySQL 5.7.",
+      "status": "AVAILABLE"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "hV87iK5DcEXKgWU2kDri",
+    "service_name": "Google Cloud SQL",
+    "affected_products": [
+      {
+        "title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri"
+      }
+    ],
+    "uri": "incidents/aCXLk4u6GJoLn9PqSMm1"
   },
   {
     "id": "aFfDakd653GfsyCBJnZq",
