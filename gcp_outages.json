@@ -168,70 +168,6 @@
     "uri": "incidents/46bP9UWxaLXHyCUQdjPR"
   },
   {
-    "id": "1cPiGbWDMYHFMcTaLADd",
-    "number": "16268067613416205109",
-    "begin": "2022-02-08T19:22:20+00:00",
-    "created": "2022-02-08T19:22:23+00:00",
-    "end": "2022-02-09T14:07:37+00:00",
-    "modified": "2022-02-09T14:07:37+00:00",
-    "external_desc": "Global: Cloud build unable to create github triggers",
-    "updates": [
-      {
-        "created": "2022-02-09T14:07:35+00:00",
-        "modified": "2022-02-09T14:07:39+00:00",
-        "when": "2022-02-09T14:07:35+00:00",
-        "text": "The issue with Cloud Build has been resolved for all affected projects as of Wednesday, 2022-02-09 05:48 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE"
-      },
-      {
-        "created": "2022-02-08T23:16:39+00:00",
-        "modified": "2022-02-08T23:16:46+00:00",
-        "when": "2022-02-08T23:16:39+00:00",
-        "text": "Summary: Global: Cloud build unable to create github triggers\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2022-02-09 07:00 US/Pacific.\nDiagnosis: Customers attempting to create github triggers using a Cloud Console URL that ends in their project id (example: https://console.cloud.google.com/cloud-build/triggers/add?project=$project-id) will see a \"Failed to load\" error with following message:\n\"There was an error while loading /cloud-build/triggers?project=\nPlease try again\"\nWorkaround: Modify the URL in the browser to end with the project number instead of project id\ne.g. https://console.cloud.google.com/cloud-build/triggers/add?project=$project-num",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2022-02-08T20:13:20+00:00",
-        "modified": "2022-02-08T20:13:21+00:00",
-        "when": "2022-02-08T20:13:20+00:00",
-        "text": "Summary: Global: Cloud build unable to create github triggers\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Tuesday, 2022-02-08 15:00 US/Pacific.\nDiagnosis: Customers attempting to create github triggers using a Cloud Console URL that ends in their project id (example: https://console.cloud.google.com/cloud-build/triggers/add?project=$project-id) will see a \"Failed to load\" error with following message:\n\"There was an error while loading /cloud-build/triggers?project=\nPlease try again\"\nWorkaround: Modify the URL in the browser to end with the project number instead of project id\ne.g. https://console.cloud.google.com/cloud-build/triggers/add?project=$project-num",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2022-02-08T19:56:33+00:00",
-        "modified": "2022-02-08T19:56:34+00:00",
-        "when": "2022-02-08T19:56:33+00:00",
-        "text": "Summary: Global: Cloud build unable to create github triggers\nDescription: We are experiencing an issue with Cloud Build beginning at Wednesday, 2022-02-02 12:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-02-08 13:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers will see a \"Failed to load\" error with following message:\n\"There was an error while loading /cloud-build/triggers?project=\nPlease try again\"\nWorkaround: Modify the URL in the browser to end with the project number\ne.g. https://console.cloud.google.com/cloud-build/triggers/add?project=$project-id ---> https://console.cloud.google.com/cloud-build/triggers/add?project=$project-num",
-        "status": "SERVICE_DISRUPTION"
-      },
-      {
-        "created": "2022-02-08T19:22:23+00:00",
-        "modified": "2022-02-08T19:22:23+00:00",
-        "when": "2022-02-08T19:22:23+00:00",
-        "text": "Summary: Global: Cloud build unable to create github triggers\nDescription: We are experiencing an issue with Cloud Build beginning at Wednesday, 2022-02-02 12:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-02-08 12:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers will see a \"Failed to load\" error with following message:\n\"There was an error while loading /cloud-build/triggers?project=\nPlease try again\"\nWorkaround: Modify the URL in the browser to end with the project number\ne.g. https://console.cloud.google.com/cloud-build/triggers/add?project=$project-id ---> https://console.cloud.google.com/cloud-build/triggers/add?project=$project-num",
-        "status": "SERVICE_DISRUPTION"
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-02-09T14:07:35+00:00",
-      "modified": "2022-02-09T14:07:39+00:00",
-      "when": "2022-02-09T14:07:35+00:00",
-      "text": "The issue with Cloud Build has been resolved for all affected projects as of Wednesday, 2022-02-09 05:48 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-      "status": "AVAILABLE"
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "BGJQ6jbGK4kUuBTQFZ1G",
-    "service_name": "Cloud Developer Tools",
-    "affected_products": [
-      {
-        "title": "Cloud Developer Tools",
-        "id": "BGJQ6jbGK4kUuBTQFZ1G"
-      }
-    ],
-    "uri": "incidents/1cPiGbWDMYHFMcTaLADd"
-  },
-  {
     "id": "bRpbkj2tcGDGQ6j4d8Uv",
     "number": "12173750429148254762",
     "begin": "2022-02-07T11:42:29+00:00",
@@ -273,6 +209,77 @@
       }
     ],
     "uri": "incidents/bRpbkj2tcGDGQ6j4d8Uv"
+  },
+  {
+    "id": "1cPiGbWDMYHFMcTaLADd",
+    "number": "16268067613416205109",
+    "begin": "2022-02-02T20:00:00+00:00",
+    "created": "2022-02-08T19:22:23+00:00",
+    "end": "2022-02-09T13:48:00+00:00",
+    "modified": "2022-02-10T23:13:01+00:00",
+    "external_desc": "Global: Cloud build unable to create github triggers",
+    "updates": [
+      {
+        "created": "2022-02-10T23:12:33+00:00",
+        "modified": "2022-02-10T23:12:33+00:00",
+        "when": "2022-02-10T23:12:33+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 02 February 2022 12:00\n**Incident End:** 09 February 2022 05:48\n**Duration:** 6 days, 17 hours, 48 minutes\n**Affected Services and Features:**\nCloud Build\n**Regions/Zones:** Global\n**Description:**\nCreating Cloud Build GitHub triggers in the Cloud Console failed when the URL of the page ended with a project ID as the last argument (e.g. https://console.cloud.google.com/cloud-build/triggers/add?project=project-id-1234) Creation of triggers via gcloud was not impacted. From preliminary analysis, the root cause of the issue was that the Cloud Console began sending resource names in a format Cloud Build could not parse.\n**Customer Impact:**\nCustomers attempting to create GitHub triggers when using a Cloud Console URL that ended in their project ID would have experienced pages that displayed “Failed to load” errors.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2022-02-09T14:07:35+00:00",
+        "modified": "2022-02-09T14:07:39+00:00",
+        "when": "2022-02-09T14:07:35+00:00",
+        "text": "The issue with Cloud Build has been resolved for all affected projects as of Wednesday, 2022-02-09 05:48 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE"
+      },
+      {
+        "created": "2022-02-08T23:16:39+00:00",
+        "modified": "2022-02-08T23:16:46+00:00",
+        "when": "2022-02-08T23:16:39+00:00",
+        "text": "Summary: Global: Cloud build unable to create github triggers\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2022-02-09 07:00 US/Pacific.\nDiagnosis: Customers attempting to create github triggers using a Cloud Console URL that ends in their project id (example: https://console.cloud.google.com/cloud-build/triggers/add?project=$project-id) will see a \"Failed to load\" error with following message:\n\"There was an error while loading /cloud-build/triggers?project=\nPlease try again\"\nWorkaround: Modify the URL in the browser to end with the project number instead of project id\ne.g. https://console.cloud.google.com/cloud-build/triggers/add?project=$project-num",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2022-02-08T20:13:20+00:00",
+        "modified": "2022-02-08T20:13:21+00:00",
+        "when": "2022-02-08T20:13:20+00:00",
+        "text": "Summary: Global: Cloud build unable to create github triggers\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Tuesday, 2022-02-08 15:00 US/Pacific.\nDiagnosis: Customers attempting to create github triggers using a Cloud Console URL that ends in their project id (example: https://console.cloud.google.com/cloud-build/triggers/add?project=$project-id) will see a \"Failed to load\" error with following message:\n\"There was an error while loading /cloud-build/triggers?project=\nPlease try again\"\nWorkaround: Modify the URL in the browser to end with the project number instead of project id\ne.g. https://console.cloud.google.com/cloud-build/triggers/add?project=$project-num",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2022-02-08T19:56:33+00:00",
+        "modified": "2022-02-08T19:56:34+00:00",
+        "when": "2022-02-08T19:56:33+00:00",
+        "text": "Summary: Global: Cloud build unable to create github triggers\nDescription: We are experiencing an issue with Cloud Build beginning at Wednesday, 2022-02-02 12:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-02-08 13:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers will see a \"Failed to load\" error with following message:\n\"There was an error while loading /cloud-build/triggers?project=\nPlease try again\"\nWorkaround: Modify the URL in the browser to end with the project number\ne.g. https://console.cloud.google.com/cloud-build/triggers/add?project=$project-id ---> https://console.cloud.google.com/cloud-build/triggers/add?project=$project-num",
+        "status": "SERVICE_DISRUPTION"
+      },
+      {
+        "created": "2022-02-08T19:22:23+00:00",
+        "modified": "2022-02-08T19:22:23+00:00",
+        "when": "2022-02-08T19:22:23+00:00",
+        "text": "Summary: Global: Cloud build unable to create github triggers\nDescription: We are experiencing an issue with Cloud Build beginning at Wednesday, 2022-02-02 12:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-02-08 12:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers will see a \"Failed to load\" error with following message:\n\"There was an error while loading /cloud-build/triggers?project=\nPlease try again\"\nWorkaround: Modify the URL in the browser to end with the project number\ne.g. https://console.cloud.google.com/cloud-build/triggers/add?project=$project-id ---> https://console.cloud.google.com/cloud-build/triggers/add?project=$project-num",
+        "status": "SERVICE_DISRUPTION"
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-02-10T23:12:33+00:00",
+      "modified": "2022-02-10T23:12:33+00:00",
+      "when": "2022-02-10T23:12:33+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 02 February 2022 12:00\n**Incident End:** 09 February 2022 05:48\n**Duration:** 6 days, 17 hours, 48 minutes\n**Affected Services and Features:**\nCloud Build\n**Regions/Zones:** Global\n**Description:**\nCreating Cloud Build GitHub triggers in the Cloud Console failed when the URL of the page ended with a project ID as the last argument (e.g. https://console.cloud.google.com/cloud-build/triggers/add?project=project-id-1234) Creation of triggers via gcloud was not impacted. From preliminary analysis, the root cause of the issue was that the Cloud Console began sending resource names in a format Cloud Build could not parse.\n**Customer Impact:**\nCustomers attempting to create GitHub triggers when using a Cloud Console URL that ended in their project ID would have experienced pages that displayed “Failed to load” errors.",
+      "status": "AVAILABLE"
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "BGJQ6jbGK4kUuBTQFZ1G",
+    "service_name": "Cloud Developer Tools",
+    "affected_products": [
+      {
+        "title": "Cloud Developer Tools",
+        "id": "BGJQ6jbGK4kUuBTQFZ1G"
+      }
+    ],
+    "uri": "incidents/1cPiGbWDMYHFMcTaLADd"
   },
   {
     "id": "whAt3eeGhT2SbR2aQXwA",
