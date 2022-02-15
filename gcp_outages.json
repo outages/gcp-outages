@@ -4,9 +4,16 @@
     "number": "17820096163428229993",
     "begin": "2022-02-15T17:17:47+00:00",
     "created": "2022-02-15T17:49:25+00:00",
-    "modified": "2022-02-15T17:49:25+00:00",
-    "external_desc": "Global: Some Cloud SQL Postgres instances have the following flag set and are unable to disable: cloudsql.enable_password_validation=on",
+    "modified": "2022-02-15T19:27:00+00:00",
+    "external_desc": "Global: Cloud SQL Postgres instances experiences password validation error on some connections.",
     "updates": [
+      {
+        "created": "2022-02-15T19:26:59+00:00",
+        "modified": "2022-02-15T19:27:02+00:00",
+        "when": "2022-02-15T19:26:59+00:00",
+        "text": "Summary: Global: Cloud SQL Postgres instances experiences password validation error on some connections.\nDescription: We are experiencing an issue with Cloud SQL beginning at Tuesday, 2022-01-26 11:24 US/Pacific.\nOur engineering team continues to investigate the issue, and after further investigation it was determined that the trigger conditions are not actually due to >50 QPS.\nWe will provide an update by Tuesday, 2022-02-15 13:00 US/Pacific with current details.\nDiagnosis: Affected customers may see a password validation error message when establishing new connections: \"FATAL: pwd_validation: Failed to connect to admin database, error: FATAL: sorry, too many clients already...\".\nWorkaround: Users can enable connection pooling to reduce the connection rate.",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2022-02-15T17:49:24+00:00",
         "modified": "2022-02-15T17:49:26+00:00",
@@ -16,10 +23,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-02-15T17:49:24+00:00",
-      "modified": "2022-02-15T17:49:26+00:00",
-      "when": "2022-02-15T17:49:24+00:00",
-      "text": "Summary: Global: Some Cloud SQL Postgres instances have the following flag set and are unable to disable: cloudsql.enable_password_validation=on\nDescription: All Postgres instances connections have been rate-limited to 50/sec to prevent triggering the issue.\nCustomers may consider using the workaround to pool connections to avoid hitting the temporarily rate limit.\nWe will provide more information by Tuesday, 2022-02-15 12:00 US/Pacific.\nDiagnosis: Affected postgres instances from a recent release have the following flag set and are unable to remove or disable this flag: cloudsql.enable_password_validation=on. This flag does not appear in Cloud Console, and attempting to disable flag via gcloud returns error where the flag is not recognized or supported. Password validation occurs on every new client connection but is limited to 50 QPS, and thus higher rates will return errors.\nWorkaround: Users can enable connection pooling to avoid connecting more than 50 times a second.",
+      "created": "2022-02-15T19:26:59+00:00",
+      "modified": "2022-02-15T19:27:02+00:00",
+      "when": "2022-02-15T19:26:59+00:00",
+      "text": "Summary: Global: Cloud SQL Postgres instances experiences password validation error on some connections.\nDescription: We are experiencing an issue with Cloud SQL beginning at Tuesday, 2022-01-26 11:24 US/Pacific.\nOur engineering team continues to investigate the issue, and after further investigation it was determined that the trigger conditions are not actually due to >50 QPS.\nWe will provide an update by Tuesday, 2022-02-15 13:00 US/Pacific with current details.\nDiagnosis: Affected customers may see a password validation error message when establishing new connections: \"FATAL: pwd_validation: Failed to connect to admin database, error: FATAL: sorry, too many clients already...\".\nWorkaround: Users can enable connection pooling to reduce the connection rate.",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
