@@ -81,9 +81,17 @@
     "number": "6781397710939038875",
     "begin": "2022-02-15T13:41:00+00:00",
     "created": "2022-02-16T19:28:41+00:00",
-    "modified": "2022-02-16T19:28:41+00:00",
+    "end": "2022-02-15T17:07:00+00:00",
+    "modified": "2022-02-16T19:57:00+00:00",
     "external_desc": "Global: Delays provisioning SSL certificates for HTTPS load balancers",
     "updates": [
+      {
+        "created": "2022-02-16T19:56:42+00:00",
+        "modified": "2022-02-16T19:56:42+00:00",
+        "when": "2022-02-16T19:56:42+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 15 February 2022 05:41\n**Incident End:** 15 February 2022 09:07\n**Duration:** 3 hours, 26 minutes\n**Affected Services and Features:**\nGoogle Cloud Networking - Global External HTTPS load balancer SSL certificates\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Networking experienced issues with global external HTTPS load balancer SSL certificate configuration updates for a duration of 3 hours, 26 minutes. This was triggered by a component rollback, which tripped a safety check that prevented changes from taking effect. The backlog required further intervention from operators to clear; when it did the issue was mitigated.\n**Customer Impact:**\n- Customers experienced delays with initial provisioning of managed SSL certificates.\n- Customers experienced issues with programming of newly uploaded, updated, or deleted SSL certificates that were not applied to the dataplane.\n**Additional details:**\nThe issue was fully resolved on 15 February 2022 at 09:07 US/Pacific after:\n- Modifying the safety check.\n- Supervising the pipeline until it successfully completed, removing the delta and resolving the issue.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2022-02-16T19:28:41+00:00",
         "modified": "2022-02-16T19:28:41+00:00",
@@ -93,11 +101,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-02-16T19:28:41+00:00",
-      "modified": "2022-02-16T19:28:41+00:00",
-      "when": "2022-02-16T19:28:41+00:00",
-      "text": "We are experienced an intermittent issue with Cloud Networking beginning at Tuesday, 2022-02-15 05:41 US/Pacific.\nDiagnosis: Affected customers may have experienced delays when provisioning new or updated certificates.\nWorkaround: None at this time.",
-      "status": "SERVICE_DISRUPTION"
+      "created": "2022-02-16T19:56:42+00:00",
+      "modified": "2022-02-16T19:56:42+00:00",
+      "when": "2022-02-16T19:56:42+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 15 February 2022 05:41\n**Incident End:** 15 February 2022 09:07\n**Duration:** 3 hours, 26 minutes\n**Affected Services and Features:**\nGoogle Cloud Networking - Global External HTTPS load balancer SSL certificates\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Networking experienced issues with global external HTTPS load balancer SSL certificate configuration updates for a duration of 3 hours, 26 minutes. This was triggered by a component rollback, which tripped a safety check that prevented changes from taking effect. The backlog required further intervention from operators to clear; when it did the issue was mitigated.\n**Customer Impact:**\n- Customers experienced delays with initial provisioning of managed SSL certificates.\n- Customers experienced issues with programming of newly uploaded, updated, or deleted SSL certificates that were not applied to the dataplane.\n**Additional details:**\nThe issue was fully resolved on 15 February 2022 at 09:07 US/Pacific after:\n- Modifying the safety check.\n- Supervising the pipeline until it successfully completed, removing the delta and resolving the issue.",
+      "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
