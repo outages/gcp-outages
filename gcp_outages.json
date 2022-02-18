@@ -4,9 +4,16 @@
     "number": "17820096163428229993",
     "begin": "2022-02-15T17:17:47+00:00",
     "created": "2022-02-15T17:49:25+00:00",
-    "modified": "2022-02-17T22:31:16+00:00",
+    "modified": "2022-02-18T19:42:10+00:00",
     "external_desc": "Global: Cloud SQL PostgreSQL password validation errors with high connection load.",
     "updates": [
+      {
+        "created": "2022-02-18T19:42:10+00:00",
+        "modified": "2022-02-18T19:42:17+00:00",
+        "when": "2022-02-18T19:42:10+00:00",
+        "text": "Summary: Global: Cloud SQL PostgreSQL password validation errors with high connection load.\nDescription: Engineering team is currently working on mitigating the non-HA instances (ETA Feb 22, 2022). The mitigation efforts are still underway for HA instances which continue to be affected.\nAffected customer instances have been mitigated and will not observe the password validation errors. If you are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe will provide an update by Tuesday, 2022-02-22 12:00 US/Pacific with current details.\nDiagnosis: Affected customers may see a password validation error message when establishing new connections to instances with high connection load - \"FATAL: pwd_validation: Failed to connect to admin database, error: FATAL: sorry, too many clients already...\".\nWorkaround: Users can enable connection pooling to reduce the connection load.",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2022-02-17T22:31:16+00:00",
         "modified": "2022-02-17T22:31:22+00:00",
@@ -79,10 +86,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-02-17T22:31:16+00:00",
-      "modified": "2022-02-17T22:31:22+00:00",
-      "when": "2022-02-17T22:31:16+00:00",
-      "text": "Summary: Global: Cloud SQL PostgreSQL password validation errors with high connection load.\nDescription: Engineering team continues to work on deploying the fix.\nAffected customer instances have been mitigated and will not observe the password validation errors. If you are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe will provide an update by Friday, 2022-02-18 12:00 US/Pacific with current details.\nDiagnosis: Affected customers may see a password validation error message when establishing new connections to instances with high connection load - \"FATAL: pwd_validation: Failed to connect to admin database, error: FATAL: sorry, too many clients already...\".\nWorkaround: Users can enable connection pooling to reduce the connection load.",
+      "created": "2022-02-18T19:42:10+00:00",
+      "modified": "2022-02-18T19:42:17+00:00",
+      "when": "2022-02-18T19:42:10+00:00",
+      "text": "Summary: Global: Cloud SQL PostgreSQL password validation errors with high connection load.\nDescription: Engineering team is currently working on mitigating the non-HA instances (ETA Feb 22, 2022). The mitigation efforts are still underway for HA instances which continue to be affected.\nAffected customer instances have been mitigated and will not observe the password validation errors. If you are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe will provide an update by Tuesday, 2022-02-22 12:00 US/Pacific with current details.\nDiagnosis: Affected customers may see a password validation error message when establishing new connections to instances with high connection load - \"FATAL: pwd_validation: Failed to connect to admin database, error: FATAL: sorry, too many clients already...\".\nWorkaround: Users can enable connection pooling to reduce the connection load.",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
