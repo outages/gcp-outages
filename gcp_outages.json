@@ -4,9 +4,17 @@
     "number": "17820096163428229993",
     "begin": "2022-02-15T17:17:47+00:00",
     "created": "2022-02-15T17:49:25+00:00",
-    "modified": "2022-02-22T19:22:35+00:00",
+    "end": "2022-02-22T22:45:10+00:00",
+    "modified": "2022-02-22T22:45:10+00:00",
     "external_desc": "Global: Cloud SQL PostgreSQL password validation errors with high connection load.",
     "updates": [
+      {
+        "created": "2022-02-22T22:45:09+00:00",
+        "modified": "2022-02-22T22:45:11+00:00",
+        "when": "2022-02-22T22:45:09+00:00",
+        "text": "The issue with Cloud SQL has been resolved for all affected instances as of Tuesday, 2022-02-22 14:30 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2022-02-22T19:22:35+00:00",
         "modified": "2022-02-22T19:22:41+00:00",
@@ -93,11 +101,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-02-22T19:22:35+00:00",
-      "modified": "2022-02-22T19:22:41+00:00",
-      "when": "2022-02-22T19:22:35+00:00",
-      "text": "Summary: Global: Cloud SQL PostgreSQL password validation errors with high connection load.\nDescription: Engineering team is currently working on mitigating the remainder of the affected instances (ETA EOB Feb 22, 2022).\nAffected customer instances have been mitigated and will not observe the password validation errors. If you are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe will provide an update by Tuesday, 2022-02-22 19:00 US/Pacific with current details.\nDiagnosis: Affected customers may see a password validation error message when establishing new connections to instances with high connection load - \"FATAL: pwd_validation: Failed to connect to admin database, error: FATAL: sorry, too many clients already...\".\nWorkaround: Users can enable connection pooling to reduce the connection load.",
-      "status": "SERVICE_DISRUPTION"
+      "created": "2022-02-22T22:45:09+00:00",
+      "modified": "2022-02-22T22:45:11+00:00",
+      "when": "2022-02-22T22:45:09+00:00",
+      "text": "The issue with Cloud SQL has been resolved for all affected instances as of Tuesday, 2022-02-22 14:30 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
