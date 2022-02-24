@@ -44,12 +44,19 @@
   {
     "id": "MqpDy4VdUKuQkw1GXPTo",
     "number": "17820096163428229993",
-    "begin": "2022-02-15T17:17:47+00:00",
+    "begin": "2022-02-15T17:14:00+00:00",
     "created": "2022-02-15T17:49:25+00:00",
-    "end": "2022-02-22T22:45:10+00:00",
-    "modified": "2022-02-22T22:45:10+00:00",
+    "end": "2022-02-19T18:46:00+00:00",
+    "modified": "2022-02-24T02:13:58+00:00",
     "external_desc": "Global: Cloud SQL PostgreSQL password validation errors with high connection load.",
     "updates": [
+      {
+        "created": "2022-02-24T02:10:59+00:00",
+        "modified": "2022-02-24T02:13:29+00:00",
+        "when": "2022-02-24T02:10:59+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 15 February 2022 09:14\n**Incident End:** 19 February 2022 10:46\n**Duration:** 4 days, 1 hour, 32 minutes\n**Affected Services and Features:**\nCloudSQL- PostgreSQL connection errors\n**Regions/Zones:** Global\n**Description:**\nApplications using close to maximum number of connections, intermittently failed to connect to database instances. The connection error happened because Cloud SQL for PostgreSQL was using additional connections for internal use.\n**Customer Impact:**\nCustomers impacted by this issue would have seen errors when establishing new connections to Cloud SQL for PostgreSQL instances. The error message would have been: FATAL: pwd_validation: Failed to connect to admin database, error: FATAL: sorry, too many clients already :: proc.c:347\n**Additional details:**\nThe issue was fully resolved on 19 February 2022 at 10:46 US/Pacific. In addition, the following prevention actions were completed:\n* For impacted instances, Cloud SQL has disabled the use of additional connections.\n* The maintenance rollout was canceled to prevent further instances from being affected.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2022-02-22T22:45:09+00:00",
         "modified": "2022-02-22T22:45:11+00:00",
@@ -143,10 +150,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-02-22T22:45:09+00:00",
-      "modified": "2022-02-22T22:45:11+00:00",
-      "when": "2022-02-22T22:45:09+00:00",
-      "text": "The issue with Cloud SQL has been resolved for all affected instances as of Tuesday, 2022-02-22 14:30 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-02-24T02:10:59+00:00",
+      "modified": "2022-02-24T02:13:29+00:00",
+      "when": "2022-02-24T02:10:59+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 15 February 2022 09:14\n**Incident End:** 19 February 2022 10:46\n**Duration:** 4 days, 1 hour, 32 minutes\n**Affected Services and Features:**\nCloudSQL- PostgreSQL connection errors\n**Regions/Zones:** Global\n**Description:**\nApplications using close to maximum number of connections, intermittently failed to connect to database instances. The connection error happened because Cloud SQL for PostgreSQL was using additional connections for internal use.\n**Customer Impact:**\nCustomers impacted by this issue would have seen errors when establishing new connections to Cloud SQL for PostgreSQL instances. The error message would have been: FATAL: pwd_validation: Failed to connect to admin database, error: FATAL: sorry, too many clients already :: proc.c:347\n**Additional details:**\nThe issue was fully resolved on 19 February 2022 at 10:46 US/Pacific. In addition, the following prevention actions were completed:\n* For impacted instances, Cloud SQL has disabled the use of additional connections.\n* The maintenance rollout was canceled to prevent further instances from being affected.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
