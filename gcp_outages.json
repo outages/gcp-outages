@@ -4,9 +4,16 @@
     "number": "714206970471699851",
     "begin": "2022-02-23T18:48:23+00:00",
     "created": "2022-02-23T19:18:53+00:00",
-    "modified": "2022-02-25T00:56:56+00:00",
+    "modified": "2022-02-25T02:58:15+00:00",
     "external_desc": "Global: Requests to .NET Cloud Run applications fail if HTTP/2 or gRPC is used",
     "updates": [
+      {
+        "created": "2022-02-25T02:58:15+00:00",
+        "modified": "2022-02-25T02:58:16+00:00",
+        "when": "2022-02-25T02:58:15+00:00",
+        "text": "Summary: Global: Requests to .NET Cloud Run applications fail if HTTP/2 or gRPC is used\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2022-02-24 US/Pacific.\nWe will provide more information by Thursday, 2022-02-24 22:30 US/Pacific.\nDiagnosis: Affected customers will see \"upstream connect error or disconnect/reset before headers. reset reason: remote reset\" when a request is made using HTTP/2 or gRPC.\nWorkaround: If using .NET 6, settings KestrelServerOptions.AllowAlternateSchemes to true will avoid the issue:\nhttps://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.server.kestrel.core.kestrelserveroptions.allowalternateschemes?view=aspnetcore-6.0",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2022-02-25T00:56:56+00:00",
         "modified": "2022-02-25T00:56:57+00:00",
@@ -37,10 +44,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-02-25T00:56:56+00:00",
-      "modified": "2022-02-25T00:56:57+00:00",
-      "when": "2022-02-25T00:56:56+00:00",
-      "text": "Summary: Global: Requests to .NET Cloud Run applications fail if HTTP/2 or gRPC is used\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2022-02-24 US/Pacific.\nWe will provide more information by Thursday, 2022-02-24 21:00 US/Pacific.\nDiagnosis: Affected customers will see \"upstream connect error or disconnect/reset before headers. reset reason: remote reset\" when a request is made using HTTP/2 or gRPC.\nWorkaround: If using .NET 6, settings KestrelServerOptions.AllowAlternateSchemes to true will avoid the issue:\nhttps://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.server.kestrel.core.kestrelserveroptions.allowalternateschemes?view=aspnetcore-6.0",
+      "created": "2022-02-25T02:58:15+00:00",
+      "modified": "2022-02-25T02:58:16+00:00",
+      "when": "2022-02-25T02:58:15+00:00",
+      "text": "Summary: Global: Requests to .NET Cloud Run applications fail if HTTP/2 or gRPC is used\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2022-02-24 US/Pacific.\nWe will provide more information by Thursday, 2022-02-24 22:30 US/Pacific.\nDiagnosis: Affected customers will see \"upstream connect error or disconnect/reset before headers. reset reason: remote reset\" when a request is made using HTTP/2 or gRPC.\nWorkaround: If using .NET 6, settings KestrelServerOptions.AllowAlternateSchemes to true will avoid the issue:\nhttps://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.server.kestrel.core.kestrelserveroptions.allowalternateschemes?view=aspnetcore-6.0",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
