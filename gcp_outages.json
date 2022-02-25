@@ -37,12 +37,19 @@
   {
     "id": "qfgJm8m4WPn2Ej2Z7vc2",
     "number": "714206970471699851",
-    "begin": "2022-02-23T18:48:23+00:00",
+    "begin": "2022-02-19T17:01:00+00:00",
     "created": "2022-02-23T19:18:53+00:00",
-    "end": "2022-02-25T05:00:47+00:00",
-    "modified": "2022-02-25T05:00:47+00:00",
+    "end": "2022-02-25T05:00:00+00:00",
+    "modified": "2022-02-25T18:42:09+00:00",
     "external_desc": "Global: Requests to .NET Cloud Run applications fail if HTTP/2 or gRPC is used",
     "updates": [
+      {
+        "created": "2022-02-25T18:41:39+00:00",
+        "modified": "2022-02-25T18:41:39+00:00",
+        "when": "2022-02-25T18:41:39+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 19 February 2022 09:01\n**Incident End:** 24 February 2022 20:48\n**Duration:** 5 days, 11 hours, 47 minutes\n**Affected Services and Features:**\nGoogle Cloud Run - .NET application failures using HTTP/2 or gRPC\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Run services using .NET HTTP/2 or gRPC experienced elevated errors. From preliminary analysis, the root cause of the issue is a change triggered by a recent rollout.\n**Customer Impact:**\nAffected .Net services observed \"upstream connect error or disconnect/reset before headers. reset reason: remote reset\" when a request was made using HTTP/2 or gRPC.\n**Additional Details:**\nThe ability to disable \"preserve_downstream_scheme\" was removed upstream in Envoy proxy [1] which led to an unintentional breaking change in Cloud Run. The breaking change introduces an incompatibility with .NET default enforcement between incoming transport-layer security and “:scheme” header (see details [2] ). The Cloud Run and Envoy teams at Google were able to mitigate the issue once identified, and have taken steps to limit and better manage such changes in the future.\nThe issue was fully resolved on 24 February 2022 at 20:48 US/Pacific once a rollback of the change was completed.\n* [1] - https://www.envoyproxy.io/docs/envoy/latest/version_history/current#removed-config-or-runtime\n* [2] - https://github.com/dotnet/aspnetcore/issues/30532",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2022-02-25T05:00:47+00:00",
         "modified": "2022-02-25T05:00:47+00:00",
@@ -87,10 +94,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-02-25T05:00:47+00:00",
-      "modified": "2022-02-25T05:00:47+00:00",
-      "when": "2022-02-25T05:00:47+00:00",
-      "text": "The issue with Cloud Run has been resolved for all affected users as of Thursday, 2022-02-24 20:57 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-02-25T18:41:39+00:00",
+      "modified": "2022-02-25T18:41:39+00:00",
+      "when": "2022-02-25T18:41:39+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 19 February 2022 09:01\n**Incident End:** 24 February 2022 20:48\n**Duration:** 5 days, 11 hours, 47 minutes\n**Affected Services and Features:**\nGoogle Cloud Run - .NET application failures using HTTP/2 or gRPC\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Run services using .NET HTTP/2 or gRPC experienced elevated errors. From preliminary analysis, the root cause of the issue is a change triggered by a recent rollout.\n**Customer Impact:**\nAffected .Net services observed \"upstream connect error or disconnect/reset before headers. reset reason: remote reset\" when a request was made using HTTP/2 or gRPC.\n**Additional Details:**\nThe ability to disable \"preserve_downstream_scheme\" was removed upstream in Envoy proxy [1] which led to an unintentional breaking change in Cloud Run. The breaking change introduces an incompatibility with .NET default enforcement between incoming transport-layer security and “:scheme” header (see details [2] ). The Cloud Run and Envoy teams at Google were able to mitigate the issue once identified, and have taken steps to limit and better manage such changes in the future.\nThe issue was fully resolved on 24 February 2022 at 20:48 US/Pacific once a rollback of the change was completed.\n* [1] - https://www.envoyproxy.io/docs/envoy/latest/version_history/current#removed-config-or-runtime\n* [2] - https://github.com/dotnet/aspnetcore/issues/30532",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
