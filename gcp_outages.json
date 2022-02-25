@@ -2,12 +2,19 @@
   {
     "id": "Hko5cWSXxGSsxfiSpg4n",
     "number": "6491961050454270833",
-    "begin": "2022-02-25T15:44:01+00:00",
+    "begin": "2022-02-22T05:45:00+00:00",
     "created": "2022-02-25T17:57:41+00:00",
-    "end": "2022-02-25T20:04:04+00:00",
-    "modified": "2022-02-25T20:04:04+00:00",
+    "end": "2022-02-25T20:22:00+00:00",
+    "modified": "2022-02-25T23:21:04+00:00",
     "external_desc": "BigQuery S3 Data Transfer Service experiencing issues in us-multiregion, asia-noutheast1 and asia-southeast1",
     "updates": [
+      {
+        "created": "2022-02-25T23:20:38+00:00",
+        "modified": "2022-02-25T23:20:38+00:00",
+        "when": "2022-02-25T23:20:38+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 21 February 2022 21:45\n**Incident End:** 25 February 2022 12:22\n**Duration:** 3 days, 14 hours, 37 minutes\n**Affected Services and Features:**\nGoogle BigQuery - Data Transfer Service\n**Regions/Zones:** Global\n**Description:**\nGoogle BigQuery S3 Data Transfer Service experienced table validation failures globally, with the majority of impact observed in us-multiregion, asia-northeast1, and asia-southeast1. From preliminary analysis, the root cause of the issue was a rollout that started on 21 February 2022 at 01:00 US/Pacific. A rollback was initiated on 25 February 2022 at 08:29 to mitigate the issue in the most heavily affected regions (us-multiregion, asia-northeast1, and asia-southeast1) which was completed on 25 February 2022 12:01.\n**Customer Impact:**\n* Transfer Runs for Google BigQuery S3 Data Transfer Service [1] will fail with an INVALID_ARGUMENT error if the following conditions are met: * The destination table in the Transfer Configuration contains a runtime parameter\n[2]. * The rollback has not completed in the given region. Regions where we identified impact have been prioritized and rolled back already.\n[1] - https://cloud.google.com/bigquery-transfer/docs/s3-transfer-intro\n[2] - https://cloud.google.com/bigquery-transfer/docs/s3-transfer-parameters\n**Additional Details:**\n* The rollback should complete across all regions by 01 March 2022.\n* Once the rollback completes, affected customers can retry the failed Transfer Runs to load any missed files.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2022-02-25T20:04:03+00:00",
         "modified": "2022-02-25T20:04:05+00:00",
@@ -24,10 +31,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-02-25T20:04:03+00:00",
-      "modified": "2022-02-25T20:04:05+00:00",
-      "when": "2022-02-25T20:04:03+00:00",
-      "text": "The issue with Google BigQuery has been resolved for all affected users as of Friday, 2022-02-25 12:03 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-02-25T23:20:38+00:00",
+      "modified": "2022-02-25T23:20:38+00:00",
+      "when": "2022-02-25T23:20:38+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 21 February 2022 21:45\n**Incident End:** 25 February 2022 12:22\n**Duration:** 3 days, 14 hours, 37 minutes\n**Affected Services and Features:**\nGoogle BigQuery - Data Transfer Service\n**Regions/Zones:** Global\n**Description:**\nGoogle BigQuery S3 Data Transfer Service experienced table validation failures globally, with the majority of impact observed in us-multiregion, asia-northeast1, and asia-southeast1. From preliminary analysis, the root cause of the issue was a rollout that started on 21 February 2022 at 01:00 US/Pacific. A rollback was initiated on 25 February 2022 at 08:29 to mitigate the issue in the most heavily affected regions (us-multiregion, asia-northeast1, and asia-southeast1) which was completed on 25 February 2022 12:01.\n**Customer Impact:**\n* Transfer Runs for Google BigQuery S3 Data Transfer Service [1] will fail with an INVALID_ARGUMENT error if the following conditions are met: * The destination table in the Transfer Configuration contains a runtime parameter\n[2]. * The rollback has not completed in the given region. Regions where we identified impact have been prioritized and rolled back already.\n[1] - https://cloud.google.com/bigquery-transfer/docs/s3-transfer-intro\n[2] - https://cloud.google.com/bigquery-transfer/docs/s3-transfer-parameters\n**Additional Details:**\n* The rollback should complete across all regions by 01 March 2022.\n* Once the rollback completes, affected customers can retry the failed Transfer Runs to load any missed files.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
