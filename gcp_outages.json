@@ -4,9 +4,16 @@
     "number": "5384612291846020564",
     "begin": "2022-03-08T19:00:04+00:00",
     "created": "2022-03-08T20:36:16+00:00",
-    "modified": "2022-03-08T20:41:41+00:00",
-    "external_desc": "global: Elevated HTTP 500s errors for a small number of customers with load balancers on Traffic Director-managed Envoy backends",
+    "modified": "2022-03-08T21:21:29+00:00",
+    "external_desc": "global: Elevated HTTP 500s errors for a small number of customers with load balancers on Traffic Director-managed backends",
     "updates": [
+      {
+        "created": "2022-03-08T21:21:27+00:00",
+        "modified": "2022-03-08T21:21:31+00:00",
+        "when": "2022-03-08T21:21:27+00:00",
+        "text": "Summary: global: Elevated HTTP 500s errors for a small number of customers with load balancers on Traffic Director-managed backends\nDescription: We believe the issue with Traffic Director is mitigated. We do not have an ETA for full resolution at this point. Customers should leave the workaround in place, as the issue could reoccur until the root cause has been determined.\nWe believe the issue is limited to Traffic Director users and does not affect all of Cloud Load Balancing or Cloud Networking.\nWe will provide an update by Tuesday, 2022-03-08 14:30 US/Pacific with current details.\nDiagnosis: Affected customers will see elevated HTTP 500s errors on load balancers with Traffic Director managed customer-run backends. Thus far, impact has only been observed in us-east1, but customers with multi-regional Traffic Director deployments could be impacted in more regions.\nWorkaround: Customers with Traffic Director managed backends should consider moving to backends that are not Traffic Director-managed.",
+        "status": "SERVICE_DISRUPTION"
+      },
       {
         "created": "2022-03-08T20:41:41+00:00",
         "modified": "2022-03-08T20:41:44+00:00",
@@ -23,10 +30,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-03-08T20:41:41+00:00",
-      "modified": "2022-03-08T20:41:44+00:00",
-      "when": "2022-03-08T20:41:41+00:00",
-      "text": "Summary: global: Elevated HTTP 500s errors for a small number of customers with load balancers on Traffic Director-managed Envoy backends\nDescription: We are experiencing an intermittent issue with Cloud Load Balancing, Cloud Networking, Traffic Director beginning at Tuesday, 2022-03-08 10:07:51 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-03-08 14:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers will see elevated HTTP 500s errors on load balancers with Traffic Director managed customer-run Envoy backends. Thus far, impact has only been observed in us-east1, but customers with multi-regional Traffic Director deployments could be impacted in more regions.\nWorkaround: Customers with Traffic Director managing their envoys should consider moving to backends that are not Traffic Director-managed.",
+      "created": "2022-03-08T21:21:27+00:00",
+      "modified": "2022-03-08T21:21:31+00:00",
+      "when": "2022-03-08T21:21:27+00:00",
+      "text": "Summary: global: Elevated HTTP 500s errors for a small number of customers with load balancers on Traffic Director-managed backends\nDescription: We believe the issue with Traffic Director is mitigated. We do not have an ETA for full resolution at this point. Customers should leave the workaround in place, as the issue could reoccur until the root cause has been determined.\nWe believe the issue is limited to Traffic Director users and does not affect all of Cloud Load Balancing or Cloud Networking.\nWe will provide an update by Tuesday, 2022-03-08 14:30 US/Pacific with current details.\nDiagnosis: Affected customers will see elevated HTTP 500s errors on load balancers with Traffic Director managed customer-run backends. Thus far, impact has only been observed in us-east1, but customers with multi-regional Traffic Director deployments could be impacted in more regions.\nWorkaround: Customers with Traffic Director managed backends should consider moving to backends that are not Traffic Director-managed.",
       "status": "SERVICE_DISRUPTION"
     },
     "status_impact": "SERVICE_DISRUPTION",
