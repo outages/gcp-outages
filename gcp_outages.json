@@ -2,12 +2,19 @@
   {
     "id": "LuGcJVjNTeC5Sb9pSJ9o",
     "number": "5384612291846020564",
-    "begin": "2022-03-08T19:00:04+00:00",
+    "begin": "2022-03-08T18:07:00+00:00",
     "created": "2022-03-08T20:36:16+00:00",
-    "end": "2022-03-08T22:23:56+00:00",
-    "modified": "2022-03-08T22:23:56+00:00",
+    "end": "2022-03-08T20:42:00+00:00",
+    "modified": "2022-03-09T17:26:04+00:00",
     "external_desc": "global: Elevated HTTP 500s errors for a small number of customers with load balancers on Traffic Director-managed backends",
     "updates": [
+      {
+        "created": "2022-03-09T17:25:35+00:00",
+        "modified": "2022-03-09T17:25:35+00:00",
+        "when": "2022-03-09T17:25:35+00:00",
+        "text": "Mini Incident Report (Full Incident Report To Follow)\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 08 March 2022 10:07\n**Incident End:** 08 March 2022 12:42\n**Duration:** 2 hours, 35 minutes\n**Affected Services and Features:**\nTraffic Director\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Load Balancing (GCLB) users who had load balancers with Traffic-Director-managed backends experienced elevated HTTP 500 errors for 2 hours and 35 minutes. From preliminary analysis, the root cause of the issue was related to a bug introduced in a recent Traffic Director Remote Config Type Handler configuration rollout.\n**Customer Impact:**\nAffected customers would have seen their Traffic Director-managed clients deprogrammed as the configuration was removed. The effect of the deprogramming for users behind GCLB would have been visible as 500 errors. Some affected customers were able to mitigate the issue for themselves through the workaround of moving to backends that were not Traffic Director-managed.\n**Additional details:**\nOur engineers rolled back the Traffic Director configuration rollout and forced a reprogramming of configurations, which mitigated the issue.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2022-03-08T22:23:50+00:00",
         "modified": "2022-03-08T22:23:57+00:00",
@@ -38,10 +45,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-03-08T22:23:50+00:00",
-      "modified": "2022-03-08T22:23:57+00:00",
-      "when": "2022-03-08T22:23:50+00:00",
-      "text": "The issue with Traffic Director has been confirmed to be caused by a recent release; the release has been rolled back and customers can now start using Traffic Director. We have identified a probable root cause and will be publishing an Incident Report within the next several days.\nThe issue with Cloud Load Balancing, Cloud Networking, Traffic Director has been resolved for all affected projects as of Tuesday, 2022-03-08 12:42 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-03-09T17:25:35+00:00",
+      "modified": "2022-03-09T17:25:35+00:00",
+      "when": "2022-03-09T17:25:35+00:00",
+      "text": "Mini Incident Report (Full Incident Report To Follow)\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 08 March 2022 10:07\n**Incident End:** 08 March 2022 12:42\n**Duration:** 2 hours, 35 minutes\n**Affected Services and Features:**\nTraffic Director\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Load Balancing (GCLB) users who had load balancers with Traffic-Director-managed backends experienced elevated HTTP 500 errors for 2 hours and 35 minutes. From preliminary analysis, the root cause of the issue was related to a bug introduced in a recent Traffic Director Remote Config Type Handler configuration rollout.\n**Customer Impact:**\nAffected customers would have seen their Traffic Director-managed clients deprogrammed as the configuration was removed. The effect of the deprogramming for users behind GCLB would have been visible as 500 errors. Some affected customers were able to mitigate the issue for themselves through the workaround of moving to backends that were not Traffic Director-managed.\n**Additional details:**\nOur engineers rolled back the Traffic Director configuration rollout and forced a reprogramming of configurations, which mitigated the issue.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
