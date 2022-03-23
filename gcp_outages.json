@@ -2,12 +2,19 @@
   {
     "id": "R9vAbtGnhzo6n48SnqTj",
     "number": "2948654908633925955",
-    "begin": "2022-03-22T23:39:13+00:00",
+    "begin": "2022-03-22T22:30:00+00:00",
     "created": "2022-03-23T00:14:43+00:00",
-    "end": "2022-03-23T01:28:48+00:00",
-    "modified": "2022-03-23T01:28:48+00:00",
+    "end": "2022-03-23T00:15:00+00:00",
+    "modified": "2022-03-23T17:25:40+00:00",
     "external_desc": "Customers connecting from Mexico and Central America may experience issues with accessing GCP services",
     "updates": [
+      {
+        "created": "2022-03-23T17:25:19+00:00",
+        "modified": "2022-03-23T17:25:19+00:00",
+        "when": "2022-03-23T17:25:19+00:00",
+        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 22 March 2022 15:30\n**Incident End:** 22 March 2022 17:15\n**Duration:** 1 hour, 45 minutes\n**Affected Services and Features:**\nGoogle Cloud Networking - Cloud VPN, Cloud Interconnect, Cloud Load Balancers\nWorkspace Products - Gmail, Meet, Drive and Other Workspace products\n**Regions/Zones:** Mexico\n**Description:**\nGoogle Cloud Networking experienced congestion on network infrastructure to and from the network edge locations in Queretaro, Mexico, for a duration of 1 hour and 45 minutes, following a fiber cut between the United States & Mexico.\nGoogle’s automated repair mechanism detected the congestion and redirected the traffic through alternate edge locations. However, the alternate link did not have sufficient capacity to serve all the redirected traffic, resulting in packet loss for user-facing network traffic to Google. When traffic was manually routed to take other paths, the congestion was cleared.\n**Customer Impact:**\nCustomers reaching Google services, including GCP and Workspace, from Mexico may have experienced high latency, high packet loss, high retransmits, and errors returned from our services, resulting in customers not being able to access those services.",
+        "status": "AVAILABLE"
+      },
       {
         "created": "2022-03-23T01:28:48+00:00",
         "modified": "2022-03-23T01:28:49+00:00",
@@ -38,10 +45,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-03-23T01:28:48+00:00",
-      "modified": "2022-03-23T01:28:49+00:00",
-      "when": "2022-03-23T01:28:48+00:00",
-      "text": "The issue with Cloud Interconnect, Cloud Load Balancing, Cloud NAT, Cloud Networking, Cloud Router, Cloud VPN has been resolved for all affected users as of Tuesday, 2022-03-22 17:15 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-03-23T17:25:19+00:00",
+      "modified": "2022-03-23T17:25:19+00:00",
+      "when": "2022-03-23T17:25:19+00:00",
+      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 22 March 2022 15:30\n**Incident End:** 22 March 2022 17:15\n**Duration:** 1 hour, 45 minutes\n**Affected Services and Features:**\nGoogle Cloud Networking - Cloud VPN, Cloud Interconnect, Cloud Load Balancers\nWorkspace Products - Gmail, Meet, Drive and Other Workspace products\n**Regions/Zones:** Mexico\n**Description:**\nGoogle Cloud Networking experienced congestion on network infrastructure to and from the network edge locations in Queretaro, Mexico, for a duration of 1 hour and 45 minutes, following a fiber cut between the United States & Mexico.\nGoogle’s automated repair mechanism detected the congestion and redirected the traffic through alternate edge locations. However, the alternate link did not have sufficient capacity to serve all the redirected traffic, resulting in packet loss for user-facing network traffic to Google. When traffic was manually routed to take other paths, the congestion was cleared.\n**Customer Impact:**\nCustomers reaching Google services, including GCP and Workspace, from Mexico may have experienced high latency, high packet loss, high retransmits, and errors returned from our services, resulting in customers not being able to access those services.",
       "status": "AVAILABLE"
     },
     "status_impact": "SERVICE_DISRUPTION",
