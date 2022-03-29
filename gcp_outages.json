@@ -4,9 +4,22 @@
     "number": "5259740469836333814",
     "begin": "2022-03-29T04:37:34+00:00",
     "created": "2022-03-29T04:53:00+00:00",
-    "modified": "2022-03-29T05:29:01+00:00",
+    "modified": "2022-03-29T05:48:39+00:00",
     "external_desc": "Cloud Spanner instance creation failure",
     "updates": [
+      {
+        "created": "2022-03-29T05:48:39+00:00",
+        "modified": "2022-03-29T05:48:40+00:00",
+        "when": "2022-03-29T05:48:39+00:00",
+        "text": "Summary: Cloud Spanner instance creation failure\nDescription: We are experiencing an issue with Cloud Spanner beginning at Monday, 2022-03-28 15:30 US/Pacific. Updating and creating a new Cloud Spanner instance in us-east1 might be failing with timeout errors.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-03-29 01:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: The impacted users might experience timeout failures while:\n1) Creating a new Cloud Spanner instance\n2) Scaling existing Cloud Spanner instance\nWorkaround: As a workaround, users may try to create new cloud spanner instance in a different region",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          }
+        ]
+      },
       {
         "created": "2022-03-29T05:29:01+00:00",
         "modified": "2022-03-29T05:29:07+00:00",
@@ -35,10 +48,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-03-29T05:29:01+00:00",
-      "modified": "2022-03-29T05:29:07+00:00",
-      "when": "2022-03-29T05:29:01+00:00",
-      "text": "Summary: Cloud Spanner instance creation failure\nDescription: We are experiencing an issue with Cloud Spanner beginning at Monday, 2022-03-28 15:30 US/Pacific. A new Cloud Spanner instance creation in us-east1 might be failing with timeout errors.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-03-29 01:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: The impacted users might experience timeout failures while creating a new Cloud Spanner instance\nWorkaround: As a workaround, users may try to create new cloud spanner instance in a different region",
+      "created": "2022-03-29T05:48:39+00:00",
+      "modified": "2022-03-29T05:48:40+00:00",
+      "when": "2022-03-29T05:48:39+00:00",
+      "text": "Summary: Cloud Spanner instance creation failure\nDescription: We are experiencing an issue with Cloud Spanner beginning at Monday, 2022-03-28 15:30 US/Pacific. Updating and creating a new Cloud Spanner instance in us-east1 might be failing with timeout errors.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-03-29 01:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: The impacted users might experience timeout failures while:\n1) Creating a new Cloud Spanner instance\n2) Scaling existing Cloud Spanner instance\nWorkaround: As a workaround, users may try to create new cloud spanner instance in a different region",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
