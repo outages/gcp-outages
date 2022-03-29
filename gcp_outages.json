@@ -4,9 +4,26 @@
     "number": "5259740469836333814",
     "begin": "2022-03-29T04:37:34+00:00",
     "created": "2022-03-29T04:53:00+00:00",
-    "modified": "2022-03-29T09:06:41+00:00",
+    "modified": "2022-03-29T09:56:46+00:00",
     "external_desc": "Cloud Spanner instance creation failure",
     "updates": [
+      {
+        "created": "2022-03-29T09:56:46+00:00",
+        "modified": "2022-03-29T09:56:56+00:00",
+        "when": "2022-03-29T09:56:46+00:00",
+        "text": "Summary: Cloud Spanner instance creation failure\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Tuesday, 2022-03-29 04:30 US/Pacific.\nWe will provide more information by Tuesday, 2022-03-29 04:30 US/Pacific.\nDiagnosis: The impacted users might experience timeout failures while:\n1) Creating a new Cloud Spanner instance\n2) Scaling existing Cloud Spanner instance\nWorkaround: As a workaround, users may try to create new cloud spanner instance in a different region",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          }
+        ]
+      },
       {
         "created": "2022-03-29T09:06:41+00:00",
         "modified": "2022-03-29T09:06:42+00:00",
@@ -82,10 +99,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-03-29T09:06:41+00:00",
-      "modified": "2022-03-29T09:06:42+00:00",
-      "when": "2022-03-29T09:06:41+00:00",
-      "text": "Summary: Cloud Spanner instance creation failure\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Tuesday, 2022-03-29 03:30 US/Pacific.\nWe will provide more information by Tuesday, 2022-03-29 03:30 US/Pacific.\nDiagnosis: The impacted users might experience timeout failures while:\n1) Creating a new Cloud Spanner instance\n2) Scaling existing Cloud Spanner instance\nWorkaround: As a workaround, users may try to create new cloud spanner instance in a different region",
+      "created": "2022-03-29T09:56:46+00:00",
+      "modified": "2022-03-29T09:56:56+00:00",
+      "when": "2022-03-29T09:56:46+00:00",
+      "text": "Summary: Cloud Spanner instance creation failure\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Tuesday, 2022-03-29 04:30 US/Pacific.\nWe will provide more information by Tuesday, 2022-03-29 04:30 US/Pacific.\nDiagnosis: The impacted users might experience timeout failures while:\n1) Creating a new Cloud Spanner instance\n2) Scaling existing Cloud Spanner instance\nWorkaround: As a workaround, users may try to create new cloud spanner instance in a different region",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
