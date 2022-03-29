@@ -706,9 +706,98 @@
     "begin": "2022-03-18T22:20:00+00:00",
     "created": "2022-03-18T23:53:02+00:00",
     "end": "2022-03-18T22:28:00+00:00",
-    "modified": "2022-03-23T16:13:24+00:00",
+    "modified": "2022-03-29T03:49:06+00:00",
     "external_desc": "Cloud Networking: Up to 40% packet loss between affected zones",
     "updates": [
+      {
+        "created": "2022-03-29T03:49:06+00:00",
+        "modified": "2022-03-29T03:49:06+00:00",
+        "when": "2022-03-29T03:49:06+00:00",
+        "text": "**Summary**\nOn Friday, 18 March 2022 at 15:20 US/Pacific, Google Cloud Networking experienced intermittent packet loss for traffic between multiple cloud regions for a duration of 8 minutes. The issue was identified and mitigated automatically by 15:28 US/Pacific.\nWe understand this issue has affected our valued customers and users, and we apologize to those who were affected.\n**Root Cause**\nGoogle’s production backbone is a global network that enables connectivity for all user-facing traffic via Points of Presence (POPs) or internet exchanges.\nA rare hardware failure of a component on the fiber paths from one of the transpacific gateway campuses in Google’s production backbone led to a decrease in available network bandwidth between the gateway and multiple edge locations, causing packet loss.\n**Remediation and Prevention**\nGoogle’s automated repair mechanisms detected the decrease in available network bandwidth on Friday, 18 March 2022 at 15:20 US/Pacific and automatically routed the traffic through alternate links. The traffic rerouting completed on Friday, 18 March 2022 at 15:28 US/Pacific, mitigating the issue.\nWhile our automated mechanisms worked as intended and recovered the traffic without manual intervention, we understand that the scope of impact caused by this rare event affected our customers. We have been working on optimizing our global network to minimize the time spent automatically reconfiguring around failures like this (known as \"convergence time\"). While we have made progress, efforts to improve still further remain ongoing. We continue to ensure that the current technology is optimally configured to minimize the frequency and severity of these issues.\nGoogle is committed to quickly and continually improving our technology and operations to prevent service disruptions. We appreciate your patience and apologize again for the impact to your organization. We thank you for your business.\n**Detailed Description of Impact**\nCustomers may have observed packet loss for traffic routed via transpacific links on Google's backbone. This could include traffic from or to any of the following cloud regions:\n* asia-east1\n* asia-northeast1\n* asia-northeast2\n* asia-northeast3\n* asia-southeast1\n* asia-southeast2\n* australia-southeast1\n* australia-southeast2\n* us-west1\n* us-central1\n* us-east1\n* us-east4\n* northamerica-northeast1\n* europe-west1\n* europe-west2\n* europe-west3\n* europe-west4\n* europe-west6\n* europe-west8\n* europe-west9\n* europe-central2\n* europe-north1",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          }
+        ]
+      },
       {
         "created": "2022-03-21T17:36:33+00:00",
         "modified": "2022-03-23T16:13:24+00:00",
@@ -902,10 +991,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-03-21T17:36:33+00:00",
-      "modified": "2022-03-23T16:13:24+00:00",
-      "when": "2022-03-21T17:36:33+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 18 March 2022 15:20\n**Incident End:** 18 March 2022 15:28\n**Duration:** 8 minutes\n**Affected Services and Features:**\nGoogle Cloud Networking\n**Regions/Zones:**\nasia-east1, asia-northeast1, asia-northeast2, asia-northeast3, asia-southeast1, asia-southeast2,\naustrailia-southeast1, austrailia-southeast2\nus-west1, us-central1, us-east1, us-east4, northamerica-northeast1,\neurope-west1, europe-west2, europe-west3, europe-west4, europe-west6, europe-west8, europe-west9, europe-central2, europe-north1\n**Description:**\nGoogle Cloud Networking experienced intermittent packet loss for transit traffic in multiple cloud regions for 8 minutes. From preliminary analysis, the root cause is a hardware issue on a component of Google Cloud’s networking equipment. The issue was identified and mitigated automatically.\n**Customer Impact:**\nCustomers may have observed packet loss for transit traffic in the above mentioned cloud regions.",
+      "created": "2022-03-29T03:49:06+00:00",
+      "modified": "2022-03-29T03:49:06+00:00",
+      "when": "2022-03-29T03:49:06+00:00",
+      "text": "**Summary**\nOn Friday, 18 March 2022 at 15:20 US/Pacific, Google Cloud Networking experienced intermittent packet loss for traffic between multiple cloud regions for a duration of 8 minutes. The issue was identified and mitigated automatically by 15:28 US/Pacific.\nWe understand this issue has affected our valued customers and users, and we apologize to those who were affected.\n**Root Cause**\nGoogle’s production backbone is a global network that enables connectivity for all user-facing traffic via Points of Presence (POPs) or internet exchanges.\nA rare hardware failure of a component on the fiber paths from one of the transpacific gateway campuses in Google’s production backbone led to a decrease in available network bandwidth between the gateway and multiple edge locations, causing packet loss.\n**Remediation and Prevention**\nGoogle’s automated repair mechanisms detected the decrease in available network bandwidth on Friday, 18 March 2022 at 15:20 US/Pacific and automatically routed the traffic through alternate links. The traffic rerouting completed on Friday, 18 March 2022 at 15:28 US/Pacific, mitigating the issue.\nWhile our automated mechanisms worked as intended and recovered the traffic without manual intervention, we understand that the scope of impact caused by this rare event affected our customers. We have been working on optimizing our global network to minimize the time spent automatically reconfiguring around failures like this (known as \"convergence time\"). While we have made progress, efforts to improve still further remain ongoing. We continue to ensure that the current technology is optimally configured to minimize the frequency and severity of these issues.\nGoogle is committed to quickly and continually improving our technology and operations to prevent service disruptions. We appreciate your patience and apologize again for the impact to your organization. We thank you for your business.\n**Detailed Description of Impact**\nCustomers may have observed packet loss for traffic routed via transpacific links on Google's backbone. This could include traffic from or to any of the following cloud regions:\n* asia-east1\n* asia-northeast1\n* asia-northeast2\n* asia-northeast3\n* asia-southeast1\n* asia-southeast2\n* australia-southeast1\n* australia-southeast2\n* us-west1\n* us-central1\n* us-east1\n* us-east4\n* northamerica-northeast1\n* europe-west1\n* europe-west2\n* europe-west3\n* europe-west4\n* europe-west6\n* europe-west8\n* europe-west9\n* europe-central2\n* europe-north1",
       "status": "AVAILABLE",
       "affected_locations": [
         {
