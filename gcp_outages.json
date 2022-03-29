@@ -2,12 +2,29 @@
   {
     "id": "2j8xsJMSyDhmgfJriGeR",
     "number": "5259740469836333814",
-    "begin": "2022-03-29T04:37:34+00:00",
+    "begin": "2022-03-28T22:30:00+00:00",
     "created": "2022-03-29T04:53:00+00:00",
-    "end": "2022-03-29T10:46:19+00:00",
-    "modified": "2022-03-29T10:46:19+00:00",
+    "end": "2022-03-29T09:58:00+00:00",
+    "modified": "2022-03-29T23:36:25+00:00",
     "external_desc": "Cloud Spanner instance creation failure",
     "updates": [
+      {
+        "created": "2022-03-29T23:36:23+00:00",
+        "modified": "2022-03-29T23:36:23+00:00",
+        "when": "2022-03-29T23:36:23+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case\nusing https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 March 2022 15:30\n**Incident End:** 29 March 2022 2:58\n**Duration:** 11 hours, 28 minutes\n**Affected Services and Features:**\nCloud Spanner - Creation of new instance , Scaling existing instances.\n**Regions/Zones:** us-east1, europe-central2, multi-region location nam6\n**Description:**\nCloud Spanner experienced delays in creation and scaling of instances in us-east1, europe-central2, and multi-region location nam6 [1] for a duration of 11 hours, 28 minutes. The cause of this was a rollout of a new feature that affected the ability to create or modify instance compute capacity (via instance scaling or new instance creation). This issue was discovered internally and mitigation was performed via updating the configuration back to the previous settings.\n[1] https://cloud.google.com/spanner/docs/instance-configurations#available-configurations-multi-region\n**Customer Impact:**\nAffected customers would have experienced the following operations being stuck or failing with a timeout:\n* Creation of new Cloud Spanner instances\n* Scaling existing Cloud Spanner instances",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          }
+        ]
+      },
       {
         "created": "2022-03-29T10:46:17+00:00",
         "modified": "2022-03-29T10:46:24+00:00",
@@ -117,10 +134,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-03-29T10:46:17+00:00",
-      "modified": "2022-03-29T10:46:24+00:00",
-      "when": "2022-03-29T10:46:17+00:00",
-      "text": "The issue with Cloud Spanner has been resolved for all affected users as of Tuesday, 2022-03-29 03:13 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-03-29T23:36:23+00:00",
+      "modified": "2022-03-29T23:36:23+00:00",
+      "when": "2022-03-29T23:36:23+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case\nusing https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 March 2022 15:30\n**Incident End:** 29 March 2022 2:58\n**Duration:** 11 hours, 28 minutes\n**Affected Services and Features:**\nCloud Spanner - Creation of new instance , Scaling existing instances.\n**Regions/Zones:** us-east1, europe-central2, multi-region location nam6\n**Description:**\nCloud Spanner experienced delays in creation and scaling of instances in us-east1, europe-central2, and multi-region location nam6 [1] for a duration of 11 hours, 28 minutes. The cause of this was a rollout of a new feature that affected the ability to create or modify instance compute capacity (via instance scaling or new instance creation). This issue was discovered internally and mitigation was performed via updating the configuration back to the previous settings.\n[1] https://cloud.google.com/spanner/docs/instance-configurations#available-configurations-multi-region\n**Customer Impact:**\nAffected customers would have experienced the following operations being stuck or failing with a timeout:\n* Creation of new Cloud Spanner instances\n* Scaling existing Cloud Spanner instances",
       "status": "AVAILABLE",
       "affected_locations": [
         {
