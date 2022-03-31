@@ -4,9 +4,22 @@
     "number": "3617221773064871579",
     "begin": "2022-03-31T18:26:27+00:00",
     "created": "2022-03-31T18:41:46+00:00",
-    "modified": "2022-03-31T18:41:46+00:00",
-    "external_desc": "Global: Unable to create or modify regional external HTTP(S) load balancers",
+    "modified": "2022-03-31T18:51:41+00:00",
+    "external_desc": "Global: Unable to create or modify some Cloud Networking configurations",
     "updates": [
+      {
+        "created": "2022-03-31T18:51:39+00:00",
+        "modified": "2022-03-31T18:51:42+00:00",
+        "when": "2022-03-31T18:51:39+00:00",
+        "text": "Summary: Global: Unable to create or modify some Cloud Networking configurations\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Thursday, 2022-03-31 13:00 US/Pacific.\nDiagnosis: Affected customers are not able to create or change External HTTP(S) load balancers. Cloud Armor and Cloud CDN have similar symptoms. App Engine Flexible apps may fail to deploy. In general, config change will be accepted, but will not take effect. Existing configurations are not impacted.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
       {
         "created": "2022-03-31T18:41:39+00:00",
         "modified": "2022-03-31T18:41:50+00:00",
@@ -22,10 +35,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-03-31T18:41:39+00:00",
-      "modified": "2022-03-31T18:41:50+00:00",
-      "when": "2022-03-31T18:41:39+00:00",
-      "text": "Summary: Global: Unable to create or modify regional external HTTP(S) load balancers\nDescription: We are experiencing an issue with Google Cloud Networking beginning at Thursday, 2022-03-31 11:07 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 12:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers are not able to create or change Regional external HTTP(S) load balancer balancers. Existing balancers are not impacted.\nWorkaround: None at this time.",
+      "created": "2022-03-31T18:51:39+00:00",
+      "modified": "2022-03-31T18:51:42+00:00",
+      "when": "2022-03-31T18:51:39+00:00",
+      "text": "Summary: Global: Unable to create or modify some Cloud Networking configurations\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Thursday, 2022-03-31 13:00 US/Pacific.\nDiagnosis: Affected customers are not able to create or change External HTTP(S) load balancers. Cloud Armor and Cloud CDN have similar symptoms. App Engine Flexible apps may fail to deploy. In general, config change will be accepted, but will not take effect. Existing configurations are not impacted.\nWorkaround: None at this time.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
@@ -36,12 +49,20 @@
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
-    "service_key": "VNJxzcH58QmTt5H6pnT6",
-    "service_name": "Google Cloud Networking",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
     "affected_products": [
+      {
+        "title": "Cloud Armor",
+        "id": "Kakg69gTC3xFyeJCY2va"
+      },
       {
         "title": "Google Cloud Networking",
         "id": "VNJxzcH58QmTt5H6pnT6"
+      },
+      {
+        "title": "Google App Engine",
+        "id": "kchyUtnkMHJWaAva8aYc"
       }
     ],
     "uri": "incidents/RmPhfQT9RDGwWLCXS2sC",
@@ -58,9 +79,22 @@
     "number": "17742360388109155603",
     "begin": "2022-03-31T17:30:45+00:00",
     "created": "2022-03-31T18:40:18+00:00",
-    "modified": "2022-03-31T18:40:18+00:00",
-    "external_desc": "Global: Cloud Monitoring Metrics may be unavailable",
+    "modified": "2022-03-31T18:58:09+00:00",
+    "external_desc": "Global: Cloud Monitoring Metrics may be unavailable for Cloud Pub/Sub",
     "updates": [
+      {
+        "created": "2022-03-31T18:58:09+00:00",
+        "modified": "2022-03-31T18:58:10+00:00",
+        "when": "2022-03-31T18:58:09+00:00",
+        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable for Cloud Pub/Sub\nDescription: We are experiencing an issue with Cloud Monitoring and Cloud Pub/Sub beginning at Thursday, 2022-03-31 09:30 US/Pacific.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 12:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may experience unavailable Metrics in Cloud Monitoring for Cloud Pub/Sub\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
       {
         "created": "2022-03-31T18:40:17+00:00",
         "modified": "2022-03-31T18:40:19+00:00",
@@ -76,10 +110,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-03-31T18:40:17+00:00",
-      "modified": "2022-03-31T18:40:19+00:00",
-      "when": "2022-03-31T18:40:17+00:00",
-      "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable\nDescription: We are experiencing an issue with Cloud Monitoring beginning at Thursday, 2022-03-31 09:30 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 12:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may experience unavailable Metrics in Cloud Monitoring\nWorkaround: None at this time.",
+      "created": "2022-03-31T18:58:09+00:00",
+      "modified": "2022-03-31T18:58:10+00:00",
+      "when": "2022-03-31T18:58:09+00:00",
+      "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable for Cloud Pub/Sub\nDescription: We are experiencing an issue with Cloud Monitoring and Cloud Pub/Sub beginning at Thursday, 2022-03-31 09:30 US/Pacific.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 12:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may experience unavailable Metrics in Cloud Monitoring for Cloud Pub/Sub\nWorkaround: None at this time.",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
@@ -100,6 +134,10 @@
       {
         "title": "Operations",
         "id": "DixAowEQm45KgqXKP5tR"
+      },
+      {
+        "title": "Google Cloud Pub/Sub",
+        "id": "dFjdLh2v6zuES6t9ADCB"
       }
     ],
     "uri": "incidents/B1hD4KAtcxiyAWkcANfV",
