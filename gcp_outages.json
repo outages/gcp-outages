@@ -4,9 +4,134 @@
     "number": "3617221773064871579",
     "begin": "2022-03-31T18:26:27+00:00",
     "created": "2022-03-31T18:41:46+00:00",
-    "modified": "2022-03-31T19:11:56+00:00",
-    "external_desc": "Global: Unable to create or modify some Cloud Networking configurations",
+    "modified": "2022-03-31T19:43:11+00:00",
+    "external_desc": "Global: Delays creating or modifying load balancer configurations",
     "updates": [
+      {
+        "created": "2022-03-31T19:43:10+00:00",
+        "modified": "2022-03-31T19:43:13+00:00",
+        "when": "2022-03-31T19:43:10+00:00",
+        "text": "Summary: Global: Delays creating or modifying load balancer configurations\nDescription: Our engineering team is exploring multiple mitigations options currently.\nWe will provide more information by Thursday, 2022-03-31 15:00 US/Pacific.\nDiagnosis: Affected customers will see delays in creating or modifying the configuration of Global External HTTP(S) load balancers, Cloud Armor and Cloud CDN. App Engine Flexible apps may fail to deploy. Configuration changes will be accepted, but not take effect until the issue is resolved. Existing configurations and deployments are not impacted.\nWorkaround: Configuration changes will eventually take effect. Failed App Engine Flexible deployments can be retried.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Global",
+            "id": "global"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2022-03-31T19:11:56+00:00",
         "modified": "2022-03-31T19:12:03+00:00",
@@ -48,15 +173,127 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-03-31T19:11:56+00:00",
-      "modified": "2022-03-31T19:12:03+00:00",
-      "when": "2022-03-31T19:11:56+00:00",
-      "text": "Summary: Global: Unable to create or modify some Cloud Networking configurations\nDescription: Mitigation work is still underway by our engineering team.\nCurrent data indicates that approximately 15% of projects globally are affected by this issue.\nWe will provide more information by Thursday, 2022-03-31 14:00 US/Pacific.\nDiagnosis: Affected customers are not able to create or change External HTTP(S) load balancers. Cloud Armor and Cloud CDN have similar symptoms. App Engine Flexible apps may fail to deploy. In general, config change will be accepted, but will not take effect. Existing configurations are not impacted.\nWorkaround: None at this time.",
+      "created": "2022-03-31T19:43:10+00:00",
+      "modified": "2022-03-31T19:43:13+00:00",
+      "when": "2022-03-31T19:43:10+00:00",
+      "text": "Summary: Global: Delays creating or modifying load balancer configurations\nDescription: Our engineering team is exploring multiple mitigations options currently.\nWe will provide more information by Thursday, 2022-03-31 15:00 US/Pacific.\nDiagnosis: Affected customers will see delays in creating or modifying the configuration of Global External HTTP(S) load balancers, Cloud Armor and Cloud CDN. App Engine Flexible apps may fail to deploy. Configuration changes will be accepted, but not take effect until the issue is resolved. Existing configurations and deployments are not impacted.\nWorkaround: Configuration changes will eventually take effect. Failed App Engine Flexible deployments can be retried.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
+          "title": "Taiwan (asia-east1)",
+          "id": "asia-east1"
+        },
+        {
+          "title": "Hong Kong (asia-east2)",
+          "id": "asia-east2"
+        },
+        {
+          "title": "Tokyo (asia-northeast1)",
+          "id": "asia-northeast1"
+        },
+        {
+          "title": "Osaka (asia-northeast2)",
+          "id": "asia-northeast2"
+        },
+        {
+          "title": "Seoul (asia-northeast3)",
+          "id": "asia-northeast3"
+        },
+        {
+          "title": "Mumbai (asia-south1)",
+          "id": "asia-south1"
+        },
+        {
+          "title": "Singapore (asia-southeast1)",
+          "id": "asia-southeast1"
+        },
+        {
+          "title": "Jakarta (asia-southeast2)",
+          "id": "asia-southeast2"
+        },
+        {
+          "title": "Sydney (australia-southeast1)",
+          "id": "australia-southeast1"
+        },
+        {
+          "title": "Melbourne (australia-southeast2)",
+          "id": "australia-southeast2"
+        },
+        {
+          "title": "Warsaw (europe-central2)",
+          "id": "europe-central2"
+        },
+        {
+          "title": "Finland (europe-north1)",
+          "id": "europe-north1"
+        },
+        {
+          "title": "Belgium (europe-west1)",
+          "id": "europe-west1"
+        },
+        {
+          "title": "London (europe-west2)",
+          "id": "europe-west2"
+        },
+        {
+          "title": "Frankfurt (europe-west3)",
+          "id": "europe-west3"
+        },
+        {
+          "title": "Netherlands (europe-west4)",
+          "id": "europe-west4"
+        },
+        {
+          "title": "Zurich (europe-west6)",
+          "id": "europe-west6"
+        },
+        {
           "title": "Global",
           "id": "global"
+        },
+        {
+          "title": "Montréal (northamerica-northeast1)",
+          "id": "northamerica-northeast1"
+        },
+        {
+          "title": "Toronto (northamerica-northeast2)",
+          "id": "northamerica-northeast2"
+        },
+        {
+          "title": "São Paulo (southamerica-east1)",
+          "id": "southamerica-east1"
+        },
+        {
+          "title": "Santiago (southamerica-west1)",
+          "id": "southamerica-west1"
+        },
+        {
+          "title": "Iowa (us-central1)",
+          "id": "us-central1"
+        },
+        {
+          "title": "South Carolina (us-east1)",
+          "id": "us-east1"
+        },
+        {
+          "title": "Northern Virginia (us-east4)",
+          "id": "us-east4"
+        },
+        {
+          "title": "Oregon (us-west1)",
+          "id": "us-west1"
+        },
+        {
+          "title": "Los Angeles (us-west2)",
+          "id": "us-west2"
+        },
+        {
+          "title": "Salt Lake City (us-west3)",
+          "id": "us-west3"
+        },
+        {
+          "title": "Las Vegas (us-west4)",
+          "id": "us-west4"
         }
       ]
     },
@@ -81,8 +318,120 @@
     "uri": "incidents/RmPhfQT9RDGwWLCXS2sC",
     "currently_affected_locations": [
       {
+        "title": "Taiwan (asia-east1)",
+        "id": "asia-east1"
+      },
+      {
+        "title": "Hong Kong (asia-east2)",
+        "id": "asia-east2"
+      },
+      {
+        "title": "Tokyo (asia-northeast1)",
+        "id": "asia-northeast1"
+      },
+      {
+        "title": "Osaka (asia-northeast2)",
+        "id": "asia-northeast2"
+      },
+      {
+        "title": "Seoul (asia-northeast3)",
+        "id": "asia-northeast3"
+      },
+      {
+        "title": "Mumbai (asia-south1)",
+        "id": "asia-south1"
+      },
+      {
+        "title": "Singapore (asia-southeast1)",
+        "id": "asia-southeast1"
+      },
+      {
+        "title": "Jakarta (asia-southeast2)",
+        "id": "asia-southeast2"
+      },
+      {
+        "title": "Sydney (australia-southeast1)",
+        "id": "australia-southeast1"
+      },
+      {
+        "title": "Melbourne (australia-southeast2)",
+        "id": "australia-southeast2"
+      },
+      {
+        "title": "Warsaw (europe-central2)",
+        "id": "europe-central2"
+      },
+      {
+        "title": "Finland (europe-north1)",
+        "id": "europe-north1"
+      },
+      {
+        "title": "Belgium (europe-west1)",
+        "id": "europe-west1"
+      },
+      {
+        "title": "London (europe-west2)",
+        "id": "europe-west2"
+      },
+      {
+        "title": "Frankfurt (europe-west3)",
+        "id": "europe-west3"
+      },
+      {
+        "title": "Netherlands (europe-west4)",
+        "id": "europe-west4"
+      },
+      {
+        "title": "Zurich (europe-west6)",
+        "id": "europe-west6"
+      },
+      {
         "title": "Global",
         "id": "global"
+      },
+      {
+        "title": "Montréal (northamerica-northeast1)",
+        "id": "northamerica-northeast1"
+      },
+      {
+        "title": "Toronto (northamerica-northeast2)",
+        "id": "northamerica-northeast2"
+      },
+      {
+        "title": "São Paulo (southamerica-east1)",
+        "id": "southamerica-east1"
+      },
+      {
+        "title": "Santiago (southamerica-west1)",
+        "id": "southamerica-west1"
+      },
+      {
+        "title": "Iowa (us-central1)",
+        "id": "us-central1"
+      },
+      {
+        "title": "South Carolina (us-east1)",
+        "id": "us-east1"
+      },
+      {
+        "title": "Northern Virginia (us-east4)",
+        "id": "us-east4"
+      },
+      {
+        "title": "Oregon (us-west1)",
+        "id": "us-west1"
+      },
+      {
+        "title": "Los Angeles (us-west2)",
+        "id": "us-west2"
+      },
+      {
+        "title": "Salt Lake City (us-west3)",
+        "id": "us-west3"
+      },
+      {
+        "title": "Las Vegas (us-west4)",
+        "id": "us-west4"
       }
     ],
     "previously_affected_locations": []
