@@ -2,12 +2,25 @@
   {
     "id": "ukkfXQc8CEeFZbSTYQi7",
     "number": "14166479295409213890",
-    "begin": "2022-03-31T21:17:37+00:00",
+    "begin": "2022-03-31T19:15:00+00:00",
     "created": "2022-03-31T21:17:41+00:00",
-    "end": "2022-03-31T22:14:06+00:00",
-    "modified": "2022-03-31T22:14:06+00:00",
+    "end": "2022-03-31T22:13:00+00:00",
+    "modified": "2022-04-01T18:49:41+00:00",
     "external_desc": "us multiregion: Elevated errors on Cloud KMS requests.",
     "updates": [
+      {
+        "created": "2022-04-01T18:49:24+00:00",
+        "modified": "2022-04-01T18:49:24+00:00",
+        "when": "2022-04-01T18:49:24+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 2022-03-31 12:15\n**Incident End:** 2022-03-31 15:13\n**Duration:** 2 hours, 58 minutes\n**Affected Services and Features:**\nGoogle Cloud Key Management Service (KMS)\nGoogle Cloud Storage (GCS)\n**Regions/Zones:** Multiregional US\n**Description:**\nA Cloud Key Management Service (KMS) job experienced multiple errors due to task crashes in one metro of the US multiregion for 2 Hours 58 Minutes. From the preliminary analysis, the root cause of was identified as a map-reduce-style batch job with a huge fast ramp-up of ReadObjects to Google Cloud Storage (GCS), which overloaded the KMS jobs (that are a dependency of GCS).\n**Customer Impact:**\n- The affected customers observed errors in Google Cloud Storage for one project.\n- Multiple tasks failed with Memory-Exceed Error.\n- There were a tiny non-zero amount of errors for some projects.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
       {
         "created": "2022-03-31T22:14:05+00:00",
         "modified": "2022-03-31T22:14:07+00:00",
@@ -49,10 +62,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-03-31T22:14:05+00:00",
-      "modified": "2022-03-31T22:14:07+00:00",
-      "when": "2022-03-31T22:14:05+00:00",
-      "text": "The issue with Cloud Key Management Service has been resolved for all affected users as of Thursday, 2022-03-31 15:13 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-04-01T18:49:24+00:00",
+      "modified": "2022-04-01T18:49:24+00:00",
+      "when": "2022-04-01T18:49:24+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 2022-03-31 12:15\n**Incident End:** 2022-03-31 15:13\n**Duration:** 2 hours, 58 minutes\n**Affected Services and Features:**\nGoogle Cloud Key Management Service (KMS)\nGoogle Cloud Storage (GCS)\n**Regions/Zones:** Multiregional US\n**Description:**\nA Cloud Key Management Service (KMS) job experienced multiple errors due to task crashes in one metro of the US multiregion for 2 Hours 58 Minutes. From the preliminary analysis, the root cause of was identified as a map-reduce-style batch job with a huge fast ramp-up of ReadObjects to Google Cloud Storage (GCS), which overloaded the KMS jobs (that are a dependency of GCS).\n**Customer Impact:**\n- The affected customers observed errors in Google Cloud Storage for one project.\n- Multiple tasks failed with Memory-Exceed Error.\n- There were a tiny non-zero amount of errors for some projects.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
@@ -77,6 +90,186 @@
       {
         "title": "Multi-region: us",
         "id": "us"
+      }
+    ]
+  },
+  {
+    "id": "B1hD4KAtcxiyAWkcANfV",
+    "number": "17742360388109155603",
+    "begin": "2022-03-31T19:15:00+00:00",
+    "created": "2022-03-31T18:40:18+00:00",
+    "end": "2022-03-31T22:13:00+00:00",
+    "modified": "2022-04-01T18:47:24+00:00",
+    "external_desc": "Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub",
+    "updates": [
+      {
+        "created": "2022-03-31T23:11:12+00:00",
+        "modified": "2022-03-31T23:11:14+00:00",
+        "when": "2022-03-31T23:11:12+00:00",
+        "text": "The issue with Google Cloud Pub/Sub monitoring has been resolved for all affected projects as of Thursday, 2022-03-31 15:54 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
+        "created": "2022-03-31T22:23:34+00:00",
+        "modified": "2022-03-31T22:23:36+00:00",
+        "when": "2022-03-31T22:23:34+00:00",
+        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: ​​We believe the issue with Google Cloud Pub/Sub monitoring was partially resolved as of 14:57, and are continuing to monitor the recovery of the service.\nWe do not have an ETA for full resolution at this point.\nWe will provide an update by Thursday, 2022-03-31 16:30 US/Pacific with current details.\nDiagnosis: - Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values.\n- Any alerting based on these metrics may fire erroneously.\n- Any auto scaling of GKE based on these metrics may not function as expected due to lack of or underreported values.\nPublish and subscribe metrics are currently affected for publishers and subscribers in following regions:\n- asia-east1\n- europe-north1\n- europe-west4\n- us-central1\n- us-central2\n- us-east1\n- us-east4\n- us-east7\n- us-west1\n- us-west4\nBacklog metrics for subscriptions and snapshot metrics in all regions are no longer affected in any region.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
+        "created": "2022-03-31T21:49:14+00:00",
+        "modified": "2022-03-31T21:49:15+00:00",
+        "when": "2022-03-31T21:49:14+00:00",
+        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We are experiencing an issue with Cloud Monitoring metrics for Cloud Pub/Sub beginning Thursday, 2022-03-31 09:30 US/Pacific. There is no known impact on Cloud Pub/Sub administrative, publish, or subscribe operations at this time.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 15:25 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: - Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values.\n- Any alerting based on these metrics may fire erroneously.\n- Any auto scaling of GKE based on these metrics may not function as expected due to lack of or underreported values.\nPublish and subscribe metrics are currently affected for publishers and subscribers in following regions:\n- asia-east1\n- europe-north1\n- europe-west4\n- us-central1\n- us-central2\n- us-east1\n- us-east4\n- us-east7\n- us-west1\n- us-west4\nBacklog metrics for subscriptions and snapshot metrics in all regions are no longer affected in any region.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
+        "created": "2022-03-31T21:20:01+00:00",
+        "modified": "2022-03-31T21:20:01+00:00",
+        "when": "2022-03-31T21:20:01+00:00",
+        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We are experiencing an issue with Cloud Monitoring metrics for Cloud Pub/Sub beginning Thursday, 2022-03-31 09:30 US/Pacific. There is no known impact on Cloud Pub/Sub administrative, publish, or subscribe operations at this time.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 14:55 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: - Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values.\n- Any alerting based on these metrics may fire erroneously.\n- Any auto scaling of GKE based on these metrics may not function as expected due to lack of or underreported values.\nPublish and subscribe metrics are currently affected for publishers and subscribers in following regions:\n- asia-east1\n- europe-north1\n- europe-west4\n- us-central1\n- us-central2\n- us-east1\n- us-east4\n- us-east7\n- us-west1\n- us-west4\nBacklog metrics for subscriptions and snapshot metrics in all regions are currently affected.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
+        "created": "2022-03-31T20:49:56+00:00",
+        "modified": "2022-03-31T20:49:57+00:00",
+        "when": "2022-03-31T20:49:56+00:00",
+        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We are experiencing an issue with Cloud Monitoring metrics for Cloud Pub/Sub beginning Thursday, 2022-03-31 09:30 US/Pacific. There is no known impact on Cloud Pub/Sub administrative, publish, or subscribe operations at this time.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 14:25 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: - Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values.\n- Any alerting based on these metrics may fire erroneously.\n- Any auto scaling of GKE based on these metrics may not function as expected due to lack of or underreported values.\nPublish and subscribe metrics are currently affected for publishers and subscribers in following regions:\n- asia-east1\n- europe-north1\n- europe-west4\n- us-central1\n- us-central2\n- us-east1\n- us-east4\n- us-east7\n- us-west1\n- us-west4\nBacklog metrics for subscriptions and snapshot metrics in all regions are currently affected.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
+        "created": "2022-03-31T20:18:51+00:00",
+        "modified": "2022-03-31T20:18:52+00:00",
+        "when": "2022-03-31T20:18:51+00:00",
+        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We are experiencing an issue with Cloud Monitoring and Cloud Pub/Sub beginning Thursday, 2022-03-31 09:30 US/Pacific. There is no known impact on Cloud Pub/Sub administrative, publish, or subscribe operations at this time.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 13:55 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: - Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values.\n- Any alerting based on these metrics may fire erroneously.\n- Any auto scaling of GKE based on these metrics may not function as expected due to lack of or underreported values.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
+        "created": "2022-03-31T19:52:27+00:00",
+        "modified": "2022-03-31T19:52:33+00:00",
+        "when": "2022-03-31T19:52:27+00:00",
+        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We are experiencing an issue with Cloud Monitoring and Cloud Pub/Sub beginning Thursday, 2022-03-31 09:30 US/Pacific. There is no known impact on Cloud Pub/Sub administrative, publish, or subscribe operations at this time.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 13:25 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values. Any alerting based on these metrics may fire erroneously.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
+        "created": "2022-03-31T19:23:08+00:00",
+        "modified": "2022-03-31T19:23:09+00:00",
+        "when": "2022-03-31T19:23:08+00:00",
+        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We are experiencing an issue with Cloud Monitoring and Cloud Pub/Sub beginning Thursday, 2022-03-31 09:30 US/Pacific. There is no known impact on Cloud Pub/Sub administrative, publish, or subscribe operations at this time.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 12:55 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values. Any alerting based on these metrics may fire erroneously.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
+        "created": "2022-03-31T18:58:09+00:00",
+        "modified": "2022-03-31T18:58:10+00:00",
+        "when": "2022-03-31T18:58:09+00:00",
+        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable for Cloud Pub/Sub\nDescription: We are experiencing an issue with Cloud Monitoring and Cloud Pub/Sub beginning at Thursday, 2022-03-31 09:30 US/Pacific.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 12:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may experience unavailable Metrics in Cloud Monitoring for Cloud Pub/Sub\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
+        "created": "2022-03-31T18:40:17+00:00",
+        "modified": "2022-03-31T18:40:19+00:00",
+        "when": "2022-03-31T18:40:17+00:00",
+        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable\nDescription: We are experiencing an issue with Cloud Monitoring beginning at Thursday, 2022-03-31 09:30 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 12:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may experience unavailable Metrics in Cloud Monitoring\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-03-31T23:11:12+00:00",
+      "modified": "2022-03-31T23:11:14+00:00",
+      "when": "2022-03-31T23:11:12+00:00",
+      "text": "The issue with Google Cloud Pub/Sub monitoring has been resolved for all affected projects as of Thursday, 2022-03-31 15:54 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Global",
+          "id": "global"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_OUTAGE",
+    "severity": "high",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Cloud Monitoring",
+        "id": "3zaaDb7antc73BM1UAVT"
+      },
+      {
+        "title": "Operations",
+        "id": "DixAowEQm45KgqXKP5tR"
+      },
+      {
+        "title": "Google Cloud Pub/Sub",
+        "id": "dFjdLh2v6zuES6t9ADCB"
+      }
+    ],
+    "uri": "incidents/B1hD4KAtcxiyAWkcANfV",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Global",
+        "id": "global"
       }
     ]
   },
@@ -765,186 +958,6 @@
       {
         "title": "Las Vegas (us-west4)",
         "id": "us-west4"
-      }
-    ]
-  },
-  {
-    "id": "B1hD4KAtcxiyAWkcANfV",
-    "number": "17742360388109155603",
-    "begin": "2022-03-31T17:30:45+00:00",
-    "created": "2022-03-31T18:40:18+00:00",
-    "end": "2022-03-31T23:11:13+00:00",
-    "modified": "2022-03-31T23:11:13+00:00",
-    "external_desc": "Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub",
-    "updates": [
-      {
-        "created": "2022-03-31T23:11:12+00:00",
-        "modified": "2022-03-31T23:11:14+00:00",
-        "when": "2022-03-31T23:11:12+00:00",
-        "text": "The issue with Google Cloud Pub/Sub monitoring has been resolved for all affected projects as of Thursday, 2022-03-31 15:54 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2022-03-31T22:23:34+00:00",
-        "modified": "2022-03-31T22:23:36+00:00",
-        "when": "2022-03-31T22:23:34+00:00",
-        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: ​​We believe the issue with Google Cloud Pub/Sub monitoring was partially resolved as of 14:57, and are continuing to monitor the recovery of the service.\nWe do not have an ETA for full resolution at this point.\nWe will provide an update by Thursday, 2022-03-31 16:30 US/Pacific with current details.\nDiagnosis: - Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values.\n- Any alerting based on these metrics may fire erroneously.\n- Any auto scaling of GKE based on these metrics may not function as expected due to lack of or underreported values.\nPublish and subscribe metrics are currently affected for publishers and subscribers in following regions:\n- asia-east1\n- europe-north1\n- europe-west4\n- us-central1\n- us-central2\n- us-east1\n- us-east4\n- us-east7\n- us-west1\n- us-west4\nBacklog metrics for subscriptions and snapshot metrics in all regions are no longer affected in any region.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2022-03-31T21:49:14+00:00",
-        "modified": "2022-03-31T21:49:15+00:00",
-        "when": "2022-03-31T21:49:14+00:00",
-        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We are experiencing an issue with Cloud Monitoring metrics for Cloud Pub/Sub beginning Thursday, 2022-03-31 09:30 US/Pacific. There is no known impact on Cloud Pub/Sub administrative, publish, or subscribe operations at this time.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 15:25 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: - Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values.\n- Any alerting based on these metrics may fire erroneously.\n- Any auto scaling of GKE based on these metrics may not function as expected due to lack of or underreported values.\nPublish and subscribe metrics are currently affected for publishers and subscribers in following regions:\n- asia-east1\n- europe-north1\n- europe-west4\n- us-central1\n- us-central2\n- us-east1\n- us-east4\n- us-east7\n- us-west1\n- us-west4\nBacklog metrics for subscriptions and snapshot metrics in all regions are no longer affected in any region.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2022-03-31T21:20:01+00:00",
-        "modified": "2022-03-31T21:20:01+00:00",
-        "when": "2022-03-31T21:20:01+00:00",
-        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We are experiencing an issue with Cloud Monitoring metrics for Cloud Pub/Sub beginning Thursday, 2022-03-31 09:30 US/Pacific. There is no known impact on Cloud Pub/Sub administrative, publish, or subscribe operations at this time.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 14:55 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: - Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values.\n- Any alerting based on these metrics may fire erroneously.\n- Any auto scaling of GKE based on these metrics may not function as expected due to lack of or underreported values.\nPublish and subscribe metrics are currently affected for publishers and subscribers in following regions:\n- asia-east1\n- europe-north1\n- europe-west4\n- us-central1\n- us-central2\n- us-east1\n- us-east4\n- us-east7\n- us-west1\n- us-west4\nBacklog metrics for subscriptions and snapshot metrics in all regions are currently affected.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2022-03-31T20:49:56+00:00",
-        "modified": "2022-03-31T20:49:57+00:00",
-        "when": "2022-03-31T20:49:56+00:00",
-        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We are experiencing an issue with Cloud Monitoring metrics for Cloud Pub/Sub beginning Thursday, 2022-03-31 09:30 US/Pacific. There is no known impact on Cloud Pub/Sub administrative, publish, or subscribe operations at this time.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 14:25 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: - Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values.\n- Any alerting based on these metrics may fire erroneously.\n- Any auto scaling of GKE based on these metrics may not function as expected due to lack of or underreported values.\nPublish and subscribe metrics are currently affected for publishers and subscribers in following regions:\n- asia-east1\n- europe-north1\n- europe-west4\n- us-central1\n- us-central2\n- us-east1\n- us-east4\n- us-east7\n- us-west1\n- us-west4\nBacklog metrics for subscriptions and snapshot metrics in all regions are currently affected.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2022-03-31T20:18:51+00:00",
-        "modified": "2022-03-31T20:18:52+00:00",
-        "when": "2022-03-31T20:18:51+00:00",
-        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We are experiencing an issue with Cloud Monitoring and Cloud Pub/Sub beginning Thursday, 2022-03-31 09:30 US/Pacific. There is no known impact on Cloud Pub/Sub administrative, publish, or subscribe operations at this time.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 13:55 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: - Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values.\n- Any alerting based on these metrics may fire erroneously.\n- Any auto scaling of GKE based on these metrics may not function as expected due to lack of or underreported values.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2022-03-31T19:52:27+00:00",
-        "modified": "2022-03-31T19:52:33+00:00",
-        "when": "2022-03-31T19:52:27+00:00",
-        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We are experiencing an issue with Cloud Monitoring and Cloud Pub/Sub beginning Thursday, 2022-03-31 09:30 US/Pacific. There is no known impact on Cloud Pub/Sub administrative, publish, or subscribe operations at this time.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 13:25 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values. Any alerting based on these metrics may fire erroneously.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2022-03-31T19:23:08+00:00",
-        "modified": "2022-03-31T19:23:09+00:00",
-        "when": "2022-03-31T19:23:08+00:00",
-        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We are experiencing an issue with Cloud Monitoring and Cloud Pub/Sub beginning Thursday, 2022-03-31 09:30 US/Pacific. There is no known impact on Cloud Pub/Sub administrative, publish, or subscribe operations at this time.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 12:55 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values. Any alerting based on these metrics may fire erroneously.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2022-03-31T18:58:09+00:00",
-        "modified": "2022-03-31T18:58:10+00:00",
-        "when": "2022-03-31T18:58:09+00:00",
-        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable for Cloud Pub/Sub\nDescription: We are experiencing an issue with Cloud Monitoring and Cloud Pub/Sub beginning at Thursday, 2022-03-31 09:30 US/Pacific.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 12:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may experience unavailable Metrics in Cloud Monitoring for Cloud Pub/Sub\nWorkaround: None at this time.",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2022-03-31T18:40:17+00:00",
-        "modified": "2022-03-31T18:40:19+00:00",
-        "when": "2022-03-31T18:40:17+00:00",
-        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable\nDescription: We are experiencing an issue with Cloud Monitoring beginning at Thursday, 2022-03-31 09:30 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2022-03-31 12:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may experience unavailable Metrics in Cloud Monitoring\nWorkaround: None at this time.",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-03-31T23:11:12+00:00",
-      "modified": "2022-03-31T23:11:14+00:00",
-      "when": "2022-03-31T23:11:12+00:00",
-      "text": "The issue with Google Cloud Pub/Sub monitoring has been resolved for all affected projects as of Thursday, 2022-03-31 15:54 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Global",
-          "id": "global"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_OUTAGE",
-    "severity": "high",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Cloud Monitoring",
-        "id": "3zaaDb7antc73BM1UAVT"
-      },
-      {
-        "title": "Operations",
-        "id": "DixAowEQm45KgqXKP5tR"
-      },
-      {
-        "title": "Google Cloud Pub/Sub",
-        "id": "dFjdLh2v6zuES6t9ADCB"
-      }
-    ],
-    "uri": "incidents/B1hD4KAtcxiyAWkcANfV",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Global",
-        "id": "global"
       }
     ]
   },
