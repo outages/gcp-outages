@@ -4,9 +4,22 @@
     "number": "6524406606269626845",
     "begin": "2022-04-18T11:17:23+00:00",
     "created": "2022-04-18T16:49:41+00:00",
-    "modified": "2022-04-18T18:56:02+00:00",
+    "modified": "2022-04-18T19:53:12+00:00",
     "external_desc": "Cloud Logging is experiencing elevated latency for log ingestion. Customers using global storage buckets or storage buckets in us-central1 to store their logs may not be able to see their recently written logs for a few hours.",
     "updates": [
+      {
+        "created": "2022-04-18T19:53:12+00:00",
+        "modified": "2022-04-18T19:53:13+00:00",
+        "when": "2022-04-18T19:53:12+00:00",
+        "text": "Summary: Cloud Logging is experiencing elevated latency for log ingestion. Customers using global storage buckets or storage buckets in us-central1 to store their logs may not be able to see their recently written logs for a few hours.\nDescription: Following the fix roll out, log ingestion backlog has cleared but customers may experience issue with querying the logs.\nOur engineering team is working to fix the log querying issue.\nWe will provide more information by Monday, 2022-04-18 14:00 US/Pacific.\nDiagnosis:\n* Log ingestion backlog has cleared but customers may experience issue with querying the logs.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
       {
         "created": "2022-04-18T18:56:02+00:00",
         "modified": "2022-04-18T18:56:03+00:00",
@@ -48,10 +61,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-04-18T18:56:02+00:00",
-      "modified": "2022-04-18T18:56:03+00:00",
-      "when": "2022-04-18T18:56:02+00:00",
-      "text": "Summary: Cloud Logging is experiencing elevated latency for log ingestion. Customers using global storage buckets or storage buckets in us-central1 to store their logs may not be able to see their recently written logs for a few hours.\nDescription: A fix roll out is completed and customers may still experience delays while the log ingestion backlog is being cleared.\nThe backlog is expected to clear by Monday, 2022-04-18 15:00 US/Pacific.\nWe will provide more information by Monday, 2022-04-18 13:00 US/Pacific.\nDiagnosis:\n* There is a high latency in log ingestion with median latency of around 2 hours and 99% latency of 4.5 hours.\n* Customers using global storage buckets or storage buckets in us-central1 to store their logs may not be able to see their recently written logs for a few hours.\nWorkaround: None at this time.",
+      "created": "2022-04-18T19:53:12+00:00",
+      "modified": "2022-04-18T19:53:13+00:00",
+      "when": "2022-04-18T19:53:12+00:00",
+      "text": "Summary: Cloud Logging is experiencing elevated latency for log ingestion. Customers using global storage buckets or storage buckets in us-central1 to store their logs may not be able to see their recently written logs for a few hours.\nDescription: Following the fix roll out, log ingestion backlog has cleared but customers may experience issue with querying the logs.\nOur engineering team is working to fix the log querying issue.\nWe will provide more information by Monday, 2022-04-18 14:00 US/Pacific.\nDiagnosis:\n* Log ingestion backlog has cleared but customers may experience issue with querying the logs.\nWorkaround: None at this time.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
