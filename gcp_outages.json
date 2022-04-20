@@ -2,12 +2,25 @@
   {
     "id": "waYi5P1JfEPrJh5tPNQU",
     "number": "6524406606269626845",
-    "begin": "2022-04-18T11:17:23+00:00",
+    "begin": "2022-04-18T03:52:00+00:00",
     "created": "2022-04-18T16:49:41+00:00",
-    "end": "2022-04-19T00:43:20+00:00",
-    "modified": "2022-04-19T00:43:20+00:00",
+    "end": "2022-04-19T00:33:00+00:00",
+    "modified": "2022-04-20T14:32:50+00:00",
     "external_desc": "Cloud Logging is experiencing elevated latencies for log querying. Customers using global storage buckets or storage buckets in us-central1 to store their logs may see latencies on queries run against Cloud Logging. - Issue Resolved.",
     "updates": [
+      {
+        "created": "2022-04-20T14:32:33+00:00",
+        "modified": "2022-04-20T14:32:33+00:00",
+        "when": "2022-04-20T14:32:33+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 17 April 2022 20:52\n**Incident End:** 18 April 2022 17:33\n**Duration:** 20 hours, 41 minutes\n**Affected Services and Features:**\nGoogle Cloud Logging\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Logging experienced elevated error rates and high latency in log ingestion. Customers using global storage buckets or storage buckets in us-central1 to store their logs may not have been able to see their recently written logs for a duration of 20 hours, 41 minutes.\nFrom preliminary analysis, an unexpected increase in uncached NOT_FOUND errors while validating log bucket configurations caused a large increase in the overall volume of configuration reads. This in turn caused latency of configuration reads and therefore validations to increase, leading to an ingestion backlog and a delay in log ingestion to the storage layer of our query backend.\nThe issue was resolved at 17:33 US/Pacific once the ingestion backlog cleared.\n**Customer Impact:**\n- Customers using global storage buckets or storage buckets in us-central1 to store their logs may not have been able to see their recently written logs for most of the duration of the event.\n- Customers may have experienced high latency or failures up to 90% on reads from Google Cloud Logging and other query requests.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
       {
         "created": "2022-04-19T00:43:20+00:00",
         "modified": "2022-04-19T00:43:20+00:00",
@@ -127,10 +140,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-04-19T00:43:20+00:00",
-      "modified": "2022-04-19T00:43:20+00:00",
-      "when": "2022-04-19T00:43:20+00:00",
-      "text": "The issue on Cloud Logging Ingestion and querying has been resolved for all affected projects as of Monday, 2022-04-18 17:33 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-04-20T14:32:33+00:00",
+      "modified": "2022-04-20T14:32:33+00:00",
+      "when": "2022-04-20T14:32:33+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 17 April 2022 20:52\n**Incident End:** 18 April 2022 17:33\n**Duration:** 20 hours, 41 minutes\n**Affected Services and Features:**\nGoogle Cloud Logging\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Logging experienced elevated error rates and high latency in log ingestion. Customers using global storage buckets or storage buckets in us-central1 to store their logs may not have been able to see their recently written logs for a duration of 20 hours, 41 minutes.\nFrom preliminary analysis, an unexpected increase in uncached NOT_FOUND errors while validating log bucket configurations caused a large increase in the overall volume of configuration reads. This in turn caused latency of configuration reads and therefore validations to increase, leading to an ingestion backlog and a delay in log ingestion to the storage layer of our query backend.\nThe issue was resolved at 17:33 US/Pacific once the ingestion backlog cleared.\n**Customer Impact:**\n- Customers using global storage buckets or storage buckets in us-central1 to store their logs may not have been able to see their recently written logs for most of the duration of the event.\n- Customers may have experienced high latency or failures up to 90% on reads from Google Cloud Logging and other query requests.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
