@@ -4,9 +4,23 @@
     "number": "13941430952028707728",
     "begin": "2022-04-23T15:34:48+00:00",
     "created": "2022-04-23T16:27:43+00:00",
-    "modified": "2022-04-23T17:27:03+00:00",
+    "end": "2022-04-23T17:40:46+00:00",
+    "modified": "2022-04-23T17:40:47+00:00",
     "external_desc": "Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub",
     "updates": [
+      {
+        "created": "2022-04-23T17:40:46+00:00",
+        "modified": "2022-04-23T17:40:48+00:00",
+        "when": "2022-04-23T17:40:46+00:00",
+        "text": "The issue with Google Cloud Pub/Sub monitoring has been resolved for all affected projects as of Saturday, 2022-04-23 10:21 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
       {
         "created": "2022-04-23T17:27:03+00:00",
         "modified": "2022-04-23T17:27:05+00:00",
@@ -43,11 +57,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-04-23T17:27:03+00:00",
-      "modified": "2022-04-23T17:27:05+00:00",
-      "when": "2022-04-23T17:27:03+00:00",
-      "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We believe the issue with Google Cloud Pub/Sub monitoring was partially resolved as of 10:20 US/Pacific and are continuing to monitor the recovery of the service.\nWe do not have an ETA for full resolution at this point.\nWe will provide more information by Saturday, 2022-04-23 11:30 US/Pacific.\nDiagnosis: Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values. Any alerting based on these metrics may fire erroneously.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
-      "status": "SERVICE_DISRUPTION",
+      "created": "2022-04-23T17:40:46+00:00",
+      "modified": "2022-04-23T17:40:48+00:00",
+      "when": "2022-04-23T17:40:46+00:00",
+      "text": "The issue with Google Cloud Pub/Sub monitoring has been resolved for all affected projects as of Saturday, 2022-04-23 10:21 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
       "affected_locations": [
         {
           "title": "Global",
@@ -66,13 +80,13 @@
       }
     ],
     "uri": "incidents/yatPQDmQ5uXqb6PzwanU",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Global",
         "id": "global"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "BNZwWJfvtjg3HxKA3bjY",
