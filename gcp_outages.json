@@ -4,9 +4,22 @@
     "number": "13941430952028707728",
     "begin": "2022-04-23T15:34:48+00:00",
     "created": "2022-04-23T16:27:43+00:00",
-    "modified": "2022-04-23T16:53:35+00:00",
+    "modified": "2022-04-23T17:27:03+00:00",
     "external_desc": "Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub",
     "updates": [
+      {
+        "created": "2022-04-23T17:27:03+00:00",
+        "modified": "2022-04-23T17:27:05+00:00",
+        "when": "2022-04-23T17:27:03+00:00",
+        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We believe the issue with Google Cloud Pub/Sub monitoring was partially resolved as of 10:20 US/Pacific and are continuing to monitor the recovery of the service.\nWe do not have an ETA for full resolution at this point.\nWe will provide more information by Saturday, 2022-04-23 11:30 US/Pacific.\nDiagnosis: Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values. Any alerting based on these metrics may fire erroneously.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
       {
         "created": "2022-04-23T16:53:35+00:00",
         "modified": "2022-04-23T16:53:38+00:00",
@@ -30,10 +43,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-04-23T16:53:35+00:00",
-      "modified": "2022-04-23T16:53:38+00:00",
-      "when": "2022-04-23T16:53:35+00:00",
-      "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We are experiencing an issue with Google Cloud Pub/Sub beginning on Friday, 2022-04-22 19:10 US/Pacific.\nThere is no known impact on Cloud Pub/Sub administrative, publish, or subscribe operations at this time.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Saturday, 2022-04-23 10:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values. Any alerting based on these metrics may fire erroneously.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
+      "created": "2022-04-23T17:27:03+00:00",
+      "modified": "2022-04-23T17:27:05+00:00",
+      "when": "2022-04-23T17:27:03+00:00",
+      "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We believe the issue with Google Cloud Pub/Sub monitoring was partially resolved as of 10:20 US/Pacific and are continuing to monitor the recovery of the service.\nWe do not have an ETA for full resolution at this point.\nWe will provide more information by Saturday, 2022-04-23 11:30 US/Pacific.\nDiagnosis: Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values. Any alerting based on these metrics may fire erroneously.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
