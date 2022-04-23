@@ -4,9 +4,22 @@
     "number": "13941430952028707728",
     "begin": "2022-04-23T15:34:48+00:00",
     "created": "2022-04-23T16:27:43+00:00",
-    "modified": "2022-04-23T16:27:43+00:00",
+    "modified": "2022-04-23T16:53:35+00:00",
     "external_desc": "Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub",
     "updates": [
+      {
+        "created": "2022-04-23T16:53:35+00:00",
+        "modified": "2022-04-23T16:53:38+00:00",
+        "when": "2022-04-23T16:53:35+00:00",
+        "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We are experiencing an issue with Google Cloud Pub/Sub beginning on Friday, 2022-04-22 19:10 US/Pacific.\nThere is no known impact on Cloud Pub/Sub administrative, publish, or subscribe operations at this time.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Saturday, 2022-04-23 10:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values. Any alerting based on these metrics may fire erroneously.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
       {
         "created": "2022-04-23T16:27:43+00:00",
         "modified": "2022-04-23T16:27:46+00:00",
@@ -17,12 +30,17 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-04-23T16:27:43+00:00",
-      "modified": "2022-04-23T16:27:46+00:00",
-      "when": "2022-04-23T16:27:43+00:00",
-      "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We are experiencing an issue with Google Cloud Pub/Sub beginning on Friday, 2022-04-22 19:10 US/Pacific.\nThere is no known impact on Cloud Pub/Sub administrative, publish, or subscribe operations at this time.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Saturday, 2022-04-23 10:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values. Any alerting based on these metrics may fire erroneously.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\ninstance/cpu/utilization\ninstance/network/received_bytes_count\ninstance/network/sent_bytes_count",
+      "created": "2022-04-23T16:53:35+00:00",
+      "modified": "2022-04-23T16:53:38+00:00",
+      "when": "2022-04-23T16:53:35+00:00",
+      "text": "Summary: Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub\nDescription: We are experiencing an issue with Google Cloud Pub/Sub beginning on Friday, 2022-04-22 19:10 US/Pacific.\nThere is no known impact on Cloud Pub/Sub administrative, publish, or subscribe operations at this time.\nEngineering is continuing to investigate the issue.\nWe will provide an update by Saturday, 2022-04-23 10:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue may see Cloud Monitoring metrics for Cloud Pub/Sub that show no or underreported values. Any alerting based on these metrics may fire erroneously.\nWorkaround: Non-Cloud-Pub/Sub metrics and logs on publish and subscriber clients can be used as a proxy to ensure that publishing and subscribing is still behaving as expected. For example, metrics available for clients running on GCE include:\n- instance/cpu/utilization\n- instance/network/received_bytes_count\n- instance/network/sent_bytes_count",
       "status": "SERVICE_DISRUPTION",
-      "affected_locations": []
+      "affected_locations": [
+        {
+          "title": "Global",
+          "id": "global"
+        }
+      ]
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
@@ -35,7 +53,12 @@
       }
     ],
     "uri": "incidents/yatPQDmQ5uXqb6PzwanU",
-    "currently_affected_locations": [],
+    "currently_affected_locations": [
+      {
+        "title": "Global",
+        "id": "global"
+      }
+    ],
     "previously_affected_locations": []
   },
   {
