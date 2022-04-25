@@ -2,12 +2,25 @@
   {
     "id": "yatPQDmQ5uXqb6PzwanU",
     "number": "13941430952028707728",
-    "begin": "2022-04-23T15:34:48+00:00",
+    "begin": "2022-04-23T02:10:00+00:00",
     "created": "2022-04-23T16:27:43+00:00",
-    "end": "2022-04-23T17:40:46+00:00",
-    "modified": "2022-04-23T17:40:47+00:00",
+    "end": "2022-04-23T17:21:00+00:00",
+    "modified": "2022-04-25T20:06:04+00:00",
     "external_desc": "Global: Cloud Monitoring Metrics may be unavailable or underreported for Cloud Pub/Sub",
     "updates": [
+      {
+        "created": "2022-04-25T20:05:32+00:00",
+        "modified": "2022-04-25T20:05:32+00:00",
+        "when": "2022-04-25T20:05:32+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 22 April 2022 19:10 PT\n**Incident End:** 23 April 2022 10:21 PT\n**Duration:** 15 hours,11 minutes\n**Affected Services and Features:**\nGoogle Cloud Pub/Sub - Google Cloud Monitoring\n**Regions/Zones:** Global Locale\n**Description:**\nGoogle Cloud Pub/Sub customers experienced issues with metrics in Google Cloud Monitoring for a duration of 15 hours, 11 minutes. The issue was caused by a configuration change to the backend for Cloud Monitoring that affected Cloud Pub/Sub metric recording. The issue was mitigated by reverting this change.\n**Customer Impact:** - Cloud Pub/Sub metrics in Cloud Monitoring for times during the incident may be missing or underreported. - The metric values lost in this timeframe will not be recoverable. - Any alerting based on these metrics might have fired erroneously or not fired when they should have during the time of the incident. - Any auto-scaling of Google Kubernetes Engine (GKE) based on these metrics may not have functioned as expected during the time of the incident. - Cloud Pub/Sub administrative, publish, and subscribe operations were not affected by the incident.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
       {
         "created": "2022-04-23T17:40:46+00:00",
         "modified": "2022-04-23T17:40:48+00:00",
@@ -57,10 +70,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-04-23T17:40:46+00:00",
-      "modified": "2022-04-23T17:40:48+00:00",
-      "when": "2022-04-23T17:40:46+00:00",
-      "text": "The issue with Google Cloud Pub/Sub monitoring has been resolved for all affected projects as of Saturday, 2022-04-23 10:21 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-04-25T20:05:32+00:00",
+      "modified": "2022-04-25T20:05:32+00:00",
+      "when": "2022-04-25T20:05:32+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 22 April 2022 19:10 PT\n**Incident End:** 23 April 2022 10:21 PT\n**Duration:** 15 hours,11 minutes\n**Affected Services and Features:**\nGoogle Cloud Pub/Sub - Google Cloud Monitoring\n**Regions/Zones:** Global Locale\n**Description:**\nGoogle Cloud Pub/Sub customers experienced issues with metrics in Google Cloud Monitoring for a duration of 15 hours, 11 minutes. The issue was caused by a configuration change to the backend for Cloud Monitoring that affected Cloud Pub/Sub metric recording. The issue was mitigated by reverting this change.\n**Customer Impact:** - Cloud Pub/Sub metrics in Cloud Monitoring for times during the incident may be missing or underreported. - The metric values lost in this timeframe will not be recoverable. - Any alerting based on these metrics might have fired erroneously or not fired when they should have during the time of the incident. - Any auto-scaling of Google Kubernetes Engine (GKE) based on these metrics may not have functioned as expected during the time of the incident. - Cloud Pub/Sub administrative, publish, and subscribe operations were not affected by the incident.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
