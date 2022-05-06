@@ -52,9 +52,22 @@
     "number": "2022535118131364015",
     "begin": "2022-05-06T11:58:58+00:00",
     "created": "2022-05-06T12:01:47+00:00",
-    "modified": "2022-05-06T15:56:44+00:00",
+    "modified": "2022-05-06T16:26:48+00:00",
     "external_desc": "We are experiencing an issue with Persistent Disk affecting multiple services in us-central1-b",
     "updates": [
+      {
+        "created": "2022-05-06T16:26:48+00:00",
+        "modified": "2022-05-06T16:26:49+00:00",
+        "when": "2022-05-06T16:26:48+00:00",
+        "text": "Summary: We are experiencing an issue with Persistent Disk affecting multiple services in us-central1-b\nDescription: We are experiencing an issue with Persistent Disk affecting multiple services including BigQuery, Cloud Networking, Cloud SQL, Google Kubernetes Engine (GKE), Cloud Filestore, Cloud Bigtable, Cloud Memorystore, Apigee, Cloud Dataflow services, Cloud Data Fusion (CDF) beginning at Friday, 2022-05-06 01:20 US/Pacific in us-central1-b.\nMitigation is completed and most of the affected services have recovered.\nWe will provide more information by Friday, 2022-05-06 10:00 US/Pacific.\nProducts Recovered: * BigQuery Engine:Cloud Pub/Sub * Cloud Networking * Compute Engine * Datastream * Cloud Filestore * Cloud Memorystore * Cloud SQL * Apigee * Dataflow\nProducts Still Recovering: * Google Cloud Bigtable: Customers may be experiencing elevated latency and errors. * Google Kubernetes Engine: Customers may experience issues interacting with the control plane. New workloads won’t be scheduled. Auto scaling may not be operational. * Cloud Data Fusion: CDF operations like instance creation, pipeline launch might fail in us-central1 region due to a Compute Engine issue.\nDiagnosis: Customers might see connectivity issues in us-central1-b\nWorkaround: Move the workloads to a different zone if possible",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
       {
         "created": "2022-05-06T15:56:44+00:00",
         "modified": "2022-05-06T15:56:46+00:00",
@@ -187,10 +200,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-05-06T15:56:44+00:00",
-      "modified": "2022-05-06T15:56:46+00:00",
-      "when": "2022-05-06T15:56:44+00:00",
-      "text": "Summary: We are experiencing an issue with Persistent Disk affecting multiple services in us-central1-b\nDescription: We are experiencing an issue with Persistent Disk affecting multiple services including BigQuery, Cloud Networking, Cloud SQL, Google Kubernetes Engine (GKE), Cloud Filestore, Cloud Bigtable, Cloud Memorystore, Apigee, Cloud Dataflow services, Cloud Data Fusion (CDF) beginning at Friday, 2022-05-06 01:20 US/Pacific in us-central1-b.\nMitigation is completed and we see that most of the affected services have recovered.\nWe will provide more information by Friday, 2022-05-06 09:30 US/Pacific.\nProducts Recovered:\n- BigQuery Engine:Cloud Pub/Sub, Cloud Networking, Compute Engine, Datastream, Cloud Filestore, Cloud Memorystore, Cloud SQL, Apigee, Dataflow\nProducts Still Recovering:\n- Google Cloud BigTable: Customers may be experiencing elevated latency and errors.\n- Google Kubernetes Engine: Customers may experience issues interacting with the control plane. New workloads won’t be scheduled. Auto scaling may not be operational.\n- Cloud Data Fusion: CDF operations like instance creation, pipeline launch might fail in us-central1 region due to an issue on Compute Engine.\nDiagnosis: Customers might see connectivity issues in us-central1-b\nWorkaround: Move the workloads to a different zone if possible",
+      "created": "2022-05-06T16:26:48+00:00",
+      "modified": "2022-05-06T16:26:49+00:00",
+      "when": "2022-05-06T16:26:48+00:00",
+      "text": "Summary: We are experiencing an issue with Persistent Disk affecting multiple services in us-central1-b\nDescription: We are experiencing an issue with Persistent Disk affecting multiple services including BigQuery, Cloud Networking, Cloud SQL, Google Kubernetes Engine (GKE), Cloud Filestore, Cloud Bigtable, Cloud Memorystore, Apigee, Cloud Dataflow services, Cloud Data Fusion (CDF) beginning at Friday, 2022-05-06 01:20 US/Pacific in us-central1-b.\nMitigation is completed and most of the affected services have recovered.\nWe will provide more information by Friday, 2022-05-06 10:00 US/Pacific.\nProducts Recovered: * BigQuery Engine:Cloud Pub/Sub * Cloud Networking * Compute Engine * Datastream * Cloud Filestore * Cloud Memorystore * Cloud SQL * Apigee * Dataflow\nProducts Still Recovering: * Google Cloud Bigtable: Customers may be experiencing elevated latency and errors. * Google Kubernetes Engine: Customers may experience issues interacting with the control plane. New workloads won’t be scheduled. Auto scaling may not be operational. * Cloud Data Fusion: CDF operations like instance creation, pipeline launch might fail in us-central1 region due to a Compute Engine issue.\nDiagnosis: Customers might see connectivity issues in us-central1-b\nWorkaround: Move the workloads to a different zone if possible",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
