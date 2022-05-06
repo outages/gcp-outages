@@ -4,9 +4,38 @@
     "number": "1062169737220912229",
     "begin": "2022-05-06T18:01:01+00:00",
     "created": "2022-05-06T18:01:06+00:00",
-    "modified": "2022-05-06T18:01:06+00:00",
+    "modified": "2022-05-06T18:22:34+00:00",
     "external_desc": "Customers may experience elevated latency for inter-region in multiple asia regions.",
     "updates": [
+      {
+        "created": "2022-05-06T18:22:34+00:00",
+        "modified": "2022-05-06T18:22:36+00:00",
+        "when": "2022-05-06T18:22:34+00:00",
+        "text": "Summary: Customers may experience elevated latency for inter-region in multiple asia regions.\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Friday, 2022-05-06 16:00 US/Pacific.\nWe will provide more information by Friday, 2022-05-06 16:15 US/Pacific.\nDiagnosis: Customers may experience elevated inter-region latency between following regions\n* Traffic between asia-east1 and asia-northeast3\n* Traffic between asia-east2 and asia-east1\n* Traffic between asia-east2 and asia-northeast3\n* Traffic between asia-southeast1 and asia-east1\n* Traffic between asia-southeast2 and asia-east1\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          }
+        ]
+      },
       {
         "created": "2022-05-06T18:01:05+00:00",
         "modified": "2022-05-06T18:01:06+00:00",
@@ -38,10 +67,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-05-06T18:01:05+00:00",
-      "modified": "2022-05-06T18:01:06+00:00",
-      "when": "2022-05-06T18:01:05+00:00",
-      "text": "Summary: Customers may experience elevated latency for inter-region in multiple asia regions.\nDescription: We are experiencing an issue with Google Cloud Networking, Google Kubernetes Engine, Google Compute Engine, Google Cloud SQL, Cloud Memorystore beginning at Friday, 2022-05-06 10:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-05-06 11:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may experience elevated inter-region latency between following regions\n* Traffic between asia-east1 and asia-northeast3\n* Traffic between asia-east2 and asia-east1\n* Traffic between asia-east2 and asia-northeast3\n* Traffic between asia-southeast1 and asia-east1\n* Traffic between asia-southeast2 and asia-east1\nWorkaround: None at this time.",
+      "created": "2022-05-06T18:22:34+00:00",
+      "modified": "2022-05-06T18:22:36+00:00",
+      "when": "2022-05-06T18:22:34+00:00",
+      "text": "Summary: Customers may experience elevated latency for inter-region in multiple asia regions.\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Friday, 2022-05-06 16:00 US/Pacific.\nWe will provide more information by Friday, 2022-05-06 16:15 US/Pacific.\nDiagnosis: Customers may experience elevated inter-region latency between following regions\n* Traffic between asia-east1 and asia-northeast3\n* Traffic between asia-east2 and asia-east1\n* Traffic between asia-east2 and asia-northeast3\n* Traffic between asia-southeast1 and asia-east1\n* Traffic between asia-southeast2 and asia-east1\nWorkaround: None at this time.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
@@ -170,9 +199,22 @@
     "number": "2022535118131364015",
     "begin": "2022-05-06T11:58:58+00:00",
     "created": "2022-05-06T12:01:47+00:00",
-    "modified": "2022-05-06T17:57:45+00:00",
+    "modified": "2022-05-06T18:16:49+00:00",
     "external_desc": "We are experiencing an issue with Persistent Disk affecting multiple services in us-central1-b",
     "updates": [
+      {
+        "created": "2022-05-06T18:16:49+00:00",
+        "modified": "2022-05-06T18:16:53+00:00",
+        "when": "2022-05-06T18:16:49+00:00",
+        "text": "Summary: We are experiencing an issue with Persistent Disk affecting multiple services in us-central1-b\nDescription: We are experiencing an issue with multiple cloud services including BigQuery, Cloud Networking, Cloud SQL, Google Kubernetes Engine (GKE), Cloud Filestore, Cloud Bigtable, Cloud Memorystore, Apigee, Cloud Dataflow services, Cloud Data Fusion (CDF) beginning at Friday, 2022-05-06 01:20 US/Pacific in us-central1-b.\nMitigation is completed, and most of the affected services have recovered.\nWe will provide more information by Friday, 2022-05-06 12:30 US/Pacific.\nProducts Recovered: * BigQuery Engine * Cloud Pub/Sub * Cloud Networking * Compute Engine * Datastream * Cloud Filestore * Cloud Memorystore * Cloud SQL * Cloud Data Fusion * Apigee * Dataflow * GKE\nProducts Still Recovering: * Google Cloud Bigtable: Mitigation is ongoing for a small number of customers who are experiencing elevated latency and errors.\nDiagnosis: Customers might see connectivity issues in us-central1-b\nWorkaround: Move the workloads to a different zone if possible",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
       {
         "created": "2022-05-06T17:57:45+00:00",
         "modified": "2022-05-06T17:57:46+00:00",
@@ -357,10 +399,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-05-06T17:57:45+00:00",
-      "modified": "2022-05-06T17:57:46+00:00",
-      "when": "2022-05-06T17:57:45+00:00",
-      "text": "Summary: We are experiencing an issue with Persistent Disk affecting multiple services in us-central1-b\nDescription: We are experiencing an issue with multiple cloud services including BigQuery, Cloud Networking, Cloud SQL, Google Kubernetes Engine (GKE), Cloud Filestore, Cloud Bigtable, Cloud Memorystore, Apigee, Cloud Dataflow services, Cloud Data Fusion (CDF) beginning at Friday, 2022-05-06 01:20 US/Pacific in us-central1-b.\nMitigation is completed, and most of the affected services have recovered.\nWe will provide more information by Friday, 2022-05-06 11:30 US/Pacific.\nProducts Recovered: * BigQuery Engine * Cloud Pub/Sub * Cloud Networking * Compute Engine * Datastream * Cloud Filestore * Cloud Memorystore * Cloud SQL * Cloud Data Fusion * Apigee * Dataflow * GKE\nProducts Still Recovering: * Google Cloud Bigtable: Mitigation is ongoing for a small number of customers who are experiencing elevated latency and errors.\nDiagnosis: Customers might see connectivity issues in us-central1-b\nWorkaround: Move the workloads to a different zone if possible",
+      "created": "2022-05-06T18:16:49+00:00",
+      "modified": "2022-05-06T18:16:53+00:00",
+      "when": "2022-05-06T18:16:49+00:00",
+      "text": "Summary: We are experiencing an issue with Persistent Disk affecting multiple services in us-central1-b\nDescription: We are experiencing an issue with multiple cloud services including BigQuery, Cloud Networking, Cloud SQL, Google Kubernetes Engine (GKE), Cloud Filestore, Cloud Bigtable, Cloud Memorystore, Apigee, Cloud Dataflow services, Cloud Data Fusion (CDF) beginning at Friday, 2022-05-06 01:20 US/Pacific in us-central1-b.\nMitigation is completed, and most of the affected services have recovered.\nWe will provide more information by Friday, 2022-05-06 12:30 US/Pacific.\nProducts Recovered: * BigQuery Engine * Cloud Pub/Sub * Cloud Networking * Compute Engine * Datastream * Cloud Filestore * Cloud Memorystore * Cloud SQL * Cloud Data Fusion * Apigee * Dataflow * GKE\nProducts Still Recovering: * Google Cloud Bigtable: Mitigation is ongoing for a small number of customers who are experiencing elevated latency and errors.\nDiagnosis: Customers might see connectivity issues in us-central1-b\nWorkaround: Move the workloads to a different zone if possible",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
