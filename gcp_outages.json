@@ -52,9 +52,22 @@
     "number": "2022535118131364015",
     "begin": "2022-05-06T11:58:58+00:00",
     "created": "2022-05-06T12:01:47+00:00",
-    "modified": "2022-05-06T13:54:30+00:00",
+    "modified": "2022-05-06T14:25:49+00:00",
     "external_desc": "We are experiencing an issue with Persistent Disk affecting multiple services in us-central1-b",
     "updates": [
+      {
+        "created": "2022-05-06T14:25:49+00:00",
+        "modified": "2022-05-06T14:25:50+00:00",
+        "when": "2022-05-06T14:25:49+00:00",
+        "text": "Summary: We are experiencing an issue with Persistent Disk affecting multiple services in us-central1-b\nDescription: We are experiencing an issue with Persistent Disk affecting multiple services including BigQuery, Cloud Networking, Cloud SQL, GKE, Cloud Filestore, Cloud Bigtable, Cloud Memorystore, Apigee, Cloud Dataflow services, Cloud Data Fusion beginning at Friday, 2022-05-06 01:20 US/Pacific in us-central1-b.\nMitigation is completed and we see that most of the affected services have recovered.\nWe will provide more information by Friday, 2022-05-06 08:00 US/Pacific.\nProduct Impact:\n- BigQuery Engine: Customers may see increased query latencies and/or failures.\n- Cloud Pub/Sub: Customer may see missing metrics for backlog statistics.\n- Cloud Networking: Customers may see connectivity issues.\n- Compute Engine: Customers may see issues with VM availability in us-central1-b.\n- Datastream: Customers may see streams enter into \"Failed\" state on the Datastream UI, notice no new data ingested by Datastream into GCS bucket or metrics not being reported.\n- Cloud Filestore: Customers may experience many hung tasks in filestore VMs.\n- Cloud Memorystore: Redis nodes in us-central1-b may be unavailable.\n- Cloud SQL: Customers may not be able to connect to their instance in us-central1-b through proxy-server.\n- Apigee: Customers may see 5XX errors for their API traffic with Datastore Errors.\nDiagnosis: Customers might see connectivity issues in us-central1-b\nWorkaround: Move the workloads to a different zone if possible",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
       {
         "created": "2022-05-06T13:54:30+00:00",
         "modified": "2022-05-06T13:54:32+00:00",
@@ -135,10 +148,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-05-06T13:54:30+00:00",
-      "modified": "2022-05-06T13:54:32+00:00",
-      "when": "2022-05-06T13:54:30+00:00",
-      "text": "Summary: We are experiencing an issue with Persistent Disk affecting multiple services in us-central1-b\nDescription: We are experiencing an issue with Persistent Disk affecting multiple services including BigQuery, Cloud Networking, Cloud SQL, GKE, Cloud Filestore, Cloud Bigtable, Cloud Memorystore, Apigee, Cloud Dataflow services beginning at Friday, 2022-05-06 01:20 US/Pacific in us-central1-b.\nMitigation work is currently underway by our engineering team. We see partial recovery for some services.\nWe will provide more information by Friday, 2022-05-06 07:30 US/Pacific.\nProduct Impact:\n- BigQuery Engine: Customers may see increased query latencies and/or failures.\n- Cloud Pub/Sub: Customer may see missing metrics for backlog statistics\n- Cloud Networking : Customers may see connectivity issues.\n- Compute Engine : Customers may see issues with VM availability in us-central1-b\n- Datastream: Customers may see streams enter into \"Failed\" state on the Datastream UI, notice no new data ingested by Datastream into GCS bucket or metrics not being reported.\n- Cloud Filestore : Customers may experience many hung tasks in filestore VMs.\n- Cloud Memorystore: Redis nodes in us-central1-b may be unavailable\n- Cloud SQL: Customers may not be able to connect to their instance in us-central1-b through proxy-server.\nDiagnosis: Customers might see connectivity issues in us-central1-b\nWorkaround: Move the workloads to a different zone if possible",
+      "created": "2022-05-06T14:25:49+00:00",
+      "modified": "2022-05-06T14:25:50+00:00",
+      "when": "2022-05-06T14:25:49+00:00",
+      "text": "Summary: We are experiencing an issue with Persistent Disk affecting multiple services in us-central1-b\nDescription: We are experiencing an issue with Persistent Disk affecting multiple services including BigQuery, Cloud Networking, Cloud SQL, GKE, Cloud Filestore, Cloud Bigtable, Cloud Memorystore, Apigee, Cloud Dataflow services, Cloud Data Fusion beginning at Friday, 2022-05-06 01:20 US/Pacific in us-central1-b.\nMitigation is completed and we see that most of the affected services have recovered.\nWe will provide more information by Friday, 2022-05-06 08:00 US/Pacific.\nProduct Impact:\n- BigQuery Engine: Customers may see increased query latencies and/or failures.\n- Cloud Pub/Sub: Customer may see missing metrics for backlog statistics.\n- Cloud Networking: Customers may see connectivity issues.\n- Compute Engine: Customers may see issues with VM availability in us-central1-b.\n- Datastream: Customers may see streams enter into \"Failed\" state on the Datastream UI, notice no new data ingested by Datastream into GCS bucket or metrics not being reported.\n- Cloud Filestore: Customers may experience many hung tasks in filestore VMs.\n- Cloud Memorystore: Redis nodes in us-central1-b may be unavailable.\n- Cloud SQL: Customers may not be able to connect to their instance in us-central1-b through proxy-server.\n- Apigee: Customers may see 5XX errors for their API traffic with Datastore Errors.\nDiagnosis: Customers might see connectivity issues in us-central1-b\nWorkaround: Move the workloads to a different zone if possible",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
@@ -195,6 +208,10 @@
       {
         "title": "Cloud Filestore",
         "id": "jog4nyYkquiLeSK5s26q"
+      },
+      {
+        "title": "Cloud Data Fusion",
+        "id": "rLKDHeeaBiXTeutF1air"
       }
     ],
     "uri": "incidents/4Qvmd4q81VnA9RirCMqV",
