@@ -254,14 +254,147 @@
     "previously_affected_locations": []
   },
   {
+    "id": "1YzVoQe8tR83ubvbAnDd",
+    "number": "4016492199676528941",
+    "begin": "2022-05-06T11:00:01+00:00",
+    "created": "2022-05-06T12:18:46+00:00",
+    "end": "2022-05-06T13:13:16+00:00",
+    "modified": "2022-05-06T13:13:16+00:00",
+    "external_desc": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/4Qvmd4q81VnA9RirCMqV",
+    "updates": [
+      {
+        "created": "2022-05-06T13:13:15+00:00",
+        "modified": "2022-05-06T13:13:16+00:00",
+        "when": "2022-05-06T13:13:15+00:00",
+        "text": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/4Qvmd4q81VnA9RirCMqV",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2022-05-06T12:18:38+00:00",
+        "modified": "2022-05-06T12:18:49+00:00",
+        "when": "2022-05-06T12:18:38+00:00",
+        "text": "Summary: Hung tasks in Cloud Filestore in us-central1-b. Investigation ongoing\nDescription: We are experiencing an issue with Persistent Disk affecting multiple services beginning at Friday, 2022-05-06 01:20 US/Pacific in us-central1.\nOur engineering team continues to investigate the issue.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Slow and possible hung NFS\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": []
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-05-06T13:13:15+00:00",
+      "modified": "2022-05-06T13:13:16+00:00",
+      "when": "2022-05-06T13:13:15+00:00",
+      "text": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/4Qvmd4q81VnA9RirCMqV",
+      "status": "AVAILABLE",
+      "affected_locations": []
+    },
+    "status_impact": "SERVICE_OUTAGE",
+    "severity": "high",
+    "service_key": "jog4nyYkquiLeSK5s26q",
+    "service_name": "Cloud Filestore",
+    "affected_products": [
+      {
+        "title": "Cloud Filestore",
+        "id": "jog4nyYkquiLeSK5s26q"
+      }
+    ],
+    "uri": "incidents/1YzVoQe8tR83ubvbAnDd",
+    "currently_affected_locations": [],
+    "previously_affected_locations": []
+  },
+  {
+    "id": "YUJH3JbojVM5WE4jxyrc",
+    "number": "10598063297897699427",
+    "begin": "2022-05-06T09:15:37+00:00",
+    "created": "2022-05-06T11:35:38+00:00",
+    "end": "2022-05-06T12:45:00+00:00",
+    "modified": "2022-05-06T12:45:01+00:00",
+    "external_desc": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
+    "updates": [
+      {
+        "created": "2022-05-06T12:44:54+00:00",
+        "modified": "2022-05-06T12:45:02+00:00",
+        "when": "2022-05-06T12:44:54+00:00",
+        "text": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-05-06T11:35:33+00:00",
+        "modified": "2022-05-06T11:35:39+00:00",
+        "when": "2022-05-06T11:35:33+00:00",
+        "text": "Summary: Elevated tail latencies on Persistent Disk standard devices\nDescription: We are experiencing an issue with Persistent Disk beginning at Friday, 2022-05-06 01:20 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-05-06 05:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Some I/O operations in Persistent Disk Standard devices are stuck for a long time (>1 min)\nWorkaround: Move the workloads to a different zone if possible",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-05-06T12:44:54+00:00",
+      "modified": "2022-05-06T12:45:02+00:00",
+      "when": "2022-05-06T12:44:54+00:00",
+      "text": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Iowa (us-central1)",
+          "id": "us-central1"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Google Compute Engine",
+        "id": "L3ggmi3Jy4xJmgodFA9K"
+      },
+      {
+        "title": "Persistent Disk",
+        "id": "SzESm2Ux129pjDGKWD68"
+      }
+    ],
+    "uri": "incidents/YUJH3JbojVM5WE4jxyrc",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Iowa (us-central1)",
+        "id": "us-central1"
+      }
+    ]
+  },
+  {
     "id": "4Qvmd4q81VnA9RirCMqV",
     "number": "2022535118131364015",
-    "begin": "2022-05-06T11:58:58+00:00",
+    "begin": "2022-05-06T08:30:00+00:00",
     "created": "2022-05-06T12:01:47+00:00",
-    "end": "2022-05-06T19:09:52+00:00",
-    "modified": "2022-05-06T19:09:52+00:00",
+    "end": "2022-05-06T19:06:00+00:00",
+    "modified": "2022-05-06T23:12:36+00:00",
     "external_desc": "We are experiencing an issue with Persistent Disk affecting multiple services in us-central1-b",
     "updates": [
+      {
+        "created": "2022-05-06T23:12:13+00:00",
+        "modified": "2022-05-06T23:12:13+00:00",
+        "when": "2022-05-06T23:12:13+00:00",
+        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 06 May 2022 01:30\n**Incident End:** 06 May 2022 12:06\n**Duration:** 10 hours, 36 minutes\n**Affected Services and Features:** * BigQuery * Cloud Pub/Sub * Google Cloud Load Balancer (GCLB) * Google Compute Engine (GCE) * Datastream * Cloud Filestore * Cloud Memorystore * Cloud SQL * Apigee * Cloud Dataflow * Cloud Data Fusion (CDF) * Cloud Bigtable * Google Kubernetes Engine (GKE)\n**Regions/Zones:** us-central1-b\n**Description:**\nMultiple Google Cloud services experienced issues in the us-central1 region beginning Friday, 6 May 2022 at 01:30 PT. These issues were predominantly isolated to us-central1-b for zonal services, but some regional services experienced degradation until their traffic could be shifted away from the impacted zone. Most services recovered automatically after the underlying problem was resolved.\nThe issues were triggered by an unexpected increase in normally occurring background traffic in the Google Cloud distributed storage infrastructure[1] within the us-central1-b zone. The system automatically directed load away from backend file servers that were impacted by this load increase. This subsequently reduced the overall traffic capacity in the zone. Google engineers mitigated the issue by stopping the background traffic and marking the impacted file servers as available in order to increase capacity.\n**Customer Impact:**\n**How Customers Experienced the Issue:** Some customers may have experienced high latency or errors in multiple Google Cloud services in the impacted region.\n* **BigQuery:** Customers may have seen increased query delays and/or failures.\n* **Cloud Bigtable:** Customers may have experienced elevated latency and errors.\n* **Cloud Pub/Sub:** Customers may have seen missing metrics for backlog statistics.\n* **Google Cloud Load Balancer (GCLB):** New load balancer creations, as well as modifications or deletions of existing components, with backends in us-central1-b may have been delayed or not taken effect until the outage was resolved.\n* **Google Compute Engine (GCE):** Customers may have seen issues with instance availability in us-central1-b due to some input/output (I/O) operations in Persistent Disk being stuck for over one minute. A small number of instances may have experienced brief loss of network reachability to other Google Cloud services following live migration events.\n* **Datastream:** Customers may have seen streams enter into \"Failed\" state on the Datastream UI, noticed no new data ingested by Datastream into Google Cloud Storage bucket, or metrics not being reported.\n* **Cloud Filestore:** Customers may have experienced hung tasks in Filestore instances.\n* **Cloud Memorystore:** Redis nodes in us-central1-b may have been unavailable.\n* **Cloud SQL:** Customers may not have been able to connect to their instance in us-central1-b through the proxy-server.\n* **Google Kubernetes Engine (GKE):** Customers may have experienced issues interacting with the control plane. New workloads may not have been scheduled. Auto scaling may not have been operational.\n* **Apigee:** Customers may have seen errors for their API traffic with Datastore Errors.\n* **Dataflow:** Some Dataflow batch and streaming jobs in us-central1 may have been stuck or delayed.\n* **Cloud Data Fusion (CDF):** CDF operations, like instance creation and pipeline launch, may have failed in the us-central1 region due to an issue on Compute Engine.\n[1] https://cloud.google.com/blog/products/storage-data-transfer/a-peek-behind-colossus-googles-file-system",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
       {
         "created": "2022-05-06T19:09:51+00:00",
         "modified": "2022-05-06T19:09:53+00:00",
@@ -472,10 +605,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-05-06T19:09:51+00:00",
-      "modified": "2022-05-06T19:09:53+00:00",
-      "when": "2022-05-06T19:09:51+00:00",
-      "text": "The issue with Cloud Data Fusion, Cloud Filestore, Cloud Memorystore, Google BigQuery, Google Cloud Dataflow, Google Cloud Networking, Google Cloud Pub/Sub, Google Cloud SQL, Google Kubernetes Engine, Persistent Disk, Apigee has been resolved for all affected projects as of Friday, 2022-05-06 12:06 US/Pacific.\nProducts with Narrow Impact: * Google Cloud Bigtable: Outage is currently affecting less than 2% of customers us-central1-b. Mitigation is ongoing and support will continue to work with the affected customers through resolution.\nWe will publish an Incident Report once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-05-06T23:12:13+00:00",
+      "modified": "2022-05-06T23:12:13+00:00",
+      "when": "2022-05-06T23:12:13+00:00",
+      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 06 May 2022 01:30\n**Incident End:** 06 May 2022 12:06\n**Duration:** 10 hours, 36 minutes\n**Affected Services and Features:** * BigQuery * Cloud Pub/Sub * Google Cloud Load Balancer (GCLB) * Google Compute Engine (GCE) * Datastream * Cloud Filestore * Cloud Memorystore * Cloud SQL * Apigee * Cloud Dataflow * Cloud Data Fusion (CDF) * Cloud Bigtable * Google Kubernetes Engine (GKE)\n**Regions/Zones:** us-central1-b\n**Description:**\nMultiple Google Cloud services experienced issues in the us-central1 region beginning Friday, 6 May 2022 at 01:30 PT. These issues were predominantly isolated to us-central1-b for zonal services, but some regional services experienced degradation until their traffic could be shifted away from the impacted zone. Most services recovered automatically after the underlying problem was resolved.\nThe issues were triggered by an unexpected increase in normally occurring background traffic in the Google Cloud distributed storage infrastructure[1] within the us-central1-b zone. The system automatically directed load away from backend file servers that were impacted by this load increase. This subsequently reduced the overall traffic capacity in the zone. Google engineers mitigated the issue by stopping the background traffic and marking the impacted file servers as available in order to increase capacity.\n**Customer Impact:**\n**How Customers Experienced the Issue:** Some customers may have experienced high latency or errors in multiple Google Cloud services in the impacted region.\n* **BigQuery:** Customers may have seen increased query delays and/or failures.\n* **Cloud Bigtable:** Customers may have experienced elevated latency and errors.\n* **Cloud Pub/Sub:** Customers may have seen missing metrics for backlog statistics.\n* **Google Cloud Load Balancer (GCLB):** New load balancer creations, as well as modifications or deletions of existing components, with backends in us-central1-b may have been delayed or not taken effect until the outage was resolved.\n* **Google Compute Engine (GCE):** Customers may have seen issues with instance availability in us-central1-b due to some input/output (I/O) operations in Persistent Disk being stuck for over one minute. A small number of instances may have experienced brief loss of network reachability to other Google Cloud services following live migration events.\n* **Datastream:** Customers may have seen streams enter into \"Failed\" state on the Datastream UI, noticed no new data ingested by Datastream into Google Cloud Storage bucket, or metrics not being reported.\n* **Cloud Filestore:** Customers may have experienced hung tasks in Filestore instances.\n* **Cloud Memorystore:** Redis nodes in us-central1-b may have been unavailable.\n* **Cloud SQL:** Customers may not have been able to connect to their instance in us-central1-b through the proxy-server.\n* **Google Kubernetes Engine (GKE):** Customers may have experienced issues interacting with the control plane. New workloads may not have been scheduled. Auto scaling may not have been operational.\n* **Apigee:** Customers may have seen errors for their API traffic with Datastore Errors.\n* **Dataflow:** Some Dataflow batch and streaming jobs in us-central1 may have been stuck or delayed.\n* **Cloud Data Fusion (CDF):** CDF operations, like instance creation and pipeline launch, may have failed in the us-central1 region due to an issue on Compute Engine.\n[1] https://cloud.google.com/blog/products/storage-data-transfer/a-peek-behind-colossus-googles-file-system",
       "status": "AVAILABLE",
       "affected_locations": [
         {
@@ -543,126 +676,6 @@
       }
     ],
     "uri": "incidents/4Qvmd4q81VnA9RirCMqV",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Iowa (us-central1)",
-        "id": "us-central1"
-      }
-    ]
-  },
-  {
-    "id": "1YzVoQe8tR83ubvbAnDd",
-    "number": "4016492199676528941",
-    "begin": "2022-05-06T11:00:01+00:00",
-    "created": "2022-05-06T12:18:46+00:00",
-    "end": "2022-05-06T13:13:16+00:00",
-    "modified": "2022-05-06T13:13:16+00:00",
-    "external_desc": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/4Qvmd4q81VnA9RirCMqV",
-    "updates": [
-      {
-        "created": "2022-05-06T13:13:15+00:00",
-        "modified": "2022-05-06T13:13:16+00:00",
-        "when": "2022-05-06T13:13:15+00:00",
-        "text": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/4Qvmd4q81VnA9RirCMqV",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2022-05-06T12:18:38+00:00",
-        "modified": "2022-05-06T12:18:49+00:00",
-        "when": "2022-05-06T12:18:38+00:00",
-        "text": "Summary: Hung tasks in Cloud Filestore in us-central1-b. Investigation ongoing\nDescription: We are experiencing an issue with Persistent Disk affecting multiple services beginning at Friday, 2022-05-06 01:20 US/Pacific in us-central1.\nOur engineering team continues to investigate the issue.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Slow and possible hung NFS\nWorkaround: None at this time.",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": []
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-05-06T13:13:15+00:00",
-      "modified": "2022-05-06T13:13:16+00:00",
-      "when": "2022-05-06T13:13:15+00:00",
-      "text": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/4Qvmd4q81VnA9RirCMqV",
-      "status": "AVAILABLE",
-      "affected_locations": []
-    },
-    "status_impact": "SERVICE_OUTAGE",
-    "severity": "high",
-    "service_key": "jog4nyYkquiLeSK5s26q",
-    "service_name": "Cloud Filestore",
-    "affected_products": [
-      {
-        "title": "Cloud Filestore",
-        "id": "jog4nyYkquiLeSK5s26q"
-      }
-    ],
-    "uri": "incidents/1YzVoQe8tR83ubvbAnDd",
-    "currently_affected_locations": [],
-    "previously_affected_locations": []
-  },
-  {
-    "id": "YUJH3JbojVM5WE4jxyrc",
-    "number": "10598063297897699427",
-    "begin": "2022-05-06T09:15:37+00:00",
-    "created": "2022-05-06T11:35:38+00:00",
-    "end": "2022-05-06T12:45:00+00:00",
-    "modified": "2022-05-06T12:45:01+00:00",
-    "external_desc": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
-    "updates": [
-      {
-        "created": "2022-05-06T12:44:54+00:00",
-        "modified": "2022-05-06T12:45:02+00:00",
-        "when": "2022-05-06T12:44:54+00:00",
-        "text": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-05-06T11:35:33+00:00",
-        "modified": "2022-05-06T11:35:39+00:00",
-        "when": "2022-05-06T11:35:33+00:00",
-        "text": "Summary: Elevated tail latencies on Persistent Disk standard devices\nDescription: We are experiencing an issue with Persistent Disk beginning at Friday, 2022-05-06 01:20 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-05-06 05:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Some I/O operations in Persistent Disk Standard devices are stuck for a long time (>1 min)\nWorkaround: Move the workloads to a different zone if possible",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-05-06T12:44:54+00:00",
-      "modified": "2022-05-06T12:45:02+00:00",
-      "when": "2022-05-06T12:44:54+00:00",
-      "text": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Google Compute Engine",
-        "id": "L3ggmi3Jy4xJmgodFA9K"
-      },
-      {
-        "title": "Persistent Disk",
-        "id": "SzESm2Ux129pjDGKWD68"
-      }
-    ],
-    "uri": "incidents/YUJH3JbojVM5WE4jxyrc",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
