@@ -4,9 +4,38 @@
     "number": "1062169737220912229",
     "begin": "2022-05-06T18:01:01+00:00",
     "created": "2022-05-06T18:01:06+00:00",
-    "modified": "2022-05-06T18:22:34+00:00",
+    "modified": "2022-05-06T22:20:50+00:00",
     "external_desc": "Customers may experience elevated latency for inter-region in multiple asia regions.",
     "updates": [
+      {
+        "created": "2022-05-06T22:20:50+00:00",
+        "modified": "2022-05-06T22:20:51+00:00",
+        "when": "2022-05-06T22:20:50+00:00",
+        "text": "Summary: Customers may experience elevated latency for inter-region in multiple asia regions.\nDescription: We believe the issue with Cloud Memorystore, Google Cloud Networking, Google Cloud SQL, Google Compute Engine, Google Kubernetes Engine is partially resolved.\nFull resolution is expected to complete by Friday, 2022-05-06 16:30 US/Pacific.\nWe will provide an update by Friday, 2022-05-06 16:45 US/Pacific with current details.\nDiagnosis: Customers may experience elevated inter-region latency between following regions\n* Traffic between asia-east1 and asia-northeast3\n* Traffic between asia-east2 and asia-east1\n* Traffic between asia-east2 and asia-northeast3\n* Traffic between asia-southeast1 and asia-east1\n* Traffic between asia-southeast2 and asia-east1\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          }
+        ]
+      },
       {
         "created": "2022-05-06T18:22:34+00:00",
         "modified": "2022-05-06T18:22:36+00:00",
@@ -67,10 +96,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-05-06T18:22:34+00:00",
-      "modified": "2022-05-06T18:22:36+00:00",
-      "when": "2022-05-06T18:22:34+00:00",
-      "text": "Summary: Customers may experience elevated latency for inter-region in multiple asia regions.\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Friday, 2022-05-06 16:00 US/Pacific.\nWe will provide more information by Friday, 2022-05-06 16:15 US/Pacific.\nDiagnosis: Customers may experience elevated inter-region latency between following regions\n* Traffic between asia-east1 and asia-northeast3\n* Traffic between asia-east2 and asia-east1\n* Traffic between asia-east2 and asia-northeast3\n* Traffic between asia-southeast1 and asia-east1\n* Traffic between asia-southeast2 and asia-east1\nWorkaround: None at this time.",
+      "created": "2022-05-06T22:20:50+00:00",
+      "modified": "2022-05-06T22:20:51+00:00",
+      "when": "2022-05-06T22:20:50+00:00",
+      "text": "Summary: Customers may experience elevated latency for inter-region in multiple asia regions.\nDescription: We believe the issue with Cloud Memorystore, Google Cloud Networking, Google Cloud SQL, Google Compute Engine, Google Kubernetes Engine is partially resolved.\nFull resolution is expected to complete by Friday, 2022-05-06 16:30 US/Pacific.\nWe will provide an update by Friday, 2022-05-06 16:45 US/Pacific with current details.\nDiagnosis: Customers may experience elevated inter-region latency between following regions\n* Traffic between asia-east1 and asia-northeast3\n* Traffic between asia-east2 and asia-east1\n* Traffic between asia-east2 and asia-northeast3\n* Traffic between asia-southeast1 and asia-east1\n* Traffic between asia-southeast2 and asia-east1\nWorkaround: None at this time.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
