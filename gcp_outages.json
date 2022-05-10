@@ -116,107 +116,6 @@
     "previously_affected_locations": []
   },
   {
-    "id": "eWat683pNnkMT7orVDBV",
-    "number": "6487971899846239496",
-    "begin": "2022-05-09T08:16:25+00:00",
-    "created": "2022-05-09T08:28:43+00:00",
-    "end": "2022-05-09T09:49:52+00:00",
-    "modified": "2022-05-09T09:49:52+00:00",
-    "external_desc": "Google Cloud Infrastructure is failing to push cloud configs",
-    "updates": [
-      {
-        "created": "2022-05-09T09:49:51+00:00",
-        "modified": "2022-05-09T09:49:52+00:00",
-        "when": "2022-05-09T09:49:51+00:00",
-        "text": "The issue with Google App Engine, Google Cloud Composer, Google Cloud DNS, Google Cloud Networking, Google Compute Engine, Service Directory has been resolved for all affected users as of Monday, 2022-05-09 02:42 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2022-05-09T09:27:45+00:00",
-        "modified": "2022-05-09T09:27:46+00:00",
-        "when": "2022-05-09T09:27:45+00:00",
-        "text": "Summary: Google Cloud Infrastructure is failing to push cloud configs\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Monday, 2022-05-09 04:00 US/Pacific.\nDiagnosis: Customers may experience the following: 1) External HTTP/S Load Balancing, Cloud CDN - config changes will be accepted but fail to propagate 2) Cloud Armor rules may also be affected 3) App Engine Flex customers may see apps fail to deploy 4) Traffic Director may see configs fail to propagate 5) VM instance group health checks & functionality like autoscaling/autohealing may be affected.\nProduct Impact:\nGoogle App Engine Flex:\nImpact/Diagnosis: Users may observe error, DEADLINE_EXCEEDED. “Timed out waiting for the app infrastructure to become healthy”. This occurs when attempting to deploy major version updates.\nWorkaround: None.\nGoogle Cloud Networking\nImpact/Diagnosis: Cloud customers modifying backend configuration for load balanced products, or health check configuration, may see their configuration accepted but not propagate, or fail after a timeout.\nWorkaround: None\nCloud Composer:\nImpact: Users are unable to create Composer 1 and Composer 2 \"Private IP\" environments.\nWorkaround: No workaround is available for Composer 1. For Composer 2 “Private IP” the workaround is to create environments with Private Service Connect. Composer 2 “Public IP” environment creations should be successful.\nWorkaround: None",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2022-05-09T08:28:42+00:00",
-        "modified": "2022-05-09T08:28:43+00:00",
-        "when": "2022-05-09T08:28:42+00:00",
-        "text": "Summary: GICS is failing to push cloud configs\nDescription: We are experiencing an issue with Google Cloud DNS, Service Directory beginning at Sunday, 2022-05-08 23:24 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2022-05-09 03:00 US/Pacific with current details.\nDiagnosis: Customer's might experience following:\n1) External HTTP/S Load Balancing, Cloud CDN - config changes will be accepted & fail to propagate\n2) Cloud Armor rules may also be affected\n3) Appengine flex customers may see apps fail to deploy\n4) Traffic Director may see configs fail to propagate\n5) VM instance group healthchecks & functionality like autoscaling/autohealing may be affected\nWorkaround: None",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-05-09T09:49:51+00:00",
-      "modified": "2022-05-09T09:49:52+00:00",
-      "when": "2022-05-09T09:49:51+00:00",
-      "text": "The issue with Google App Engine, Google Cloud Composer, Google Cloud DNS, Google Cloud Networking, Google Compute Engine, Service Directory has been resolved for all affected users as of Monday, 2022-05-09 02:42 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Global",
-          "id": "global"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Google Compute Engine",
-        "id": "L3ggmi3Jy4xJmgodFA9K"
-      },
-      {
-        "title": "Google Cloud DNS",
-        "id": "TUZUsWSJUVJGW97Jq2sH"
-      },
-      {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
-      },
-      {
-        "title": "Google Cloud Composer",
-        "id": "YxkG5FfcC42cQmvBCk4j"
-      },
-      {
-        "title": "Google App Engine",
-        "id": "kchyUtnkMHJWaAva8aYc"
-      },
-      {
-        "title": "Service Directory",
-        "id": "vmq8TsEZwitKYM6V9BaM"
-      }
-    ],
-    "uri": "incidents/eWat683pNnkMT7orVDBV",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Global",
-        "id": "global"
-      }
-    ]
-  },
-  {
     "id": "SmJPisFk1m1KH7UTJrM5",
     "number": "1736553551166578884",
     "begin": "2022-05-09T08:05:00+00:00",
@@ -845,6 +744,120 @@
       {
         "title": "Las Vegas (us-west4)",
         "id": "us-west4"
+      }
+    ]
+  },
+  {
+    "id": "eWat683pNnkMT7orVDBV",
+    "number": "6487971899846239496",
+    "begin": "2022-05-09T06:24:00+00:00",
+    "created": "2022-05-09T08:28:43+00:00",
+    "end": "2022-05-09T09:42:00+00:00",
+    "modified": "2022-05-10T22:40:46+00:00",
+    "external_desc": "Google Cloud Infrastructure is failing to push cloud configs",
+    "updates": [
+      {
+        "created": "2022-05-10T22:40:22+00:00",
+        "modified": "2022-05-10T22:40:22+00:00",
+        "when": "2022-05-10T22:40:22+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 08 May 2022 23:24\n**Incident End:** 09 May 2022 02:42\n**Duration:** 3 hours, 18 minutes\n**Affected Services and Features:**\n* Google Cloud Networking\n* Google App Engine\n* Google Cloud Composer\n**Regions/Zones:** Global\n**Description:**\nMultiple Google Cloud services experienced issues from 8 May 2022 23:24 to 9 May 2022 02:42 US/Pacific. From preliminary analysis, the root cause of the issue was network issues that caused tests to fail which led the configuration management system to treat the config as a bad config and prevented propagating configuration changes to Google Cloud infrastructure backend servers.\n**Customer Impact:**\n* Google Cloud Networking - Customers modifying backend configuration for load balanced products or health check configuration may have seen their configuration accepted but not propagate, or fail after a timeout\n* Google App Engine - Customers may have observed the error, DEADLINE_EXCEEDED - “Timed out waiting for the app infrastructure to become healthy” when attempting to deploy updates.\n* Google Cloud Composer - Customers would have been unable to create Composer 1 and some Composer 2 \"Private IP\" environments (only those using VPC peering, environments using Private Service Connect were unaffected).",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
+        "created": "2022-05-09T09:49:51+00:00",
+        "modified": "2022-05-09T09:49:52+00:00",
+        "when": "2022-05-09T09:49:51+00:00",
+        "text": "The issue with Google App Engine, Google Cloud Composer, Google Cloud DNS, Google Cloud Networking, Google Compute Engine, Service Directory has been resolved for all affected users as of Monday, 2022-05-09 02:42 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
+        "created": "2022-05-09T09:27:45+00:00",
+        "modified": "2022-05-09T09:27:46+00:00",
+        "when": "2022-05-09T09:27:45+00:00",
+        "text": "Summary: Google Cloud Infrastructure is failing to push cloud configs\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Monday, 2022-05-09 04:00 US/Pacific.\nDiagnosis: Customers may experience the following: 1) External HTTP/S Load Balancing, Cloud CDN - config changes will be accepted but fail to propagate 2) Cloud Armor rules may also be affected 3) App Engine Flex customers may see apps fail to deploy 4) Traffic Director may see configs fail to propagate 5) VM instance group health checks & functionality like autoscaling/autohealing may be affected.\nProduct Impact:\nGoogle App Engine Flex:\nImpact/Diagnosis: Users may observe error, DEADLINE_EXCEEDED. “Timed out waiting for the app infrastructure to become healthy”. This occurs when attempting to deploy major version updates.\nWorkaround: None.\nGoogle Cloud Networking\nImpact/Diagnosis: Cloud customers modifying backend configuration for load balanced products, or health check configuration, may see their configuration accepted but not propagate, or fail after a timeout.\nWorkaround: None\nCloud Composer:\nImpact: Users are unable to create Composer 1 and Composer 2 \"Private IP\" environments.\nWorkaround: No workaround is available for Composer 1. For Composer 2 “Private IP” the workaround is to create environments with Private Service Connect. Composer 2 “Public IP” environment creations should be successful.\nWorkaround: None",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
+        "created": "2022-05-09T08:28:42+00:00",
+        "modified": "2022-05-09T08:28:43+00:00",
+        "when": "2022-05-09T08:28:42+00:00",
+        "text": "Summary: GICS is failing to push cloud configs\nDescription: We are experiencing an issue with Google Cloud DNS, Service Directory beginning at Sunday, 2022-05-08 23:24 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2022-05-09 03:00 US/Pacific with current details.\nDiagnosis: Customer's might experience following:\n1) External HTTP/S Load Balancing, Cloud CDN - config changes will be accepted & fail to propagate\n2) Cloud Armor rules may also be affected\n3) Appengine flex customers may see apps fail to deploy\n4) Traffic Director may see configs fail to propagate\n5) VM instance group healthchecks & functionality like autoscaling/autohealing may be affected\nWorkaround: None",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-05-10T22:40:22+00:00",
+      "modified": "2022-05-10T22:40:22+00:00",
+      "when": "2022-05-10T22:40:22+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 08 May 2022 23:24\n**Incident End:** 09 May 2022 02:42\n**Duration:** 3 hours, 18 minutes\n**Affected Services and Features:**\n* Google Cloud Networking\n* Google App Engine\n* Google Cloud Composer\n**Regions/Zones:** Global\n**Description:**\nMultiple Google Cloud services experienced issues from 8 May 2022 23:24 to 9 May 2022 02:42 US/Pacific. From preliminary analysis, the root cause of the issue was network issues that caused tests to fail which led the configuration management system to treat the config as a bad config and prevented propagating configuration changes to Google Cloud infrastructure backend servers.\n**Customer Impact:**\n* Google Cloud Networking - Customers modifying backend configuration for load balanced products or health check configuration may have seen their configuration accepted but not propagate, or fail after a timeout\n* Google App Engine - Customers may have observed the error, DEADLINE_EXCEEDED - “Timed out waiting for the app infrastructure to become healthy” when attempting to deploy updates.\n* Google Cloud Composer - Customers would have been unable to create Composer 1 and some Composer 2 \"Private IP\" environments (only those using VPC peering, environments using Private Service Connect were unaffected).",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Global",
+          "id": "global"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Google Compute Engine",
+        "id": "L3ggmi3Jy4xJmgodFA9K"
+      },
+      {
+        "title": "Google Cloud DNS",
+        "id": "TUZUsWSJUVJGW97Jq2sH"
+      },
+      {
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
+      },
+      {
+        "title": "Google Cloud Composer",
+        "id": "YxkG5FfcC42cQmvBCk4j"
+      },
+      {
+        "title": "Google App Engine",
+        "id": "kchyUtnkMHJWaAva8aYc"
+      },
+      {
+        "title": "Service Directory",
+        "id": "vmq8TsEZwitKYM6V9BaM"
+      }
+    ],
+    "uri": "incidents/eWat683pNnkMT7orVDBV",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Global",
+        "id": "global"
       }
     ]
   },
