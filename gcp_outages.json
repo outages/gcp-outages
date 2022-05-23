@@ -81,9 +81,134 @@
     "begin": "2022-05-20T21:03:38+00:00",
     "created": "2022-05-20T21:44:17+00:00",
     "end": "2022-05-20T21:52:25+00:00",
-    "modified": "2022-05-20T21:52:25+00:00",
+    "modified": "2022-05-23T21:33:36+00:00",
     "external_desc": "Global : Cloud Networking faced severe packet loss",
     "updates": [
+      {
+        "created": "2022-05-23T21:33:36+00:00",
+        "modified": "2022-05-23T21:33:36+00:00",
+        "when": "2022-05-23T21:33:36+00:00",
+        "text": "**Mini Incident Report**\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 20 May 2022 13:47\n**Incident End:** 20 May 2022 14:07\n**Duration:** 20 minutes\n**Affected Services and Features:**\n* Google Cloud Networking\n* Cloud VPN\n* Cloud Router\n* Cloud Interconnect\n* Google Cloud Storage\n* Cloud SQL\n* Messages\n**Regions/Zones:** Multiple regions\n**Description:**\nGoogle Cloud Networking experienced intermittent packet loss for some transit traffic affecting inter-region connectivity for multiple cloud regions, which lasted 20 minutes. From preliminary analysis, the root cause is a hardware issue on an optical (amplification) component affecting Google's user facing backbone. The issue was identified and mitigated by our automated repair mechanism without manual intervention.\n**Customer Impact:** * Google Cloud Networking - Affected customers would have observed packet loss for Ingress and egress traffic to and from central US cloud regions. * Cloud VPN - Affected customers would have experienced latency and errors for cross region VPN with global routing. Intra-region traffic for Classic and HA VPN would not have been affected.\n* Cloud Router - Affected customers would have observed delays in global routing propagation.\n* Cloud Interconnect - Affected customers would have experienced latency and errors.\n* Google Cloud Storage - Affected customers would have experienced elevated latency, HTTP 500 errors, or transient API errors. * Cloud SQL - Affected customers would have experienced failures for Export, Update, and Delete operations as well as delayed data replication in us-west1.\n* Messages - Affected customers would have experienced service availability issues.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2022-05-20T21:52:20+00:00",
         "modified": "2022-05-20T21:52:27+00:00",
@@ -336,10 +461,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-05-20T21:52:20+00:00",
-      "modified": "2022-05-20T21:52:27+00:00",
-      "when": "2022-05-20T21:52:20+00:00",
-      "text": "The issue with Google Cloud Networking has been resolved for all affected users as of Friday, 2022-05-20 14:07 US/Pacific.\nAffected customers would have experienced high latency, timeouts and errors.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-05-23T21:33:36+00:00",
+      "modified": "2022-05-23T21:33:36+00:00",
+      "when": "2022-05-23T21:33:36+00:00",
+      "text": "**Mini Incident Report**\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 20 May 2022 13:47\n**Incident End:** 20 May 2022 14:07\n**Duration:** 20 minutes\n**Affected Services and Features:**\n* Google Cloud Networking\n* Cloud VPN\n* Cloud Router\n* Cloud Interconnect\n* Google Cloud Storage\n* Cloud SQL\n* Messages\n**Regions/Zones:** Multiple regions\n**Description:**\nGoogle Cloud Networking experienced intermittent packet loss for some transit traffic affecting inter-region connectivity for multiple cloud regions, which lasted 20 minutes. From preliminary analysis, the root cause is a hardware issue on an optical (amplification) component affecting Google's user facing backbone. The issue was identified and mitigated by our automated repair mechanism without manual intervention.\n**Customer Impact:** * Google Cloud Networking - Affected customers would have observed packet loss for Ingress and egress traffic to and from central US cloud regions. * Cloud VPN - Affected customers would have experienced latency and errors for cross region VPN with global routing. Intra-region traffic for Classic and HA VPN would not have been affected.\n* Cloud Router - Affected customers would have observed delays in global routing propagation.\n* Cloud Interconnect - Affected customers would have experienced latency and errors.\n* Google Cloud Storage - Affected customers would have experienced elevated latency, HTTP 500 errors, or transient API errors. * Cloud SQL - Affected customers would have experienced failures for Export, Update, and Delete operations as well as delayed data replication in us-west1.\n* Messages - Affected customers would have experienced service availability issues.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
