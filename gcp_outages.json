@@ -2,12 +2,25 @@
   {
     "id": "rrmfPRaESXcrpfxPo5y6",
     "number": "17140268093845218737",
-    "begin": "2022-05-24T14:43:52+00:00",
+    "begin": "2022-05-24T14:01:00+00:00",
     "created": "2022-05-24T14:51:27+00:00",
-    "end": "2022-05-24T15:03:47+00:00",
-    "modified": "2022-05-24T15:03:47+00:00",
+    "end": "2022-05-24T14:50:00+00:00",
+    "modified": "2022-05-24T18:52:35+00:00",
     "external_desc": "Degraded serving for Google App Engine and Cloud Functions users in us-central1",
     "updates": [
+      {
+        "created": "2022-05-24T18:36:18+00:00",
+        "modified": "2022-05-24T18:52:35+00:00",
+        "when": "2022-05-24T18:36:18+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 24 May 2022 07:01\n**Incident End:** 24 May 2022 07:50\n**Duration:** 49 minutes\n**Affected Services and Features:**\n* App Engine\n* Cloud Functions\n**Regions/Zones:** us-central1\n**Description:**\nGoogle App Engine and Cloud Functions experienced elevated request latencies for a duration of 49 minutes. From preliminary analysis, the root cause of the issue is an unexpected surge in traffic which increased resource usage. The issue was mitigated by implementing safeguards to prevent resource starvation.\nWe continue to investigate the nature of the traffic surge and we will identify additional safeguards to prevent recurrence of the issue.\n**Customer Impact:**\n* Affected customers would have experienced elevated latencies for App Engine app serving and Cloud Function executions.\n* Less than 1% of the customers in us-central1 would have seen App Engine and Cloud Function requests failing with errors.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
       {
         "created": "2022-05-24T15:03:45+00:00",
         "modified": "2022-05-24T15:03:52+00:00",
@@ -36,10 +49,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-05-24T15:03:45+00:00",
-      "modified": "2022-05-24T15:03:52+00:00",
-      "when": "2022-05-24T15:03:45+00:00",
-      "text": "The issue with Google App Engine has been resolved for all affected users as of Tuesday, 2022-05-24 07:50 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-05-24T18:36:18+00:00",
+      "modified": "2022-05-24T18:52:35+00:00",
+      "when": "2022-05-24T18:36:18+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 24 May 2022 07:01\n**Incident End:** 24 May 2022 07:50\n**Duration:** 49 minutes\n**Affected Services and Features:**\n* App Engine\n* Cloud Functions\n**Regions/Zones:** us-central1\n**Description:**\nGoogle App Engine and Cloud Functions experienced elevated request latencies for a duration of 49 minutes. From preliminary analysis, the root cause of the issue is an unexpected surge in traffic which increased resource usage. The issue was mitigated by implementing safeguards to prevent resource starvation.\nWe continue to investigate the nature of the traffic surge and we will identify additional safeguards to prevent recurrence of the issue.\n**Customer Impact:**\n* Affected customers would have experienced elevated latencies for App Engine app serving and Cloud Function executions.\n* Less than 1% of the customers in us-central1 would have seen App Engine and Cloud Function requests failing with errors.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
