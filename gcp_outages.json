@@ -4,9 +4,134 @@
     "number": "18110704032802855247",
     "begin": "2022-05-25T05:57:50+00:00",
     "created": "2022-05-25T07:29:52+00:00",
-    "modified": "2022-05-25T15:26:27+00:00",
+    "modified": "2022-05-25T15:51:15+00:00",
     "external_desc": "Global: BigQuery may experience elevated query latencies or failures.",
     "updates": [
+      {
+        "created": "2022-05-25T15:51:15+00:00",
+        "modified": "2022-05-25T15:51:17+00:00",
+        "when": "2022-05-25T15:51:15+00:00",
+        "text": "Summary: Global: BigQuery may experience elevated query latencies or failures.\nDescription: The US multi- region is nearly completely recovered and the europe-west1, asia-east1, and asia-east2 regions have fully recovered. Other regions are currently not affected but precautionary actions are being taking globally by our engineering team.\nWe will provide more information by Wednesday, 2022-05-25 10:00 US/Pacific.\nDiagnosis: Customers will experience Increased Query latency and possible job failures.\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2022-05-25T15:26:27+00:00",
         "modified": "2022-05-25T15:26:33+00:00",
@@ -569,11 +694,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-05-25T15:26:27+00:00",
-      "modified": "2022-05-25T15:26:33+00:00",
-      "when": "2022-05-25T15:26:27+00:00",
-      "text": "Summary: Global: BigQuery may experience elevated query latencies or failures.\nDescription: All Global locations including multi-region locations for BigQuery are impacted.\nEurope-west1 and Asia-east2 are currently mitigated\nMitigation work is currently underway for the remaining impacted regions by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2022-05-25 09:00 US/Pacific.\nDiagnosis: Customers will experience Increased Query latency and possible job failures.\nWorkaround: None at this time.",
-      "status": "SERVICE_DISRUPTION",
+      "created": "2022-05-25T15:51:15+00:00",
+      "modified": "2022-05-25T15:51:17+00:00",
+      "when": "2022-05-25T15:51:15+00:00",
+      "text": "Summary: Global: BigQuery may experience elevated query latencies or failures.\nDescription: The US multi- region is nearly completely recovered and the europe-west1, asia-east1, and asia-east2 regions have fully recovered. Other regions are currently not affected but precautionary actions are being taking globally by our engineering team.\nWe will provide more information by Wednesday, 2022-05-25 10:00 US/Pacific.\nDiagnosis: Customers will experience Increased Query latency and possible job failures.\nWorkaround: None at this time.",
+      "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
           "title": "Taiwan (asia-east1)",
@@ -693,8 +818,8 @@
         }
       ]
     },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
+    "status_impact": "SERVICE_OUTAGE",
+    "severity": "high",
     "service_key": "9CcrhHUcFevXPSVaSxkf",
     "service_name": "Google BigQuery",
     "affected_products": [
