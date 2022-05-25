@@ -4,9 +4,22 @@
     "number": "18110704032802855247",
     "begin": "2022-05-25T05:57:50+00:00",
     "created": "2022-05-25T07:29:52+00:00",
-    "modified": "2022-05-25T10:49:00+00:00",
-    "external_desc": "BigQuery degraded in us-multiregion and europe-west1. Customers will experience Increased Query latency and possible job failures.",
+    "modified": "2022-05-25T12:00:15+00:00",
+    "external_desc": "BigQuery degraded in us-multiregion, europe-west1, asia-northeast1, asia-southeast1, asia-southeast2, eu-canary, europe-west2, europe-west6, europe-west9, us-central1, us-west4. Customers will experience Increased Query latency and possible job failures.",
     "updates": [
+      {
+        "created": "2022-05-25T12:00:07+00:00",
+        "modified": "2022-05-25T12:00:18+00:00",
+        "when": "2022-05-25T12:00:07+00:00",
+        "text": "Summary: BigQuery degraded in us-multiregion, europe-west1, asia-northeast1, asia-southeast1, asia-southeast2, eu-canary, europe-west2, europe-west6, europe-west9, us-central1, us-west4. Customers will experience Increased Query latency and possible job failures.\nDescription: Europe-west1 is currently mitigated and mitigation work is currently underway for the remaining impacted regions by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2022-05-25 06:30 US/Pacific.\nDiagnosis: Increased Query latency and possible job failures\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
       {
         "created": "2022-05-25T10:49:00+00:00",
         "modified": "2022-05-25T10:49:06+00:00",
@@ -48,10 +61,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-05-25T10:49:00+00:00",
-      "modified": "2022-05-25T10:49:06+00:00",
-      "when": "2022-05-25T10:49:00+00:00",
-      "text": "Summary: BigQuery degraded in us-multiregion and europe-west1. Customers will experience Increased Query latency and possible job failures.\nDescription: Europe-west1 is currently mitigated and mitigation work is currently underway for the remaining impacted regions by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2022-05-25 05:00 US/Pacific.\nDiagnosis: Increased Query latency and possible job failures\nWorkaround: None at this time.",
+      "created": "2022-05-25T12:00:07+00:00",
+      "modified": "2022-05-25T12:00:18+00:00",
+      "when": "2022-05-25T12:00:07+00:00",
+      "text": "Summary: BigQuery degraded in us-multiregion, europe-west1, asia-northeast1, asia-southeast1, asia-southeast2, eu-canary, europe-west2, europe-west6, europe-west9, us-central1, us-west4. Customers will experience Increased Query latency and possible job failures.\nDescription: Europe-west1 is currently mitigated and mitigation work is currently underway for the remaining impacted regions by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2022-05-25 06:30 US/Pacific.\nDiagnosis: Increased Query latency and possible job failures\nWorkaround: None at this time.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
