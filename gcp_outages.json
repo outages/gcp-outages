@@ -1345,10 +1345,135 @@
     "number": "18110704032802855247",
     "begin": "2022-05-25T01:04:00+00:00",
     "created": "2022-05-25T07:29:52+00:00",
-    "end": "2022-05-25T19:19:00+00:00",
-    "modified": "2022-05-25T21:54:30+00:00",
+    "end": "2022-05-25T17:34:00+00:00",
+    "modified": "2022-06-02T17:21:24+00:00",
     "external_desc": "Global: BigQuery may experience elevated query latencies or failures.",
     "updates": [
+      {
+        "created": "2022-06-02T17:20:00+00:00",
+        "modified": "2022-06-02T17:21:19+00:00",
+        "when": "2022-06-02T17:20:00+00:00",
+        "text": "**INCIDENT REPORT**\n**Summary:**\nOn 24 May 2022 from 18:04 to 25 May 2022 10:34 Google BigQuery experienced elevated query latencies and job failures in four regions (US multiregion, europe-west1, asia-east1, and asia-east2) for a duration of 16 hours, 30 minutes. A product change roll out was identified as the root cause. The issue was mitigated by rolling back the changes. The rollback was performed in phases to prevent additional impact on the service, which caused some regions to recover earlier than others. Affected customers experienced elevated latencies or failures for QUERY, IMPORT and EXPORT jobs in BigQuery.\n**Root Cause:**\nOn 11 May 2022, BigQuery began a software rollout to improve audit logging for data that is imported from, queried, or exported to Google Cloud Storage (GCS). This rollout inadvertently contained a memory leak that gradually and incrementally manifested whenever these code paths were executed. This memory leak gradually consumed memory on BigQuery’s compute nodes until they were unable to accept new work to execute jobs, including queries, loads, and exports. The software rollout was deployed to all regions before the issue was detected and rolled back. Given the nature of the root cause, significant user load and time were required for the issue to manifest, meaning that the issue was not observed in internal testing, or in most of BigQuery's production regions.\n**Remediation and Prevention:**\nBigQuery will take the following actions to mitigate against such issues happening in the future: - In the short-term, enable comprehensive memory error detector coverage for the affected code path to detect possible memory leaks ahead of time. - In the long-term, ensure such analysis is enabled for all BigQuery code paths.\nIntroduce additional internal monitoring to detect memory pressure scenarios.\n**Detailed Description of Impact**\nIn affected regions, a portion of BigQuery compute nodes were unable to service incoming jobs due to insufficient memory. As a result customer jobs - including queries, loads, and exports - experienced elevated latencies and failures while waiting for nodes with sufficient memory to become available.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2022-05-25T21:54:12+00:00",
         "modified": "2022-05-25T21:54:12+00:00",
@@ -2669,10 +2794,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-05-25T21:54:12+00:00",
-      "modified": "2022-05-25T21:54:12+00:00",
-      "when": "2022-05-25T21:54:12+00:00",
-      "text": "**Mini Incident-Report:**\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 24 May 2022 18:04\n**Incident End:** 25 May 2022 12:19\n**Duration:** 18 hours, 15 minutes\n**Affected Services and Features:**\n* Google BigQuery\n**Regions/Zones:** Global\n**Description:**\nGoogle BigQuery experienced elevated query latencies and job failures globally for a duration of 18 hours, 15 minutes. From preliminary analysis, the root cause of the issue is a product change which had been rolled out globally. The issue was mitigated by rolling back the changes. The rollback was performed in a phased manner to prevent additional impact on the service and some regions would have recovered earlier than others.\n**Customer Impact:**\n* Affected customers would have experienced elevated query latencies or in some cases query failures.",
+      "created": "2022-06-02T17:20:00+00:00",
+      "modified": "2022-06-02T17:21:19+00:00",
+      "when": "2022-06-02T17:20:00+00:00",
+      "text": "**INCIDENT REPORT**\n**Summary:**\nOn 24 May 2022 from 18:04 to 25 May 2022 10:34 Google BigQuery experienced elevated query latencies and job failures in four regions (US multiregion, europe-west1, asia-east1, and asia-east2) for a duration of 16 hours, 30 minutes. A product change roll out was identified as the root cause. The issue was mitigated by rolling back the changes. The rollback was performed in phases to prevent additional impact on the service, which caused some regions to recover earlier than others. Affected customers experienced elevated latencies or failures for QUERY, IMPORT and EXPORT jobs in BigQuery.\n**Root Cause:**\nOn 11 May 2022, BigQuery began a software rollout to improve audit logging for data that is imported from, queried, or exported to Google Cloud Storage (GCS). This rollout inadvertently contained a memory leak that gradually and incrementally manifested whenever these code paths were executed. This memory leak gradually consumed memory on BigQuery’s compute nodes until they were unable to accept new work to execute jobs, including queries, loads, and exports. The software rollout was deployed to all regions before the issue was detected and rolled back. Given the nature of the root cause, significant user load and time were required for the issue to manifest, meaning that the issue was not observed in internal testing, or in most of BigQuery's production regions.\n**Remediation and Prevention:**\nBigQuery will take the following actions to mitigate against such issues happening in the future: - In the short-term, enable comprehensive memory error detector coverage for the affected code path to detect possible memory leaks ahead of time. - In the long-term, ensure such analysis is enabled for all BigQuery code paths.\nIntroduce additional internal monitoring to detect memory pressure scenarios.\n**Detailed Description of Impact**\nIn affected regions, a portion of BigQuery compute nodes were unable to service incoming jobs due to insufficient memory. As a result customer jobs - including queries, loads, and exports - experienced elevated latencies and failures while waiting for nodes with sufficient memory to become available.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
