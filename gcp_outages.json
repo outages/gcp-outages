@@ -4,9 +4,22 @@
     "number": "702824853392148085",
     "begin": "2022-06-04T17:20:00+00:00",
     "created": "2022-06-04T17:40:35+00:00",
-    "modified": "2022-06-04T18:43:38+00:00",
+    "modified": "2022-06-04T19:01:36+00:00",
     "external_desc": "us-east1: Elevated errors affecting multiple services.",
     "updates": [
+      {
+        "created": "2022-06-04T19:01:36+00:00",
+        "modified": "2022-06-04T19:01:36+00:00",
+        "when": "2022-06-04T19:01:36+00:00",
+        "text": "Summary: us-east1: Elevated errors affecting multiple services.\nDescription: Mitigation work is still underway by our engineering team.\nWe will provide more information by Saturday, 2022-06-04 13:00 US/Pacific.\nDiagnosis: Please see the additional details below for product specific impact where available:\n- BigQuery: Elevated BigQuery latency and errors on Queries.\n- Dataflow: Some customers will see stuckness or slowness in there Dataflow batch and streaming jobs.\n- App Engine: [Mitigated] Elevated unavailability.\n- Cloud Tasks: [Mitigated] Elevated unavailability.\n- Cloud Pub/Sub: Increased errors and/or latency.\n- Persistent Disk: 1% of PD-Standard (PD-HDD) disks in us-east1-c, and regional disks in us-east-1 are experiencing slow or stuck disk reads (operations hanging indefinitely), which may cause instances to become unresponsive.\n- Cloud Bigtable: Elevated latency and errors in east1-c.\n- Cloud Run: [Mitigated] Elevated unavailability.\n- Compute Engine: No impact outside of side effects from underlying Persistent Disk impact.\n- Cloud Networking: Entire zone us-east1-c has delayed firewall programming for new changes to data plane, and delays launching or ssh'ing to instances. Existing programming should continue to work.\n- Cloud Functions: [Mitigated] Elevated unavailability.\nWorkaround: In general, retry failed requests or use an alternative region than us-east1 for regional services, and an alternative zone than us-east1-c for zonal services where possible. Please see the additional details below for product specific workarounds where available:\n- Dataflow: If feasible, customers can consider restarting jobs again. They should be restarted in an unimpacted zone.\n- Persistent Disk: Use a different zone or PD-SSD disks.\n- Cloud Networking: If you are using load balancers or HA configuration, failover away from us-east1-c",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          }
+        ]
+      },
       {
         "created": "2022-06-04T18:43:38+00:00",
         "modified": "2022-06-04T18:43:38+00:00",
@@ -61,10 +74,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-06-04T18:43:38+00:00",
-      "modified": "2022-06-04T18:43:38+00:00",
-      "when": "2022-06-04T18:43:38+00:00",
-      "text": "Summary: us-east1: Elevated errors affecting multiple services.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Saturday, 2022-06-04 13:00 US/Pacific.\nDiagnosis:\nPlease see the additional details below for product specific impact where available:\n- BigQuery: Elevated BigQuery latency and errors on Queries.\n- Dataflow: Some customers will see stuckness or slowness in there Dataflow batch and streaming jobs.\n- App Engine: Elevated unavailability.\n- Cloud Tasks: Elevated unavailability.\n- Cloud Pub/Sub: Increased errors and/or latency.\n- Persistent Disk: 1% of PD-Standard (PD-HDD) disks in us-east1-c, and regional disks in us-east-1 are experiencing slow or stuck disk reads (operations hanging indefinitely), which may cause instances to become unresponsive.\n- Cloud Bigtable: Elevated latency and errors in east1-c.\nWorkaround: Retry failed requests or use an alternative region that us-east1 for regional services, and an alternative zone than us-east1-c for zonal services where possible.",
+      "created": "2022-06-04T19:01:36+00:00",
+      "modified": "2022-06-04T19:01:36+00:00",
+      "when": "2022-06-04T19:01:36+00:00",
+      "text": "Summary: us-east1: Elevated errors affecting multiple services.\nDescription: Mitigation work is still underway by our engineering team.\nWe will provide more information by Saturday, 2022-06-04 13:00 US/Pacific.\nDiagnosis: Please see the additional details below for product specific impact where available:\n- BigQuery: Elevated BigQuery latency and errors on Queries.\n- Dataflow: Some customers will see stuckness or slowness in there Dataflow batch and streaming jobs.\n- App Engine: [Mitigated] Elevated unavailability.\n- Cloud Tasks: [Mitigated] Elevated unavailability.\n- Cloud Pub/Sub: Increased errors and/or latency.\n- Persistent Disk: 1% of PD-Standard (PD-HDD) disks in us-east1-c, and regional disks in us-east-1 are experiencing slow or stuck disk reads (operations hanging indefinitely), which may cause instances to become unresponsive.\n- Cloud Bigtable: Elevated latency and errors in east1-c.\n- Cloud Run: [Mitigated] Elevated unavailability.\n- Compute Engine: No impact outside of side effects from underlying Persistent Disk impact.\n- Cloud Networking: Entire zone us-east1-c has delayed firewall programming for new changes to data plane, and delays launching or ssh'ing to instances. Existing programming should continue to work.\n- Cloud Functions: [Mitigated] Elevated unavailability.\nWorkaround: In general, retry failed requests or use an alternative region than us-east1 for regional services, and an alternative zone than us-east1-c for zonal services where possible. Please see the additional details below for product specific workarounds where available:\n- Dataflow: If feasible, customers can consider restarting jobs again. They should be restarted in an unimpacted zone.\n- Persistent Disk: Use a different zone or PD-SSD disks.\n- Cloud Networking: If you are using load balancers or HA configuration, failover away from us-east1-c",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
@@ -85,6 +98,70 @@
       {
         "title": "Google Cloud Dataflow",
         "id": "T9bFoXPqG8w8g1YbWTKY"
+      },
+      {
+        "title": "Apigee",
+        "id": "9Y13BNFy4fJydvjdsN3X"
+      },
+      {
+        "title": "Cloud Filestore",
+        "id": "jog4nyYkquiLeSK5s26q"
+      },
+      {
+        "title": "Cloud Data Fusion",
+        "id": "rLKDHeeaBiXTeutF1air"
+      },
+      {
+        "title": "Datastream",
+        "id": "ibJgP4CNKnFojHHw8L3s"
+      },
+      {
+        "title": "Cloud Load Balancing",
+        "id": "ix7u9beT8ivBdjApTif3"
+      },
+      {
+        "title": "Google App Engine",
+        "id": "kchyUtnkMHJWaAva8aYc"
+      },
+      {
+        "title": "Google Cloud Bigtable",
+        "id": "LfZSuE3xdQU46YMFV5fy"
+      },
+      {
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
+      },
+      {
+        "title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri"
+      },
+      {
+        "title": "Google Cloud Pub/Sub",
+        "id": "dFjdLh2v6zuES6t9ADCB"
+      },
+      {
+        "title": "Google Cloud Tasks",
+        "id": "tMWyzhyKK4rAzAf7x62h"
+      },
+      {
+        "title": "Google Compute Engine",
+        "id": "L3ggmi3Jy4xJmgodFA9K"
+      },
+      {
+        "title": "Google Kubernetes Engine",
+        "id": "LCSbT57h59oR4W98NHuz"
+      },
+      {
+        "title": "Virtual Private Cloud (VPC)",
+        "id": "BSGtCUnz6ZmyajsjgTKv"
+      },
+      {
+        "title": "Google Cloud Functions",
+        "id": "oW4vJ7VNqyxTWNzSHopX"
+      },
+      {
+        "title": "Cloud Run",
+        "id": "9D7d2iNBQWN24zc1VamE"
       }
     ],
     "uri": "incidents/6sfxucMj6DuhVzmj9Xr8",
