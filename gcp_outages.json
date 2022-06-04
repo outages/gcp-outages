@@ -4,9 +4,22 @@
     "number": "702824853392148085",
     "begin": "2022-06-04T17:20:00+00:00",
     "created": "2022-06-04T17:40:35+00:00",
-    "modified": "2022-06-04T17:55:42+00:00",
+    "modified": "2022-06-04T18:22:38+00:00",
     "external_desc": "us-east1: Elevated errors affecting multiple services.",
     "updates": [
+      {
+        "created": "2022-06-04T18:22:38+00:00",
+        "modified": "2022-06-04T18:22:38+00:00",
+        "when": "2022-06-04T18:22:38+00:00",
+        "text": "Summary: us-east1: Elevated errors affecting multiple services.\nDescription: Our engineering team continues to investigate the issue, which appears to be impacting multiple products in us-east1.\nWe will provide an update by Saturday, 2022-06-04 12:30 US/Pacific with current details.\nDiagnosis: Please see the following details for product specific impact:\n- BigQuery: Elevated BigQuery latency and errors on Queries.\n- Dataflow: Some customers will see stuckness or slowness in there Dataflow batch and streaming jobs.\n- App Engine: Elevated unavailability.\n- Cloud Tasks: Elevated unavailability.\n- Cloud Pub/Sub: Elevated unavailability.\n- Persistent DIsk: Small number of PD-Standard (PD-HDD) disks in us-east1-c only are experiencing slow or stuck disk reads (operations hanging indefinitely), which may cause instances to become unresponsive.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          }
+        ]
+      },
       {
         "created": "2022-06-04T17:55:42+00:00",
         "modified": "2022-06-04T17:55:42+00:00",
@@ -35,10 +48,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-06-04T17:55:42+00:00",
-      "modified": "2022-06-04T17:55:42+00:00",
-      "when": "2022-06-04T17:55:42+00:00",
-      "text": "Summary: us-east1: Elevated errors affecting multiple services.\nDescription: Our engineering team continues to investigate the issue, which appears to be impacting multiple products in us-east1.\nWe will provide an update by Saturday, 2022-06-04 12:00 US/Pacific with current details.\nDiagnosis:\n- BigQuery: Elevated BigQuery errors.\n- Dataflow: Some customers will see stuckness or slowness in there Dataflow batch and streaming jobs.\nWorkaround: None at this time.",
+      "created": "2022-06-04T18:22:38+00:00",
+      "modified": "2022-06-04T18:22:38+00:00",
+      "when": "2022-06-04T18:22:38+00:00",
+      "text": "Summary: us-east1: Elevated errors affecting multiple services.\nDescription: Our engineering team continues to investigate the issue, which appears to be impacting multiple products in us-east1.\nWe will provide an update by Saturday, 2022-06-04 12:30 US/Pacific with current details.\nDiagnosis: Please see the following details for product specific impact:\n- BigQuery: Elevated BigQuery latency and errors on Queries.\n- Dataflow: Some customers will see stuckness or slowness in there Dataflow batch and streaming jobs.\n- App Engine: Elevated unavailability.\n- Cloud Tasks: Elevated unavailability.\n- Cloud Pub/Sub: Elevated unavailability.\n- Persistent DIsk: Small number of PD-Standard (PD-HDD) disks in us-east1-c only are experiencing slow or stuck disk reads (operations hanging indefinitely), which may cause instances to become unresponsive.\nWorkaround: None at this time.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
