@@ -4,9 +4,23 @@
     "number": "702824853392148085",
     "begin": "2022-06-04T17:33:08+00:00",
     "created": "2022-06-04T17:40:35+00:00",
-    "modified": "2022-06-04T23:43:26+00:00",
+    "end": "2022-06-05T00:09:18+00:00",
+    "modified": "2022-06-05T00:09:18+00:00",
     "external_desc": "us-east1: Elevated errors affecting multiple services.",
     "updates": [
+      {
+        "created": "2022-06-05T00:09:17+00:00",
+        "modified": "2022-06-05T00:09:19+00:00",
+        "when": "2022-06-05T00:09:17+00:00",
+        "text": "The issue with Apigee, Cloud Data Fusion, Cloud Filestore, Cloud Load Balancing, Cloud Run, Data Catalog, Datastream, Google App Engine, Google BigQuery, Google Cloud Bigtable, Google Cloud Composer, Google Cloud Dataflow, Google Cloud Datastore, Google Cloud Functions, Google Cloud Networking, Google Cloud Pub/Sub, Google Cloud SQL, Google Cloud Tasks, Google Compute Engine, Google Kubernetes Engine, Persistent Disk, Virtual Private Cloud (VPC) has been resolved for all affected users as of Saturday, 2022-06-04 17:03 US/Pacific.\nMost service impact was mitigated by 2022-06-04 13:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          }
+        ]
+      },
       {
         "created": "2022-06-04T23:43:24+00:00",
         "modified": "2022-06-04T23:43:27+00:00",
@@ -139,11 +153,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-06-04T23:43:24+00:00",
-      "modified": "2022-06-04T23:43:27+00:00",
-      "when": "2022-06-04T23:43:24+00:00",
-      "text": "Summary: us-east1: Elevated errors affecting multiple services.\nDescription: We believe the issue with Apigee, Cloud Data Fusion, Cloud Filestore, Cloud Load Balancing, Cloud Run, Data Catalog, Datastream, Google App Engine, Google BigQuery, Google Cloud Bigtable, Google Cloud Composer, Google Cloud Dataflow, Google Cloud Datastore, Google Cloud Functions, Google Cloud Networking, Google Cloud Pub/Sub, Google Cloud SQL, Google Cloud Tasks, Google Compute Engine, Google Kubernetes Engine, Persistent Disk, Virtual Private Cloud (VPC) is partially resolved.\nWe believe most service impact was mitigated by 2022-06-04 13:30 US/Pacific. We do not have an ETA for full resolution at this point.\nWe will provide an update by Saturday, 2022-06-04 18:00 US/Pacific with current details.\nDiagnosis: Please see the additional details below for product specific impact where available:\n- BigQuery: [Mitigated] Elevated BigQuery latency and errors on Queries.\n- Dataflow: [Mitigated] Some customers will see stuckness or slowness in their Dataflow batch and streaming jobs.\n- App Engine: [Mitigated] Elevated unavailability.\n- Cloud Tasks: [Mitigated] Elevated unavailability.\n- Cloud Pub/Sub: [Mitigated] Increased errors and/or latency.\n- Persistent Disk: [Mitigated] 1% of PD-Standard (PD-HDD) disks in us-east1-c, and regional disks in us-east-1 are experiencing slow or stuck disk reads (operations hanging indefinitely), which may cause instances to become unresponsive.\n- Cloud Bigtable: Elevated latency and errors in east1-c.\n- Cloud Run: [Mitigated] Elevated unavailability.\n- Compute Engine: No impact outside of side effects from underlying Persistent Disk impact.\n- Cloud Networking: [Mitigated] Entire zone us-east1-c has delayed firewall programming for new changes to data plane, and delays launching or ssh'ing to instances. Existing programming should continue to work.\n- Cloud Functions: [Mitigated] Elevated unavailability.\n- Cloud Composer: [Mitigated] Creations fail because of errors creating App Engine apps, may be in additional regions.\n- Datastore: [Mitigated] Increased latency particular for queries.\n- Data Catalog: [Mitigated]\nWorkaround: In general, retry failed requests or use an alternative region than us-east1 for regional services, and an alternative zone than us-east1-c for zonal services where possible. Please see the additional details below for product specific workarounds where available:\n- Dataflow: If feasible, customers can consider restarting jobs again. They should be restarted in an unimpacted zone.\n- Persistent Disk: Use a different zone or PD-SSD disks.\n- Cloud Networking: If you are using load balancers or HA configuration, failover away from us-east1-c",
-      "status": "SERVICE_DISRUPTION",
+      "created": "2022-06-05T00:09:17+00:00",
+      "modified": "2022-06-05T00:09:19+00:00",
+      "when": "2022-06-05T00:09:17+00:00",
+      "text": "The issue with Apigee, Cloud Data Fusion, Cloud Filestore, Cloud Load Balancing, Cloud Run, Data Catalog, Datastream, Google App Engine, Google BigQuery, Google Cloud Bigtable, Google Cloud Composer, Google Cloud Dataflow, Google Cloud Datastore, Google Cloud Functions, Google Cloud Networking, Google Cloud Pub/Sub, Google Cloud SQL, Google Cloud Tasks, Google Compute Engine, Google Kubernetes Engine, Persistent Disk, Virtual Private Cloud (VPC) has been resolved for all affected users as of Saturday, 2022-06-04 17:03 US/Pacific.\nMost service impact was mitigated by 2022-06-04 13:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
       "affected_locations": [
         {
           "title": "South Carolina (us-east1)",
@@ -246,13 +260,13 @@
       }
     ],
     "uri": "incidents/6sfxucMj6DuhVzmj9Xr8",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "South Carolina (us-east1)",
         "id": "us-east1"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "XdQANahFJvMuxxkgA34K",
