@@ -1,5 +1,72 @@
 [
   {
+    "id": "Lvd7FBrPJmL7oxhqrDwt",
+    "number": "15199014936264361317",
+    "begin": "2022-06-14T18:40:51+00:00",
+    "created": "2022-06-14T18:55:08+00:00",
+    "modified": "2022-06-14T18:57:39+00:00",
+    "external_desc": "Customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1",
+    "updates": [
+      {
+        "created": "2022-06-14T18:57:39+00:00",
+        "modified": "2022-06-14T18:57:40+00:00",
+        "when": "2022-06-14T18:57:39+00:00",
+        "text": "Summary: Customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nDescription: We are experiencing an issue with Cloud Filestore beginning at Tuesday, 2022-06-14 08:02 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 13:01 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nWorkaround: Affected customers can create instances in another region.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T18:55:02+00:00",
+        "modified": "2022-06-14T18:55:08+00:00",
+        "when": "2022-06-14T18:55:02+00:00",
+        "text": "Summary: Customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nDescription: We are experiencing an issue with Cloud Filestore beginning at Tuesday, 2022-06-14 08:02 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 13:01 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-06-14T18:57:39+00:00",
+      "modified": "2022-06-14T18:57:40+00:00",
+      "when": "2022-06-14T18:57:39+00:00",
+      "text": "Summary: Customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nDescription: We are experiencing an issue with Cloud Filestore beginning at Tuesday, 2022-06-14 08:02 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 13:01 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nWorkaround: Affected customers can create instances in another region.",
+      "status": "SERVICE_DISRUPTION",
+      "affected_locations": [
+        {
+          "title": "Iowa (us-central1)",
+          "id": "us-central1"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "jog4nyYkquiLeSK5s26q",
+    "service_name": "Cloud Filestore",
+    "affected_products": [
+      {
+        "title": "Cloud Filestore",
+        "id": "jog4nyYkquiLeSK5s26q"
+      }
+    ],
+    "uri": "incidents/Lvd7FBrPJmL7oxhqrDwt",
+    "currently_affected_locations": [
+      {
+        "title": "Iowa (us-central1)",
+        "id": "us-central1"
+      }
+    ],
+    "previously_affected_locations": []
+  },
+  {
     "id": "Q9MUHCFVpqouJbGrzneJ",
     "number": "13932012708372562392",
     "begin": "2022-06-14T12:28:55+00:00",
@@ -522,12 +589,25 @@
   {
     "id": "4Sie4sXFPougA2Ku24pT",
     "number": "16190899427126199648",
-    "begin": "2022-06-14T10:55:11+00:00",
+    "begin": "2022-06-14T10:03:00+00:00",
     "created": "2022-06-14T11:00:36+00:00",
-    "end": "2022-06-14T13:26:37+00:00",
-    "modified": "2022-06-14T13:26:37+00:00",
+    "end": "2022-06-14T13:22:00+00:00",
+    "modified": "2022-06-14T18:54:41+00:00",
     "external_desc": "GKE API seeing high latency and errors in us-central1",
     "updates": [
+      {
+        "created": "2022-06-14T18:54:05+00:00",
+        "modified": "2022-06-14T18:54:05+00:00",
+        "when": "2022-06-14T18:54:05+00:00",
+        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 June 2022 03:03\n**Incident End:** 14 June 2022 06:22\n**Duration:** 3 hours, 19 minutes\n**Affected Services and Features:**\nGoogle Kubernetes Engine, Cloud Data Fusion, Cloud Logging\n**Regions/Zones:** us-central1\n**Description:**\nGoogle Kubernetes Engine (GKE) experienced increased latency and errors from the GKE API in us-central1 for 3 hours and 19 minutes. From preliminary analysis, the root cause of the issue was an unexpected increase in backend traffic that was compounded by clients retrying failed requests. The issue was mitigated by scaling up the GKE control plane to handle the increased traffic.\n**Customer Impact:**\n* **Google Kubernetes Engine (GKE)** customers may have experienced increased latency and errors for GKE API calls via gcloud and the Google Cloud Console UI. GKE cluster workloads continued to run; however customers may have been unable to perform operations such as confirm cluster status, trigger upgrades, view workloads, or create/delete clusters and node pools.\n* **Cloud Data Fusion** customers may have experienced instance creation and deletion failures in us-central1.\n* **Cloud Logging** customers may have experienced increased latency for suggested searches for GKE clusters in us-central1.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
       {
         "created": "2022-06-14T13:26:34+00:00",
         "modified": "2022-06-14T13:26:39+00:00",
@@ -608,10 +688,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-06-14T13:26:34+00:00",
-      "modified": "2022-06-14T13:26:39+00:00",
-      "when": "2022-06-14T13:26:34+00:00",
-      "text": "The issue with Google Kubernetes Engine has been resolved for all affected users as of Tuesday, 2022-06-14 06:17 US/Pacific.\nIf customers are still experiencing issues, please raise the case via normal channels .\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-06-14T18:54:05+00:00",
+      "modified": "2022-06-14T18:54:05+00:00",
+      "when": "2022-06-14T18:54:05+00:00",
+      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 June 2022 03:03\n**Incident End:** 14 June 2022 06:22\n**Duration:** 3 hours, 19 minutes\n**Affected Services and Features:**\nGoogle Kubernetes Engine, Cloud Data Fusion, Cloud Logging\n**Regions/Zones:** us-central1\n**Description:**\nGoogle Kubernetes Engine (GKE) experienced increased latency and errors from the GKE API in us-central1 for 3 hours and 19 minutes. From preliminary analysis, the root cause of the issue was an unexpected increase in backend traffic that was compounded by clients retrying failed requests. The issue was mitigated by scaling up the GKE control plane to handle the increased traffic.\n**Customer Impact:**\n* **Google Kubernetes Engine (GKE)** customers may have experienced increased latency and errors for GKE API calls via gcloud and the Google Cloud Console UI. GKE cluster workloads continued to run; however customers may have been unable to perform operations such as confirm cluster status, trigger upgrades, view workloads, or create/delete clusters and node pools.\n* **Cloud Data Fusion** customers may have experienced instance creation and deletion failures in us-central1.\n* **Cloud Logging** customers may have experienced increased latency for suggested searches for GKE clusters in us-central1.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
