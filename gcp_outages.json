@@ -2833,9 +2833,134 @@
     "begin": "2022-06-07T12:50:00+00:00",
     "created": "2022-06-07T14:01:19+00:00",
     "end": "2022-06-07T16:02:00+00:00",
-    "modified": "2022-06-07T20:09:37+00:00",
+    "modified": "2022-06-14T20:35:45+00:00",
     "external_desc": "Google Cloud Networking experienced increased packet loss for egress traffic from Google to the Middle East, and elevated latency between our Europe and Asia Regions.",
     "updates": [
+      {
+        "created": "2022-06-14T20:35:45+00:00",
+        "modified": "2022-06-14T20:35:45+00:00",
+        "when": "2022-06-14T20:35:45+00:00",
+        "text": "# INCIDENT REPORT\n**Summary:**\nOn Tuesday, 7 June 2022, Google Cloud Networking experienced increased packet loss for egress traffic from Google to users and customers in the Middle East and elevated latency between our Europe and Asia Regions for 3 hours and 12 minutes, affecting several Cloud Networking products.\nTo our customers that were impacted during this outage, we sincerely apologize. We are conducting an internal investigation and are taking steps to improve our service.\n**Root Cause:**\nThe outage was triggered by two simultaneous fiber cuts within our Middle East network. This affected the end-to-end path for several submarine cables, reducing capacity for many telecom and technology companies, including Google.\nThe reduced capacity increased latency and caused packet loss between Google regions in Europe and regions in the Middle East and the rest of Asia.\n**Remediation and Prevention:**\nGoogle Engineers were alerted to the network bandwidth drop on Tuesday, 7 June 2022 at 06:00 US/Pacific. Google Engineers immediately started to redirect Internet egress demand away from the region. At 07:02, Europe-Asia traffic was redirected across backup circuits via America, trading increased latency for lower packet loss. Fiber engineers restored interim capacity by 08:26, ending packet loss between Europe and the Middle East. Once final stability was confirmed, Europe-Asia traffic was moved back to the direct path at 09:02.\nGoogle is committed to improving our service in the future and will be completing the following actions:\n- We are increasing the resilience of terrestrial network paths to provide more resilience to dual failures.\n- We are continuing with our planned programme of additional investments in the Europe-Middle East network to offer alternative network paths.\n- We are improving the effectiveness of tooling to reduce Internet egress demand during capacity shortfalls.\n**Detailed Description of Impact:**\nOn 07 June 2022 05:50 from 05:50 to 09:03 US/Pacific: ## Cloud Load Balancing\nCustomers using Cloud Load Balancing would have experienced increased packet loss up to 60% for egress traffic from Google to the Middle East and increased network latency between our Europe and Asia regions. ## Cloud Interconnect\nCloud Interconnect customers peering in the Middle East region would have experienced packet loss up to 80% during the incident. ## Virtual Private Cloud (VPC)\nCustomers using Virtual Private Cloud requiring cross-regional traffic between the following regions would have experienced packet loss of up to 50% between 05:47 and 07:03, then elevated network latency until 09:03:\n- asia-east1 to europe-southwest1, europe-west6, and europe-west8;\n- asia-east2 to all regions in Europe;\n- asia-south1 and asia-south2 to all regions in Europe, all northamerica-northeast and northamerica-southeast, and all us-east regions;\n- asia-southeast1 and asia-southeast2 to all regions in Europe;\n- australia-southeast2 to europe-west8.\n## Other Services\nWhile not specifically called out, all Google Cloud Services in the Middle East and our Europe and Asia regions could have been affected by the packet loss for egress traffic from Google to the Middle East, as well as increased latency between our Europe and Asia regions. We have listed the major services that our telemetry identified as causing customer impact.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2022-06-07T20:09:36+00:00",
         "modified": "2022-06-07T20:09:36+00:00",
@@ -3484,10 +3609,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-06-07T20:09:36+00:00",
-      "modified": "2022-06-07T20:09:36+00:00",
-      "when": "2022-06-07T20:09:36+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213. We will provide a full Incident Report with additional details.\n(All Times US/Pacific)\n**Incident Start:** 07 June 2022 05:50\n**Incident End:** 07 June 2022 09:02\n**Duration:** 3 hours, 12 minutes\n**Affected Services and Features:**\nGoogle Cloud Networking\nCloud NAT\nHybrid Connectivity\nVirtual Private Cloud (VPC)\nCloud Interconnect\nGoogle Kubernetes Engine (GKE)\n**Regions/Zones:** Packet Loss (Global to Middle East Internet Users), Latency (Between Asia and Europe regions)\n**Description:**\nGoogle Cloud Networking experienced increased packet loss for egress traffic from Google to the Middle East, and elevated latency between our Europe and Asia Regions as a result, for 3 hours and 12 minutes, affecting several related products including Cloud NAT, Hybrid Connectivity and Virtual Private Cloud (VPC). From preliminary analysis, the root cause of the issue was a capacity shortage following two simultaneous fiber-cuts.\n**Customer Impact:**\nAffected customers would have experienced increased packet loss and increased latency for the affected metros which would have caused delays and timeouts for the following services : - Cloud Load Balancing - Cloud Interconnect - Virtual Private Cloud (VPC) - Cloud NAT - Google Kubernetes Engine (GKE)",
+      "created": "2022-06-14T20:35:45+00:00",
+      "modified": "2022-06-14T20:35:45+00:00",
+      "when": "2022-06-14T20:35:45+00:00",
+      "text": "# INCIDENT REPORT\n**Summary:**\nOn Tuesday, 7 June 2022, Google Cloud Networking experienced increased packet loss for egress traffic from Google to users and customers in the Middle East and elevated latency between our Europe and Asia Regions for 3 hours and 12 minutes, affecting several Cloud Networking products.\nTo our customers that were impacted during this outage, we sincerely apologize. We are conducting an internal investigation and are taking steps to improve our service.\n**Root Cause:**\nThe outage was triggered by two simultaneous fiber cuts within our Middle East network. This affected the end-to-end path for several submarine cables, reducing capacity for many telecom and technology companies, including Google.\nThe reduced capacity increased latency and caused packet loss between Google regions in Europe and regions in the Middle East and the rest of Asia.\n**Remediation and Prevention:**\nGoogle Engineers were alerted to the network bandwidth drop on Tuesday, 7 June 2022 at 06:00 US/Pacific. Google Engineers immediately started to redirect Internet egress demand away from the region. At 07:02, Europe-Asia traffic was redirected across backup circuits via America, trading increased latency for lower packet loss. Fiber engineers restored interim capacity by 08:26, ending packet loss between Europe and the Middle East. Once final stability was confirmed, Europe-Asia traffic was moved back to the direct path at 09:02.\nGoogle is committed to improving our service in the future and will be completing the following actions:\n- We are increasing the resilience of terrestrial network paths to provide more resilience to dual failures.\n- We are continuing with our planned programme of additional investments in the Europe-Middle East network to offer alternative network paths.\n- We are improving the effectiveness of tooling to reduce Internet egress demand during capacity shortfalls.\n**Detailed Description of Impact:**\nOn 07 June 2022 05:50 from 05:50 to 09:03 US/Pacific: ## Cloud Load Balancing\nCustomers using Cloud Load Balancing would have experienced increased packet loss up to 60% for egress traffic from Google to the Middle East and increased network latency between our Europe and Asia regions. ## Cloud Interconnect\nCloud Interconnect customers peering in the Middle East region would have experienced packet loss up to 80% during the incident. ## Virtual Private Cloud (VPC)\nCustomers using Virtual Private Cloud requiring cross-regional traffic between the following regions would have experienced packet loss of up to 50% between 05:47 and 07:03, then elevated network latency until 09:03:\n- asia-east1 to europe-southwest1, europe-west6, and europe-west8;\n- asia-east2 to all regions in Europe;\n- asia-south1 and asia-south2 to all regions in Europe, all northamerica-northeast and northamerica-southeast, and all us-east regions;\n- asia-southeast1 and asia-southeast2 to all regions in Europe;\n- australia-southeast2 to europe-west8.\n## Other Services\nWhile not specifically called out, all Google Cloud Services in the Middle East and our Europe and Asia regions could have been affected by the packet loss for egress traffic from Google to the Middle East, as well as increased latency between our Europe and Asia regions. We have listed the major services that our telemetry identified as causing customer impact.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
