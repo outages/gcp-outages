@@ -239,14 +239,452 @@
     ]
   },
   {
+    "id": "4Sie4sXFPougA2Ku24pT",
+    "number": "16190899427126199648",
+    "begin": "2022-06-14T10:03:00+00:00",
+    "created": "2022-06-14T11:00:36+00:00",
+    "end": "2022-06-14T13:22:00+00:00",
+    "modified": "2022-06-14T18:54:41+00:00",
+    "external_desc": "GKE API seeing high latency and errors in us-central1",
+    "updates": [
+      {
+        "created": "2022-06-14T18:54:05+00:00",
+        "modified": "2022-06-14T18:54:05+00:00",
+        "when": "2022-06-14T18:54:05+00:00",
+        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 June 2022 03:03\n**Incident End:** 14 June 2022 06:22\n**Duration:** 3 hours, 19 minutes\n**Affected Services and Features:**\nGoogle Kubernetes Engine, Cloud Data Fusion, Cloud Logging\n**Regions/Zones:** us-central1\n**Description:**\nGoogle Kubernetes Engine (GKE) experienced increased latency and errors from the GKE API in us-central1 for 3 hours and 19 minutes. From preliminary analysis, the root cause of the issue was an unexpected increase in backend traffic that was compounded by clients retrying failed requests. The issue was mitigated by scaling up the GKE control plane to handle the increased traffic.\n**Customer Impact:**\n* **Google Kubernetes Engine (GKE)** customers may have experienced increased latency and errors for GKE API calls via gcloud and the Google Cloud Console UI. GKE cluster workloads continued to run; however customers may have been unable to perform operations such as confirm cluster status, trigger upgrades, view workloads, or create/delete clusters and node pools.\n* **Cloud Data Fusion** customers may have experienced instance creation and deletion failures in us-central1.\n* **Cloud Logging** customers may have experienced increased latency for suggested searches for GKE clusters in us-central1.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T13:26:34+00:00",
+        "modified": "2022-06-14T13:26:39+00:00",
+        "when": "2022-06-14T13:26:34+00:00",
+        "text": "The issue with Google Kubernetes Engine has been resolved for all affected users as of Tuesday, 2022-06-14 06:17 US/Pacific.\nIf customers are still experiencing issues, please raise the case via normal channels .\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T13:15:26+00:00",
+        "modified": "2022-06-14T13:15:31+00:00",
+        "when": "2022-06-14T13:15:26+00:00",
+        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nCustomers who are able to use another region are advised to do so.\nWe will provide more information by Tuesday, 2022-06-14 06:35 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T12:34:41+00:00",
+        "modified": "2022-06-14T12:34:46+00:00",
+        "when": "2022-06-14T12:34:41+00:00",
+        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nCustomers who are able to use another region are advised to do so.\nWe will provide more information by Tuesday, 2022-06-14 06:10 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T12:01:11+00:00",
+        "modified": "2022-06-14T12:01:18+00:00",
+        "when": "2022-06-14T12:01:11+00:00",
+        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete by Tuesday, 2022-06-14 05:30 US/Pacific.}\nWe will provide more information by Tuesday, 2022-06-14 05:31 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T11:28:50+00:00",
+        "modified": "2022-06-14T11:28:55+00:00",
+        "when": "2022-06-14T11:28:50+00:00",
+        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Tuesday, 2022-06-14 05:00 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T11:00:28+00:00",
+        "modified": "2022-06-14T11:00:41+00:00",
+        "when": "2022-06-14T11:00:28+00:00",
+        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Tuesday, 2022-06-14 03:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 04:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-06-14T18:54:05+00:00",
+      "modified": "2022-06-14T18:54:05+00:00",
+      "when": "2022-06-14T18:54:05+00:00",
+      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 June 2022 03:03\n**Incident End:** 14 June 2022 06:22\n**Duration:** 3 hours, 19 minutes\n**Affected Services and Features:**\nGoogle Kubernetes Engine, Cloud Data Fusion, Cloud Logging\n**Regions/Zones:** us-central1\n**Description:**\nGoogle Kubernetes Engine (GKE) experienced increased latency and errors from the GKE API in us-central1 for 3 hours and 19 minutes. From preliminary analysis, the root cause of the issue was an unexpected increase in backend traffic that was compounded by clients retrying failed requests. The issue was mitigated by scaling up the GKE control plane to handle the increased traffic.\n**Customer Impact:**\n* **Google Kubernetes Engine (GKE)** customers may have experienced increased latency and errors for GKE API calls via gcloud and the Google Cloud Console UI. GKE cluster workloads continued to run; however customers may have been unable to perform operations such as confirm cluster status, trigger upgrades, view workloads, or create/delete clusters and node pools.\n* **Cloud Data Fusion** customers may have experienced instance creation and deletion failures in us-central1.\n* **Cloud Logging** customers may have experienced increased latency for suggested searches for GKE clusters in us-central1.",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Iowa (us-central1)",
+          "id": "us-central1"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Operations",
+        "id": "DixAowEQm45KgqXKP5tR"
+      },
+      {
+        "title": "Google Kubernetes Engine",
+        "id": "LCSbT57h59oR4W98NHuz"
+      },
+      {
+        "title": "Cloud Logging",
+        "id": "PuCJ6W2ovoDhLcyvZ1xa"
+      },
+      {
+        "title": "Cloud Data Fusion",
+        "id": "rLKDHeeaBiXTeutF1air"
+      }
+    ],
+    "uri": "incidents/4Sie4sXFPougA2Ku24pT",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Iowa (us-central1)",
+        "id": "us-central1"
+      }
+    ]
+  },
+  {
+    "id": "KPYTXQW4gRhXvTsZ1Fj9",
+    "number": "18213986659195085044",
+    "begin": "2022-06-11T12:16:00+00:00",
+    "created": "2022-06-11T13:46:24+00:00",
+    "end": "2022-06-11T14:45:00+00:00",
+    "modified": "2022-06-13T20:35:03+00:00",
+    "external_desc": "We are experiencing an issue with Cloud Armor control plane",
+    "updates": [
+      {
+        "created": "2022-06-13T20:33:50+00:00",
+        "modified": "2022-06-13T20:33:50+00:00",
+        "when": "2022-06-13T20:33:50+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 11 June 2022 05:16\n**Incident End:** 11 June 2022 07:45\n**Duration:** 2 hours, 29 minutes\n**Affected Services and Features:**\nGoogle Cloud Armour\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Armor control plane was not processing updates in the global locale for a duration of 2 hours and 29 minutes. From preliminary analysis, the root cause of the issue appears to be multiple Storage errors that caused the control plane writer to stop updating. The control plane processed no or minimal updates within 2022-06-11 05:16 - 07:45 PDT.\n**Customer Impact:**\nCustomers may have experienced Cloud Armor rule changes that were not applied since the control plane was not processing changes.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-11T15:44:17+00:00",
+        "modified": "2022-06-11T15:44:18+00:00",
+        "when": "2022-06-11T15:44:17+00:00",
+        "text": "The issue with Cloud Armor has been resolved for all affected users as of Saturday, 2022-06-11 07:45 US/Pacific.\nCustomers who made updates during the timeframe of 2022-06-11 05:16 - 07:45 PDT are not effective and will need to make a fresh update to their Cloud Armor config.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-11T14:22:25+00:00",
+        "modified": "2022-06-11T14:22:26+00:00",
+        "when": "2022-06-11T14:22:25+00:00",
+        "text": "Summary: We are experiencing an issue with Cloud Armor control plane\nDescription: We are experiencing an issue with Cloud Armor beginning at Saturday, 2022-06-11 05:27 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Saturday, 2022-06-11 08:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may experience that Cloud Armor control plane is stuck with no updates.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-11T13:46:24+00:00",
+        "modified": "2022-06-11T14:02:54+00:00",
+        "when": "2022-06-11T13:46:24+00:00",
+        "text": "Summary: We are experiencing an issue with Cloud Armor control plane\nDescription: We are experiencing an issue with Cloud Armor beginning at Saturday, 2022-06-11 05:27 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Saturday, 2022-06-11 07:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may experience that Cloud Armor control plane is stuck with no updates.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-06-13T20:33:50+00:00",
+      "modified": "2022-06-13T20:33:50+00:00",
+      "when": "2022-06-13T20:33:50+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 11 June 2022 05:16\n**Incident End:** 11 June 2022 07:45\n**Duration:** 2 hours, 29 minutes\n**Affected Services and Features:**\nGoogle Cloud Armour\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Armor control plane was not processing updates in the global locale for a duration of 2 hours and 29 minutes. From preliminary analysis, the root cause of the issue appears to be multiple Storage errors that caused the control plane writer to stop updating. The control plane processed no or minimal updates within 2022-06-11 05:16 - 07:45 PDT.\n**Customer Impact:**\nCustomers may have experienced Cloud Armor rule changes that were not applied since the control plane was not processing changes.",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Global",
+          "id": "global"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Cloud Armor",
+        "id": "Kakg69gTC3xFyeJCY2va"
+      },
+      {
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
+      }
+    ],
+    "uri": "incidents/KPYTXQW4gRhXvTsZ1Fj9",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Global",
+        "id": "global"
+      }
+    ]
+  },
+  {
+    "id": "HzDuJz8t92LzvER4pT3y",
+    "number": "5087447213217570600",
+    "begin": "2022-06-09T22:34:28+00:00",
+    "created": "2022-06-09T22:47:24+00:00",
+    "end": "2022-06-10T00:27:41+00:00",
+    "modified": "2022-06-10T00:27:41+00:00",
+    "external_desc": "[US Multiregion] Customers May Experience BigQuery Latency",
+    "updates": [
+      {
+        "created": "2022-06-10T00:27:40+00:00",
+        "modified": "2022-06-10T00:27:41+00:00",
+        "when": "2022-06-10T00:27:40+00:00",
+        "text": "The issue with Google BigQuery has been resolved for all affected projects as of Thursday, 2022-06-09 17:24 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-09T23:04:25+00:00",
+        "modified": "2022-06-09T23:04:25+00:00",
+        "when": "2022-06-09T23:04:25+00:00",
+        "text": "Summary: [US Multiregion] Customers May Experience BigQuery Latency\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2022-06-09 17:10 US/Pacific.\nWe will provide more information by Thursday, 2022-06-09 17:30 US/Pacific.\nDiagnosis: Affected customers may experience latencies with BigQuery in the US Multiregion\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-09T23:03:51+00:00",
+        "modified": "2022-06-09T23:03:52+00:00",
+        "when": "2022-06-09T23:03:51+00:00",
+        "text": "Summary: [US Multiregion] Customers May Experience BigQuery Latency\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2022-06-09 17:30 US/Pacific.\nWe will provide more information by Thursday, 2022-06-09 17:02 US/Pacific.\nDiagnosis: Affected customers may experience latencies with BigQuery in the US Multiregion\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-09T22:47:24+00:00",
+        "modified": "2022-06-09T22:47:25+00:00",
+        "when": "2022-06-09T22:47:24+00:00",
+        "text": "Summary: [US Multiregion] Customers May Experience BigQuery Latency\nDescription: We are experiencing a performance issue with Google BigQuery.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2022-06-09 16:05 US/Pacific with current details.\nDiagnosis: Affected customers may experience latencies with BigQuery in the US Multiregion\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-06-10T00:27:40+00:00",
+      "modified": "2022-06-10T00:27:41+00:00",
+      "when": "2022-06-10T00:27:40+00:00",
+      "text": "The issue with Google BigQuery has been resolved for all affected projects as of Thursday, 2022-06-09 17:24 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Multi-region: us",
+          "id": "us"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "9CcrhHUcFevXPSVaSxkf",
+    "service_name": "Google BigQuery",
+    "affected_products": [
+      {
+        "title": "Google BigQuery",
+        "id": "9CcrhHUcFevXPSVaSxkf"
+      }
+    ],
+    "uri": "incidents/HzDuJz8t92LzvER4pT3y",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Multi-region: us",
+        "id": "us"
+      }
+    ]
+  },
+  {
     "id": "Q9MUHCFVpqouJbGrzneJ",
     "number": "13932012708372562392",
-    "begin": "2022-06-14T12:28:55+00:00",
+    "begin": "2022-06-08T16:16:00+00:00",
     "created": "2022-06-14T13:12:45+00:00",
-    "end": "2022-06-15T04:03:23+00:00",
-    "modified": "2022-06-15T04:03:23+00:00",
+    "end": "2022-06-15T03:02:00+00:00",
+    "modified": "2022-06-15T09:39:27+00:00",
     "external_desc": "[Global] Google App Engine - Customers using the Secrets Manager are experiencing increased errors.",
     "updates": [
+      {
+        "created": "2022-06-15T09:38:38+00:00",
+        "modified": "2022-06-15T09:38:38+00:00",
+        "when": "2022-06-15T09:38:38+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 08 June 2022 09:16\n**Incident End:** 14 June 2022 20:02\n**Duration:** 6 day, 10 hours, 46 minutes\n**Affected Services and Features:**\nGoogle Cloud App Engine, Google Cloud Functions.\n**Regions/Zones:**\nGlobal\n**Description:**\nGoogle Cloud App Engine customers might have experienced elevated errors while using the Secrets Manager for a duration of 6 days, 10 hours and 46 minutes. From preliminary analysis, the root cause of the issue is, regression in a recent software release relating to Secret Manager functionality in Google Cloud App Engine.\n**Customer Impact:**\nCustomers might have experienced increased errors from apps or functions that use the Secrets Manager.\n**Additional details:**\nThe Secret Manager functionality related release updates are rolled back to mitigate the issue. During the impact customers were advised to mount each secret in a separate path as per https://cloud.google.com/functions/docs/configuring/secrets.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2022-06-15T04:03:22+00:00",
         "modified": "2022-06-15T04:03:23+00:00",
@@ -855,10 +1293,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-06-15T04:03:22+00:00",
-      "modified": "2022-06-15T04:03:23+00:00",
-      "when": "2022-06-15T04:03:22+00:00",
-      "text": "The issue with Google App Engine has been resolved for all affected projects as of Tuesday, 2022-06-14 20:02 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-06-15T09:38:38+00:00",
+      "modified": "2022-06-15T09:38:38+00:00",
+      "when": "2022-06-15T09:38:38+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 08 June 2022 09:16\n**Incident End:** 14 June 2022 20:02\n**Duration:** 6 day, 10 hours, 46 minutes\n**Affected Services and Features:**\nGoogle Cloud App Engine, Google Cloud Functions.\n**Regions/Zones:**\nGlobal\n**Description:**\nGoogle Cloud App Engine customers might have experienced elevated errors while using the Secrets Manager for a duration of 6 days, 10 hours and 46 minutes. From preliminary analysis, the root cause of the issue is, regression in a recent software release relating to Secret Manager functionality in Google Cloud App Engine.\n**Customer Impact:**\nCustomers might have experienced increased errors from apps or functions that use the Secrets Manager.\n**Additional details:**\nThe Secret Manager functionality related release updates are rolled back to mitigate the issue. During the impact customers were advised to mount each secret in a separate path as per https://cloud.google.com/functions/docs/configuring/secrets.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
@@ -1059,343 +1497,6 @@
       {
         "title": "Las Vegas (us-west4)",
         "id": "us-west4"
-      }
-    ]
-  },
-  {
-    "id": "4Sie4sXFPougA2Ku24pT",
-    "number": "16190899427126199648",
-    "begin": "2022-06-14T10:03:00+00:00",
-    "created": "2022-06-14T11:00:36+00:00",
-    "end": "2022-06-14T13:22:00+00:00",
-    "modified": "2022-06-14T18:54:41+00:00",
-    "external_desc": "GKE API seeing high latency and errors in us-central1",
-    "updates": [
-      {
-        "created": "2022-06-14T18:54:05+00:00",
-        "modified": "2022-06-14T18:54:05+00:00",
-        "when": "2022-06-14T18:54:05+00:00",
-        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 June 2022 03:03\n**Incident End:** 14 June 2022 06:22\n**Duration:** 3 hours, 19 minutes\n**Affected Services and Features:**\nGoogle Kubernetes Engine, Cloud Data Fusion, Cloud Logging\n**Regions/Zones:** us-central1\n**Description:**\nGoogle Kubernetes Engine (GKE) experienced increased latency and errors from the GKE API in us-central1 for 3 hours and 19 minutes. From preliminary analysis, the root cause of the issue was an unexpected increase in backend traffic that was compounded by clients retrying failed requests. The issue was mitigated by scaling up the GKE control plane to handle the increased traffic.\n**Customer Impact:**\n* **Google Kubernetes Engine (GKE)** customers may have experienced increased latency and errors for GKE API calls via gcloud and the Google Cloud Console UI. GKE cluster workloads continued to run; however customers may have been unable to perform operations such as confirm cluster status, trigger upgrades, view workloads, or create/delete clusters and node pools.\n* **Cloud Data Fusion** customers may have experienced instance creation and deletion failures in us-central1.\n* **Cloud Logging** customers may have experienced increased latency for suggested searches for GKE clusters in us-central1.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T13:26:34+00:00",
-        "modified": "2022-06-14T13:26:39+00:00",
-        "when": "2022-06-14T13:26:34+00:00",
-        "text": "The issue with Google Kubernetes Engine has been resolved for all affected users as of Tuesday, 2022-06-14 06:17 US/Pacific.\nIf customers are still experiencing issues, please raise the case via normal channels .\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T13:15:26+00:00",
-        "modified": "2022-06-14T13:15:31+00:00",
-        "when": "2022-06-14T13:15:26+00:00",
-        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nCustomers who are able to use another region are advised to do so.\nWe will provide more information by Tuesday, 2022-06-14 06:35 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T12:34:41+00:00",
-        "modified": "2022-06-14T12:34:46+00:00",
-        "when": "2022-06-14T12:34:41+00:00",
-        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nCustomers who are able to use another region are advised to do so.\nWe will provide more information by Tuesday, 2022-06-14 06:10 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T12:01:11+00:00",
-        "modified": "2022-06-14T12:01:18+00:00",
-        "when": "2022-06-14T12:01:11+00:00",
-        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete by Tuesday, 2022-06-14 05:30 US/Pacific.}\nWe will provide more information by Tuesday, 2022-06-14 05:31 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T11:28:50+00:00",
-        "modified": "2022-06-14T11:28:55+00:00",
-        "when": "2022-06-14T11:28:50+00:00",
-        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Tuesday, 2022-06-14 05:00 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T11:00:28+00:00",
-        "modified": "2022-06-14T11:00:41+00:00",
-        "when": "2022-06-14T11:00:28+00:00",
-        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Tuesday, 2022-06-14 03:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 04:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-06-14T18:54:05+00:00",
-      "modified": "2022-06-14T18:54:05+00:00",
-      "when": "2022-06-14T18:54:05+00:00",
-      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 June 2022 03:03\n**Incident End:** 14 June 2022 06:22\n**Duration:** 3 hours, 19 minutes\n**Affected Services and Features:**\nGoogle Kubernetes Engine, Cloud Data Fusion, Cloud Logging\n**Regions/Zones:** us-central1\n**Description:**\nGoogle Kubernetes Engine (GKE) experienced increased latency and errors from the GKE API in us-central1 for 3 hours and 19 minutes. From preliminary analysis, the root cause of the issue was an unexpected increase in backend traffic that was compounded by clients retrying failed requests. The issue was mitigated by scaling up the GKE control plane to handle the increased traffic.\n**Customer Impact:**\n* **Google Kubernetes Engine (GKE)** customers may have experienced increased latency and errors for GKE API calls via gcloud and the Google Cloud Console UI. GKE cluster workloads continued to run; however customers may have been unable to perform operations such as confirm cluster status, trigger upgrades, view workloads, or create/delete clusters and node pools.\n* **Cloud Data Fusion** customers may have experienced instance creation and deletion failures in us-central1.\n* **Cloud Logging** customers may have experienced increased latency for suggested searches for GKE clusters in us-central1.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Operations",
-        "id": "DixAowEQm45KgqXKP5tR"
-      },
-      {
-        "title": "Google Kubernetes Engine",
-        "id": "LCSbT57h59oR4W98NHuz"
-      },
-      {
-        "title": "Cloud Logging",
-        "id": "PuCJ6W2ovoDhLcyvZ1xa"
-      },
-      {
-        "title": "Cloud Data Fusion",
-        "id": "rLKDHeeaBiXTeutF1air"
-      }
-    ],
-    "uri": "incidents/4Sie4sXFPougA2Ku24pT",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Iowa (us-central1)",
-        "id": "us-central1"
-      }
-    ]
-  },
-  {
-    "id": "KPYTXQW4gRhXvTsZ1Fj9",
-    "number": "18213986659195085044",
-    "begin": "2022-06-11T12:16:00+00:00",
-    "created": "2022-06-11T13:46:24+00:00",
-    "end": "2022-06-11T14:45:00+00:00",
-    "modified": "2022-06-13T20:35:03+00:00",
-    "external_desc": "We are experiencing an issue with Cloud Armor control plane",
-    "updates": [
-      {
-        "created": "2022-06-13T20:33:50+00:00",
-        "modified": "2022-06-13T20:33:50+00:00",
-        "when": "2022-06-13T20:33:50+00:00",
-        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 11 June 2022 05:16\n**Incident End:** 11 June 2022 07:45\n**Duration:** 2 hours, 29 minutes\n**Affected Services and Features:**\nGoogle Cloud Armour\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Armor control plane was not processing updates in the global locale for a duration of 2 hours and 29 minutes. From preliminary analysis, the root cause of the issue appears to be multiple Storage errors that caused the control plane writer to stop updating. The control plane processed no or minimal updates within 2022-06-11 05:16 - 07:45 PDT.\n**Customer Impact:**\nCustomers may have experienced Cloud Armor rule changes that were not applied since the control plane was not processing changes.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-11T15:44:17+00:00",
-        "modified": "2022-06-11T15:44:18+00:00",
-        "when": "2022-06-11T15:44:17+00:00",
-        "text": "The issue with Cloud Armor has been resolved for all affected users as of Saturday, 2022-06-11 07:45 US/Pacific.\nCustomers who made updates during the timeframe of 2022-06-11 05:16 - 07:45 PDT are not effective and will need to make a fresh update to their Cloud Armor config.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-11T14:22:25+00:00",
-        "modified": "2022-06-11T14:22:26+00:00",
-        "when": "2022-06-11T14:22:25+00:00",
-        "text": "Summary: We are experiencing an issue with Cloud Armor control plane\nDescription: We are experiencing an issue with Cloud Armor beginning at Saturday, 2022-06-11 05:27 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Saturday, 2022-06-11 08:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may experience that Cloud Armor control plane is stuck with no updates.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-11T13:46:24+00:00",
-        "modified": "2022-06-11T14:02:54+00:00",
-        "when": "2022-06-11T13:46:24+00:00",
-        "text": "Summary: We are experiencing an issue with Cloud Armor control plane\nDescription: We are experiencing an issue with Cloud Armor beginning at Saturday, 2022-06-11 05:27 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Saturday, 2022-06-11 07:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may experience that Cloud Armor control plane is stuck with no updates.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-06-13T20:33:50+00:00",
-      "modified": "2022-06-13T20:33:50+00:00",
-      "when": "2022-06-13T20:33:50+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 11 June 2022 05:16\n**Incident End:** 11 June 2022 07:45\n**Duration:** 2 hours, 29 minutes\n**Affected Services and Features:**\nGoogle Cloud Armour\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Armor control plane was not processing updates in the global locale for a duration of 2 hours and 29 minutes. From preliminary analysis, the root cause of the issue appears to be multiple Storage errors that caused the control plane writer to stop updating. The control plane processed no or minimal updates within 2022-06-11 05:16 - 07:45 PDT.\n**Customer Impact:**\nCustomers may have experienced Cloud Armor rule changes that were not applied since the control plane was not processing changes.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Global",
-          "id": "global"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Cloud Armor",
-        "id": "Kakg69gTC3xFyeJCY2va"
-      },
-      {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
-      }
-    ],
-    "uri": "incidents/KPYTXQW4gRhXvTsZ1Fj9",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Global",
-        "id": "global"
-      }
-    ]
-  },
-  {
-    "id": "HzDuJz8t92LzvER4pT3y",
-    "number": "5087447213217570600",
-    "begin": "2022-06-09T22:34:28+00:00",
-    "created": "2022-06-09T22:47:24+00:00",
-    "end": "2022-06-10T00:27:41+00:00",
-    "modified": "2022-06-10T00:27:41+00:00",
-    "external_desc": "[US Multiregion] Customers May Experience BigQuery Latency",
-    "updates": [
-      {
-        "created": "2022-06-10T00:27:40+00:00",
-        "modified": "2022-06-10T00:27:41+00:00",
-        "when": "2022-06-10T00:27:40+00:00",
-        "text": "The issue with Google BigQuery has been resolved for all affected projects as of Thursday, 2022-06-09 17:24 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-09T23:04:25+00:00",
-        "modified": "2022-06-09T23:04:25+00:00",
-        "when": "2022-06-09T23:04:25+00:00",
-        "text": "Summary: [US Multiregion] Customers May Experience BigQuery Latency\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2022-06-09 17:10 US/Pacific.\nWe will provide more information by Thursday, 2022-06-09 17:30 US/Pacific.\nDiagnosis: Affected customers may experience latencies with BigQuery in the US Multiregion\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-09T23:03:51+00:00",
-        "modified": "2022-06-09T23:03:52+00:00",
-        "when": "2022-06-09T23:03:51+00:00",
-        "text": "Summary: [US Multiregion] Customers May Experience BigQuery Latency\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2022-06-09 17:30 US/Pacific.\nWe will provide more information by Thursday, 2022-06-09 17:02 US/Pacific.\nDiagnosis: Affected customers may experience latencies with BigQuery in the US Multiregion\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-09T22:47:24+00:00",
-        "modified": "2022-06-09T22:47:25+00:00",
-        "when": "2022-06-09T22:47:24+00:00",
-        "text": "Summary: [US Multiregion] Customers May Experience BigQuery Latency\nDescription: We are experiencing a performance issue with Google BigQuery.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2022-06-09 16:05 US/Pacific with current details.\nDiagnosis: Affected customers may experience latencies with BigQuery in the US Multiregion\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-06-10T00:27:40+00:00",
-      "modified": "2022-06-10T00:27:41+00:00",
-      "when": "2022-06-10T00:27:40+00:00",
-      "text": "The issue with Google BigQuery has been resolved for all affected projects as of Thursday, 2022-06-09 17:24 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
-    "service_key": "9CcrhHUcFevXPSVaSxkf",
-    "service_name": "Google BigQuery",
-    "affected_products": [
-      {
-        "title": "Google BigQuery",
-        "id": "9CcrhHUcFevXPSVaSxkf"
-      }
-    ],
-    "uri": "incidents/HzDuJz8t92LzvER4pT3y",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Multi-region: us",
-        "id": "us"
       }
     ]
   },
