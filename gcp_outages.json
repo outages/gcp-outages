@@ -838,14 +838,732 @@
     ]
   },
   {
+    "id": "iAgVMxJUfE1J9et7j9KB",
+    "number": "13909014623288227313",
+    "begin": "2022-06-16T08:11:00+00:00",
+    "created": "2022-06-16T09:46:24+00:00",
+    "end": "2022-06-16T09:44:00+00:00",
+    "modified": "2022-06-17T00:10:46+00:00",
+    "external_desc": "Google Cloud Networking packet loss issue",
+    "updates": [
+      {
+        "created": "2022-06-17T00:10:38+00:00",
+        "modified": "2022-06-17T00:10:38+00:00",
+        "when": "2022-06-17T00:10:38+00:00",
+        "text": "# MINI INCIDENT REPORT\nWe apologize for the inconvenience this service disruption/outage caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 16 June 2022 01:11\n**Incident End:** 16 June 2022 02:44\n**Duration:** 1 hour, 33 minutes\n**Affected Services and Features:**\n- Google Cloud Networking\n- Cloud Monitoring\n- Cloud NAT\n- Hybrid Connectivity\n- Cloud Run\n- Cloud Interconnect\n- Virtual Private Cloud (VPC)\n- Gmail\n- Cloud Bigtable\n**Regions/Zones:** Europe and Asia\n**Description:**\nGoogle Cloud Networking experienced elevated packet loss and latency with Google Cloud Services across Europe and Asia for a duration of 1 hour, 36 minutes. Any service that uses Cloud Networking may have observed impact. We have included available details of service specific impact below; however, this may not be a comprehensive accounting of all downstream networking impact.\nFrom preliminary analysis, the root cause of the issue was due to a large reconvergence event on our user facing backbone, which was triggered by a typical fiber cut in North America. The failure resulted in packet loss due to either some MPLS tunnels going down, or due to congestion on remaining tunnels that quickly grew to accommodate demand on next-best paths. Tunnels going down is not expected behavior of MPLS control plane in response to best-path capacity going down when adjacent capacity remains available and is being investigated with highest priority with the hardware vendor. Mitigation of the packet loss required Google engineers to manually intervene on the network control plane. The underlying Cloud Networking impact ended at 02:58, however, some Cloud Services may have taken longer to recover.\nDue to backbone control plane behavior during this event, network forwarding may have been suboptimal for some destinations resulting in higher network latency.\n**Customer Impact:**\n- **Google Cloud Networking** - Public IP traffic connectivity failed from 01:22 to 02:58 US/Pacific.\n- **Cloud Monitoring** - Affected customers observed metric data failing to publish in europe-north1.\n- **Cloud NAT** - Affected customers experienced packet loss on some flows between regions in Europe, South America, and North America.\n- **Hybrid Connectivity** - Affected customers experienced packet loss on some flows between regions in Europe, South America, and North America.\n- **Cloud Run** - Affected customers experienced packet loss in europe-north1.\n- **Cloud Interconnect** - Affected customers experienced packet loss on some flows between regions in Europe, South America, and North America.\n- **Virtual Private Cloud (VPC)** - Affected customers experienced up to 100% packet loss with traffic between Europe and Asia over private and public IP.\n- **Cloud Bigtable** - Affected customers experienced elevated latency with read and write operations in europe-north1.\n- **Gmail** - Affected web client users experienced transient service unavailability.\n**Additional details:**\nFiber cuts on the Google network are quite common with no observable malfunction to the MPLS control plane. This incident surfaces a novel MPLS control plane behavior. We are committed to fully identifying the root cause and addressing it to prevent it with our partners.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-16T10:03:47+00:00",
+        "modified": "2022-06-16T10:03:57+00:00",
+        "when": "2022-06-16T10:03:47+00:00",
+        "text": "The issue with Cloud NAT, Google Cloud Networking, Hybrid Connectivity, Virtual Private Cloud (VPC) has been resolved for all affected projects as of Thursday, 2022-06-16 03:02 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-16T09:46:13+00:00",
+        "modified": "2022-06-16T09:46:26+00:00",
+        "when": "2022-06-16T09:46:13+00:00",
+        "text": "Summary: Google Cloud Networking packet loss issue\nDescription: We are experiencing an issue with Cloud NAT, Google Cloud Networking, Hybrid Connectivity, Virtual Private Cloud (VPC) beginning at Thursday, 2022-06-16 01:11 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2022-06-16 03:15 US/Pacific with current details.\nDiagnosis: The customers may experience persistent packet loss for some connection flows\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-06-17T00:10:38+00:00",
+      "modified": "2022-06-17T00:10:38+00:00",
+      "when": "2022-06-17T00:10:38+00:00",
+      "text": "# MINI INCIDENT REPORT\nWe apologize for the inconvenience this service disruption/outage caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 16 June 2022 01:11\n**Incident End:** 16 June 2022 02:44\n**Duration:** 1 hour, 33 minutes\n**Affected Services and Features:**\n- Google Cloud Networking\n- Cloud Monitoring\n- Cloud NAT\n- Hybrid Connectivity\n- Cloud Run\n- Cloud Interconnect\n- Virtual Private Cloud (VPC)\n- Gmail\n- Cloud Bigtable\n**Regions/Zones:** Europe and Asia\n**Description:**\nGoogle Cloud Networking experienced elevated packet loss and latency with Google Cloud Services across Europe and Asia for a duration of 1 hour, 36 minutes. Any service that uses Cloud Networking may have observed impact. We have included available details of service specific impact below; however, this may not be a comprehensive accounting of all downstream networking impact.\nFrom preliminary analysis, the root cause of the issue was due to a large reconvergence event on our user facing backbone, which was triggered by a typical fiber cut in North America. The failure resulted in packet loss due to either some MPLS tunnels going down, or due to congestion on remaining tunnels that quickly grew to accommodate demand on next-best paths. Tunnels going down is not expected behavior of MPLS control plane in response to best-path capacity going down when adjacent capacity remains available and is being investigated with highest priority with the hardware vendor. Mitigation of the packet loss required Google engineers to manually intervene on the network control plane. The underlying Cloud Networking impact ended at 02:58, however, some Cloud Services may have taken longer to recover.\nDue to backbone control plane behavior during this event, network forwarding may have been suboptimal for some destinations resulting in higher network latency.\n**Customer Impact:**\n- **Google Cloud Networking** - Public IP traffic connectivity failed from 01:22 to 02:58 US/Pacific.\n- **Cloud Monitoring** - Affected customers observed metric data failing to publish in europe-north1.\n- **Cloud NAT** - Affected customers experienced packet loss on some flows between regions in Europe, South America, and North America.\n- **Hybrid Connectivity** - Affected customers experienced packet loss on some flows between regions in Europe, South America, and North America.\n- **Cloud Run** - Affected customers experienced packet loss in europe-north1.\n- **Cloud Interconnect** - Affected customers experienced packet loss on some flows between regions in Europe, South America, and North America.\n- **Virtual Private Cloud (VPC)** - Affected customers experienced up to 100% packet loss with traffic between Europe and Asia over private and public IP.\n- **Cloud Bigtable** - Affected customers experienced elevated latency with read and write operations in europe-north1.\n- **Gmail** - Affected web client users experienced transient service unavailability.\n**Additional details:**\nFiber cuts on the Google network are quite common with no observable malfunction to the MPLS control plane. This incident surfaces a novel MPLS control plane behavior. We are committed to fully identifying the root cause and addressing it to prevent it with our partners.",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Taiwan (asia-east1)",
+          "id": "asia-east1"
+        },
+        {
+          "title": "Osaka (asia-northeast2)",
+          "id": "asia-northeast2"
+        },
+        {
+          "title": "Seoul (asia-northeast3)",
+          "id": "asia-northeast3"
+        },
+        {
+          "title": "Mumbai (asia-south1)",
+          "id": "asia-south1"
+        },
+        {
+          "title": "Jakarta (asia-southeast2)",
+          "id": "asia-southeast2"
+        },
+        {
+          "title": "Finland (europe-north1)",
+          "id": "europe-north1"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_OUTAGE",
+    "severity": "high",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Hybrid Connectivity",
+        "id": "5x6CGnZvSHQZ26KtxpK1"
+      },
+      {
+        "title": "Virtual Private Cloud (VPC)",
+        "id": "BSGtCUnz6ZmyajsjgTKv"
+      },
+      {
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
+      },
+      {
+        "title": "Cloud NAT",
+        "id": "hCNpnTQHkUCCGxJy35Yq"
+      }
+    ],
+    "uri": "incidents/iAgVMxJUfE1J9et7j9KB",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Taiwan (asia-east1)",
+        "id": "asia-east1"
+      },
+      {
+        "title": "Osaka (asia-northeast2)",
+        "id": "asia-northeast2"
+      },
+      {
+        "title": "Seoul (asia-northeast3)",
+        "id": "asia-northeast3"
+      },
+      {
+        "title": "Mumbai (asia-south1)",
+        "id": "asia-south1"
+      },
+      {
+        "title": "Jakarta (asia-southeast2)",
+        "id": "asia-southeast2"
+      },
+      {
+        "title": "Finland (europe-north1)",
+        "id": "europe-north1"
+      }
+    ]
+  },
+  {
+    "id": "Lvd7FBrPJmL7oxhqrDwt",
+    "number": "15199014936264361317",
+    "begin": "2022-06-14T18:40:51+00:00",
+    "created": "2022-06-14T18:55:08+00:00",
+    "end": "2022-06-15T00:22:31+00:00",
+    "modified": "2022-06-15T00:22:31+00:00",
+    "external_desc": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/fc7GCA6kAgnBihezUAkx",
+    "updates": [
+      {
+        "created": "2022-06-15T00:22:30+00:00",
+        "modified": "2022-06-15T00:22:32+00:00",
+        "when": "2022-06-15T00:22:30+00:00",
+        "text": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/fc7GCA6kAgnBihezUAkx",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T21:38:08+00:00",
+        "modified": "2022-06-14T21:38:09+00:00",
+        "when": "2022-06-14T21:38:08+00:00",
+        "text": "Summary: Customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nDescription: We are experiencing an issue with Cloud Filestore beginning at Tuesday, 2022-06-14 08:02 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 18:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nWorkaround: Affected customers can create instances in another region.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T20:43:19+00:00",
+        "modified": "2022-06-14T20:43:20+00:00",
+        "when": "2022-06-14T20:43:19+00:00",
+        "text": "Summary: Customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nDescription: We are experiencing an issue with Cloud Filestore beginning at Tuesday, 2022-06-14 08:02 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 14:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nWorkaround: Affected customers can create instances in another region.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T19:44:29+00:00",
+        "modified": "2022-06-14T19:44:30+00:00",
+        "when": "2022-06-14T19:44:29+00:00",
+        "text": "Summary: Customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nDescription: We are experiencing an issue with Cloud Filestore beginning at Tuesday, 2022-06-14 08:02 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 13:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nWorkaround: Affected customers can create instances in another region.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T18:57:39+00:00",
+        "modified": "2022-06-14T18:57:40+00:00",
+        "when": "2022-06-14T18:57:39+00:00",
+        "text": "Summary: Customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nDescription: We are experiencing an issue with Cloud Filestore beginning at Tuesday, 2022-06-14 08:02 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 13:01 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nWorkaround: Affected customers can create instances in another region.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T18:55:02+00:00",
+        "modified": "2022-06-14T18:55:08+00:00",
+        "when": "2022-06-14T18:55:02+00:00",
+        "text": "Summary: Customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nDescription: We are experiencing an issue with Cloud Filestore beginning at Tuesday, 2022-06-14 08:02 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 13:01 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-06-15T00:22:30+00:00",
+      "modified": "2022-06-15T00:22:32+00:00",
+      "when": "2022-06-15T00:22:30+00:00",
+      "text": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/fc7GCA6kAgnBihezUAkx",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Iowa (us-central1)",
+          "id": "us-central1"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "jog4nyYkquiLeSK5s26q",
+    "service_name": "Cloud Filestore",
+    "affected_products": [
+      {
+        "title": "Cloud Filestore",
+        "id": "jog4nyYkquiLeSK5s26q"
+      }
+    ],
+    "uri": "incidents/Lvd7FBrPJmL7oxhqrDwt",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Iowa (us-central1)",
+        "id": "us-central1"
+      }
+    ]
+  },
+  {
+    "id": "fc7GCA6kAgnBihezUAkx",
+    "number": "16466106385248773020",
+    "begin": "2022-06-14T13:56:00+00:00",
+    "created": "2022-06-15T00:09:03+00:00",
+    "end": "2022-06-15T00:43:00+00:00",
+    "modified": "2022-06-15T05:59:56+00:00",
+    "external_desc": "We are experiencing an issue with Google Cloud Networking at us-central1 across multiple products, beginning at Tuesday, 2022-06-14 06:00 US/Pacific.",
+    "updates": [
+      {
+        "created": "2022-06-15T05:58:48+00:00",
+        "modified": "2022-06-15T05:58:48+00:00",
+        "when": "2022-06-15T05:58:48+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 Jun 2022 06:56\n**Incident End:** 14 Jun 2022 17:43\n**Duration:** 10 hrs, 47 minutes\n**Affected Services and Features:**\nGoogle Compute Engine, Google Kubernetes Engine, Filestore, Google Cloud Load Balancers\n**Regions/Zones:** us-central1\n**Description:**\nDelays in creating Virtual machines or connecting to existing virtual machines for a period of 10 hrs 47 minutes. From preliminary analysis, the root cause of the issue is slow down in global health checking infrastructure check to an extent where flow cache in packet processing service was expiring.\n**Customer Impact:**\n**Google Compute Engine** - Users may have observed an error while creating new VMs or connecting VMs in use.\n**Google Kubernetes Engine** - Users observed latency and timeouts during GKE Cluster operations.\n**Google Cloud Load Balancers** - Customers may have observed errors from Load Balancer service for resources in us-central1.\n**Filestore** - Users may have observed an error while creating new VMs.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-15T01:15:01+00:00",
+        "modified": "2022-06-15T01:15:02+00:00",
+        "when": "2022-06-15T01:15:01+00:00",
+        "text": "The issue with Google Cloud Networking that impacted multiple products is fully mitigated as of 2022-06-14 17:43 US/Pacific. Our Engineering team is continuing to monitor the environment and working towards full resolution.\nIf you still have questions or are impacted, please open a case with the Support Team, and we will continue to work with you.\nWe thank you for your patience while we are working towards resolving this issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-15T00:47:02+00:00",
+        "modified": "2022-06-15T00:47:03+00:00",
+        "when": "2022-06-15T00:47:02+00:00",
+        "text": "Summary: We are experiencing an issue with Google Cloud Networking at us-central1 across multiple products, beginning at Tuesday, 2022-06-14 06:00 US/Pacific.\nDescription: We are experiencing an issue with Google Cloud Networking at us-central1, beginning at Tuesday, 2022-06-14 06:00 US/Pacific, with new VM creation errors, latencies, timeouts, and connection errors reported across multiple products.\n- Google Compute Engine\n- Google Kubernetes Engine\n- Google Cloud Load Balancers\n- Filestore\nMitigation work is currently underway by our engineering team. We do not have an ETA for mitigation at this point.\nWe will provide an update by Tuesday, 2022-06-14 18:20 US/Pacific with current details.\nDiagnosis: Customers may see new VM creation errors, latencies, timeouts, and connection errors reported across multiple products in us-central1.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-15T00:15:30+00:00",
+        "modified": "2022-06-15T00:15:31+00:00",
+        "when": "2022-06-15T00:15:30+00:00",
+        "text": "Summary: We are experiencing an issue with Google Cloud Networking at us-central1 across multiple products, beginning at Tuesday, 2022-06-14 06:00 US/Pacific.\nDescription: We are experiencing an issue with Google Cloud Networking at us-central1 beginning at Tuesday, 2022-06-14 06:00 US/Pacific, with latencies across products.\n- Google Compute Engine.\n- Google Kubernetes Engine.\n- Google Cloud Load Balancers.\n- Filestore.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 17:45 US/Pacific with current details.\nDiagnosis: Services running from us-central1 may experience latency issues.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-15T00:09:02+00:00",
+        "modified": "2022-06-15T00:09:04+00:00",
+        "when": "2022-06-15T00:09:02+00:00",
+        "text": "Summary: We are experiencing an issue with Google Cloud Networking at us-central1 across multiple products, beginning at Tuesday, 2022-06-14 06:00 US/Pacific.\nDescription: We are experiencing an issue with Google Cloud Networking beginning at Tuesday, 2022-06-14 06:00 US/Pacific with reports of possible latencies across products\n- Google Kubernetes Engine\n- Google Cloud Load Balancers\n- Filestore.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 17:45 US/Pacific with current details.\nDiagnosis: Services running from us-central1 may experience latency issues.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-06-15T05:58:48+00:00",
+      "modified": "2022-06-15T05:58:48+00:00",
+      "when": "2022-06-15T05:58:48+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 Jun 2022 06:56\n**Incident End:** 14 Jun 2022 17:43\n**Duration:** 10 hrs, 47 minutes\n**Affected Services and Features:**\nGoogle Compute Engine, Google Kubernetes Engine, Filestore, Google Cloud Load Balancers\n**Regions/Zones:** us-central1\n**Description:**\nDelays in creating Virtual machines or connecting to existing virtual machines for a period of 10 hrs 47 minutes. From preliminary analysis, the root cause of the issue is slow down in global health checking infrastructure check to an extent where flow cache in packet processing service was expiring.\n**Customer Impact:**\n**Google Compute Engine** - Users may have observed an error while creating new VMs or connecting VMs in use.\n**Google Kubernetes Engine** - Users observed latency and timeouts during GKE Cluster operations.\n**Google Cloud Load Balancers** - Customers may have observed errors from Load Balancer service for resources in us-central1.\n**Filestore** - Users may have observed an error while creating new VMs.",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Iowa (us-central1)",
+          "id": "us-central1"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Google Kubernetes Engine",
+        "id": "LCSbT57h59oR4W98NHuz"
+      },
+      {
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
+      },
+      {
+        "title": "Cloud Load Balancing",
+        "id": "ix7u9beT8ivBdjApTif3"
+      },
+      {
+        "title": "Cloud Filestore",
+        "id": "jog4nyYkquiLeSK5s26q"
+      }
+    ],
+    "uri": "incidents/fc7GCA6kAgnBihezUAkx",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Iowa (us-central1)",
+        "id": "us-central1"
+      }
+    ]
+  },
+  {
+    "id": "4Sie4sXFPougA2Ku24pT",
+    "number": "16190899427126199648",
+    "begin": "2022-06-14T10:03:00+00:00",
+    "created": "2022-06-14T11:00:36+00:00",
+    "end": "2022-06-14T13:22:00+00:00",
+    "modified": "2022-06-14T18:54:41+00:00",
+    "external_desc": "GKE API seeing high latency and errors in us-central1",
+    "updates": [
+      {
+        "created": "2022-06-14T18:54:05+00:00",
+        "modified": "2022-06-14T18:54:05+00:00",
+        "when": "2022-06-14T18:54:05+00:00",
+        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 June 2022 03:03\n**Incident End:** 14 June 2022 06:22\n**Duration:** 3 hours, 19 minutes\n**Affected Services and Features:**\nGoogle Kubernetes Engine, Cloud Data Fusion, Cloud Logging\n**Regions/Zones:** us-central1\n**Description:**\nGoogle Kubernetes Engine (GKE) experienced increased latency and errors from the GKE API in us-central1 for 3 hours and 19 minutes. From preliminary analysis, the root cause of the issue was an unexpected increase in backend traffic that was compounded by clients retrying failed requests. The issue was mitigated by scaling up the GKE control plane to handle the increased traffic.\n**Customer Impact:**\n* **Google Kubernetes Engine (GKE)** customers may have experienced increased latency and errors for GKE API calls via gcloud and the Google Cloud Console UI. GKE cluster workloads continued to run; however customers may have been unable to perform operations such as confirm cluster status, trigger upgrades, view workloads, or create/delete clusters and node pools.\n* **Cloud Data Fusion** customers may have experienced instance creation and deletion failures in us-central1.\n* **Cloud Logging** customers may have experienced increased latency for suggested searches for GKE clusters in us-central1.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T13:26:34+00:00",
+        "modified": "2022-06-14T13:26:39+00:00",
+        "when": "2022-06-14T13:26:34+00:00",
+        "text": "The issue with Google Kubernetes Engine has been resolved for all affected users as of Tuesday, 2022-06-14 06:17 US/Pacific.\nIf customers are still experiencing issues, please raise the case via normal channels .\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T13:15:26+00:00",
+        "modified": "2022-06-14T13:15:31+00:00",
+        "when": "2022-06-14T13:15:26+00:00",
+        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nCustomers who are able to use another region are advised to do so.\nWe will provide more information by Tuesday, 2022-06-14 06:35 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T12:34:41+00:00",
+        "modified": "2022-06-14T12:34:46+00:00",
+        "when": "2022-06-14T12:34:41+00:00",
+        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nCustomers who are able to use another region are advised to do so.\nWe will provide more information by Tuesday, 2022-06-14 06:10 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T12:01:11+00:00",
+        "modified": "2022-06-14T12:01:18+00:00",
+        "when": "2022-06-14T12:01:11+00:00",
+        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete by Tuesday, 2022-06-14 05:30 US/Pacific.}\nWe will provide more information by Tuesday, 2022-06-14 05:31 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T11:28:50+00:00",
+        "modified": "2022-06-14T11:28:55+00:00",
+        "when": "2022-06-14T11:28:50+00:00",
+        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Tuesday, 2022-06-14 05:00 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T11:00:28+00:00",
+        "modified": "2022-06-14T11:00:41+00:00",
+        "when": "2022-06-14T11:00:28+00:00",
+        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Tuesday, 2022-06-14 03:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 04:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-06-14T18:54:05+00:00",
+      "modified": "2022-06-14T18:54:05+00:00",
+      "when": "2022-06-14T18:54:05+00:00",
+      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 June 2022 03:03\n**Incident End:** 14 June 2022 06:22\n**Duration:** 3 hours, 19 minutes\n**Affected Services and Features:**\nGoogle Kubernetes Engine, Cloud Data Fusion, Cloud Logging\n**Regions/Zones:** us-central1\n**Description:**\nGoogle Kubernetes Engine (GKE) experienced increased latency and errors from the GKE API in us-central1 for 3 hours and 19 minutes. From preliminary analysis, the root cause of the issue was an unexpected increase in backend traffic that was compounded by clients retrying failed requests. The issue was mitigated by scaling up the GKE control plane to handle the increased traffic.\n**Customer Impact:**\n* **Google Kubernetes Engine (GKE)** customers may have experienced increased latency and errors for GKE API calls via gcloud and the Google Cloud Console UI. GKE cluster workloads continued to run; however customers may have been unable to perform operations such as confirm cluster status, trigger upgrades, view workloads, or create/delete clusters and node pools.\n* **Cloud Data Fusion** customers may have experienced instance creation and deletion failures in us-central1.\n* **Cloud Logging** customers may have experienced increased latency for suggested searches for GKE clusters in us-central1.",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Iowa (us-central1)",
+          "id": "us-central1"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Operations",
+        "id": "DixAowEQm45KgqXKP5tR"
+      },
+      {
+        "title": "Google Kubernetes Engine",
+        "id": "LCSbT57h59oR4W98NHuz"
+      },
+      {
+        "title": "Cloud Logging",
+        "id": "PuCJ6W2ovoDhLcyvZ1xa"
+      },
+      {
+        "title": "Cloud Data Fusion",
+        "id": "rLKDHeeaBiXTeutF1air"
+      }
+    ],
+    "uri": "incidents/4Sie4sXFPougA2Ku24pT",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Iowa (us-central1)",
+        "id": "us-central1"
+      }
+    ]
+  },
+  {
     "id": "huJFgyiNYPPypbw8PX9Y",
     "number": "9278202795851610263",
-    "begin": "2022-06-16T16:27:16+00:00",
+    "begin": "2022-06-13T21:55:00+00:00",
     "created": "2022-06-16T16:27:22+00:00",
-    "end": "2022-06-16T18:55:37+00:00",
-    "modified": "2022-06-16T18:55:37+00:00",
+    "end": "2022-06-16T18:26:00+00:00",
+    "modified": "2022-06-16T23:55:01+00:00",
     "external_desc": "Global: Some Google Cloud Console Customers are unable to create/edit GCE instances",
     "updates": [
+      {
+        "created": "2022-06-16T23:54:30+00:00",
+        "modified": "2022-06-16T23:54:30+00:00",
+        "when": "2022-06-16T23:54:30+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 13 June 2022 14:55\n**Incident End:** 16 June 2022 11:26\n**Duration:** 2 days, 20 hours, 31 minutes\n**Affected Services and Features:**\nGoogle Cloud Console, Google Compute Engine\n**Regions/Zones:** Global\n**Description:**\nCustomers may have been unable to create or edit Google Compute Engine (GCE) instances via the Google Cloud Console for 2 days 20 hours 31 minutes. From preliminary analysis, the root cause of the issue was a recent update to the GCE frontend UI.\nGoogle engineers rolled back the GCE frontend UI update to mitigate the issue on 16 June 2022 11:33 US/Pacific.\n**Customer Impact:**\nCustomers attempting to create or edit GCE instances via the Google Cloud Console may have received an error “Constraint constraints/compute.vmExternalIpAccess violated for project [project ID].“\nAs a workaround, customers were still able to create or edit GCE instances via the gcloud CLI or via Google Cloud Console by disabling the constraints/compute.vmExternalIpAccess policy.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2022-06-16T18:55:37+00:00",
         "modified": "2022-06-16T18:55:38+00:00",
@@ -1553,10 +2271,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-06-16T18:55:37+00:00",
-      "modified": "2022-06-16T18:55:38+00:00",
-      "when": "2022-06-16T18:55:37+00:00",
-      "text": "The issue with Google Cloud Console, Google Compute Engine has been resolved for all affected projects as of Thursday, 2022-06-16 11:33 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-06-16T23:54:30+00:00",
+      "modified": "2022-06-16T23:54:30+00:00",
+      "when": "2022-06-16T23:54:30+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 13 June 2022 14:55\n**Incident End:** 16 June 2022 11:26\n**Duration:** 2 days, 20 hours, 31 minutes\n**Affected Services and Features:**\nGoogle Cloud Console, Google Compute Engine\n**Regions/Zones:** Global\n**Description:**\nCustomers may have been unable to create or edit Google Compute Engine (GCE) instances via the Google Cloud Console for 2 days 20 hours 31 minutes. From preliminary analysis, the root cause of the issue was a recent update to the GCE frontend UI.\nGoogle engineers rolled back the GCE frontend UI update to mitigate the issue on 16 June 2022 11:33 US/Pacific.\n**Customer Impact:**\nCustomers attempting to create or edit GCE instances via the Google Cloud Console may have received an error “Constraint constraints/compute.vmExternalIpAccess violated for project [project ID].“\nAs a workaround, customers were still able to create or edit GCE instances via the gcloud CLI or via Google Cloud Console by disabling the constraints/compute.vmExternalIpAccess policy.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
@@ -1841,550 +2559,6 @@
       {
         "title": "Las Vegas (us-west4)",
         "id": "us-west4"
-      }
-    ]
-  },
-  {
-    "id": "iAgVMxJUfE1J9et7j9KB",
-    "number": "13909014623288227313",
-    "begin": "2022-06-16T08:34:44+00:00",
-    "created": "2022-06-16T09:46:24+00:00",
-    "end": "2022-06-16T10:03:52+00:00",
-    "modified": "2022-06-16T10:03:53+00:00",
-    "external_desc": "Google Cloud Networking packet loss issue",
-    "updates": [
-      {
-        "created": "2022-06-16T10:03:47+00:00",
-        "modified": "2022-06-16T10:03:57+00:00",
-        "when": "2022-06-16T10:03:47+00:00",
-        "text": "The issue with Cloud NAT, Google Cloud Networking, Hybrid Connectivity, Virtual Private Cloud (VPC) has been resolved for all affected projects as of Thursday, 2022-06-16 03:02 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Finland (europe-north1)",
-            "id": "europe-north1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-16T09:46:13+00:00",
-        "modified": "2022-06-16T09:46:26+00:00",
-        "when": "2022-06-16T09:46:13+00:00",
-        "text": "Summary: Google Cloud Networking packet loss issue\nDescription: We are experiencing an issue with Cloud NAT, Google Cloud Networking, Hybrid Connectivity, Virtual Private Cloud (VPC) beginning at Thursday, 2022-06-16 01:11 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2022-06-16 03:15 US/Pacific with current details.\nDiagnosis: The customers may experience persistent packet loss for some connection flows\nWorkaround: None at this time.",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Finland (europe-north1)",
-            "id": "europe-north1"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-06-16T10:03:47+00:00",
-      "modified": "2022-06-16T10:03:57+00:00",
-      "when": "2022-06-16T10:03:47+00:00",
-      "text": "The issue with Cloud NAT, Google Cloud Networking, Hybrid Connectivity, Virtual Private Cloud (VPC) has been resolved for all affected projects as of Thursday, 2022-06-16 03:02 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Taiwan (asia-east1)",
-          "id": "asia-east1"
-        },
-        {
-          "title": "Osaka (asia-northeast2)",
-          "id": "asia-northeast2"
-        },
-        {
-          "title": "Seoul (asia-northeast3)",
-          "id": "asia-northeast3"
-        },
-        {
-          "title": "Mumbai (asia-south1)",
-          "id": "asia-south1"
-        },
-        {
-          "title": "Jakarta (asia-southeast2)",
-          "id": "asia-southeast2"
-        },
-        {
-          "title": "Finland (europe-north1)",
-          "id": "europe-north1"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_OUTAGE",
-    "severity": "high",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Hybrid Connectivity",
-        "id": "5x6CGnZvSHQZ26KtxpK1"
-      },
-      {
-        "title": "Virtual Private Cloud (VPC)",
-        "id": "BSGtCUnz6ZmyajsjgTKv"
-      },
-      {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
-      },
-      {
-        "title": "Cloud NAT",
-        "id": "hCNpnTQHkUCCGxJy35Yq"
-      }
-    ],
-    "uri": "incidents/iAgVMxJUfE1J9et7j9KB",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Taiwan (asia-east1)",
-        "id": "asia-east1"
-      },
-      {
-        "title": "Osaka (asia-northeast2)",
-        "id": "asia-northeast2"
-      },
-      {
-        "title": "Seoul (asia-northeast3)",
-        "id": "asia-northeast3"
-      },
-      {
-        "title": "Mumbai (asia-south1)",
-        "id": "asia-south1"
-      },
-      {
-        "title": "Jakarta (asia-southeast2)",
-        "id": "asia-southeast2"
-      },
-      {
-        "title": "Finland (europe-north1)",
-        "id": "europe-north1"
-      }
-    ]
-  },
-  {
-    "id": "Lvd7FBrPJmL7oxhqrDwt",
-    "number": "15199014936264361317",
-    "begin": "2022-06-14T18:40:51+00:00",
-    "created": "2022-06-14T18:55:08+00:00",
-    "end": "2022-06-15T00:22:31+00:00",
-    "modified": "2022-06-15T00:22:31+00:00",
-    "external_desc": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/fc7GCA6kAgnBihezUAkx",
-    "updates": [
-      {
-        "created": "2022-06-15T00:22:30+00:00",
-        "modified": "2022-06-15T00:22:32+00:00",
-        "when": "2022-06-15T00:22:30+00:00",
-        "text": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/fc7GCA6kAgnBihezUAkx",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T21:38:08+00:00",
-        "modified": "2022-06-14T21:38:09+00:00",
-        "when": "2022-06-14T21:38:08+00:00",
-        "text": "Summary: Customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nDescription: We are experiencing an issue with Cloud Filestore beginning at Tuesday, 2022-06-14 08:02 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 18:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nWorkaround: Affected customers can create instances in another region.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T20:43:19+00:00",
-        "modified": "2022-06-14T20:43:20+00:00",
-        "when": "2022-06-14T20:43:19+00:00",
-        "text": "Summary: Customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nDescription: We are experiencing an issue with Cloud Filestore beginning at Tuesday, 2022-06-14 08:02 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 14:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nWorkaround: Affected customers can create instances in another region.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T19:44:29+00:00",
-        "modified": "2022-06-14T19:44:30+00:00",
-        "when": "2022-06-14T19:44:29+00:00",
-        "text": "Summary: Customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nDescription: We are experiencing an issue with Cloud Filestore beginning at Tuesday, 2022-06-14 08:02 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 13:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nWorkaround: Affected customers can create instances in another region.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T18:57:39+00:00",
-        "modified": "2022-06-14T18:57:40+00:00",
-        "when": "2022-06-14T18:57:39+00:00",
-        "text": "Summary: Customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nDescription: We are experiencing an issue with Cloud Filestore beginning at Tuesday, 2022-06-14 08:02 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 13:01 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nWorkaround: Affected customers can create instances in another region.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T18:55:02+00:00",
-        "modified": "2022-06-14T18:55:08+00:00",
-        "when": "2022-06-14T18:55:02+00:00",
-        "text": "Summary: Customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nDescription: We are experiencing an issue with Cloud Filestore beginning at Tuesday, 2022-06-14 08:02 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 13:01 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers are unable to create Cloud Filestore High Scale and Enterprise instances in us-central1\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-06-15T00:22:30+00:00",
-      "modified": "2022-06-15T00:22:32+00:00",
-      "when": "2022-06-15T00:22:30+00:00",
-      "text": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/fc7GCA6kAgnBihezUAkx",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "jog4nyYkquiLeSK5s26q",
-    "service_name": "Cloud Filestore",
-    "affected_products": [
-      {
-        "title": "Cloud Filestore",
-        "id": "jog4nyYkquiLeSK5s26q"
-      }
-    ],
-    "uri": "incidents/Lvd7FBrPJmL7oxhqrDwt",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Iowa (us-central1)",
-        "id": "us-central1"
-      }
-    ]
-  },
-  {
-    "id": "fc7GCA6kAgnBihezUAkx",
-    "number": "16466106385248773020",
-    "begin": "2022-06-14T13:56:00+00:00",
-    "created": "2022-06-15T00:09:03+00:00",
-    "end": "2022-06-15T00:43:00+00:00",
-    "modified": "2022-06-15T05:59:56+00:00",
-    "external_desc": "We are experiencing an issue with Google Cloud Networking at us-central1 across multiple products, beginning at Tuesday, 2022-06-14 06:00 US/Pacific.",
-    "updates": [
-      {
-        "created": "2022-06-15T05:58:48+00:00",
-        "modified": "2022-06-15T05:58:48+00:00",
-        "when": "2022-06-15T05:58:48+00:00",
-        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 Jun 2022 06:56\n**Incident End:** 14 Jun 2022 17:43\n**Duration:** 10 hrs, 47 minutes\n**Affected Services and Features:**\nGoogle Compute Engine, Google Kubernetes Engine, Filestore, Google Cloud Load Balancers\n**Regions/Zones:** us-central1\n**Description:**\nDelays in creating Virtual machines or connecting to existing virtual machines for a period of 10 hrs 47 minutes. From preliminary analysis, the root cause of the issue is slow down in global health checking infrastructure check to an extent where flow cache in packet processing service was expiring.\n**Customer Impact:**\n**Google Compute Engine** - Users may have observed an error while creating new VMs or connecting VMs in use.\n**Google Kubernetes Engine** - Users observed latency and timeouts during GKE Cluster operations.\n**Google Cloud Load Balancers** - Customers may have observed errors from Load Balancer service for resources in us-central1.\n**Filestore** - Users may have observed an error while creating new VMs.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-15T01:15:01+00:00",
-        "modified": "2022-06-15T01:15:02+00:00",
-        "when": "2022-06-15T01:15:01+00:00",
-        "text": "The issue with Google Cloud Networking that impacted multiple products is fully mitigated as of 2022-06-14 17:43 US/Pacific. Our Engineering team is continuing to monitor the environment and working towards full resolution.\nIf you still have questions or are impacted, please open a case with the Support Team, and we will continue to work with you.\nWe thank you for your patience while we are working towards resolving this issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-15T00:47:02+00:00",
-        "modified": "2022-06-15T00:47:03+00:00",
-        "when": "2022-06-15T00:47:02+00:00",
-        "text": "Summary: We are experiencing an issue with Google Cloud Networking at us-central1 across multiple products, beginning at Tuesday, 2022-06-14 06:00 US/Pacific.\nDescription: We are experiencing an issue with Google Cloud Networking at us-central1, beginning at Tuesday, 2022-06-14 06:00 US/Pacific, with new VM creation errors, latencies, timeouts, and connection errors reported across multiple products.\n- Google Compute Engine\n- Google Kubernetes Engine\n- Google Cloud Load Balancers\n- Filestore\nMitigation work is currently underway by our engineering team. We do not have an ETA for mitigation at this point.\nWe will provide an update by Tuesday, 2022-06-14 18:20 US/Pacific with current details.\nDiagnosis: Customers may see new VM creation errors, latencies, timeouts, and connection errors reported across multiple products in us-central1.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-15T00:15:30+00:00",
-        "modified": "2022-06-15T00:15:31+00:00",
-        "when": "2022-06-15T00:15:30+00:00",
-        "text": "Summary: We are experiencing an issue with Google Cloud Networking at us-central1 across multiple products, beginning at Tuesday, 2022-06-14 06:00 US/Pacific.\nDescription: We are experiencing an issue with Google Cloud Networking at us-central1 beginning at Tuesday, 2022-06-14 06:00 US/Pacific, with latencies across products.\n- Google Compute Engine.\n- Google Kubernetes Engine.\n- Google Cloud Load Balancers.\n- Filestore.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 17:45 US/Pacific with current details.\nDiagnosis: Services running from us-central1 may experience latency issues.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-15T00:09:02+00:00",
-        "modified": "2022-06-15T00:09:04+00:00",
-        "when": "2022-06-15T00:09:02+00:00",
-        "text": "Summary: We are experiencing an issue with Google Cloud Networking at us-central1 across multiple products, beginning at Tuesday, 2022-06-14 06:00 US/Pacific.\nDescription: We are experiencing an issue with Google Cloud Networking beginning at Tuesday, 2022-06-14 06:00 US/Pacific with reports of possible latencies across products\n- Google Kubernetes Engine\n- Google Cloud Load Balancers\n- Filestore.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 17:45 US/Pacific with current details.\nDiagnosis: Services running from us-central1 may experience latency issues.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-06-15T05:58:48+00:00",
-      "modified": "2022-06-15T05:58:48+00:00",
-      "when": "2022-06-15T05:58:48+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 Jun 2022 06:56\n**Incident End:** 14 Jun 2022 17:43\n**Duration:** 10 hrs, 47 minutes\n**Affected Services and Features:**\nGoogle Compute Engine, Google Kubernetes Engine, Filestore, Google Cloud Load Balancers\n**Regions/Zones:** us-central1\n**Description:**\nDelays in creating Virtual machines or connecting to existing virtual machines for a period of 10 hrs 47 minutes. From preliminary analysis, the root cause of the issue is slow down in global health checking infrastructure check to an extent where flow cache in packet processing service was expiring.\n**Customer Impact:**\n**Google Compute Engine** - Users may have observed an error while creating new VMs or connecting VMs in use.\n**Google Kubernetes Engine** - Users observed latency and timeouts during GKE Cluster operations.\n**Google Cloud Load Balancers** - Customers may have observed errors from Load Balancer service for resources in us-central1.\n**Filestore** - Users may have observed an error while creating new VMs.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Google Kubernetes Engine",
-        "id": "LCSbT57h59oR4W98NHuz"
-      },
-      {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
-      },
-      {
-        "title": "Cloud Load Balancing",
-        "id": "ix7u9beT8ivBdjApTif3"
-      },
-      {
-        "title": "Cloud Filestore",
-        "id": "jog4nyYkquiLeSK5s26q"
-      }
-    ],
-    "uri": "incidents/fc7GCA6kAgnBihezUAkx",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Iowa (us-central1)",
-        "id": "us-central1"
-      }
-    ]
-  },
-  {
-    "id": "4Sie4sXFPougA2Ku24pT",
-    "number": "16190899427126199648",
-    "begin": "2022-06-14T10:03:00+00:00",
-    "created": "2022-06-14T11:00:36+00:00",
-    "end": "2022-06-14T13:22:00+00:00",
-    "modified": "2022-06-14T18:54:41+00:00",
-    "external_desc": "GKE API seeing high latency and errors in us-central1",
-    "updates": [
-      {
-        "created": "2022-06-14T18:54:05+00:00",
-        "modified": "2022-06-14T18:54:05+00:00",
-        "when": "2022-06-14T18:54:05+00:00",
-        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 June 2022 03:03\n**Incident End:** 14 June 2022 06:22\n**Duration:** 3 hours, 19 minutes\n**Affected Services and Features:**\nGoogle Kubernetes Engine, Cloud Data Fusion, Cloud Logging\n**Regions/Zones:** us-central1\n**Description:**\nGoogle Kubernetes Engine (GKE) experienced increased latency and errors from the GKE API in us-central1 for 3 hours and 19 minutes. From preliminary analysis, the root cause of the issue was an unexpected increase in backend traffic that was compounded by clients retrying failed requests. The issue was mitigated by scaling up the GKE control plane to handle the increased traffic.\n**Customer Impact:**\n* **Google Kubernetes Engine (GKE)** customers may have experienced increased latency and errors for GKE API calls via gcloud and the Google Cloud Console UI. GKE cluster workloads continued to run; however customers may have been unable to perform operations such as confirm cluster status, trigger upgrades, view workloads, or create/delete clusters and node pools.\n* **Cloud Data Fusion** customers may have experienced instance creation and deletion failures in us-central1.\n* **Cloud Logging** customers may have experienced increased latency for suggested searches for GKE clusters in us-central1.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T13:26:34+00:00",
-        "modified": "2022-06-14T13:26:39+00:00",
-        "when": "2022-06-14T13:26:34+00:00",
-        "text": "The issue with Google Kubernetes Engine has been resolved for all affected users as of Tuesday, 2022-06-14 06:17 US/Pacific.\nIf customers are still experiencing issues, please raise the case via normal channels .\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T13:15:26+00:00",
-        "modified": "2022-06-14T13:15:31+00:00",
-        "when": "2022-06-14T13:15:26+00:00",
-        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nCustomers who are able to use another region are advised to do so.\nWe will provide more information by Tuesday, 2022-06-14 06:35 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T12:34:41+00:00",
-        "modified": "2022-06-14T12:34:46+00:00",
-        "when": "2022-06-14T12:34:41+00:00",
-        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nCustomers who are able to use another region are advised to do so.\nWe will provide more information by Tuesday, 2022-06-14 06:10 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T12:01:11+00:00",
-        "modified": "2022-06-14T12:01:18+00:00",
-        "when": "2022-06-14T12:01:11+00:00",
-        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete by Tuesday, 2022-06-14 05:30 US/Pacific.}\nWe will provide more information by Tuesday, 2022-06-14 05:31 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T11:28:50+00:00",
-        "modified": "2022-06-14T11:28:55+00:00",
-        "when": "2022-06-14T11:28:50+00:00",
-        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Tuesday, 2022-06-14 05:00 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T11:00:28+00:00",
-        "modified": "2022-06-14T11:00:41+00:00",
-        "when": "2022-06-14T11:00:28+00:00",
-        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Tuesday, 2022-06-14 03:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 04:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-06-14T18:54:05+00:00",
-      "modified": "2022-06-14T18:54:05+00:00",
-      "when": "2022-06-14T18:54:05+00:00",
-      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 June 2022 03:03\n**Incident End:** 14 June 2022 06:22\n**Duration:** 3 hours, 19 minutes\n**Affected Services and Features:**\nGoogle Kubernetes Engine, Cloud Data Fusion, Cloud Logging\n**Regions/Zones:** us-central1\n**Description:**\nGoogle Kubernetes Engine (GKE) experienced increased latency and errors from the GKE API in us-central1 for 3 hours and 19 minutes. From preliminary analysis, the root cause of the issue was an unexpected increase in backend traffic that was compounded by clients retrying failed requests. The issue was mitigated by scaling up the GKE control plane to handle the increased traffic.\n**Customer Impact:**\n* **Google Kubernetes Engine (GKE)** customers may have experienced increased latency and errors for GKE API calls via gcloud and the Google Cloud Console UI. GKE cluster workloads continued to run; however customers may have been unable to perform operations such as confirm cluster status, trigger upgrades, view workloads, or create/delete clusters and node pools.\n* **Cloud Data Fusion** customers may have experienced instance creation and deletion failures in us-central1.\n* **Cloud Logging** customers may have experienced increased latency for suggested searches for GKE clusters in us-central1.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Operations",
-        "id": "DixAowEQm45KgqXKP5tR"
-      },
-      {
-        "title": "Google Kubernetes Engine",
-        "id": "LCSbT57h59oR4W98NHuz"
-      },
-      {
-        "title": "Cloud Logging",
-        "id": "PuCJ6W2ovoDhLcyvZ1xa"
-      },
-      {
-        "title": "Cloud Data Fusion",
-        "id": "rLKDHeeaBiXTeutF1air"
-      }
-    ],
-    "uri": "incidents/4Sie4sXFPougA2Ku24pT",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Iowa (us-central1)",
-        "id": "us-central1"
       }
     ]
   },
