@@ -21065,140 +21065,52 @@
     "previously_affected_locations": []
   },
   {
-    "id": "cJwQRK4bgybhu7nNQ5W4",
-    "number": "13388333705131857687",
+    "id": "A1HUEnN25xk8XiSmjmsj",
+    "number": "14307305938107923640",
     "begin": "2021-11-12T08:30:00+00:00",
-    "created": "2021-11-12T09:57:58+00:00",
+    "created": "2021-11-12T09:54:31+00:00",
     "end": "2021-11-12T10:14:00+00:00",
-    "modified": "2021-11-13T01:13:29+00:00",
-    "external_desc": "Issue with Eventarc",
+    "modified": "2021-11-13T01:12:22+00:00",
+    "external_desc": "We are experiencing an issue with multiple Google Cloud components.",
     "updates": [
       {
-        "created": "2021-11-13T00:36:10+00:00",
-        "modified": "2021-11-13T01:13:29+00:00",
-        "when": "2021-11-13T00:36:10+00:00",
+        "created": "2021-11-13T00:50:51+00:00",
+        "modified": "2021-11-13T01:12:22+00:00",
+        "when": "2021-11-13T00:50:51+00:00",
         "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
         "status": "AVAILABLE",
         "affected_locations": []
       },
       {
-        "created": "2021-11-12T11:47:23+00:00",
-        "modified": "2021-11-12T11:47:25+00:00",
-        "when": "2021-11-12T11:47:23+00:00",
-        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-11-12T09:57:56+00:00",
-        "modified": "2021-11-12T09:57:58+00:00",
-        "when": "2021-11-12T09:57:56+00:00",
-        "text": "Summary: Issue with Eventarc\nDescription: beginning at Friday, 2021-11-12 00:36 US/Pacific US/Pacific\nWe are experiencing an issue with Google Cloud components.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7\nDiagnosis: None at this time\nWorkaround: None at this time",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-11-13T00:36:10+00:00",
-      "modified": "2021-11-13T01:13:29+00:00",
-      "when": "2021-11-13T00:36:10+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-      "status": "AVAILABLE",
-      "affected_locations": []
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "YaFawoMaXnqgY4keUBnW",
-    "service_name": "Eventarc",
-    "affected_products": [
-      {
-        "title": "Eventarc",
-        "id": "YaFawoMaXnqgY4keUBnW"
-      }
-    ],
-    "uri": "incidents/cJwQRK4bgybhu7nNQ5W4",
-    "currently_affected_locations": [],
-    "previously_affected_locations": []
-  },
-  {
-    "id": "1xkAB1KmLrh5g3v9ZEZ7",
-    "number": "1942372389113677880",
-    "begin": "2021-11-12T08:30:00+00:00",
-    "created": "2021-11-12T09:42:26+00:00",
-    "end": "2021-11-12T10:14:00+00:00",
-    "modified": "2022-03-28T19:45:30+00:00",
-    "external_desc": "We are experiencing Networking issues",
-    "updates": [
-      {
-        "created": "2021-11-13T00:43:20+00:00",
-        "modified": "2022-03-28T19:45:30+00:00",
-        "when": "2021-11-13T00:43:20+00:00",
-        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\n* App Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-11-12T11:44:23+00:00",
-        "modified": "2021-11-12T11:44:26+00:00",
-        "when": "2021-11-12T11:44:23+00:00",
+        "created": "2021-11-12T11:52:25+00:00",
+        "modified": "2021-11-12T11:52:25+00:00",
+        "when": "2021-11-12T11:52:25+00:00",
         "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
         "affected_locations": []
       },
       {
-        "created": "2021-11-12T11:38:17+00:00",
-        "modified": "2021-11-12T11:38:20+00:00",
-        "when": "2021-11-12T11:38:17+00:00",
-        "text": "Summary: We are experiencing Networking issues\nDescription: We believe the issue with Google Cloud infrastructure components is partially resolved with the exception of the Google App Engine that is also recovering.\nWe will provide an update by Friday, 2021-11-12 04:10 US/Pacific with current details.\nDiagnosis: Customers might face connectivity issues.\nWorkaround: None",
+        "created": "2021-11-12T10:11:51+00:00",
+        "modified": "2021-11-12T14:05:29+00:00",
+        "when": "2021-11-12T10:11:51+00:00",
+        "text": "Summary: We are experiencing an issue with .\nmultiple Google Cloud components\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: n/a\nWorkaround: n/a",
         "status": "SERVICE_DISRUPTION",
         "affected_locations": []
       },
       {
-        "created": "2021-11-12T10:57:04+00:00",
-        "modified": "2021-11-12T10:57:06+00:00",
-        "when": "2021-11-12T10:57:04+00:00",
-        "text": "Summary: We are experiencing Networking issues\nDescription: Mitigation work is currently underway by our engineering team. We do not have an ETA for mitigation at this point but the services should be improving at this point.\nThe issue is affecting:\n- Cloud App Engine : Customers may see traffic drop for us-central1 and europe-west1.\n- Cloud Bigtable: mitigation still in progress, ETA for resolution still unknown\n- Cloud Monitoring UI: There is a mitigation in place at the GFE infrastructure level that is rolling out and is expected to resolve this issue.\n- Cloud Console: All Cloud Console paths may be unavailable.\n- Cloud Spanner: Customers coming through GFE (not CFE or cloud interconnect) will experience UNAVAILABLE error and latency for both DATA and ADMIN operations\n- Cloud Functions: Customers may see traffic drop for us-central1 and europe-west1.\n- Cloud Run: Cloud Run users are seeing increased HTTP 500s and authentication failures when trying to access apps.\n- Google Cloud Endpoints : Cloud Endpoints may be unavailable in europe-west1 and europe-west4 (most affected regions)\n- Cloud SQL:Regions europe-west1,europe-west4 and europe-west5 (could be more). Workaround: Users should retry failed operations.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2021-11-12 03:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers might face connectivity issues.\nWorkaround: None",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-11-12T10:36:22+00:00",
-        "modified": "2021-11-12T10:36:25+00:00",
-        "when": "2021-11-12T10:36:22+00:00",
-        "text": "Summary: We are experiencing Networking issues\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nThe issue is affecting,\n- Cloud App Engine : Customers may see traffic drop for us-central1 and europe-west1.\n- Cloud Bigtable\n- Cloud Console : All Cloud Console paths may be unavailable.\n- Cloud Spanner\n- Cloud Functions : Customers may see traffic drop for us-central1 and europe-west1.\n- Cloud Run\n- Google Cloud Endpoints : Cloud Endpoints may be unavailable in some regions.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2021-11-12 03:15 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers might face connectivity issues.\nWorkaround: None",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-11-12T10:26:41+00:00",
-        "modified": "2021-11-12T10:26:41+00:00",
-        "when": "2021-11-12T10:26:41+00:00",
-        "text": "Summary: We are experiencing Networking issues\nDescription: We are experiencing an issue with Google Cloud infrastructure components beginning at Friday, 2021-11-12 00:36:24 PST US/Pacific.\nThe issue is affecting,\n- Cloud App Engine : Customers may see traffic drop for us-central1 and europe-west1.\n- Cloud Bigtable\n- Cloud Console : All Cloud Console paths may be unavailable.\n- Cloud Spanner\n- Cloud Functions : Customers may see traffic drop for us-central1 and europe-west1.\n- Cloud Run\n- Google Cloud Endpoints : Cloud Endpoints may be unavailable in some regions.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2021-11-12 02:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers might face connectivity issues.\nWorkaround: None",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-11-12T10:13:01+00:00",
-        "modified": "2021-11-12T10:13:01+00:00",
-        "when": "2021-11-12T10:13:01+00:00",
-        "text": "Summary: We are experiencing Networking issues\nDescription: We are experiencing an issue with Google Cloud infrastructure components beginning at Friday, 2021-11-12 00:36:24 PST US/Pacific.\nThe issue is affecting,\n- Cloud App Engine\n- Cloud Bigtable\n- Cloud Console\n- Cloud Spanner\n- Cloud Functions\n- Cloud Run\n- Google Cloud APIs\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2021-11-12 02:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None\nWorkaround: None",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-11-12T09:42:25+00:00",
-        "modified": "2021-11-12T09:42:26+00:00",
-        "when": "2021-11-12T09:42:25+00:00",
-        "text": "Summary: We are experiencing Networking issues\nDescription: We are experiencing an issue with Google Cloud infrastructure components beginning at Friday, 2021-11-12 00:36:24 PST US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2021-11-12 02:15 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None\nWorkaround: None",
+        "created": "2021-11-12T09:54:29+00:00",
+        "modified": "2021-11-12T14:05:15+00:00",
+        "when": "2021-11-12T09:54:29+00:00",
+        "text": "Summary: We are experiencing an issue with .\nmultiple Google Cloud components\nDescription: We are experiencing an issue with .\nmultiple Google Cloud components\nOur engineering team continues to investigate the issue.",
         "status": "SERVICE_DISRUPTION",
         "affected_locations": []
       }
     ],
     "most_recent_update": {
-      "created": "2021-11-13T00:43:20+00:00",
-      "modified": "2022-03-28T19:45:30+00:00",
-      "when": "2021-11-13T00:43:20+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\n* App Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+      "created": "2021-11-13T00:50:51+00:00",
+      "modified": "2021-11-13T01:12:22+00:00",
+      "when": "2021-11-13T00:50:51+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
       "status": "AVAILABLE",
       "affected_locations": []
     },
@@ -21208,8 +21120,8 @@
     "service_name": "Multiple Products",
     "affected_products": [
       {
-        "title": "Google Cloud Infrastructure Components",
-        "id": "uoypgc4GWUyzAKRHPjEv"
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
       },
       {
         "title": "Cloud Developer Tools",
@@ -21236,8 +21148,12 @@
         "id": "Wdsr1n5vyDvCt78qEifm"
       },
       {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
+        "title": "Google Cloud Infrastructure Components",
+        "id": "uoypgc4GWUyzAKRHPjEv"
+      },
+      {
+        "title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri"
       },
       {
         "title": "Operations",
@@ -21252,15 +21168,11 @@
         "id": "EcNGGUgBtBLrtm4mWvqC"
       },
       {
-        "title": "Google Cloud SQL",
-        "id": "hV87iK5DcEXKgWU2kDri"
-      },
-      {
         "title": "Cloud Load Balancing",
         "id": "ix7u9beT8ivBdjApTif3"
       }
     ],
-    "uri": "incidents/1xkAB1KmLrh5g3v9ZEZ7",
+    "uri": "incidents/A1HUEnN25xk8XiSmjmsj",
     "currently_affected_locations": [],
     "previously_affected_locations": []
   },
@@ -21469,6 +21381,102 @@
       }
     ],
     "uri": "incidents/4qh2oE7kwsMoMNXScfoT",
+    "currently_affected_locations": [],
+    "previously_affected_locations": []
+  },
+  {
+    "id": "PgiLpR4P4S1x7QgwXamt",
+    "number": "5068446511008051635",
+    "begin": "2021-11-12T08:30:00+00:00",
+    "created": "2021-11-12T10:05:08+00:00",
+    "end": "2021-11-12T10:14:00+00:00",
+    "modified": "2021-11-13T01:13:11+00:00",
+    "external_desc": "We are experiencing an issue with multiple Google Cloud components {beginning on Friday}, 2021-11-12 00:36 US/Pacific US/Pacific.",
+    "updates": [
+      {
+        "created": "2021-11-13T00:33:28+00:00",
+        "modified": "2021-11-13T01:13:11+00:00",
+        "when": "2021-11-13T00:33:28+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2021-11-12T11:47:44+00:00",
+        "modified": "2021-11-12T11:47:45+00:00",
+        "when": "2021-11-12T11:47:44+00:00",
+        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2021-11-12T10:05:07+00:00",
+        "modified": "2021-11-12T14:03:10+00:00",
+        "when": "2021-11-12T10:05:07+00:00",
+        "text": "We are experiencing an issue with multiple Google Cloud components {beginning on Friday}, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption\nDiagnosis: None\nWorkaround: None",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": []
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-11-13T00:33:28+00:00",
+      "modified": "2021-11-13T01:13:11+00:00",
+      "when": "2021-11-13T00:33:28+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+      "status": "AVAILABLE",
+      "affected_locations": []
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Cloud Endpoints",
+        "id": "xfbaRzmPSf836WvAy35z"
+      },
+      {
+        "title": "Cloud Developer Tools",
+        "id": "BGJQ6jbGK4kUuBTQFZ1G"
+      },
+      {
+        "title": "Eventarc",
+        "id": "YaFawoMaXnqgY4keUBnW"
+      },
+      {
+        "title": "Google App Engine",
+        "id": "kchyUtnkMHJWaAva8aYc"
+      },
+      {
+        "title": "Google Cloud Bigtable",
+        "id": "LfZSuE3xdQU46YMFV5fy"
+      },
+      {
+        "title": "Google Cloud Console",
+        "id": "Wdsr1n5vyDvCt78qEifm"
+      },
+      {
+        "title": "Google Cloud Infrastructure Components",
+        "id": "uoypgc4GWUyzAKRHPjEv"
+      },
+      {
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
+      },
+      {
+        "title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri"
+      },
+      {
+        "title": "Operations",
+        "id": "DixAowEQm45KgqXKP5tR"
+      },
+      {
+        "title": "Cloud Load Balancing",
+        "id": "ix7u9beT8ivBdjApTif3"
+      }
+    ],
+    "uri": "incidents/PgiLpR4P4S1x7QgwXamt",
     "currently_affected_locations": [],
     "previously_affected_locations": []
   },
@@ -21685,210 +21693,58 @@
     "previously_affected_locations": []
   },
   {
-    "id": "PgiLpR4P4S1x7QgwXamt",
-    "number": "5068446511008051635",
+    "id": "cJwQRK4bgybhu7nNQ5W4",
+    "number": "13388333705131857687",
     "begin": "2021-11-12T08:30:00+00:00",
-    "created": "2021-11-12T10:05:08+00:00",
+    "created": "2021-11-12T09:57:58+00:00",
     "end": "2021-11-12T10:14:00+00:00",
-    "modified": "2021-11-13T01:13:11+00:00",
-    "external_desc": "We are experiencing an issue with multiple Google Cloud components {beginning on Friday}, 2021-11-12 00:36 US/Pacific US/Pacific.",
+    "modified": "2021-11-13T01:13:29+00:00",
+    "external_desc": "Issue with Eventarc",
     "updates": [
       {
-        "created": "2021-11-13T00:33:28+00:00",
-        "modified": "2021-11-13T01:13:11+00:00",
-        "when": "2021-11-13T00:33:28+00:00",
+        "created": "2021-11-13T00:36:10+00:00",
+        "modified": "2021-11-13T01:13:29+00:00",
+        "when": "2021-11-13T00:36:10+00:00",
         "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
         "status": "AVAILABLE",
         "affected_locations": []
       },
       {
-        "created": "2021-11-12T11:47:44+00:00",
-        "modified": "2021-11-12T11:47:45+00:00",
-        "when": "2021-11-12T11:47:44+00:00",
-        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
+        "created": "2021-11-12T11:47:23+00:00",
+        "modified": "2021-11-12T11:47:25+00:00",
+        "when": "2021-11-12T11:47:23+00:00",
+        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
         "affected_locations": []
       },
       {
-        "created": "2021-11-12T10:05:07+00:00",
-        "modified": "2021-11-12T14:03:10+00:00",
-        "when": "2021-11-12T10:05:07+00:00",
-        "text": "We are experiencing an issue with multiple Google Cloud components {beginning on Friday}, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption\nDiagnosis: None\nWorkaround: None",
+        "created": "2021-11-12T09:57:56+00:00",
+        "modified": "2021-11-12T09:57:58+00:00",
+        "when": "2021-11-12T09:57:56+00:00",
+        "text": "Summary: Issue with Eventarc\nDescription: beginning at Friday, 2021-11-12 00:36 US/Pacific US/Pacific\nWe are experiencing an issue with Google Cloud components.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7\nDiagnosis: None at this time\nWorkaround: None at this time",
         "status": "SERVICE_DISRUPTION",
         "affected_locations": []
       }
     ],
     "most_recent_update": {
-      "created": "2021-11-13T00:33:28+00:00",
-      "modified": "2021-11-13T01:13:11+00:00",
-      "when": "2021-11-13T00:33:28+00:00",
+      "created": "2021-11-13T00:36:10+00:00",
+      "modified": "2021-11-13T01:13:29+00:00",
+      "when": "2021-11-13T00:36:10+00:00",
       "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
       "status": "AVAILABLE",
       "affected_locations": []
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
+    "service_key": "YaFawoMaXnqgY4keUBnW",
+    "service_name": "Eventarc",
     "affected_products": [
-      {
-        "title": "Cloud Endpoints",
-        "id": "xfbaRzmPSf836WvAy35z"
-      },
-      {
-        "title": "Cloud Developer Tools",
-        "id": "BGJQ6jbGK4kUuBTQFZ1G"
-      },
       {
         "title": "Eventarc",
         "id": "YaFawoMaXnqgY4keUBnW"
-      },
-      {
-        "title": "Google App Engine",
-        "id": "kchyUtnkMHJWaAva8aYc"
-      },
-      {
-        "title": "Google Cloud Bigtable",
-        "id": "LfZSuE3xdQU46YMFV5fy"
-      },
-      {
-        "title": "Google Cloud Console",
-        "id": "Wdsr1n5vyDvCt78qEifm"
-      },
-      {
-        "title": "Google Cloud Infrastructure Components",
-        "id": "uoypgc4GWUyzAKRHPjEv"
-      },
-      {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
-      },
-      {
-        "title": "Google Cloud SQL",
-        "id": "hV87iK5DcEXKgWU2kDri"
-      },
-      {
-        "title": "Operations",
-        "id": "DixAowEQm45KgqXKP5tR"
-      },
-      {
-        "title": "Cloud Load Balancing",
-        "id": "ix7u9beT8ivBdjApTif3"
       }
     ],
-    "uri": "incidents/PgiLpR4P4S1x7QgwXamt",
-    "currently_affected_locations": [],
-    "previously_affected_locations": []
-  },
-  {
-    "id": "A1HUEnN25xk8XiSmjmsj",
-    "number": "14307305938107923640",
-    "begin": "2021-11-12T08:30:00+00:00",
-    "created": "2021-11-12T09:54:31+00:00",
-    "end": "2021-11-12T10:14:00+00:00",
-    "modified": "2021-11-13T01:12:22+00:00",
-    "external_desc": "We are experiencing an issue with multiple Google Cloud components.",
-    "updates": [
-      {
-        "created": "2021-11-13T00:50:51+00:00",
-        "modified": "2021-11-13T01:12:22+00:00",
-        "when": "2021-11-13T00:50:51+00:00",
-        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-11-12T11:52:25+00:00",
-        "modified": "2021-11-12T11:52:25+00:00",
-        "when": "2021-11-12T11:52:25+00:00",
-        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-11-12T10:11:51+00:00",
-        "modified": "2021-11-12T14:05:29+00:00",
-        "when": "2021-11-12T10:11:51+00:00",
-        "text": "Summary: We are experiencing an issue with .\nmultiple Google Cloud components\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: n/a\nWorkaround: n/a",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-11-12T09:54:29+00:00",
-        "modified": "2021-11-12T14:05:15+00:00",
-        "when": "2021-11-12T09:54:29+00:00",
-        "text": "Summary: We are experiencing an issue with .\nmultiple Google Cloud components\nDescription: We are experiencing an issue with .\nmultiple Google Cloud components\nOur engineering team continues to investigate the issue.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-11-13T00:50:51+00:00",
-      "modified": "2021-11-13T01:12:22+00:00",
-      "when": "2021-11-13T00:50:51+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-      "status": "AVAILABLE",
-      "affected_locations": []
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
-      },
-      {
-        "title": "Cloud Developer Tools",
-        "id": "BGJQ6jbGK4kUuBTQFZ1G"
-      },
-      {
-        "title": "Cloud Endpoints",
-        "id": "xfbaRzmPSf836WvAy35z"
-      },
-      {
-        "title": "Eventarc",
-        "id": "YaFawoMaXnqgY4keUBnW"
-      },
-      {
-        "title": "Google App Engine",
-        "id": "kchyUtnkMHJWaAva8aYc"
-      },
-      {
-        "title": "Google Cloud Bigtable",
-        "id": "LfZSuE3xdQU46YMFV5fy"
-      },
-      {
-        "title": "Google Cloud Console",
-        "id": "Wdsr1n5vyDvCt78qEifm"
-      },
-      {
-        "title": "Google Cloud Infrastructure Components",
-        "id": "uoypgc4GWUyzAKRHPjEv"
-      },
-      {
-        "title": "Google Cloud SQL",
-        "id": "hV87iK5DcEXKgWU2kDri"
-      },
-      {
-        "title": "Operations",
-        "id": "DixAowEQm45KgqXKP5tR"
-      },
-      {
-        "title": "Container Registry",
-        "id": "rECkDEKEadgZQkPefibM"
-      },
-      {
-        "title": "Cloud Spanner",
-        "id": "EcNGGUgBtBLrtm4mWvqC"
-      },
-      {
-        "title": "Cloud Load Balancing",
-        "id": "ix7u9beT8ivBdjApTif3"
-      }
-    ],
-    "uri": "incidents/A1HUEnN25xk8XiSmjmsj",
+    "uri": "incidents/cJwQRK4bgybhu7nNQ5W4",
     "currently_affected_locations": [],
     "previously_affected_locations": []
   },
@@ -21989,6 +21845,150 @@
       }
     ],
     "uri": "incidents/qgC4WYnmToo6fkqEnqYf",
+    "currently_affected_locations": [],
+    "previously_affected_locations": []
+  },
+  {
+    "id": "1xkAB1KmLrh5g3v9ZEZ7",
+    "number": "1942372389113677880",
+    "begin": "2021-11-12T08:30:00+00:00",
+    "created": "2021-11-12T09:42:26+00:00",
+    "end": "2021-11-12T10:14:00+00:00",
+    "modified": "2022-03-28T19:45:30+00:00",
+    "external_desc": "We are experiencing Networking issues",
+    "updates": [
+      {
+        "created": "2021-11-13T00:43:20+00:00",
+        "modified": "2022-03-28T19:45:30+00:00",
+        "when": "2021-11-13T00:43:20+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\n* App Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2021-11-12T11:44:23+00:00",
+        "modified": "2021-11-12T11:44:26+00:00",
+        "when": "2021-11-12T11:44:23+00:00",
+        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2021-11-12T11:38:17+00:00",
+        "modified": "2021-11-12T11:38:20+00:00",
+        "when": "2021-11-12T11:38:17+00:00",
+        "text": "Summary: We are experiencing Networking issues\nDescription: We believe the issue with Google Cloud infrastructure components is partially resolved with the exception of the Google App Engine that is also recovering.\nWe will provide an update by Friday, 2021-11-12 04:10 US/Pacific with current details.\nDiagnosis: Customers might face connectivity issues.\nWorkaround: None",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": []
+      },
+      {
+        "created": "2021-11-12T10:57:04+00:00",
+        "modified": "2021-11-12T10:57:06+00:00",
+        "when": "2021-11-12T10:57:04+00:00",
+        "text": "Summary: We are experiencing Networking issues\nDescription: Mitigation work is currently underway by our engineering team. We do not have an ETA for mitigation at this point but the services should be improving at this point.\nThe issue is affecting:\n- Cloud App Engine : Customers may see traffic drop for us-central1 and europe-west1.\n- Cloud Bigtable: mitigation still in progress, ETA for resolution still unknown\n- Cloud Monitoring UI: There is a mitigation in place at the GFE infrastructure level that is rolling out and is expected to resolve this issue.\n- Cloud Console: All Cloud Console paths may be unavailable.\n- Cloud Spanner: Customers coming through GFE (not CFE or cloud interconnect) will experience UNAVAILABLE error and latency for both DATA and ADMIN operations\n- Cloud Functions: Customers may see traffic drop for us-central1 and europe-west1.\n- Cloud Run: Cloud Run users are seeing increased HTTP 500s and authentication failures when trying to access apps.\n- Google Cloud Endpoints : Cloud Endpoints may be unavailable in europe-west1 and europe-west4 (most affected regions)\n- Cloud SQL:Regions europe-west1,europe-west4 and europe-west5 (could be more). Workaround: Users should retry failed operations.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2021-11-12 03:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers might face connectivity issues.\nWorkaround: None",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": []
+      },
+      {
+        "created": "2021-11-12T10:36:22+00:00",
+        "modified": "2021-11-12T10:36:25+00:00",
+        "when": "2021-11-12T10:36:22+00:00",
+        "text": "Summary: We are experiencing Networking issues\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nThe issue is affecting,\n- Cloud App Engine : Customers may see traffic drop for us-central1 and europe-west1.\n- Cloud Bigtable\n- Cloud Console : All Cloud Console paths may be unavailable.\n- Cloud Spanner\n- Cloud Functions : Customers may see traffic drop for us-central1 and europe-west1.\n- Cloud Run\n- Google Cloud Endpoints : Cloud Endpoints may be unavailable in some regions.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2021-11-12 03:15 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers might face connectivity issues.\nWorkaround: None",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": []
+      },
+      {
+        "created": "2021-11-12T10:26:41+00:00",
+        "modified": "2021-11-12T10:26:41+00:00",
+        "when": "2021-11-12T10:26:41+00:00",
+        "text": "Summary: We are experiencing Networking issues\nDescription: We are experiencing an issue with Google Cloud infrastructure components beginning at Friday, 2021-11-12 00:36:24 PST US/Pacific.\nThe issue is affecting,\n- Cloud App Engine : Customers may see traffic drop for us-central1 and europe-west1.\n- Cloud Bigtable\n- Cloud Console : All Cloud Console paths may be unavailable.\n- Cloud Spanner\n- Cloud Functions : Customers may see traffic drop for us-central1 and europe-west1.\n- Cloud Run\n- Google Cloud Endpoints : Cloud Endpoints may be unavailable in some regions.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2021-11-12 02:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers might face connectivity issues.\nWorkaround: None",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": []
+      },
+      {
+        "created": "2021-11-12T10:13:01+00:00",
+        "modified": "2021-11-12T10:13:01+00:00",
+        "when": "2021-11-12T10:13:01+00:00",
+        "text": "Summary: We are experiencing Networking issues\nDescription: We are experiencing an issue with Google Cloud infrastructure components beginning at Friday, 2021-11-12 00:36:24 PST US/Pacific.\nThe issue is affecting,\n- Cloud App Engine\n- Cloud Bigtable\n- Cloud Console\n- Cloud Spanner\n- Cloud Functions\n- Cloud Run\n- Google Cloud APIs\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2021-11-12 02:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None\nWorkaround: None",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": []
+      },
+      {
+        "created": "2021-11-12T09:42:25+00:00",
+        "modified": "2021-11-12T09:42:26+00:00",
+        "when": "2021-11-12T09:42:25+00:00",
+        "text": "Summary: We are experiencing Networking issues\nDescription: We are experiencing an issue with Google Cloud infrastructure components beginning at Friday, 2021-11-12 00:36:24 PST US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2021-11-12 02:15 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None\nWorkaround: None",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": []
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-11-13T00:43:20+00:00",
+      "modified": "2022-03-28T19:45:30+00:00",
+      "when": "2021-11-13T00:43:20+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\n* App Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+      "status": "AVAILABLE",
+      "affected_locations": []
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Google Cloud Infrastructure Components",
+        "id": "uoypgc4GWUyzAKRHPjEv"
+      },
+      {
+        "title": "Cloud Developer Tools",
+        "id": "BGJQ6jbGK4kUuBTQFZ1G"
+      },
+      {
+        "title": "Cloud Endpoints",
+        "id": "xfbaRzmPSf836WvAy35z"
+      },
+      {
+        "title": "Eventarc",
+        "id": "YaFawoMaXnqgY4keUBnW"
+      },
+      {
+        "title": "Google App Engine",
+        "id": "kchyUtnkMHJWaAva8aYc"
+      },
+      {
+        "title": "Google Cloud Bigtable",
+        "id": "LfZSuE3xdQU46YMFV5fy"
+      },
+      {
+        "title": "Google Cloud Console",
+        "id": "Wdsr1n5vyDvCt78qEifm"
+      },
+      {
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
+      },
+      {
+        "title": "Operations",
+        "id": "DixAowEQm45KgqXKP5tR"
+      },
+      {
+        "title": "Container Registry",
+        "id": "rECkDEKEadgZQkPefibM"
+      },
+      {
+        "title": "Cloud Spanner",
+        "id": "EcNGGUgBtBLrtm4mWvqC"
+      },
+      {
+        "title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri"
+      },
+      {
+        "title": "Cloud Load Balancing",
+        "id": "ix7u9beT8ivBdjApTif3"
+      }
+    ],
+    "uri": "incidents/1xkAB1KmLrh5g3v9ZEZ7",
     "currently_affected_locations": [],
     "previously_affected_locations": []
   },
@@ -26729,266 +26729,6 @@
       }
     ],
     "uri": "incidents/WXwFb7tx1XvHyGaxwdYs",
-    "currently_affected_locations": [],
-    "previously_affected_locations": []
-  },
-  {
-    "id": "YtfZu9rttTf5zDYGe57n",
-    "number": "11674600762170121866",
-    "begin": "2021-06-20T06:00:00+00:00",
-    "created": "2021-06-21T23:32:25+00:00",
-    "end": "2021-06-23T16:06:00+00:00",
-    "modified": "2021-06-24T18:16:34+00:00",
-    "external_desc": "Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc, and Apigee X in those same regions",
-    "updates": [
-      {
-        "created": "2021-06-24T18:10:58+00:00",
-        "modified": "2021-06-24T18:16:34+00:00",
-        "when": "2021-06-24T18:10:58+00:00",
-        "text": "(All Times US/Pacific)\n**Incident Start:** 19 June 2021 23:00\n**Incident End:** 23 June 2021 09:06\n**Duration:** 3 days, 10 hours, 6 minutes\n**Affected Services and Features:**\n* Google Compute Engine (GCE) - New Virtual Machine (VM) creations using PD SSD.\n* Google Kubernetes Engine (GKE) - New cluster creations, node pools creation, scaling GKE node pools\n* Cloud Composer - Composer environment creations\n* Cloud SQL - Cluster creations\n* Dataproc - Cluster creations\n* Dataflow - Job creations\n* Cloud Build - Builds using custom size VMs or workerpools\n* Persistent Disk (PD) - New PD-SSD device creation\n**Regions/Zones:** us-east1-{a,b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a\n**Description:**\nMultiple Google Cloud services experienced intermittent problems with creating new Persistent Disk Solid-State Drive (PD-SSD) devices. This issue impacted creation of resources that depend on PD-SSD. The root cause of the issue was an unexpected increase in utilization of PD-SSD, which led to unavailability of SSD capacity for some users in the impacted zones.\n**Customer Impact:**\n* Google Compute Engine (GCE) : * Issues with new VM creations as boot disk creations failed. * Auto-scaling of VMs was impacted due to failure with new VM creations. * Intermittent reduction in write throughput. * Issues with expanding SSD-backed device sizes.\n* Cloud Composer: * Failed Cloud Composer environment creations.\n* Cloud SQL: * Intermittent create operation failures. * PD-SSD disk size increases failures.\n* Cloud Build: * Cloud Builds using custom size VMs or using workerpools experienced failures.\n* Google Kubernetes Engine: * Intermittent issues with cluster creation. * Intermittent issues with creation and scaling of node pools with PD-SSD nodes.\n* Dataproc/Dataflow: * Dataproc cluster creation and Dataflow jobs may have failed due to underlying errors regarding disk creation failures.\n**Additional details:**\nTo prevent unexpected spike in utilization from impacting PD-SSD capacity availability, the following actions and safety measures were implemented:\n* Engineering team has identified and throttled the source of the unexpected spike in PD-SSD utilization.\n* Additional SSD capacity added for higher tolerance to spikes in utilization.\n* Increased rebalancing to make additional SSD capacity available.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-24T00:06:43+00:00",
-        "modified": "2021-06-24T00:06:44+00:00",
-        "when": "2021-06-24T00:06:43+00:00",
-        "text": "This issue has been fully mitigated by our product team. For any ongoing issues, please open a Support case for further troubleshooting.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-23T17:18:44+00:00",
-        "modified": "2021-06-23T17:18:45+00:00",
-        "when": "2021-06-23T17:18:44+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc, and Apigee X in those same regions\nDescription: The issue with creating SSD PDs is now mitigated in all affected zones for all affected customers.\nWe are currently monitoring the environment performance and will provide a final status update by Wednesday, 2021-06-23 17:00 US/Pacific.\nDiagnosis: Affected users might be unable to create new VMs in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Compute Engine, such as Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc and Apigee X in those regions.\nWorkaround: Customers may attempt to create resources in unaffected zones or regions.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-23T10:59:29+00:00",
-        "modified": "2021-06-23T10:59:30+00:00",
-        "when": "2021-06-23T10:59:29+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc, and Apigee X in those same regions\nDescription: The issue with creating SSD PDs is now mitigated in all affected zones for most affected customers. Some customers are still unable to create VMs in affected zones.\nWe are still working to fully mitigate this issue for all customers, and estimate this to be complete around Wednesday, 2021-06-23 12:00 US/Pacific.\nWe will provide more information by Wednesday, 2021-06-23 13:00 US/Pacific.\nDiagnosis: Affected users might be unable to create new VMs in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Compute Engine, such as Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc and Apigee X in those regions.\nWorkaround: Customers may attempt to create resources in unaffected zones or regions.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-23T09:30:21+00:00",
-        "modified": "2021-06-23T09:30:23+00:00",
-        "when": "2021-06-23T09:30:21+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc, and Apigee X in those same regions\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-{b,c}. In those zone the issue is resolved for the most of customers and we are still working to mitigate the rest of the impact, ETA for full resolution is for by end of day 2021-06-23 US/Pacific hours.\nWe will provide more information by Wednesday, 2021-06-23 04:00 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,}. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc, and Apigee X in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-23T06:25:21+00:00",
-        "modified": "2021-06-23T06:25:21+00:00",
-        "when": "2021-06-23T06:25:21+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc, and Apigee X in those same regions\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-{b,c}. In those zone the issue is resolved for the most of customers and we are still working to mitigate the rest of the impact, ETA for full resolution is for by end of day 2021-06-23 US/Pacific hours.\nWe will provide more information by Wednesday, 2021-06-23 02:30 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,}. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc, and Apigee X in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-23T03:27:29+00:00",
-        "modified": "2021-06-23T03:27:29+00:00",
-        "when": "2021-06-23T03:27:29+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc, and Apigee X in those same regions\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-{b,c}. We are still working to mitigate impact in these two remaining zones, ETA by end of day 2021-06-22 US/Pacific hours.\nWe will provide more information by Tuesday, 2021-06-22 23:30 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,}. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc, and Apigee X in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-23T00:43:46+00:00",
-        "modified": "2021-06-23T00:43:46+00:00",
-        "when": "2021-06-23T00:43:46+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc, and Apigee X in those same regions\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-{b,c}. We are still working to mitigate impact in these two remaining zones, ETA by end of day 2021-06-22 US/Pacific hours.\nWe will provide more information by Tuesday, 2021-06-22 20:30 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,}. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL, Cloud Dataproc, and Apigee X in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-23T00:26:34+00:00",
-        "modified": "2021-06-23T00:26:34+00:00",
-        "when": "2021-06-23T00:26:34+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-{b,c}. We are still working to mitigate impact in these two remaining zones, ETA by end of day 2021-06-22 US/Pacific hours.\nWe will provide more information by Tuesday, 2021-06-22 20:30 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,}. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-22T23:01:08+00:00",
-        "modified": "2021-06-22T23:01:08+00:00",
-        "when": "2021-06-22T23:01:08+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-{b,c}. We are still working to mitigate impact in these two remaining zones, ETA by end of day 2021-06-22 US/Pacific hours.\nWe will provide more information by Tuesday, 2021-06-22 17:30 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,}. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-22T22:57:39+00:00",
-        "modified": "2021-06-22T22:57:39+00:00",
-        "when": "2021-06-22T22:57:39+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-{b,c}. We are still working to mitigate impact in these two remaining zones, ETA by end of day 2021-06-22 US/Pacific hours.\nWe will provide more information by Tuesday, 2021-06-22 17:30 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-22T21:57:25+00:00",
-        "modified": "2021-06-22T21:57:26+00:00",
-        "when": "2021-06-22T21:57:25+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-{b,c}, us-east4-a. We are still working to mitigate impact in these three remaining zones, ETA by end of day 2021-06-22 US/Pacific hours.\nWe will provide more information by Tuesday, 2021-06-22 16:00 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-22T19:57:24+00:00",
-        "modified": "2021-06-22T19:57:24+00:00",
-        "when": "2021-06-22T19:57:24+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-{b,c}, us-east4-a. We are still working to mitigate impact in these three remaining zones, ETA by end of day 2021-06-22 US/Pacific hours.\nWe will provide more information by Tuesday, 2021-06-22 15:00 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-22T17:57:41+00:00",
-        "modified": "2021-06-22T17:57:41+00:00",
-        "when": "2021-06-22T17:57:41+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-{b,c}, us-east4-a. We are still working to mitigate impact in these three remaining zones, ETA by end of day 2021-06-22 US/Pacific hours.\nWe will provide more information by Tuesday, 2021-06-22 13:00 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-22T15:59:27+00:00",
-        "modified": "2021-06-22T15:59:27+00:00",
-        "when": "2021-06-22T15:59:27+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-{b,c}, us-east4-a. We are still working to mitigate impact in these three remaining zones.\nWe will provide more information by Tuesday, 2021-06-22 11:00 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-22T13:57:01+00:00",
-        "modified": "2021-06-22T13:57:02+00:00",
-        "when": "2021-06-22T13:57:01+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-b and us-east4-a. We are still working to mitigate impact in these two remaining zones.\nWe will provide more information by Tuesday, 2021-06-22 09:00 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-22T11:58:52+00:00",
-        "modified": "2021-06-22T11:58:55+00:00",
-        "when": "2021-06-22T11:58:52+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-b and us-east4-a. We are still working to mitigate impact in these two remaining zones.\nWe will provide more information by Tuesday, 2021-06-22 07:00 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-22T10:29:44+00:00",
-        "modified": "2021-06-22T10:29:51+00:00",
-        "when": "2021-06-22T10:29:44+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-b and us-east4-a. We are still working to mitigate impact in these two remaining zones.\nWe will provide more information by Tuesday, 2021-06-22 05:00 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-22T09:30:21+00:00",
-        "modified": "2021-06-22T09:30:29+00:00",
-        "when": "2021-06-22T09:30:21+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation is mitigated for all affected zones except us-east1-b and us-east4-a. We are still working to mitigate impact in these two remaining zones.\nWe will provide more information by Tuesday, 2021-06-22 03:30 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-22T08:30:56+00:00",
-        "modified": "2021-06-22T08:31:03+00:00",
-        "when": "2021-06-22T08:30:56+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: Mitigation work is still underway by our engineering team.\nPD creation should be working currently in us-east1-c and us-west1-c. We are working on mitigating impact in other affected zones.\nWe will provide more information by Tuesday, 2021-06-22 02:30 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-22T05:28:33+00:00",
-        "modified": "2021-06-22T05:28:33+00:00",
-        "when": "2021-06-22T05:28:33+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: A partial mitigation has been identified by the engineering team and is currently underway. We do not have an ETA for the partial mitigation at this point.\nWe will provide more information by Tuesday, 2021-06-22 01:30 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nAffected users may experience errors when attempting to create a new GKE Clusters or Node pools in us-east1.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.\nFor Users experiencing errors when attempting to create a new GKE Clusters or Node pools\n-Creating a node pool or cluster should be successful in other zones or regions may help.\n-Using Standard PDD or Local SSD should be successful.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-22T03:27:06+00:00",
-        "modified": "2021-06-22T03:27:06+00:00",
-        "when": "2021-06-22T03:27:06+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: A partial mitigation has been identified by the engineering team and is currently underway. We do not have an ETA for the partial mitigation at this point.\nWe will provide more information by Monday, 2021-06-21 22:30 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-22T02:00:39+00:00",
-        "modified": "2021-06-22T02:00:39+00:00",
-        "when": "2021-06-22T02:00:39+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: A partial mitigation has been identified by the engineering team and is currently underway. We do not have an ETA for the partial mitigation at this point.\nWe will provide more information by Monday, 2021-06-21 20:30 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-22T01:22:40+00:00",
-        "modified": "2021-06-22T01:22:40+00:00",
-        "when": "2021-06-22T01:22:40+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: A partial mitigation is identified by the engineering team and is currently underway. We do not have an ETA for the same at this point.\nWe will provide more information by Monday, 2021-06-21 20:00 US/Pacific.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-06-21T23:32:24+00:00",
-        "modified": "2021-06-21T23:32:25+00:00",
-        "when": "2021-06-21T23:32:24+00:00",
-        "text": "Summary: Persistent Disk SSD creation is failing in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nDescription: We are still experiencing an issue with Google Compute Engine Persistent Disk SSD creation in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a beginning on Monday, 2021-06-20 20:00 US/Pacific. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2021-06-21 18:30 US/Pacific with current details.\nDiagnosis: Affected users might be unable to create new Persistent Disks (SSD) in us-east1-{b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a. This may impact creation of resources which depend on Persistent Disk SSD such as Google Compute Engine, Google Kubernetes Engine, Cloud Composer, Cloud SQL and Cloud Dataproc in those same regions.\nWorkaround: Standard Persistent Disks are not impacted, if workloads are not disk dependent, creating or scaling them with Standard PD may unblock workloads currently using PD backed by SSD. Creation of new Persistent Disks (SSD) in other regions are unaffected.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-06-24T18:10:58+00:00",
-      "modified": "2021-06-24T18:16:34+00:00",
-      "when": "2021-06-24T18:10:58+00:00",
-      "text": "(All Times US/Pacific)\n**Incident Start:** 19 June 2021 23:00\n**Incident End:** 23 June 2021 09:06\n**Duration:** 3 days, 10 hours, 6 minutes\n**Affected Services and Features:**\n* Google Compute Engine (GCE) - New Virtual Machine (VM) creations using PD SSD.\n* Google Kubernetes Engine (GKE) - New cluster creations, node pools creation, scaling GKE node pools\n* Cloud Composer - Composer environment creations\n* Cloud SQL - Cluster creations\n* Dataproc - Cluster creations\n* Dataflow - Job creations\n* Cloud Build - Builds using custom size VMs or workerpools\n* Persistent Disk (PD) - New PD-SSD device creation\n**Regions/Zones:** us-east1-{a,b,c,d}, us-east4-{a,b}, us-west1-c and us-west4-a\n**Description:**\nMultiple Google Cloud services experienced intermittent problems with creating new Persistent Disk Solid-State Drive (PD-SSD) devices. This issue impacted creation of resources that depend on PD-SSD. The root cause of the issue was an unexpected increase in utilization of PD-SSD, which led to unavailability of SSD capacity for some users in the impacted zones.\n**Customer Impact:**\n* Google Compute Engine (GCE) : * Issues with new VM creations as boot disk creations failed. * Auto-scaling of VMs was impacted due to failure with new VM creations. * Intermittent reduction in write throughput. * Issues with expanding SSD-backed device sizes.\n* Cloud Composer: * Failed Cloud Composer environment creations.\n* Cloud SQL: * Intermittent create operation failures. * PD-SSD disk size increases failures.\n* Cloud Build: * Cloud Builds using custom size VMs or using workerpools experienced failures.\n* Google Kubernetes Engine: * Intermittent issues with cluster creation. * Intermittent issues with creation and scaling of node pools with PD-SSD nodes.\n* Dataproc/Dataflow: * Dataproc cluster creation and Dataflow jobs may have failed due to underlying errors regarding disk creation failures.\n**Additional details:**\nTo prevent unexpected spike in utilization from impacting PD-SSD capacity availability, the following actions and safety measures were implemented:\n* Engineering team has identified and throttled the source of the unexpected spike in PD-SSD utilization.\n* Additional SSD capacity added for higher tolerance to spikes in utilization.\n* Increased rebalancing to make additional SSD capacity available.",
-      "status": "AVAILABLE",
-      "affected_locations": []
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Google Compute Engine",
-        "id": "L3ggmi3Jy4xJmgodFA9K"
-      },
-      {
-        "title": "Persistent Disk",
-        "id": "SzESm2Ux129pjDGKWD68"
-      },
-      {
-        "title": "Google Kubernetes Engine",
-        "id": "LCSbT57h59oR4W98NHuz"
-      },
-      {
-        "title": "Google Cloud Composer",
-        "id": "YxkG5FfcC42cQmvBCk4j"
-      },
-      {
-        "title": "Google Cloud SQL",
-        "id": "hV87iK5DcEXKgWU2kDri"
-      },
-      {
-        "title": "Google Cloud Dataproc",
-        "id": "yjXrEg3Yvy26BauMwr69"
-      },
-      {
-        "title": "Google Cloud Dataflow",
-        "id": "T9bFoXPqG8w8g1YbWTKY"
-      },
-      {
-        "title": "Cloud Build",
-        "id": "fw8GzBdZdqy4THau7e1y"
-      }
-    ],
-    "uri": "incidents/YtfZu9rttTf5zDYGe57n",
     "currently_affected_locations": [],
     "previously_affected_locations": []
   }
