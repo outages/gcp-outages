@@ -2,12 +2,25 @@
   {
     "id": "drLHg29pR5QHUvr5buDq",
     "number": "17340949811212957340",
-    "begin": "2022-06-23T10:17:11+00:00",
+    "begin": "2022-06-23T07:13:00+00:00",
     "created": "2022-06-23T11:02:49+00:00",
-    "end": "2022-06-23T13:36:52+00:00",
-    "modified": "2022-06-23T13:36:52+00:00",
+    "end": "2022-06-23T13:36:00+00:00",
+    "modified": "2022-06-23T21:57:23+00:00",
     "external_desc": "vSphere vCenter and NSX may not have been available for a short period of time in us-central1",
     "updates": [
+      {
+        "created": "2022-06-23T21:57:00+00:00",
+        "modified": "2022-06-23T21:57:00+00:00",
+        "when": "2022-06-23T21:57:00+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 23 June 2022 00:13 PT\n**Incident End:** 23 June 2022 06:36 PT\n**Duration:** 6 hours, 23 minutes\n**Affected Services and Features:**\nVMWare Engine\n**Regions/Zones:** us-central1a\n**Description:**\nGoogle Cloud customers using VMWare Engine experienced connectivity issues while using vSphere, vCenter and NSX in us-central1a zone for a duration of 6 hours, 23 minutes.\nFrom preliminary analysis, the issue was caused due to a network switch-over not working as expected during a planned maintenance window of ToR switches. The issue was mitigated by performing a file system recovery and restart of related services on the resources hosted by Google Cloud VMware Engine.\n**Customer Impact:**\n- Affected Customers may have observed issues with network partitions and accessing workload VMs.\n- Affected Customers may have experienced connectivity issues using vCenter, HCX, NSX Manager, and NSX-T Edge virtual machines.\n**Additional details:**\nGoogle engineers have paused the maintenance upgrade and also all redundant devices have been brought back to operational state. We are also working with the impacted customers to check the state of remaining workload VMs and shall assist in recovery if required.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
       {
         "created": "2022-06-23T13:36:43+00:00",
         "modified": "2022-06-23T13:36:57+00:00",
@@ -36,10 +49,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-06-23T13:36:43+00:00",
-      "modified": "2022-06-23T13:36:57+00:00",
-      "when": "2022-06-23T13:36:43+00:00",
-      "text": "The issue with VMWare engine has been resolved for all affected projects as of Thursday, 2022-06-23 06:36 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-06-23T21:57:00+00:00",
+      "modified": "2022-06-23T21:57:00+00:00",
+      "when": "2022-06-23T21:57:00+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 23 June 2022 00:13 PT\n**Incident End:** 23 June 2022 06:36 PT\n**Duration:** 6 hours, 23 minutes\n**Affected Services and Features:**\nVMWare Engine\n**Regions/Zones:** us-central1a\n**Description:**\nGoogle Cloud customers using VMWare Engine experienced connectivity issues while using vSphere, vCenter and NSX in us-central1a zone for a duration of 6 hours, 23 minutes.\nFrom preliminary analysis, the issue was caused due to a network switch-over not working as expected during a planned maintenance window of ToR switches. The issue was mitigated by performing a file system recovery and restart of related services on the resources hosted by Google Cloud VMware Engine.\n**Customer Impact:**\n- Affected Customers may have observed issues with network partitions and accessing workload VMs.\n- Affected Customers may have experienced connectivity issues using vCenter, HCX, NSX Manager, and NSX-T Edge virtual machines.\n**Additional details:**\nGoogle engineers have paused the maintenance upgrade and also all redundant devices have been brought back to operational state. We are also working with the impacted customers to check the state of remaining workload VMs and shall assist in recovery if required.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
