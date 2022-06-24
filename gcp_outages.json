@@ -3817,159 +3817,155 @@
     ]
   },
   {
-    "id": "4Sie4sXFPougA2Ku24pT",
-    "number": "16190899427126199648",
-    "begin": "2022-06-14T10:03:00+00:00",
-    "created": "2022-06-14T11:00:36+00:00",
-    "end": "2022-06-14T13:22:00+00:00",
-    "modified": "2022-06-14T18:54:41+00:00",
-    "external_desc": "GKE API seeing high latency and errors in us-central1",
-    "updates": [
-      {
-        "created": "2022-06-14T18:54:05+00:00",
-        "modified": "2022-06-14T18:54:05+00:00",
-        "when": "2022-06-14T18:54:05+00:00",
-        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 June 2022 03:03\n**Incident End:** 14 June 2022 06:22\n**Duration:** 3 hours, 19 minutes\n**Affected Services and Features:**\nGoogle Kubernetes Engine, Cloud Data Fusion, Cloud Logging\n**Regions/Zones:** us-central1\n**Description:**\nGoogle Kubernetes Engine (GKE) experienced increased latency and errors from the GKE API in us-central1 for 3 hours and 19 minutes. From preliminary analysis, the root cause of the issue was an unexpected increase in backend traffic that was compounded by clients retrying failed requests. The issue was mitigated by scaling up the GKE control plane to handle the increased traffic.\n**Customer Impact:**\n* **Google Kubernetes Engine (GKE)** customers may have experienced increased latency and errors for GKE API calls via gcloud and the Google Cloud Console UI. GKE cluster workloads continued to run; however customers may have been unable to perform operations such as confirm cluster status, trigger upgrades, view workloads, or create/delete clusters and node pools.\n* **Cloud Data Fusion** customers may have experienced instance creation and deletion failures in us-central1.\n* **Cloud Logging** customers may have experienced increased latency for suggested searches for GKE clusters in us-central1.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T13:26:34+00:00",
-        "modified": "2022-06-14T13:26:39+00:00",
-        "when": "2022-06-14T13:26:34+00:00",
-        "text": "The issue with Google Kubernetes Engine has been resolved for all affected users as of Tuesday, 2022-06-14 06:17 US/Pacific.\nIf customers are still experiencing issues, please raise the case via normal channels .\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T13:15:26+00:00",
-        "modified": "2022-06-14T13:15:31+00:00",
-        "when": "2022-06-14T13:15:26+00:00",
-        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nCustomers who are able to use another region are advised to do so.\nWe will provide more information by Tuesday, 2022-06-14 06:35 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T12:34:41+00:00",
-        "modified": "2022-06-14T12:34:46+00:00",
-        "when": "2022-06-14T12:34:41+00:00",
-        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nCustomers who are able to use another region are advised to do so.\nWe will provide more information by Tuesday, 2022-06-14 06:10 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T12:01:11+00:00",
-        "modified": "2022-06-14T12:01:18+00:00",
-        "when": "2022-06-14T12:01:11+00:00",
-        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete by Tuesday, 2022-06-14 05:30 US/Pacific.}\nWe will provide more information by Tuesday, 2022-06-14 05:31 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T11:28:50+00:00",
-        "modified": "2022-06-14T11:28:55+00:00",
-        "when": "2022-06-14T11:28:50+00:00",
-        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Tuesday, 2022-06-14 05:00 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2022-06-14T11:00:28+00:00",
-        "modified": "2022-06-14T11:00:41+00:00",
-        "when": "2022-06-14T11:00:28+00:00",
-        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Tuesday, 2022-06-14 03:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 04:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-06-14T18:54:05+00:00",
-      "modified": "2022-06-14T18:54:05+00:00",
-      "when": "2022-06-14T18:54:05+00:00",
-      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 June 2022 03:03\n**Incident End:** 14 June 2022 06:22\n**Duration:** 3 hours, 19 minutes\n**Affected Services and Features:**\nGoogle Kubernetes Engine, Cloud Data Fusion, Cloud Logging\n**Regions/Zones:** us-central1\n**Description:**\nGoogle Kubernetes Engine (GKE) experienced increased latency and errors from the GKE API in us-central1 for 3 hours and 19 minutes. From preliminary analysis, the root cause of the issue was an unexpected increase in backend traffic that was compounded by clients retrying failed requests. The issue was mitigated by scaling up the GKE control plane to handle the increased traffic.\n**Customer Impact:**\n* **Google Kubernetes Engine (GKE)** customers may have experienced increased latency and errors for GKE API calls via gcloud and the Google Cloud Console UI. GKE cluster workloads continued to run; however customers may have been unable to perform operations such as confirm cluster status, trigger upgrades, view workloads, or create/delete clusters and node pools.\n* **Cloud Data Fusion** customers may have experienced instance creation and deletion failures in us-central1.\n* **Cloud Logging** customers may have experienced increased latency for suggested searches for GKE clusters in us-central1.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Operations",
-        "id": "DixAowEQm45KgqXKP5tR"
-      },
-      {
-        "title": "Google Kubernetes Engine",
-        "id": "LCSbT57h59oR4W98NHuz"
-      },
-      {
-        "title": "Cloud Logging",
-        "id": "PuCJ6W2ovoDhLcyvZ1xa"
-      },
-      {
-        "title": "Cloud Data Fusion",
-        "id": "rLKDHeeaBiXTeutF1air"
-      }
-    ],
-    "uri": "incidents/4Sie4sXFPougA2Ku24pT",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Iowa (us-central1)",
-        "id": "us-central1"
-      }
-    ]
-  },
-  {
     "id": "huJFgyiNYPPypbw8PX9Y",
     "number": "9278202795851610263",
-    "begin": "2022-06-13T21:55:00+00:00",
+    "begin": "2022-06-14T11:15:00+00:00",
     "created": "2022-06-16T16:27:22+00:00",
-    "end": "2022-06-16T18:26:00+00:00",
-    "modified": "2022-06-16T23:55:01+00:00",
+    "end": "2022-06-14T18:26:00+00:00",
+    "modified": "2022-06-24T21:47:44+00:00",
     "external_desc": "Global: Some Google Cloud Console Customers are unable to create/edit GCE instances",
     "updates": [
+      {
+        "created": "2022-06-24T21:47:40+00:00",
+        "modified": "2022-06-24T21:47:40+00:00",
+        "when": "2022-06-24T21:47:40+00:00",
+        "text": "**SUMMARY:**\nOn Thursday, 16 June 2022, customers were unable to create or edit Google Compute Engine (GCE) instances via the Google Cloud Console for 2 days, 20 hours, 31 minutes. To our customers that were impacted during this outage, we sincerely apologize. We are conducting an internal investigation and are taking steps to improve our service.\n**ROOT CAUSE:**\nCustomers can specify organization policies to limit what instances can use external IP addresses (compute.instanceExternalIpAccess). Setting an IP address on an instance not allowed by policy will cause an operation failure.\nThe incident was triggered by a compute frontend UI release which made it impossible for certain users to modify instances due to interactions between org policies and a bug that forced an Ephemeral IP address while on either the edit or create page. . Any user with the compute.instanceExternalIpAccess policy could not create or edit instances without a public IP.\nA bug was identified where customers with a policy restricting external IP addresses were not able to select one during instance creation. An attempt to fix this bug created a regression where changing any field in the Edit instance page would change the IP address to ephemeral for machines that had no IP address selected. Because of the org policy blocks assigning the instance a public IP, the save operation would fail.The release containing this change included a fix to address the bug however, once in production several customers reported issues.\n**REMEDIATION AND PREVENTION:**\nGoogle engineers were alerted to the issue via customer support case on Wednesday, 14 June 2022 at 04:15 and started an investigation. At 06:11, Google engineers were able to reproduce the issue and escalated the incident at 09:08. At 09:50, Google engineers initiated a rollback of the release which was completed at 11:26 fully mitigating the issue.\nGoogle is committed to improving our service in the future and will be completing the following actions:\nImprove unit testing for org policies to identify issues of this type.\nImprove alerting to quickly detect configuration failures.\n**DETAILED DESCRIPTION OF IMPACT:**\nOn Wednesday, 14 June 2022 04:15 to 11:26 US/Pacific\n# Google Compute Engine\nAffected customers experienced failures creating or editing GCE instances via the Google Cloud Console and may have received an error “Constraint constraints/compute.instanceExternalIpAccess violated for project [project ID].“\n**ADDITIONAL INFORMATION FOR CUSTOMERS:**\nAs a workaround, customers were still able to create or edit GCE instances via the gcloud CLI or via Google Cloud Console by disabling the constraints/compute.instanceExternalIpAccess policy.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2022-06-16T23:54:30+00:00",
         "modified": "2022-06-16T23:54:30+00:00",
@@ -4818,10 +4814,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-06-16T23:54:30+00:00",
-      "modified": "2022-06-16T23:54:30+00:00",
-      "when": "2022-06-16T23:54:30+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 13 June 2022 14:55\n**Incident End:** 16 June 2022 11:26\n**Duration:** 2 days, 20 hours, 31 minutes\n**Affected Services and Features:**\nGoogle Cloud Console, Google Compute Engine\n**Regions/Zones:** Global\n**Description:**\nCustomers may have been unable to create or edit Google Compute Engine (GCE) instances via the Google Cloud Console for 2 days 20 hours 31 minutes. From preliminary analysis, the root cause of the issue was a recent update to the GCE frontend UI.\nGoogle engineers rolled back the GCE frontend UI update to mitigate the issue on 16 June 2022 11:33 US/Pacific.\n**Customer Impact:**\nCustomers attempting to create or edit GCE instances via the Google Cloud Console may have received an error “Constraint constraints/compute.vmExternalIpAccess violated for project [project ID].“\nAs a workaround, customers were still able to create or edit GCE instances via the gcloud CLI or via Google Cloud Console by disabling the constraints/compute.vmExternalIpAccess policy.",
+      "created": "2022-06-24T21:47:40+00:00",
+      "modified": "2022-06-24T21:47:40+00:00",
+      "when": "2022-06-24T21:47:40+00:00",
+      "text": "**SUMMARY:**\nOn Thursday, 16 June 2022, customers were unable to create or edit Google Compute Engine (GCE) instances via the Google Cloud Console for 2 days, 20 hours, 31 minutes. To our customers that were impacted during this outage, we sincerely apologize. We are conducting an internal investigation and are taking steps to improve our service.\n**ROOT CAUSE:**\nCustomers can specify organization policies to limit what instances can use external IP addresses (compute.instanceExternalIpAccess). Setting an IP address on an instance not allowed by policy will cause an operation failure.\nThe incident was triggered by a compute frontend UI release which made it impossible for certain users to modify instances due to interactions between org policies and a bug that forced an Ephemeral IP address while on either the edit or create page. . Any user with the compute.instanceExternalIpAccess policy could not create or edit instances without a public IP.\nA bug was identified where customers with a policy restricting external IP addresses were not able to select one during instance creation. An attempt to fix this bug created a regression where changing any field in the Edit instance page would change the IP address to ephemeral for machines that had no IP address selected. Because of the org policy blocks assigning the instance a public IP, the save operation would fail.The release containing this change included a fix to address the bug however, once in production several customers reported issues.\n**REMEDIATION AND PREVENTION:**\nGoogle engineers were alerted to the issue via customer support case on Wednesday, 14 June 2022 at 04:15 and started an investigation. At 06:11, Google engineers were able to reproduce the issue and escalated the incident at 09:08. At 09:50, Google engineers initiated a rollback of the release which was completed at 11:26 fully mitigating the issue.\nGoogle is committed to improving our service in the future and will be completing the following actions:\nImprove unit testing for org policies to identify issues of this type.\nImprove alerting to quickly detect configuration failures.\n**DETAILED DESCRIPTION OF IMPACT:**\nOn Wednesday, 14 June 2022 04:15 to 11:26 US/Pacific\n# Google Compute Engine\nAffected customers experienced failures creating or editing GCE instances via the Google Cloud Console and may have received an error “Constraint constraints/compute.instanceExternalIpAccess violated for project [project ID].“\n**ADDITIONAL INFORMATION FOR CUSTOMERS:**\nAs a workaround, customers were still able to create or edit GCE instances via the gcloud CLI or via Google Cloud Console by disabling the constraints/compute.instanceExternalIpAccess policy.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
@@ -5106,6 +5102,151 @@
       {
         "title": "Las Vegas (us-west4)",
         "id": "us-west4"
+      }
+    ]
+  },
+  {
+    "id": "4Sie4sXFPougA2Ku24pT",
+    "number": "16190899427126199648",
+    "begin": "2022-06-14T10:03:00+00:00",
+    "created": "2022-06-14T11:00:36+00:00",
+    "end": "2022-06-14T13:22:00+00:00",
+    "modified": "2022-06-14T18:54:41+00:00",
+    "external_desc": "GKE API seeing high latency and errors in us-central1",
+    "updates": [
+      {
+        "created": "2022-06-14T18:54:05+00:00",
+        "modified": "2022-06-14T18:54:05+00:00",
+        "when": "2022-06-14T18:54:05+00:00",
+        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 June 2022 03:03\n**Incident End:** 14 June 2022 06:22\n**Duration:** 3 hours, 19 minutes\n**Affected Services and Features:**\nGoogle Kubernetes Engine, Cloud Data Fusion, Cloud Logging\n**Regions/Zones:** us-central1\n**Description:**\nGoogle Kubernetes Engine (GKE) experienced increased latency and errors from the GKE API in us-central1 for 3 hours and 19 minutes. From preliminary analysis, the root cause of the issue was an unexpected increase in backend traffic that was compounded by clients retrying failed requests. The issue was mitigated by scaling up the GKE control plane to handle the increased traffic.\n**Customer Impact:**\n* **Google Kubernetes Engine (GKE)** customers may have experienced increased latency and errors for GKE API calls via gcloud and the Google Cloud Console UI. GKE cluster workloads continued to run; however customers may have been unable to perform operations such as confirm cluster status, trigger upgrades, view workloads, or create/delete clusters and node pools.\n* **Cloud Data Fusion** customers may have experienced instance creation and deletion failures in us-central1.\n* **Cloud Logging** customers may have experienced increased latency for suggested searches for GKE clusters in us-central1.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T13:26:34+00:00",
+        "modified": "2022-06-14T13:26:39+00:00",
+        "when": "2022-06-14T13:26:34+00:00",
+        "text": "The issue with Google Kubernetes Engine has been resolved for all affected users as of Tuesday, 2022-06-14 06:17 US/Pacific.\nIf customers are still experiencing issues, please raise the case via normal channels .\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T13:15:26+00:00",
+        "modified": "2022-06-14T13:15:31+00:00",
+        "when": "2022-06-14T13:15:26+00:00",
+        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nCustomers who are able to use another region are advised to do so.\nWe will provide more information by Tuesday, 2022-06-14 06:35 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T12:34:41+00:00",
+        "modified": "2022-06-14T12:34:46+00:00",
+        "when": "2022-06-14T12:34:41+00:00",
+        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nCustomers who are able to use another region are advised to do so.\nWe will provide more information by Tuesday, 2022-06-14 06:10 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T12:01:11+00:00",
+        "modified": "2022-06-14T12:01:18+00:00",
+        "when": "2022-06-14T12:01:11+00:00",
+        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete by Tuesday, 2022-06-14 05:30 US/Pacific.}\nWe will provide more information by Tuesday, 2022-06-14 05:31 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T11:28:50+00:00",
+        "modified": "2022-06-14T11:28:55+00:00",
+        "when": "2022-06-14T11:28:50+00:00",
+        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Tuesday, 2022-06-14 05:00 US/Pacific.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-06-14T11:00:28+00:00",
+        "modified": "2022-06-14T11:00:41+00:00",
+        "when": "2022-06-14T11:00:28+00:00",
+        "text": "Summary: GKE API seeing high latency and errors in us-central1\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Tuesday, 2022-06-14 03:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-06-14 04:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Users will see high errors and latency from the GKE API in us-central1. Retries may be successful.\nWorkaround: None at this time",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-06-14T18:54:05+00:00",
+      "modified": "2022-06-14T18:54:05+00:00",
+      "when": "2022-06-14T18:54:05+00:00",
+      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support or help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 14 June 2022 03:03\n**Incident End:** 14 June 2022 06:22\n**Duration:** 3 hours, 19 minutes\n**Affected Services and Features:**\nGoogle Kubernetes Engine, Cloud Data Fusion, Cloud Logging\n**Regions/Zones:** us-central1\n**Description:**\nGoogle Kubernetes Engine (GKE) experienced increased latency and errors from the GKE API in us-central1 for 3 hours and 19 minutes. From preliminary analysis, the root cause of the issue was an unexpected increase in backend traffic that was compounded by clients retrying failed requests. The issue was mitigated by scaling up the GKE control plane to handle the increased traffic.\n**Customer Impact:**\n* **Google Kubernetes Engine (GKE)** customers may have experienced increased latency and errors for GKE API calls via gcloud and the Google Cloud Console UI. GKE cluster workloads continued to run; however customers may have been unable to perform operations such as confirm cluster status, trigger upgrades, view workloads, or create/delete clusters and node pools.\n* **Cloud Data Fusion** customers may have experienced instance creation and deletion failures in us-central1.\n* **Cloud Logging** customers may have experienced increased latency for suggested searches for GKE clusters in us-central1.",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Iowa (us-central1)",
+          "id": "us-central1"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Operations",
+        "id": "DixAowEQm45KgqXKP5tR"
+      },
+      {
+        "title": "Google Kubernetes Engine",
+        "id": "LCSbT57h59oR4W98NHuz"
+      },
+      {
+        "title": "Cloud Logging",
+        "id": "PuCJ6W2ovoDhLcyvZ1xa"
+      },
+      {
+        "title": "Cloud Data Fusion",
+        "id": "rLKDHeeaBiXTeutF1air"
+      }
+    ],
+    "uri": "incidents/4Sie4sXFPougA2Ku24pT",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Iowa (us-central1)",
+        "id": "us-central1"
       }
     ]
   },
