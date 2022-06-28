@@ -56,9 +56,71 @@
     "number": "12615573420888182146",
     "begin": "2022-06-27T22:33:40+00:00",
     "created": "2022-06-27T22:54:59+00:00",
-    "modified": "2022-06-28T10:30:11+00:00",
-    "external_desc": "Cloud Function 2nd Generation deletes are erroring out in multiple regions.",
+    "end": "2022-06-28T14:04:37+00:00",
+    "modified": "2022-06-28T14:04:38+00:00",
+    "external_desc": "Cloud Function 2nd Generation deletes were erroring out in multiple regions.",
     "updates": [
+      {
+        "created": "2022-06-28T14:04:35+00:00",
+        "modified": "2022-06-28T14:04:40+00:00",
+        "when": "2022-06-28T14:04:35+00:00",
+        "text": "The issue with Google Cloud Functions has been resolved for all affected users as of Tuesday, 2022-06-28 01:11 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          }
+        ]
+      },
       {
         "created": "2022-06-28T10:30:11+00:00",
         "modified": "2022-06-28T10:30:12+00:00",
@@ -610,11 +672,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-06-28T10:30:11+00:00",
-      "modified": "2022-06-28T10:30:12+00:00",
-      "when": "2022-06-28T10:30:11+00:00",
-      "text": "Summary: Cloud Function 2nd Generation deletes are erroring out in multiple regions.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Tuesday, 2022-06-28 09:30 US/Pacific.\nDiagnosis: Delete function operations are erroring with following message although the corresponding resources are getting deleted and customers are able to reuse the function name\nError message:\nOperation Failed. Public Error Status: code: 5 message: Delete package operation for projects/[PROJECT_ID]/locations/[REGION]/repositories/gcf-artifacts/packages/[FUNCTION_ID]%2Fcustom-run has failed. Additional information: Requested entity was not found.\nWorkaround: None at this time.",
-      "status": "SERVICE_INFORMATION",
+      "created": "2022-06-28T14:04:35+00:00",
+      "modified": "2022-06-28T14:04:40+00:00",
+      "when": "2022-06-28T14:04:35+00:00",
+      "text": "The issue with Google Cloud Functions has been resolved for all affected users as of Tuesday, 2022-06-28 01:11 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
       "affected_locations": [
         {
           "title": "Taiwan (asia-east1)",
@@ -681,7 +743,8 @@
       }
     ],
     "uri": "incidents/6ocKuGf4LTJTjaB84Ms4",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Taiwan (asia-east1)",
         "id": "asia-east1"
@@ -734,8 +797,7 @@
         "title": "Los Angeles (us-west2)",
         "id": "us-west2"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "fh6jfua8BdRbCkwTegBy",
