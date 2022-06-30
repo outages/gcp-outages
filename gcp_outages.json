@@ -705,9 +705,34 @@
     "number": "6035749805300313659",
     "begin": "2022-06-29T18:29:36+00:00",
     "created": "2022-06-29T18:29:38+00:00",
-    "modified": "2022-06-29T22:53:32+00:00",
+    "modified": "2022-06-30T13:22:58+00:00",
     "external_desc": "Intermittent Cloud Composer creation failures in select regions",
     "updates": [
+      {
+        "created": "2022-06-30T13:22:58+00:00",
+        "modified": "2022-06-30T13:23:08+00:00",
+        "when": "2022-06-30T13:22:58+00:00",
+        "text": "Summary: Intermittent Cloud Composer creation failures in select regions\nDescription: Mitigation work is still underway by our engineering team.\nWe will provide more information by Thursday, 2022-06-30 10:00 US/Pacific.\nDiagnosis: Customers may experience latency and errors with Composer creation.\nWorkaround: Customers may retry the Composer creation operation.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          }
+        ]
+      },
       {
         "created": "2022-06-29T22:53:32+00:00",
         "modified": "2022-06-29T22:53:33+00:00",
@@ -835,10 +860,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-06-29T22:53:32+00:00",
-      "modified": "2022-06-29T22:53:33+00:00",
-      "when": "2022-06-29T22:53:32+00:00",
-      "text": "Summary: Intermittent Cloud Composer creation failures in select regions\nDescription: Engineering has identified the root cause and mitigation work is currently underway.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Thursday, 2022-06-30 07:00 US/Pacific.\nDiagnosis: Customers may experience latency and errors with Composer creation.\nWorkaround: Customers may retry the Composer creation operation.",
+      "created": "2022-06-30T13:22:58+00:00",
+      "modified": "2022-06-30T13:23:08+00:00",
+      "when": "2022-06-30T13:22:58+00:00",
+      "text": "Summary: Intermittent Cloud Composer creation failures in select regions\nDescription: Mitigation work is still underway by our engineering team.\nWe will provide more information by Thursday, 2022-06-30 10:00 US/Pacific.\nDiagnosis: Customers may experience latency and errors with Composer creation.\nWorkaround: Customers may retry the Composer creation operation.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
@@ -11597,12 +11622,96 @@
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
-    "service_key": "9CcrhHUcFevXPSVaSxkf",
-    "service_name": "Google BigQuery",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
     "affected_products": [
       {
         "title": "Google BigQuery",
         "id": "9CcrhHUcFevXPSVaSxkf"
+      },
+      {
+        "title": "Apigee",
+        "id": "9Y13BNFy4fJydvjdsN3X"
+      },
+      {
+        "title": "Cloud Filestore",
+        "id": "jog4nyYkquiLeSK5s26q"
+      },
+      {
+        "title": "Cloud Load Balancing",
+        "id": "ix7u9beT8ivBdjApTif3"
+      },
+      {
+        "title": "Cloud Run",
+        "id": "9D7d2iNBQWN24zc1VamE"
+      },
+      {
+        "title": "Data Catalog",
+        "id": "TFedVRYgKGRGMSJrUpup"
+      },
+      {
+        "title": "Datastream",
+        "id": "ibJgP4CNKnFojHHw8L3s"
+      },
+      {
+        "title": "Google App Engine",
+        "id": "kchyUtnkMHJWaAva8aYc"
+      },
+      {
+        "title": "Google Cloud Composer",
+        "id": "YxkG5FfcC42cQmvBCk4j"
+      },
+      {
+        "title": "Google Cloud Dataflow",
+        "id": "T9bFoXPqG8w8g1YbWTKY"
+      },
+      {
+        "title": "Google Cloud Datastore",
+        "id": "MaS3dKoqp1oqkea4qB9U"
+      },
+      {
+        "title": "Google Cloud Functions",
+        "id": "oW4vJ7VNqyxTWNzSHopX"
+      },
+      {
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
+      },
+      {
+        "title": "Google Cloud Pub/Sub",
+        "id": "dFjdLh2v6zuES6t9ADCB"
+      },
+      {
+        "title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri"
+      },
+      {
+        "title": "Google Cloud Tasks",
+        "id": "tMWyzhyKK4rAzAf7x62h"
+      },
+      {
+        "title": "Google Compute Engine",
+        "id": "L3ggmi3Jy4xJmgodFA9K"
+      },
+      {
+        "title": "Google Kubernetes Engine",
+        "id": "LCSbT57h59oR4W98NHuz"
+      },
+      {
+        "title": "Persistent Disk",
+        "id": "SzESm2Ux129pjDGKWD68"
+      },
+      {
+        "title": "Virtual Private Cloud (VPC)",
+        "id": "BSGtCUnz6ZmyajsjgTKv"
+      },
+      {
+        "title": "Cloud Data Fusion",
+        "id": "rLKDHeeaBiXTeutF1air"
+      },
+      {
+        "title": "Google Cloud Bigtable",
+        "id": "LfZSuE3xdQU46YMFV5fy"
       }
     ],
     "uri": "incidents/6sfxucMj6DuhVzmj9Xr8",
