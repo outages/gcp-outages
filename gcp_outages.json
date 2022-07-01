@@ -4,9 +4,92 @@
     "number": "2463565635339146947",
     "begin": "2022-06-30T18:12:00+00:00",
     "created": "2022-06-30T18:45:06+00:00",
-    "modified": "2022-06-30T19:49:08+00:00",
+    "end": "2022-07-01T02:15:28+00:00",
+    "modified": "2022-07-01T02:15:28+00:00",
     "external_desc": "Intermittent Cloud Composer creation failures in select regions and elevated error rates during Cloud SQL instance creation.",
     "updates": [
+      {
+        "created": "2022-07-01T02:15:28+00:00",
+        "modified": "2022-07-01T02:15:28+00:00",
+        "when": "2022-07-01T02:15:28+00:00",
+        "text": "We experienced an issue with Google Cloud Composer, Google Cloud SQL beginning at Thursday, 2022-06-28 09:00 US/Pacific.\nThe issue has been resolved for all affected users as of Thursday, 2022-06-30 19:13 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-01T00:50:56+00:00",
+        "modified": "2022-07-01T00:51:03+00:00",
+        "when": "2022-07-01T00:50:56+00:00",
+        "text": "Summary: Intermittent Cloud Composer creation failures in select regions and elevated error rates during Cloud SQL instance creation.\nDescription: Mitigation work is underway by our engineering team.\nWe will provide more information by Thursday, 2022-06-30 20:00 US/Pacific.\nDiagnosis: Customers may experience latency and errors with Composer creation. Customer may face errors stating \"databases already exist\" error upon retrying the creation of Composer.\nCustomer using Cloud SQL may see failures in calls shortly after database instance creation.\nWorkaround: Customers may retry the API calls for affected instances while using Cloud SQL.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          }
+        ]
+      },
       {
         "created": "2022-06-30T19:49:08+00:00",
         "modified": "2022-06-30T19:49:10+00:00",
@@ -132,11 +215,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-06-30T19:49:08+00:00",
-      "modified": "2022-06-30T19:49:10+00:00",
-      "when": "2022-06-30T19:49:08+00:00",
-      "text": "Summary: Intermittent Cloud Composer creation failures in select regions and elevated error rates during Cloud SQL instance creation.\nDescription: Our engineering team has determined that further investigation is required to mitigate the issue.\nWe will provide an update by Thursday, 2022-06-30 18:00 US/Pacific with current details.\nDiagnosis: Customers may experience latency and errors with Composer creation. Customer may face errors stating \"databases already exist\" error upon retrying the creation of Composer.\nCustomer using Cloud SQL may see failures in calls shortly after database instance creation.\nWorkaround: Customers may retry the API calls for affected instances while using Cloud SQL.",
-      "status": "SERVICE_INFORMATION",
+      "created": "2022-07-01T02:15:28+00:00",
+      "modified": "2022-07-01T02:15:28+00:00",
+      "when": "2022-07-01T02:15:28+00:00",
+      "text": "We experienced an issue with Google Cloud Composer, Google Cloud SQL beginning at Thursday, 2022-06-28 09:00 US/Pacific.\nThe issue has been resolved for all affected users as of Thursday, 2022-06-30 19:13 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
       "affected_locations": [
         {
           "title": "Taiwan (asia-east1)",
@@ -187,7 +270,8 @@
       }
     ],
     "uri": "incidents/mDY7jN545et9XUV541MZ",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Taiwan (asia-east1)",
         "id": "asia-east1"
@@ -220,8 +304,7 @@
         "title": "Los Angeles (us-west2)",
         "id": "us-west2"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "sPyYB214xAhqnoxNrrnW",
