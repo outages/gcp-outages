@@ -248,9 +248,30 @@
     "begin": "2022-07-15T17:44:47+00:00",
     "created": "2022-07-15T19:58:02+00:00",
     "end": "2022-07-15T22:27:07+00:00",
-    "modified": "2022-07-15T22:27:07+00:00",
+    "modified": "2022-07-18T22:28:26+00:00",
     "external_desc": "Google Cloud Storage is experiencing elevated latency in multiple regions.",
     "updates": [
+      {
+        "created": "2022-07-18T22:28:26+00:00",
+        "modified": "2022-07-18T22:28:26+00:00",
+        "when": "2022-07-18T22:28:26+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 14 July 2022 19:30\n**Incident End:** 15 July 2022 15:02\n**Duration:** 18 hours, 28 minutes\n**Affected Services**\nGoogle Cloud Networking\nGoogle BigQuery\nGoogle Cloud Storage (GCS)\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Networking experienced reduced availability globally for a period of 13 hours and 28 minutes. Because of the nature of the outage and resilience capabilities of GCP products, the impacted regions and individual impacted windows may vary inside of the network impact window. From preliminary analysis, the root cause was due to an issue with a new control plane configuration rollout.\n**Customer Impact:**\nGoogle Cloud Storage - Affected customers would have experienced elevated latencies or HTTP 500 errors in multiple regions, including us-east1, us-central1, and southamerica-west1. - Affected customers reading/writing data from GCS impacted regions or from buckets located in impacted regions would have observed high latency and/or errors. - Affected customers reading/writing metadata for buckets located in impacted regions would have observed high latency and/or errors.\nGoogle BigQuery - Affected customers performing cross-regional table copies would have observed increased latency and/or errors.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          }
+        ]
+      },
       {
         "created": "2022-07-15T22:27:07+00:00",
         "modified": "2022-07-15T22:27:08+00:00",
@@ -337,10 +358,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-07-15T22:27:07+00:00",
-      "modified": "2022-07-15T22:27:08+00:00",
-      "when": "2022-07-15T22:27:07+00:00",
-      "text": "The issue with Google Cloud Storage has been resolved for all affected users as of Friday, 2022-07-15 15:26 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-07-18T22:28:26+00:00",
+      "modified": "2022-07-18T22:28:26+00:00",
+      "when": "2022-07-18T22:28:26+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 14 July 2022 19:30\n**Incident End:** 15 July 2022 15:02\n**Duration:** 18 hours, 28 minutes\n**Affected Services**\nGoogle Cloud Networking\nGoogle BigQuery\nGoogle Cloud Storage (GCS)\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Networking experienced reduced availability globally for a period of 13 hours and 28 minutes. Because of the nature of the outage and resilience capabilities of GCP products, the impacted regions and individual impacted windows may vary inside of the network impact window. From preliminary analysis, the root cause was due to an issue with a new control plane configuration rollout.\n**Customer Impact:**\nGoogle Cloud Storage - Affected customers would have experienced elevated latencies or HTTP 500 errors in multiple regions, including us-east1, us-central1, and southamerica-west1. - Affected customers reading/writing data from GCS impacted regions or from buckets located in impacted regions would have observed high latency and/or errors. - Affected customers reading/writing metadata for buckets located in impacted regions would have observed high latency and/or errors.\nGoogle BigQuery - Affected customers performing cross-regional table copies would have observed increased latency and/or errors.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
