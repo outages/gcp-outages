@@ -4,9 +4,22 @@
     "number": "5289378925036056618",
     "begin": "2022-07-19T17:13:35+00:00",
     "created": "2022-07-19T17:13:38+00:00",
-    "modified": "2022-07-19T17:13:38+00:00",
-    "external_desc": "Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted.",
+    "modified": "2022-07-19T17:41:40+00:00",
+    "external_desc": "Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted for VMs. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes.",
     "updates": [
+      {
+        "created": "2022-07-19T17:41:40+00:00",
+        "modified": "2022-07-19T17:41:41+00:00",
+        "when": "2022-07-19T17:41:40+00:00",
+        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted for VMs. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are now running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes and are working to restore redundancy for the impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 11:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in other zones of europe-west2.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
       {
         "created": "2022-07-19T17:13:37+00:00",
         "modified": "2022-07-19T17:13:38+00:00",
@@ -22,10 +35,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-07-19T17:13:37+00:00",
-      "modified": "2022-07-19T17:13:38+00:00",
-      "when": "2022-07-19T17:13:37+00:00",
-      "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are now running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are also working to restore redundancy for the impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 11:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in other zones of europe-west2.",
+      "created": "2022-07-19T17:41:40+00:00",
+      "modified": "2022-07-19T17:41:41+00:00",
+      "when": "2022-07-19T17:41:40+00:00",
+      "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted for VMs. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are now running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes and are working to restore redundancy for the impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 11:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in other zones of europe-west2.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
@@ -58,9 +71,22 @@
     "number": "17286000671883665526",
     "begin": "2022-07-19T16:15:45+00:00",
     "created": "2022-07-19T16:15:47+00:00",
-    "modified": "2022-07-19T17:07:07+00:00",
+    "modified": "2022-07-19T17:35:23+00:00",
     "external_desc": "Multiple Cloud products experiencing elevated error rates, latencies or service unavailability in europe-west2",
     "updates": [
+      {
+        "created": "2022-07-19T17:35:23+00:00",
+        "modified": "2022-07-19T17:35:26+00:00",
+        "when": "2022-07-19T17:35:23+00:00",
+        "text": "Summary: Multiple Cloud products experiencing elevated error rates, latencies or service unavailability in europe-west2\nDescription: We are experiencing an issue with multiple cloud products beginning on Tuesday, 2022-07-19 06:33 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-07-19 11:10 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nProduct Impact:\n**Google Cloud Storage:**\n* Impact/Diagnosis: Customers with data in the impacted region will see elevated errors when attempting to read objects\n* Workaround: None at this time.\n* Impact mitigated at 08:53 Us/pacific for Google Cloud Storage\n**Google BigQuery:**\n* Impact/Diagnosis: Datasets will be unavailable for the impacted locations.\n* Workaround: None at this time.\n*Google App Engine and Cloud Functions:**\n* Impact/Diagnosis: Customers may experience high error rates for Google App Engine and Cloud Functions in europe-west2 for requests coming through Cloud Pubsub, Eventarc, Cloud Tasks, and Cloud Scheduler. Pubsub, Eventarc, and Cloud Tasks traffic will be automatically retried once the outage is resolved. Cloud Scheduler requests will need to be resubmitted.\n* Workaround: Fail over to another region if your service supports it.\n**DataFlow:**\n* Impact/Diagnosis: Dataflow Streaming jobs already running in the impacted area may be stuck. New Dataflow jobs may not start.\n* Workaround: Customers are advised to run their jobs in another region.\n**Cloud Composer:**\n* Impact/Diagnosis: All operations will experience downgraded performance in europe-west2.\n* Workaround: None at this time.\n**Cloud Filestore:**\n* Impact/Diagnosis: europe-west2-a is unavailable for all customers\n* Workaround: Fail over to another region if your service supports it\n**Cloud SQL:**\n* Impact/Diagnosis: Non-HA instances are hard-down in europe-west2-a. HA instances are down in europe-west2-a (pending zonal failover). Following ops are failing in all three zones, but mostly in europe-west2-a: Backups, creates, DMS migrations, updates, deletes, recreates (internal), restarts, exports.\n* Workaround: None at this time.\n**Memory Store for Redis:**\n* Impact/Diagnosis: Customers will experience timeouts for management api (create,update,delete,etc), and cache flushes\n* Workaround: None at this time.\n**Persistent Disk:**\n* Impact/Diagnosis: Customers won't be able to create any PD device in europe-west2. PD devices in europe-west2-a are unavailable.\n* Workaround: Create PD devices in a different region/zone.\n**API Gateway:**\n* Impact/Diagnosis: Customers may see elevated 5xx errors in europe-west2\n* Workaround: None at this time.\n**Cloud Spanner**\n* Impact/Diagnosis: Customers that stay below our recommended CPU usage 65% SR, 45% MR should not see impact. Customers that are above the limit might see latency impact.\n* Workaround: For eur5 customers can chose to route to europe-west1, no workarounds needed for europe-west2\n**GKE:**\n* Impact/Diagnosis: Certain portions of clusters with presence in europe-west2-a may be unavailable\n* Workaround: Customers are encouraged to move their workloads to other regions if possible.\n**Looker:**\n* Impact/Diagnosis: Customers hosted in europe-west2 will experience significantly increased failed requests.\n* Workaround: None at this time.\n**Google Cloud Tasks:**\n* Impact/Diagnosis: Customers will experience high latency for all API requests. Some queues are not being loaded and they stop executing tasks. Customers may also see high delivery latency for their tasks, depending on which cell is serving their queues.\n* Workaround: None at this time.\nDiagnosis: Product specific symptoms are in the issue description.\nWorkaround: Product specific workaround are in the issue description.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
       {
         "created": "2022-07-19T17:07:06+00:00",
         "modified": "2022-07-19T17:07:09+00:00",
@@ -102,10 +128,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-07-19T17:07:06+00:00",
-      "modified": "2022-07-19T17:07:09+00:00",
-      "when": "2022-07-19T17:07:06+00:00",
-      "text": "Summary: Multiple Cloud products experiencing elevated error rates, latencies or service unavailability in europe-west2\nDescription: We are experiencing an issue with multiple cloud products beginning on Tuesday, 2022-07-19 06:33 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-07-19 10:40 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\n**Product Impact:**\n**Google Cloud Storage:**\n* Impact/Diagnosis: Customers with data in the impacted region will see elevated errors when attempting to read objects\n* Workaround: None at this time.\n* Impact mitigated at 08:53 Us/pacific for Google Cloud Storage\n**Google BigQuery:**\n* Impact/Diagnosis: Datasets will be unavailable for the impacted locations.\n* Workaround: None at this time.\n*Google App Engine and Cloud Functions:**\n* Impact/Diagnosis: Customers may experience high error rates for Google App Engine and Cloud Functions in europe-west2 for requests coming through Cloud Pubsub, Eventarc, Cloud Tasks, and Cloud Scheduler. Pubsub, Eventarc, and Cloud Tasks traffic will be automatically retried once the outage is resolved. Cloud Scheduler requests will need to be resubmitted.\n* Workaround: Fail over to another region if your service supports it.\n**DataFlow:**\n* Impact/Diagnosis: Dataflow Streaming jobs already running in the impacted area may be stuck. New Dataflow jobs may not start.\n* Workaround: Customers are advised to run their jobs in another region.\n**Cloud Composer:**\n* Impact/Diagnosis: All operations will experience downgraded performance in europe-west2.\n* Workaround: None at this time.\n**Cloud Filestore:**\n* Impact/Diagnosis: europe-west2-a is unavailable for all customers\n* Workaround: Fail over to another region if your service supports it\n**Cloud SQL:**\n* Impact/Diagnosis: Non-HA instances are hard-down in europe-west2-a. HA instances are down in europe-west2-a (pending zonal failover). Following ops are failing in all three zones, but mostly in europe-west2-a: Backups, creates, DMS migrations, updates, deletes, recreates (internal), restarts, exports.\n* Workaround: None at this time.\n**Memory Store for Redis:**\n* Impact/Diagnosis: Customers will experience timeouts for management api (create,update,delete,etc), and cache flushes\n* Workaround: None at this time.\n**Persistent Disk:**\n* Impact/Diagnosis: Customers won't be able to create any PD device in europe-west2. PD devices in europe-west2-a are unavailable.\n* Workaround: Create PD devices in a different region/zone.\n**API Gateway:**\n* Impact/Diagnosis: Customers may see elevated 5xx errors in europe-west2\n* Workaround: None at this time.\n**Cloud Spanner**\n* Impact/Diagnosis: Customers that stay below our recommended CPU usage 65% SR, 45% MR should not see impact. Customers that are above the limit might see latency impact.\n* Workaround: For eur5 customers can chose to route to europe-west1, no workarounds needed for europe-west2\nDiagnosis: Product specific symptoms are in the issue description.\nWorkaround: Product specific workaround are in the issue description.",
+      "created": "2022-07-19T17:35:23+00:00",
+      "modified": "2022-07-19T17:35:26+00:00",
+      "when": "2022-07-19T17:35:23+00:00",
+      "text": "Summary: Multiple Cloud products experiencing elevated error rates, latencies or service unavailability in europe-west2\nDescription: We are experiencing an issue with multiple cloud products beginning on Tuesday, 2022-07-19 06:33 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-07-19 11:10 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nProduct Impact:\n**Google Cloud Storage:**\n* Impact/Diagnosis: Customers with data in the impacted region will see elevated errors when attempting to read objects\n* Workaround: None at this time.\n* Impact mitigated at 08:53 Us/pacific for Google Cloud Storage\n**Google BigQuery:**\n* Impact/Diagnosis: Datasets will be unavailable for the impacted locations.\n* Workaround: None at this time.\n*Google App Engine and Cloud Functions:**\n* Impact/Diagnosis: Customers may experience high error rates for Google App Engine and Cloud Functions in europe-west2 for requests coming through Cloud Pubsub, Eventarc, Cloud Tasks, and Cloud Scheduler. Pubsub, Eventarc, and Cloud Tasks traffic will be automatically retried once the outage is resolved. Cloud Scheduler requests will need to be resubmitted.\n* Workaround: Fail over to another region if your service supports it.\n**DataFlow:**\n* Impact/Diagnosis: Dataflow Streaming jobs already running in the impacted area may be stuck. New Dataflow jobs may not start.\n* Workaround: Customers are advised to run their jobs in another region.\n**Cloud Composer:**\n* Impact/Diagnosis: All operations will experience downgraded performance in europe-west2.\n* Workaround: None at this time.\n**Cloud Filestore:**\n* Impact/Diagnosis: europe-west2-a is unavailable for all customers\n* Workaround: Fail over to another region if your service supports it\n**Cloud SQL:**\n* Impact/Diagnosis: Non-HA instances are hard-down in europe-west2-a. HA instances are down in europe-west2-a (pending zonal failover). Following ops are failing in all three zones, but mostly in europe-west2-a: Backups, creates, DMS migrations, updates, deletes, recreates (internal), restarts, exports.\n* Workaround: None at this time.\n**Memory Store for Redis:**\n* Impact/Diagnosis: Customers will experience timeouts for management api (create,update,delete,etc), and cache flushes\n* Workaround: None at this time.\n**Persistent Disk:**\n* Impact/Diagnosis: Customers won't be able to create any PD device in europe-west2. PD devices in europe-west2-a are unavailable.\n* Workaround: Create PD devices in a different region/zone.\n**API Gateway:**\n* Impact/Diagnosis: Customers may see elevated 5xx errors in europe-west2\n* Workaround: None at this time.\n**Cloud Spanner**\n* Impact/Diagnosis: Customers that stay below our recommended CPU usage 65% SR, 45% MR should not see impact. Customers that are above the limit might see latency impact.\n* Workaround: For eur5 customers can chose to route to europe-west1, no workarounds needed for europe-west2\n**GKE:**\n* Impact/Diagnosis: Certain portions of clusters with presence in europe-west2-a may be unavailable\n* Workaround: Customers are encouraged to move their workloads to other regions if possible.\n**Looker:**\n* Impact/Diagnosis: Customers hosted in europe-west2 will experience significantly increased failed requests.\n* Workaround: None at this time.\n**Google Cloud Tasks:**\n* Impact/Diagnosis: Customers will experience high latency for all API requests. Some queues are not being loaded and they stop executing tasks. Customers may also see high delivery latency for their tasks, depending on which cell is serving their queues.\n* Workaround: None at this time.\nDiagnosis: Product specific symptoms are in the issue description.\nWorkaround: Product specific workaround are in the issue description.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
@@ -130,6 +156,10 @@
       {
         "title": "Google Compute Engine",
         "id": "L3ggmi3Jy4xJmgodFA9K"
+      },
+      {
+        "title": "Google Kubernetes Engine",
+        "id": "LCSbT57h59oR4W98NHuz"
       },
       {
         "title": "Cloud Memorystore",
@@ -170,6 +200,10 @@
       {
         "title": "Google Cloud Functions",
         "id": "oW4vJ7VNqyxTWNzSHopX"
+      },
+      {
+        "title": "Google Cloud Tasks",
+        "id": "tMWyzhyKK4rAzAf7x62h"
       }
     ],
     "uri": "incidents/fmEL9i2fArADKawkZAa2",
