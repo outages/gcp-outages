@@ -2,11 +2,24 @@
   {
     "id": "XVq5om2XEDSqLtJZUvcH",
     "number": "5289378925036056618",
-    "begin": "2022-07-19T17:13:00+00:00",
+    "begin": "2022-07-19T17:13:35+00:00",
     "created": "2022-07-19T17:13:38+00:00",
-    "modified": "2022-07-19T21:16:36+00:00",
+    "modified": "2022-07-19T22:29:07+00:00",
     "external_desc": "Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2.",
     "updates": [
+      {
+        "created": "2022-07-19T22:29:06+00:00",
+        "modified": "2022-07-19T22:29:07+00:00",
+        "when": "2022-07-19T22:29:06+00:00",
+        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nThere is a cooling related failure in one of our buildings that hosts a portion of capacity for zone europe-west2-a for region europe-west2 that is not yet completely resolved. GCE, Persistent Disk and Autoscaling impacts have been mitigated. Most customers can launch VMs in all zones of europe-west2. A minority of customers might continue to see failures in europe-west2-a. We continue to work on bringing back previously impacted capacity in europe-west2-a to fully restore GCE, Persistent Disk and Autoscaling. If you are continuing to experience issues with these services, please contact Google Cloud Product Support and reference this message.\nCustomers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs.\nWorkaround: Customers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
       {
         "created": "2022-07-19T21:08:45+00:00",
         "modified": "2022-07-19T21:16:34+00:00",
@@ -87,10 +100,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-07-19T21:08:45+00:00",
-      "modified": "2022-07-19T21:16:34+00:00",
-      "when": "2022-07-19T21:08:45+00:00",
-      "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nThere is a cooling related failure in one of our buildings that hosts a portion of capacity for zone europe-west2-a for region europe-west2 that is not yet completely resolved.\nGCE, Persistent Disk and Autoscaling impacts have been mitigated. Most customers can launch VMs in all zones of europe-west2.\nA minority of customers might continue to see failures in europe-west2-a.\nWe continue to work on bringing back previously impacted capacity in europe-west2-a to fully restore GCE, Persistent Disk and Autoscaling. If you are continuing to experience issues with these services, please contact Google Cloud Product Support and reference this message.\nPlease refer to workaround section for additional information about VM deletion.\nWe will provide more information by Tuesday, 2022-07-19 16:00 US/Pacific.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs.\nWorkaround: Customers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.",
+      "created": "2022-07-19T22:29:06+00:00",
+      "modified": "2022-07-19T22:29:07+00:00",
+      "when": "2022-07-19T22:29:06+00:00",
+      "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nThere is a cooling related failure in one of our buildings that hosts a portion of capacity for zone europe-west2-a for region europe-west2 that is not yet completely resolved. GCE, Persistent Disk and Autoscaling impacts have been mitigated. Most customers can launch VMs in all zones of europe-west2. A minority of customers might continue to see failures in europe-west2-a. We continue to work on bringing back previously impacted capacity in europe-west2-a to fully restore GCE, Persistent Disk and Autoscaling. If you are continuing to experience issues with these services, please contact Google Cloud Product Support and reference this message.\nCustomers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs.\nWorkaround: Customers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
