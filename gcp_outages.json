@@ -3284,62 +3284,27 @@
     ]
   },
   {
-    "id": "cSLrA8wLeQF93qb8GFM4",
-    "number": "6130968339129840013",
-    "begin": "2022-07-25T13:23:36+00:00",
-    "created": "2022-07-25T13:36:15+00:00",
-    "end": "2022-07-25T13:47:00+00:00",
-    "modified": "2022-07-25T13:47:01+00:00",
-    "external_desc": "Reduced Pub/Sub availability in us-central1",
-    "updates": [
-      {
-        "created": "2022-07-25T13:46:53+00:00",
-        "modified": "2022-07-25T13:47:04+00:00",
-        "when": "2022-07-25T13:46:53+00:00",
-        "text": "The issue with Google Cloud Pub/Sub is believed to be affecting a very small number of customers and our Engineering Team is working on it.\nIf you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we're working on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2022-07-25T13:36:07+00:00",
-        "modified": "2022-07-25T13:36:17+00:00",
-        "when": "2022-07-25T13:36:07+00:00",
-        "text": "Summary: Reduced Pub/Sub availability in us-central1\nDescription: We are experiencing an issue with Google Cloud Pub/Sub beginning on Monday, 2022-07-25 02:20 US/Pacific.\nOur engineering team is investigating the issue.\nWe will provide an update by Monday, 2022-07-25 07:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers amy see errors and experience higher latency for publish+subscribe operations in us-central1.\nWorkaround: Shifting traffic to a different region where possible.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": []
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-07-25T13:46:53+00:00",
-      "modified": "2022-07-25T13:47:04+00:00",
-      "when": "2022-07-25T13:46:53+00:00",
-      "text": "The issue with Google Cloud Pub/Sub is believed to be affecting a very small number of customers and our Engineering Team is working on it.\nIf you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we're working on resolving the issue.",
-      "status": "AVAILABLE",
-      "affected_locations": []
-    },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
-    "service_key": "dFjdLh2v6zuES6t9ADCB",
-    "service_name": "Google Cloud Pub/Sub",
-    "affected_products": [
-      {
-        "title": "Google Cloud Pub/Sub",
-        "id": "dFjdLh2v6zuES6t9ADCB"
-      }
-    ],
-    "uri": "incidents/cSLrA8wLeQF93qb8GFM4",
-    "currently_affected_locations": [],
-    "previously_affected_locations": []
-  },
-  {
     "id": "NAU2p9yeFgrsj8iVU2Xh",
     "number": "7162143630251911501",
-    "begin": "2022-07-25T07:00:00+00:00",
+    "begin": "2022-07-25T14:08:00+00:00",
     "created": "2022-07-29T02:40:25+00:00",
-    "end": "2022-08-03T16:45:00+00:00",
-    "modified": "2022-08-03T22:20:25+00:00",
+    "end": "2022-08-03T16:47:00+00:00",
+    "modified": "2022-08-19T20:54:30+00:00",
     "external_desc": "Cloud Billing usage reporting is experiencing issues, and Cost Management experience may show incomplete data.",
     "updates": [
+      {
+        "created": "2022-08-19T20:50:10+00:00",
+        "modified": "2022-08-19T20:50:10+00:00",
+        "when": "2022-08-19T20:50:10+00:00",
+        "text": "# Incident Report\n**Summary:**\nOn Monday, 25 July 2022, a problem with Google Cloud Billing resulted in incomplete reporting data in the Billing Console for a duration of 9 days, 9 hours and 5 minutes. Invoices were not impacted during the outage. To our customers whose operations were impacted during this outage, we sincerely apologize – this is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s performance and availability.\n**Root Cause:**\nGoogle periodically rolls out updates to its products to improve performance and reliability, and to add new functionality. On Monday, 25 July 2022 07:08 US/Pacific, a rollout to Google Compute Engine (GCE) resulted in a change to usage data which created a mismatch in customer billing information and eventually delayed reporting.\n**Remediation and Prevention:**\nGoogle engineers were alerted to the delay in usage reporting through automated monitoring on Tuesday, 26 July 2022 at 01:10 US/Pacific and immediately started an investigation. Google engineers began rolling out a fix on Tuesday, 26 July 2022 at 20:29. However, during the mitigation engineers identified a second issue, which manifested as duplicated results and overbilled charges displayed for 25 July, 26 July, and 27 July.\nAt 15:27 on Wednesday, 27 July 2022, having found the root cause of the problem Google engineers suspended the relevant GCE rollout and developed a fix to correct the duplicated results. On Thursday, 28 July 2022, Google engineers continued to work on mitigation efforts and completed a comprehensive manual verification of the fix before pushing it to production. On Friday, 29 July 2022, engineers resumed the billing system to reprocess the customer usage data. In parallel, engineers observed a failure in billing reporting due to the large amount of queued corrections.\nThe incident was fully mitigated on Wednesday, 03 August 2022 09:47 US/Pacific, once the correction process completed across all systems.\nThere was no impact to July invoices, which were issued on Monday, 01 August 2022.\nGoogle is committed to preventing future issues like this and is completing the following actions to ensure there is not a recurrence:\n- Implement validation checks to detect the duplicated results that were passed to downstream systems, causing the second issue.\n- Implement end-to-end testing to cover critical user journeys across GCE, Billing, and Invoicing.\n- Implement a change detection program to identify backward incompatible events from GCE to Billing to prevent transient incorrect billing results.\n- Update the GCE rollout procedure to minimize impact when rolling out a new global billing capability for GCE.\nWe would like to apologize for the length and severity of this incident. We are taking immediate steps to prevent a recurrence and improve reliability in the future.\n**Detailed Description of Impact:**\n## Google Compute Engine (GCE), including Google Kubernetes Engine (GKE) and Google App Engine Flex (GAE):\n- 100% of GCE, GAE Flex, and GKE customers may have experienced delays in viewing real-time product usage information in the Cloud Billing Console or in BigQuery export, if used.\n- Cloud Billing usage reporting experienced issues and may have shown inaccurate or incomplete data. - Some customers may have seen up to double their instance usage being billed.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
       {
         "created": "2022-08-03T22:20:10+00:00",
         "modified": "2022-08-03T22:20:10+00:00",
@@ -3758,10 +3723,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-08-03T22:20:10+00:00",
-      "modified": "2022-08-03T22:20:10+00:00",
-      "when": "2022-08-03T22:20:10+00:00",
-      "text": "**Mini-IR (Preliminary IR)**\nWe apologize for the inconvenience this incident may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 25 July 2021 00:00\n**Incident End:** 03 Aug 2022 09:45\n**Duration:** 9 days, 9 hours, 45 minutes\n**Affected Services and Features:** - Google Cloud Console - Billing Export - Google Cloud Billing\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Billing usage reporting experienced issues and may have shown incomplete data for a duration of 9 days, 9 hours, and 5 minutes. From preliminary analysis this was due to an issue with a recent rollout to the Google Compute Engine (GCE) control plane. The rollout produced unforeseen data change that caused a mismatch in Billing, and eventually a delay in the usage reporting.\nComplete Usage data for all days in July are now available in the Cloud Billing Console and BigQuery Export. There was no impact to the invoices for July, which were issued on 1 August 2022.\n**Customer Impact:**\nAffected customers experienced the following: - Customers may have experienced delays in viewing real-time product usage information in the Cloud Billing Console or in BigQuery export, if used. - Cloud Billing usage reporting experienced issues and may have shown inaccurate or incomplete data. - Some customers may have seen up to double their instance usage being billed.",
+      "created": "2022-08-19T20:50:10+00:00",
+      "modified": "2022-08-19T20:50:10+00:00",
+      "when": "2022-08-19T20:50:10+00:00",
+      "text": "# Incident Report\n**Summary:**\nOn Monday, 25 July 2022, a problem with Google Cloud Billing resulted in incomplete reporting data in the Billing Console for a duration of 9 days, 9 hours and 5 minutes. Invoices were not impacted during the outage. To our customers whose operations were impacted during this outage, we sincerely apologize – this is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s performance and availability.\n**Root Cause:**\nGoogle periodically rolls out updates to its products to improve performance and reliability, and to add new functionality. On Monday, 25 July 2022 07:08 US/Pacific, a rollout to Google Compute Engine (GCE) resulted in a change to usage data which created a mismatch in customer billing information and eventually delayed reporting.\n**Remediation and Prevention:**\nGoogle engineers were alerted to the delay in usage reporting through automated monitoring on Tuesday, 26 July 2022 at 01:10 US/Pacific and immediately started an investigation. Google engineers began rolling out a fix on Tuesday, 26 July 2022 at 20:29. However, during the mitigation engineers identified a second issue, which manifested as duplicated results and overbilled charges displayed for 25 July, 26 July, and 27 July.\nAt 15:27 on Wednesday, 27 July 2022, having found the root cause of the problem Google engineers suspended the relevant GCE rollout and developed a fix to correct the duplicated results. On Thursday, 28 July 2022, Google engineers continued to work on mitigation efforts and completed a comprehensive manual verification of the fix before pushing it to production. On Friday, 29 July 2022, engineers resumed the billing system to reprocess the customer usage data. In parallel, engineers observed a failure in billing reporting due to the large amount of queued corrections.\nThe incident was fully mitigated on Wednesday, 03 August 2022 09:47 US/Pacific, once the correction process completed across all systems.\nThere was no impact to July invoices, which were issued on Monday, 01 August 2022.\nGoogle is committed to preventing future issues like this and is completing the following actions to ensure there is not a recurrence:\n- Implement validation checks to detect the duplicated results that were passed to downstream systems, causing the second issue.\n- Implement end-to-end testing to cover critical user journeys across GCE, Billing, and Invoicing.\n- Implement a change detection program to identify backward incompatible events from GCE to Billing to prevent transient incorrect billing results.\n- Update the GCE rollout procedure to minimize impact when rolling out a new global billing capability for GCE.\nWe would like to apologize for the length and severity of this incident. We are taking immediate steps to prevent a recurrence and improve reliability in the future.\n**Detailed Description of Impact:**\n## Google Compute Engine (GCE), including Google Kubernetes Engine (GKE) and Google App Engine Flex (GAE):\n- 100% of GCE, GAE Flex, and GKE customers may have experienced delays in viewing real-time product usage information in the Cloud Billing Console or in BigQuery export, if used.\n- Cloud Billing usage reporting experienced issues and may have shown inaccurate or incomplete data. - Some customers may have seen up to double their instance usage being billed.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
@@ -3792,6 +3757,54 @@
         "id": "global"
       }
     ]
+  },
+  {
+    "id": "cSLrA8wLeQF93qb8GFM4",
+    "number": "6130968339129840013",
+    "begin": "2022-07-25T13:23:36+00:00",
+    "created": "2022-07-25T13:36:15+00:00",
+    "end": "2022-07-25T13:47:00+00:00",
+    "modified": "2022-07-25T13:47:01+00:00",
+    "external_desc": "Reduced Pub/Sub availability in us-central1",
+    "updates": [
+      {
+        "created": "2022-07-25T13:46:53+00:00",
+        "modified": "2022-07-25T13:47:04+00:00",
+        "when": "2022-07-25T13:46:53+00:00",
+        "text": "The issue with Google Cloud Pub/Sub is believed to be affecting a very small number of customers and our Engineering Team is working on it.\nIf you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we're working on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2022-07-25T13:36:07+00:00",
+        "modified": "2022-07-25T13:36:17+00:00",
+        "when": "2022-07-25T13:36:07+00:00",
+        "text": "Summary: Reduced Pub/Sub availability in us-central1\nDescription: We are experiencing an issue with Google Cloud Pub/Sub beginning on Monday, 2022-07-25 02:20 US/Pacific.\nOur engineering team is investigating the issue.\nWe will provide an update by Monday, 2022-07-25 07:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers amy see errors and experience higher latency for publish+subscribe operations in us-central1.\nWorkaround: Shifting traffic to a different region where possible.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": []
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-07-25T13:46:53+00:00",
+      "modified": "2022-07-25T13:47:04+00:00",
+      "when": "2022-07-25T13:46:53+00:00",
+      "text": "The issue with Google Cloud Pub/Sub is believed to be affecting a very small number of customers and our Engineering Team is working on it.\nIf you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we're working on resolving the issue.",
+      "status": "AVAILABLE",
+      "affected_locations": []
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "dFjdLh2v6zuES6t9ADCB",
+    "service_name": "Google Cloud Pub/Sub",
+    "affected_products": [
+      {
+        "title": "Google Cloud Pub/Sub",
+        "id": "dFjdLh2v6zuES6t9ADCB"
+      }
+    ],
+    "uri": "incidents/cSLrA8wLeQF93qb8GFM4",
+    "currently_affected_locations": [],
+    "previously_affected_locations": []
   },
   {
     "id": "gAJbQsuZv3kiuNbjQHvP",
