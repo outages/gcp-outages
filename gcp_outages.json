@@ -4,9 +4,118 @@
     "number": "16961585759579459084",
     "begin": "2022-08-18T14:19:54+00:00",
     "created": "2022-08-18T14:20:01+00:00",
-    "modified": "2022-08-19T04:33:27+00:00",
+    "modified": "2022-08-19T15:08:34+00:00",
     "external_desc": "User timers broken for certain Dataflow streaming pipelines in multiple locations",
     "updates": [
+      {
+        "created": "2022-08-19T15:08:34+00:00",
+        "modified": "2022-08-19T15:08:39+00:00",
+        "when": "2022-08-19T15:08:34+00:00",
+        "text": "Summary: User timers broken for certain Dataflow streaming pipelines in multiple locations\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2022-08-19 11:00 US/Pacific.\nDiagnosis: Customers are only affected if they use a particular combination of Dataflow features: 1. they run in one of the affected regions above, 2. they run a streaming pipeline, not batch 3. they have enabled RunnerV2, which is the default for Python streaming, 4. they set user timers.\nThere's no specific error message for this failure mode. The failure manifests in different ways, depending on the code of the pipeline.\nWorkaround: Users can restart their streaming pipelines without RunnerV2, at the cost of having a small interruption of their pipeline.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2022-08-19T04:33:27+00:00",
         "modified": "2022-08-19T04:33:29+00:00",
@@ -788,10 +897,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-08-19T04:33:27+00:00",
-      "modified": "2022-08-19T04:33:29+00:00",
-      "when": "2022-08-19T04:33:27+00:00",
-      "text": "Summary: User timers broken for certain Dataflow streaming pipelines in multiple locations\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2022-08-19 08:30 US/Pacific.\nDiagnosis: Customers are only affected if they use a particular combination of Dataflow features: 1. they run in one of the affected regions above, 2. they run a streaming pipeline, not batch 3. they have enabled RunnerV2, which is the default for Python streaming, 4. they set user timers.\nThere's no specific error message for this failure mode. The failure manifests in different ways, depending on the code of the pipeline.\nWorkaround: Users can restart their streaming pipelines without RunnerV2, at the cost of having a small interruption of their pipeline.",
+      "created": "2022-08-19T15:08:34+00:00",
+      "modified": "2022-08-19T15:08:39+00:00",
+      "when": "2022-08-19T15:08:34+00:00",
+      "text": "Summary: User timers broken for certain Dataflow streaming pipelines in multiple locations\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2022-08-19 11:00 US/Pacific.\nDiagnosis: Customers are only affected if they use a particular combination of Dataflow features: 1. they run in one of the affected regions above, 2. they run a streaming pipeline, not batch 3. they have enabled RunnerV2, which is the default for Python streaming, 4. they set user timers.\nThere's no specific error message for this failure mode. The failure manifests in different ways, depending on the code of the pipeline.\nWorkaround: Users can restart their streaming pipelines without RunnerV2, at the cost of having a small interruption of their pipeline.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
