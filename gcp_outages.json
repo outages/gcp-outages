@@ -4,9 +4,17 @@
     "number": "722830095872533115",
     "begin": "2022-08-20T13:32:11+00:00",
     "created": "2022-08-20T14:30:24+00:00",
-    "modified": "2022-08-20T14:30:24+00:00",
-    "external_desc": "Cloud Monitoring is serving bad queries (errors and/or empty results) in Cloud Monarch us-central.",
+    "modified": "2022-08-20T14:55:59+00:00",
+    "external_desc": "Cloud Monitoring is serving query failures, errors, and metrics unavailability impacting Google Compute Engine, Cloud Spanner, Cloud Dataflow, Cloud Bigtable, Cloud AppEngine, Kubernetes Engine in us-central",
     "updates": [
+      {
+        "created": "2022-08-20T14:55:58+00:00",
+        "modified": "2022-08-20T14:56:00+00:00",
+        "when": "2022-08-20T14:55:58+00:00",
+        "text": "Summary: Cloud Monitoring is serving query failures, errors, and metrics unavailability impacting Google Compute Engine, Cloud Spanner, Cloud Dataflow, Cloud Bigtable, Cloud AppEngine, Kubernetes Engine in us-central\nDescription: We are experiencing an issue with Cloud Monitoring,\nIdentified impacted services Google Compute Engine, Cloud Spanner, Cloud Dataflow, Cloud Bigtable, Cloud AppEngine, Kubernetes Engine\nOur engineering team continues to investigate the issue.\nWe will provide an update by Saturday, 2022-08-20 09:30 US/Pacific with current details.\nDiagnosis: Customers may experience queries failure, errors and metrics being not available in us-central.\nWorkaround: None at the moment.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": []
+      },
       {
         "created": "2022-08-20T14:30:15+00:00",
         "modified": "2022-08-20T14:30:28+00:00",
@@ -17,10 +25,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-08-20T14:30:15+00:00",
-      "modified": "2022-08-20T14:30:28+00:00",
-      "when": "2022-08-20T14:30:15+00:00",
-      "text": "Summary: Cloud Monitoring is serving bad queries (errors and/or empty results) in Cloud Monarch us-central.\nDescription: We are experiencing an issue with Cloud Monitoring, Google Compute Engine.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Saturday, 2022-08-20 09:30 US/Pacific with current details.\nDiagnosis: Customers may experience queries failure, errors and metrics being not available in us-central.\nWorkaround: None at the moment.",
+      "created": "2022-08-20T14:55:58+00:00",
+      "modified": "2022-08-20T14:56:00+00:00",
+      "when": "2022-08-20T14:55:58+00:00",
+      "text": "Summary: Cloud Monitoring is serving query failures, errors, and metrics unavailability impacting Google Compute Engine, Cloud Spanner, Cloud Dataflow, Cloud Bigtable, Cloud AppEngine, Kubernetes Engine in us-central\nDescription: We are experiencing an issue with Cloud Monitoring,\nIdentified impacted services Google Compute Engine, Cloud Spanner, Cloud Dataflow, Cloud Bigtable, Cloud AppEngine, Kubernetes Engine\nOur engineering team continues to investigate the issue.\nWe will provide an update by Saturday, 2022-08-20 09:30 US/Pacific with current details.\nDiagnosis: Customers may experience queries failure, errors and metrics being not available in us-central.\nWorkaround: None at the moment.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": []
     },
@@ -38,8 +46,28 @@
         "id": "DixAowEQm45KgqXKP5tR"
       },
       {
+        "title": "Cloud Spanner",
+        "id": "EcNGGUgBtBLrtm4mWvqC"
+      },
+      {
         "title": "Google Compute Engine",
         "id": "L3ggmi3Jy4xJmgodFA9K"
+      },
+      {
+        "title": "Google Kubernetes Engine",
+        "id": "LCSbT57h59oR4W98NHuz"
+      },
+      {
+        "title": "Google Cloud Bigtable",
+        "id": "LfZSuE3xdQU46YMFV5fy"
+      },
+      {
+        "title": "Google Cloud Dataflow",
+        "id": "T9bFoXPqG8w8g1YbWTKY"
+      },
+      {
+        "title": "Google App Engine",
+        "id": "kchyUtnkMHJWaAva8aYc"
       }
     ],
     "uri": "incidents/KVM7mPBRCJoedGLFLvwy",
