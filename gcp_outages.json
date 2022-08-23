@@ -2,12 +2,20 @@
   {
     "id": "KVM7mPBRCJoedGLFLvwy",
     "number": "722830095872533115",
-    "begin": "2022-08-20T13:32:11+00:00",
+    "begin": "2022-08-20T12:25:00+00:00",
     "created": "2022-08-20T14:30:24+00:00",
-    "end": "2022-08-20T15:33:12+00:00",
-    "modified": "2022-08-23T18:38:32+00:00",
+    "end": "2022-08-20T15:20:00+00:00",
+    "modified": "2022-08-23T20:04:43+00:00",
     "external_desc": "Cloud Monitoring is serving query failures, errors, and metrics unavailability impacting Google Compute Engine, Cloud Spanner, Cloud Dataflow, Cloud Bigtable, Cloud AppEngine, Kubernetes Engine, Cloud Pub/Sub, Cloud Run in us-central",
     "updates": [
+      {
+        "created": "2022-08-23T20:04:19+00:00",
+        "modified": "2022-08-23T20:04:19+00:00",
+        "when": "2022-08-23T20:04:19+00:00",
+        "text": "**Mini Incident Report while full Incident Report is prepared**\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 20 Aug 2022 05:25\n**Incident End:** 20 Aug 2022 08:20\n**Duration:** 2 hours, 55 minutes\n**Affected Services and Features:**\nGoogle Compute Engine, Cloud Spanner, Google Cloud Dataflow, Google Cloud Bigtable, Cloud AppEngine, Google Kubernetes Engine, Google Cloud Pub/Sub, Cloud Run, Operations, Cloud Monitoring\n**Regions/Zones:** us-central1 and us-central2\n**Description:**\nCloud Monitoring metrics for multiple Google Cloud products (Google Compute Engine, Cloud Spanner, Cloud Dataflow, Cloud Bigtable, Cloud AppEngine, Kubernetes Engine, Cloud Pub/Sub, Cloud Run) were missing for a period of 2 hours and 55 minutes. During the same period of time, Google Compute Engine (GCE) Autoscaling (for virtual machines on GCE) also was not functioning, as it relies on the Cloud Monitoring metrics.\nFrom preliminary analysis, the root cause of the issue was an overload in the system that is responsible for handling the metrics in Cloud Monitoring. This resulted in the failure of the queries which provide these metrics.\n**Customer Impact:**\nCustomers lost their ability to comprehensively observe various cloud operations at scale for the impacted services. Customers who use these metrics retroactively may be missing this information for the duration of the impact. While the custom metrics will be available again, a few that are system-generated shall not be available any more due to system limitations.\n**Additional details:**\nThe issue was mitigated by reducing the number of storage layer tasks. To prevent recurrence, engineers are also actively working on bolstering the system responsible for handling metrics to support a larger number of tasks (beyond the current threshold).",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
       {
         "created": "2022-08-20T15:33:12+00:00",
         "modified": "2022-08-20T15:33:14+00:00",
@@ -42,10 +50,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-08-20T15:33:12+00:00",
-      "modified": "2022-08-20T15:33:14+00:00",
-      "when": "2022-08-20T15:33:12+00:00",
-      "text": "The issue with Cloud Monitoring, Cloud Run, Cloud Spanner, Google App Engine, Google Cloud Bigtable, Google Cloud Dataflow, Google Cloud Pub/Sub, Google Compute Engine, Google Kubernetes Engine has been resolved for all affected users as of Saturday, 2022-08-20 08:32 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-08-23T20:04:19+00:00",
+      "modified": "2022-08-23T20:04:19+00:00",
+      "when": "2022-08-23T20:04:19+00:00",
+      "text": "**Mini Incident Report while full Incident Report is prepared**\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 20 Aug 2022 05:25\n**Incident End:** 20 Aug 2022 08:20\n**Duration:** 2 hours, 55 minutes\n**Affected Services and Features:**\nGoogle Compute Engine, Cloud Spanner, Google Cloud Dataflow, Google Cloud Bigtable, Cloud AppEngine, Google Kubernetes Engine, Google Cloud Pub/Sub, Cloud Run, Operations, Cloud Monitoring\n**Regions/Zones:** us-central1 and us-central2\n**Description:**\nCloud Monitoring metrics for multiple Google Cloud products (Google Compute Engine, Cloud Spanner, Cloud Dataflow, Cloud Bigtable, Cloud AppEngine, Kubernetes Engine, Cloud Pub/Sub, Cloud Run) were missing for a period of 2 hours and 55 minutes. During the same period of time, Google Compute Engine (GCE) Autoscaling (for virtual machines on GCE) also was not functioning, as it relies on the Cloud Monitoring metrics.\nFrom preliminary analysis, the root cause of the issue was an overload in the system that is responsible for handling the metrics in Cloud Monitoring. This resulted in the failure of the queries which provide these metrics.\n**Customer Impact:**\nCustomers lost their ability to comprehensively observe various cloud operations at scale for the impacted services. Customers who use these metrics retroactively may be missing this information for the duration of the impact. While the custom metrics will be available again, a few that are system-generated shall not be available any more due to system limitations.\n**Additional details:**\nThe issue was mitigated by reducing the number of storage layer tasks. To prevent recurrence, engineers are also actively working on bolstering the system responsible for handling metrics to support a larger number of tasks (beyond the current threshold).",
       "status": "AVAILABLE",
       "affected_locations": []
     },
