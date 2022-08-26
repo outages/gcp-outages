@@ -233,12 +233,25 @@
   {
     "id": "JW3dWx6mNFZJPfToA8oa",
     "number": "1706532387933032122",
-    "begin": "2022-08-24T15:25:37+00:00",
+    "begin": "2022-08-24T14:59:00+00:00",
     "created": "2022-08-24T15:36:21+00:00",
-    "end": "2022-08-26T00:36:40+00:00",
-    "modified": "2022-08-26T00:36:40+00:00",
+    "end": "2022-08-26T00:16:00+00:00",
+    "modified": "2022-08-26T19:07:41+00:00",
     "external_desc": "SCC onboarding failed to enable Container Threat Detection (KTD)",
     "updates": [
+      {
+        "created": "2022-08-26T19:07:21+00:00",
+        "modified": "2022-08-26T19:07:21+00:00",
+        "when": "2022-08-26T19:07:21+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Detection Time:** 24 August 2022 07:59\n**Incident End:** 25 August 2022 17:16\n**Duration:** 1 day 9 hours, 17 minutes\n**Affected Services and Features:**\nCloud Security Command Center (SCC) - Container Threat Detection (KTD) was not monitoring some customer clusters.\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Security Command Center (SCC) experienced an issue with enabling Container Threat Detection(KTD) during the SCC Premium onboarding process. During the onboarding process if a customer accepted the default service settings, it would show all detection services as Enabled, but the SCC User Interface (UI) would fail to save the settings for Container Threat Detection(KTD) causing this detection to be in disabled state unless the customer explicitly enabled it at a later point.\nThe issue was first detected on 24 August 2022 at 07:59 US/Pacific while Google Engineers were working on analyzing a future code release. From preliminary analysis, the root cause of the issue is a latent bug in the SCC UI. The issue was resolved on 25 August 2022 at 17:16 US/Pacific after a mitigation was rolled out to the SCC Settings backend that changed the default state of Container Threat Detection to Enabled.\n**Customer Impact:**\nAffected customers failed to receive Container Threat Detection (KTD) coverage.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
       {
         "created": "2022-08-26T00:36:39+00:00",
         "modified": "2022-08-26T00:36:41+00:00",
@@ -347,10 +360,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-08-26T00:36:39+00:00",
-      "modified": "2022-08-26T00:36:41+00:00",
-      "when": "2022-08-26T00:36:39+00:00",
-      "text": "The issue with Cloud Security Command Center has been resolved for all affected users as of Thursday, 2022-08-25 17:16 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-08-26T19:07:21+00:00",
+      "modified": "2022-08-26T19:07:21+00:00",
+      "when": "2022-08-26T19:07:21+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Detection Time:** 24 August 2022 07:59\n**Incident End:** 25 August 2022 17:16\n**Duration:** 1 day 9 hours, 17 minutes\n**Affected Services and Features:**\nCloud Security Command Center (SCC) - Container Threat Detection (KTD) was not monitoring some customer clusters.\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Security Command Center (SCC) experienced an issue with enabling Container Threat Detection(KTD) during the SCC Premium onboarding process. During the onboarding process if a customer accepted the default service settings, it would show all detection services as Enabled, but the SCC User Interface (UI) would fail to save the settings for Container Threat Detection(KTD) causing this detection to be in disabled state unless the customer explicitly enabled it at a later point.\nThe issue was first detected on 24 August 2022 at 07:59 US/Pacific while Google Engineers were working on analyzing a future code release. From preliminary analysis, the root cause of the issue is a latent bug in the SCC UI. The issue was resolved on 25 August 2022 at 17:16 US/Pacific after a mitigation was rolled out to the SCC Settings backend that changed the default state of Container Threat Detection to Enabled.\n**Customer Impact:**\nAffected customers failed to receive Container Threat Detection (KTD) coverage.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
