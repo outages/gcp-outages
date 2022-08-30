@@ -740,1037 +740,6 @@
     "previously_affected_locations": []
   },
   {
-    "id": "uZGvvADp63kQfwcMjshJ",
-    "number": "9368654706017741754",
-    "begin": "2022-08-30T16:32:35+00:00",
-    "created": "2022-08-30T16:32:36+00:00",
-    "end": "2022-08-30T18:22:19+00:00",
-    "modified": "2022-08-30T18:22:19+00:00",
-    "external_desc": "Global: Cloud Spanner Query and Data UI pages not returning results for tables",
-    "updates": [
-      {
-        "created": "2022-08-30T18:22:19+00:00",
-        "modified": "2022-08-30T18:22:20+00:00",
-        "when": "2022-08-30T18:22:19+00:00",
-        "text": "The issue with Cloud Spanner has been resolved for all affected users as of Tuesday, 2022-08-30 11:02 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Delhi (asia-south2)",
-            "id": "asia-south2"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          },
-          {
-            "title": "Warsaw (europe-central2)",
-            "id": "europe-central2"
-          },
-          {
-            "title": "Finland (europe-north1)",
-            "id": "europe-north1"
-          },
-          {
-            "title": "Madrid (europe-southwest1)",
-            "id": "europe-southwest1"
-          },
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          },
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          },
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Netherlands (europe-west4)",
-            "id": "europe-west4"
-          },
-          {
-            "title": "Zurich (europe-west6)",
-            "id": "europe-west6"
-          },
-          {
-            "title": "Milan (europe-west8)",
-            "id": "europe-west8"
-          },
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          },
-          {
-            "title": "Toronto (northamerica-northeast2)",
-            "id": "northamerica-northeast2"
-          },
-          {
-            "title": "São Paulo (southamerica-east1)",
-            "id": "southamerica-east1"
-          },
-          {
-            "title": "Santiago (southamerica-west1)",
-            "id": "southamerica-west1"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          },
-          {
-            "title": "Salt Lake City (us-west3)",
-            "id": "us-west3"
-          },
-          {
-            "title": "Las Vegas (us-west4)",
-            "id": "us-west4"
-          }
-        ]
-      },
-      {
-        "created": "2022-08-30T17:54:18+00:00",
-        "modified": "2022-08-30T17:54:20+00:00",
-        "when": "2022-08-30T17:54:18+00:00",
-        "text": "Summary: Global: Cloud Spanner Query and Data UI pages not returning results for tables\nDescription: We believe the issue with Cloud Spanner is partially resolved. Our engineers are working to validate the fix is working as expected.\nWe will provide an update by Tuesday, 2022-08-30 11:30 US/Pacific with current details.\nDiagnosis: Data page and Query page will not render query results if the table has an array. This is only affecting the console only, gCloud interface is working as expected.\nWorkaround: Users may use alternative interfaces such as Cloud SDK (gcloud) or client libraries to query the affected tables.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Delhi (asia-south2)",
-            "id": "asia-south2"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          },
-          {
-            "title": "Warsaw (europe-central2)",
-            "id": "europe-central2"
-          },
-          {
-            "title": "Finland (europe-north1)",
-            "id": "europe-north1"
-          },
-          {
-            "title": "Madrid (europe-southwest1)",
-            "id": "europe-southwest1"
-          },
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          },
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          },
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Netherlands (europe-west4)",
-            "id": "europe-west4"
-          },
-          {
-            "title": "Zurich (europe-west6)",
-            "id": "europe-west6"
-          },
-          {
-            "title": "Milan (europe-west8)",
-            "id": "europe-west8"
-          },
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          },
-          {
-            "title": "Toronto (northamerica-northeast2)",
-            "id": "northamerica-northeast2"
-          },
-          {
-            "title": "São Paulo (southamerica-east1)",
-            "id": "southamerica-east1"
-          },
-          {
-            "title": "Santiago (southamerica-west1)",
-            "id": "southamerica-west1"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          },
-          {
-            "title": "Salt Lake City (us-west3)",
-            "id": "us-west3"
-          },
-          {
-            "title": "Las Vegas (us-west4)",
-            "id": "us-west4"
-          }
-        ]
-      },
-      {
-        "created": "2022-08-30T17:24:11+00:00",
-        "modified": "2022-08-30T17:24:13+00:00",
-        "when": "2022-08-30T17:24:11+00:00",
-        "text": "Summary: Global: Cloud Spanner Query and Data UI pages not returning results for tables\nDescription: We believe the issue with Cloud Spanner is partially resolved. Our engineers are working to validate the fix is working as expected.\nWe will provide an update by Tuesday, 2022-08-30 11:00 US/Pacific with current details.\nDiagnosis: Data page and Query page will not render query results if the table has an array. This is only affecting the console only, gCloud interface is working as expected.\nWorkaround: Users may use alternative interfaces such as Cloud SDK (gcloud) or client libraries to query the affected tables.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Delhi (asia-south2)",
-            "id": "asia-south2"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          },
-          {
-            "title": "Warsaw (europe-central2)",
-            "id": "europe-central2"
-          },
-          {
-            "title": "Finland (europe-north1)",
-            "id": "europe-north1"
-          },
-          {
-            "title": "Madrid (europe-southwest1)",
-            "id": "europe-southwest1"
-          },
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          },
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          },
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Netherlands (europe-west4)",
-            "id": "europe-west4"
-          },
-          {
-            "title": "Zurich (europe-west6)",
-            "id": "europe-west6"
-          },
-          {
-            "title": "Milan (europe-west8)",
-            "id": "europe-west8"
-          },
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          },
-          {
-            "title": "Toronto (northamerica-northeast2)",
-            "id": "northamerica-northeast2"
-          },
-          {
-            "title": "São Paulo (southamerica-east1)",
-            "id": "southamerica-east1"
-          },
-          {
-            "title": "Santiago (southamerica-west1)",
-            "id": "southamerica-west1"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          },
-          {
-            "title": "Salt Lake City (us-west3)",
-            "id": "us-west3"
-          },
-          {
-            "title": "Las Vegas (us-west4)",
-            "id": "us-west4"
-          }
-        ]
-      },
-      {
-        "created": "2022-08-30T16:36:56+00:00",
-        "modified": "2022-08-30T16:36:57+00:00",
-        "when": "2022-08-30T16:36:56+00:00",
-        "text": "Summary: Global: Cloud Spanner Query and Data UI pages not returning results for tables\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Tuesday, 2022-08-30 10:00 US/Pacific.\nWe will provide more information by Tuesday, 2022-08-30 10:30 US/Pacific.\nDiagnosis: Data page and Query page will not render query results if the table has an array. This is only affecting the console only, gCloud interface is working as expected.\nWorkaround: Users may use alternative interfaces such as Cloud SDK (gcloud) or client libraries to query the affected tables.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Delhi (asia-south2)",
-            "id": "asia-south2"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          },
-          {
-            "title": "Warsaw (europe-central2)",
-            "id": "europe-central2"
-          },
-          {
-            "title": "Finland (europe-north1)",
-            "id": "europe-north1"
-          },
-          {
-            "title": "Madrid (europe-southwest1)",
-            "id": "europe-southwest1"
-          },
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          },
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          },
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Netherlands (europe-west4)",
-            "id": "europe-west4"
-          },
-          {
-            "title": "Zurich (europe-west6)",
-            "id": "europe-west6"
-          },
-          {
-            "title": "Milan (europe-west8)",
-            "id": "europe-west8"
-          },
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          },
-          {
-            "title": "Toronto (northamerica-northeast2)",
-            "id": "northamerica-northeast2"
-          },
-          {
-            "title": "São Paulo (southamerica-east1)",
-            "id": "southamerica-east1"
-          },
-          {
-            "title": "Santiago (southamerica-west1)",
-            "id": "southamerica-west1"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          },
-          {
-            "title": "Salt Lake City (us-west3)",
-            "id": "us-west3"
-          },
-          {
-            "title": "Las Vegas (us-west4)",
-            "id": "us-west4"
-          }
-        ]
-      },
-      {
-        "created": "2022-08-30T16:32:36+00:00",
-        "modified": "2022-08-30T16:32:38+00:00",
-        "when": "2022-08-30T16:32:36+00:00",
-        "text": "Summary: Global: Cloud Spanner Query and Data UI pages not returning results for tables\nDescription: We are experiencing an issue with Cloud Spanner.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-08-30 10:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Data page and Query page will not render query results if the table has an array. This is only affecting the console only, gCloud interface is working as expected.\nWorkaround: Users may use alternative interfaces such as Cloud SDK (gcloud) or client libraries to query the affected tables.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Delhi (asia-south2)",
-            "id": "asia-south2"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          },
-          {
-            "title": "Warsaw (europe-central2)",
-            "id": "europe-central2"
-          },
-          {
-            "title": "Finland (europe-north1)",
-            "id": "europe-north1"
-          },
-          {
-            "title": "Madrid (europe-southwest1)",
-            "id": "europe-southwest1"
-          },
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          },
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          },
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Netherlands (europe-west4)",
-            "id": "europe-west4"
-          },
-          {
-            "title": "Zurich (europe-west6)",
-            "id": "europe-west6"
-          },
-          {
-            "title": "Milan (europe-west8)",
-            "id": "europe-west8"
-          },
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          },
-          {
-            "title": "Toronto (northamerica-northeast2)",
-            "id": "northamerica-northeast2"
-          },
-          {
-            "title": "São Paulo (southamerica-east1)",
-            "id": "southamerica-east1"
-          },
-          {
-            "title": "Santiago (southamerica-west1)",
-            "id": "southamerica-west1"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          },
-          {
-            "title": "Salt Lake City (us-west3)",
-            "id": "us-west3"
-          },
-          {
-            "title": "Las Vegas (us-west4)",
-            "id": "us-west4"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-08-30T18:22:19+00:00",
-      "modified": "2022-08-30T18:22:20+00:00",
-      "when": "2022-08-30T18:22:19+00:00",
-      "text": "The issue with Cloud Spanner has been resolved for all affected users as of Tuesday, 2022-08-30 11:02 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Taiwan (asia-east1)",
-          "id": "asia-east1"
-        },
-        {
-          "title": "Hong Kong (asia-east2)",
-          "id": "asia-east2"
-        },
-        {
-          "title": "Tokyo (asia-northeast1)",
-          "id": "asia-northeast1"
-        },
-        {
-          "title": "Osaka (asia-northeast2)",
-          "id": "asia-northeast2"
-        },
-        {
-          "title": "Seoul (asia-northeast3)",
-          "id": "asia-northeast3"
-        },
-        {
-          "title": "Mumbai (asia-south1)",
-          "id": "asia-south1"
-        },
-        {
-          "title": "Delhi (asia-south2)",
-          "id": "asia-south2"
-        },
-        {
-          "title": "Singapore (asia-southeast1)",
-          "id": "asia-southeast1"
-        },
-        {
-          "title": "Jakarta (asia-southeast2)",
-          "id": "asia-southeast2"
-        },
-        {
-          "title": "Sydney (australia-southeast1)",
-          "id": "australia-southeast1"
-        },
-        {
-          "title": "Melbourne (australia-southeast2)",
-          "id": "australia-southeast2"
-        },
-        {
-          "title": "Warsaw (europe-central2)",
-          "id": "europe-central2"
-        },
-        {
-          "title": "Finland (europe-north1)",
-          "id": "europe-north1"
-        },
-        {
-          "title": "Madrid (europe-southwest1)",
-          "id": "europe-southwest1"
-        },
-        {
-          "title": "Belgium (europe-west1)",
-          "id": "europe-west1"
-        },
-        {
-          "title": "London (europe-west2)",
-          "id": "europe-west2"
-        },
-        {
-          "title": "Frankfurt (europe-west3)",
-          "id": "europe-west3"
-        },
-        {
-          "title": "Netherlands (europe-west4)",
-          "id": "europe-west4"
-        },
-        {
-          "title": "Zurich (europe-west6)",
-          "id": "europe-west6"
-        },
-        {
-          "title": "Milan (europe-west8)",
-          "id": "europe-west8"
-        },
-        {
-          "title": "Paris (europe-west9)",
-          "id": "europe-west9"
-        },
-        {
-          "title": "Montréal (northamerica-northeast1)",
-          "id": "northamerica-northeast1"
-        },
-        {
-          "title": "Toronto (northamerica-northeast2)",
-          "id": "northamerica-northeast2"
-        },
-        {
-          "title": "São Paulo (southamerica-east1)",
-          "id": "southamerica-east1"
-        },
-        {
-          "title": "Santiago (southamerica-west1)",
-          "id": "southamerica-west1"
-        },
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        },
-        {
-          "title": "South Carolina (us-east1)",
-          "id": "us-east1"
-        },
-        {
-          "title": "Northern Virginia (us-east4)",
-          "id": "us-east4"
-        },
-        {
-          "title": "Columbus (us-east5)",
-          "id": "us-east5"
-        },
-        {
-          "title": "Dallas (us-south1)",
-          "id": "us-south1"
-        },
-        {
-          "title": "Oregon (us-west1)",
-          "id": "us-west1"
-        },
-        {
-          "title": "Los Angeles (us-west2)",
-          "id": "us-west2"
-        },
-        {
-          "title": "Salt Lake City (us-west3)",
-          "id": "us-west3"
-        },
-        {
-          "title": "Las Vegas (us-west4)",
-          "id": "us-west4"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "EcNGGUgBtBLrtm4mWvqC",
-    "service_name": "Cloud Spanner",
-    "affected_products": [
-      {
-        "title": "Cloud Spanner",
-        "id": "EcNGGUgBtBLrtm4mWvqC"
-      }
-    ],
-    "uri": "incidents/uZGvvADp63kQfwcMjshJ",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Taiwan (asia-east1)",
-        "id": "asia-east1"
-      },
-      {
-        "title": "Hong Kong (asia-east2)",
-        "id": "asia-east2"
-      },
-      {
-        "title": "Tokyo (asia-northeast1)",
-        "id": "asia-northeast1"
-      },
-      {
-        "title": "Osaka (asia-northeast2)",
-        "id": "asia-northeast2"
-      },
-      {
-        "title": "Seoul (asia-northeast3)",
-        "id": "asia-northeast3"
-      },
-      {
-        "title": "Mumbai (asia-south1)",
-        "id": "asia-south1"
-      },
-      {
-        "title": "Delhi (asia-south2)",
-        "id": "asia-south2"
-      },
-      {
-        "title": "Singapore (asia-southeast1)",
-        "id": "asia-southeast1"
-      },
-      {
-        "title": "Jakarta (asia-southeast2)",
-        "id": "asia-southeast2"
-      },
-      {
-        "title": "Sydney (australia-southeast1)",
-        "id": "australia-southeast1"
-      },
-      {
-        "title": "Melbourne (australia-southeast2)",
-        "id": "australia-southeast2"
-      },
-      {
-        "title": "Warsaw (europe-central2)",
-        "id": "europe-central2"
-      },
-      {
-        "title": "Finland (europe-north1)",
-        "id": "europe-north1"
-      },
-      {
-        "title": "Madrid (europe-southwest1)",
-        "id": "europe-southwest1"
-      },
-      {
-        "title": "Belgium (europe-west1)",
-        "id": "europe-west1"
-      },
-      {
-        "title": "London (europe-west2)",
-        "id": "europe-west2"
-      },
-      {
-        "title": "Frankfurt (europe-west3)",
-        "id": "europe-west3"
-      },
-      {
-        "title": "Netherlands (europe-west4)",
-        "id": "europe-west4"
-      },
-      {
-        "title": "Zurich (europe-west6)",
-        "id": "europe-west6"
-      },
-      {
-        "title": "Milan (europe-west8)",
-        "id": "europe-west8"
-      },
-      {
-        "title": "Paris (europe-west9)",
-        "id": "europe-west9"
-      },
-      {
-        "title": "Montréal (northamerica-northeast1)",
-        "id": "northamerica-northeast1"
-      },
-      {
-        "title": "Toronto (northamerica-northeast2)",
-        "id": "northamerica-northeast2"
-      },
-      {
-        "title": "São Paulo (southamerica-east1)",
-        "id": "southamerica-east1"
-      },
-      {
-        "title": "Santiago (southamerica-west1)",
-        "id": "southamerica-west1"
-      },
-      {
-        "title": "Iowa (us-central1)",
-        "id": "us-central1"
-      },
-      {
-        "title": "South Carolina (us-east1)",
-        "id": "us-east1"
-      },
-      {
-        "title": "Northern Virginia (us-east4)",
-        "id": "us-east4"
-      },
-      {
-        "title": "Columbus (us-east5)",
-        "id": "us-east5"
-      },
-      {
-        "title": "Dallas (us-south1)",
-        "id": "us-south1"
-      },
-      {
-        "title": "Oregon (us-west1)",
-        "id": "us-west1"
-      },
-      {
-        "title": "Los Angeles (us-west2)",
-        "id": "us-west2"
-      },
-      {
-        "title": "Salt Lake City (us-west3)",
-        "id": "us-west3"
-      },
-      {
-        "title": "Las Vegas (us-west4)",
-        "id": "us-west4"
-      }
-    ]
-  },
-  {
     "id": "q5jsbB2eCwgdCb2WBPFk",
     "number": "17733899624498699220",
     "begin": "2022-08-30T11:58:44+00:00",
@@ -3019,6 +1988,1182 @@
       }
     ],
     "uri": "incidents/D1t8fKU8oCrUMPwGu8CQ",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Taiwan (asia-east1)",
+        "id": "asia-east1"
+      },
+      {
+        "title": "Hong Kong (asia-east2)",
+        "id": "asia-east2"
+      },
+      {
+        "title": "Tokyo (asia-northeast1)",
+        "id": "asia-northeast1"
+      },
+      {
+        "title": "Osaka (asia-northeast2)",
+        "id": "asia-northeast2"
+      },
+      {
+        "title": "Seoul (asia-northeast3)",
+        "id": "asia-northeast3"
+      },
+      {
+        "title": "Mumbai (asia-south1)",
+        "id": "asia-south1"
+      },
+      {
+        "title": "Delhi (asia-south2)",
+        "id": "asia-south2"
+      },
+      {
+        "title": "Singapore (asia-southeast1)",
+        "id": "asia-southeast1"
+      },
+      {
+        "title": "Jakarta (asia-southeast2)",
+        "id": "asia-southeast2"
+      },
+      {
+        "title": "Sydney (australia-southeast1)",
+        "id": "australia-southeast1"
+      },
+      {
+        "title": "Melbourne (australia-southeast2)",
+        "id": "australia-southeast2"
+      },
+      {
+        "title": "Warsaw (europe-central2)",
+        "id": "europe-central2"
+      },
+      {
+        "title": "Finland (europe-north1)",
+        "id": "europe-north1"
+      },
+      {
+        "title": "Madrid (europe-southwest1)",
+        "id": "europe-southwest1"
+      },
+      {
+        "title": "Belgium (europe-west1)",
+        "id": "europe-west1"
+      },
+      {
+        "title": "London (europe-west2)",
+        "id": "europe-west2"
+      },
+      {
+        "title": "Frankfurt (europe-west3)",
+        "id": "europe-west3"
+      },
+      {
+        "title": "Netherlands (europe-west4)",
+        "id": "europe-west4"
+      },
+      {
+        "title": "Zurich (europe-west6)",
+        "id": "europe-west6"
+      },
+      {
+        "title": "Milan (europe-west8)",
+        "id": "europe-west8"
+      },
+      {
+        "title": "Paris (europe-west9)",
+        "id": "europe-west9"
+      },
+      {
+        "title": "Montréal (northamerica-northeast1)",
+        "id": "northamerica-northeast1"
+      },
+      {
+        "title": "Toronto (northamerica-northeast2)",
+        "id": "northamerica-northeast2"
+      },
+      {
+        "title": "São Paulo (southamerica-east1)",
+        "id": "southamerica-east1"
+      },
+      {
+        "title": "Santiago (southamerica-west1)",
+        "id": "southamerica-west1"
+      },
+      {
+        "title": "Iowa (us-central1)",
+        "id": "us-central1"
+      },
+      {
+        "title": "South Carolina (us-east1)",
+        "id": "us-east1"
+      },
+      {
+        "title": "Northern Virginia (us-east4)",
+        "id": "us-east4"
+      },
+      {
+        "title": "Columbus (us-east5)",
+        "id": "us-east5"
+      },
+      {
+        "title": "Dallas (us-south1)",
+        "id": "us-south1"
+      },
+      {
+        "title": "Oregon (us-west1)",
+        "id": "us-west1"
+      },
+      {
+        "title": "Los Angeles (us-west2)",
+        "id": "us-west2"
+      },
+      {
+        "title": "Salt Lake City (us-west3)",
+        "id": "us-west3"
+      },
+      {
+        "title": "Las Vegas (us-west4)",
+        "id": "us-west4"
+      }
+    ]
+  },
+  {
+    "id": "uZGvvADp63kQfwcMjshJ",
+    "number": "9368654706017741754",
+    "begin": "2022-08-29T12:30:00+00:00",
+    "created": "2022-08-30T16:32:36+00:00",
+    "end": "2022-08-30T18:02:00+00:00",
+    "modified": "2022-08-30T22:04:57+00:00",
+    "external_desc": "Global: Cloud Spanner Query and Data UI pages not returning results for tables",
+    "updates": [
+      {
+        "created": "2022-08-30T22:04:55+00:00",
+        "modified": "2022-08-30T22:04:55+00:00",
+        "when": "2022-08-30T22:04:55+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 29 August 2022 05:30\n**Incident End:** 30 August 2022 11:02\n**Duration:** 29 hours, 32 minutes\n**Affected Services and Features:**\nGoogle Cloud Platform - Cloud Spanner Console\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Spanner Query and Data UI pages, in the Cloud Console, experienced issues returning results for tables globally for 29 hours and 32 minutes. From preliminary analysis, the root cause of the issue was a change in formatting of array column types for display that did not account for nulls.\n**Customer Impact:**\n- Affected customers may have experienced issues rendering query results on the data page and query page if the table included an array.\n- This only affected the Spanner Console, gCloud interface worked as expected.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Dallas (us-south1)",
+            "id": "us-south1"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
+      {
+        "created": "2022-08-30T18:22:19+00:00",
+        "modified": "2022-08-30T18:22:20+00:00",
+        "when": "2022-08-30T18:22:19+00:00",
+        "text": "The issue with Cloud Spanner has been resolved for all affected users as of Tuesday, 2022-08-30 11:02 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Dallas (us-south1)",
+            "id": "us-south1"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
+      {
+        "created": "2022-08-30T17:54:18+00:00",
+        "modified": "2022-08-30T17:54:20+00:00",
+        "when": "2022-08-30T17:54:18+00:00",
+        "text": "Summary: Global: Cloud Spanner Query and Data UI pages not returning results for tables\nDescription: We believe the issue with Cloud Spanner is partially resolved. Our engineers are working to validate the fix is working as expected.\nWe will provide an update by Tuesday, 2022-08-30 11:30 US/Pacific with current details.\nDiagnosis: Data page and Query page will not render query results if the table has an array. This is only affecting the console only, gCloud interface is working as expected.\nWorkaround: Users may use alternative interfaces such as Cloud SDK (gcloud) or client libraries to query the affected tables.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Dallas (us-south1)",
+            "id": "us-south1"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
+      {
+        "created": "2022-08-30T17:24:11+00:00",
+        "modified": "2022-08-30T17:24:13+00:00",
+        "when": "2022-08-30T17:24:11+00:00",
+        "text": "Summary: Global: Cloud Spanner Query and Data UI pages not returning results for tables\nDescription: We believe the issue with Cloud Spanner is partially resolved. Our engineers are working to validate the fix is working as expected.\nWe will provide an update by Tuesday, 2022-08-30 11:00 US/Pacific with current details.\nDiagnosis: Data page and Query page will not render query results if the table has an array. This is only affecting the console only, gCloud interface is working as expected.\nWorkaround: Users may use alternative interfaces such as Cloud SDK (gcloud) or client libraries to query the affected tables.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Dallas (us-south1)",
+            "id": "us-south1"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
+      {
+        "created": "2022-08-30T16:36:56+00:00",
+        "modified": "2022-08-30T16:36:57+00:00",
+        "when": "2022-08-30T16:36:56+00:00",
+        "text": "Summary: Global: Cloud Spanner Query and Data UI pages not returning results for tables\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Tuesday, 2022-08-30 10:00 US/Pacific.\nWe will provide more information by Tuesday, 2022-08-30 10:30 US/Pacific.\nDiagnosis: Data page and Query page will not render query results if the table has an array. This is only affecting the console only, gCloud interface is working as expected.\nWorkaround: Users may use alternative interfaces such as Cloud SDK (gcloud) or client libraries to query the affected tables.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Dallas (us-south1)",
+            "id": "us-south1"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
+      {
+        "created": "2022-08-30T16:32:36+00:00",
+        "modified": "2022-08-30T16:32:38+00:00",
+        "when": "2022-08-30T16:32:36+00:00",
+        "text": "Summary: Global: Cloud Spanner Query and Data UI pages not returning results for tables\nDescription: We are experiencing an issue with Cloud Spanner.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2022-08-30 10:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Data page and Query page will not render query results if the table has an array. This is only affecting the console only, gCloud interface is working as expected.\nWorkaround: Users may use alternative interfaces such as Cloud SDK (gcloud) or client libraries to query the affected tables.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Dallas (us-south1)",
+            "id": "us-south1"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-08-30T22:04:55+00:00",
+      "modified": "2022-08-30T22:04:55+00:00",
+      "when": "2022-08-30T22:04:55+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 29 August 2022 05:30\n**Incident End:** 30 August 2022 11:02\n**Duration:** 29 hours, 32 minutes\n**Affected Services and Features:**\nGoogle Cloud Platform - Cloud Spanner Console\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Spanner Query and Data UI pages, in the Cloud Console, experienced issues returning results for tables globally for 29 hours and 32 minutes. From preliminary analysis, the root cause of the issue was a change in formatting of array column types for display that did not account for nulls.\n**Customer Impact:**\n- Affected customers may have experienced issues rendering query results on the data page and query page if the table included an array.\n- This only affected the Spanner Console, gCloud interface worked as expected.",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Taiwan (asia-east1)",
+          "id": "asia-east1"
+        },
+        {
+          "title": "Hong Kong (asia-east2)",
+          "id": "asia-east2"
+        },
+        {
+          "title": "Tokyo (asia-northeast1)",
+          "id": "asia-northeast1"
+        },
+        {
+          "title": "Osaka (asia-northeast2)",
+          "id": "asia-northeast2"
+        },
+        {
+          "title": "Seoul (asia-northeast3)",
+          "id": "asia-northeast3"
+        },
+        {
+          "title": "Mumbai (asia-south1)",
+          "id": "asia-south1"
+        },
+        {
+          "title": "Delhi (asia-south2)",
+          "id": "asia-south2"
+        },
+        {
+          "title": "Singapore (asia-southeast1)",
+          "id": "asia-southeast1"
+        },
+        {
+          "title": "Jakarta (asia-southeast2)",
+          "id": "asia-southeast2"
+        },
+        {
+          "title": "Sydney (australia-southeast1)",
+          "id": "australia-southeast1"
+        },
+        {
+          "title": "Melbourne (australia-southeast2)",
+          "id": "australia-southeast2"
+        },
+        {
+          "title": "Warsaw (europe-central2)",
+          "id": "europe-central2"
+        },
+        {
+          "title": "Finland (europe-north1)",
+          "id": "europe-north1"
+        },
+        {
+          "title": "Madrid (europe-southwest1)",
+          "id": "europe-southwest1"
+        },
+        {
+          "title": "Belgium (europe-west1)",
+          "id": "europe-west1"
+        },
+        {
+          "title": "London (europe-west2)",
+          "id": "europe-west2"
+        },
+        {
+          "title": "Frankfurt (europe-west3)",
+          "id": "europe-west3"
+        },
+        {
+          "title": "Netherlands (europe-west4)",
+          "id": "europe-west4"
+        },
+        {
+          "title": "Zurich (europe-west6)",
+          "id": "europe-west6"
+        },
+        {
+          "title": "Milan (europe-west8)",
+          "id": "europe-west8"
+        },
+        {
+          "title": "Paris (europe-west9)",
+          "id": "europe-west9"
+        },
+        {
+          "title": "Montréal (northamerica-northeast1)",
+          "id": "northamerica-northeast1"
+        },
+        {
+          "title": "Toronto (northamerica-northeast2)",
+          "id": "northamerica-northeast2"
+        },
+        {
+          "title": "São Paulo (southamerica-east1)",
+          "id": "southamerica-east1"
+        },
+        {
+          "title": "Santiago (southamerica-west1)",
+          "id": "southamerica-west1"
+        },
+        {
+          "title": "Iowa (us-central1)",
+          "id": "us-central1"
+        },
+        {
+          "title": "South Carolina (us-east1)",
+          "id": "us-east1"
+        },
+        {
+          "title": "Northern Virginia (us-east4)",
+          "id": "us-east4"
+        },
+        {
+          "title": "Columbus (us-east5)",
+          "id": "us-east5"
+        },
+        {
+          "title": "Dallas (us-south1)",
+          "id": "us-south1"
+        },
+        {
+          "title": "Oregon (us-west1)",
+          "id": "us-west1"
+        },
+        {
+          "title": "Los Angeles (us-west2)",
+          "id": "us-west2"
+        },
+        {
+          "title": "Salt Lake City (us-west3)",
+          "id": "us-west3"
+        },
+        {
+          "title": "Las Vegas (us-west4)",
+          "id": "us-west4"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "EcNGGUgBtBLrtm4mWvqC",
+    "service_name": "Cloud Spanner",
+    "affected_products": [
+      {
+        "title": "Cloud Spanner",
+        "id": "EcNGGUgBtBLrtm4mWvqC"
+      }
+    ],
+    "uri": "incidents/uZGvvADp63kQfwcMjshJ",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
