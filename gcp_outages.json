@@ -4,9 +4,154 @@
     "number": "6502680748827686726",
     "begin": "2022-08-31T17:01:56+00:00",
     "created": "2022-08-31T17:01:57+00:00",
-    "modified": "2022-08-31T17:59:25+00:00",
+    "modified": "2022-08-31T18:34:01+00:00",
     "external_desc": "Global: Classic template job names do not accept underscores for Dataflow jobs",
     "updates": [
+      {
+        "created": "2022-08-31T18:34:01+00:00",
+        "modified": "2022-08-31T18:34:02+00:00",
+        "when": "2022-08-31T18:34:01+00:00",
+        "text": "Summary: Global: Classic template job names do not accept underscores for Dataflow jobs\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete by Wednesday, 2022-08-31 18:00 US/Pacific.\nThe issue does not affect existing jobs which are running.\nCustomer action: - Utilize another region for running the affected job (unaffected regions listed under Workaround section). - Retry the request for affected jobs (affected regions listed under Workaround section).\nWe will provide an update by Wednesday, 2022-08-31 18:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers unable to submit new Classic Template jobs with underscores in job name.\nWorkaround: Utilize different regions or retry the request for affected jobs.\nList of regions available for mitigation (unaffected):\nasia-northeast1\nasia-northeast3\nasia-south2\nasia-southeast1\neurope-central2\neurope-north1\neurope-west1\neurope-west2\neurope-west9\nnorthamerica-northeast1\nnorthamerica-northeast2\nsouthamerica-east1\nus-east5\nus-south1\nus-west1\nus-west4\nList of partially affected regions:\nasia-east1\nasia-east2\nasia-northeast2\nasia-south1\nasia-southeast2\naustralia-southeast1\naustralia-southeast2\neurope-southwest1\neurope-west3\neurope-west4\neurope-west6\neurope-west8\nsouthamerica-west1\nus-central1\nus-east1\nus-east4\nus-west2\nus-west3",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Dallas (us-south1)",
+            "id": "us-south1"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2022-08-31T17:59:25+00:00",
         "modified": "2022-08-31T17:59:26+00:00",
@@ -299,10 +444,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-08-31T17:59:25+00:00",
-      "modified": "2022-08-31T17:59:26+00:00",
-      "when": "2022-08-31T17:59:25+00:00",
-      "text": "Summary: Global: Classic template job names do not accept underscores for Dataflow jobs\nDescription: Our engineering team has initiated rollback of the changes that affected this use case.\nWe are currently working on the ETA for the mitigation to complete.\nWe will provide an update by Wednesday, 2022-08-31 12:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers unable to submit new Classic Template jobs with underscores in job name.\nWorkaround: None at this time.",
+      "created": "2022-08-31T18:34:01+00:00",
+      "modified": "2022-08-31T18:34:02+00:00",
+      "when": "2022-08-31T18:34:01+00:00",
+      "text": "Summary: Global: Classic template job names do not accept underscores for Dataflow jobs\nDescription: Mitigation work is still underway by our engineering team.\nThe mitigation is expected to complete by Wednesday, 2022-08-31 18:00 US/Pacific.\nThe issue does not affect existing jobs which are running.\nCustomer action: - Utilize another region for running the affected job (unaffected regions listed under Workaround section). - Retry the request for affected jobs (affected regions listed under Workaround section).\nWe will provide an update by Wednesday, 2022-08-31 18:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers unable to submit new Classic Template jobs with underscores in job name.\nWorkaround: Utilize different regions or retry the request for affected jobs.\nList of regions available for mitigation (unaffected):\nasia-northeast1\nasia-northeast3\nasia-south2\nasia-southeast1\neurope-central2\neurope-north1\neurope-west1\neurope-west2\neurope-west9\nnorthamerica-northeast1\nnorthamerica-northeast2\nsouthamerica-east1\nus-east5\nus-south1\nus-west1\nus-west4\nList of partially affected regions:\nasia-east1\nasia-east2\nasia-northeast2\nasia-south1\nasia-southeast2\naustralia-southeast1\naustralia-southeast2\neurope-southwest1\neurope-west3\neurope-west4\neurope-west6\neurope-west8\nsouthamerica-west1\nus-central1\nus-east1\nus-east4\nus-west2\nus-west3",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
