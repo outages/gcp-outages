@@ -109,12 +109,25 @@
   {
     "id": "m4b47Ln94TRKJz93setH",
     "number": "16600744945116450948",
-    "begin": "2022-09-06T15:53:14+00:00",
+    "begin": "2022-09-06T14:30:00+00:00",
     "created": "2022-09-06T15:53:21+00:00",
-    "end": "2022-09-06T16:18:13+00:00",
-    "modified": "2022-09-06T16:18:13+00:00",
+    "end": "2022-09-06T16:13:00+00:00",
+    "modified": "2022-09-06T18:47:19+00:00",
     "external_desc": "Global: Cloud Armor Security Policy Change Propagation Failures",
     "updates": [
+      {
+        "created": "2022-09-06T18:47:16+00:00",
+        "modified": "2022-09-06T18:47:16+00:00",
+        "when": "2022-09-06T18:47:16+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 06 September 2022 07:30\n**Incident End:** 06 September 2022 09:13\n**Duration:** 1 hour, 43 minutes\n**Affected Services and Features:**\nCloud Armor - Security Policy\n**Regions/Zones:** Global\n**Description:**\nCloud Armor experienced security policy update failures globally for 1 hour, 43 minutes. From preliminary analysis, this was due to failures in a backend storage component which caused stuck operations for several downstream operations.\n**Customer Impact:**\n- All changes made to security policies made by customers after 07:30 US/Pacific were not propagated. Affected customers would see their submitted change did not take effect until 09:30 US/Pacific. This was also visible in the log files.\n- Existing security policies were unaffected.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
       {
         "created": "2022-09-06T16:18:12+00:00",
         "modified": "2022-09-06T16:18:14+00:00",
@@ -138,10 +151,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-09-06T16:18:12+00:00",
-      "modified": "2022-09-06T16:18:14+00:00",
-      "when": "2022-09-06T16:18:12+00:00",
-      "text": "The issue with Cloud Armor has been resolved for all affected users as of Tuesday, 2022-09-06 09:11 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-09-06T18:47:16+00:00",
+      "modified": "2022-09-06T18:47:16+00:00",
+      "when": "2022-09-06T18:47:16+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 06 September 2022 07:30\n**Incident End:** 06 September 2022 09:13\n**Duration:** 1 hour, 43 minutes\n**Affected Services and Features:**\nCloud Armor - Security Policy\n**Regions/Zones:** Global\n**Description:**\nCloud Armor experienced security policy update failures globally for 1 hour, 43 minutes. From preliminary analysis, this was due to failures in a backend storage component which caused stuck operations for several downstream operations.\n**Customer Impact:**\n- All changes made to security policies made by customers after 07:30 US/Pacific were not propagated. Affected customers would see their submitted change did not take effect until 09:30 US/Pacific. This was also visible in the log files.\n- Existing security policies were unaffected.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
@@ -152,16 +165,12 @@
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
+    "service_key": "Kakg69gTC3xFyeJCY2va",
+    "service_name": "Cloud Armor",
     "affected_products": [
       {
         "title": "Cloud Armor",
         "id": "Kakg69gTC3xFyeJCY2va"
-      },
-      {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
       }
     ],
     "uri": "incidents/m4b47Ln94TRKJz93setH",
