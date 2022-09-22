@@ -21088,12 +21088,25 @@
   {
     "id": "3GPGN5Vdj2bXGKm4ngpE",
     "number": "13262905600359368227",
-    "begin": "2022-07-13T14:54:58+00:00",
+    "begin": "2022-07-13T14:30:00+00:00",
     "created": "2022-07-13T15:03:49+00:00",
-    "end": "2022-07-13T20:36:26+00:00",
-    "modified": "2022-07-13T20:36:26+00:00",
+    "end": "2022-07-13T17:42:00+00:00",
+    "modified": "2022-09-22T15:04:24+00:00",
     "external_desc": "Cloud Firestore: authentication errors in Firestore API in us-central1 and australia-southeast1",
     "updates": [
+      {
+        "created": "2022-09-22T15:03:50+00:00",
+        "modified": "2022-09-22T15:03:50+00:00",
+        "when": "2022-09-22T15:03:50+00:00",
+        "text": "## INCIDENT REPORT ##\n**Summary:**\nOn Tuesday, 13 September 2022 07:30 US/Pacific, an issue with Google Cloud Filestore resulted in all read-only API requests failing for a period of 3 hours, 12 minutes. The issue was fully mitigated on Tuesday, 13 September 2022 at 10:42 US/Pacific.\nWe would like to apologize for the length and severity of this incident. We are taking immediate steps to prevent a recurrence and improve reliability of the service in the future.\n**Root Cause:**\nFilestore enforces a global limit on API requests to limit impact in overload scenarios. The outage was triggered when an internal Google service managing a large number of GCP projects malfunctioned and overloaded the Filestore API with requests, causing global throttling of the Filestore API. This continued until the internal service was manually paused.\nAs a result of this throttling, read-only API access was unavailable for all customers. This affected customers in all locations, due to a global quota that applies to Filestore. Console, gcloud and API access (List, GetOperation, etc.) calls all failed for a duration of 3 hours, 12 minutes.\nMutate operations (CreateInstance, UpdateInstance, CreateBackup, etc.) still succeeded, but customers were unable to check on operation progress.\n**Remediation and Prevention**\nOur engineers were alerted of the issue through automated alerts on Tuesday, 13 September 2022 07:47 US/Pacific. Once the nature and scope of the issue became clear, Google engineers started shutting down the internal service overloading our APIs at 10:33 and the issue was completely resolved at 10:42.\nGoogle is committed to preventing recurrence by implementing the following action items:\n- Removal of the global quotas which resulted in a local overload causing a global impact.\n- Improve alerting and monitoring to respond more promptly when approaching internal limits, improving time to detection and mitigation.\nWe appreciate your patience and apologize again for the impact to your organization. We thank you for your business.\n**Detailed Description of Impact:**\nOn Tuesday, 13 September 2022 from 07:30 to 10:42 US/Pacific, Google Cloud Filestore experienced an issue where ListInstances API requests failed with error code 429. This impacted read-only API access for customers globally. Pantheon, gcloud and API access (List, GetOperation, etc.) calls failed during this time. Mutate operations (CreateInstance, UpdateInstance, CreateBackup, etc.) still succeeded, however clients were not able to check on operation progress.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          }
+        ]
+      },
       {
         "created": "2022-07-13T20:36:26+00:00",
         "modified": "2022-07-13T20:36:27+00:00",
@@ -21174,10 +21187,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-07-13T20:36:26+00:00",
-      "modified": "2022-07-13T20:36:27+00:00",
-      "when": "2022-07-13T20:36:26+00:00",
-      "text": "The issue with Cloud Firestore has been resolved for all affected users as of Wednesday, 2022-07-13 13:36 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-09-22T15:03:50+00:00",
+      "modified": "2022-09-22T15:03:50+00:00",
+      "when": "2022-09-22T15:03:50+00:00",
+      "text": "## INCIDENT REPORT ##\n**Summary:**\nOn Tuesday, 13 September 2022 07:30 US/Pacific, an issue with Google Cloud Filestore resulted in all read-only API requests failing for a period of 3 hours, 12 minutes. The issue was fully mitigated on Tuesday, 13 September 2022 at 10:42 US/Pacific.\nWe would like to apologize for the length and severity of this incident. We are taking immediate steps to prevent a recurrence and improve reliability of the service in the future.\n**Root Cause:**\nFilestore enforces a global limit on API requests to limit impact in overload scenarios. The outage was triggered when an internal Google service managing a large number of GCP projects malfunctioned and overloaded the Filestore API with requests, causing global throttling of the Filestore API. This continued until the internal service was manually paused.\nAs a result of this throttling, read-only API access was unavailable for all customers. This affected customers in all locations, due to a global quota that applies to Filestore. Console, gcloud and API access (List, GetOperation, etc.) calls all failed for a duration of 3 hours, 12 minutes.\nMutate operations (CreateInstance, UpdateInstance, CreateBackup, etc.) still succeeded, but customers were unable to check on operation progress.\n**Remediation and Prevention**\nOur engineers were alerted of the issue through automated alerts on Tuesday, 13 September 2022 07:47 US/Pacific. Once the nature and scope of the issue became clear, Google engineers started shutting down the internal service overloading our APIs at 10:33 and the issue was completely resolved at 10:42.\nGoogle is committed to preventing recurrence by implementing the following action items:\n- Removal of the global quotas which resulted in a local overload causing a global impact.\n- Improve alerting and monitoring to respond more promptly when approaching internal limits, improving time to detection and mitigation.\nWe appreciate your patience and apologize again for the impact to your organization. We thank you for your business.\n**Detailed Description of Impact:**\nOn Tuesday, 13 September 2022 from 07:30 to 10:42 US/Pacific, Google Cloud Filestore experienced an issue where ListInstances API requests failed with error code 429. This impacted read-only API access for customers globally. Pantheon, gcloud and API access (List, GetOperation, etc.) calls failed during this time. Mutate operations (CreateInstance, UpdateInstance, CreateBackup, etc.) still succeeded, however clients were not able to check on operation progress.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
