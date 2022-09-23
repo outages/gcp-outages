@@ -1235,9 +1235,154 @@
     "number": "8605665058763432284",
     "begin": "2022-09-15T23:01:57+00:00",
     "created": "2022-09-15T23:01:58+00:00",
-    "modified": "2022-09-23T22:06:12+00:00",
-    "external_desc": "Global: Calico enabled GKE clusters’ pods may get stuck terminating after upgrading to 1.22+",
+    "modified": "2022-09-23T22:48:05+00:00",
+    "external_desc": "Global: Calico enabled GKE clusters’ pods may get stuck Terminating or Pending after upgrading to 1.22+",
     "updates": [
+      {
+        "created": "2022-09-23T22:48:05+00:00",
+        "modified": "2022-09-23T22:48:06+00:00",
+        "when": "2022-09-23T22:48:05+00:00",
+        "text": "Summary: Global: Calico enabled GKE clusters’ pods may get stuck Terminating or Pending after upgrading to 1.22+\nDescription: The following GKE versions are vulnerable to a race condition when using the Calico Network Policy, resulting in pods stuck Terminating or Pending:\nAll 1.22 GKE versions\nAll 1.23 GKE versions\n1.24 versions before 1.24.4-gke.800\nOnly a small number of GKE clusters have actually experienced stuck pods. Use of cluster autoscaler can increase the chance of hitting the race condition.\nA fix is available in GKE v1.24.4-gke.800 or later. The fix is also being made available in v1.23 and v1.22, as part of the next release, which has now started. Once available, customers can manually upgrade to the fixed version. Or, Clusters on the RAPID, REGULAR or STABLE release channels using 1.22 or 1.23 will upgrade automatically over coming weeks.\nWe will provide an update by Friday, 2022-09-30 15:00 US/Pacific with current details.\nThe issue was introduced in the Calico component, and GKE has been working closely with the Calico project to produce a fix. We apologize to all who are affected by the disruption.\nDiagnosis: The Calico CNI plugin shows the following error terminating Pods:\n“Warning FailedKillPod 36m (x389 over 121m) kubelet error killing pod: failed to \"KillPodSandbox\" for \"af9ab8f9-d6d6-4828-9b8c-a58441dd1f86\" with KillPodSandboxError: \"rpc error: code = Unknown desc = networkPlugin cni failed to teardown pod \"myclient-pod-6474c76996\" network: error getting ClusterInformation: connection is unauthorized: Unauthorized\"\nWorkaround: Customers currently experiencing the issue, are requested to take one of the following actions:\n1. [Recommended] Manually upgrade to GKE v1.24.4-gke.800 or later (if viable), or reach out to Google Cloud Support to have an internal patch applied\n2. Restart the kubelet and calico-node to get the pods unstuck.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Dallas (us-south1)",
+            "id": "us-south1"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2022-09-23T22:06:12+00:00",
         "modified": "2022-09-23T22:06:19+00:00",
@@ -1820,10 +1965,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-09-23T22:06:12+00:00",
-      "modified": "2022-09-23T22:06:19+00:00",
-      "when": "2022-09-23T22:06:12+00:00",
-      "text": "Summary: Global: Calico enabled GKE clusters’ pods may get stuck terminating after upgrading to 1.22+\nDescription: The following GKE versions are vulnerable to a race condition when using the Calico Network Policy, resulting in pods stuck Terminating or Pending:\n- All 1.22 GKE versions\n- All 1.23 GKE versions\n- 1.24 versions before 1.24.4-gke.800\nOnly a small number of GKE clusters have actually experienced stuck pods. Use of cluster autoscaler can increase the chance of hitting the race condition.\nA fix is available in GKE v1.24.4-gke.800 or later. The fix is also being made available in v1.23 and v1.22, as part of the next release. Once available, customers can manually upgrade to the fixed version. Or, Clusters on the RAPID, REGULAR or STABLE release channels using 1.22 or 1.23 will upgrade automatically over coming weeks.\nWe will provide an update by Friday, 2022-09-23 16:00 US/Pacific with current details.\nThe issue was introduced in the Calico component, and GKE has been working closely with the Calico project to produce a fix. We apologize to all who are affected by the disruption.\nDiagnosis: The Calico CNI plugin shows the following error terminating Pods:\n“Warning FailedKillPod 36m (x389 over 121m) kubelet error killing pod: failed to \"KillPodSandbox\" for \"af9ab8f9-d6d6-4828-9b8c-a58441dd1f86\" with KillPodSandboxError: \"rpc error: code = Unknown desc = networkPlugin cni failed to teardown pod \"myclient-pod-6474c76996\" network: error getting ClusterInformation: connection is unauthorized: Unauthorized\"\nWorkaround: Customers currently experiencing the issue, are requested to take one of the following actions:\n1. [Recommended] Manually upgrade to GKE v1.24.4-gke.800 or later (if viable), or reach out to Google Cloud Support to have an internal patch applied\n2. Restart the kubelet and calico-node to get the pods unstuck.",
+      "created": "2022-09-23T22:48:05+00:00",
+      "modified": "2022-09-23T22:48:06+00:00",
+      "when": "2022-09-23T22:48:05+00:00",
+      "text": "Summary: Global: Calico enabled GKE clusters’ pods may get stuck Terminating or Pending after upgrading to 1.22+\nDescription: The following GKE versions are vulnerable to a race condition when using the Calico Network Policy, resulting in pods stuck Terminating or Pending:\nAll 1.22 GKE versions\nAll 1.23 GKE versions\n1.24 versions before 1.24.4-gke.800\nOnly a small number of GKE clusters have actually experienced stuck pods. Use of cluster autoscaler can increase the chance of hitting the race condition.\nA fix is available in GKE v1.24.4-gke.800 or later. The fix is also being made available in v1.23 and v1.22, as part of the next release, which has now started. Once available, customers can manually upgrade to the fixed version. Or, Clusters on the RAPID, REGULAR or STABLE release channels using 1.22 or 1.23 will upgrade automatically over coming weeks.\nWe will provide an update by Friday, 2022-09-30 15:00 US/Pacific with current details.\nThe issue was introduced in the Calico component, and GKE has been working closely with the Calico project to produce a fix. We apologize to all who are affected by the disruption.\nDiagnosis: The Calico CNI plugin shows the following error terminating Pods:\n“Warning FailedKillPod 36m (x389 over 121m) kubelet error killing pod: failed to \"KillPodSandbox\" for \"af9ab8f9-d6d6-4828-9b8c-a58441dd1f86\" with KillPodSandboxError: \"rpc error: code = Unknown desc = networkPlugin cni failed to teardown pod \"myclient-pod-6474c76996\" network: error getting ClusterInformation: connection is unauthorized: Unauthorized\"\nWorkaround: Customers currently experiencing the issue, are requested to take one of the following actions:\n1. [Recommended] Manually upgrade to GKE v1.24.4-gke.800 or later (if viable), or reach out to Google Cloud Support to have an internal patch applied\n2. Restart the kubelet and calico-node to get the pods unstuck.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
