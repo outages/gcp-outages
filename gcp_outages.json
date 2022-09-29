@@ -4,9 +4,22 @@
     "number": "13516617131524230523",
     "begin": "2022-09-29T18:01:42+00:00",
     "created": "2022-09-29T18:01:43+00:00",
-    "modified": "2022-09-29T18:01:43+00:00",
+    "modified": "2022-09-29T18:32:31+00:00",
     "external_desc": "Multiregion: BigQuery persistent errors for some customers' DML operations",
     "updates": [
+      {
+        "created": "2022-09-29T18:32:31+00:00",
+        "modified": "2022-09-29T18:32:32+00:00",
+        "when": "2022-09-29T18:32:31+00:00",
+        "text": "Summary: Multiregion: BigQuery persistent errors for some customers' DML operations\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Thursday, 2022-09-29 13:30 US/Pacific.\nDiagnosis: Some customers may experience persistent INTERNAL_ERRORS performing DML on some tables with internal debug info and will contain an error message:\n\"Source storage for $project:$dataset.$table is not available in write target $cell\"\nWorkaround: Affected customers should still be able to query or copy their tables.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
       {
         "created": "2022-09-29T18:01:43+00:00",
         "modified": "2022-09-29T18:01:44+00:00",
@@ -22,10 +35,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-09-29T18:01:43+00:00",
-      "modified": "2022-09-29T18:01:44+00:00",
-      "when": "2022-09-29T18:01:43+00:00",
-      "text": "Summary: Multiregion: BigQuery persistent errors for some customers' DML operations\nDescription: We are experiencing an issue with Google BigQuery.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2022-09-29 11:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Some customers may experience persistent INTERNAL_ERRORS performing DML on some tables with internal debug info and will contain an error message:\n\"Source storage for $project:$dataset.$table is not available in write target $cell\"\nWorkaround: Affected customers should still be able to query or copy their tables.",
+      "created": "2022-09-29T18:32:31+00:00",
+      "modified": "2022-09-29T18:32:32+00:00",
+      "when": "2022-09-29T18:32:31+00:00",
+      "text": "Summary: Multiregion: BigQuery persistent errors for some customers' DML operations\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Thursday, 2022-09-29 13:30 US/Pacific.\nDiagnosis: Some customers may experience persistent INTERNAL_ERRORS performing DML on some tables with internal debug info and will contain an error message:\n\"Source storage for $project:$dataset.$table is not available in write target $cell\"\nWorkaround: Affected customers should still be able to query or copy their tables.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
