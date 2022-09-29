@@ -82,12 +82,20 @@
   {
     "id": "QDGjaHNBytaX4kad7zsb",
     "number": "5607330982132901285",
-    "begin": "2022-09-29T13:18:00+00:00",
+    "begin": "2022-09-28T22:52:00+00:00",
     "created": "2022-09-29T13:41:16+00:00",
-    "end": "2022-09-29T13:55:48+00:00",
-    "modified": "2022-09-29T13:55:48+00:00",
+    "end": "2022-09-29T16:47:00+00:00",
+    "modified": "2022-09-29T21:06:06+00:00",
     "external_desc": "Cloud Monitoring - Uptime - 100% error rate in southamerica-east1",
     "updates": [
+      {
+        "created": "2022-09-29T21:03:53+00:00",
+        "modified": "2022-09-29T21:06:06+00:00",
+        "when": "2022-09-29T21:03:53+00:00",
+        "text": "# MINI INCIDENT REPORT\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 September 2022 15:52\n**Incident End:** 29 September 2022 09:47\n**Duration:** 17 hours, 55 minutes\n**Affected Services and Features:**\nCloud Monitoring - Uptime Monitoring\n**Regions/Zones:** southamerica-east1\n**Description:**\nCloud Uptime Monitoring experienced near 100% unavailability in the affected region for a duration of 17 hours, 55 minutes. From preliminary analysis, the root cause of the issue is due to a severed link in Google’s backend network in South America. The issue was mitigated once engineers redirected traffic to alternate links. Additional review is underway to prevent potential impact in the future.\n**Customer Impact:**\n- Public Uptime Checks were not able to egress from South America during the incident period. Affected customers would have observed partial or absent metric data from this location.\n- Private Uptime Checks were unaffected.\n- Default alert policies against Public Uptime Checks were unaffected.\n- Custom alert policies against Public Uptime Checks may have triggered if a \"metric absence\" condition is present in the policy (https://cloud.google.com/monitoring/alerts/concepts-indepth#partial-metric-data) and the policy is configured to only measure Uptime metrics from South America.\n---",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
       {
         "created": "2022-09-29T13:55:46+00:00",
         "modified": "2022-09-29T13:55:52+00:00",
@@ -114,10 +122,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-09-29T13:55:46+00:00",
-      "modified": "2022-09-29T13:55:52+00:00",
-      "when": "2022-09-29T13:55:46+00:00",
-      "text": "The issue with Uptime has been resolved for all affected users as of Thursday, 2022-09-29 06:55 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-09-29T21:03:53+00:00",
+      "modified": "2022-09-29T21:06:06+00:00",
+      "when": "2022-09-29T21:03:53+00:00",
+      "text": "# MINI INCIDENT REPORT\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 September 2022 15:52\n**Incident End:** 29 September 2022 09:47\n**Duration:** 17 hours, 55 minutes\n**Affected Services and Features:**\nCloud Monitoring - Uptime Monitoring\n**Regions/Zones:** southamerica-east1\n**Description:**\nCloud Uptime Monitoring experienced near 100% unavailability in the affected region for a duration of 17 hours, 55 minutes. From preliminary analysis, the root cause of the issue is due to a severed link in Google’s backend network in South America. The issue was mitigated once engineers redirected traffic to alternate links. Additional review is underway to prevent potential impact in the future.\n**Customer Impact:**\n- Public Uptime Checks were not able to egress from South America during the incident period. Affected customers would have observed partial or absent metric data from this location.\n- Private Uptime Checks were unaffected.\n- Default alert policies against Public Uptime Checks were unaffected.\n- Custom alert policies against Public Uptime Checks may have triggered if a \"metric absence\" condition is present in the policy (https://cloud.google.com/monitoring/alerts/concepts-indepth#partial-metric-data) and the policy is configured to only measure Uptime metrics from South America.\n---",
       "status": "AVAILABLE",
       "affected_locations": []
     },
