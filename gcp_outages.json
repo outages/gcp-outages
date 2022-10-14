@@ -2,12 +2,29 @@
   {
     "id": "mREMLwZFe3FuLLn3zfTw",
     "number": "8997005448411858781",
-    "begin": "2022-10-14T11:39:37+00:00",
+    "begin": "2022-10-14T06:30:00+00:00",
     "created": "2022-10-14T11:41:13+00:00",
-    "end": "2022-10-14T11:51:25+00:00",
-    "modified": "2022-10-14T11:51:26+00:00",
+    "end": "2022-10-14T11:30:00+00:00",
+    "modified": "2022-10-14T21:32:45+00:00",
     "external_desc": "BigQuery is experiencing issues with streaming API in US region",
     "updates": [
+      {
+        "created": "2022-10-14T21:32:29+00:00",
+        "modified": "2022-10-14T21:32:29+00:00",
+        "when": "2022-10-14T21:32:29+00:00",
+        "text": "**Mini Incident Report**\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support. Google will be providing a full Incident Report to include a finalized root cause and appropriate preventative action items to ensure that this type of outage won’t recur.\n(All Times US/Pacific)\n**Incident Start:** 13 October 2022 23:30\n**Incident End:** 14 October 2022 04:30\n**Duration:** 5 hours\n**Affected Services and Features:**\nBigQuery - Storage Write API\n**Regions/Zones:** Multi-Region (US)\n**Description:**\nCustomers making calls to the streaming API using BigQuery observed elevated error rates in US regions for a period of 5 hours. The issue was mitigated by appropriately increasing resources and manually restarting old tasks, which were overloaded with pending connections.\nFrom preliminary analysis, an increase in calls to the Write API, a unified data-ingestion API in BigQuery [1], caused frontend resources to be overloaded. A suboptimal distribution of the load resulted in an elevated error rate. Google engineering is continuing to investigate the matter, and we will publish a root cause analysis on the Google Cloud Service Health Dashboard in the next few days as part of the Incident Report.\n**Customer Impact:**\nDuring this period of time:\nCustomers making calls using Write API in the US region observed increased levels of connection failures.\nCustomers making calls using InsertAll API in the US region may also have observed a slight increase in failures due to subsequent increase in traffic.\n**Reference(s):**\n[1] https://cloud.google.com/bigquery/docs/write-api",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
       {
         "created": "2022-10-14T11:51:24+00:00",
         "modified": "2022-10-14T11:51:30+00:00",
@@ -40,10 +57,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-10-14T11:51:24+00:00",
-      "modified": "2022-10-14T11:51:30+00:00",
-      "when": "2022-10-14T11:51:24+00:00",
-      "text": "The issue with Google BigQuery has been resolved for all affected users as of Friday, 2022-10-14 04:50 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-10-14T21:32:29+00:00",
+      "modified": "2022-10-14T21:32:29+00:00",
+      "when": "2022-10-14T21:32:29+00:00",
+      "text": "**Mini Incident Report**\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support. Google will be providing a full Incident Report to include a finalized root cause and appropriate preventative action items to ensure that this type of outage won’t recur.\n(All Times US/Pacific)\n**Incident Start:** 13 October 2022 23:30\n**Incident End:** 14 October 2022 04:30\n**Duration:** 5 hours\n**Affected Services and Features:**\nBigQuery - Storage Write API\n**Regions/Zones:** Multi-Region (US)\n**Description:**\nCustomers making calls to the streaming API using BigQuery observed elevated error rates in US regions for a period of 5 hours. The issue was mitigated by appropriately increasing resources and manually restarting old tasks, which were overloaded with pending connections.\nFrom preliminary analysis, an increase in calls to the Write API, a unified data-ingestion API in BigQuery [1], caused frontend resources to be overloaded. A suboptimal distribution of the load resulted in an elevated error rate. Google engineering is continuing to investigate the matter, and we will publish a root cause analysis on the Google Cloud Service Health Dashboard in the next few days as part of the Incident Report.\n**Customer Impact:**\nDuring this period of time:\nCustomers making calls using Write API in the US region observed increased levels of connection failures.\nCustomers making calls using InsertAll API in the US region may also have observed a slight increase in failures due to subsequent increase in traffic.\n**Reference(s):**\n[1] https://cloud.google.com/bigquery/docs/write-api",
       "status": "AVAILABLE",
       "affected_locations": [
         {
