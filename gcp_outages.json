@@ -26143,178 +26143,6 @@
     ]
   },
   {
-    "id": "XVq5om2XEDSqLtJZUvcH",
-    "number": "5289378925036056618",
-    "begin": "2022-07-19T13:33:00+00:00",
-    "created": "2022-07-19T17:13:38+00:00",
-    "end": "2022-07-21T04:20:00+00:00",
-    "modified": "2022-07-29T21:05:41+00:00",
-    "external_desc": "Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2.",
-    "updates": [
-      {
-        "created": "2022-07-29T21:05:41+00:00",
-        "modified": "2022-07-29T21:05:41+00:00",
-        "when": "2022-07-29T21:05:41+00:00",
-        "text": "For a full Incident Report, please refer to https://status.cloud.google.com/incidents/fmEL9i2fArADKawkZAa2",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-21T19:06:31+00:00",
-        "modified": "2022-07-29T21:05:07+00:00",
-        "when": "2022-07-21T19:06:31+00:00",
-        "text": "For a preliminary Incident Report (Mini IR) , please refer to https://status.cloud.google.com/incidents/fmEL9i2fArADKawkZAa2",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-20T03:45:25+00:00",
-        "modified": "2022-07-20T03:45:26+00:00",
-        "when": "2022-07-20T03:45:25+00:00",
-        "text": "There was a cooling related failure in one of our buildings that hosts a portion of capacity for zone europe-west2-a for region europe-west2 that is now resolved. GCE, Persistent Disk and Autoscaling impacts have been addressed. Customers can launch VMs in all zones of europe-west2. A small number of HDD backed Persistent Disk volumes are still experiencing impact and will exhibit IO errors. If you are continuing to experience issues with these services, please contact Google Cloud Product Support and reference this message.\nThe issue has been resolved for all affected users as of Tuesday, 2022-07-19 20:43 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-19T22:29:06+00:00",
-        "modified": "2022-07-19T22:29:07+00:00",
-        "when": "2022-07-19T22:29:06+00:00",
-        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nThere is a cooling related failure in one of our buildings that hosts a portion of capacity for zone europe-west2-a for region europe-west2 that is not yet completely resolved. GCE, Persistent Disk and Autoscaling impacts have been mitigated. Most customers can launch VMs in all zones of europe-west2. A minority of customers might continue to see failures in europe-west2-a. We continue to work on bringing back previously impacted capacity in europe-west2-a to fully restore GCE, Persistent Disk and Autoscaling. If you are continuing to experience issues with these services, please contact Google Cloud Product Support and reference this message.\nCustomers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs.\nWorkaround: Customers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-19T21:08:45+00:00",
-        "modified": "2022-07-19T21:16:34+00:00",
-        "when": "2022-07-19T21:08:45+00:00",
-        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nThere is a cooling related failure in one of our buildings that hosts a portion of capacity for zone europe-west2-a for region europe-west2 that is not yet completely resolved.\nGCE, Persistent Disk and Autoscaling impacts have been mitigated. Most customers can launch VMs in all zones of europe-west2.\nA minority of customers might continue to see failures in europe-west2-a.\nWe continue to work on bringing back previously impacted capacity in europe-west2-a to fully restore GCE, Persistent Disk and Autoscaling. If you are continuing to experience issues with these services, please contact Google Cloud Product Support and reference this message.\nPlease refer to workaround section for additional information about VM deletion.\nWe will provide more information by Tuesday, 2022-07-19 16:00 US/Pacific.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs.\nWorkaround: Customers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-19T19:29:11+00:00",
-        "modified": "2022-07-19T19:29:12+00:00",
-        "when": "2022-07-19T19:29:11+00:00",
-        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. Europe-west2-b and europe-west2-c are not impacted for VMs. We have fixed the previously occurring issues when creating new Persistent Disk devices. Zonal autoscaling for europe-west2-a is impacted for customers who suffered VM terminations.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are working to restore redundancy for any remaining impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 15:00 US/Pacific with current details. We apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in europe-west2-b and europe-west2-c. Customers who currently have running instances in europe-west2-a can continue to use Auto Scaling in europe-west2-a. Regional Auto Scaling continues to work.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-19T19:05:30+00:00",
-        "modified": "2022-07-19T19:05:31+00:00",
-        "when": "2022-07-19T19:05:30+00:00",
-        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. Europe-west2-b and europe-west2-c are not impacted for VMs. We have fixed the previously occurring issues when creating new Persistent Disk devices. Zonal autoscaling for europe-west2-a is impacted.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are working to restore redundancy for any remaining impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 14:00 US/Pacific with current details. We apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in europe-west2-b and europe-west2-c.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-19T18:36:45+00:00",
-        "modified": "2022-07-19T18:36:46+00:00",
-        "when": "2022-07-19T18:36:45+00:00",
-        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted for VMs. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are now running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes and are working to restore redundancy for the impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 13:45 US/Pacific with current details. We apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in other zones of europe-west2.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-19T17:41:40+00:00",
-        "modified": "2022-07-19T17:41:41+00:00",
-        "when": "2022-07-19T17:41:40+00:00",
-        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted for VMs. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are now running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes and are working to restore redundancy for the impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 11:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in other zones of europe-west2.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-19T17:13:37+00:00",
-        "modified": "2022-07-19T17:13:38+00:00",
-        "when": "2022-07-19T17:13:37+00:00",
-        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are now running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are also working to restore redundancy for the impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 11:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in other zones of europe-west2.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-07-29T21:05:41+00:00",
-      "modified": "2022-07-29T21:05:41+00:00",
-      "when": "2022-07-29T21:05:41+00:00",
-      "text": "For a full Incident Report, please refer to https://status.cloud.google.com/incidents/fmEL9i2fArADKawkZAa2",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "London (europe-west2)",
-          "id": "europe-west2"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
-    "service_key": "L3ggmi3Jy4xJmgodFA9K",
-    "service_name": "Google Compute Engine",
-    "affected_products": [
-      {
-        "title": "Google Compute Engine",
-        "id": "L3ggmi3Jy4xJmgodFA9K"
-      }
-    ],
-    "uri": "incidents/XVq5om2XEDSqLtJZUvcH",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "London (europe-west2)",
-        "id": "europe-west2"
-      }
-    ]
-  },
-  {
     "id": "fmEL9i2fArADKawkZAa2",
     "number": "17286000671883665526",
     "begin": "2022-07-19T13:33:00+00:00",
@@ -27012,6 +26840,178 @@
       }
     ],
     "uri": "incidents/fmEL9i2fArADKawkZAa2",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "London (europe-west2)",
+        "id": "europe-west2"
+      }
+    ]
+  },
+  {
+    "id": "XVq5om2XEDSqLtJZUvcH",
+    "number": "5289378925036056618",
+    "begin": "2022-07-19T13:33:00+00:00",
+    "created": "2022-07-19T17:13:38+00:00",
+    "end": "2022-07-21T04:20:00+00:00",
+    "modified": "2022-07-29T21:05:41+00:00",
+    "external_desc": "Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2.",
+    "updates": [
+      {
+        "created": "2022-07-29T21:05:41+00:00",
+        "modified": "2022-07-29T21:05:41+00:00",
+        "when": "2022-07-29T21:05:41+00:00",
+        "text": "For a full Incident Report, please refer to https://status.cloud.google.com/incidents/fmEL9i2fArADKawkZAa2",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-21T19:06:31+00:00",
+        "modified": "2022-07-29T21:05:07+00:00",
+        "when": "2022-07-21T19:06:31+00:00",
+        "text": "For a preliminary Incident Report (Mini IR) , please refer to https://status.cloud.google.com/incidents/fmEL9i2fArADKawkZAa2",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-20T03:45:25+00:00",
+        "modified": "2022-07-20T03:45:26+00:00",
+        "when": "2022-07-20T03:45:25+00:00",
+        "text": "There was a cooling related failure in one of our buildings that hosts a portion of capacity for zone europe-west2-a for region europe-west2 that is now resolved. GCE, Persistent Disk and Autoscaling impacts have been addressed. Customers can launch VMs in all zones of europe-west2. A small number of HDD backed Persistent Disk volumes are still experiencing impact and will exhibit IO errors. If you are continuing to experience issues with these services, please contact Google Cloud Product Support and reference this message.\nThe issue has been resolved for all affected users as of Tuesday, 2022-07-19 20:43 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-19T22:29:06+00:00",
+        "modified": "2022-07-19T22:29:07+00:00",
+        "when": "2022-07-19T22:29:06+00:00",
+        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nThere is a cooling related failure in one of our buildings that hosts a portion of capacity for zone europe-west2-a for region europe-west2 that is not yet completely resolved. GCE, Persistent Disk and Autoscaling impacts have been mitigated. Most customers can launch VMs in all zones of europe-west2. A minority of customers might continue to see failures in europe-west2-a. We continue to work on bringing back previously impacted capacity in europe-west2-a to fully restore GCE, Persistent Disk and Autoscaling. If you are continuing to experience issues with these services, please contact Google Cloud Product Support and reference this message.\nCustomers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs.\nWorkaround: Customers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-19T21:08:45+00:00",
+        "modified": "2022-07-19T21:16:34+00:00",
+        "when": "2022-07-19T21:08:45+00:00",
+        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nThere is a cooling related failure in one of our buildings that hosts a portion of capacity for zone europe-west2-a for region europe-west2 that is not yet completely resolved.\nGCE, Persistent Disk and Autoscaling impacts have been mitigated. Most customers can launch VMs in all zones of europe-west2.\nA minority of customers might continue to see failures in europe-west2-a.\nWe continue to work on bringing back previously impacted capacity in europe-west2-a to fully restore GCE, Persistent Disk and Autoscaling. If you are continuing to experience issues with these services, please contact Google Cloud Product Support and reference this message.\nPlease refer to workaround section for additional information about VM deletion.\nWe will provide more information by Tuesday, 2022-07-19 16:00 US/Pacific.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs.\nWorkaround: Customers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-19T19:29:11+00:00",
+        "modified": "2022-07-19T19:29:12+00:00",
+        "when": "2022-07-19T19:29:11+00:00",
+        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. Europe-west2-b and europe-west2-c are not impacted for VMs. We have fixed the previously occurring issues when creating new Persistent Disk devices. Zonal autoscaling for europe-west2-a is impacted for customers who suffered VM terminations.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are working to restore redundancy for any remaining impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 15:00 US/Pacific with current details. We apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in europe-west2-b and europe-west2-c. Customers who currently have running instances in europe-west2-a can continue to use Auto Scaling in europe-west2-a. Regional Auto Scaling continues to work.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-19T19:05:30+00:00",
+        "modified": "2022-07-19T19:05:31+00:00",
+        "when": "2022-07-19T19:05:30+00:00",
+        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. Europe-west2-b and europe-west2-c are not impacted for VMs. We have fixed the previously occurring issues when creating new Persistent Disk devices. Zonal autoscaling for europe-west2-a is impacted.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are working to restore redundancy for any remaining impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 14:00 US/Pacific with current details. We apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in europe-west2-b and europe-west2-c.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-19T18:36:45+00:00",
+        "modified": "2022-07-19T18:36:46+00:00",
+        "when": "2022-07-19T18:36:45+00:00",
+        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted for VMs. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are now running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes and are working to restore redundancy for the impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 13:45 US/Pacific with current details. We apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in other zones of europe-west2.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-19T17:41:40+00:00",
+        "modified": "2022-07-19T17:41:41+00:00",
+        "when": "2022-07-19T17:41:40+00:00",
+        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted for VMs. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are now running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes and are working to restore redundancy for the impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 11:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in other zones of europe-west2.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-19T17:13:37+00:00",
+        "modified": "2022-07-19T17:13:38+00:00",
+        "when": "2022-07-19T17:13:37+00:00",
+        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are now running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are also working to restore redundancy for the impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 11:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in other zones of europe-west2.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-07-29T21:05:41+00:00",
+      "modified": "2022-07-29T21:05:41+00:00",
+      "when": "2022-07-29T21:05:41+00:00",
+      "text": "For a full Incident Report, please refer to https://status.cloud.google.com/incidents/fmEL9i2fArADKawkZAa2",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "London (europe-west2)",
+          "id": "europe-west2"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "L3ggmi3Jy4xJmgodFA9K",
+    "service_name": "Google Compute Engine",
+    "affected_products": [
+      {
+        "title": "Google Compute Engine",
+        "id": "L3ggmi3Jy4xJmgodFA9K"
+      }
+    ],
+    "uri": "incidents/XVq5om2XEDSqLtJZUvcH",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -54535,102 +54535,6 @@
     "previously_affected_locations": []
   },
   {
-    "id": "MHS8ukmQamTNoZ9uqHvF",
-    "number": "18047497303663607236",
-    "begin": "2021-11-12T08:30:00+00:00",
-    "created": "2021-11-12T10:14:42+00:00",
-    "end": "2021-11-12T10:14:00+00:00",
-    "modified": "2021-11-13T01:12:49+00:00",
-    "external_desc": "Issue with Google Cloud components",
-    "updates": [
-      {
-        "created": "2021-11-13T00:41:50+00:00",
-        "modified": "2021-11-13T01:12:49+00:00",
-        "when": "2021-11-13T00:41:50+00:00",
-        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-11-12T11:49:52+00:00",
-        "modified": "2021-11-12T11:49:53+00:00",
-        "when": "2021-11-12T11:49:52+00:00",
-        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-11-12T10:14:41+00:00",
-        "modified": "2021-11-12T10:14:43+00:00",
-        "when": "2021-11-12T10:14:41+00:00",
-        "text": "Summary: Issue with Google Cloud components\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue. For regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-11-13T00:41:50+00:00",
-      "modified": "2021-11-13T01:12:49+00:00",
-      "when": "2021-11-13T00:41:50+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-      "status": "AVAILABLE",
-      "affected_locations": []
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Operations",
-        "id": "DixAowEQm45KgqXKP5tR"
-      },
-      {
-        "title": "Cloud Developer Tools",
-        "id": "BGJQ6jbGK4kUuBTQFZ1G"
-      },
-      {
-        "title": "Cloud Endpoints",
-        "id": "xfbaRzmPSf836WvAy35z"
-      },
-      {
-        "title": "Eventarc",
-        "id": "YaFawoMaXnqgY4keUBnW"
-      },
-      {
-        "title": "Google App Engine",
-        "id": "kchyUtnkMHJWaAva8aYc"
-      },
-      {
-        "title": "Google Cloud Bigtable",
-        "id": "LfZSuE3xdQU46YMFV5fy"
-      },
-      {
-        "title": "Google Cloud Console",
-        "id": "Wdsr1n5vyDvCt78qEifm"
-      },
-      {
-        "title": "Google Cloud Infrastructure Components",
-        "id": "uoypgc4GWUyzAKRHPjEv"
-      },
-      {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
-      },
-      {
-        "title": "Google Cloud SQL",
-        "id": "hV87iK5DcEXKgWU2kDri"
-      },
-      {
-        "title": "Cloud Load Balancing",
-        "id": "ix7u9beT8ivBdjApTif3"
-      }
-    ],
-    "uri": "incidents/MHS8ukmQamTNoZ9uqHvF",
-    "currently_affected_locations": [],
-    "previously_affected_locations": []
-  },
-  {
     "id": "u4oEtmqmJ1fmY8bjzxxa",
     "number": "1802042647669406530",
     "begin": "2021-11-12T08:30:00+00:00",
@@ -54727,6 +54631,102 @@
       }
     ],
     "uri": "incidents/u4oEtmqmJ1fmY8bjzxxa",
+    "currently_affected_locations": [],
+    "previously_affected_locations": []
+  },
+  {
+    "id": "MHS8ukmQamTNoZ9uqHvF",
+    "number": "18047497303663607236",
+    "begin": "2021-11-12T08:30:00+00:00",
+    "created": "2021-11-12T10:14:42+00:00",
+    "end": "2021-11-12T10:14:00+00:00",
+    "modified": "2021-11-13T01:12:49+00:00",
+    "external_desc": "Issue with Google Cloud components",
+    "updates": [
+      {
+        "created": "2021-11-13T00:41:50+00:00",
+        "modified": "2021-11-13T01:12:49+00:00",
+        "when": "2021-11-13T00:41:50+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2021-11-12T11:49:52+00:00",
+        "modified": "2021-11-12T11:49:53+00:00",
+        "when": "2021-11-12T11:49:52+00:00",
+        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2021-11-12T10:14:41+00:00",
+        "modified": "2021-11-12T10:14:43+00:00",
+        "when": "2021-11-12T10:14:41+00:00",
+        "text": "Summary: Issue with Google Cloud components\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue. For regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": []
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-11-13T00:41:50+00:00",
+      "modified": "2021-11-13T01:12:49+00:00",
+      "when": "2021-11-13T00:41:50+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+      "status": "AVAILABLE",
+      "affected_locations": []
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Operations",
+        "id": "DixAowEQm45KgqXKP5tR"
+      },
+      {
+        "title": "Cloud Developer Tools",
+        "id": "BGJQ6jbGK4kUuBTQFZ1G"
+      },
+      {
+        "title": "Cloud Endpoints",
+        "id": "xfbaRzmPSf836WvAy35z"
+      },
+      {
+        "title": "Eventarc",
+        "id": "YaFawoMaXnqgY4keUBnW"
+      },
+      {
+        "title": "Google App Engine",
+        "id": "kchyUtnkMHJWaAva8aYc"
+      },
+      {
+        "title": "Google Cloud Bigtable",
+        "id": "LfZSuE3xdQU46YMFV5fy"
+      },
+      {
+        "title": "Google Cloud Console",
+        "id": "Wdsr1n5vyDvCt78qEifm"
+      },
+      {
+        "title": "Google Cloud Infrastructure Components",
+        "id": "uoypgc4GWUyzAKRHPjEv"
+      },
+      {
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
+      },
+      {
+        "title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri"
+      },
+      {
+        "title": "Cloud Load Balancing",
+        "id": "ix7u9beT8ivBdjApTif3"
+      }
+    ],
+    "uri": "incidents/MHS8ukmQamTNoZ9uqHvF",
     "currently_affected_locations": [],
     "previously_affected_locations": []
   },
@@ -54843,106 +54843,6 @@
     "previously_affected_locations": []
   },
   {
-    "id": "8hZjcddmMVe9W1jh8SCN",
-    "number": "14767488434731058018",
-    "begin": "2021-11-12T08:30:00+00:00",
-    "created": "2021-11-12T10:09:20+00:00",
-    "end": "2021-11-12T10:14:00+00:00",
-    "modified": "2021-11-13T01:11:13+00:00",
-    "external_desc": "Issue with Google App Engine",
-    "updates": [
-      {
-        "created": "2021-11-13T00:37:47+00:00",
-        "modified": "2021-11-13T01:11:13+00:00",
-        "when": "2021-11-13T00:37:47+00:00",
-        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-11-12T11:48:38+00:00",
-        "modified": "2021-11-12T11:48:38+00:00",
-        "when": "2021-11-12T11:48:38+00:00",
-        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-11-12T10:09:18+00:00",
-        "modified": "2021-11-12T10:09:21+00:00",
-        "when": "2021-11-12T10:09:18+00:00",
-        "text": "Summary: Issue with Google App Engine\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue. For regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-11-13T00:37:47+00:00",
-      "modified": "2021-11-13T01:11:13+00:00",
-      "when": "2021-11-13T00:37:47+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-      "status": "AVAILABLE",
-      "affected_locations": []
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Google App Engine",
-        "id": "kchyUtnkMHJWaAva8aYc"
-      },
-      {
-        "title": "Cloud Developer Tools",
-        "id": "BGJQ6jbGK4kUuBTQFZ1G"
-      },
-      {
-        "title": "Cloud Endpoints",
-        "id": "xfbaRzmPSf836WvAy35z"
-      },
-      {
-        "title": "Eventarc",
-        "id": "YaFawoMaXnqgY4keUBnW"
-      },
-      {
-        "title": "Google Cloud Bigtable",
-        "id": "LfZSuE3xdQU46YMFV5fy"
-      },
-      {
-        "title": "Google Cloud Console",
-        "id": "Wdsr1n5vyDvCt78qEifm"
-      },
-      {
-        "title": "Google Cloud Infrastructure Components",
-        "id": "uoypgc4GWUyzAKRHPjEv"
-      },
-      {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
-      },
-      {
-        "title": "Google Cloud SQL",
-        "id": "hV87iK5DcEXKgWU2kDri"
-      },
-      {
-        "title": "Container Registry",
-        "id": "rECkDEKEadgZQkPefibM"
-      },
-      {
-        "title": "Operations",
-        "id": "DixAowEQm45KgqXKP5tR"
-      },
-      {
-        "title": "Cloud Load Balancing",
-        "id": "ix7u9beT8ivBdjApTif3"
-      }
-    ],
-    "uri": "incidents/8hZjcddmMVe9W1jh8SCN",
-    "currently_affected_locations": [],
-    "previously_affected_locations": []
-  },
-  {
     "id": "A1HUEnN25xk8XiSmjmsj",
     "number": "14307305938107923640",
     "begin": "2021-11-12T08:30:00+00:00",
@@ -55051,6 +54951,106 @@
       }
     ],
     "uri": "incidents/A1HUEnN25xk8XiSmjmsj",
+    "currently_affected_locations": [],
+    "previously_affected_locations": []
+  },
+  {
+    "id": "8hZjcddmMVe9W1jh8SCN",
+    "number": "14767488434731058018",
+    "begin": "2021-11-12T08:30:00+00:00",
+    "created": "2021-11-12T10:09:20+00:00",
+    "end": "2021-11-12T10:14:00+00:00",
+    "modified": "2021-11-13T01:11:13+00:00",
+    "external_desc": "Issue with Google App Engine",
+    "updates": [
+      {
+        "created": "2021-11-13T00:37:47+00:00",
+        "modified": "2021-11-13T01:11:13+00:00",
+        "when": "2021-11-13T00:37:47+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2021-11-12T11:48:38+00:00",
+        "modified": "2021-11-12T11:48:38+00:00",
+        "when": "2021-11-12T11:48:38+00:00",
+        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2021-11-12T10:09:18+00:00",
+        "modified": "2021-11-12T10:09:21+00:00",
+        "when": "2021-11-12T10:09:18+00:00",
+        "text": "Summary: Issue with Google App Engine\nDescription: We are experiencing an issue with multiple Google Cloud components beginning on Friday, 2021-11-12 00:36 US/Pacific US/Pacific.\nOur engineering team continues to investigate the issue. For regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7, no further updates will be provided here.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": []
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-11-13T00:37:47+00:00",
+      "modified": "2021-11-13T01:11:13+00:00",
+      "when": "2021-11-13T00:37:47+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+      "status": "AVAILABLE",
+      "affected_locations": []
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Google App Engine",
+        "id": "kchyUtnkMHJWaAva8aYc"
+      },
+      {
+        "title": "Cloud Developer Tools",
+        "id": "BGJQ6jbGK4kUuBTQFZ1G"
+      },
+      {
+        "title": "Cloud Endpoints",
+        "id": "xfbaRzmPSf836WvAy35z"
+      },
+      {
+        "title": "Eventarc",
+        "id": "YaFawoMaXnqgY4keUBnW"
+      },
+      {
+        "title": "Google Cloud Bigtable",
+        "id": "LfZSuE3xdQU46YMFV5fy"
+      },
+      {
+        "title": "Google Cloud Console",
+        "id": "Wdsr1n5vyDvCt78qEifm"
+      },
+      {
+        "title": "Google Cloud Infrastructure Components",
+        "id": "uoypgc4GWUyzAKRHPjEv"
+      },
+      {
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
+      },
+      {
+        "title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri"
+      },
+      {
+        "title": "Container Registry",
+        "id": "rECkDEKEadgZQkPefibM"
+      },
+      {
+        "title": "Operations",
+        "id": "DixAowEQm45KgqXKP5tR"
+      },
+      {
+        "title": "Cloud Load Balancing",
+        "id": "ix7u9beT8ivBdjApTif3"
+      }
+    ],
+    "uri": "incidents/8hZjcddmMVe9W1jh8SCN",
     "currently_affected_locations": [],
     "previously_affected_locations": []
   },
@@ -55363,62 +55363,6 @@
     "previously_affected_locations": []
   },
   {
-    "id": "cJwQRK4bgybhu7nNQ5W4",
-    "number": "13388333705131857687",
-    "begin": "2021-11-12T08:30:00+00:00",
-    "created": "2021-11-12T09:57:58+00:00",
-    "end": "2021-11-12T10:14:00+00:00",
-    "modified": "2021-11-13T01:13:29+00:00",
-    "external_desc": "Issue with Eventarc",
-    "updates": [
-      {
-        "created": "2021-11-13T00:36:10+00:00",
-        "modified": "2021-11-13T01:13:29+00:00",
-        "when": "2021-11-13T00:36:10+00:00",
-        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-11-12T11:47:23+00:00",
-        "modified": "2021-11-12T11:47:25+00:00",
-        "when": "2021-11-12T11:47:23+00:00",
-        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-11-12T09:57:56+00:00",
-        "modified": "2021-11-12T09:57:58+00:00",
-        "when": "2021-11-12T09:57:56+00:00",
-        "text": "Summary: Issue with Eventarc\nDescription: beginning at Friday, 2021-11-12 00:36 US/Pacific US/Pacific\nWe are experiencing an issue with Google Cloud components.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7\nDiagnosis: None at this time\nWorkaround: None at this time",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-11-13T00:36:10+00:00",
-      "modified": "2021-11-13T01:13:29+00:00",
-      "when": "2021-11-13T00:36:10+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
-      "status": "AVAILABLE",
-      "affected_locations": []
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "YaFawoMaXnqgY4keUBnW",
-    "service_name": "Eventarc",
-    "affected_products": [
-      {
-        "title": "Eventarc",
-        "id": "YaFawoMaXnqgY4keUBnW"
-      }
-    ],
-    "uri": "incidents/cJwQRK4bgybhu7nNQ5W4",
-    "currently_affected_locations": [],
-    "previously_affected_locations": []
-  },
-  {
     "id": "1xkAB1KmLrh5g3v9ZEZ7",
     "number": "1942372389113677880",
     "begin": "2021-11-12T08:30:00+00:00",
@@ -55559,6 +55503,62 @@
       }
     ],
     "uri": "incidents/1xkAB1KmLrh5g3v9ZEZ7",
+    "currently_affected_locations": [],
+    "previously_affected_locations": []
+  },
+  {
+    "id": "cJwQRK4bgybhu7nNQ5W4",
+    "number": "13388333705131857687",
+    "begin": "2021-11-12T08:30:00+00:00",
+    "created": "2021-11-12T09:57:58+00:00",
+    "end": "2021-11-12T10:14:00+00:00",
+    "modified": "2021-11-13T01:13:29+00:00",
+    "external_desc": "Issue with Eventarc",
+    "updates": [
+      {
+        "created": "2021-11-13T00:36:10+00:00",
+        "modified": "2021-11-13T01:13:29+00:00",
+        "when": "2021-11-13T00:36:10+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2021-11-12T11:47:23+00:00",
+        "modified": "2021-11-12T11:47:25+00:00",
+        "when": "2021-11-12T11:47:23+00:00",
+        "text": "The issue with Google Cloud infrastructure components has been resolved for all affected products as of Friday, 2021-11-12 03:38 US/Pacific.\nIf you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2021-11-12T09:57:56+00:00",
+        "modified": "2021-11-12T09:57:58+00:00",
+        "when": "2021-11-12T09:57:56+00:00",
+        "text": "Summary: Issue with Eventarc\nDescription: beginning at Friday, 2021-11-12 00:36 US/Pacific US/Pacific\nWe are experiencing an issue with Google Cloud components.\nOur engineering team continues to investigate the issue.\nFor regular status updates, please follow: https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7\nDiagnosis: None at this time\nWorkaround: None at this time",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": []
+      }
+    ],
+    "most_recent_update": {
+      "created": "2021-11-13T00:36:10+00:00",
+      "modified": "2021-11-13T01:13:29+00:00",
+      "when": "2021-11-13T00:36:10+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 November 2021 00:30\n**Incident End:** 12 November 2021 02:14\n**Duration:** 1 hour 44 minutes\n**Affected Services and Features:**\n* Cloud Developer Tools\n* Cloud Endpoints\n* Cloud Eventarc\n* Google App Engine\n* Google Cloud Bigtable\n* Google Cloud Console\n* Google Cloud Infrastructure Components\n* Google Cloud Networking\n* Google Cloud SQL\n* Operations\n**Regions/Zones:** Europe\n**Description:**\nGoogle’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.\n**Customer Impact:**\n* Google Cloud Console - Affected customers in Europe were unable to load the console, or experienced timeouts.\n* Container Registry - Affected customers were unable to connect to the service using the API in europe-west1.\n* Cloud Bigtable - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Spanner - Affected customers in Europe experienced unavailable errors and latency for both data and admin operations.\n* Cloud Endpoints - Service was unavailable in europe-west1 and europe-west4.\n* Firebase Messaging - Affected customers experienced issues receiving notifications in asia-southeast1.\n* Cloud SQL - Affected customers experienced probe creation request failures in europe-west1, europe-west4, and europe-west5.\n* Cloud Eventarc - Affected customers were unable to create triggers in europe-west1.\nApp Engine - Affected customers experienced elevated errors in europe-west1.\n**Additional details:**\nThe error was caught within 4 minutes by automated safety systems, and further spread was slowed at this point. The issue was fully mitigated approximately 1hr 44m later, when our engineering team completed a rollout to disable the vulnerable code path. The issue will be fully prevented going forward via a root cause fix, which will complete rollout by 12 November 2021 21:00 US/Pacific.",
+      "status": "AVAILABLE",
+      "affected_locations": []
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "YaFawoMaXnqgY4keUBnW",
+    "service_name": "Eventarc",
+    "affected_products": [
+      {
+        "title": "Eventarc",
+        "id": "YaFawoMaXnqgY4keUBnW"
+      }
+    ],
+    "uri": "incidents/cJwQRK4bgybhu7nNQ5W4",
     "currently_affected_locations": [],
     "previously_affected_locations": []
   },
@@ -55975,118 +55975,6 @@
       }
     ],
     "uri": "incidents/gFhaHLtkkPrs5N5dNMRG",
-    "currently_affected_locations": [],
-    "previously_affected_locations": []
-  },
-  {
-    "id": "sCsR34eVfCzGQMGssusu",
-    "number": "16628408258355527882",
-    "begin": "2021-10-20T15:06:00+00:00",
-    "created": "2021-10-20T15:27:14+00:00",
-    "end": "2021-10-21T16:27:00+00:00",
-    "modified": "2022-03-29T18:43:47+00:00",
-    "external_desc": "Global: Issues with populating a UI element in Cloud Console for Cloud Run, Google Container Registry and Artifacts Registry",
-    "updates": [
-      {
-        "created": "2021-10-21T19:15:19+00:00",
-        "modified": "2021-10-21T19:15:19+00:00",
-        "when": "2021-10-21T19:15:19+00:00",
-        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 04 October 2021 16:20\n**Incident End:** 20 October 2021 11:24\n**Duration:** 15 days, 19 hours, 4 minutes\n**Affected Services and Features:**\nGoogle Cloud Build, Google Cloud Run, Google Container Registry, Artifacts Registry\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Run, Google Container Registry, and Artifacts Registry experienced issues displaying build and source provenance information in Cloud Console for 15 days, 19 hours, and 4 minutes. From preliminary analysis, the root cause of the issue was related to a recent deployment that introduced a new type of provenance and deprecated an old type. Engineers rolled back the deployment to resolve the issue.\n**Customer Impact:**\nBuild and source provenance for Cloud Build, Cloud Run, Container Registry, and Artifacts Registry were not being populated in Google Cloud Console.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-10-21T16:27:08+00:00",
-        "modified": "2021-10-21T16:27:09+00:00",
-        "when": "2021-10-21T16:27:08+00:00",
-        "text": "The issue with Container Analysis API has been resolved for all affected users as of Thursday, 2021-10-21 09:27 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-10-20T19:02:13+00:00",
-        "modified": "2021-10-20T19:02:14+00:00",
-        "when": "2021-10-20T19:02:13+00:00",
-        "text": "Summary: Global: Issues with populating a UI element in Cloud Console for Cloud Run, Google Container Registry and Artifacts Registry\nDescription: Mitigation work is currently underway by our engineering team\nThe mitigation is expected to complete by Thursday, 2021-10-21 and\nWe will provide more information by Thursday, 2021-10-21 12:00 US/Pacific.\nDiagnosis: Customers were able to look in the Cloud Run, Google Container Registry and Artifacts Registry UIs and see the build and source provenance info previously. This information is no longer being populated.\nWorkaround: For Cloud Run, there is no known workaround.\nFor Google Container Registry and Artifacts Registry, if you have a Cloud Build ID, you can use `gcloud build describe",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-10-20T17:38:43+00:00",
-        "modified": "2021-10-20T17:38:43+00:00",
-        "when": "2021-10-20T17:38:43+00:00",
-        "text": "Summary: Issues with Cloud Run - Mitigation start\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2021-10-20 12:30 US/Pacific.\nDiagnosis: Cloud customers using Cloud Run were able to look back in the UI and see the software source location of their Cloud Run runs, but they can no longer do so.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-10-20T16:55:54+00:00",
-        "modified": "2021-10-20T16:55:55+00:00",
-        "when": "2021-10-20T16:55:54+00:00",
-        "text": "Summary: Issues with Cloud Run - Mitigation start\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2021-10-20 10:48 US/Pacific.\nDiagnosis: Cloud customers using Cloud Run were able to look back in the UI and see the software source location of their Cloud Run runs, but they can no longer do so.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-10-20T15:57:47+00:00",
-        "modified": "2021-10-20T15:57:53+00:00",
-        "when": "2021-10-20T15:57:47+00:00",
-        "text": "Summary: Issues with Cloud Run - Our Engineering team is investigating the issue.\nDescription: We are experiencing an issue with Container Analysis API beginning at Wednesday, 2021-10-20 08:45:56 PDT\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2021-10-20 10:00 US/Pacific with current details.\nDiagnosis: Cloud customers using Cloud Run were able to look back in the UI and see the software source location of their Cloud Run runs, but they can no longer do so.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-10-20T15:30:54+00:00",
-        "modified": "2021-10-20T15:30:57+00:00",
-        "when": "2021-10-20T15:30:54+00:00",
-        "text": "Summary: Issues with Cloud Run - Our Engineering team is investigating the issue.\nDescription: We are experiencing an issue with Container Analysis API beginning at Wednesday, 2021-10-20 08:45:56 PDT\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2021-10-20 08:59 US/Pacific with current details.\nDiagnosis: Cloud customers using Cloud Run were able to look back in the UI and see the software source location of their Cloud Run runs, but they can no longer do so.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-10-20T15:27:11+00:00",
-        "modified": "2021-10-20T15:27:14+00:00",
-        "when": "2021-10-20T15:27:11+00:00",
-        "text": "Summary: Issues with Cloud Run - Our Engineering team is investigating the issue.\nDescription: We are experiencing an issue with Container Analysis API beginning at Wednesday, 2021-10-20 08:06:56 PDT\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2021-10-20 08:59 US/Pacific with current details.\nDiagnosis: Cloud customers using Cloud Run were able to look back in the UI and see the software source location of their Cloud Run runs, but they can no longer do so.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-10-21T19:15:19+00:00",
-      "modified": "2021-10-21T19:15:19+00:00",
-      "when": "2021-10-21T19:15:19+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 04 October 2021 16:20\n**Incident End:** 20 October 2021 11:24\n**Duration:** 15 days, 19 hours, 4 minutes\n**Affected Services and Features:**\nGoogle Cloud Build, Google Cloud Run, Google Container Registry, Artifacts Registry\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Run, Google Container Registry, and Artifacts Registry experienced issues displaying build and source provenance information in Cloud Console for 15 days, 19 hours, and 4 minutes. From preliminary analysis, the root cause of the issue was related to a recent deployment that introduced a new type of provenance and deprecated an old type. Engineers rolled back the deployment to resolve the issue.\n**Customer Impact:**\nBuild and source provenance for Cloud Build, Cloud Run, Container Registry, and Artifacts Registry were not being populated in Google Cloud Console.",
-      "status": "AVAILABLE",
-      "affected_locations": []
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Cloud Developer Tools",
-        "id": "BGJQ6jbGK4kUuBTQFZ1G"
-      },
-      {
-        "title": "Cloud Run",
-        "id": "9D7d2iNBQWN24zc1VamE"
-      },
-      {
-        "title": "Container Registry",
-        "id": "rECkDEKEadgZQkPefibM"
-      },
-      {
-        "title": "Artifact Registry",
-        "id": "QbBuuiRdsLpMr9WmGwm5"
-      },
-      {
-        "title": "Google Cloud Console",
-        "id": "Wdsr1n5vyDvCt78qEifm"
-      }
-    ],
-    "uri": "incidents/sCsR34eVfCzGQMGssusu",
     "currently_affected_locations": [],
     "previously_affected_locations": []
   }
