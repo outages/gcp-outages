@@ -141,9 +141,110 @@
     "begin": "2022-11-09T02:59:02+00:00",
     "created": "2022-11-09T03:27:02+00:00",
     "end": "2022-11-09T04:25:01+00:00",
-    "modified": "2022-11-09T04:25:01+00:00",
+    "modified": "2022-11-09T22:48:07+00:00",
     "external_desc": "We are experiencing issues in App Engine Flexible and Cloud Composer",
     "updates": [
+      {
+        "created": "2022-11-09T22:48:07+00:00",
+        "modified": "2022-11-09T22:48:07+00:00",
+        "when": "2022-11-09T22:48:07+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n**Affected Services and Features:**\nGoogle App Engine - App Engine Flexible\nGoogle Cloud Composer\n**Regions/Zones:** global\n**Description:**\nGoogle App Engine (GAE) Flexible and Google Cloud Composer operations (i.e. create, update, delete operations) had intermittent failures for customers for a total duration of 10 hours, 30 minutes globally.\nFrom preliminary analysis, the root cause of the issue wass slow response to deployment workflows from one of our data centers hosting a backend component that manages deployments.\nThe first two occurrences were self-solved by our automatic processes. While the investigations continued, the issue recurred multiple times. and the potential cause was identified and the traffic was directed away from the slow responding data center mitigating the issue on 09 November 2022 at 08:37 US/Pacific.\nDetailed information on occurrences:\n(All Times US/Pacific)\n**First Occurrence :** Impact Start: 08 November 2022 14:15 Impact End: 08 November 2022 15:05 Impact Duration: 50 minutes\n**Second Occurrence :** Impact Start: 08 November 2022 16:40 Impact End: 08 November 2022 19:37 Impact Duration: 2 hours, 57 minutes\n**Third Occurrence :** Impact Start: 09 November 2022 01:44 Impact End: 09 November 2022 08:27 Impact Duration: 6 hour, 43 minutes\n**Total Duration:** 10 hours, 30 minutes\n**Customer Impact:** * Google App Engine Flexible : 16% of GAE flexible projects may have experienced issues with create, update, delete operations. * Cloud Composer : Composer environment creation operations may have failed, typically with an error that mentions App Engine.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2022-11-09T04:25:00+00:00",
         "modified": "2022-11-09T04:25:02+00:00",
@@ -449,10 +550,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-11-09T04:25:00+00:00",
-      "modified": "2022-11-09T04:25:02+00:00",
-      "when": "2022-11-09T04:25:00+00:00",
-      "text": "The issue with Google App Engine, Google Cloud Composer has been resolved for all affected projects as of Tuesday, 2022-11-08 20:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-11-09T22:48:07+00:00",
+      "modified": "2022-11-09T22:48:07+00:00",
+      "when": "2022-11-09T22:48:07+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n**Affected Services and Features:**\nGoogle App Engine - App Engine Flexible\nGoogle Cloud Composer\n**Regions/Zones:** global\n**Description:**\nGoogle App Engine (GAE) Flexible and Google Cloud Composer operations (i.e. create, update, delete operations) had intermittent failures for customers for a total duration of 10 hours, 30 minutes globally.\nFrom preliminary analysis, the root cause of the issue wass slow response to deployment workflows from one of our data centers hosting a backend component that manages deployments.\nThe first two occurrences were self-solved by our automatic processes. While the investigations continued, the issue recurred multiple times. and the potential cause was identified and the traffic was directed away from the slow responding data center mitigating the issue on 09 November 2022 at 08:37 US/Pacific.\nDetailed information on occurrences:\n(All Times US/Pacific)\n**First Occurrence :** Impact Start: 08 November 2022 14:15 Impact End: 08 November 2022 15:05 Impact Duration: 50 minutes\n**Second Occurrence :** Impact Start: 08 November 2022 16:40 Impact End: 08 November 2022 19:37 Impact Duration: 2 hours, 57 minutes\n**Third Occurrence :** Impact Start: 09 November 2022 01:44 Impact End: 09 November 2022 08:27 Impact Duration: 6 hour, 43 minutes\n**Total Duration:** 10 hours, 30 minutes\n**Customer Impact:** * Google App Engine Flexible : 16% of GAE flexible projects may have experienced issues with create, update, delete operations. * Cloud Composer : Composer environment creation operations may have failed, typically with an error that mentions App Engine.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
