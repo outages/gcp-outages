@@ -355,12 +355,25 @@
   {
     "id": "w7D5XGtVfMGcdcg4Zzud",
     "number": "4973045402662852106",
-    "begin": "2022-11-09T14:47:00+00:00",
+    "begin": "2022-11-09T14:23:00+00:00",
     "created": "2022-11-09T15:11:28+00:00",
-    "end": "2022-11-09T15:40:00+00:00",
-    "modified": "2022-11-09T16:33:12+00:00",
+    "end": "2022-11-09T15:11:00+00:00",
+    "modified": "2022-11-10T22:09:56+00:00",
     "external_desc": "Firestore databases in nam5 multi-region are unable to issue any streaming reads/writes",
     "updates": [
+      {
+        "created": "2022-11-10T22:08:33+00:00",
+        "modified": "2022-11-10T22:08:33+00:00",
+        "when": "2022-11-10T22:08:33+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 November 2022 06:23\n**Incident End:** 09 November 2022 07:11\n**Duration:** 48 minutes\n**Affected Services and Features:**\nCloud Firestore\n**Regions/Zones:** Multi-region: nam5\n**Description:**\nCloud Firestore in nam5 were under-provisioned during the peak daily load for a period of 48 minutes. From preliminary analysis, the root cause of the issue is due to a bad configuration push, which left nam5 regions at reduced serving capacity and affected performance during peak load. Since the change was applied during nonpeak hours, the impact was not immediately observed.\n**Customer Impact:**\nCustomers using Firestore databases in the nam5 regions observed severe degradation in streaming read",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: nam5",
+            "id": "nam5"
+          }
+        ]
+      },
       {
         "created": "2022-11-09T15:40:53+00:00",
         "modified": "2022-11-09T15:40:59+00:00",
@@ -402,10 +415,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-11-09T15:40:53+00:00",
-      "modified": "2022-11-09T15:40:59+00:00",
-      "when": "2022-11-09T15:40:53+00:00",
-      "text": "The issue with Cloud Firestore has been resolved for all affected users as of Wednesday, 2022-11-09 07:15 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-11-10T22:08:33+00:00",
+      "modified": "2022-11-10T22:08:33+00:00",
+      "when": "2022-11-10T22:08:33+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 November 2022 06:23\n**Incident End:** 09 November 2022 07:11\n**Duration:** 48 minutes\n**Affected Services and Features:**\nCloud Firestore\n**Regions/Zones:** Multi-region: nam5\n**Description:**\nCloud Firestore in nam5 were under-provisioned during the peak daily load for a period of 48 minutes. From preliminary analysis, the root cause of the issue is due to a bad configuration push, which left nam5 regions at reduced serving capacity and affected performance during peak load. Since the change was applied during nonpeak hours, the impact was not immediately observed.\n**Customer Impact:**\nCustomers using Firestore databases in the nam5 regions observed severe degradation in streaming read",
       "status": "AVAILABLE",
       "affected_locations": [
         {
