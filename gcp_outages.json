@@ -2,12 +2,25 @@
   {
     "id": "RivmN5B2aPTZu8oftVDX",
     "number": "13353550342804735627",
-    "begin": "2022-12-01T13:06:56+00:00",
+    "begin": "2022-12-01T12:10:00+00:00",
     "created": "2022-12-01T13:08:42+00:00",
-    "end": "2022-12-01T13:22:00+00:00",
-    "modified": "2022-12-01T13:22:01+00:00",
+    "end": "2022-12-01T13:19:00+00:00",
+    "modified": "2022-12-01T19:44:16+00:00",
     "external_desc": "Monarch Tcube Query Availability drop in cloud_prod",
     "updates": [
+      {
+        "created": "2022-12-01T19:41:17+00:00",
+        "modified": "2022-12-01T19:43:58+00:00",
+        "when": "2022-12-01T19:41:17+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** December 1st, 2022 04:10\n**Incident End:** December 1st, 2022 05:19\n**Duration:** 1 hour, 09 minutes\n**Affected Services and Features:**\nGoogle Cloud Monitoring\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Monitoring experienced intermittent responses for failed repository data requests for 1 hour and 09 minutes. From preliminary analysis, the root cause of the issue was a component containing a permission change in database schema in a recent rollout. The issue was mitigated by rolling back to a previous good version in all zones.\n**Customer Impact:**\n- Affected customers may have received partial error notifications for repository data requests between 04:10 and 04:29.\n- Between 04:29 and 05:00, customers received complete failures to query repository data.\n- Between 05:00 and 05:19, while systems were recovering, customers received partial error notifications for repository data requests.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
       {
         "created": "2022-12-01T13:21:58+00:00",
         "modified": "2022-12-01T13:22:05+00:00",
@@ -26,12 +39,17 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-12-01T13:21:58+00:00",
-      "modified": "2022-12-01T13:22:05+00:00",
-      "when": "2022-12-01T13:21:58+00:00",
-      "text": "The issue with Cloud Monarch has been resolved for all affected users as of Thursday, 2022-12-01 05:19 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-12-01T19:41:17+00:00",
+      "modified": "2022-12-01T19:43:58+00:00",
+      "when": "2022-12-01T19:41:17+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** December 1st, 2022 04:10\n**Incident End:** December 1st, 2022 05:19\n**Duration:** 1 hour, 09 minutes\n**Affected Services and Features:**\nGoogle Cloud Monitoring\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Monitoring experienced intermittent responses for failed repository data requests for 1 hour and 09 minutes. From preliminary analysis, the root cause of the issue was a component containing a permission change in database schema in a recent rollout. The issue was mitigated by rolling back to a previous good version in all zones.\n**Customer Impact:**\n- Affected customers may have received partial error notifications for repository data requests between 04:10 and 04:29.\n- Between 04:29 and 05:00, customers received complete failures to query repository data.\n- Between 05:00 and 05:19, while systems were recovering, customers received partial error notifications for repository data requests.",
       "status": "AVAILABLE",
-      "affected_locations": []
+      "affected_locations": [
+        {
+          "title": "Global",
+          "id": "global"
+        }
+      ]
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
@@ -49,7 +67,12 @@
     ],
     "uri": "incidents/RivmN5B2aPTZu8oftVDX",
     "currently_affected_locations": [],
-    "previously_affected_locations": []
+    "previously_affected_locations": [
+      {
+        "title": "Global",
+        "id": "global"
+      }
+    ]
   },
   {
     "id": "2qH61fdyC5mGGtzqst5b",
