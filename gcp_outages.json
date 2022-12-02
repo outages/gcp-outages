@@ -2,12 +2,20 @@
   {
     "id": "qwswjQfmtWZ6XV8gryqE",
     "number": "7163286282817763465",
-    "begin": "2022-12-01T21:00:34+00:00",
+    "begin": "2022-12-01T20:20:00+00:00",
     "created": "2022-12-01T21:20:42+00:00",
-    "end": "2022-12-01T21:41:27+00:00",
-    "modified": "2022-12-01T21:41:27+00:00",
+    "end": "2022-12-01T21:36:00+00:00",
+    "modified": "2022-12-02T00:56:16+00:00",
     "external_desc": "App Engine Flexible Create Update and Delete endpoints failing",
     "updates": [
+      {
+        "created": "2022-12-02T00:55:38+00:00",
+        "modified": "2022-12-02T00:56:16+00:00",
+        "when": "2022-12-02T00:55:38+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 01 December 2022 12:20\n**Incident End:** 01 December 2022 13:36\n**Duration:** 1 hour, 16 minutes\n**Affected Services and Features:**\nGoogle App Engine Flexible\n**Regions/Zones:** Global\n**Description:**\nGoogle App Engine (GAE) Flexible deployments experienced elevated latency and error rates globally for a duration of 1 hour 16 minutes. From preliminary analysis, the root cause of the issue is due to 100% DEADLINE_EXCEEDED errors from a dependency service. Google engineering is continuing to investigate the matter, and we will update the final root cause analysis in the Mini Incident Report.\n**Customer Impact:**\n- Affected customers were unable to create, update and delete endpoints and received deadline exceeded errors.\n- Up to ~80% of GAE Flexible projects may have experienced issues with create, update, delete operations.\n---",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
       {
         "created": "2022-12-01T21:41:27+00:00",
         "modified": "2022-12-01T21:41:28+00:00",
@@ -26,10 +34,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-12-01T21:41:27+00:00",
-      "modified": "2022-12-01T21:41:28+00:00",
-      "when": "2022-12-01T21:41:27+00:00",
-      "text": "The issue with Google App Engine has been resolved for all affected projects as of Thursday, 2022-12-01 13:36 US/Pacific.\nAffected customers can now retry operations that were previously failing.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-12-02T00:55:38+00:00",
+      "modified": "2022-12-02T00:56:16+00:00",
+      "when": "2022-12-02T00:55:38+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 01 December 2022 12:20\n**Incident End:** 01 December 2022 13:36\n**Duration:** 1 hour, 16 minutes\n**Affected Services and Features:**\nGoogle App Engine Flexible\n**Regions/Zones:** Global\n**Description:**\nGoogle App Engine (GAE) Flexible deployments experienced elevated latency and error rates globally for a duration of 1 hour 16 minutes. From preliminary analysis, the root cause of the issue is due to 100% DEADLINE_EXCEEDED errors from a dependency service. Google engineering is continuing to investigate the matter, and we will update the final root cause analysis in the Mini Incident Report.\n**Customer Impact:**\n- Affected customers were unable to create, update and delete endpoints and received deadline exceeded errors.\n- Up to ~80% of GAE Flexible projects may have experienced issues with create, update, delete operations.\n---",
       "status": "AVAILABLE",
       "affected_locations": []
     },
