@@ -2,12 +2,25 @@
   {
     "id": "AY59eBBxFZnaZgUSYQUf",
     "number": "7765969240231966639",
-    "begin": "2022-12-14T12:02:39+00:00",
+    "begin": "2022-12-14T11:19:00+00:00",
     "created": "2022-12-14T12:17:10+00:00",
-    "end": "2022-12-14T14:31:36+00:00",
-    "modified": "2022-12-14T14:31:37+00:00",
+    "end": "2022-12-14T14:30:00+00:00",
+    "modified": "2022-12-14T20:22:14+00:00",
     "external_desc": "Logs delayed in europe-west3",
     "updates": [
+      {
+        "created": "2022-12-14T20:20:37+00:00",
+        "modified": "2022-12-14T20:20:37+00:00",
+        "when": "2022-12-14T20:20:37+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 14 December 2022 03:19\n**Incident End:** 14 December 2022 06:30\n**Duration:** 3 hours, 11 minutes\n**Affected Services and Features:**\nCloud Logging\nEventarc\nBigQuery\nGoogle Cloud Storage\nGoogle Cloud PubSub\n**Regions/Zones:** europe-west3\n**Description:**\nCloud Logging experienced elevated latency with log ingestion in europe-west3 for a duration of 3 hours, 11 minutes. From preliminary analysis, the root cause of the issue was due to an invalid cross project sink which resulted in a backlog of subscriber messages. The issue was fully mitigated once invalid sink was deleted and the backlog cleared.\nGoogle will be completing a comprehensive incident report in the following days that will provide a full root cause.\n**Customer Impact:**\n- Affected customers may have experienced delayed log entries in Log Explorer or other export destinations for the duration of the incident.\n---",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          }
+        ]
+      },
       {
         "created": "2022-12-14T14:31:33+00:00",
         "modified": "2022-12-14T14:31:41+00:00",
@@ -62,10 +75,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-12-14T14:31:33+00:00",
-      "modified": "2022-12-14T14:31:41+00:00",
-      "when": "2022-12-14T14:31:33+00:00",
-      "text": "The issue with Cloud Logging, Eventarc, Google BigQuery has been resolved for all affected users as of Wednesday, 2022-12-14 06:28 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-12-14T20:20:37+00:00",
+      "modified": "2022-12-14T20:20:37+00:00",
+      "when": "2022-12-14T20:20:37+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 14 December 2022 03:19\n**Incident End:** 14 December 2022 06:30\n**Duration:** 3 hours, 11 minutes\n**Affected Services and Features:**\nCloud Logging\nEventarc\nBigQuery\nGoogle Cloud Storage\nGoogle Cloud PubSub\n**Regions/Zones:** europe-west3\n**Description:**\nCloud Logging experienced elevated latency with log ingestion in europe-west3 for a duration of 3 hours, 11 minutes. From preliminary analysis, the root cause of the issue was due to an invalid cross project sink which resulted in a backlog of subscriber messages. The issue was fully mitigated once invalid sink was deleted and the backlog cleared.\nGoogle will be completing a comprehensive incident report in the following days that will provide a full root cause.\n**Customer Impact:**\n- Affected customers may have experienced delayed log entries in Log Explorer or other export destinations for the duration of the incident.\n---",
       "status": "AVAILABLE",
       "affected_locations": [
         {
@@ -94,6 +107,18 @@
       {
         "title": "Eventarc",
         "id": "YaFawoMaXnqgY4keUBnW"
+      },
+      {
+        "title": "Google Cloud Pub/Sub",
+        "id": "dFjdLh2v6zuES6t9ADCB"
+      },
+      {
+        "title": "Google App Engine",
+        "id": "kchyUtnkMHJWaAva8aYc"
+      },
+      {
+        "title": "Google Cloud Storage",
+        "id": "UwaYoXQ5bHYHG6EdiPB8"
       }
     ],
     "uri": "incidents/AY59eBBxFZnaZgUSYQUf",
