@@ -1,5 +1,44 @@
 [
   {
+    "id": "XVKbXexZo95xs4svN6wm",
+    "number": "13526003974639080338",
+    "begin": "2022-12-15T21:19:48+00:00",
+    "created": "2022-12-15T21:39:22+00:00",
+    "modified": "2022-12-15T21:39:22+00:00",
+    "external_desc": "Global: Cloud Bigtable Federated queries are returning error for VPC-SC customers",
+    "updates": [
+      {
+        "created": "2022-12-15T21:39:15+00:00",
+        "modified": "2022-12-15T21:39:23+00:00",
+        "when": "2022-12-15T21:39:15+00:00",
+        "text": "Summary: Global: Cloud Bigtable Federated queries are returning error for VPC-SC customers\nDescription: We are experiencing an issue with Google Cloud Bigtable beginning at Thursday, 2022-12-15 13:19 US/Pacific.\nVPC-SC customer using Cloud Bigtable Federated queries will receive PERMISSION_DENIED.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2022-12-15 15:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: VPC-SC customer using Cloud Bigtable Federated queries will receive PERMISSION_DENIED.\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": []
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-12-15T21:39:15+00:00",
+      "modified": "2022-12-15T21:39:23+00:00",
+      "when": "2022-12-15T21:39:15+00:00",
+      "text": "Summary: Global: Cloud Bigtable Federated queries are returning error for VPC-SC customers\nDescription: We are experiencing an issue with Google Cloud Bigtable beginning at Thursday, 2022-12-15 13:19 US/Pacific.\nVPC-SC customer using Cloud Bigtable Federated queries will receive PERMISSION_DENIED.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2022-12-15 15:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: VPC-SC customer using Cloud Bigtable Federated queries will receive PERMISSION_DENIED.\nWorkaround: None at this time.",
+      "status": "SERVICE_INFORMATION",
+      "affected_locations": []
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "LfZSuE3xdQU46YMFV5fy",
+    "service_name": "Google Cloud Bigtable",
+    "affected_products": [
+      {
+        "title": "Google Cloud Bigtable",
+        "id": "LfZSuE3xdQU46YMFV5fy"
+      }
+    ],
+    "uri": "incidents/XVKbXexZo95xs4svN6wm",
+    "currently_affected_locations": [],
+    "previously_affected_locations": []
+  },
+  {
     "id": "HdrPC498EDhPMm1DCDhT",
     "number": "16828021708050818960",
     "begin": "2022-12-15T11:53:09+00:00",
@@ -11505,6 +11544,100 @@
     ]
   },
   {
+    "id": "fMoBTKwAsJdvLrxXusAB",
+    "number": "7984776864928624241",
+    "begin": "2022-11-10T08:04:00+00:00",
+    "created": "2022-11-10T16:17:43+00:00",
+    "end": "2022-11-10T16:07:00+00:00",
+    "modified": "2022-11-10T22:44:02+00:00",
+    "external_desc": "Google BigQuery: Customers may get INTERNAL_ERROR when running import jobs in regions/europe-west1",
+    "updates": [
+      {
+        "created": "2022-11-10T22:43:42+00:00",
+        "modified": "2022-11-10T22:43:42+00:00",
+        "when": "2022-11-10T22:43:42+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 10 November 2022 00:04\n**Incident End:** 10 November 2022 08:07\n**Duration:** 8 hours, 3 minutes\n**Affected Services and Features:**\nGoogle Cloud Storage\nGoogle BigQuery\n**Regions/Zones:** europe-west1\n**Description:**\nGoogle Cloud Storage experienced intermittent unavailability errors for a period of 8 hours and 3 minutes in europe-west1. From a preliminary analysis, the root cause of the issue was related to a recent change to network traffic routing. This change was rolled back to successfully mitigate the issue. Google will be providing a full Incident Report that will provide additional root cause information.\n**Customer Impact:**\n- Google Cloud Storage customers would have received HTTP 503 errors for read/write operations in europe-west1. Metadata operations such as object listing continued to work successfully.\n- Google BigQuery customers may have received “INTERNAL_ERROR” when running import jobs in europe-west1 during the impact window.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          }
+        ]
+      },
+      {
+        "created": "2022-11-10T16:22:16+00:00",
+        "modified": "2022-11-10T16:22:21+00:00",
+        "when": "2022-11-10T16:22:16+00:00",
+        "text": "The issue with Google BigQuery has been resolved for all affected users as of Thursday, 2022-11-10 08:22 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          }
+        ]
+      },
+      {
+        "created": "2022-11-10T16:18:52+00:00",
+        "modified": "2022-11-10T16:19:03+00:00",
+        "when": "2022-11-10T16:18:52+00:00",
+        "text": "Summary: Google BigQuery: Customers may get INTERNAL_ERROR when running import jobs in regions/europe-west1\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2022-11-10 09:30 US/Pacific.\nWe will provide more information by Thursday, 2022-11-10 09:30 US/Pacific.\nDiagnosis: Customers may get INTERNAL_ERROR when running import jobs\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          }
+        ]
+      },
+      {
+        "created": "2022-11-10T16:17:36+00:00",
+        "modified": "2022-11-10T16:17:45+00:00",
+        "when": "2022-11-10T16:17:36+00:00",
+        "text": "Summary: Google BigQuery: Customers may get INTERNAL_ERROR when running import jobs in regions/europe-west1\nDescription: We are experiencing an issue with Google BigQuery.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2022-11-10 08:50 US/Pacific with current details.\nDiagnosis: Customers may get INTERNAL_ERROR when running import jobs\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-11-10T22:43:42+00:00",
+      "modified": "2022-11-10T22:43:42+00:00",
+      "when": "2022-11-10T22:43:42+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 10 November 2022 00:04\n**Incident End:** 10 November 2022 08:07\n**Duration:** 8 hours, 3 minutes\n**Affected Services and Features:**\nGoogle Cloud Storage\nGoogle BigQuery\n**Regions/Zones:** europe-west1\n**Description:**\nGoogle Cloud Storage experienced intermittent unavailability errors for a period of 8 hours and 3 minutes in europe-west1. From a preliminary analysis, the root cause of the issue was related to a recent change to network traffic routing. This change was rolled back to successfully mitigate the issue. Google will be providing a full Incident Report that will provide additional root cause information.\n**Customer Impact:**\n- Google Cloud Storage customers would have received HTTP 503 errors for read/write operations in europe-west1. Metadata operations such as object listing continued to work successfully.\n- Google BigQuery customers may have received “INTERNAL_ERROR” when running import jobs in europe-west1 during the impact window.",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Belgium (europe-west1)",
+          "id": "europe-west1"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "9CcrhHUcFevXPSVaSxkf",
+    "service_name": "Google BigQuery",
+    "affected_products": [
+      {
+        "title": "Google BigQuery",
+        "id": "9CcrhHUcFevXPSVaSxkf"
+      }
+    ],
+    "uri": "incidents/fMoBTKwAsJdvLrxXusAB",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Belgium (europe-west1)",
+        "id": "europe-west1"
+      }
+    ]
+  },
+  {
     "id": "NXMPMbVyi51BMicBX3ga",
     "number": "5306905491320904900",
     "begin": "2022-11-10T08:04:00+00:00",
@@ -11642,100 +11775,6 @@
       }
     ],
     "uri": "incidents/NXMPMbVyi51BMicBX3ga",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Belgium (europe-west1)",
-        "id": "europe-west1"
-      }
-    ]
-  },
-  {
-    "id": "fMoBTKwAsJdvLrxXusAB",
-    "number": "7984776864928624241",
-    "begin": "2022-11-10T08:04:00+00:00",
-    "created": "2022-11-10T16:17:43+00:00",
-    "end": "2022-11-10T16:07:00+00:00",
-    "modified": "2022-11-10T22:44:02+00:00",
-    "external_desc": "Google BigQuery: Customers may get INTERNAL_ERROR when running import jobs in regions/europe-west1",
-    "updates": [
-      {
-        "created": "2022-11-10T22:43:42+00:00",
-        "modified": "2022-11-10T22:43:42+00:00",
-        "when": "2022-11-10T22:43:42+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 10 November 2022 00:04\n**Incident End:** 10 November 2022 08:07\n**Duration:** 8 hours, 3 minutes\n**Affected Services and Features:**\nGoogle Cloud Storage\nGoogle BigQuery\n**Regions/Zones:** europe-west1\n**Description:**\nGoogle Cloud Storage experienced intermittent unavailability errors for a period of 8 hours and 3 minutes in europe-west1. From a preliminary analysis, the root cause of the issue was related to a recent change to network traffic routing. This change was rolled back to successfully mitigate the issue. Google will be providing a full Incident Report that will provide additional root cause information.\n**Customer Impact:**\n- Google Cloud Storage customers would have received HTTP 503 errors for read/write operations in europe-west1. Metadata operations such as object listing continued to work successfully.\n- Google BigQuery customers may have received “INTERNAL_ERROR” when running import jobs in europe-west1 during the impact window.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          }
-        ]
-      },
-      {
-        "created": "2022-11-10T16:22:16+00:00",
-        "modified": "2022-11-10T16:22:21+00:00",
-        "when": "2022-11-10T16:22:16+00:00",
-        "text": "The issue with Google BigQuery has been resolved for all affected users as of Thursday, 2022-11-10 08:22 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          }
-        ]
-      },
-      {
-        "created": "2022-11-10T16:18:52+00:00",
-        "modified": "2022-11-10T16:19:03+00:00",
-        "when": "2022-11-10T16:18:52+00:00",
-        "text": "Summary: Google BigQuery: Customers may get INTERNAL_ERROR when running import jobs in regions/europe-west1\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2022-11-10 09:30 US/Pacific.\nWe will provide more information by Thursday, 2022-11-10 09:30 US/Pacific.\nDiagnosis: Customers may get INTERNAL_ERROR when running import jobs\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          }
-        ]
-      },
-      {
-        "created": "2022-11-10T16:17:36+00:00",
-        "modified": "2022-11-10T16:17:45+00:00",
-        "when": "2022-11-10T16:17:36+00:00",
-        "text": "Summary: Google BigQuery: Customers may get INTERNAL_ERROR when running import jobs in regions/europe-west1\nDescription: We are experiencing an issue with Google BigQuery.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2022-11-10 08:50 US/Pacific with current details.\nDiagnosis: Customers may get INTERNAL_ERROR when running import jobs\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-11-10T22:43:42+00:00",
-      "modified": "2022-11-10T22:43:42+00:00",
-      "when": "2022-11-10T22:43:42+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 10 November 2022 00:04\n**Incident End:** 10 November 2022 08:07\n**Duration:** 8 hours, 3 minutes\n**Affected Services and Features:**\nGoogle Cloud Storage\nGoogle BigQuery\n**Regions/Zones:** europe-west1\n**Description:**\nGoogle Cloud Storage experienced intermittent unavailability errors for a period of 8 hours and 3 minutes in europe-west1. From a preliminary analysis, the root cause of the issue was related to a recent change to network traffic routing. This change was rolled back to successfully mitigate the issue. Google will be providing a full Incident Report that will provide additional root cause information.\n**Customer Impact:**\n- Google Cloud Storage customers would have received HTTP 503 errors for read/write operations in europe-west1. Metadata operations such as object listing continued to work successfully.\n- Google BigQuery customers may have received “INTERNAL_ERROR” when running import jobs in europe-west1 during the impact window.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Belgium (europe-west1)",
-          "id": "europe-west1"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
-    "service_key": "9CcrhHUcFevXPSVaSxkf",
-    "service_name": "Google BigQuery",
-    "affected_products": [
-      {
-        "title": "Google BigQuery",
-        "id": "9CcrhHUcFevXPSVaSxkf"
-      }
-    ],
-    "uri": "incidents/fMoBTKwAsJdvLrxXusAB",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
