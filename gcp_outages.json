@@ -4,9 +4,46 @@
     "number": "12366501006419766905",
     "begin": "2022-12-15T00:47:09+00:00",
     "created": "2022-12-15T03:44:05+00:00",
-    "modified": "2022-12-15T03:44:05+00:00",
+    "modified": "2022-12-15T03:56:17+00:00",
     "external_desc": "Cloud Monitoring: Missing Bigtable Replication Metrics",
     "updates": [
+      {
+        "created": "2022-12-15T03:56:17+00:00",
+        "modified": "2022-12-15T03:56:23+00:00",
+        "when": "2022-12-15T03:56:17+00:00",
+        "text": "Summary: Cloud Monitoring: Missing Bigtable Replication Metrics\nDescription: We are experiencing an issue with Google Cloud Bigtable Metrics. CPU Load Metrics are impacted and could show the CPU Load as zero in the impacted locations. Customers who are periodically scaling their clusters based on the CPU Load Metrics will be operating on wrong data. Replication metrics are also affected for selected zones.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2022-12-14 22:00 US/Pacific with current details.\nDiagnosis: Customers may be missing data in Cloud Monitoring for the following metrics:\n- bigtable.googleapis.com/cluster/cpu_load,\n- bigtable.googleapis.com/replication/latency,\n- bigtable.googleapis.com/replication/max_delay\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2022-12-15T03:43:59+00:00",
         "modified": "2022-12-15T03:44:06+00:00",
@@ -46,10 +83,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-12-15T03:43:59+00:00",
-      "modified": "2022-12-15T03:44:06+00:00",
-      "when": "2022-12-15T03:43:59+00:00",
-      "text": "Summary: Cloud Monitoring: Missing Bigtable Replication Metrics\nDescription: We are experiencing an issue with Google Cloud Bigtable Metrics. CPU Load Metrics are impacted and could show the CPU Load as zero in the impacted locations. Customers who are periodically scaling their clusters based on the CPU Load Metrics will be operating on wrong data. Replication metrics are also affected for selected zones.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2022-12-14 22:00 US/Pacific with current details.\nDiagnosis: Customers may be missing data in Cloud Monitoring for the following metrics:\nbigtable.googleapis.com/replication/latency\nbigtable.googleapis.com/replication/max_delay\nWorkaround: None at this time.",
+      "created": "2022-12-15T03:56:17+00:00",
+      "modified": "2022-12-15T03:56:23+00:00",
+      "when": "2022-12-15T03:56:17+00:00",
+      "text": "Summary: Cloud Monitoring: Missing Bigtable Replication Metrics\nDescription: We are experiencing an issue with Google Cloud Bigtable Metrics. CPU Load Metrics are impacted and could show the CPU Load as zero in the impacted locations. Customers who are periodically scaling their clusters based on the CPU Load Metrics will be operating on wrong data. Replication metrics are also affected for selected zones.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2022-12-14 22:00 US/Pacific with current details.\nDiagnosis: Customers may be missing data in Cloud Monitoring for the following metrics:\n- bigtable.googleapis.com/cluster/cpu_load,\n- bigtable.googleapis.com/replication/latency,\n- bigtable.googleapis.com/replication/max_delay\nWorkaround: None at this time.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
