@@ -1551,9 +1551,39 @@
     "number": "3410666013323526593",
     "begin": "2022-12-14T00:51:32+00:00",
     "created": "2022-12-16T00:27:48+00:00",
-    "modified": "2022-12-16T16:47:13+00:00",
+    "end": "2022-12-16T20:55:44+00:00",
+    "modified": "2022-12-16T20:55:44+00:00",
     "external_desc": "Calico Node pods failing to start and crash-looping",
     "updates": [
+      {
+        "created": "2022-12-16T20:55:43+00:00",
+        "modified": "2022-12-16T20:55:45+00:00",
+        "when": "2022-12-16T20:55:43+00:00",
+        "text": "The issue with Google Kubernetes Engine has been resolved for all affected projects as of Friday, 2022-12-16 11:00 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          }
+        ]
+      },
       {
         "created": "2022-12-16T16:47:13+00:00",
         "modified": "2022-12-16T16:47:20+00:00",
@@ -1614,11 +1644,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-12-16T16:47:13+00:00",
-      "modified": "2022-12-16T16:47:20+00:00",
-      "when": "2022-12-16T16:47:13+00:00",
-      "text": "Summary: Calico Node pods failing to start and crash-looping\nDescription: We believe the issue with Google Kubernetes Engine is partially resolved.\nFull resolution is expected to complete by Friday, 2022-12-23 17:00 US/Pacific.\nWe will provide an update by Friday, 2022-12-16 17:00 US/Pacific with current details.\nDiagnosis: Customers may observe their calico node pods failing to start and crash-looping indefinitely on GKE 1.24.7+ and 1.25.3+. This issue has impact on GKE versions with nodelocaldns enabled.\nWorkaround: Customers may disable nodelocaldns. Customers may also raise a support ticket with Google to patch the impacted clusters.",
-      "status": "SERVICE_INFORMATION",
+      "created": "2022-12-16T20:55:43+00:00",
+      "modified": "2022-12-16T20:55:45+00:00",
+      "when": "2022-12-16T20:55:43+00:00",
+      "text": "The issue with Google Kubernetes Engine has been resolved for all affected projects as of Friday, 2022-12-16 11:00 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
       "affected_locations": [
         {
           "title": "Belgium (europe-west1)",
@@ -1653,7 +1683,8 @@
       }
     ],
     "uri": "incidents/sLoN8jK7DDdp5yVYPLuu",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Belgium (europe-west1)",
         "id": "europe-west1"
@@ -1674,8 +1705,7 @@
         "title": "South Carolina (us-east1)",
         "id": "us-east1"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "Hr38XKkuTE6WKbRMGNY8",
