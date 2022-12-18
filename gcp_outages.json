@@ -1886,6 +1886,299 @@
     ]
   },
   {
+    "id": "LdVmYRCym6X8E7ELZCtp",
+    "number": "5800175262100049001",
+    "begin": "2022-12-09T12:50:00+00:00",
+    "created": "2022-12-09T15:26:08+00:00",
+    "end": "2022-12-09T15:55:00+00:00",
+    "modified": "2022-12-09T23:12:22+00:00",
+    "external_desc": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
+    "updates": [
+      {
+        "created": "2022-12-09T23:08:25+00:00",
+        "modified": "2022-12-09T23:08:25+00:00",
+        "when": "2022-12-09T23:08:25+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 December 2022 04:50\n**Incident End:** 09 December 2022 07:55\n**Duration:** 3 hours, 5 minutes\n**Affected Services and Features:**\n- Artifact Registry: New repository creations\n- Google Cloud Composer: Composer environment creations\n- Google Cloud Storage: Operations that check IAM policies, especially CreateBucket\n- Google Kubernetes Engine: New cluster creation\n- Identity and Access Management: Not directly affected, only downstream services.\n**Regions/Zones:** australia-southeast1, asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-south2, asia-southeast1, asia-southeast2, australia-southeast2, and asia (Google Cloud multi-region).\n**Description:**\nGoogle Cloud Identity and Access Management (IAM) in the Asia multi-region experienced unavailability, which impacted several downstream Google Cloud services for a period of 3 hours and 17 minutes. Customers directly using IAM were not affected. The root cause was related to a configuration change with unintended consequences, which was immediately rolled back, once identified as the problem, thereby restoring services.\n**Customer Impact:**\nArtifact Registry\n- Affected customers would not have been able to create new repositories in the Asia multi-region. Customers would have received a failure message of “Request contains an invalid argument.”\nGoogle Cloud Composer\n- Affected customers in the Asia multi-region were not able to create Composer environments, receiving errors indicating either an issue with AppEngine or Google Kubernetes Engine (GKE) cluster creation.\nGoogle Cloud Storage\n- Affected customers would have experienced increased error rates when creating buckets in the Asia multi-region. GKE uses Google Cloud multi-regional buckets internally, so regional GKE customers throughout Asia Pacific were affected.\nGoogle Kubernetes Engine\n- Affected customers would have been unable to create new clusters in the affected regions.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          }
+        ]
+      },
+      {
+        "created": "2022-12-09T15:57:15+00:00",
+        "modified": "2022-12-09T15:57:30+00:00",
+        "when": "2022-12-09T15:57:15+00:00",
+        "text": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          }
+        ]
+      },
+      {
+        "created": "2022-12-09T15:26:04+00:00",
+        "modified": "2022-12-09T15:26:12+00:00",
+        "when": "2022-12-09T15:26:04+00:00",
+        "text": "Summary: Google Cloud Storage IAM_BACKEND_INVALID_ARGUMENT errors. INTERNAL_ERROR when performing ClusterCreation in Google Kubernetes Engine and Artifact Registry in Asia\nDescription: We are experiencing an issue with Artifact Registry, Google Cloud Storage, Google Kubernetes Engine.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 09:30 US/Pacific with current details.\nDiagnosis: Customers will be getting IAM_BACKEND_INVALID_ARGUMENT in the Asian regions for Google Cloud Storage\nCustomers will see INTERNAL_ERROR when performing ClusterCreation (GKE Cluster Server receives invalid_argument error when creating a GCS bucket as one step of cluster creation) for Google Kubernetes Engine\nCustomers will see INTERNAL_ERROR Artifact Registry\nWorkaround: Try using a non Asia region",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-12-09T23:08:25+00:00",
+      "modified": "2022-12-09T23:08:25+00:00",
+      "when": "2022-12-09T23:08:25+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 December 2022 04:50\n**Incident End:** 09 December 2022 07:55\n**Duration:** 3 hours, 5 minutes\n**Affected Services and Features:**\n- Artifact Registry: New repository creations\n- Google Cloud Composer: Composer environment creations\n- Google Cloud Storage: Operations that check IAM policies, especially CreateBucket\n- Google Kubernetes Engine: New cluster creation\n- Identity and Access Management: Not directly affected, only downstream services.\n**Regions/Zones:** australia-southeast1, asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-south2, asia-southeast1, asia-southeast2, australia-southeast2, and asia (Google Cloud multi-region).\n**Description:**\nGoogle Cloud Identity and Access Management (IAM) in the Asia multi-region experienced unavailability, which impacted several downstream Google Cloud services for a period of 3 hours and 17 minutes. Customers directly using IAM were not affected. The root cause was related to a configuration change with unintended consequences, which was immediately rolled back, once identified as the problem, thereby restoring services.\n**Customer Impact:**\nArtifact Registry\n- Affected customers would not have been able to create new repositories in the Asia multi-region. Customers would have received a failure message of “Request contains an invalid argument.”\nGoogle Cloud Composer\n- Affected customers in the Asia multi-region were not able to create Composer environments, receiving errors indicating either an issue with AppEngine or Google Kubernetes Engine (GKE) cluster creation.\nGoogle Cloud Storage\n- Affected customers would have experienced increased error rates when creating buckets in the Asia multi-region. GKE uses Google Cloud multi-regional buckets internally, so regional GKE customers throughout Asia Pacific were affected.\nGoogle Kubernetes Engine\n- Affected customers would have been unable to create new clusters in the affected regions.",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Taiwan (asia-east1)",
+          "id": "asia-east1"
+        },
+        {
+          "title": "Hong Kong (asia-east2)",
+          "id": "asia-east2"
+        },
+        {
+          "title": "Tokyo (asia-northeast1)",
+          "id": "asia-northeast1"
+        },
+        {
+          "title": "Osaka (asia-northeast2)",
+          "id": "asia-northeast2"
+        },
+        {
+          "title": "Seoul (asia-northeast3)",
+          "id": "asia-northeast3"
+        },
+        {
+          "title": "Mumbai (asia-south1)",
+          "id": "asia-south1"
+        },
+        {
+          "title": "Delhi (asia-south2)",
+          "id": "asia-south2"
+        },
+        {
+          "title": "Singapore (asia-southeast1)",
+          "id": "asia-southeast1"
+        },
+        {
+          "title": "Jakarta (asia-southeast2)",
+          "id": "asia-southeast2"
+        },
+        {
+          "title": "Sydney (australia-southeast1)",
+          "id": "australia-southeast1"
+        },
+        {
+          "title": "Melbourne (australia-southeast2)",
+          "id": "australia-southeast2"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Cloud Developer Tools",
+        "id": "BGJQ6jbGK4kUuBTQFZ1G"
+      },
+      {
+        "title": "Google Kubernetes Engine",
+        "id": "LCSbT57h59oR4W98NHuz"
+      },
+      {
+        "title": "Artifact Registry",
+        "id": "QbBuuiRdsLpMr9WmGwm5"
+      },
+      {
+        "title": "Google Cloud Storage",
+        "id": "UwaYoXQ5bHYHG6EdiPB8"
+      }
+    ],
+    "uri": "incidents/LdVmYRCym6X8E7ELZCtp",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Taiwan (asia-east1)",
+        "id": "asia-east1"
+      },
+      {
+        "title": "Hong Kong (asia-east2)",
+        "id": "asia-east2"
+      },
+      {
+        "title": "Tokyo (asia-northeast1)",
+        "id": "asia-northeast1"
+      },
+      {
+        "title": "Osaka (asia-northeast2)",
+        "id": "asia-northeast2"
+      },
+      {
+        "title": "Seoul (asia-northeast3)",
+        "id": "asia-northeast3"
+      },
+      {
+        "title": "Mumbai (asia-south1)",
+        "id": "asia-south1"
+      },
+      {
+        "title": "Delhi (asia-south2)",
+        "id": "asia-south2"
+      },
+      {
+        "title": "Singapore (asia-southeast1)",
+        "id": "asia-southeast1"
+      },
+      {
+        "title": "Jakarta (asia-southeast2)",
+        "id": "asia-southeast2"
+      },
+      {
+        "title": "Sydney (australia-southeast1)",
+        "id": "australia-southeast1"
+      },
+      {
+        "title": "Melbourne (australia-southeast2)",
+        "id": "australia-southeast2"
+      }
+    ]
+  },
+  {
     "id": "nrhani4w9dJbBEDUtfq8",
     "number": "9791549783998109328",
     "begin": "2022-12-09T12:50:00+00:00",
@@ -2484,299 +2777,6 @@
       }
     ],
     "uri": "incidents/k8vzThdsK2b8EviustGQ",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Taiwan (asia-east1)",
-        "id": "asia-east1"
-      },
-      {
-        "title": "Hong Kong (asia-east2)",
-        "id": "asia-east2"
-      },
-      {
-        "title": "Tokyo (asia-northeast1)",
-        "id": "asia-northeast1"
-      },
-      {
-        "title": "Osaka (asia-northeast2)",
-        "id": "asia-northeast2"
-      },
-      {
-        "title": "Seoul (asia-northeast3)",
-        "id": "asia-northeast3"
-      },
-      {
-        "title": "Mumbai (asia-south1)",
-        "id": "asia-south1"
-      },
-      {
-        "title": "Delhi (asia-south2)",
-        "id": "asia-south2"
-      },
-      {
-        "title": "Singapore (asia-southeast1)",
-        "id": "asia-southeast1"
-      },
-      {
-        "title": "Jakarta (asia-southeast2)",
-        "id": "asia-southeast2"
-      },
-      {
-        "title": "Sydney (australia-southeast1)",
-        "id": "australia-southeast1"
-      },
-      {
-        "title": "Melbourne (australia-southeast2)",
-        "id": "australia-southeast2"
-      }
-    ]
-  },
-  {
-    "id": "LdVmYRCym6X8E7ELZCtp",
-    "number": "5800175262100049001",
-    "begin": "2022-12-09T12:50:00+00:00",
-    "created": "2022-12-09T15:26:08+00:00",
-    "end": "2022-12-09T15:55:00+00:00",
-    "modified": "2022-12-09T23:12:22+00:00",
-    "external_desc": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
-    "updates": [
-      {
-        "created": "2022-12-09T23:08:25+00:00",
-        "modified": "2022-12-09T23:08:25+00:00",
-        "when": "2022-12-09T23:08:25+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 December 2022 04:50\n**Incident End:** 09 December 2022 07:55\n**Duration:** 3 hours, 5 minutes\n**Affected Services and Features:**\n- Artifact Registry: New repository creations\n- Google Cloud Composer: Composer environment creations\n- Google Cloud Storage: Operations that check IAM policies, especially CreateBucket\n- Google Kubernetes Engine: New cluster creation\n- Identity and Access Management: Not directly affected, only downstream services.\n**Regions/Zones:** australia-southeast1, asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-south2, asia-southeast1, asia-southeast2, australia-southeast2, and asia (Google Cloud multi-region).\n**Description:**\nGoogle Cloud Identity and Access Management (IAM) in the Asia multi-region experienced unavailability, which impacted several downstream Google Cloud services for a period of 3 hours and 17 minutes. Customers directly using IAM were not affected. The root cause was related to a configuration change with unintended consequences, which was immediately rolled back, once identified as the problem, thereby restoring services.\n**Customer Impact:**\nArtifact Registry\n- Affected customers would not have been able to create new repositories in the Asia multi-region. Customers would have received a failure message of “Request contains an invalid argument.”\nGoogle Cloud Composer\n- Affected customers in the Asia multi-region were not able to create Composer environments, receiving errors indicating either an issue with AppEngine or Google Kubernetes Engine (GKE) cluster creation.\nGoogle Cloud Storage\n- Affected customers would have experienced increased error rates when creating buckets in the Asia multi-region. GKE uses Google Cloud multi-regional buckets internally, so regional GKE customers throughout Asia Pacific were affected.\nGoogle Kubernetes Engine\n- Affected customers would have been unable to create new clusters in the affected regions.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Delhi (asia-south2)",
-            "id": "asia-south2"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          }
-        ]
-      },
-      {
-        "created": "2022-12-09T15:57:15+00:00",
-        "modified": "2022-12-09T15:57:30+00:00",
-        "when": "2022-12-09T15:57:15+00:00",
-        "text": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Delhi (asia-south2)",
-            "id": "asia-south2"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          }
-        ]
-      },
-      {
-        "created": "2022-12-09T15:26:04+00:00",
-        "modified": "2022-12-09T15:26:12+00:00",
-        "when": "2022-12-09T15:26:04+00:00",
-        "text": "Summary: Google Cloud Storage IAM_BACKEND_INVALID_ARGUMENT errors. INTERNAL_ERROR when performing ClusterCreation in Google Kubernetes Engine and Artifact Registry in Asia\nDescription: We are experiencing an issue with Artifact Registry, Google Cloud Storage, Google Kubernetes Engine.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 09:30 US/Pacific with current details.\nDiagnosis: Customers will be getting IAM_BACKEND_INVALID_ARGUMENT in the Asian regions for Google Cloud Storage\nCustomers will see INTERNAL_ERROR when performing ClusterCreation (GKE Cluster Server receives invalid_argument error when creating a GCS bucket as one step of cluster creation) for Google Kubernetes Engine\nCustomers will see INTERNAL_ERROR Artifact Registry\nWorkaround: Try using a non Asia region",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Delhi (asia-south2)",
-            "id": "asia-south2"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-12-09T23:08:25+00:00",
-      "modified": "2022-12-09T23:08:25+00:00",
-      "when": "2022-12-09T23:08:25+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 December 2022 04:50\n**Incident End:** 09 December 2022 07:55\n**Duration:** 3 hours, 5 minutes\n**Affected Services and Features:**\n- Artifact Registry: New repository creations\n- Google Cloud Composer: Composer environment creations\n- Google Cloud Storage: Operations that check IAM policies, especially CreateBucket\n- Google Kubernetes Engine: New cluster creation\n- Identity and Access Management: Not directly affected, only downstream services.\n**Regions/Zones:** australia-southeast1, asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-south2, asia-southeast1, asia-southeast2, australia-southeast2, and asia (Google Cloud multi-region).\n**Description:**\nGoogle Cloud Identity and Access Management (IAM) in the Asia multi-region experienced unavailability, which impacted several downstream Google Cloud services for a period of 3 hours and 17 minutes. Customers directly using IAM were not affected. The root cause was related to a configuration change with unintended consequences, which was immediately rolled back, once identified as the problem, thereby restoring services.\n**Customer Impact:**\nArtifact Registry\n- Affected customers would not have been able to create new repositories in the Asia multi-region. Customers would have received a failure message of “Request contains an invalid argument.”\nGoogle Cloud Composer\n- Affected customers in the Asia multi-region were not able to create Composer environments, receiving errors indicating either an issue with AppEngine or Google Kubernetes Engine (GKE) cluster creation.\nGoogle Cloud Storage\n- Affected customers would have experienced increased error rates when creating buckets in the Asia multi-region. GKE uses Google Cloud multi-regional buckets internally, so regional GKE customers throughout Asia Pacific were affected.\nGoogle Kubernetes Engine\n- Affected customers would have been unable to create new clusters in the affected regions.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Taiwan (asia-east1)",
-          "id": "asia-east1"
-        },
-        {
-          "title": "Hong Kong (asia-east2)",
-          "id": "asia-east2"
-        },
-        {
-          "title": "Tokyo (asia-northeast1)",
-          "id": "asia-northeast1"
-        },
-        {
-          "title": "Osaka (asia-northeast2)",
-          "id": "asia-northeast2"
-        },
-        {
-          "title": "Seoul (asia-northeast3)",
-          "id": "asia-northeast3"
-        },
-        {
-          "title": "Mumbai (asia-south1)",
-          "id": "asia-south1"
-        },
-        {
-          "title": "Delhi (asia-south2)",
-          "id": "asia-south2"
-        },
-        {
-          "title": "Singapore (asia-southeast1)",
-          "id": "asia-southeast1"
-        },
-        {
-          "title": "Jakarta (asia-southeast2)",
-          "id": "asia-southeast2"
-        },
-        {
-          "title": "Sydney (australia-southeast1)",
-          "id": "australia-southeast1"
-        },
-        {
-          "title": "Melbourne (australia-southeast2)",
-          "id": "australia-southeast2"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Cloud Developer Tools",
-        "id": "BGJQ6jbGK4kUuBTQFZ1G"
-      },
-      {
-        "title": "Google Kubernetes Engine",
-        "id": "LCSbT57h59oR4W98NHuz"
-      },
-      {
-        "title": "Artifact Registry",
-        "id": "QbBuuiRdsLpMr9WmGwm5"
-      },
-      {
-        "title": "Google Cloud Storage",
-        "id": "UwaYoXQ5bHYHG6EdiPB8"
-      }
-    ],
-    "uri": "incidents/LdVmYRCym6X8E7ELZCtp",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -75137,86 +75137,6 @@
       }
     ],
     "uri": "incidents/cBRgkAaxS8Rq3vvbPHaw",
-    "currently_affected_locations": [],
-    "previously_affected_locations": []
-  },
-  {
-    "id": "fniZhzAhYdcJuosEwwtZ",
-    "number": "13628602836948027359",
-    "begin": "2021-12-17T17:10:00+00:00",
-    "created": "2021-12-17T18:43:10+00:00",
-    "end": "2021-12-18T06:11:00+00:00",
-    "modified": "2021-12-20T18:05:19+00:00",
-    "external_desc": "us multiregion: Elevated tail latency on read operations for GCS buckets",
-    "updates": [
-      {
-        "created": "2021-12-20T18:04:45+00:00",
-        "modified": "2021-12-20T18:04:45+00:00",
-        "when": "2021-12-20T18:04:45+00:00",
-        "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 17 December 2021 09:10\n**Incident End:** 17 December 2021 22:11\n**Incident Duration:** 13 hours, 1 minute\n**Affected Services and Features:**\nGoogle Cloud Storage (GCS) - Read and Write object operations\n**Regions/Zones:** US multi-region\n**Description:**\nGoogle Cloud Storage buckets experienced elevated tail latency on read and write object operations for a total duration of 13 hours, 1 minute. From preliminary analysis, an internal job incorrectly placed a significant load on the backend database.\nThis originally presented as increased tailed latency. The database was significantly overloaded leading to elevated 5xx errors for a 47 minute period between 10:50 and 11:37. The 5XX errors were resolved at 11:37 by adding additional resources and stopping the offending job. However, the job caused an extended backlog of work, which took until 22:11 to clear.\n**Customer Impact:**\n* Elevated 5xx errors related to read timeouts between 10:50 and 11:37\n* Elevated tail latency on read operations from GCS buckets for the duration of the incident.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-12-17T20:49:56+00:00",
-        "modified": "2021-12-17T20:49:57+00:00",
-        "when": "2021-12-17T20:49:56+00:00",
-        "text": "The issue with Google Cloud Storage has been resolved for all affected users as of Friday, 2021-12-17 11:36 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-12-17T19:47:03+00:00",
-        "modified": "2021-12-17T19:47:05+00:00",
-        "when": "2021-12-17T19:47:03+00:00",
-        "text": "Summary: us multiregion: Elevated tail latency on read operations for GCS buckets\nDescription: We believe the issue with Google Cloud Storage is partially resolved and the error rates decreased significantly.\nWe do not have an ETA for full resolution at this point.\nWe will provide an update by Friday, 2021-12-17 13:30 US/Pacific with current details.\nDiagnosis: Affected customers may experience elevated tail latency on read operations for buckets in the us multiregion.\nWorkaround: Retrying failed or slow requests may succeed due to the relatively low error rate.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-12-17T19:22:47+00:00",
-        "modified": "2021-12-17T19:22:49+00:00",
-        "when": "2021-12-17T19:22:47+00:00",
-        "text": "Summary: us multiregion: Elevated tail latency on read operations for GCS buckets\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2021-12-17 13:00 US/Pacific.\nDiagnosis: Affected customers may experience elevated tail latency on read operations for buckets in the us multiregion.\nWorkaround: Retrying failed or slow requests may succeed due to the relatively low error rate.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-12-17T19:00:57+00:00",
-        "modified": "2021-12-17T19:01:04+00:00",
-        "when": "2021-12-17T19:00:57+00:00",
-        "text": "Summary: us: Elevated latency in us GCS buckets\nDescription: We are experiencing an issue with Google Cloud Storage beginning at Friday, 2021-12-17 09:00 US/Pacific.\nOur engineering team continues to investigate the issue. Current estimates indicates that 1% of GCS requests are impacted.\nWe will provide an update by Friday, 2021-12-17 13:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Affected customers may experience elevated tail latency on their buckets in the us multiregion.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      },
-      {
-        "created": "2021-12-17T18:43:08+00:00",
-        "modified": "2021-12-17T18:43:10+00:00",
-        "when": "2021-12-17T18:43:08+00:00",
-        "text": "Summary: us: Elevated latency in us GCS buckets\nDescription: We are investigating a potential issue with Google Cloud Storage.\nWe will provide more information by Friday, 2021-12-17 11:56 US/Pacific.\nDiagnosis: Affected customers may experience elevated latency on their buckets in the us multiregion.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      }
-    ],
-    "most_recent_update": {
-      "created": "2021-12-20T18:04:45+00:00",
-      "modified": "2021-12-20T18:04:45+00:00",
-      "when": "2021-12-20T18:04:45+00:00",
-      "text": "We apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 17 December 2021 09:10\n**Incident End:** 17 December 2021 22:11\n**Incident Duration:** 13 hours, 1 minute\n**Affected Services and Features:**\nGoogle Cloud Storage (GCS) - Read and Write object operations\n**Regions/Zones:** US multi-region\n**Description:**\nGoogle Cloud Storage buckets experienced elevated tail latency on read and write object operations for a total duration of 13 hours, 1 minute. From preliminary analysis, an internal job incorrectly placed a significant load on the backend database.\nThis originally presented as increased tailed latency. The database was significantly overloaded leading to elevated 5xx errors for a 47 minute period between 10:50 and 11:37. The 5XX errors were resolved at 11:37 by adding additional resources and stopping the offending job. However, the job caused an extended backlog of work, which took until 22:11 to clear.\n**Customer Impact:**\n* Elevated 5xx errors related to read timeouts between 10:50 and 11:37\n* Elevated tail latency on read operations from GCS buckets for the duration of the incident.",
-      "status": "AVAILABLE",
-      "affected_locations": []
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "UwaYoXQ5bHYHG6EdiPB8",
-    "service_name": "Google Cloud Storage",
-    "affected_products": [
-      {
-        "title": "Google Cloud Storage",
-        "id": "UwaYoXQ5bHYHG6EdiPB8"
-      }
-    ],
-    "uri": "incidents/fniZhzAhYdcJuosEwwtZ",
     "currently_affected_locations": [],
     "previously_affected_locations": []
   }
