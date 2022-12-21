@@ -7423,9 +7423,154 @@
     "begin": "2022-12-02T01:30:00+00:00",
     "created": "2022-12-02T09:13:44+00:00",
     "end": "2022-12-03T04:50:00+00:00",
-    "modified": "2022-12-05T21:07:30+00:00",
+    "modified": "2022-12-21T20:13:29+00:00",
     "external_desc": "Google Compute Engine. ssh fails with ERROR: (gcloud.compute.start-iap-tunnel) Error while connecting [4047: 'Failed to lookup instance']",
     "updates": [
+      {
+        "created": "2022-12-21T20:13:29+00:00",
+        "modified": "2022-12-21T20:13:29+00:00",
+        "when": "2022-12-21T20:13:29+00:00",
+        "text": "# Incident Report\n## Summary\nOn 1 December 2022 at 17:30 PT, Google Compute Engine (GCE) customers experienced issues connecting to instances via Secure Shell Protocol (SSH) through Identity Aware Proxy (IAP) [1] for a total duration of 22 hours and 46 minutes. To our GCE customers whose instances were impacted during this outage, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s performance and availability. We have conducted an internal investigation and are taking steps to improve our service.\n[1] https://cloud.google.com/iap\n## Background\nIAP assists in securing user access to registered web applications and cloud resources by providing centralized access control. IAP is the default method of connectivity when customers SSH through the Google Cloud Console or `gcloud` tool to GCE instances which do not have external IP addresses. The IAP connection method also can be specified by organization policy or `gcloud` invocation flags.\n## Root Cause\nBefore allowing a connection through SSH, IAP validates the user and connects to a backend system database. That database is used to collect instance and networking information for GCE instances for validation that the instance exists. This database is updated in real-time, as GCE instances are added, changed, or removed.\nDue to an issue with a global index associated with this backend system database, writes to the database were unable to keep up with instance updates from GCE and eventually caused the updates of GCE IAP information to lag. This meant that as new GCE instances were created, they were not being added to the database that IAP accessed. Therefore, IAP was unaware of the GCE instances and thus denied access to them when customers attempted to use SSH through the IAP Proxy.\n## Remediation and Prevention\nGoogle engineers were initially notified of the issue through a support case on 1 December 2022 at 22:44 PT and immediately started an investigation. At 01:55 PT on 2 December, engineers determined the problem to be an internal system backend database used for instance and networking information for GCE, and the issue was escalated to our database team. Database engineers attempted several mitigations starting at 03:01 PT but experienced limited success.\nAt 11:01 PT, engineers redirected IAP traffic to a standby replica of the system database, which temporarily mitigated the issue at 13:38 PT. At 17:45 PT, the issue recurred, as an existing rollout mistakenly redirected traffic back to the primary database, overriding the non-standard configuration being used to mitigate the issue at the time. Engineers again redirected traffic to the database replica, which fully mitigated and resolved the issue at 20:50 PT.\nGoogle is committed to preventing a repeat of this issue in the future and is completing the following actions:\nMake modifications to our alerting practices for IAP SSH to closely monitor the backlog of unprocessed instance creations and updates, enabling us to take corrective actions to mitigate any customer impact.\nRefactor our rollout vehicles to provide more fine-grained change deployment, so that unrelated configuration changes do not also deploy core service configuration or binaries for the IAP infrastructure. This will prevent the secondary issue recurrence, which occurred at 17:45 PT.\nImprove the performance of concurrent reads and writes to the same database rows by applying exclusive locks, which will serialize those transactions. This will effectively help eliminate transactions from becoming deadlocked and rejected.\n## Detailed Description of Impact\nOn 1 December 2022 from 17:30 PT to 2 December 2022 13:11 PT and again from 17:45 PT to 20:50 PT, GCE customers experienced issues connecting to instances via SSH through IAP.\nCustomers attempting to connect to GCE instances created or updated after 1 December 2022 at 17:30 PT using SSH through IAP would have experienced connection failures with “ERROR: (gcloud.compute.start-iap-tunnel) Error while connecting [4047: 'Failed to lookup instance'].”\nThis issue only impacted SSH access, and workloads continued to run correctly. Additionally, connections without IAP and connection to instances that were not modified after 1 December 2022 at 17:30 PT would not have been affected.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Dallas (us-south1)",
+            "id": "us-south1"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2022-12-05T21:06:21+00:00",
         "modified": "2022-12-05T21:06:21+00:00",
@@ -10763,10 +10908,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-12-05T21:06:21+00:00",
-      "modified": "2022-12-05T21:06:21+00:00",
-      "when": "2022-12-05T21:06:21+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**First Incident Start:** 01 December 2022 17:30\n**First Incident End:** 02 December 2022 13:11\n**First Duration:** 19 hours, 41 minutes\n**Second Incident Start:** 02 December 2022 17:45\n**Second Incident End:** 02 December 2022 20:50\n**Second Duration:** 3 hours, 5 minutes\n**Affected Services and Features:** Google Compute Engine\n**Regions/Zones:** Global\n**Description:**\nGoogle Compute Engine experienced issues connecting to instances via SSH through Identity Aware Proxy (IAP) for 19 hours and 41 minutes and 3 hours and 5 minutes. This issue only affected instances created or updated after 1 December 2022 at 17:30 PT. From preliminary analysis, the root cause of the issue was an internal distributed database that contained data critical to IAP access that was not updating correctly. We will be providing a full root cause analysis in an Incident Report that will be published in the next several days.\n**Customer Impact:**\nCustomers attempting to connect to GCE instances created or updated after 1 December 2022 at 17:30 PT using SSH through IAP would have experienced connection failures with “ERROR: (gcloud.compute.start-iap-tunnel) Error while connecting [4047: 'Failed to lookup instance'].”\nThis issue only impacted SSH access, and workloads continued to run correctly. Additionally, connections without IAP and connection to instances that were not modified after 1 December 2022 at 17:30 PT would not have been affected.",
+      "created": "2022-12-21T20:13:29+00:00",
+      "modified": "2022-12-21T20:13:29+00:00",
+      "when": "2022-12-21T20:13:29+00:00",
+      "text": "# Incident Report\n## Summary\nOn 1 December 2022 at 17:30 PT, Google Compute Engine (GCE) customers experienced issues connecting to instances via Secure Shell Protocol (SSH) through Identity Aware Proxy (IAP) [1] for a total duration of 22 hours and 46 minutes. To our GCE customers whose instances were impacted during this outage, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s performance and availability. We have conducted an internal investigation and are taking steps to improve our service.\n[1] https://cloud.google.com/iap\n## Background\nIAP assists in securing user access to registered web applications and cloud resources by providing centralized access control. IAP is the default method of connectivity when customers SSH through the Google Cloud Console or `gcloud` tool to GCE instances which do not have external IP addresses. The IAP connection method also can be specified by organization policy or `gcloud` invocation flags.\n## Root Cause\nBefore allowing a connection through SSH, IAP validates the user and connects to a backend system database. That database is used to collect instance and networking information for GCE instances for validation that the instance exists. This database is updated in real-time, as GCE instances are added, changed, or removed.\nDue to an issue with a global index associated with this backend system database, writes to the database were unable to keep up with instance updates from GCE and eventually caused the updates of GCE IAP information to lag. This meant that as new GCE instances were created, they were not being added to the database that IAP accessed. Therefore, IAP was unaware of the GCE instances and thus denied access to them when customers attempted to use SSH through the IAP Proxy.\n## Remediation and Prevention\nGoogle engineers were initially notified of the issue through a support case on 1 December 2022 at 22:44 PT and immediately started an investigation. At 01:55 PT on 2 December, engineers determined the problem to be an internal system backend database used for instance and networking information for GCE, and the issue was escalated to our database team. Database engineers attempted several mitigations starting at 03:01 PT but experienced limited success.\nAt 11:01 PT, engineers redirected IAP traffic to a standby replica of the system database, which temporarily mitigated the issue at 13:38 PT. At 17:45 PT, the issue recurred, as an existing rollout mistakenly redirected traffic back to the primary database, overriding the non-standard configuration being used to mitigate the issue at the time. Engineers again redirected traffic to the database replica, which fully mitigated and resolved the issue at 20:50 PT.\nGoogle is committed to preventing a repeat of this issue in the future and is completing the following actions:\nMake modifications to our alerting practices for IAP SSH to closely monitor the backlog of unprocessed instance creations and updates, enabling us to take corrective actions to mitigate any customer impact.\nRefactor our rollout vehicles to provide more fine-grained change deployment, so that unrelated configuration changes do not also deploy core service configuration or binaries for the IAP infrastructure. This will prevent the secondary issue recurrence, which occurred at 17:45 PT.\nImprove the performance of concurrent reads and writes to the same database rows by applying exclusive locks, which will serialize those transactions. This will effectively help eliminate transactions from becoming deadlocked and rejected.\n## Detailed Description of Impact\nOn 1 December 2022 from 17:30 PT to 2 December 2022 13:11 PT and again from 17:45 PT to 20:50 PT, GCE customers experienced issues connecting to instances via SSH through IAP.\nCustomers attempting to connect to GCE instances created or updated after 1 December 2022 at 17:30 PT using SSH through IAP would have experienced connection failures with “ERROR: (gcloud.compute.start-iap-tunnel) Error while connecting [4047: 'Failed to lookup instance'].”\nThis issue only impacted SSH access, and workloads continued to run correctly. Additionally, connections without IAP and connection to instances that were not modified after 1 December 2022 at 17:30 PT would not have been affected.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
