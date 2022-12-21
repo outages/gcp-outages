@@ -4,9 +4,22 @@
     "number": "13391111168765437972",
     "begin": "2022-12-21T21:33:19+00:00",
     "created": "2022-12-21T21:33:20+00:00",
-    "modified": "2022-12-21T21:33:20+00:00",
+    "modified": "2022-12-21T22:16:52+00:00",
     "external_desc": "us-central1: Degraded performance for Cloud Networking",
     "updates": [
+      {
+        "created": "2022-12-21T22:16:52+00:00",
+        "modified": "2022-12-21T22:16:53+00:00",
+        "when": "2022-12-21T22:16:52+00:00",
+        "text": "Summary: us-central1: Degraded performance for Cloud Networking\nDescription: We are experiencing an issue with Google Cloud Networking for the region us-central1.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2022-12-21 15:00 US/Pacific with current details.\nDiagnosis: Creations/deletions/modifications cannot be completed. Eg: New networking endpoints creations, VM auto-scaling, etc will be affected. End users would see packet drops or connectivity failures for new VMs and other networking endpoints.\nWorkaround: Avoid VM migrations and consider failing over the affected traffic to others regions.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
       {
         "created": "2022-12-21T21:33:20+00:00",
         "modified": "2022-12-21T21:33:21+00:00",
@@ -22,10 +35,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-12-21T21:33:20+00:00",
-      "modified": "2022-12-21T21:33:21+00:00",
-      "when": "2022-12-21T21:33:20+00:00",
-      "text": "Summary: us-central1: Degraded performance for Cloud Networking\nDescription: We are experiencing an issue with Google Cloud Networking.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2022-12-21 14:30 US/Pacific with current details.\nDiagnosis: Customers will observe that new endpoints or modifications to existing endpoints are not propagated. And users will observe packet drops.\nWorkaround: None at this time.",
+      "created": "2022-12-21T22:16:52+00:00",
+      "modified": "2022-12-21T22:16:53+00:00",
+      "when": "2022-12-21T22:16:52+00:00",
+      "text": "Summary: us-central1: Degraded performance for Cloud Networking\nDescription: We are experiencing an issue with Google Cloud Networking for the region us-central1.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2022-12-21 15:00 US/Pacific with current details.\nDiagnosis: Creations/deletions/modifications cannot be completed. Eg: New networking endpoints creations, VM auto-scaling, etc will be affected. End users would see packet drops or connectivity failures for new VMs and other networking endpoints.\nWorkaround: Avoid VM migrations and consider failing over the affected traffic to others regions.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
