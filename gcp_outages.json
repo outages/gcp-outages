@@ -5,9 +5,154 @@
     "begin": "2022-12-20T09:42:19+00:00",
     "created": "2022-12-20T09:54:28+00:00",
     "end": "2022-12-20T19:15:25+00:00",
-    "modified": "2022-12-20T19:15:25+00:00",
+    "modified": "2022-12-21T00:02:11+00:00",
     "external_desc": "Google engineers are investigating a global issue with Cloud Memorystore.",
     "updates": [
+      {
+        "created": "2022-12-21T00:02:11+00:00",
+        "modified": "2022-12-21T00:02:11+00:00",
+        "when": "2022-12-21T00:02:11+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n(All Times US/Pacific)\n**Incident Start:** 15 Dec 2022 18:30\n**Incident End:** 20 Dec 2022 09:54\n**Duration:** 4 days, 15 hours, 24 minutes\n**Affected Services and Features:**\nCloud Memory Store: GUI Instance Provisioning\n**Regions/Zones:** Global\n**Description:**\nCloud Memory Store users experienced sporadic levels of inability to create new instances from 15 Dec 2022 at 18:30 PT until 19 Dec 2022 16:00, when the failure rate reached 100%. The root cause for this issue was an errant configuration rollout.\n**Customer Impact:**\n* Affected customers were unable to create new instances, as the region field in the user interface (UI) could not be populated due to a metadata issue.\n* Affected users were able to work around the issue by using the “gcloud redis instance create” command to provision an instance and the gcloud redis regions list. * eg “gcloud --project=",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Dallas (us-south1)",
+            "id": "us-south1"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2022-12-20T19:15:24+00:00",
         "modified": "2022-12-20T19:15:26+00:00",
@@ -1315,10 +1460,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-12-20T19:15:24+00:00",
-      "modified": "2022-12-20T19:15:26+00:00",
-      "when": "2022-12-20T19:15:24+00:00",
-      "text": "The issue with Cloud Memorystore has been resolved for all affected users as of Tuesday, 2022-12-20 11:14 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2022-12-21T00:02:11+00:00",
+      "modified": "2022-12-21T00:02:11+00:00",
+      "when": "2022-12-21T00:02:11+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n(All Times US/Pacific)\n**Incident Start:** 15 Dec 2022 18:30\n**Incident End:** 20 Dec 2022 09:54\n**Duration:** 4 days, 15 hours, 24 minutes\n**Affected Services and Features:**\nCloud Memory Store: GUI Instance Provisioning\n**Regions/Zones:** Global\n**Description:**\nCloud Memory Store users experienced sporadic levels of inability to create new instances from 15 Dec 2022 at 18:30 PT until 19 Dec 2022 16:00, when the failure rate reached 100%. The root cause for this issue was an errant configuration rollout.\n**Customer Impact:**\n* Affected customers were unable to create new instances, as the region field in the user interface (UI) could not be populated due to a metadata issue.\n* Affected users were able to work around the issue by using the “gcloud redis instance create” command to provision an instance and the gcloud redis regions list. * eg “gcloud --project=",
       "status": "AVAILABLE",
       "affected_locations": [
         {
