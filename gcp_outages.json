@@ -4,9 +4,23 @@
     "number": "12582283450573497403",
     "begin": "2022-12-21T23:28:50+00:00",
     "created": "2022-12-21T23:44:28+00:00",
-    "modified": "2022-12-21T23:44:28+00:00",
-    "external_desc": "us-central1: Cloud Build High Queue Latency",
+    "end": "2022-12-22T00:23:12+00:00",
+    "modified": "2022-12-22T00:23:12+00:00",
+    "external_desc": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/5DLSHVRMa1TMATVb2sj5",
     "updates": [
+      {
+        "created": "2022-12-22T00:23:11+00:00",
+        "modified": "2022-12-22T00:23:14+00:00",
+        "when": "2022-12-22T00:23:11+00:00",
+        "text": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/5DLSHVRMa1TMATVb2sj5",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
       {
         "created": "2022-12-21T23:44:27+00:00",
         "modified": "2022-12-21T23:44:29+00:00",
@@ -22,11 +36,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-12-21T23:44:27+00:00",
-      "modified": "2022-12-21T23:44:29+00:00",
-      "when": "2022-12-21T23:44:27+00:00",
-      "text": "Summary: us-central1: Cloud Build High Queue Latency\nDescription: We are experiencing an issue with Cloud Build.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2022-12-21 17:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers using private pools, or nonstandard VM shapes in the shared pool, are observing high queue latencies.\nWorkaround: Build in a different region, or using a standard-sized VM in the shared pool.",
-      "status": "SERVICE_INFORMATION",
+      "created": "2022-12-22T00:23:11+00:00",
+      "modified": "2022-12-22T00:23:14+00:00",
+      "when": "2022-12-22T00:23:11+00:00",
+      "text": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/5DLSHVRMa1TMATVb2sj5",
+      "status": "AVAILABLE",
       "affected_locations": [
         {
           "title": "Iowa (us-central1)",
@@ -49,22 +63,61 @@
       }
     ],
     "uri": "incidents/Je11MRGkPuceuqEujT82",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Iowa (us-central1)",
         "id": "us-central1"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "5DLSHVRMa1TMATVb2sj5",
     "number": "13391111168765437972",
     "begin": "2022-12-21T21:33:19+00:00",
     "created": "2022-12-21T21:33:20+00:00",
-    "modified": "2022-12-21T22:47:48+00:00",
+    "modified": "2022-12-22T00:25:27+00:00",
     "external_desc": "us-central1: Degraded performance for Cloud Networking",
     "updates": [
+      {
+        "created": "2022-12-22T00:25:27+00:00",
+        "modified": "2022-12-22T00:25:29+00:00",
+        "when": "2022-12-22T00:25:27+00:00",
+        "text": "Summary: us-central1: Degraded performance for Cloud Networking\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2022-12-21 17:30 US/Pacific.\nDiagnosis: Cloud Networking: Creations/deletions/modifications cannot be completed. Eg: New networking endpoints creations, VM auto-scaling, etc will be affected. End users would see packet drops or connectivity failures for new VMs and other networking endpoints.\nGoogle Kubernetes Engine: Some GKE operations are experiencing issues with cluster creation, node pool creation, cluster autoscaling, node auto repair and node pool upgrades. New node creation during upgrades will fail and can cause upgrade operation failure however, it will not cause any disruption to running nodes.\nCloud Build: Customers using private pools, or nonstandard VM shapes in the shared pool, are observing high queue latencies.\nWorkaround: Avoid VM migrations and consider failing over the affected traffic to others regions.\nAffected Cloud Build customers may build in a different region, or use a standard-sized VM in the shared pool.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-12-22T00:16:12+00:00",
+        "modified": "2022-12-22T00:16:13+00:00",
+        "when": "2022-12-22T00:16:12+00:00",
+        "text": "Summary: us-central1: Degraded performance for Cloud Networking\nDescription: Some GKE operations are experiencing issues with cluster creation, node pool creation, cluster autoscaling, node auto repair and node pool upgrades.\nNew node creation during upgrades will fail and can cause upgrade operation failure however, it will not cause any disruption to running nodes.\nMitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2022-12-21 17:30 US/Pacific.\nDiagnosis: Creations/deletions/modifications cannot be completed. Eg: New networking endpoints creations, VM auto-scaling, etc will be affected. End users would see packet drops or connectivity failures for new VMs and other networking endpoints.\nWorkaround: Avoid VM migrations and consider failing over the affected traffic to others regions.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2022-12-21T23:53:23+00:00",
+        "modified": "2022-12-21T23:53:25+00:00",
+        "when": "2022-12-21T23:53:23+00:00",
+        "text": "Summary: us-central1: Degraded performance for Cloud Networking\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2022-12-21 17:00 US/Pacific.\nDiagnosis: Creations/deletions/modifications cannot be completed. Eg: New networking endpoints creations, VM auto-scaling, etc will be affected. End users would see packet drops or connectivity failures for new VMs and other networking endpoints.\nWorkaround: Avoid VM migrations and consider failing over the affected traffic to others regions.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
       {
         "created": "2022-12-21T22:47:48+00:00",
         "modified": "2022-12-21T22:47:50+00:00",
@@ -106,10 +159,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-12-21T22:47:48+00:00",
-      "modified": "2022-12-21T22:47:50+00:00",
-      "when": "2022-12-21T22:47:48+00:00",
-      "text": "Summary: us-central1: Degraded performance for Cloud Networking\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2022-12-21 16:00 US/Pacific.\nDiagnosis: Creations/deletions/modifications cannot be completed. Eg: New networking endpoints creations, VM auto-scaling, etc will be affected. End users would see packet drops or connectivity failures for new VMs and other networking endpoints.\nWorkaround: Avoid VM migrations and consider failing over the affected traffic to others regions.",
+      "created": "2022-12-22T00:25:27+00:00",
+      "modified": "2022-12-22T00:25:29+00:00",
+      "when": "2022-12-22T00:25:27+00:00",
+      "text": "Summary: us-central1: Degraded performance for Cloud Networking\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2022-12-21 17:30 US/Pacific.\nDiagnosis: Cloud Networking: Creations/deletions/modifications cannot be completed. Eg: New networking endpoints creations, VM auto-scaling, etc will be affected. End users would see packet drops or connectivity failures for new VMs and other networking endpoints.\nGoogle Kubernetes Engine: Some GKE operations are experiencing issues with cluster creation, node pool creation, cluster autoscaling, node auto repair and node pool upgrades. New node creation during upgrades will fail and can cause upgrade operation failure however, it will not cause any disruption to running nodes.\nCloud Build: Customers using private pools, or nonstandard VM shapes in the shared pool, are observing high queue latencies.\nWorkaround: Avoid VM migrations and consider failing over the affected traffic to others regions.\nAffected Cloud Build customers may build in a different region, or use a standard-sized VM in the shared pool.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
@@ -120,12 +173,24 @@
     },
     "status_impact": "SERVICE_INFORMATION",
     "severity": "low",
-    "service_key": "VNJxzcH58QmTt5H6pnT6",
-    "service_name": "Google Cloud Networking",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
     "affected_products": [
+      {
+        "title": "Cloud Developer Tools",
+        "id": "BGJQ6jbGK4kUuBTQFZ1G"
+      },
+      {
+        "title": "Google Kubernetes Engine",
+        "id": "LCSbT57h59oR4W98NHuz"
+      },
       {
         "title": "Google Cloud Networking",
         "id": "VNJxzcH58QmTt5H6pnT6"
+      },
+      {
+        "title": "Cloud Build",
+        "id": "fw8GzBdZdqy4THau7e1y"
       }
     ],
     "uri": "incidents/5DLSHVRMa1TMATVb2sj5",
