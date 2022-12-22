@@ -490,9 +490,23 @@
     "number": "13391111168765437972",
     "begin": "2022-12-21T21:33:19+00:00",
     "created": "2022-12-21T21:33:20+00:00",
-    "modified": "2022-12-22T02:06:25+00:00",
+    "end": "2022-12-22T03:26:20+00:00",
+    "modified": "2022-12-22T03:26:20+00:00",
     "external_desc": "us-central1: Degraded performance for Cloud Networking",
     "updates": [
+      {
+        "created": "2022-12-22T03:26:19+00:00",
+        "modified": "2022-12-22T03:26:21+00:00",
+        "when": "2022-12-22T03:26:19+00:00",
+        "text": "The issue with Cloud Build, Google Cloud Networking, Google Kubernetes Engine has been resolved for all affected users as of Wednesday, 2022-12-21 19:24 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
       {
         "created": "2022-12-22T02:06:25+00:00",
         "modified": "2022-12-22T02:06:29+00:00",
@@ -599,11 +613,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-12-22T02:06:25+00:00",
-      "modified": "2022-12-22T02:06:29+00:00",
-      "when": "2022-12-22T02:06:25+00:00",
-      "text": "Summary: us-central1: Degraded performance for Cloud Networking\nDescription: At this time we believe that impact to Google Kubernetes Engine and Cloud Build have been mitigated.\nMitigation work for Cloud Networking remains underway by our engineering team.\nWe do not have an ETA for full mitigation at this point.\nWe will provide more information by Wednesday, 2022-12-21 20:30 US/Pacific.\nDiagnosis: Cloud Networking: Creations/deletions/modifications cannot be completed. Eg: New networking endpoints creations, VM auto-scaling, etc will be affected. End users would see packet drops or connectivity failures for new VMs and other networking endpoints.\nGoogle Kubernetes Engine: Some GKE operations are experiencing issues with cluster creation, node pool creation, cluster autoscaling, node auto repair and node pool upgrades. New node creation during upgrades will fail and can cause upgrade operation failure however, it will not cause any disruption to running nodes.\nCloud Build: Customers using private pools, or nonstandard VM shapes in the shared pool, are observing high queue latencies.\nWorkaround: Avoid VM migrations and consider failing over the affected traffic to others regions.\nAffected Cloud Build customers may build in a different region, or use a standard-sized VM in the shared pool.",
-      "status": "SERVICE_INFORMATION",
+      "created": "2022-12-22T03:26:19+00:00",
+      "modified": "2022-12-22T03:26:21+00:00",
+      "when": "2022-12-22T03:26:19+00:00",
+      "text": "The issue with Cloud Build, Google Cloud Networking, Google Kubernetes Engine has been resolved for all affected users as of Wednesday, 2022-12-21 19:24 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
       "affected_locations": [
         {
           "title": "Iowa (us-central1)",
@@ -634,13 +648,13 @@
       }
     ],
     "uri": "incidents/5DLSHVRMa1TMATVb2sj5",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Iowa (us-central1)",
         "id": "us-central1"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "H5DnVWarEfFtncgky4KD",
