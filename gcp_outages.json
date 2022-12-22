@@ -4,9 +4,142 @@
     "number": "4953958643350726867",
     "begin": "2022-12-22T02:29:46+00:00",
     "created": "2022-12-22T02:29:49+00:00",
-    "modified": "2022-12-22T02:29:49+00:00",
+    "modified": "2022-12-22T15:16:15+00:00",
     "external_desc": "Incorrect Enterprise/High Scale latency metrics in the Cloud Filestore",
     "updates": [
+      {
+        "created": "2022-12-22T15:16:15+00:00",
+        "modified": "2022-12-22T15:16:26+00:00",
+        "when": "2022-12-22T15:16:15+00:00",
+        "text": "Summary: Incorrect Enterprise/High Scale latency metrics in the Cloud Filestore\nDescription: We are experiencing an issue with Cloud Filestore beginning at Thursday, 2022-12-22 00:00 US/Pacific.\nOur engineering has identified a fix and are in the process of creating minimum disruption roll out plan.\nWe will provide an update by Thursday, 2022-12-22 10:30 US/Pacific with current details.\nDiagnosis: The enterprise and high scale Cloud Filestore instances are misreporting average read and write latency metrics.\nWorkaround: While querying latency data, users need to 'multiply the value by 1000' to obtain the correct units.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2022-12-22T02:29:48+00:00",
         "modified": "2022-12-22T02:29:50+00:00",
@@ -142,10 +275,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-12-22T02:29:48+00:00",
-      "modified": "2022-12-22T02:29:50+00:00",
-      "when": "2022-12-22T02:29:48+00:00",
-      "text": "Summary: Incorrect Enterprise/High Scale latency metrics in the Cloud Filestore\nDescription: We are experiencing an issue with Cloud Filestore.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2022-12-22 08:00 US/Pacific with current details.\nDiagnosis: The enterprise and high scale Cloud Filestore instances are misreporting average read and write latency metrics.\nWorkaround: While querying latency data, users need to 'multiply the value by 1000' to obtain the correct units.",
+      "created": "2022-12-22T15:16:15+00:00",
+      "modified": "2022-12-22T15:16:26+00:00",
+      "when": "2022-12-22T15:16:15+00:00",
+      "text": "Summary: Incorrect Enterprise/High Scale latency metrics in the Cloud Filestore\nDescription: We are experiencing an issue with Cloud Filestore beginning at Thursday, 2022-12-22 00:00 US/Pacific.\nOur engineering has identified a fix and are in the process of creating minimum disruption roll out plan.\nWe will provide an update by Thursday, 2022-12-22 10:30 US/Pacific with current details.\nDiagnosis: The enterprise and high scale Cloud Filestore instances are misreporting average read and write latency metrics.\nWorkaround: While querying latency data, users need to 'multiply the value by 1000' to obtain the correct units.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
