@@ -4,9 +4,22 @@
     "number": "24986151459995357",
     "begin": "2023-01-04T12:34:35+00:00",
     "created": "2023-01-04T12:36:47+00:00",
-    "modified": "2023-01-04T13:18:58+00:00",
+    "modified": "2023-01-04T14:14:50+00:00",
     "external_desc": "Google App Engine app creation failing in australia-southeast1",
     "updates": [
+      {
+        "created": "2023-01-04T14:14:50+00:00",
+        "modified": "2023-01-04T14:14:56+00:00",
+        "when": "2023-01-04T14:14:50+00:00",
+        "text": "Summary: Google App Engine app creation failing in australia-southeast1\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Wednesday, 2023-01-04 07:30 US/Pacific.\nWe will provide more information by Wednesday, 2023-01-04 07:30 US/Pacific.\nDiagnosis: Customers receive INVALID_ARGUMENT error when trying to create App Engine application in australia-southeast1\nError message could also be generic::NOT_FOUND: Column not found: CreateTime is not a column in DatabaseMetadataReplicated\nWorkaround: Try deploying application in another region",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          }
+        ]
+      },
       {
         "created": "2023-01-04T13:18:58+00:00",
         "modified": "2023-01-04T13:19:05+00:00",
@@ -35,10 +48,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2023-01-04T13:18:58+00:00",
-      "modified": "2023-01-04T13:19:05+00:00",
-      "when": "2023-01-04T13:18:58+00:00",
-      "text": "Summary: Google App Engine app creation failing in australia-southeast1\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2023-01-04 06:30 US/Pacific.\nDiagnosis: Customers receive INVALID_ARGUMENT error when trying to create App Engine application in australia-southeast1\nError message could also be generic::NOT_FOUND: Column not found: CreateTime is not a column in DatabaseMetadataReplicated\nWorkaround: Try deploying application in another region",
+      "created": "2023-01-04T14:14:50+00:00",
+      "modified": "2023-01-04T14:14:56+00:00",
+      "when": "2023-01-04T14:14:50+00:00",
+      "text": "Summary: Google App Engine app creation failing in australia-southeast1\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Wednesday, 2023-01-04 07:30 US/Pacific.\nWe will provide more information by Wednesday, 2023-01-04 07:30 US/Pacific.\nDiagnosis: Customers receive INVALID_ARGUMENT error when trying to create App Engine application in australia-southeast1\nError message could also be generic::NOT_FOUND: Column not found: CreateTime is not a column in DatabaseMetadataReplicated\nWorkaround: Try deploying application in another region",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
