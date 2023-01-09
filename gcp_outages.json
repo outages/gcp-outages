@@ -4,9 +4,26 @@
     "number": "116855135038587970",
     "begin": "2023-01-09T14:05:56+00:00",
     "created": "2023-01-09T14:33:02+00:00",
-    "modified": "2023-01-09T16:01:02+00:00",
+    "modified": "2023-01-09T17:00:25+00:00",
     "external_desc": "Google engineers are investigating an issue with Cloud Scheduler",
     "updates": [
+      {
+        "created": "2023-01-09T17:00:25+00:00",
+        "modified": "2023-01-09T17:00:34+00:00",
+        "when": "2023-01-09T17:00:25+00:00",
+        "text": "Summary: Google engineers are investigating an issue with Cloud Scheduler\nDescription: We believe the issue with Google Cloud Scheduler, Google Cloud Tasks is resolved for jobs in us-east1.\nMitigation work is still currently underway by our engineering team for jobs in europe-west3.\nFull resolution is expected to complete by Monday, 2023-01-09 10:30 US/Pacific.\nWe will provide an update by Monday, 2023-01-09 10:30 US/Pacific with current details.\nDiagnosis: Customers may experience stalled Cloud Scheduler jobs in us-east1 and europe-west3.\nWorkaround: Customers are advised to use alternative regions to run their workloads.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          }
+        ]
+      },
       {
         "created": "2023-01-09T16:01:02+00:00",
         "modified": "2023-01-09T16:01:09+00:00",
@@ -329,10 +346,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2023-01-09T16:01:02+00:00",
-      "modified": "2023-01-09T16:01:09+00:00",
-      "when": "2023-01-09T16:01:02+00:00",
-      "text": "Summary: Google engineers are investigating an issue with Cloud Scheduler\nDescription: Mitigation work is still currently underway by our engineering team.\nEngineers have localised the issue to us-east1 and europe-west3\nETA for mitigation is approximately 10:00 US/Pacific.\nWe will provide more information by Monday, 2023-01-09 09:45 US/Pacific.\nDiagnosis: Customers may experience stalled Cloud Scheduler jobs in us-east1 and europe-west3.\nWorkaround: Customers are advised to use alternative regions to run their workloads.",
+      "created": "2023-01-09T17:00:25+00:00",
+      "modified": "2023-01-09T17:00:34+00:00",
+      "when": "2023-01-09T17:00:25+00:00",
+      "text": "Summary: Google engineers are investigating an issue with Cloud Scheduler\nDescription: We believe the issue with Google Cloud Scheduler, Google Cloud Tasks is resolved for jobs in us-east1.\nMitigation work is still currently underway by our engineering team for jobs in europe-west3.\nFull resolution is expected to complete by Monday, 2023-01-09 10:30 US/Pacific.\nWe will provide an update by Monday, 2023-01-09 10:30 US/Pacific with current details.\nDiagnosis: Customers may experience stalled Cloud Scheduler jobs in us-east1 and europe-west3.\nWorkaround: Customers are advised to use alternative regions to run their workloads.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
