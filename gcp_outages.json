@@ -1220,9 +1220,22 @@
     "number": "339732783123570111",
     "begin": "2023-01-12T11:36:50+00:00",
     "created": "2023-01-12T11:59:23+00:00",
-    "modified": "2023-01-12T12:14:53+00:00",
+    "modified": "2023-01-12T14:30:57+00:00",
     "external_desc": "Cloud Firestore latency in eur3",
     "updates": [
+      {
+        "created": "2023-01-12T14:30:57+00:00",
+        "modified": "2023-01-12T14:31:04+00:00",
+        "when": "2023-01-12T14:30:57+00:00",
+        "text": "Summary: Cloud Firestore latency in eur3\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2023-01-12 06:30 US/Pacific.\nWe will provide more information by Thursday, 2023-01-12 07:30 US/Pacific.\nDiagnosis: Customers searching a new listing in the Analytics Hub marketplace will see 404 errors when trying to open a dataset from search results.\nDatasets that customers have already subscribed to in the Analytics hub will work as expected.\nIf a customer knows the name of dataset they need from the marketplace, then can still access this from bigquery CLI\nWorkaround: Searching for Datasets using the Marketplace will work as expected.\nhttps://console.cloud.google.com/marketplace/browse?filter=category:big-data&filter=solution-type:dataset",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          }
+        ]
+      },
       {
         "created": "2023-01-12T12:03:13+00:00",
         "modified": "2023-01-12T12:14:22+00:00",
@@ -1251,15 +1264,15 @@
       }
     ],
     "most_recent_update": {
-      "created": "2023-01-12T12:03:13+00:00",
-      "modified": "2023-01-12T12:14:22+00:00",
-      "when": "2023-01-12T12:03:13+00:00",
-      "text": "Summary: Cloud Firestore latency in eur3\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2023-01-12 06:30 US/Pacific.\nWe will provide more information by Thursday, 2023-01-12 06:30 US/Pacific.\nDiagnosis: The Cloud Firestore customers in eur3 will experience elevated latency for all requests (up to 70ms), particularly commits. Other regions are not affected.\nWorkaround: None at this time.",
+      "created": "2023-01-12T14:30:57+00:00",
+      "modified": "2023-01-12T14:31:04+00:00",
+      "when": "2023-01-12T14:30:57+00:00",
+      "text": "Summary: Cloud Firestore latency in eur3\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2023-01-12 06:30 US/Pacific.\nWe will provide more information by Thursday, 2023-01-12 07:30 US/Pacific.\nDiagnosis: Customers searching a new listing in the Analytics Hub marketplace will see 404 errors when trying to open a dataset from search results.\nDatasets that customers have already subscribed to in the Analytics hub will work as expected.\nIf a customer knows the name of dataset they need from the marketplace, then can still access this from bigquery CLI\nWorkaround: Searching for Datasets using the Marketplace will work as expected.\nhttps://console.cloud.google.com/marketplace/browse?filter=category:big-data&filter=solution-type:dataset",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
-          "title": "Multi-region: eur3",
-          "id": "eur3"
+          "title": "Finland (europe-north1)",
+          "id": "europe-north1"
         }
       ]
     },
@@ -1276,11 +1289,16 @@
     "uri": "incidents/vDRSVs6Bjoejg4o8oXVz",
     "currently_affected_locations": [
       {
+        "title": "Finland (europe-north1)",
+        "id": "europe-north1"
+      }
+    ],
+    "previously_affected_locations": [
+      {
         "title": "Multi-region: eur3",
         "id": "eur3"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "xg2qrL1UuSJiPDZALJpu",
