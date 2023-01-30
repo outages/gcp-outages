@@ -1,12 +1,95 @@
 [
   {
+    "id": "6aPV6JSu9PSyJzgyGnV2",
+    "number": "16403002644494791708",
+    "begin": "2023-01-30T17:35:16+00:00",
+    "created": "2023-01-30T18:07:25+00:00",
+    "modified": "2023-01-30T18:07:25+00:00",
+    "external_desc": "Google Cloud Networking experiencing GCLB connection errors from virtual instances.",
+    "updates": [
+      {
+        "created": "2023-01-30T18:07:24+00:00",
+        "modified": "2023-01-30T18:07:26+00:00",
+        "when": "2023-01-30T18:07:24+00:00",
+        "text": "Summary: Google Cloud Networking experiencing GCLB connection errors from virtual instances.\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Monday, 2023-01-30 15:30 US/Pacific.\nWe will provide more information by Monday, 2023-01-30 11:30 US/Pacific.\nDiagnosis: Customers with instances in the affected zones that are trying to reach Google Cloud Load Balancers (GCLB) in some IP ranges may fail to connect.\nWorkaround: If the GCLB in use is under customer control, customer could try to remove and re-add the global address attached to the forwarding rule and get new IP from outside the affected range.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2023-01-30T18:07:24+00:00",
+      "modified": "2023-01-30T18:07:26+00:00",
+      "when": "2023-01-30T18:07:24+00:00",
+      "text": "Summary: Google Cloud Networking experiencing GCLB connection errors from virtual instances.\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Monday, 2023-01-30 15:30 US/Pacific.\nWe will provide more information by Monday, 2023-01-30 11:30 US/Pacific.\nDiagnosis: Customers with instances in the affected zones that are trying to reach Google Cloud Load Balancers (GCLB) in some IP ranges may fail to connect.\nWorkaround: If the GCLB in use is under customer control, customer could try to remove and re-add the global address attached to the forwarding rule and get new IP from outside the affected range.",
+      "status": "SERVICE_INFORMATION",
+      "affected_locations": [
+        {
+          "title": "Taiwan (asia-east1)",
+          "id": "asia-east1"
+        },
+        {
+          "title": "Los Angeles (us-west2)",
+          "id": "us-west2"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Google Compute Engine",
+        "id": "L3ggmi3Jy4xJmgodFA9K"
+      },
+      {
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
+      }
+    ],
+    "uri": "incidents/6aPV6JSu9PSyJzgyGnV2",
+    "currently_affected_locations": [
+      {
+        "title": "Taiwan (asia-east1)",
+        "id": "asia-east1"
+      },
+      {
+        "title": "Los Angeles (us-west2)",
+        "id": "us-west2"
+      }
+    ],
+    "previously_affected_locations": []
+  },
+  {
     "id": "73suoJ1UmxEyT6AT36yt",
     "number": "3212898141309360854",
     "begin": "2023-01-30T17:32:53+00:00",
     "created": "2023-01-30T17:45:52+00:00",
-    "modified": "2023-01-30T17:45:52+00:00",
+    "modified": "2023-01-30T17:46:50+00:00",
     "external_desc": "europe-west2: Cloud Firestore Degraded Availability",
     "updates": [
+      {
+        "created": "2023-01-30T17:46:50+00:00",
+        "modified": "2023-01-30T17:46:52+00:00",
+        "when": "2023-01-30T17:46:50+00:00",
+        "text": "Summary: europe-west2: Cloud Firestore Degraded Availability\nDescription: We are experiencing an issue with Cloud Firestore beginning at Monday, 2023-01-30 05:40 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2023-01-30 10:44 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may see higher latency and failed requests for Cloud Firestore reads and writes.\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
       {
         "created": "2023-01-30T17:45:51+00:00",
         "modified": "2023-01-30T17:45:53+00:00",
@@ -22,10 +105,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2023-01-30T17:45:51+00:00",
-      "modified": "2023-01-30T17:45:53+00:00",
-      "when": "2023-01-30T17:45:51+00:00",
-      "text": "Summary: europe-west2: Cloud Firestore Degraded Availability\nDescription: We are experiencing an issue with Cloud Firestore beginning at Monday, 2023-01-30 05:40 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2023-01-30 10:44 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
+      "created": "2023-01-30T17:46:50+00:00",
+      "modified": "2023-01-30T17:46:52+00:00",
+      "when": "2023-01-30T17:46:50+00:00",
+      "text": "Summary: europe-west2: Cloud Firestore Degraded Availability\nDescription: We are experiencing an issue with Cloud Firestore beginning at Monday, 2023-01-30 05:40 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2023-01-30 10:44 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may see higher latency and failed requests for Cloud Firestore reads and writes.\nWorkaround: None at this time.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
@@ -13506,18 +13589,18 @@
     ]
   },
   {
-    "id": "k8vzThdsK2b8EviustGQ",
-    "number": "15771396655668503059",
+    "id": "LdVmYRCym6X8E7ELZCtp",
+    "number": "5800175262100049001",
     "begin": "2022-12-09T12:50:00+00:00",
-    "created": "2022-12-09T14:16:47+00:00",
+    "created": "2022-12-09T15:26:08+00:00",
     "end": "2022-12-09T15:55:00+00:00",
-    "modified": "2022-12-09T23:10:52+00:00",
+    "modified": "2022-12-09T23:12:22+00:00",
     "external_desc": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
     "updates": [
       {
-        "created": "2022-12-09T23:10:52+00:00",
-        "modified": "2022-12-09T23:10:52+00:00",
-        "when": "2022-12-09T23:10:52+00:00",
+        "created": "2022-12-09T23:08:25+00:00",
+        "modified": "2022-12-09T23:08:25+00:00",
+        "when": "2022-12-09T23:08:25+00:00",
         "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 December 2022 04:50\n**Incident End:** 09 December 2022 07:55\n**Duration:** 3 hours, 5 minutes\n**Affected Services and Features:**\n- Artifact Registry: New repository creations\n- Google Cloud Composer: Composer environment creations\n- Google Cloud Storage: Operations that check IAM policies, especially CreateBucket\n- Google Kubernetes Engine: New cluster creation\n- Identity and Access Management: Not directly affected, only downstream services.\n**Regions/Zones:** australia-southeast1, asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-south2, asia-southeast1, asia-southeast2, australia-southeast2, and asia (Google Cloud multi-region).\n**Description:**\nGoogle Cloud Identity and Access Management (IAM) in the Asia multi-region experienced unavailability, which impacted several downstream Google Cloud services for a period of 3 hours and 17 minutes. Customers directly using IAM were not affected. The root cause was related to a configuration change with unintended consequences, which was immediately rolled back, once identified as the problem, thereby restoring services.\n**Customer Impact:**\nArtifact Registry\n- Affected customers would not have been able to create new repositories in the Asia multi-region. Customers would have received a failure message of “Request contains an invalid argument.”\nGoogle Cloud Composer\n- Affected customers in the Asia multi-region were not able to create Composer environments, receiving errors indicating either an issue with AppEngine or Google Kubernetes Engine (GKE) cluster creation.\nGoogle Cloud Storage\n- Affected customers would have experienced increased error rates when creating buckets in the Asia multi-region. GKE uses Google Cloud multi-regional buckets internally, so regional GKE customers throughout Asia Pacific were affected.\nGoogle Kubernetes Engine\n- Affected customers would have been unable to create new clusters in the affected regions.",
         "status": "AVAILABLE",
         "affected_locations": [
@@ -13568,9 +13651,9 @@
         ]
       },
       {
-        "created": "2022-12-09T15:18:29+00:00",
-        "modified": "2022-12-09T15:18:37+00:00",
-        "when": "2022-12-09T15:18:29+00:00",
+        "created": "2022-12-09T15:57:15+00:00",
+        "modified": "2022-12-09T15:57:30+00:00",
+        "when": "2022-12-09T15:57:15+00:00",
         "text": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
         "status": "AVAILABLE",
         "affected_locations": [
@@ -13621,63 +13704,10 @@
         ]
       },
       {
-        "created": "2022-12-09T14:26:53+00:00",
-        "modified": "2022-12-09T14:26:58+00:00",
-        "when": "2022-12-09T14:26:53+00:00",
-        "text": "Summary: Google Kubernetes Engine: INTERNAL_ERROR when performing ClusterCreation in Asia regions\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Friday, 2022-12-09 04:48 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 07:30 US/Pacific with current details.\nDiagnosis: Customers will see INTERNAL_ERROR when performing ClusterCreation (GKE Cluster Server receives invalid_argument error when creating a GCS bucket as one step of cluster creation).\nWorkaround: Try using another location (outside of Asian regions)",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Delhi (asia-south2)",
-            "id": "asia-south2"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          }
-        ]
-      },
-      {
-        "created": "2022-12-09T14:16:45+00:00",
-        "modified": "2022-12-09T14:16:51+00:00",
-        "when": "2022-12-09T14:16:45+00:00",
-        "text": "Summary: Google Kubernetes Engine: INTERNAL_ERROR when performing ClusterCreation in Asia regions\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Friday, 2022-12-09 04:48 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 07:30 US/Pacific with current details.\nDiagnosis: Customers will see INTERNAL_ERROR when performing ClusterCreation\nWorkaround: None at this time.",
+        "created": "2022-12-09T15:26:04+00:00",
+        "modified": "2022-12-09T15:26:12+00:00",
+        "when": "2022-12-09T15:26:04+00:00",
+        "text": "Summary: Google Cloud Storage IAM_BACKEND_INVALID_ARGUMENT errors. INTERNAL_ERROR when performing ClusterCreation in Google Kubernetes Engine and Artifact Registry in Asia\nDescription: We are experiencing an issue with Artifact Registry, Google Cloud Storage, Google Kubernetes Engine.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 09:30 US/Pacific with current details.\nDiagnosis: Customers will be getting IAM_BACKEND_INVALID_ARGUMENT in the Asian regions for Google Cloud Storage\nCustomers will see INTERNAL_ERROR when performing ClusterCreation (GKE Cluster Server receives invalid_argument error when creating a GCS bucket as one step of cluster creation) for Google Kubernetes Engine\nCustomers will see INTERNAL_ERROR Artifact Registry\nWorkaround: Try using a non Asia region",
         "status": "SERVICE_INFORMATION",
         "affected_locations": [
           {
@@ -13728,9 +13758,9 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-12-09T23:10:52+00:00",
-      "modified": "2022-12-09T23:10:52+00:00",
-      "when": "2022-12-09T23:10:52+00:00",
+      "created": "2022-12-09T23:08:25+00:00",
+      "modified": "2022-12-09T23:08:25+00:00",
+      "when": "2022-12-09T23:08:25+00:00",
       "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 December 2022 04:50\n**Incident End:** 09 December 2022 07:55\n**Duration:** 3 hours, 5 minutes\n**Affected Services and Features:**\n- Artifact Registry: New repository creations\n- Google Cloud Composer: Composer environment creations\n- Google Cloud Storage: Operations that check IAM policies, especially CreateBucket\n- Google Kubernetes Engine: New cluster creation\n- Identity and Access Management: Not directly affected, only downstream services.\n**Regions/Zones:** australia-southeast1, asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-south2, asia-southeast1, asia-southeast2, australia-southeast2, and asia (Google Cloud multi-region).\n**Description:**\nGoogle Cloud Identity and Access Management (IAM) in the Asia multi-region experienced unavailability, which impacted several downstream Google Cloud services for a period of 3 hours and 17 minutes. Customers directly using IAM were not affected. The root cause was related to a configuration change with unintended consequences, which was immediately rolled back, once identified as the problem, thereby restoring services.\n**Customer Impact:**\nArtifact Registry\n- Affected customers would not have been able to create new repositories in the Asia multi-region. Customers would have received a failure message of “Request contains an invalid argument.”\nGoogle Cloud Composer\n- Affected customers in the Asia multi-region were not able to create Composer environments, receiving errors indicating either an issue with AppEngine or Google Kubernetes Engine (GKE) cluster creation.\nGoogle Cloud Storage\n- Affected customers would have experienced increased error rates when creating buckets in the Asia multi-region. GKE uses Google Cloud multi-regional buckets internally, so regional GKE customers throughout Asia Pacific were affected.\nGoogle Kubernetes Engine\n- Affected customers would have been unable to create new clusters in the affected regions.",
       "status": "AVAILABLE",
       "affected_locations": [
@@ -13796,9 +13826,13 @@
       {
         "title": "Artifact Registry",
         "id": "QbBuuiRdsLpMr9WmGwm5"
+      },
+      {
+        "title": "Google Cloud Storage",
+        "id": "UwaYoXQ5bHYHG6EdiPB8"
       }
     ],
-    "uri": "incidents/k8vzThdsK2b8EviustGQ",
+    "uri": "incidents/LdVmYRCym6X8E7ELZCtp",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -14153,18 +14187,18 @@
     ]
   },
   {
-    "id": "LdVmYRCym6X8E7ELZCtp",
-    "number": "5800175262100049001",
+    "id": "k8vzThdsK2b8EviustGQ",
+    "number": "15771396655668503059",
     "begin": "2022-12-09T12:50:00+00:00",
-    "created": "2022-12-09T15:26:08+00:00",
+    "created": "2022-12-09T14:16:47+00:00",
     "end": "2022-12-09T15:55:00+00:00",
-    "modified": "2022-12-09T23:12:22+00:00",
+    "modified": "2022-12-09T23:10:52+00:00",
     "external_desc": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
     "updates": [
       {
-        "created": "2022-12-09T23:08:25+00:00",
-        "modified": "2022-12-09T23:08:25+00:00",
-        "when": "2022-12-09T23:08:25+00:00",
+        "created": "2022-12-09T23:10:52+00:00",
+        "modified": "2022-12-09T23:10:52+00:00",
+        "when": "2022-12-09T23:10:52+00:00",
         "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 December 2022 04:50\n**Incident End:** 09 December 2022 07:55\n**Duration:** 3 hours, 5 minutes\n**Affected Services and Features:**\n- Artifact Registry: New repository creations\n- Google Cloud Composer: Composer environment creations\n- Google Cloud Storage: Operations that check IAM policies, especially CreateBucket\n- Google Kubernetes Engine: New cluster creation\n- Identity and Access Management: Not directly affected, only downstream services.\n**Regions/Zones:** australia-southeast1, asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-south2, asia-southeast1, asia-southeast2, australia-southeast2, and asia (Google Cloud multi-region).\n**Description:**\nGoogle Cloud Identity and Access Management (IAM) in the Asia multi-region experienced unavailability, which impacted several downstream Google Cloud services for a period of 3 hours and 17 minutes. Customers directly using IAM were not affected. The root cause was related to a configuration change with unintended consequences, which was immediately rolled back, once identified as the problem, thereby restoring services.\n**Customer Impact:**\nArtifact Registry\n- Affected customers would not have been able to create new repositories in the Asia multi-region. Customers would have received a failure message of “Request contains an invalid argument.”\nGoogle Cloud Composer\n- Affected customers in the Asia multi-region were not able to create Composer environments, receiving errors indicating either an issue with AppEngine or Google Kubernetes Engine (GKE) cluster creation.\nGoogle Cloud Storage\n- Affected customers would have experienced increased error rates when creating buckets in the Asia multi-region. GKE uses Google Cloud multi-regional buckets internally, so regional GKE customers throughout Asia Pacific were affected.\nGoogle Kubernetes Engine\n- Affected customers would have been unable to create new clusters in the affected regions.",
         "status": "AVAILABLE",
         "affected_locations": [
@@ -14215,9 +14249,9 @@
         ]
       },
       {
-        "created": "2022-12-09T15:57:15+00:00",
-        "modified": "2022-12-09T15:57:30+00:00",
-        "when": "2022-12-09T15:57:15+00:00",
+        "created": "2022-12-09T15:18:29+00:00",
+        "modified": "2022-12-09T15:18:37+00:00",
+        "when": "2022-12-09T15:18:29+00:00",
         "text": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
         "status": "AVAILABLE",
         "affected_locations": [
@@ -14268,10 +14302,63 @@
         ]
       },
       {
-        "created": "2022-12-09T15:26:04+00:00",
-        "modified": "2022-12-09T15:26:12+00:00",
-        "when": "2022-12-09T15:26:04+00:00",
-        "text": "Summary: Google Cloud Storage IAM_BACKEND_INVALID_ARGUMENT errors. INTERNAL_ERROR when performing ClusterCreation in Google Kubernetes Engine and Artifact Registry in Asia\nDescription: We are experiencing an issue with Artifact Registry, Google Cloud Storage, Google Kubernetes Engine.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 09:30 US/Pacific with current details.\nDiagnosis: Customers will be getting IAM_BACKEND_INVALID_ARGUMENT in the Asian regions for Google Cloud Storage\nCustomers will see INTERNAL_ERROR when performing ClusterCreation (GKE Cluster Server receives invalid_argument error when creating a GCS bucket as one step of cluster creation) for Google Kubernetes Engine\nCustomers will see INTERNAL_ERROR Artifact Registry\nWorkaround: Try using a non Asia region",
+        "created": "2022-12-09T14:26:53+00:00",
+        "modified": "2022-12-09T14:26:58+00:00",
+        "when": "2022-12-09T14:26:53+00:00",
+        "text": "Summary: Google Kubernetes Engine: INTERNAL_ERROR when performing ClusterCreation in Asia regions\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Friday, 2022-12-09 04:48 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 07:30 US/Pacific with current details.\nDiagnosis: Customers will see INTERNAL_ERROR when performing ClusterCreation (GKE Cluster Server receives invalid_argument error when creating a GCS bucket as one step of cluster creation).\nWorkaround: Try using another location (outside of Asian regions)",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          }
+        ]
+      },
+      {
+        "created": "2022-12-09T14:16:45+00:00",
+        "modified": "2022-12-09T14:16:51+00:00",
+        "when": "2022-12-09T14:16:45+00:00",
+        "text": "Summary: Google Kubernetes Engine: INTERNAL_ERROR when performing ClusterCreation in Asia regions\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Friday, 2022-12-09 04:48 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 07:30 US/Pacific with current details.\nDiagnosis: Customers will see INTERNAL_ERROR when performing ClusterCreation\nWorkaround: None at this time.",
         "status": "SERVICE_INFORMATION",
         "affected_locations": [
           {
@@ -14322,9 +14409,9 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-12-09T23:08:25+00:00",
-      "modified": "2022-12-09T23:08:25+00:00",
-      "when": "2022-12-09T23:08:25+00:00",
+      "created": "2022-12-09T23:10:52+00:00",
+      "modified": "2022-12-09T23:10:52+00:00",
+      "when": "2022-12-09T23:10:52+00:00",
       "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 December 2022 04:50\n**Incident End:** 09 December 2022 07:55\n**Duration:** 3 hours, 5 minutes\n**Affected Services and Features:**\n- Artifact Registry: New repository creations\n- Google Cloud Composer: Composer environment creations\n- Google Cloud Storage: Operations that check IAM policies, especially CreateBucket\n- Google Kubernetes Engine: New cluster creation\n- Identity and Access Management: Not directly affected, only downstream services.\n**Regions/Zones:** australia-southeast1, asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-south2, asia-southeast1, asia-southeast2, australia-southeast2, and asia (Google Cloud multi-region).\n**Description:**\nGoogle Cloud Identity and Access Management (IAM) in the Asia multi-region experienced unavailability, which impacted several downstream Google Cloud services for a period of 3 hours and 17 minutes. Customers directly using IAM were not affected. The root cause was related to a configuration change with unintended consequences, which was immediately rolled back, once identified as the problem, thereby restoring services.\n**Customer Impact:**\nArtifact Registry\n- Affected customers would not have been able to create new repositories in the Asia multi-region. Customers would have received a failure message of “Request contains an invalid argument.”\nGoogle Cloud Composer\n- Affected customers in the Asia multi-region were not able to create Composer environments, receiving errors indicating either an issue with AppEngine or Google Kubernetes Engine (GKE) cluster creation.\nGoogle Cloud Storage\n- Affected customers would have experienced increased error rates when creating buckets in the Asia multi-region. GKE uses Google Cloud multi-regional buckets internally, so regional GKE customers throughout Asia Pacific were affected.\nGoogle Kubernetes Engine\n- Affected customers would have been unable to create new clusters in the affected regions.",
       "status": "AVAILABLE",
       "affected_locations": [
@@ -14390,13 +14477,9 @@
       {
         "title": "Artifact Registry",
         "id": "QbBuuiRdsLpMr9WmGwm5"
-      },
-      {
-        "title": "Google Cloud Storage",
-        "id": "UwaYoXQ5bHYHG6EdiPB8"
       }
     ],
-    "uri": "incidents/LdVmYRCym6X8E7ELZCtp",
+    "uri": "incidents/k8vzThdsK2b8EviustGQ",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
