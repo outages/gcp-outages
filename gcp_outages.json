@@ -4,9 +4,22 @@
     "number": "7498745179604602724",
     "begin": "2023-01-30T09:41:09+00:00",
     "created": "2023-01-30T10:06:35+00:00",
-    "modified": "2023-01-30T10:06:35+00:00",
-    "external_desc": "L7XLB and L7ILB configuration changes for loadbalancers in asia-south1 are delayed",
+    "modified": "2023-01-30T10:30:23+00:00",
+    "external_desc": "Regional L7XLB, Regional L7ILB, L4 Load Balancers, HCaaS, Cloud DNS configuration changes in asia-south1 are failing",
     "updates": [
+      {
+        "created": "2023-01-30T10:30:20+00:00",
+        "modified": "2023-01-30T10:30:27+00:00",
+        "when": "2023-01-30T10:30:20+00:00",
+        "text": "Summary: Regional L7XLB, Regional L7ILB, L4 Load Balancers, HCaaS, Cloud DNS configuration changes in asia-south1 are failing\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Monday, 2023-01-30 03:48 US/Pacific.\nDiagnosis: Customers may experiencing errors while creating and changing configuration of load balancers. Existing LBs should continue to work as expected.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          }
+        ]
+      },
       {
         "created": "2023-01-30T10:06:26+00:00",
         "modified": "2023-01-30T10:06:39+00:00",
@@ -22,10 +35,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2023-01-30T10:06:26+00:00",
-      "modified": "2023-01-30T10:06:39+00:00",
-      "when": "2023-01-30T10:06:26+00:00",
-      "text": "Summary: L7XLB and L7ILB configuration changes for loadbalancers in asia-south1 are delayed\nDescription: We are experiencing an issue with Google Cloud Networking, Cloud DNS beginning at Monday, 2023-01-30 01:07 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2023-01-30 03:15 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may experiencing errors while creating load balancers. Existing LBs should continue to work as expected.\nWorkaround: None at this time.",
+      "created": "2023-01-30T10:30:20+00:00",
+      "modified": "2023-01-30T10:30:27+00:00",
+      "when": "2023-01-30T10:30:20+00:00",
+      "text": "Summary: Regional L7XLB, Regional L7ILB, L4 Load Balancers, HCaaS, Cloud DNS configuration changes in asia-south1 are failing\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Monday, 2023-01-30 03:48 US/Pacific.\nDiagnosis: Customers may experiencing errors while creating and changing configuration of load balancers. Existing LBs should continue to work as expected.\nWorkaround: None at this time.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
