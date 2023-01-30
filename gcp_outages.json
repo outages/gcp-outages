@@ -154,9 +154,122 @@
     "number": "3614889539532455990",
     "begin": "2023-01-30T16:59:03+00:00",
     "created": "2023-01-30T17:14:35+00:00",
-    "modified": "2023-01-30T17:19:13+00:00",
+    "modified": "2023-01-30T18:42:56+00:00",
     "external_desc": "Global: Cloud Build is experiencing permission issues while uploading some Google Cloud Storage artifacts",
     "updates": [
+      {
+        "created": "2023-01-30T18:42:56+00:00",
+        "modified": "2023-01-30T18:42:58+00:00",
+        "when": "2023-01-30T18:42:56+00:00",
+        "text": "Summary: Global: Cloud Build is experiencing permission issues while uploading some Google Cloud Storage artifacts\nDescription: Mitigation work is gradually progressing in all the affected regions.\nThe mitigation is expected to complete by Monday, 2023-01-30 17:30 US/Pacific\nWe will provide more information by Monday, 2023-01-30 18:00 US/Pacific.\nDiagnosis: - Builds which use gcr.io/cloud-builders/gsutil or specify artifacts.objects in their cloudbuild.yaml may experience permission denied errors upon uploading to GCS.\n- Build service accounts which previously relied only on the storage.objects.get permission may not be able to upload their artifacts as-is.\nWorkaround: Add the storage.buckets.get permission to the build service account.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Global",
+            "id": "global"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2023-01-30T17:19:11+00:00",
         "modified": "2023-01-30T17:19:14+00:00",
@@ -385,10 +498,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2023-01-30T17:19:11+00:00",
-      "modified": "2023-01-30T17:19:14+00:00",
-      "when": "2023-01-30T17:19:11+00:00",
-      "text": "Summary: Global: Cloud Build is experiencing permission issues while uploading some Google Cloud Storage artifacts\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Monday, 2023-01-30 11:00 US/Pacific.\nWe will provide more information by Monday, 2023-01-30 11:10 US/Pacific.\nDiagnosis: - Builds which use gcr.io/cloud-builders/gsutil or specify artifacts.objects in their cloudbuild.yaml may experience permission denied errors upon uploading to GCS.\n- Build service accounts which previously relied only on the storage.objects.get permission may not be able to upload their artifacts as-is.\nWorkaround: Add the storage.buckets.get permission to the build service account.",
+      "created": "2023-01-30T18:42:56+00:00",
+      "modified": "2023-01-30T18:42:58+00:00",
+      "when": "2023-01-30T18:42:56+00:00",
+      "text": "Summary: Global: Cloud Build is experiencing permission issues while uploading some Google Cloud Storage artifacts\nDescription: Mitigation work is gradually progressing in all the affected regions.\nThe mitigation is expected to complete by Monday, 2023-01-30 17:30 US/Pacific\nWe will provide more information by Monday, 2023-01-30 18:00 US/Pacific.\nDiagnosis: - Builds which use gcr.io/cloud-builders/gsutil or specify artifacts.objects in their cloudbuild.yaml may experience permission denied errors upon uploading to GCS.\n- Build service accounts which previously relied only on the storage.objects.get permission may not be able to upload their artifacts as-is.\nWorkaround: Add the storage.buckets.get permission to the build service account.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
