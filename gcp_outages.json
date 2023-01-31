@@ -4,9 +4,26 @@
     "number": "16403002644494791708",
     "begin": "2023-01-30T17:35:16+00:00",
     "created": "2023-01-30T18:07:25+00:00",
-    "modified": "2023-01-31T13:33:19+00:00",
+    "modified": "2023-01-31T15:47:07+00:00",
     "external_desc": "Google Cloud Networking experiencing GCLB connection errors from virtual instances.",
     "updates": [
+      {
+        "created": "2023-01-31T15:47:07+00:00",
+        "modified": "2023-01-31T15:47:19+00:00",
+        "when": "2023-01-31T15:47:07+00:00",
+        "text": "Summary: Google Cloud Networking experiencing GCLB connection errors from virtual instances.\nDescription: We believe the issue with Google Cloud Networking, Google Compute Engine is partially resolved.\nFull resolution is expected to complete by Tuesday, 2023-01-31 09:30 US/Pacific.\nWe will provide an update by Tuesday, 2023-01-31 09:30 US/Pacific with current details.\nDiagnosis: Customers with instances in the affected zones that are trying to reach Google Cloud Load Balancers (GCLB) in some IP ranges may fail to connect.\nWorkaround: If the GCLB in use is under customer control, customer could try to remove and re-add the global address attached to the forwarding rule and get new IP from outside the affected range. Customers can also try moving instances to another zone in the region.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          }
+        ]
+      },
       {
         "created": "2023-01-31T13:33:19+00:00",
         "modified": "2023-01-31T13:33:25+00:00",
@@ -247,10 +264,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2023-01-31T13:33:19+00:00",
-      "modified": "2023-01-31T13:33:25+00:00",
-      "when": "2023-01-31T13:33:19+00:00",
-      "text": "Summary: Google Cloud Networking experiencing GCLB connection errors from virtual instances.\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Tuesday, 2023-01-31 08:00 US/Pacific.\nWe will provide more information by Tuesday, 2023-01-31 08:00 US/Pacific.\nDiagnosis: Customers with instances in the affected zones that are trying to reach Google Cloud Load Balancers (GCLB) in some IP ranges may fail to connect.\nWorkaround: If the GCLB in use is under customer control, customer could try to remove and re-add the global address attached to the forwarding rule and get new IP from outside the affected range. Customers can also try moving instances to another zone in the region.",
+      "created": "2023-01-31T15:47:07+00:00",
+      "modified": "2023-01-31T15:47:19+00:00",
+      "when": "2023-01-31T15:47:07+00:00",
+      "text": "Summary: Google Cloud Networking experiencing GCLB connection errors from virtual instances.\nDescription: We believe the issue with Google Cloud Networking, Google Compute Engine is partially resolved.\nFull resolution is expected to complete by Tuesday, 2023-01-31 09:30 US/Pacific.\nWe will provide an update by Tuesday, 2023-01-31 09:30 US/Pacific with current details.\nDiagnosis: Customers with instances in the affected zones that are trying to reach Google Cloud Load Balancers (GCLB) in some IP ranges may fail to connect.\nWorkaround: If the GCLB in use is under customer control, customer could try to remove and re-add the global address attached to the forwarding rule and get new IP from outside the affected range. Customers can also try moving instances to another zone in the region.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
