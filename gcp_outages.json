@@ -2,12 +2,25 @@
   {
     "id": "fTRUimHtKhe26X63zhoM",
     "number": "3974508918684243332",
-    "begin": "2023-02-02T15:39:30+00:00",
+    "begin": "2023-02-02T14:20:00+00:00",
     "created": "2023-02-02T16:23:33+00:00",
-    "end": "2023-02-02T17:43:19+00:00",
-    "modified": "2023-02-02T17:43:20+00:00",
+    "end": "2023-02-02T17:42:00+00:00",
+    "modified": "2023-02-02T21:43:56+00:00",
     "external_desc": "High control-plane latency in southamerica-east1",
     "updates": [
+      {
+        "created": "2023-02-02T21:43:54+00:00",
+        "modified": "2023-02-02T21:43:54+00:00",
+        "when": "2023-02-02T21:43:54+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n(All Times US/Pacific)\n**Incident Start:** 02 February 2023 06:20\n**Incident End:** 02 February 2023 09:42\n**Duration:** 3 hours, 22 minutes\n**Affected Services and Features:**\nGoogle Cloud Networking - Load Balancing\nCloud SQL\nMemoryStore for Redis\n**Regions/Zones:** southamerica-east1\n**Description:**\nGoogle Cloud Networking experienced elevated control plane latency and timeouts of new operations for customers using Cloud Networking in southamerica-east1 for a duration of 3 hours, 22 minutes. From preliminary analysis, the root cause was identified due to a control plane issue which had an impact on access for downstream services. The issue was resolved after restarting a backend component.\nEngineering team is also reviewing the control plane jobs and rolling back any recent changes that could contribute to higher latencies in instance creation/update operations.\n**Customer Impact:**\n## Google Cloud Networking\nCustomers experienced elevated latency and ~50 of API requests for Cloud Networking resources timed out.\n## Cloud SQL\nAffected customers were unable to create CloudSQL instances.\nAffected customers experienced elevated CREATE|FAILOVER operation latencies.\n## MemoryStore for Redis\nSome customers experienced CreateInstance timeouts.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          }
+        ]
+      },
       {
         "created": "2023-02-02T17:43:18+00:00",
         "modified": "2023-02-02T17:43:21+00:00",
@@ -49,10 +62,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2023-02-02T17:43:18+00:00",
-      "modified": "2023-02-02T17:43:21+00:00",
-      "when": "2023-02-02T17:43:18+00:00",
-      "text": "The issue with Google Cloud Networking has been resolved for all affected projects as of Thursday, 2023-02-02 09:32 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2023-02-02T21:43:54+00:00",
+      "modified": "2023-02-02T21:43:54+00:00",
+      "when": "2023-02-02T21:43:54+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n(All Times US/Pacific)\n**Incident Start:** 02 February 2023 06:20\n**Incident End:** 02 February 2023 09:42\n**Duration:** 3 hours, 22 minutes\n**Affected Services and Features:**\nGoogle Cloud Networking - Load Balancing\nCloud SQL\nMemoryStore for Redis\n**Regions/Zones:** southamerica-east1\n**Description:**\nGoogle Cloud Networking experienced elevated control plane latency and timeouts of new operations for customers using Cloud Networking in southamerica-east1 for a duration of 3 hours, 22 minutes. From preliminary analysis, the root cause was identified due to a control plane issue which had an impact on access for downstream services. The issue was resolved after restarting a backend component.\nEngineering team is also reviewing the control plane jobs and rolling back any recent changes that could contribute to higher latencies in instance creation/update operations.\n**Customer Impact:**\n## Google Cloud Networking\nCustomers experienced elevated latency and ~50 of API requests for Cloud Networking resources timed out.\n## Cloud SQL\nAffected customers were unable to create CloudSQL instances.\nAffected customers experienced elevated CREATE|FAILOVER operation latencies.\n## MemoryStore for Redis\nSome customers experienced CreateInstance timeouts.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
