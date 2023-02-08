@@ -524,9 +524,35 @@
     "number": "11224007112326793798",
     "begin": "2023-02-07T19:50:24+00:00",
     "created": "2023-02-08T00:26:20+00:00",
-    "modified": "2023-02-08T01:55:29+00:00",
+    "end": "2023-02-08T03:53:49+00:00",
+    "modified": "2023-02-08T03:53:49+00:00",
     "external_desc": "Google Kubernetes Engine Autopilot cluster creation, Google Cloud Dataproc serverless job submission and Google Cloud Composer environment creation are experiencing elevated error rates.",
     "updates": [
+      {
+        "created": "2023-02-08T03:53:47+00:00",
+        "modified": "2023-02-08T03:53:50+00:00",
+        "when": "2023-02-08T03:53:47+00:00",
+        "text": "The issue with Google Cloud Composer, Google Cloud Dataproc, Google Kubernetes Engine has been resolved for all affected users as of Tuesday, 2023-02-07 19:45 PST US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          }
+        ]
+      },
       {
         "created": "2023-02-08T01:55:29+00:00",
         "modified": "2023-02-08T01:55:31+00:00",
@@ -629,11 +655,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2023-02-08T01:55:29+00:00",
-      "modified": "2023-02-08T01:55:31+00:00",
-      "when": "2023-02-08T01:55:29+00:00",
-      "text": "Summary: Google Kubernetes Engine Autopilot cluster creation, Google Cloud Dataproc serverless job submission and Google Cloud Composer environment creation are experiencing elevated error rates.\nDescription: Mitigation work is currently underway by our engineering team and is on track to be completed by Tuesday, 2023-02-07 20:15 US/Pacific.\nWe will provide more information by Tuesday, 2023-02-07 20:20 US/Pacific.\nDiagnosis:\nGoogle Kubernetes Engine :\nCustomer attempting to create Autopilot clusters may receive error message like message: \"Invalid usage of the resource: Invalid resource usage: 'Invalid resource name (using reserved prefix):\" resulting in Autopilot cluster creation failures.\nGoogle Cloud Dataproc:\nCustomers attempting to submit serverless jobs in the affected regions will encounter error message \"Invalid resource usage: 'Invalid resource name (using reserved prefix): \"\nGoogle Cloud Composer:\nCloud Composer creations in the affected regions are failing with error message \"CREATE operation failed. Polled operation status: DONE: Google Compute Engine: Invalid resource name (using reserved prefix): \"\nWorkaround: Customers can use unaffected regions where feasible.",
-      "status": "SERVICE_INFORMATION",
+      "created": "2023-02-08T03:53:47+00:00",
+      "modified": "2023-02-08T03:53:50+00:00",
+      "when": "2023-02-08T03:53:47+00:00",
+      "text": "The issue with Google Cloud Composer, Google Cloud Dataproc, Google Kubernetes Engine has been resolved for all affected users as of Tuesday, 2023-02-07 19:45 PST US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
       "affected_locations": [
         {
           "title": "London (europe-west2)",
@@ -672,7 +698,8 @@
       }
     ],
     "uri": "incidents/BYWwca1aSjp9JfohSyRQ",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "London (europe-west2)",
         "id": "europe-west2"
@@ -689,8 +716,7 @@
         "title": "South Carolina (us-east1)",
         "id": "us-east1"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "vNpGKy7PmxhMrcowMu4x",
