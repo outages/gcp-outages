@@ -58,9 +58,110 @@
     "number": "11032048807652299797",
     "begin": "2023-02-08T00:58:02+00:00",
     "created": "2023-02-08T01:23:31+00:00",
-    "modified": "2023-02-08T03:07:48+00:00",
+    "modified": "2023-02-08T15:41:19+00:00",
     "external_desc": "Google App Engine Flex users experiencing issues with deploying some applications using gcloud 417.0.0",
     "updates": [
+      {
+        "created": "2023-02-08T15:41:19+00:00",
+        "modified": "2023-02-08T15:41:31+00:00",
+        "when": "2023-02-08T15:41:19+00:00",
+        "text": "Summary: Google App Engine Flex users experiencing issues with deploying some applications using gcloud 417.0.0\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2023-02-08 18:00 US/Pacific.\nDiagnosis: App Engine Flex users with gcloud 417.0.0 and runtime_config set in app.yaml are unable to deploy PHP, Java, or Python applications. Affected users will encounter error message \"\"Invalid JSON payload received. Unknown name \\\"flexibleRuntimeSettings\\\"\"\nWorkaround:\nDowngrade gcloud version to 416.0.0 using following instructions: - For users who installed via our rapture repo for Debian/Ubuntu:\nsudo apt-get update && sudo apt-get install google-cloud-sdk=416.0.0-0\n- For users who installed via our rapture repo for RedHat/CentOS:\nsudo yum downgrade google-cloud-sdk-416.0.0\n- For any users who installed the SDK directly (outside of a package manager), they should use the gcloud components to update:\ngcloud components update --version 416.0.0\nIf for any reason any of the above do not work, please download archive (https://storage.cloud.google.com/cloud-sdk-release) and manually get version 416.0.0",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2023-02-08T03:07:48+00:00",
         "modified": "2023-02-08T03:07:51+00:00",
@@ -366,10 +467,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2023-02-08T03:07:48+00:00",
-      "modified": "2023-02-08T03:07:51+00:00",
-      "when": "2023-02-08T03:07:48+00:00",
-      "text": "Summary: Google App Engine Flex users experiencing issues with deploying some applications using gcloud 417.0.0\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2023-02-08 09:00 US/Pacific.\nDiagnosis: App Engine Flex users with gcloud 417.0.0 and runtime_config set in app.yaml are unable to deploy PHP, Java, or Python applications. Affected users will encounter error message \"\"Invalid JSON payload received. Unknown name \\\"flexibleRuntimeSettings\\\"\"\nWorkaround:\nDowngrade gcloud version to 416.0.0 using following instructions: - For users who installed via our rapture repo for Debian/Ubuntu:\nsudo apt-get update && sudo apt-get install google-cloud-sdk=416.0.0-0\n- For users who installed via our rapture repo for RedHat/CentOS:\nsudo yum downgrade google-cloud-sdk-416.0.0\n- For any users who installed the SDK directly (outside of a package manager), they should use the gcloud components to update:\ngcloud components update --version 416.0.0\nIf for any reason any of the above do not work, please download archive (https://storage.cloud.google.com/cloud-sdk-release) and manually get version 416.0.0",
+      "created": "2023-02-08T15:41:19+00:00",
+      "modified": "2023-02-08T15:41:31+00:00",
+      "when": "2023-02-08T15:41:19+00:00",
+      "text": "Summary: Google App Engine Flex users experiencing issues with deploying some applications using gcloud 417.0.0\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2023-02-08 18:00 US/Pacific.\nDiagnosis: App Engine Flex users with gcloud 417.0.0 and runtime_config set in app.yaml are unable to deploy PHP, Java, or Python applications. Affected users will encounter error message \"\"Invalid JSON payload received. Unknown name \\\"flexibleRuntimeSettings\\\"\"\nWorkaround:\nDowngrade gcloud version to 416.0.0 using following instructions: - For users who installed via our rapture repo for Debian/Ubuntu:\nsudo apt-get update && sudo apt-get install google-cloud-sdk=416.0.0-0\n- For users who installed via our rapture repo for RedHat/CentOS:\nsudo yum downgrade google-cloud-sdk-416.0.0\n- For any users who installed the SDK directly (outside of a package manager), they should use the gcloud components to update:\ngcloud components update --version 416.0.0\nIf for any reason any of the above do not work, please download archive (https://storage.cloud.google.com/cloud-sdk-release) and manually get version 416.0.0",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
