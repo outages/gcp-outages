@@ -1,12 +1,240 @@
 [
   {
+    "id": "vvJHcVee8xJgPKkLczMB",
+    "number": "7135527614584123510",
+    "begin": "2023-02-08T18:23:38+00:00",
+    "created": "2023-02-08T18:55:32+00:00",
+    "modified": "2023-02-08T19:01:59+00:00",
+    "external_desc": "us-central1: Vertex AI Batch Prediction, Vertex AI Matching Engine, Vertex AI Online Prediction are experiencing issues with cluster deployments",
+    "updates": [
+      {
+        "created": "2023-02-08T19:01:59+00:00",
+        "modified": "2023-02-08T19:02:01+00:00",
+        "when": "2023-02-08T19:01:59+00:00",
+        "text": "Summary: us-central1: Vertex AI Batch Prediction, Vertex AI Matching Engine, Vertex AI Online Prediction are experiencing issues with cluster deployments\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Wednesday, 2023-02-08 12:00 US/Pacific.\nWe will provide more information by Wednesday, 2023-02-08 12:10 US/Pacific.\nDiagnosis: Customers attempting to deploy Vertex AI Batch Prediction, Vertex AI Matching Engine, Vertex AI Online Prediction clusters will receive an error message: \"Machine type temporarily unavailable, please deploy with a different machine type or retry\"\nWorkaround: Customers can use unaffected regions to deploy the clusters where feasible.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2023-02-08T18:55:30+00:00",
+        "modified": "2023-02-08T18:55:33+00:00",
+        "when": "2023-02-08T18:55:30+00:00",
+        "text": "Summary: us-central1: Vertex AI Batch Prediction, Vertex AI Matching Engine, Vertex AI Online Prediction are experiencing issues with cluster deployments\nDescription: We are experiencing an issue with Vertex AI Batch Prediction, Vertex AI Matching Engine, Vertex AI Online Prediction.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2023-02-08 11:40 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers attempting to deploy Vertex AI Batch Prediction, Vertex AI Matching Engine, Vertex AI Online Prediction clusters will receive an error message: \"Machine type temporarily unavailable, please deploy with a different machine type or retry\"\nWorkaround: Customers can use unaffected regions to deploy the clusters where feasible.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2023-02-08T19:01:59+00:00",
+      "modified": "2023-02-08T19:02:01+00:00",
+      "when": "2023-02-08T19:01:59+00:00",
+      "text": "Summary: us-central1: Vertex AI Batch Prediction, Vertex AI Matching Engine, Vertex AI Online Prediction are experiencing issues with cluster deployments\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Wednesday, 2023-02-08 12:00 US/Pacific.\nWe will provide more information by Wednesday, 2023-02-08 12:10 US/Pacific.\nDiagnosis: Customers attempting to deploy Vertex AI Batch Prediction, Vertex AI Matching Engine, Vertex AI Online Prediction clusters will receive an error message: \"Machine type temporarily unavailable, please deploy with a different machine type or retry\"\nWorkaround: Customers can use unaffected regions to deploy the clusters where feasible.",
+      "status": "SERVICE_INFORMATION",
+      "affected_locations": [
+        {
+          "title": "Iowa (us-central1)",
+          "id": "us-central1"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Vertex AI Matching Engine",
+        "id": "2iFHW5WNBkTWjX5k3jnZ"
+      },
+      {
+        "title": "Vertex AI Online Prediction",
+        "id": "sdXM79fz1FS6ekNpu37K"
+      },
+      {
+        "title": "Vertex AI Batch Prediction",
+        "id": "yVW8aiPWipjd3j67XzDL"
+      },
+      {
+        "title": "Cloud Machine Learning",
+        "id": "z9PfKanGZYvYNUbnKzRJ"
+      }
+    ],
+    "uri": "incidents/vvJHcVee8xJgPKkLczMB",
+    "currently_affected_locations": [
+      {
+        "title": "Iowa (us-central1)",
+        "id": "us-central1"
+      }
+    ],
+    "previously_affected_locations": []
+  },
+  {
     "id": "C9ef8RLuugDarRXTYrc4",
     "number": "12025319298140260997",
     "begin": "2023-02-08T14:01:34+00:00",
     "created": "2023-02-08T16:30:00+00:00",
-    "modified": "2023-02-08T18:41:42+00:00",
+    "modified": "2023-02-08T19:05:15+00:00",
     "external_desc": "Security Assertion Markup Language (SAML) authentication workflows not present for some customers",
     "updates": [
+      {
+        "created": "2023-02-08T19:05:15+00:00",
+        "modified": "2023-02-08T19:05:17+00:00",
+        "when": "2023-02-08T19:05:15+00:00",
+        "text": "Summary: Security Assertion Markup Language (SAML) authentication workflows not present for some customers\nDescription: The 'Validation of protocol message signature failed' errors observed on Portal SAML login should be mitigated and we're still investigating an issue where the SAML login button is not available.\nWe do not have an ETA for full resolution at this point.\nWe will provide an update by Wednesday, 2023-02-08 13:15 US/Pacific with current details.\nDiagnosis: Some users are unable to login with SAML on Apigee Portals and SAML login button does not appear on the login page for some users.\nUsers may also see the error message \"Metadata issuer for https://sts.windows.net/xxx/ wasn't found\" or \"Validation of protocol message signature failed\" when attempting an SAML login.\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Tel Aviv (me-west1)",
+            "id": "me-west1"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Dallas (us-south1)",
+            "id": "us-south1"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2023-02-08T18:41:42+00:00",
         "modified": "2023-02-08T18:41:44+00:00",
@@ -49,12 +277,153 @@
       }
     ],
     "most_recent_update": {
-      "created": "2023-02-08T18:41:42+00:00",
-      "modified": "2023-02-08T18:41:44+00:00",
-      "when": "2023-02-08T18:41:42+00:00",
-      "text": "Summary: Security Assertion Markup Language (SAML) authentication workflows not present for some customers\nDescription: The 'Validation of protocol message signature failed' errors observed on Portal SAML login should be mitigated and we're still investigating an issue where the SAML login button is not available.\nWe do not have an ETA for full resolution at this point.\nWe will provide an update by Wednesday, 2023-02-08 13:00 US/Pacific with current details.\nDiagnosis: Some users are unable to login with SAML on Apigee Portals and SAML login button does not appear on the login page for some users.\nUsers may also see the error message \"Metadata issuer for https://sts.windows.net/xxx/ wasn't found\" or \"Validation of protocol message signature failed\" when attempting an SAML login.\nWorkaround: None at this time.",
+      "created": "2023-02-08T19:05:15+00:00",
+      "modified": "2023-02-08T19:05:17+00:00",
+      "when": "2023-02-08T19:05:15+00:00",
+      "text": "Summary: Security Assertion Markup Language (SAML) authentication workflows not present for some customers\nDescription: The 'Validation of protocol message signature failed' errors observed on Portal SAML login should be mitigated and we're still investigating an issue where the SAML login button is not available.\nWe do not have an ETA for full resolution at this point.\nWe will provide an update by Wednesday, 2023-02-08 13:15 US/Pacific with current details.\nDiagnosis: Some users are unable to login with SAML on Apigee Portals and SAML login button does not appear on the login page for some users.\nUsers may also see the error message \"Metadata issuer for https://sts.windows.net/xxx/ wasn't found\" or \"Validation of protocol message signature failed\" when attempting an SAML login.\nWorkaround: None at this time.",
       "status": "SERVICE_INFORMATION",
-      "affected_locations": []
+      "affected_locations": [
+        {
+          "title": "Taiwan (asia-east1)",
+          "id": "asia-east1"
+        },
+        {
+          "title": "Hong Kong (asia-east2)",
+          "id": "asia-east2"
+        },
+        {
+          "title": "Tokyo (asia-northeast1)",
+          "id": "asia-northeast1"
+        },
+        {
+          "title": "Osaka (asia-northeast2)",
+          "id": "asia-northeast2"
+        },
+        {
+          "title": "Seoul (asia-northeast3)",
+          "id": "asia-northeast3"
+        },
+        {
+          "title": "Mumbai (asia-south1)",
+          "id": "asia-south1"
+        },
+        {
+          "title": "Delhi (asia-south2)",
+          "id": "asia-south2"
+        },
+        {
+          "title": "Singapore (asia-southeast1)",
+          "id": "asia-southeast1"
+        },
+        {
+          "title": "Jakarta (asia-southeast2)",
+          "id": "asia-southeast2"
+        },
+        {
+          "title": "Sydney (australia-southeast1)",
+          "id": "australia-southeast1"
+        },
+        {
+          "title": "Melbourne (australia-southeast2)",
+          "id": "australia-southeast2"
+        },
+        {
+          "title": "Warsaw (europe-central2)",
+          "id": "europe-central2"
+        },
+        {
+          "title": "Finland (europe-north1)",
+          "id": "europe-north1"
+        },
+        {
+          "title": "Madrid (europe-southwest1)",
+          "id": "europe-southwest1"
+        },
+        {
+          "title": "Belgium (europe-west1)",
+          "id": "europe-west1"
+        },
+        {
+          "title": "London (europe-west2)",
+          "id": "europe-west2"
+        },
+        {
+          "title": "Frankfurt (europe-west3)",
+          "id": "europe-west3"
+        },
+        {
+          "title": "Netherlands (europe-west4)",
+          "id": "europe-west4"
+        },
+        {
+          "title": "Zurich (europe-west6)",
+          "id": "europe-west6"
+        },
+        {
+          "title": "Milan (europe-west8)",
+          "id": "europe-west8"
+        },
+        {
+          "title": "Paris (europe-west9)",
+          "id": "europe-west9"
+        },
+        {
+          "title": "Tel Aviv (me-west1)",
+          "id": "me-west1"
+        },
+        {
+          "title": "Montréal (northamerica-northeast1)",
+          "id": "northamerica-northeast1"
+        },
+        {
+          "title": "Toronto (northamerica-northeast2)",
+          "id": "northamerica-northeast2"
+        },
+        {
+          "title": "São Paulo (southamerica-east1)",
+          "id": "southamerica-east1"
+        },
+        {
+          "title": "Santiago (southamerica-west1)",
+          "id": "southamerica-west1"
+        },
+        {
+          "title": "Iowa (us-central1)",
+          "id": "us-central1"
+        },
+        {
+          "title": "South Carolina (us-east1)",
+          "id": "us-east1"
+        },
+        {
+          "title": "Northern Virginia (us-east4)",
+          "id": "us-east4"
+        },
+        {
+          "title": "Columbus (us-east5)",
+          "id": "us-east5"
+        },
+        {
+          "title": "Dallas (us-south1)",
+          "id": "us-south1"
+        },
+        {
+          "title": "Oregon (us-west1)",
+          "id": "us-west1"
+        },
+        {
+          "title": "Los Angeles (us-west2)",
+          "id": "us-west2"
+        },
+        {
+          "title": "Salt Lake City (us-west3)",
+          "id": "us-west3"
+        },
+        {
+          "title": "Las Vegas (us-west4)",
+          "id": "us-west4"
+        }
+      ]
     },
     "status_impact": "SERVICE_INFORMATION",
     "severity": "low",
@@ -67,7 +436,148 @@
       }
     ],
     "uri": "incidents/C9ef8RLuugDarRXTYrc4",
-    "currently_affected_locations": [],
+    "currently_affected_locations": [
+      {
+        "title": "Taiwan (asia-east1)",
+        "id": "asia-east1"
+      },
+      {
+        "title": "Hong Kong (asia-east2)",
+        "id": "asia-east2"
+      },
+      {
+        "title": "Tokyo (asia-northeast1)",
+        "id": "asia-northeast1"
+      },
+      {
+        "title": "Osaka (asia-northeast2)",
+        "id": "asia-northeast2"
+      },
+      {
+        "title": "Seoul (asia-northeast3)",
+        "id": "asia-northeast3"
+      },
+      {
+        "title": "Mumbai (asia-south1)",
+        "id": "asia-south1"
+      },
+      {
+        "title": "Delhi (asia-south2)",
+        "id": "asia-south2"
+      },
+      {
+        "title": "Singapore (asia-southeast1)",
+        "id": "asia-southeast1"
+      },
+      {
+        "title": "Jakarta (asia-southeast2)",
+        "id": "asia-southeast2"
+      },
+      {
+        "title": "Sydney (australia-southeast1)",
+        "id": "australia-southeast1"
+      },
+      {
+        "title": "Melbourne (australia-southeast2)",
+        "id": "australia-southeast2"
+      },
+      {
+        "title": "Warsaw (europe-central2)",
+        "id": "europe-central2"
+      },
+      {
+        "title": "Finland (europe-north1)",
+        "id": "europe-north1"
+      },
+      {
+        "title": "Madrid (europe-southwest1)",
+        "id": "europe-southwest1"
+      },
+      {
+        "title": "Belgium (europe-west1)",
+        "id": "europe-west1"
+      },
+      {
+        "title": "London (europe-west2)",
+        "id": "europe-west2"
+      },
+      {
+        "title": "Frankfurt (europe-west3)",
+        "id": "europe-west3"
+      },
+      {
+        "title": "Netherlands (europe-west4)",
+        "id": "europe-west4"
+      },
+      {
+        "title": "Zurich (europe-west6)",
+        "id": "europe-west6"
+      },
+      {
+        "title": "Milan (europe-west8)",
+        "id": "europe-west8"
+      },
+      {
+        "title": "Paris (europe-west9)",
+        "id": "europe-west9"
+      },
+      {
+        "title": "Tel Aviv (me-west1)",
+        "id": "me-west1"
+      },
+      {
+        "title": "Montréal (northamerica-northeast1)",
+        "id": "northamerica-northeast1"
+      },
+      {
+        "title": "Toronto (northamerica-northeast2)",
+        "id": "northamerica-northeast2"
+      },
+      {
+        "title": "São Paulo (southamerica-east1)",
+        "id": "southamerica-east1"
+      },
+      {
+        "title": "Santiago (southamerica-west1)",
+        "id": "southamerica-west1"
+      },
+      {
+        "title": "Iowa (us-central1)",
+        "id": "us-central1"
+      },
+      {
+        "title": "South Carolina (us-east1)",
+        "id": "us-east1"
+      },
+      {
+        "title": "Northern Virginia (us-east4)",
+        "id": "us-east4"
+      },
+      {
+        "title": "Columbus (us-east5)",
+        "id": "us-east5"
+      },
+      {
+        "title": "Dallas (us-south1)",
+        "id": "us-south1"
+      },
+      {
+        "title": "Oregon (us-west1)",
+        "id": "us-west1"
+      },
+      {
+        "title": "Los Angeles (us-west2)",
+        "id": "us-west2"
+      },
+      {
+        "title": "Salt Lake City (us-west3)",
+        "id": "us-west3"
+      },
+      {
+        "title": "Las Vegas (us-west4)",
+        "id": "us-west4"
+      }
+    ],
     "previously_affected_locations": []
   },
   {
@@ -75,9 +585,22 @@
     "number": "3395041165540822672",
     "begin": "2023-02-08T12:00:34+00:00",
     "created": "2023-02-08T12:01:47+00:00",
-    "modified": "2023-02-08T18:18:18+00:00",
-    "external_desc": "Potential higher latency for Google Cloud Networking users in asia-southeast2 region\nIncident Details",
+    "modified": "2023-02-08T18:54:39+00:00",
+    "external_desc": "Latency for some Google Cloud Networking users in asia-southeast2 region",
     "updates": [
+      {
+        "created": "2023-02-08T18:54:38+00:00",
+        "modified": "2023-02-08T18:54:40+00:00",
+        "when": "2023-02-08T18:54:38+00:00",
+        "text": "Summary: Latency for some Google Cloud Networking users in asia-southeast2 region\nDescription: Our engineering team has narrowed down the issue to one regional telecom service provider and reported this to them for further investigation. The connectivity problems are mostly resolved at this point, but a few customers may observe delayed round trip time or longer latency. Our engineering team is continuing to monitor the situation closely.\nWe will provide an update by Wednesday, 2023-02-08 15:00 US/Pacific with current details.\nDiagnosis: Google Cloud Networking users may observe higher latency due to an ongoing issue with our telecom service provider.\nWorkaround: None at this time",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          }
+        ]
+      },
       {
         "created": "2023-02-08T18:18:18+00:00",
         "modified": "2023-02-08T18:18:20+00:00",
@@ -119,10 +642,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2023-02-08T18:18:18+00:00",
-      "modified": "2023-02-08T18:18:20+00:00",
-      "when": "2023-02-08T18:18:18+00:00",
-      "text": "Summary: Potential higher latency for Google Cloud Networking users in asia-southeast2 region\nIncident Details\nDescription: Our engineering team has narrowed down the issue to one regional telecom service provider and reported this to them for further investigation. The connectivity problems are mitigated at the moment but some customers may observe delayed round trip time or longer latency. Our engineering team is continuing to monitor the situation closely.\nWe will provide an update by Wednesday, 2023-02-08 11:30 US/Pacific with current details.\nDiagnosis: Google Cloud Networking users can observe higher latency due to an ongoing issue on Telecom providers.\nWorkaround: None at this time",
+      "created": "2023-02-08T18:54:38+00:00",
+      "modified": "2023-02-08T18:54:40+00:00",
+      "when": "2023-02-08T18:54:38+00:00",
+      "text": "Summary: Latency for some Google Cloud Networking users in asia-southeast2 region\nDescription: Our engineering team has narrowed down the issue to one regional telecom service provider and reported this to them for further investigation. The connectivity problems are mostly resolved at this point, but a few customers may observe delayed round trip time or longer latency. Our engineering team is continuing to monitor the situation closely.\nWe will provide an update by Wednesday, 2023-02-08 15:00 US/Pacific with current details.\nDiagnosis: Google Cloud Networking users may observe higher latency due to an ongoing issue with our telecom service provider.\nWorkaround: None at this time",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
@@ -16910,6 +17433,348 @@
     ]
   },
   {
+    "id": "k8vzThdsK2b8EviustGQ",
+    "number": "15771396655668503059",
+    "begin": "2022-12-09T12:50:00+00:00",
+    "created": "2022-12-09T14:16:47+00:00",
+    "end": "2022-12-09T15:55:00+00:00",
+    "modified": "2022-12-09T23:10:52+00:00",
+    "external_desc": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
+    "updates": [
+      {
+        "created": "2022-12-09T23:10:52+00:00",
+        "modified": "2022-12-09T23:10:52+00:00",
+        "when": "2022-12-09T23:10:52+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 December 2022 04:50\n**Incident End:** 09 December 2022 07:55\n**Duration:** 3 hours, 5 minutes\n**Affected Services and Features:**\n- Artifact Registry: New repository creations\n- Google Cloud Composer: Composer environment creations\n- Google Cloud Storage: Operations that check IAM policies, especially CreateBucket\n- Google Kubernetes Engine: New cluster creation\n- Identity and Access Management: Not directly affected, only downstream services.\n**Regions/Zones:** australia-southeast1, asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-south2, asia-southeast1, asia-southeast2, australia-southeast2, and asia (Google Cloud multi-region).\n**Description:**\nGoogle Cloud Identity and Access Management (IAM) in the Asia multi-region experienced unavailability, which impacted several downstream Google Cloud services for a period of 3 hours and 17 minutes. Customers directly using IAM were not affected. The root cause was related to a configuration change with unintended consequences, which was immediately rolled back, once identified as the problem, thereby restoring services.\n**Customer Impact:**\nArtifact Registry\n- Affected customers would not have been able to create new repositories in the Asia multi-region. Customers would have received a failure message of “Request contains an invalid argument.”\nGoogle Cloud Composer\n- Affected customers in the Asia multi-region were not able to create Composer environments, receiving errors indicating either an issue with AppEngine or Google Kubernetes Engine (GKE) cluster creation.\nGoogle Cloud Storage\n- Affected customers would have experienced increased error rates when creating buckets in the Asia multi-region. GKE uses Google Cloud multi-regional buckets internally, so regional GKE customers throughout Asia Pacific were affected.\nGoogle Kubernetes Engine\n- Affected customers would have been unable to create new clusters in the affected regions.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          }
+        ]
+      },
+      {
+        "created": "2022-12-09T15:18:29+00:00",
+        "modified": "2022-12-09T15:18:37+00:00",
+        "when": "2022-12-09T15:18:29+00:00",
+        "text": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          }
+        ]
+      },
+      {
+        "created": "2022-12-09T14:26:53+00:00",
+        "modified": "2022-12-09T14:26:58+00:00",
+        "when": "2022-12-09T14:26:53+00:00",
+        "text": "Summary: Google Kubernetes Engine: INTERNAL_ERROR when performing ClusterCreation in Asia regions\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Friday, 2022-12-09 04:48 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 07:30 US/Pacific with current details.\nDiagnosis: Customers will see INTERNAL_ERROR when performing ClusterCreation (GKE Cluster Server receives invalid_argument error when creating a GCS bucket as one step of cluster creation).\nWorkaround: Try using another location (outside of Asian regions)",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          }
+        ]
+      },
+      {
+        "created": "2022-12-09T14:16:45+00:00",
+        "modified": "2022-12-09T14:16:51+00:00",
+        "when": "2022-12-09T14:16:45+00:00",
+        "text": "Summary: Google Kubernetes Engine: INTERNAL_ERROR when performing ClusterCreation in Asia regions\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Friday, 2022-12-09 04:48 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 07:30 US/Pacific with current details.\nDiagnosis: Customers will see INTERNAL_ERROR when performing ClusterCreation\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-12-09T23:10:52+00:00",
+      "modified": "2022-12-09T23:10:52+00:00",
+      "when": "2022-12-09T23:10:52+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 December 2022 04:50\n**Incident End:** 09 December 2022 07:55\n**Duration:** 3 hours, 5 minutes\n**Affected Services and Features:**\n- Artifact Registry: New repository creations\n- Google Cloud Composer: Composer environment creations\n- Google Cloud Storage: Operations that check IAM policies, especially CreateBucket\n- Google Kubernetes Engine: New cluster creation\n- Identity and Access Management: Not directly affected, only downstream services.\n**Regions/Zones:** australia-southeast1, asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-south2, asia-southeast1, asia-southeast2, australia-southeast2, and asia (Google Cloud multi-region).\n**Description:**\nGoogle Cloud Identity and Access Management (IAM) in the Asia multi-region experienced unavailability, which impacted several downstream Google Cloud services for a period of 3 hours and 17 minutes. Customers directly using IAM were not affected. The root cause was related to a configuration change with unintended consequences, which was immediately rolled back, once identified as the problem, thereby restoring services.\n**Customer Impact:**\nArtifact Registry\n- Affected customers would not have been able to create new repositories in the Asia multi-region. Customers would have received a failure message of “Request contains an invalid argument.”\nGoogle Cloud Composer\n- Affected customers in the Asia multi-region were not able to create Composer environments, receiving errors indicating either an issue with AppEngine or Google Kubernetes Engine (GKE) cluster creation.\nGoogle Cloud Storage\n- Affected customers would have experienced increased error rates when creating buckets in the Asia multi-region. GKE uses Google Cloud multi-regional buckets internally, so regional GKE customers throughout Asia Pacific were affected.\nGoogle Kubernetes Engine\n- Affected customers would have been unable to create new clusters in the affected regions.",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Taiwan (asia-east1)",
+          "id": "asia-east1"
+        },
+        {
+          "title": "Hong Kong (asia-east2)",
+          "id": "asia-east2"
+        },
+        {
+          "title": "Tokyo (asia-northeast1)",
+          "id": "asia-northeast1"
+        },
+        {
+          "title": "Osaka (asia-northeast2)",
+          "id": "asia-northeast2"
+        },
+        {
+          "title": "Seoul (asia-northeast3)",
+          "id": "asia-northeast3"
+        },
+        {
+          "title": "Mumbai (asia-south1)",
+          "id": "asia-south1"
+        },
+        {
+          "title": "Delhi (asia-south2)",
+          "id": "asia-south2"
+        },
+        {
+          "title": "Singapore (asia-southeast1)",
+          "id": "asia-southeast1"
+        },
+        {
+          "title": "Jakarta (asia-southeast2)",
+          "id": "asia-southeast2"
+        },
+        {
+          "title": "Sydney (australia-southeast1)",
+          "id": "australia-southeast1"
+        },
+        {
+          "title": "Melbourne (australia-southeast2)",
+          "id": "australia-southeast2"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Cloud Developer Tools",
+        "id": "BGJQ6jbGK4kUuBTQFZ1G"
+      },
+      {
+        "title": "Google Kubernetes Engine",
+        "id": "LCSbT57h59oR4W98NHuz"
+      },
+      {
+        "title": "Artifact Registry",
+        "id": "QbBuuiRdsLpMr9WmGwm5"
+      }
+    ],
+    "uri": "incidents/k8vzThdsK2b8EviustGQ",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Taiwan (asia-east1)",
+        "id": "asia-east1"
+      },
+      {
+        "title": "Hong Kong (asia-east2)",
+        "id": "asia-east2"
+      },
+      {
+        "title": "Tokyo (asia-northeast1)",
+        "id": "asia-northeast1"
+      },
+      {
+        "title": "Osaka (asia-northeast2)",
+        "id": "asia-northeast2"
+      },
+      {
+        "title": "Seoul (asia-northeast3)",
+        "id": "asia-northeast3"
+      },
+      {
+        "title": "Mumbai (asia-south1)",
+        "id": "asia-south1"
+      },
+      {
+        "title": "Delhi (asia-south2)",
+        "id": "asia-south2"
+      },
+      {
+        "title": "Singapore (asia-southeast1)",
+        "id": "asia-southeast1"
+      },
+      {
+        "title": "Jakarta (asia-southeast2)",
+        "id": "asia-southeast2"
+      },
+      {
+        "title": "Sydney (australia-southeast1)",
+        "id": "australia-southeast1"
+      },
+      {
+        "title": "Melbourne (australia-southeast2)",
+        "id": "australia-southeast2"
+      }
+    ]
+  },
+  {
     "id": "LdVmYRCym6X8E7ELZCtp",
     "number": "5800175262100049001",
     "begin": "2022-12-09T12:50:00+00:00",
@@ -17459,348 +18324,6 @@
       }
     ],
     "uri": "incidents/nrhani4w9dJbBEDUtfq8",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Taiwan (asia-east1)",
-        "id": "asia-east1"
-      },
-      {
-        "title": "Hong Kong (asia-east2)",
-        "id": "asia-east2"
-      },
-      {
-        "title": "Tokyo (asia-northeast1)",
-        "id": "asia-northeast1"
-      },
-      {
-        "title": "Osaka (asia-northeast2)",
-        "id": "asia-northeast2"
-      },
-      {
-        "title": "Seoul (asia-northeast3)",
-        "id": "asia-northeast3"
-      },
-      {
-        "title": "Mumbai (asia-south1)",
-        "id": "asia-south1"
-      },
-      {
-        "title": "Delhi (asia-south2)",
-        "id": "asia-south2"
-      },
-      {
-        "title": "Singapore (asia-southeast1)",
-        "id": "asia-southeast1"
-      },
-      {
-        "title": "Jakarta (asia-southeast2)",
-        "id": "asia-southeast2"
-      },
-      {
-        "title": "Sydney (australia-southeast1)",
-        "id": "australia-southeast1"
-      },
-      {
-        "title": "Melbourne (australia-southeast2)",
-        "id": "australia-southeast2"
-      }
-    ]
-  },
-  {
-    "id": "k8vzThdsK2b8EviustGQ",
-    "number": "15771396655668503059",
-    "begin": "2022-12-09T12:50:00+00:00",
-    "created": "2022-12-09T14:16:47+00:00",
-    "end": "2022-12-09T15:55:00+00:00",
-    "modified": "2022-12-09T23:10:52+00:00",
-    "external_desc": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
-    "updates": [
-      {
-        "created": "2022-12-09T23:10:52+00:00",
-        "modified": "2022-12-09T23:10:52+00:00",
-        "when": "2022-12-09T23:10:52+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 December 2022 04:50\n**Incident End:** 09 December 2022 07:55\n**Duration:** 3 hours, 5 minutes\n**Affected Services and Features:**\n- Artifact Registry: New repository creations\n- Google Cloud Composer: Composer environment creations\n- Google Cloud Storage: Operations that check IAM policies, especially CreateBucket\n- Google Kubernetes Engine: New cluster creation\n- Identity and Access Management: Not directly affected, only downstream services.\n**Regions/Zones:** australia-southeast1, asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-south2, asia-southeast1, asia-southeast2, australia-southeast2, and asia (Google Cloud multi-region).\n**Description:**\nGoogle Cloud Identity and Access Management (IAM) in the Asia multi-region experienced unavailability, which impacted several downstream Google Cloud services for a period of 3 hours and 17 minutes. Customers directly using IAM were not affected. The root cause was related to a configuration change with unintended consequences, which was immediately rolled back, once identified as the problem, thereby restoring services.\n**Customer Impact:**\nArtifact Registry\n- Affected customers would not have been able to create new repositories in the Asia multi-region. Customers would have received a failure message of “Request contains an invalid argument.”\nGoogle Cloud Composer\n- Affected customers in the Asia multi-region were not able to create Composer environments, receiving errors indicating either an issue with AppEngine or Google Kubernetes Engine (GKE) cluster creation.\nGoogle Cloud Storage\n- Affected customers would have experienced increased error rates when creating buckets in the Asia multi-region. GKE uses Google Cloud multi-regional buckets internally, so regional GKE customers throughout Asia Pacific were affected.\nGoogle Kubernetes Engine\n- Affected customers would have been unable to create new clusters in the affected regions.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Delhi (asia-south2)",
-            "id": "asia-south2"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          }
-        ]
-      },
-      {
-        "created": "2022-12-09T15:18:29+00:00",
-        "modified": "2022-12-09T15:18:37+00:00",
-        "when": "2022-12-09T15:18:29+00:00",
-        "text": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Delhi (asia-south2)",
-            "id": "asia-south2"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          }
-        ]
-      },
-      {
-        "created": "2022-12-09T14:26:53+00:00",
-        "modified": "2022-12-09T14:26:58+00:00",
-        "when": "2022-12-09T14:26:53+00:00",
-        "text": "Summary: Google Kubernetes Engine: INTERNAL_ERROR when performing ClusterCreation in Asia regions\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Friday, 2022-12-09 04:48 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 07:30 US/Pacific with current details.\nDiagnosis: Customers will see INTERNAL_ERROR when performing ClusterCreation (GKE Cluster Server receives invalid_argument error when creating a GCS bucket as one step of cluster creation).\nWorkaround: Try using another location (outside of Asian regions)",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Delhi (asia-south2)",
-            "id": "asia-south2"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          }
-        ]
-      },
-      {
-        "created": "2022-12-09T14:16:45+00:00",
-        "modified": "2022-12-09T14:16:51+00:00",
-        "when": "2022-12-09T14:16:45+00:00",
-        "text": "Summary: Google Kubernetes Engine: INTERNAL_ERROR when performing ClusterCreation in Asia regions\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Friday, 2022-12-09 04:48 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 07:30 US/Pacific with current details.\nDiagnosis: Customers will see INTERNAL_ERROR when performing ClusterCreation\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Delhi (asia-south2)",
-            "id": "asia-south2"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-12-09T23:10:52+00:00",
-      "modified": "2022-12-09T23:10:52+00:00",
-      "when": "2022-12-09T23:10:52+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 December 2022 04:50\n**Incident End:** 09 December 2022 07:55\n**Duration:** 3 hours, 5 minutes\n**Affected Services and Features:**\n- Artifact Registry: New repository creations\n- Google Cloud Composer: Composer environment creations\n- Google Cloud Storage: Operations that check IAM policies, especially CreateBucket\n- Google Kubernetes Engine: New cluster creation\n- Identity and Access Management: Not directly affected, only downstream services.\n**Regions/Zones:** australia-southeast1, asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-south2, asia-southeast1, asia-southeast2, australia-southeast2, and asia (Google Cloud multi-region).\n**Description:**\nGoogle Cloud Identity and Access Management (IAM) in the Asia multi-region experienced unavailability, which impacted several downstream Google Cloud services for a period of 3 hours and 17 minutes. Customers directly using IAM were not affected. The root cause was related to a configuration change with unintended consequences, which was immediately rolled back, once identified as the problem, thereby restoring services.\n**Customer Impact:**\nArtifact Registry\n- Affected customers would not have been able to create new repositories in the Asia multi-region. Customers would have received a failure message of “Request contains an invalid argument.”\nGoogle Cloud Composer\n- Affected customers in the Asia multi-region were not able to create Composer environments, receiving errors indicating either an issue with AppEngine or Google Kubernetes Engine (GKE) cluster creation.\nGoogle Cloud Storage\n- Affected customers would have experienced increased error rates when creating buckets in the Asia multi-region. GKE uses Google Cloud multi-regional buckets internally, so regional GKE customers throughout Asia Pacific were affected.\nGoogle Kubernetes Engine\n- Affected customers would have been unable to create new clusters in the affected regions.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Taiwan (asia-east1)",
-          "id": "asia-east1"
-        },
-        {
-          "title": "Hong Kong (asia-east2)",
-          "id": "asia-east2"
-        },
-        {
-          "title": "Tokyo (asia-northeast1)",
-          "id": "asia-northeast1"
-        },
-        {
-          "title": "Osaka (asia-northeast2)",
-          "id": "asia-northeast2"
-        },
-        {
-          "title": "Seoul (asia-northeast3)",
-          "id": "asia-northeast3"
-        },
-        {
-          "title": "Mumbai (asia-south1)",
-          "id": "asia-south1"
-        },
-        {
-          "title": "Delhi (asia-south2)",
-          "id": "asia-south2"
-        },
-        {
-          "title": "Singapore (asia-southeast1)",
-          "id": "asia-southeast1"
-        },
-        {
-          "title": "Jakarta (asia-southeast2)",
-          "id": "asia-southeast2"
-        },
-        {
-          "title": "Sydney (australia-southeast1)",
-          "id": "australia-southeast1"
-        },
-        {
-          "title": "Melbourne (australia-southeast2)",
-          "id": "australia-southeast2"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Cloud Developer Tools",
-        "id": "BGJQ6jbGK4kUuBTQFZ1G"
-      },
-      {
-        "title": "Google Kubernetes Engine",
-        "id": "LCSbT57h59oR4W98NHuz"
-      },
-      {
-        "title": "Artifact Registry",
-        "id": "QbBuuiRdsLpMr9WmGwm5"
-      }
-    ],
-    "uri": "incidents/k8vzThdsK2b8EviustGQ",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
