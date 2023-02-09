@@ -2,16 +2,16 @@
   {
     "id": "mhArPCRVWLE2fjKej7Kn",
     "number": "5728785562137464997",
-    "begin": "2023-02-09T20:02:04+00:00",
+    "begin": "2023-02-09T20:02:00+00:00",
     "created": "2023-02-09T20:22:06+00:00",
-    "modified": "2023-02-09T20:22:06+00:00",
+    "modified": "2023-02-09T20:51:07+00:00",
     "external_desc": "Global: Google Cloud Storage returns 410 HTTP response when performing resumable uploads",
     "updates": [
       {
         "created": "2023-02-09T20:22:00+00:00",
-        "modified": "2023-02-09T20:22:07+00:00",
+        "modified": "2023-02-09T20:51:00+00:00",
         "when": "2023-02-09T20:22:00+00:00",
-        "text": "Summary: Global: Google Cloud Storage returns 410 HTTP response when performing resumable uploads\nDescription: We are experiencing an issue with Google Cloud Storage where customers performing resumable uploads when using CMEK objects will receive HTTP error.\nOur engineering team continues to investigate the issue and working on mitigation of the issue.\nWe will provide an update by Friday, 2023-02-10 10:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers performing resumable uploads may encounter HTTP 503 error when writing a resumable upload chunk. When the client retries, a HTTP 410 response is returned as the result of the upload already being terminated. Only customers using CMEK objects may encounter this issue.\nWorkaround: None at this time.",
+        "text": "Summary: Global: Google Cloud Storage intermittently cancels resumable upload operations.\nDescription: We are experiencing an issue with Google Cloud Storage where customers performing resumable uploads when using CMEK objects will observe intermittent failures.\nOur engineering team continues to investigate the issue and working on mitigation of the issue.\nWe will provide an update by Friday, 2023-02-10 10:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers performing resumable uploads may encounter HTTP 503 error when writing a resumable upload chunk. When the client retries, a HTTP 410 response is returned as the result of the upload already being terminated. Only customers using CMEK objects may encounter this issue.\nWorkaround: None at this time.",
         "status": "SERVICE_INFORMATION",
         "affected_locations": [
           {
@@ -159,9 +159,9 @@
     ],
     "most_recent_update": {
       "created": "2023-02-09T20:22:00+00:00",
-      "modified": "2023-02-09T20:22:07+00:00",
+      "modified": "2023-02-09T20:51:00+00:00",
       "when": "2023-02-09T20:22:00+00:00",
-      "text": "Summary: Global: Google Cloud Storage returns 410 HTTP response when performing resumable uploads\nDescription: We are experiencing an issue with Google Cloud Storage where customers performing resumable uploads when using CMEK objects will receive HTTP error.\nOur engineering team continues to investigate the issue and working on mitigation of the issue.\nWe will provide an update by Friday, 2023-02-10 10:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers performing resumable uploads may encounter HTTP 503 error when writing a resumable upload chunk. When the client retries, a HTTP 410 response is returned as the result of the upload already being terminated. Only customers using CMEK objects may encounter this issue.\nWorkaround: None at this time.",
+      "text": "Summary: Global: Google Cloud Storage intermittently cancels resumable upload operations.\nDescription: We are experiencing an issue with Google Cloud Storage where customers performing resumable uploads when using CMEK objects will observe intermittent failures.\nOur engineering team continues to investigate the issue and working on mitigation of the issue.\nWe will provide an update by Friday, 2023-02-10 10:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers performing resumable uploads may encounter HTTP 503 error when writing a resumable upload chunk. When the client retries, a HTTP 410 response is returned as the result of the upload already being terminated. Only customers using CMEK objects may encounter this issue.\nWorkaround: None at this time.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
