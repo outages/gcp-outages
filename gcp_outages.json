@@ -4,9 +4,22 @@
     "number": "2993961255088503926",
     "begin": "2023-02-17T23:08:13+00:00",
     "created": "2023-02-17T23:41:42+00:00",
-    "modified": "2023-02-18T00:43:37+00:00",
-    "external_desc": "Issues with Cloud Retail Search API.",
+    "modified": "2023-02-18T02:42:54+00:00",
+    "external_desc": "Issues with Cloud Retail Search API",
     "updates": [
+      {
+        "created": "2023-02-18T02:42:53+00:00",
+        "modified": "2023-02-18T02:42:55+00:00",
+        "when": "2023-02-18T02:42:53+00:00",
+        "text": "Summary: Issues with Cloud Retail Search API\nDescription: Root cause has been identified and mitigation in progress. Service is already significantly recovered (as measured by # of products actually returned vs # of products we say we are returning)\nWe will provide more information by Friday, 2023-02-17 21:13 US/Pacific.\nDiagnosis: In response to a query, Cloud Retail Search replies saying “we are returning X products” but we actually return a small fraction of X products. The products we return do seem to be correct to the query, but the list does not include all of the products that it should.\nWorkaround: If possible, revert to a different catalog branch, as this seems to mitigate the issue. If available, consider activating backup search systems on the client side.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
       {
         "created": "2023-02-18T00:42:35+00:00",
         "modified": "2023-02-18T00:42:37+00:00",
@@ -51,10 +64,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2023-02-18T00:42:35+00:00",
-      "modified": "2023-02-18T00:42:37+00:00",
-      "when": "2023-02-18T00:42:35+00:00",
-      "text": "Summary: Issues with Cloud Retail Search API.\nDescription: We are experiencing an issue with Cloud Retail Search API.\nOur engineering team continues to investigate the issue to identify root cause and possible mitigation actions.\nWe will provide an update by Friday, 2023-02-17 19:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: In response to a query, Cloud Retail Search replies saying “we are returning X products” but we actually return a small fraction of X products. The products we return do seem to be correct to the query, but the list does not include all of the products that it should.\nWorkaround: If possible, revert to a different catalog branch, as this seems to mitigate the issue. If available, consider activating backup search systems on the client side.",
+      "created": "2023-02-18T02:42:53+00:00",
+      "modified": "2023-02-18T02:42:55+00:00",
+      "when": "2023-02-18T02:42:53+00:00",
+      "text": "Summary: Issues with Cloud Retail Search API\nDescription: Root cause has been identified and mitigation in progress. Service is already significantly recovered (as measured by # of products actually returned vs # of products we say we are returning)\nWe will provide more information by Friday, 2023-02-17 21:13 US/Pacific.\nDiagnosis: In response to a query, Cloud Retail Search replies saying “we are returning X products” but we actually return a small fraction of X products. The products we return do seem to be correct to the query, but the list does not include all of the products that it should.\nWorkaround: If possible, revert to a different catalog branch, as this seems to mitigate the issue. If available, consider activating backup search systems on the client side.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
