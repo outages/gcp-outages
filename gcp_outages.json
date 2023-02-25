@@ -19898,18 +19898,18 @@
     ]
   },
   {
-    "id": "k8vzThdsK2b8EviustGQ",
-    "number": "15771396655668503059",
+    "id": "nrhani4w9dJbBEDUtfq8",
+    "number": "9791549783998109328",
     "begin": "2022-12-09T12:50:00+00:00",
-    "created": "2022-12-09T14:16:47+00:00",
+    "created": "2022-12-09T15:56:14+00:00",
     "end": "2022-12-09T15:55:00+00:00",
-    "modified": "2022-12-09T23:10:52+00:00",
-    "external_desc": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
+    "modified": "2022-12-09T23:11:22+00:00",
+    "external_desc": "Multiple products may return error messages across Asia/Australia",
     "updates": [
       {
-        "created": "2022-12-09T23:10:52+00:00",
-        "modified": "2022-12-09T23:10:52+00:00",
-        "when": "2022-12-09T23:10:52+00:00",
+        "created": "2022-12-09T23:11:22+00:00",
+        "modified": "2022-12-09T23:11:22+00:00",
+        "when": "2022-12-09T23:11:22+00:00",
         "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 December 2022 04:50\n**Incident End:** 09 December 2022 07:55\n**Duration:** 3 hours, 5 minutes\n**Affected Services and Features:**\n- Artifact Registry: New repository creations\n- Google Cloud Composer: Composer environment creations\n- Google Cloud Storage: Operations that check IAM policies, especially CreateBucket\n- Google Kubernetes Engine: New cluster creation\n- Identity and Access Management: Not directly affected, only downstream services.\n**Regions/Zones:** australia-southeast1, asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-south2, asia-southeast1, asia-southeast2, australia-southeast2, and asia (Google Cloud multi-region).\n**Description:**\nGoogle Cloud Identity and Access Management (IAM) in the Asia multi-region experienced unavailability, which impacted several downstream Google Cloud services for a period of 3 hours and 17 minutes. Customers directly using IAM were not affected. The root cause was related to a configuration change with unintended consequences, which was immediately rolled back, once identified as the problem, thereby restoring services.\n**Customer Impact:**\nArtifact Registry\n- Affected customers would not have been able to create new repositories in the Asia multi-region. Customers would have received a failure message of “Request contains an invalid argument.”\nGoogle Cloud Composer\n- Affected customers in the Asia multi-region were not able to create Composer environments, receiving errors indicating either an issue with AppEngine or Google Kubernetes Engine (GKE) cluster creation.\nGoogle Cloud Storage\n- Affected customers would have experienced increased error rates when creating buckets in the Asia multi-region. GKE uses Google Cloud multi-regional buckets internally, so regional GKE customers throughout Asia Pacific were affected.\nGoogle Kubernetes Engine\n- Affected customers would have been unable to create new clusters in the affected regions.",
         "status": "AVAILABLE",
         "affected_locations": [
@@ -19960,10 +19960,10 @@
         ]
       },
       {
-        "created": "2022-12-09T15:18:29+00:00",
-        "modified": "2022-12-09T15:18:37+00:00",
-        "when": "2022-12-09T15:18:29+00:00",
-        "text": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
+        "created": "2022-12-09T16:22:10+00:00",
+        "modified": "2022-12-09T16:22:19+00:00",
+        "when": "2022-12-09T16:22:10+00:00",
+        "text": "The issue with Artifact Registry, Google App Engine, Google Cloud Composer, Google Cloud Storage, Google Kubernetes Engine, Identity and Access Management has been resolved for all affected projects as of Friday, 2022-12-09 08:06 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
         "affected_locations": [
           {
@@ -20013,64 +20013,11 @@
         ]
       },
       {
-        "created": "2022-12-09T14:26:53+00:00",
-        "modified": "2022-12-09T14:26:58+00:00",
-        "when": "2022-12-09T14:26:53+00:00",
-        "text": "Summary: Google Kubernetes Engine: INTERNAL_ERROR when performing ClusterCreation in Asia regions\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Friday, 2022-12-09 04:48 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 07:30 US/Pacific with current details.\nDiagnosis: Customers will see INTERNAL_ERROR when performing ClusterCreation (GKE Cluster Server receives invalid_argument error when creating a GCS bucket as one step of cluster creation).\nWorkaround: Try using another location (outside of Asian regions)",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Delhi (asia-south2)",
-            "id": "asia-south2"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          }
-        ]
-      },
-      {
-        "created": "2022-12-09T14:16:45+00:00",
-        "modified": "2022-12-09T14:16:51+00:00",
-        "when": "2022-12-09T14:16:45+00:00",
-        "text": "Summary: Google Kubernetes Engine: INTERNAL_ERROR when performing ClusterCreation in Asia regions\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Friday, 2022-12-09 04:48 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 07:30 US/Pacific with current details.\nDiagnosis: Customers will see INTERNAL_ERROR when performing ClusterCreation\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
+        "created": "2022-12-09T15:56:09+00:00",
+        "modified": "2022-12-09T15:56:18+00:00",
+        "when": "2022-12-09T15:56:09+00:00",
+        "text": "Summary: Multiple products may return error messages across Asia/Australia\nDescription: We are experiencing an issue with Identity and Access Management, Identity and Access Management, Identity and Access Management, Identity and Access Management, Google Cloud Composer, Identity and Access Management, Identity and Access Management, Identity and Access Management, Google Cloud Composer, Identity and Access Management, Google Cloud Composer, Google Cloud Composer, Google Cloud Composer, Google Cloud Composer, Google Cloud Composer, Google Cloud Composer, Identity and Access Management, Google Cloud Composer, Identity and Access Management, Google Cloud Composer, Identity and Access Management, Google Cloud Composer, Identity and Access Management, Identity and Access Management, Google Cloud Composer, Artifact Registry, Identity and Access Management, Google Cloud Composer, Artifact Registry, Google Kubernetes Engine, Identity and Access Management, Artifact Registry, Identity and Access Management, Google Cloud Composer, Artifact Registry, Google Kubernetes Engine, Google App Engine.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 08:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Multiple products may return error messages\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
         "affected_locations": [
           {
             "title": "Taiwan (asia-east1)",
@@ -20120,9 +20067,9 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-12-09T23:10:52+00:00",
-      "modified": "2022-12-09T23:10:52+00:00",
-      "when": "2022-12-09T23:10:52+00:00",
+      "created": "2022-12-09T23:11:22+00:00",
+      "modified": "2022-12-09T23:11:22+00:00",
+      "when": "2022-12-09T23:11:22+00:00",
       "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 December 2022 04:50\n**Incident End:** 09 December 2022 07:55\n**Duration:** 3 hours, 5 minutes\n**Affected Services and Features:**\n- Artifact Registry: New repository creations\n- Google Cloud Composer: Composer environment creations\n- Google Cloud Storage: Operations that check IAM policies, especially CreateBucket\n- Google Kubernetes Engine: New cluster creation\n- Identity and Access Management: Not directly affected, only downstream services.\n**Regions/Zones:** australia-southeast1, asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-south2, asia-southeast1, asia-southeast2, australia-southeast2, and asia (Google Cloud multi-region).\n**Description:**\nGoogle Cloud Identity and Access Management (IAM) in the Asia multi-region experienced unavailability, which impacted several downstream Google Cloud services for a period of 3 hours and 17 minutes. Customers directly using IAM were not affected. The root cause was related to a configuration change with unintended consequences, which was immediately rolled back, once identified as the problem, thereby restoring services.\n**Customer Impact:**\nArtifact Registry\n- Affected customers would not have been able to create new repositories in the Asia multi-region. Customers would have received a failure message of “Request contains an invalid argument.”\nGoogle Cloud Composer\n- Affected customers in the Asia multi-region were not able to create Composer environments, receiving errors indicating either an issue with AppEngine or Google Kubernetes Engine (GKE) cluster creation.\nGoogle Cloud Storage\n- Affected customers would have experienced increased error rates when creating buckets in the Asia multi-region. GKE uses Google Cloud multi-regional buckets internally, so regional GKE customers throughout Asia Pacific were affected.\nGoogle Kubernetes Engine\n- Affected customers would have been unable to create new clusters in the affected regions.",
       "status": "AVAILABLE",
       "affected_locations": [
@@ -20172,8 +20119,8 @@
         }
       ]
     },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
+    "status_impact": "SERVICE_OUTAGE",
+    "severity": "high",
     "service_key": "zall",
     "service_name": "Multiple Products",
     "affected_products": [
@@ -20188,9 +20135,25 @@
       {
         "title": "Artifact Registry",
         "id": "QbBuuiRdsLpMr9WmGwm5"
+      },
+      {
+        "title": "Google Cloud Storage",
+        "id": "UwaYoXQ5bHYHG6EdiPB8"
+      },
+      {
+        "title": "Google Cloud Composer",
+        "id": "YxkG5FfcC42cQmvBCk4j"
+      },
+      {
+        "title": "Identity and Access Management",
+        "id": "adnGEDEt9zWzs8uF1oKA"
+      },
+      {
+        "title": "Google App Engine",
+        "id": "kchyUtnkMHJWaAva8aYc"
       }
     ],
-    "uri": "incidents/k8vzThdsK2b8EviustGQ",
+    "uri": "incidents/nrhani4w9dJbBEDUtfq8",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -20533,18 +20496,18 @@
     ]
   },
   {
-    "id": "nrhani4w9dJbBEDUtfq8",
-    "number": "9791549783998109328",
+    "id": "k8vzThdsK2b8EviustGQ",
+    "number": "15771396655668503059",
     "begin": "2022-12-09T12:50:00+00:00",
-    "created": "2022-12-09T15:56:14+00:00",
+    "created": "2022-12-09T14:16:47+00:00",
     "end": "2022-12-09T15:55:00+00:00",
-    "modified": "2022-12-09T23:11:22+00:00",
-    "external_desc": "Multiple products may return error messages across Asia/Australia",
+    "modified": "2022-12-09T23:10:52+00:00",
+    "external_desc": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
     "updates": [
       {
-        "created": "2022-12-09T23:11:22+00:00",
-        "modified": "2022-12-09T23:11:22+00:00",
-        "when": "2022-12-09T23:11:22+00:00",
+        "created": "2022-12-09T23:10:52+00:00",
+        "modified": "2022-12-09T23:10:52+00:00",
+        "when": "2022-12-09T23:10:52+00:00",
         "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 December 2022 04:50\n**Incident End:** 09 December 2022 07:55\n**Duration:** 3 hours, 5 minutes\n**Affected Services and Features:**\n- Artifact Registry: New repository creations\n- Google Cloud Composer: Composer environment creations\n- Google Cloud Storage: Operations that check IAM policies, especially CreateBucket\n- Google Kubernetes Engine: New cluster creation\n- Identity and Access Management: Not directly affected, only downstream services.\n**Regions/Zones:** australia-southeast1, asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-south2, asia-southeast1, asia-southeast2, australia-southeast2, and asia (Google Cloud multi-region).\n**Description:**\nGoogle Cloud Identity and Access Management (IAM) in the Asia multi-region experienced unavailability, which impacted several downstream Google Cloud services for a period of 3 hours and 17 minutes. Customers directly using IAM were not affected. The root cause was related to a configuration change with unintended consequences, which was immediately rolled back, once identified as the problem, thereby restoring services.\n**Customer Impact:**\nArtifact Registry\n- Affected customers would not have been able to create new repositories in the Asia multi-region. Customers would have received a failure message of “Request contains an invalid argument.”\nGoogle Cloud Composer\n- Affected customers in the Asia multi-region were not able to create Composer environments, receiving errors indicating either an issue with AppEngine or Google Kubernetes Engine (GKE) cluster creation.\nGoogle Cloud Storage\n- Affected customers would have experienced increased error rates when creating buckets in the Asia multi-region. GKE uses Google Cloud multi-regional buckets internally, so regional GKE customers throughout Asia Pacific were affected.\nGoogle Kubernetes Engine\n- Affected customers would have been unable to create new clusters in the affected regions.",
         "status": "AVAILABLE",
         "affected_locations": [
@@ -20595,10 +20558,10 @@
         ]
       },
       {
-        "created": "2022-12-09T16:22:10+00:00",
-        "modified": "2022-12-09T16:22:19+00:00",
-        "when": "2022-12-09T16:22:10+00:00",
-        "text": "The issue with Artifact Registry, Google App Engine, Google Cloud Composer, Google Cloud Storage, Google Kubernetes Engine, Identity and Access Management has been resolved for all affected projects as of Friday, 2022-12-09 08:06 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "created": "2022-12-09T15:18:29+00:00",
+        "modified": "2022-12-09T15:18:37+00:00",
+        "when": "2022-12-09T15:18:29+00:00",
+        "text": "This issue is believed to be affecting a very small number of projects and our Engineering Team is working on it. If you have questions or are impacted, please open a case with the Support Team and we will work with you until this issue is resolved. No further updates will be provided here. We thank you for your patience while we are working on resolving the issue.",
         "status": "AVAILABLE",
         "affected_locations": [
           {
@@ -20648,11 +20611,64 @@
         ]
       },
       {
-        "created": "2022-12-09T15:56:09+00:00",
-        "modified": "2022-12-09T15:56:18+00:00",
-        "when": "2022-12-09T15:56:09+00:00",
-        "text": "Summary: Multiple products may return error messages across Asia/Australia\nDescription: We are experiencing an issue with Identity and Access Management, Identity and Access Management, Identity and Access Management, Identity and Access Management, Google Cloud Composer, Identity and Access Management, Identity and Access Management, Identity and Access Management, Google Cloud Composer, Identity and Access Management, Google Cloud Composer, Google Cloud Composer, Google Cloud Composer, Google Cloud Composer, Google Cloud Composer, Google Cloud Composer, Identity and Access Management, Google Cloud Composer, Identity and Access Management, Google Cloud Composer, Identity and Access Management, Google Cloud Composer, Identity and Access Management, Identity and Access Management, Google Cloud Composer, Artifact Registry, Identity and Access Management, Google Cloud Composer, Artifact Registry, Google Kubernetes Engine, Identity and Access Management, Artifact Registry, Identity and Access Management, Google Cloud Composer, Artifact Registry, Google Kubernetes Engine, Google App Engine.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 08:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Multiple products may return error messages\nWorkaround: None at this time.",
-        "status": "SERVICE_OUTAGE",
+        "created": "2022-12-09T14:26:53+00:00",
+        "modified": "2022-12-09T14:26:58+00:00",
+        "when": "2022-12-09T14:26:53+00:00",
+        "text": "Summary: Google Kubernetes Engine: INTERNAL_ERROR when performing ClusterCreation in Asia regions\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Friday, 2022-12-09 04:48 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 07:30 US/Pacific with current details.\nDiagnosis: Customers will see INTERNAL_ERROR when performing ClusterCreation (GKE Cluster Server receives invalid_argument error when creating a GCS bucket as one step of cluster creation).\nWorkaround: Try using another location (outside of Asian regions)",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          }
+        ]
+      },
+      {
+        "created": "2022-12-09T14:16:45+00:00",
+        "modified": "2022-12-09T14:16:51+00:00",
+        "when": "2022-12-09T14:16:45+00:00",
+        "text": "Summary: Google Kubernetes Engine: INTERNAL_ERROR when performing ClusterCreation in Asia regions\nDescription: We are experiencing an issue with Google Kubernetes Engine beginning at Friday, 2022-12-09 04:48 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-12-09 07:30 US/Pacific with current details.\nDiagnosis: Customers will see INTERNAL_ERROR when performing ClusterCreation\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
         "affected_locations": [
           {
             "title": "Taiwan (asia-east1)",
@@ -20702,9 +20718,9 @@
       }
     ],
     "most_recent_update": {
-      "created": "2022-12-09T23:11:22+00:00",
-      "modified": "2022-12-09T23:11:22+00:00",
-      "when": "2022-12-09T23:11:22+00:00",
+      "created": "2022-12-09T23:10:52+00:00",
+      "modified": "2022-12-09T23:10:52+00:00",
+      "when": "2022-12-09T23:10:52+00:00",
       "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 09 December 2022 04:50\n**Incident End:** 09 December 2022 07:55\n**Duration:** 3 hours, 5 minutes\n**Affected Services and Features:**\n- Artifact Registry: New repository creations\n- Google Cloud Composer: Composer environment creations\n- Google Cloud Storage: Operations that check IAM policies, especially CreateBucket\n- Google Kubernetes Engine: New cluster creation\n- Identity and Access Management: Not directly affected, only downstream services.\n**Regions/Zones:** australia-southeast1, asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-south2, asia-southeast1, asia-southeast2, australia-southeast2, and asia (Google Cloud multi-region).\n**Description:**\nGoogle Cloud Identity and Access Management (IAM) in the Asia multi-region experienced unavailability, which impacted several downstream Google Cloud services for a period of 3 hours and 17 minutes. Customers directly using IAM were not affected. The root cause was related to a configuration change with unintended consequences, which was immediately rolled back, once identified as the problem, thereby restoring services.\n**Customer Impact:**\nArtifact Registry\n- Affected customers would not have been able to create new repositories in the Asia multi-region. Customers would have received a failure message of “Request contains an invalid argument.”\nGoogle Cloud Composer\n- Affected customers in the Asia multi-region were not able to create Composer environments, receiving errors indicating either an issue with AppEngine or Google Kubernetes Engine (GKE) cluster creation.\nGoogle Cloud Storage\n- Affected customers would have experienced increased error rates when creating buckets in the Asia multi-region. GKE uses Google Cloud multi-regional buckets internally, so regional GKE customers throughout Asia Pacific were affected.\nGoogle Kubernetes Engine\n- Affected customers would have been unable to create new clusters in the affected regions.",
       "status": "AVAILABLE",
       "affected_locations": [
@@ -20754,8 +20770,8 @@
         }
       ]
     },
-    "status_impact": "SERVICE_OUTAGE",
-    "severity": "high",
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
     "service_key": "zall",
     "service_name": "Multiple Products",
     "affected_products": [
@@ -20770,25 +20786,9 @@
       {
         "title": "Artifact Registry",
         "id": "QbBuuiRdsLpMr9WmGwm5"
-      },
-      {
-        "title": "Google Cloud Storage",
-        "id": "UwaYoXQ5bHYHG6EdiPB8"
-      },
-      {
-        "title": "Google Cloud Composer",
-        "id": "YxkG5FfcC42cQmvBCk4j"
-      },
-      {
-        "title": "Identity and Access Management",
-        "id": "adnGEDEt9zWzs8uF1oKA"
-      },
-      {
-        "title": "Google App Engine",
-        "id": "kchyUtnkMHJWaAva8aYc"
       }
     ],
-    "uri": "incidents/nrhani4w9dJbBEDUtfq8",
+    "uri": "incidents/k8vzThdsK2b8EviustGQ",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -30835,6 +30835,100 @@
     ]
   },
   {
+    "id": "fMoBTKwAsJdvLrxXusAB",
+    "number": "7984776864928624241",
+    "begin": "2022-11-10T08:04:00+00:00",
+    "created": "2022-11-10T16:17:43+00:00",
+    "end": "2022-11-10T16:07:00+00:00",
+    "modified": "2022-11-10T22:44:02+00:00",
+    "external_desc": "Google BigQuery: Customers may get INTERNAL_ERROR when running import jobs in regions/europe-west1",
+    "updates": [
+      {
+        "created": "2022-11-10T22:43:42+00:00",
+        "modified": "2022-11-10T22:43:42+00:00",
+        "when": "2022-11-10T22:43:42+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 10 November 2022 00:04\n**Incident End:** 10 November 2022 08:07\n**Duration:** 8 hours, 3 minutes\n**Affected Services and Features:**\nGoogle Cloud Storage\nGoogle BigQuery\n**Regions/Zones:** europe-west1\n**Description:**\nGoogle Cloud Storage experienced intermittent unavailability errors for a period of 8 hours and 3 minutes in europe-west1. From a preliminary analysis, the root cause of the issue was related to a recent change to network traffic routing. This change was rolled back to successfully mitigate the issue. Google will be providing a full Incident Report that will provide additional root cause information.\n**Customer Impact:**\n- Google Cloud Storage customers would have received HTTP 503 errors for read/write operations in europe-west1. Metadata operations such as object listing continued to work successfully.\n- Google BigQuery customers may have received “INTERNAL_ERROR” when running import jobs in europe-west1 during the impact window.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          }
+        ]
+      },
+      {
+        "created": "2022-11-10T16:22:16+00:00",
+        "modified": "2022-11-10T16:22:21+00:00",
+        "when": "2022-11-10T16:22:16+00:00",
+        "text": "The issue with Google BigQuery has been resolved for all affected users as of Thursday, 2022-11-10 08:22 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          }
+        ]
+      },
+      {
+        "created": "2022-11-10T16:18:52+00:00",
+        "modified": "2022-11-10T16:19:03+00:00",
+        "when": "2022-11-10T16:18:52+00:00",
+        "text": "Summary: Google BigQuery: Customers may get INTERNAL_ERROR when running import jobs in regions/europe-west1\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2022-11-10 09:30 US/Pacific.\nWe will provide more information by Thursday, 2022-11-10 09:30 US/Pacific.\nDiagnosis: Customers may get INTERNAL_ERROR when running import jobs\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          }
+        ]
+      },
+      {
+        "created": "2022-11-10T16:17:36+00:00",
+        "modified": "2022-11-10T16:17:45+00:00",
+        "when": "2022-11-10T16:17:36+00:00",
+        "text": "Summary: Google BigQuery: Customers may get INTERNAL_ERROR when running import jobs in regions/europe-west1\nDescription: We are experiencing an issue with Google BigQuery.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2022-11-10 08:50 US/Pacific with current details.\nDiagnosis: Customers may get INTERNAL_ERROR when running import jobs\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-11-10T22:43:42+00:00",
+      "modified": "2022-11-10T22:43:42+00:00",
+      "when": "2022-11-10T22:43:42+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 10 November 2022 00:04\n**Incident End:** 10 November 2022 08:07\n**Duration:** 8 hours, 3 minutes\n**Affected Services and Features:**\nGoogle Cloud Storage\nGoogle BigQuery\n**Regions/Zones:** europe-west1\n**Description:**\nGoogle Cloud Storage experienced intermittent unavailability errors for a period of 8 hours and 3 minutes in europe-west1. From a preliminary analysis, the root cause of the issue was related to a recent change to network traffic routing. This change was rolled back to successfully mitigate the issue. Google will be providing a full Incident Report that will provide additional root cause information.\n**Customer Impact:**\n- Google Cloud Storage customers would have received HTTP 503 errors for read/write operations in europe-west1. Metadata operations such as object listing continued to work successfully.\n- Google BigQuery customers may have received “INTERNAL_ERROR” when running import jobs in europe-west1 during the impact window.",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Belgium (europe-west1)",
+          "id": "europe-west1"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "9CcrhHUcFevXPSVaSxkf",
+    "service_name": "Google BigQuery",
+    "affected_products": [
+      {
+        "title": "Google BigQuery",
+        "id": "9CcrhHUcFevXPSVaSxkf"
+      }
+    ],
+    "uri": "incidents/fMoBTKwAsJdvLrxXusAB",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Belgium (europe-west1)",
+        "id": "europe-west1"
+      }
+    ]
+  },
+  {
     "id": "NXMPMbVyi51BMicBX3ga",
     "number": "5306905491320904900",
     "begin": "2022-11-10T08:04:00+00:00",
@@ -30972,100 +31066,6 @@
       }
     ],
     "uri": "incidents/NXMPMbVyi51BMicBX3ga",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Belgium (europe-west1)",
-        "id": "europe-west1"
-      }
-    ]
-  },
-  {
-    "id": "fMoBTKwAsJdvLrxXusAB",
-    "number": "7984776864928624241",
-    "begin": "2022-11-10T08:04:00+00:00",
-    "created": "2022-11-10T16:17:43+00:00",
-    "end": "2022-11-10T16:07:00+00:00",
-    "modified": "2022-11-10T22:44:02+00:00",
-    "external_desc": "Google BigQuery: Customers may get INTERNAL_ERROR when running import jobs in regions/europe-west1",
-    "updates": [
-      {
-        "created": "2022-11-10T22:43:42+00:00",
-        "modified": "2022-11-10T22:43:42+00:00",
-        "when": "2022-11-10T22:43:42+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 10 November 2022 00:04\n**Incident End:** 10 November 2022 08:07\n**Duration:** 8 hours, 3 minutes\n**Affected Services and Features:**\nGoogle Cloud Storage\nGoogle BigQuery\n**Regions/Zones:** europe-west1\n**Description:**\nGoogle Cloud Storage experienced intermittent unavailability errors for a period of 8 hours and 3 minutes in europe-west1. From a preliminary analysis, the root cause of the issue was related to a recent change to network traffic routing. This change was rolled back to successfully mitigate the issue. Google will be providing a full Incident Report that will provide additional root cause information.\n**Customer Impact:**\n- Google Cloud Storage customers would have received HTTP 503 errors for read/write operations in europe-west1. Metadata operations such as object listing continued to work successfully.\n- Google BigQuery customers may have received “INTERNAL_ERROR” when running import jobs in europe-west1 during the impact window.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          }
-        ]
-      },
-      {
-        "created": "2022-11-10T16:22:16+00:00",
-        "modified": "2022-11-10T16:22:21+00:00",
-        "when": "2022-11-10T16:22:16+00:00",
-        "text": "The issue with Google BigQuery has been resolved for all affected users as of Thursday, 2022-11-10 08:22 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          }
-        ]
-      },
-      {
-        "created": "2022-11-10T16:18:52+00:00",
-        "modified": "2022-11-10T16:19:03+00:00",
-        "when": "2022-11-10T16:18:52+00:00",
-        "text": "Summary: Google BigQuery: Customers may get INTERNAL_ERROR when running import jobs in regions/europe-west1\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2022-11-10 09:30 US/Pacific.\nWe will provide more information by Thursday, 2022-11-10 09:30 US/Pacific.\nDiagnosis: Customers may get INTERNAL_ERROR when running import jobs\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          }
-        ]
-      },
-      {
-        "created": "2022-11-10T16:17:36+00:00",
-        "modified": "2022-11-10T16:17:45+00:00",
-        "when": "2022-11-10T16:17:36+00:00",
-        "text": "Summary: Google BigQuery: Customers may get INTERNAL_ERROR when running import jobs in regions/europe-west1\nDescription: We are experiencing an issue with Google BigQuery.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2022-11-10 08:50 US/Pacific with current details.\nDiagnosis: Customers may get INTERNAL_ERROR when running import jobs\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-11-10T22:43:42+00:00",
-      "modified": "2022-11-10T22:43:42+00:00",
-      "when": "2022-11-10T22:43:42+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 10 November 2022 00:04\n**Incident End:** 10 November 2022 08:07\n**Duration:** 8 hours, 3 minutes\n**Affected Services and Features:**\nGoogle Cloud Storage\nGoogle BigQuery\n**Regions/Zones:** europe-west1\n**Description:**\nGoogle Cloud Storage experienced intermittent unavailability errors for a period of 8 hours and 3 minutes in europe-west1. From a preliminary analysis, the root cause of the issue was related to a recent change to network traffic routing. This change was rolled back to successfully mitigate the issue. Google will be providing a full Incident Report that will provide additional root cause information.\n**Customer Impact:**\n- Google Cloud Storage customers would have received HTTP 503 errors for read/write operations in europe-west1. Metadata operations such as object listing continued to work successfully.\n- Google BigQuery customers may have received “INTERNAL_ERROR” when running import jobs in europe-west1 during the impact window.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Belgium (europe-west1)",
-          "id": "europe-west1"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
-    "service_key": "9CcrhHUcFevXPSVaSxkf",
-    "service_name": "Google BigQuery",
-    "affected_products": [
-      {
-        "title": "Google BigQuery",
-        "id": "9CcrhHUcFevXPSVaSxkf"
-      }
-    ],
-    "uri": "incidents/fMoBTKwAsJdvLrxXusAB",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -67991,6 +67991,78 @@
     ]
   },
   {
+    "id": "PCibvK1LbstDfPKPGfRC",
+    "number": "10553856456157171095",
+    "begin": "2022-07-15T02:30:00+00:00",
+    "created": "2022-07-15T20:40:10+00:00",
+    "end": "2022-07-15T22:02:00+00:00",
+    "modified": "2022-07-28T15:09:25+00:00",
+    "external_desc": "BigQuery observing high import/export job latencies in several regions",
+    "updates": [
+      {
+        "created": "2022-07-28T00:46:02+00:00",
+        "modified": "2022-07-28T15:09:25+00:00",
+        "when": "2022-07-28T00:46:02+00:00",
+        "text": "INCIDENT REPORT\n**Summary:**\nGoogle Cloud Networking experienced reduced capacity for lower priority traffic such as batch, streaming and transfer operations from 19:30 US/Pacific on Thursday, 14 July 2022, through 15:02 US/Pacific on Friday, 15 July 2022. High-priority user-facing traffic was not affected. This service disruption resulted from an issue encountered during a combination of repair work and a routine network software upgrade rollout. Due to the nature of the disruption and resilience capabilities of Google Cloud products, the impacted regions and individual impact windows varied substantially. To our customers whose businesses were impacted during this disruption, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s availability.\n**Root Cause:**\nThe root cause was identified as an issue with a new control plane configuration rollout, causing low-priority classified traffic capacity reduction in Google’s internal backbone network connecting data centers. Mitigation efforts were slowed by the capacity reduction, and engineering teams required more than their usual time to safely undo the configuration change. During the period of the rollout and subsequent rollback, constrained traffic in certain cloud zones affected the performance of some Cloud services.\n**Remediation and Prevention:**\nAt approximately 02:00 US/Pacific on Friday, 15 July, as an in-progress rollout expanded to more regions, Google engineers observed performance degradation in Cloud Networking due to reduced capacity. The engineering team then started an investigation into the cause. At 03:50 US/Pacific, Google engineers pushed the first mitigation attempt to halt the ongoing rollout. While this effort succeeded in pausing any new actions, those already in progress continued, which further reduced network capacity.\nSubsequently, the engineering team shifted their mitigation efforts toward a global rollback of the problematic configuration. Their first attempt to mitigate using a configuration push was applied at 08:40 US/Pacific, but it was not successfully applied to all nodes, due in part to the reduced network performance. Google engineers worked through alternate mitigations, and by 12:40 US/Pacific, the configuration was updated correctly, and this mitigated the majority of impact.\nBy 15:02 US/Pacific on 15 July 2022, services for all customers had been restored. The Google Cloud Service Health Dashboard was updated to reflect this.\nGoogle is committed to preventing future recurrence, and we are taking the following\nactions:\nDetection:\n* Improve signals to detect significant changes in traffic for upgraded domains in the backbone network.\n* Improve dashboards that help debugging global- and domain-level control failures and configuration status.\nPrevention:\n* Improve the automated handling of disconnected local Software Defined Networking (SDN) controllers that will reduce overall impact and mitigation time. .\n* Improve the global safety systems that globally halt elective rollouts on Google’s wide area (WAN) networks, when global capacity is reduced.\n* Further isolate production network neighborhoods.\nMitigation:\n* Improve the API to push changes to global and local network controllers during a service disruption.\n* Improve failure domain configuration validation to reject unintended configuration.\n* Improve the feature and testing of emergency tools across different scenarios at regular intervals, and invest in test environments that enable us to do this without impact.\n**Detailed Description of Impact:**\n**Google Cloud Networking**\n* Google Cloud Networking experienced reduced capacity within the Google Cloud regions of us-east1, southamerica-west1, us-central1, and us-central2, starting from Friday 15 July 2022 02:24 US/Pacific. The most severe impact occurred from 03:58 to 12:40.\n* southamerica-west1 experienced reduced capacity between 14:40 and 15:02.\n* southamerica-west1 and southamerica-east1 both experienced egress packet loss between 20% and 30%.\n**Google Cloud Storage (GCS)**\n* Between Thursday, 14 July 2022 21:57 US/Pacific and Friday, 15 July 12:40 US/Pacific, GCS customers may have experienced elevated latency, delays, issues importing, exporting or querying data from GCS buckets, and HTTP 500 errors in the Google Cloud regions of us-east1, southamerica-west1, and us-central2, and for buckets located in us-central1, us-east1, and nam4.\n* This disruption affected 0.007% of GCS requests and impacted customers reading/writing data and metadata.\n**Google BigQuery**\n* Customer workloads running in impacted Google Cloud regions and using the BigQuery Storage Read and Write APIs to read from or write to BigQuery may have experienced elevated latency.\n**Note**\n* Additional services may have been impacted by this event but did not meet the thresholds to be included in this report.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2022-07-18T22:31:46+00:00",
+        "modified": "2022-07-21T20:43:24+00:00",
+        "when": "2022-07-18T22:31:46+00:00",
+        "text": "This is a preliminary Incident Report (Mini-IR). A Full Incident Report with additional details is being prepared and will be posted at a later date.\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 14 July 2022 19:30\n**Incident End:** 15 July 2022 15:02\n**Duration:** 19 hours, 32 minutes\n**Affected Services**\nGoogle Cloud Networking\nGoogle BigQuery\nGoogle Cloud Storage (GCS)\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Networking experienced reduced availability globally for a period of 19 hours and 32 minutes. Because of the nature of the outage and resilience capabilities of GCP products, the impacted regions and individual impacted windows may vary inside of the network impact window. From preliminary analysis, the root cause was due to an issue with a new control plane configuration rollout.\n**Customer Impact:**\nGoogle Cloud Storage - Affected customers would have experienced elevated latencies or HTTP 500 errors in multiple regions, including us-east1, us-central1, and southamerica-west1. - Affected customers reading/writing data from GCS impacted regions or from buckets located in impacted regions would have observed high latency and/or errors. - Affected customers reading/writing metadata for buckets located in impacted regions would have observed high latency and/or errors.\nGoogle BigQuery - Affected customers performing cross-regional table copies would have observed increased latency and/or errors.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2022-07-15T21:17:57+00:00",
+        "modified": "2022-07-15T21:17:59+00:00",
+        "when": "2022-07-15T21:17:57+00:00",
+        "text": "The issue with Google BigQuery has been resolved for all affected users as of Friday, 2022-07-15 14:12 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2022-07-15T21:02:16+00:00",
+        "modified": "2022-07-15T21:02:17+00:00",
+        "when": "2022-07-15T21:02:16+00:00",
+        "text": "Summary: BigQuery observing high import/export job latencies in several regions\nDescription: We are experiencing an issue with Google BigQuery beginning at Friday, 2022-07-15 05:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-07-15 15:05 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: BigQuery is observing high import/export job latencies (slowness) in several regions, which may ultimately result in errors.\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": []
+      },
+      {
+        "created": "2022-07-15T20:40:10+00:00",
+        "modified": "2022-07-15T20:40:11+00:00",
+        "when": "2022-07-15T20:40:10+00:00",
+        "text": "Summary: BigQuery observing high import/export job latencies in several regions\nDescription: We are experiencing an issue with Google BigQuery beginning at Friday, 2022-07-15 05:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-07-15 15:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: BigQuery is observing high import/export job latencies (slowness) in several regions, which may ultimately result in errors.\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": []
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-07-28T00:46:02+00:00",
+      "modified": "2022-07-28T15:09:25+00:00",
+      "when": "2022-07-28T00:46:02+00:00",
+      "text": "INCIDENT REPORT\n**Summary:**\nGoogle Cloud Networking experienced reduced capacity for lower priority traffic such as batch, streaming and transfer operations from 19:30 US/Pacific on Thursday, 14 July 2022, through 15:02 US/Pacific on Friday, 15 July 2022. High-priority user-facing traffic was not affected. This service disruption resulted from an issue encountered during a combination of repair work and a routine network software upgrade rollout. Due to the nature of the disruption and resilience capabilities of Google Cloud products, the impacted regions and individual impact windows varied substantially. To our customers whose businesses were impacted during this disruption, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s availability.\n**Root Cause:**\nThe root cause was identified as an issue with a new control plane configuration rollout, causing low-priority classified traffic capacity reduction in Google’s internal backbone network connecting data centers. Mitigation efforts were slowed by the capacity reduction, and engineering teams required more than their usual time to safely undo the configuration change. During the period of the rollout and subsequent rollback, constrained traffic in certain cloud zones affected the performance of some Cloud services.\n**Remediation and Prevention:**\nAt approximately 02:00 US/Pacific on Friday, 15 July, as an in-progress rollout expanded to more regions, Google engineers observed performance degradation in Cloud Networking due to reduced capacity. The engineering team then started an investigation into the cause. At 03:50 US/Pacific, Google engineers pushed the first mitigation attempt to halt the ongoing rollout. While this effort succeeded in pausing any new actions, those already in progress continued, which further reduced network capacity.\nSubsequently, the engineering team shifted their mitigation efforts toward a global rollback of the problematic configuration. Their first attempt to mitigate using a configuration push was applied at 08:40 US/Pacific, but it was not successfully applied to all nodes, due in part to the reduced network performance. Google engineers worked through alternate mitigations, and by 12:40 US/Pacific, the configuration was updated correctly, and this mitigated the majority of impact.\nBy 15:02 US/Pacific on 15 July 2022, services for all customers had been restored. The Google Cloud Service Health Dashboard was updated to reflect this.\nGoogle is committed to preventing future recurrence, and we are taking the following\nactions:\nDetection:\n* Improve signals to detect significant changes in traffic for upgraded domains in the backbone network.\n* Improve dashboards that help debugging global- and domain-level control failures and configuration status.\nPrevention:\n* Improve the automated handling of disconnected local Software Defined Networking (SDN) controllers that will reduce overall impact and mitigation time. .\n* Improve the global safety systems that globally halt elective rollouts on Google’s wide area (WAN) networks, when global capacity is reduced.\n* Further isolate production network neighborhoods.\nMitigation:\n* Improve the API to push changes to global and local network controllers during a service disruption.\n* Improve failure domain configuration validation to reject unintended configuration.\n* Improve the feature and testing of emergency tools across different scenarios at regular intervals, and invest in test environments that enable us to do this without impact.\n**Detailed Description of Impact:**\n**Google Cloud Networking**\n* Google Cloud Networking experienced reduced capacity within the Google Cloud regions of us-east1, southamerica-west1, us-central1, and us-central2, starting from Friday 15 July 2022 02:24 US/Pacific. The most severe impact occurred from 03:58 to 12:40.\n* southamerica-west1 experienced reduced capacity between 14:40 and 15:02.\n* southamerica-west1 and southamerica-east1 both experienced egress packet loss between 20% and 30%.\n**Google Cloud Storage (GCS)**\n* Between Thursday, 14 July 2022 21:57 US/Pacific and Friday, 15 July 12:40 US/Pacific, GCS customers may have experienced elevated latency, delays, issues importing, exporting or querying data from GCS buckets, and HTTP 500 errors in the Google Cloud regions of us-east1, southamerica-west1, and us-central2, and for buckets located in us-central1, us-east1, and nam4.\n* This disruption affected 0.007% of GCS requests and impacted customers reading/writing data and metadata.\n**Google BigQuery**\n* Customer workloads running in impacted Google Cloud regions and using the BigQuery Storage Read and Write APIs to read from or write to BigQuery may have experienced elevated latency.\n**Note**\n* Additional services may have been impacted by this event but did not meet the thresholds to be included in this report.",
+      "status": "AVAILABLE",
+      "affected_locations": []
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "9CcrhHUcFevXPSVaSxkf",
+    "service_name": "Google BigQuery",
+    "affected_products": [
+      {
+        "title": "Google BigQuery",
+        "id": "9CcrhHUcFevXPSVaSxkf"
+      }
+    ],
+    "uri": "incidents/PCibvK1LbstDfPKPGfRC",
+    "currently_affected_locations": [],
+    "previously_affected_locations": []
+  },
+  {
     "id": "vLsxuKoRvykNHW3nnhsJ",
     "number": "16828167276355000807",
     "begin": "2022-07-15T02:30:00+00:00",
@@ -68173,78 +68245,6 @@
         "id": "us-east1"
       }
     ]
-  },
-  {
-    "id": "PCibvK1LbstDfPKPGfRC",
-    "number": "10553856456157171095",
-    "begin": "2022-07-15T02:30:00+00:00",
-    "created": "2022-07-15T20:40:10+00:00",
-    "end": "2022-07-15T22:02:00+00:00",
-    "modified": "2022-07-28T15:09:25+00:00",
-    "external_desc": "BigQuery observing high import/export job latencies in several regions",
-    "updates": [
-      {
-        "created": "2022-07-28T00:46:02+00:00",
-        "modified": "2022-07-28T15:09:25+00:00",
-        "when": "2022-07-28T00:46:02+00:00",
-        "text": "INCIDENT REPORT\n**Summary:**\nGoogle Cloud Networking experienced reduced capacity for lower priority traffic such as batch, streaming and transfer operations from 19:30 US/Pacific on Thursday, 14 July 2022, through 15:02 US/Pacific on Friday, 15 July 2022. High-priority user-facing traffic was not affected. This service disruption resulted from an issue encountered during a combination of repair work and a routine network software upgrade rollout. Due to the nature of the disruption and resilience capabilities of Google Cloud products, the impacted regions and individual impact windows varied substantially. To our customers whose businesses were impacted during this disruption, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s availability.\n**Root Cause:**\nThe root cause was identified as an issue with a new control plane configuration rollout, causing low-priority classified traffic capacity reduction in Google’s internal backbone network connecting data centers. Mitigation efforts were slowed by the capacity reduction, and engineering teams required more than their usual time to safely undo the configuration change. During the period of the rollout and subsequent rollback, constrained traffic in certain cloud zones affected the performance of some Cloud services.\n**Remediation and Prevention:**\nAt approximately 02:00 US/Pacific on Friday, 15 July, as an in-progress rollout expanded to more regions, Google engineers observed performance degradation in Cloud Networking due to reduced capacity. The engineering team then started an investigation into the cause. At 03:50 US/Pacific, Google engineers pushed the first mitigation attempt to halt the ongoing rollout. While this effort succeeded in pausing any new actions, those already in progress continued, which further reduced network capacity.\nSubsequently, the engineering team shifted their mitigation efforts toward a global rollback of the problematic configuration. Their first attempt to mitigate using a configuration push was applied at 08:40 US/Pacific, but it was not successfully applied to all nodes, due in part to the reduced network performance. Google engineers worked through alternate mitigations, and by 12:40 US/Pacific, the configuration was updated correctly, and this mitigated the majority of impact.\nBy 15:02 US/Pacific on 15 July 2022, services for all customers had been restored. The Google Cloud Service Health Dashboard was updated to reflect this.\nGoogle is committed to preventing future recurrence, and we are taking the following\nactions:\nDetection:\n* Improve signals to detect significant changes in traffic for upgraded domains in the backbone network.\n* Improve dashboards that help debugging global- and domain-level control failures and configuration status.\nPrevention:\n* Improve the automated handling of disconnected local Software Defined Networking (SDN) controllers that will reduce overall impact and mitigation time. .\n* Improve the global safety systems that globally halt elective rollouts on Google’s wide area (WAN) networks, when global capacity is reduced.\n* Further isolate production network neighborhoods.\nMitigation:\n* Improve the API to push changes to global and local network controllers during a service disruption.\n* Improve failure domain configuration validation to reject unintended configuration.\n* Improve the feature and testing of emergency tools across different scenarios at regular intervals, and invest in test environments that enable us to do this without impact.\n**Detailed Description of Impact:**\n**Google Cloud Networking**\n* Google Cloud Networking experienced reduced capacity within the Google Cloud regions of us-east1, southamerica-west1, us-central1, and us-central2, starting from Friday 15 July 2022 02:24 US/Pacific. The most severe impact occurred from 03:58 to 12:40.\n* southamerica-west1 experienced reduced capacity between 14:40 and 15:02.\n* southamerica-west1 and southamerica-east1 both experienced egress packet loss between 20% and 30%.\n**Google Cloud Storage (GCS)**\n* Between Thursday, 14 July 2022 21:57 US/Pacific and Friday, 15 July 12:40 US/Pacific, GCS customers may have experienced elevated latency, delays, issues importing, exporting or querying data from GCS buckets, and HTTP 500 errors in the Google Cloud regions of us-east1, southamerica-west1, and us-central2, and for buckets located in us-central1, us-east1, and nam4.\n* This disruption affected 0.007% of GCS requests and impacted customers reading/writing data and metadata.\n**Google BigQuery**\n* Customer workloads running in impacted Google Cloud regions and using the BigQuery Storage Read and Write APIs to read from or write to BigQuery may have experienced elevated latency.\n**Note**\n* Additional services may have been impacted by this event but did not meet the thresholds to be included in this report.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2022-07-18T22:31:46+00:00",
-        "modified": "2022-07-21T20:43:24+00:00",
-        "when": "2022-07-18T22:31:46+00:00",
-        "text": "This is a preliminary Incident Report (Mini-IR). A Full Incident Report with additional details is being prepared and will be posted at a later date.\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 14 July 2022 19:30\n**Incident End:** 15 July 2022 15:02\n**Duration:** 19 hours, 32 minutes\n**Affected Services**\nGoogle Cloud Networking\nGoogle BigQuery\nGoogle Cloud Storage (GCS)\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Networking experienced reduced availability globally for a period of 19 hours and 32 minutes. Because of the nature of the outage and resilience capabilities of GCP products, the impacted regions and individual impacted windows may vary inside of the network impact window. From preliminary analysis, the root cause was due to an issue with a new control plane configuration rollout.\n**Customer Impact:**\nGoogle Cloud Storage - Affected customers would have experienced elevated latencies or HTTP 500 errors in multiple regions, including us-east1, us-central1, and southamerica-west1. - Affected customers reading/writing data from GCS impacted regions or from buckets located in impacted regions would have observed high latency and/or errors. - Affected customers reading/writing metadata for buckets located in impacted regions would have observed high latency and/or errors.\nGoogle BigQuery - Affected customers performing cross-regional table copies would have observed increased latency and/or errors.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2022-07-15T21:17:57+00:00",
-        "modified": "2022-07-15T21:17:59+00:00",
-        "when": "2022-07-15T21:17:57+00:00",
-        "text": "The issue with Google BigQuery has been resolved for all affected users as of Friday, 2022-07-15 14:12 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2022-07-15T21:02:16+00:00",
-        "modified": "2022-07-15T21:02:17+00:00",
-        "when": "2022-07-15T21:02:16+00:00",
-        "text": "Summary: BigQuery observing high import/export job latencies in several regions\nDescription: We are experiencing an issue with Google BigQuery beginning at Friday, 2022-07-15 05:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-07-15 15:05 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: BigQuery is observing high import/export job latencies (slowness) in several regions, which may ultimately result in errors.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": []
-      },
-      {
-        "created": "2022-07-15T20:40:10+00:00",
-        "modified": "2022-07-15T20:40:11+00:00",
-        "when": "2022-07-15T20:40:10+00:00",
-        "text": "Summary: BigQuery observing high import/export job latencies in several regions\nDescription: We are experiencing an issue with Google BigQuery beginning at Friday, 2022-07-15 05:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-07-15 15:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: BigQuery is observing high import/export job latencies (slowness) in several regions, which may ultimately result in errors.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": []
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-07-28T00:46:02+00:00",
-      "modified": "2022-07-28T15:09:25+00:00",
-      "when": "2022-07-28T00:46:02+00:00",
-      "text": "INCIDENT REPORT\n**Summary:**\nGoogle Cloud Networking experienced reduced capacity for lower priority traffic such as batch, streaming and transfer operations from 19:30 US/Pacific on Thursday, 14 July 2022, through 15:02 US/Pacific on Friday, 15 July 2022. High-priority user-facing traffic was not affected. This service disruption resulted from an issue encountered during a combination of repair work and a routine network software upgrade rollout. Due to the nature of the disruption and resilience capabilities of Google Cloud products, the impacted regions and individual impact windows varied substantially. To our customers whose businesses were impacted during this disruption, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s availability.\n**Root Cause:**\nThe root cause was identified as an issue with a new control plane configuration rollout, causing low-priority classified traffic capacity reduction in Google’s internal backbone network connecting data centers. Mitigation efforts were slowed by the capacity reduction, and engineering teams required more than their usual time to safely undo the configuration change. During the period of the rollout and subsequent rollback, constrained traffic in certain cloud zones affected the performance of some Cloud services.\n**Remediation and Prevention:**\nAt approximately 02:00 US/Pacific on Friday, 15 July, as an in-progress rollout expanded to more regions, Google engineers observed performance degradation in Cloud Networking due to reduced capacity. The engineering team then started an investigation into the cause. At 03:50 US/Pacific, Google engineers pushed the first mitigation attempt to halt the ongoing rollout. While this effort succeeded in pausing any new actions, those already in progress continued, which further reduced network capacity.\nSubsequently, the engineering team shifted their mitigation efforts toward a global rollback of the problematic configuration. Their first attempt to mitigate using a configuration push was applied at 08:40 US/Pacific, but it was not successfully applied to all nodes, due in part to the reduced network performance. Google engineers worked through alternate mitigations, and by 12:40 US/Pacific, the configuration was updated correctly, and this mitigated the majority of impact.\nBy 15:02 US/Pacific on 15 July 2022, services for all customers had been restored. The Google Cloud Service Health Dashboard was updated to reflect this.\nGoogle is committed to preventing future recurrence, and we are taking the following\nactions:\nDetection:\n* Improve signals to detect significant changes in traffic for upgraded domains in the backbone network.\n* Improve dashboards that help debugging global- and domain-level control failures and configuration status.\nPrevention:\n* Improve the automated handling of disconnected local Software Defined Networking (SDN) controllers that will reduce overall impact and mitigation time. .\n* Improve the global safety systems that globally halt elective rollouts on Google’s wide area (WAN) networks, when global capacity is reduced.\n* Further isolate production network neighborhoods.\nMitigation:\n* Improve the API to push changes to global and local network controllers during a service disruption.\n* Improve failure domain configuration validation to reject unintended configuration.\n* Improve the feature and testing of emergency tools across different scenarios at regular intervals, and invest in test environments that enable us to do this without impact.\n**Detailed Description of Impact:**\n**Google Cloud Networking**\n* Google Cloud Networking experienced reduced capacity within the Google Cloud regions of us-east1, southamerica-west1, us-central1, and us-central2, starting from Friday 15 July 2022 02:24 US/Pacific. The most severe impact occurred from 03:58 to 12:40.\n* southamerica-west1 experienced reduced capacity between 14:40 and 15:02.\n* southamerica-west1 and southamerica-east1 both experienced egress packet loss between 20% and 30%.\n**Google Cloud Storage (GCS)**\n* Between Thursday, 14 July 2022 21:57 US/Pacific and Friday, 15 July 12:40 US/Pacific, GCS customers may have experienced elevated latency, delays, issues importing, exporting or querying data from GCS buckets, and HTTP 500 errors in the Google Cloud regions of us-east1, southamerica-west1, and us-central2, and for buckets located in us-central1, us-east1, and nam4.\n* This disruption affected 0.007% of GCS requests and impacted customers reading/writing data and metadata.\n**Google BigQuery**\n* Customer workloads running in impacted Google Cloud regions and using the BigQuery Storage Read and Write APIs to read from or write to BigQuery may have experienced elevated latency.\n**Note**\n* Additional services may have been impacted by this event but did not meet the thresholds to be included in this report.",
-      "status": "AVAILABLE",
-      "affected_locations": []
-    },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
-    "service_key": "9CcrhHUcFevXPSVaSxkf",
-    "service_name": "Google BigQuery",
-    "affected_products": [
-      {
-        "title": "Google BigQuery",
-        "id": "9CcrhHUcFevXPSVaSxkf"
-      }
-    ],
-    "uri": "incidents/PCibvK1LbstDfPKPGfRC",
-    "currently_affected_locations": [],
-    "previously_affected_locations": []
   },
   {
     "id": "a9sMdFqr1mDB4vCB93M4",
@@ -92194,62 +92194,6 @@
       }
     ],
     "uri": "incidents/LuGcJVjNTeC5Sb9pSJ9o",
-    "currently_affected_locations": [],
-    "previously_affected_locations": []
-  },
-  {
-    "id": "Hko5cWSXxGSsxfiSpg4n",
-    "number": "6491961050454270833",
-    "begin": "2022-02-22T05:45:00+00:00",
-    "created": "2022-02-25T17:57:41+00:00",
-    "end": "2022-02-25T20:22:00+00:00",
-    "modified": "2022-02-25T23:21:04+00:00",
-    "external_desc": "BigQuery S3 Data Transfer Service experiencing issues in us-multiregion, asia-noutheast1 and asia-southeast1",
-    "updates": [
-      {
-        "created": "2022-02-25T23:20:38+00:00",
-        "modified": "2022-02-25T23:20:38+00:00",
-        "when": "2022-02-25T23:20:38+00:00",
-        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 21 February 2022 21:45\n**Incident End:** 25 February 2022 12:22\n**Duration:** 3 days, 14 hours, 37 minutes\n**Affected Services and Features:**\nGoogle BigQuery - Data Transfer Service\n**Regions/Zones:** Global\n**Description:**\nGoogle BigQuery S3 Data Transfer Service experienced table validation failures globally, with the majority of impact observed in us-multiregion, asia-northeast1, and asia-southeast1. From preliminary analysis, the root cause of the issue was a rollout that started on 21 February 2022 at 01:00 US/Pacific. A rollback was initiated on 25 February 2022 at 08:29 to mitigate the issue in the most heavily affected regions (us-multiregion, asia-northeast1, and asia-southeast1) which was completed on 25 February 2022 12:01.\n**Customer Impact:**\n* Transfer Runs for Google BigQuery S3 Data Transfer Service [1] will fail with an INVALID_ARGUMENT error if the following conditions are met: * The destination table in the Transfer Configuration contains a runtime parameter\n[2]. * The rollback has not completed in the given region. Regions where we identified impact have been prioritized and rolled back already.\n[1] - https://cloud.google.com/bigquery-transfer/docs/s3-transfer-intro\n[2] - https://cloud.google.com/bigquery-transfer/docs/s3-transfer-parameters\n**Additional Details:**\n* The rollback should complete across all regions by 01 March 2022.\n* Once the rollback completes, affected customers can retry the failed Transfer Runs to load any missed files.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2022-02-25T20:04:03+00:00",
-        "modified": "2022-02-25T20:04:05+00:00",
-        "when": "2022-02-25T20:04:03+00:00",
-        "text": "The issue with Google BigQuery has been resolved for all affected users as of Friday, 2022-02-25 12:03 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2022-02-25T17:57:41+00:00",
-        "modified": "2022-02-25T17:57:41+00:00",
-        "when": "2022-02-25T17:57:41+00:00",
-        "text": "Summary: BigQuery S3 Data Transfer Service experiencing issues in us-multiregion, asia-noutheast1 and asia-southeast1\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by the following dates/times:\nUS-Multiregion - Friday, 2022-02-25 12:00 US/Pacific.\nAsia-southeast1 and Asia-northeast1 - Friday, 2022-02-25 14:00 US/Pacific.\nOther regions potentially impacted - Tuesday, 2022-03-01 EOB US/Pacific.\nWe will provide more information by Friday, 2022-02-25 12:00 US/Pacific.\nDiagnosis: S3 transfers may fail table validation when table name contains template argument (e.g., \"{run_time}\")\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-02-25T23:20:38+00:00",
-      "modified": "2022-02-25T23:20:38+00:00",
-      "when": "2022-02-25T23:20:38+00:00",
-      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Support by opening a case using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 21 February 2022 21:45\n**Incident End:** 25 February 2022 12:22\n**Duration:** 3 days, 14 hours, 37 minutes\n**Affected Services and Features:**\nGoogle BigQuery - Data Transfer Service\n**Regions/Zones:** Global\n**Description:**\nGoogle BigQuery S3 Data Transfer Service experienced table validation failures globally, with the majority of impact observed in us-multiregion, asia-northeast1, and asia-southeast1. From preliminary analysis, the root cause of the issue was a rollout that started on 21 February 2022 at 01:00 US/Pacific. A rollback was initiated on 25 February 2022 at 08:29 to mitigate the issue in the most heavily affected regions (us-multiregion, asia-northeast1, and asia-southeast1) which was completed on 25 February 2022 12:01.\n**Customer Impact:**\n* Transfer Runs for Google BigQuery S3 Data Transfer Service [1] will fail with an INVALID_ARGUMENT error if the following conditions are met: * The destination table in the Transfer Configuration contains a runtime parameter\n[2]. * The rollback has not completed in the given region. Regions where we identified impact have been prioritized and rolled back already.\n[1] - https://cloud.google.com/bigquery-transfer/docs/s3-transfer-intro\n[2] - https://cloud.google.com/bigquery-transfer/docs/s3-transfer-parameters\n**Additional Details:**\n* The rollback should complete across all regions by 01 March 2022.\n* Once the rollback completes, affected customers can retry the failed Transfer Runs to load any missed files.",
-      "status": "AVAILABLE",
-      "affected_locations": []
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "9CcrhHUcFevXPSVaSxkf",
-    "service_name": "Google BigQuery",
-    "affected_products": [
-      {
-        "title": "Google BigQuery",
-        "id": "9CcrhHUcFevXPSVaSxkf"
-      }
-    ],
-    "uri": "incidents/Hko5cWSXxGSsxfiSpg4n",
     "currently_affected_locations": [],
     "previously_affected_locations": []
   }
