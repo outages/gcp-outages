@@ -4,9 +4,114 @@
     "number": "15399376130447730830",
     "begin": "2023-02-26T02:24:50+00:00",
     "created": "2023-02-26T08:08:59+00:00",
-    "modified": "2023-02-26T14:28:32+00:00",
+    "modified": "2023-02-26T15:09:33+00:00",
     "external_desc": "File access issues for non-root users for Cloud Filestore",
     "updates": [
+      {
+        "created": "2023-02-26T15:09:33+00:00",
+        "modified": "2023-02-26T15:09:45+00:00",
+        "when": "2023-02-26T15:09:33+00:00",
+        "text": "Summary: File access issues for non-root users for Cloud Filestore\nDescription: We are experiencing an issue with Cloud Filestore Enterprise and High Scale tiers.\nMitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Monday, 2023-02-27 08:30 US/Pacific.\nDiagnosis: Non-root users may observe \"Operation not permitted\" access denied while accessing the files with the access is only granted via group permissions.\nWorkaround: 1. Change the file owner to match the user accessing the file.\n2. Alternatively, access the file as the superuser (root user).\n3. Contact support to initiate an upgrade of the affected instance.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Tel Aviv (me-west1)",
+            "id": "me-west1"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2023-02-26T14:28:32+00:00",
         "modified": "2023-02-26T14:28:39+00:00",
@@ -429,10 +534,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2023-02-26T14:28:32+00:00",
-      "modified": "2023-02-26T14:28:39+00:00",
-      "when": "2023-02-26T14:28:32+00:00",
-      "text": "Summary: File access issues for non-root users for Cloud Filestore\nDescription: We are experiencing an issue with Cloud Filestore Enterprise and High Scale tiers.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Sunday, 2023-02-26 08:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Non-root users may observe \"Operation not permitted\" access denied while accessing the files with the access is only granted via group permissions.\nWorkaround: 1. Change the file owner to match the user accessing the file.\n2. Alternatively, access the file as the superuser (root user).",
+      "created": "2023-02-26T15:09:33+00:00",
+      "modified": "2023-02-26T15:09:45+00:00",
+      "when": "2023-02-26T15:09:33+00:00",
+      "text": "Summary: File access issues for non-root users for Cloud Filestore\nDescription: We are experiencing an issue with Cloud Filestore Enterprise and High Scale tiers.\nMitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Monday, 2023-02-27 08:30 US/Pacific.\nDiagnosis: Non-root users may observe \"Operation not permitted\" access denied while accessing the files with the access is only granted via group permissions.\nWorkaround: 1. Change the file owner to match the user accessing the file.\n2. Alternatively, access the file as the superuser (root user).\n3. Contact support to initiate an upgrade of the affected instance.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
