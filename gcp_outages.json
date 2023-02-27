@@ -2,12 +2,161 @@
   {
     "id": "LnvJwfYu3TCyUrcrP7yf",
     "number": "5066642250695764393",
-    "begin": "2023-02-27T13:38:40+00:00",
+    "begin": "2023-02-27T12:58:00+00:00",
     "created": "2023-02-27T13:41:19+00:00",
-    "end": "2023-02-27T16:04:23+00:00",
-    "modified": "2023-02-27T16:04:24+00:00",
+    "end": "2023-02-27T13:11:00+00:00",
+    "modified": "2023-02-27T18:54:31+00:00",
     "external_desc": "Multiple services are being impacted globally within Google Cloud",
     "updates": [
+      {
+        "created": "2023-02-27T18:54:25+00:00",
+        "modified": "2023-02-27T18:54:25+00:00",
+        "when": "2023-02-27T18:54:25+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 27 Feb 2023 04:58\n**Incident End:** 27 Feb 2023 05:11\n**Duration:** 13 minutes\n**Affected Services and Features:**\nMultiple Google Cloud Platform and Google Workspace services\n**Regions/Zones:** Multiple regions\n**Description:**\nMultiple Google Cloud Platform and Google Workspace services experienced elevated error rates for 13 minutes due to packet loss on Google’s production backbone network. Google will be completing a full Incident Report in the following days that will include additional details and provide a full root cause.\n**Customer Impact:**\n**Google Cloud Platform Services:**\n* Apigee - Affected users experienced client connect timeouts and elevated 5XX errors.\n* Virtual Private Cloud (VPC) - Affected users experienced increased packet loss for cross region traffic.\n* Cloud Interconnect - Affected users in regions us-east4, asia-southeast1, southamerica-east1, us-east7, us-west4 experienced increased packet loss on their interconnects.\n* BigQuery - Affected users experienced availability issues with BigQuery.\n* Cloud Dataflow - Affected users experienced elevated latency and error rates for batch and streaming jobs. Some users may have experienced increased latency in Create Workflow operations.\n* Cloud Bigtable - Affected users experienced deadline exceeded or unavailable errors with Data and Admin APIs in us-east4, us-central1, and us-west1 regions\n* Cloud Key Management Service (KMS) - Affected users experienced “unavailable” errors when attempting to use the service.\n* Cloud Monitoring - Affected users experienced elevated latency on Cloud Monitoring dashboard when accessing resources.\n* Persistent Disk - Affected users experienced elevated read/write latency.\n* Cloud SQL - Customers may have seen intermittent connectivity issues for ~10 minutes from 05:00-05:10 (us-central1, us-east4, us-west4, southamerica-east1). Retrying should have succeeded, as the success rate was ~80-95% depending on region and method.\n* Cloud Workflows - Affected users may have seen increased error rates.\n* Cloud Console - Affected users may have seen increased GUI failures for the impact duration.\n* Cloud Load Balancing - Affected users experienced elevated 500 error rates from load balancers for traffic passing through asia-southeast1, us-central1, us-west4.\n* Google Compute Engine - Autoscaler\n* Cloud Run - Affected users experienced elevated error rates (400 or 500 errors), request time outs, and control plane request failures. Retrying the requests may have succeeded in some cases.\n* Cloud App Engine - Affected users experienced elevated error rates (400 or 500 errors), request time outs, and control plane request failures. Retrying the requests may have succeeded in some cases.\n* Cloud Functions - Affected users experienced elevated error rates (400 or 500 errors), request time outs, and control plane request failures. Retrying the requests may have succeeded in some cases.\n* Cloud VPN - Affected users experienced elevated packet loss in us-east4, asia-southeast1, southamerica-east1, us-east7, us-west4.\n* Identity and Access Management - Affected users experienced NOT_FOUND, PERMISSION_DENIED, DEADLINE_EXCEEDED and UNAVAILABLE errors.\n* Cloud Pub/sub – Affected users experienced availability issues.\n* Google Cloud Storage- Affected users experienced “unavailable” errors\n* Cloud Firestore— Affected users experienced issues with Firestore service availability.\n* Cloud Data Loss Prevention - Affected users experienced elevated RPC error rates.\n* Cloud Memorystore - Affected users experienced increased latency and deadline exceeded errors for some requests like GetInstance, ListInstance, ExportInstance. Some users experienced issues with creating new Memorystore for Redis instances.\n**Workspace services:**\n* Gmail - Affected users experienced elevated error rates\n* Google Calendar - Affected users experienced availability issues with the calendar.\n* Google Chat - Affected users experienced issues with chat interactions on web and mobile\n* Google Meet - Affected users experienced failures to join a meeting. Retry attempt to join the meeting succeeded for most of the affected users.\n* Google Docs - Affected users experienced errors when loading or accessing a document.\n* Google Drive - Affected users experienced elevated errors.\n* Google Tasks - Affected users experienced availability issues with tasks.\n* Google Voice - Affected users experienced elevated error rate when interacting with Voice API.\nIn most of the cases for Workspace services, retrying or refreshing the request had a chance of succeeding. A subset of users experienced some persistent (more than ~3-10 servers errors in a 10 minute timespan) unavailability.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Tel Aviv (me-west1)",
+            "id": "me-west1"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Dallas (us-south1)",
+            "id": "us-south1"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
       {
         "created": "2023-02-27T16:04:15+00:00",
         "modified": "2023-02-27T16:04:28+00:00",
@@ -908,10 +1057,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2023-02-27T16:04:15+00:00",
-      "modified": "2023-02-27T16:04:28+00:00",
-      "when": "2023-02-27T16:04:15+00:00",
-      "text": "The issue with Apigee, Cloud Build, Cloud Firestore, Container Registry, Google BigQuery, Google Cloud Bigtable, Google Cloud Networking, Google Cloud Pub/Sub, Google Cloud Storage, Google Compute Engine, Identity and Access Management has been resolved for all affected users as of Monday, 2023-02-27 05:11 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2023-02-27T18:54:25+00:00",
+      "modified": "2023-02-27T18:54:25+00:00",
+      "when": "2023-02-27T18:54:25+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 27 Feb 2023 04:58\n**Incident End:** 27 Feb 2023 05:11\n**Duration:** 13 minutes\n**Affected Services and Features:**\nMultiple Google Cloud Platform and Google Workspace services\n**Regions/Zones:** Multiple regions\n**Description:**\nMultiple Google Cloud Platform and Google Workspace services experienced elevated error rates for 13 minutes due to packet loss on Google’s production backbone network. Google will be completing a full Incident Report in the following days that will include additional details and provide a full root cause.\n**Customer Impact:**\n**Google Cloud Platform Services:**\n* Apigee - Affected users experienced client connect timeouts and elevated 5XX errors.\n* Virtual Private Cloud (VPC) - Affected users experienced increased packet loss for cross region traffic.\n* Cloud Interconnect - Affected users in regions us-east4, asia-southeast1, southamerica-east1, us-east7, us-west4 experienced increased packet loss on their interconnects.\n* BigQuery - Affected users experienced availability issues with BigQuery.\n* Cloud Dataflow - Affected users experienced elevated latency and error rates for batch and streaming jobs. Some users may have experienced increased latency in Create Workflow operations.\n* Cloud Bigtable - Affected users experienced deadline exceeded or unavailable errors with Data and Admin APIs in us-east4, us-central1, and us-west1 regions\n* Cloud Key Management Service (KMS) - Affected users experienced “unavailable” errors when attempting to use the service.\n* Cloud Monitoring - Affected users experienced elevated latency on Cloud Monitoring dashboard when accessing resources.\n* Persistent Disk - Affected users experienced elevated read/write latency.\n* Cloud SQL - Customers may have seen intermittent connectivity issues for ~10 minutes from 05:00-05:10 (us-central1, us-east4, us-west4, southamerica-east1). Retrying should have succeeded, as the success rate was ~80-95% depending on region and method.\n* Cloud Workflows - Affected users may have seen increased error rates.\n* Cloud Console - Affected users may have seen increased GUI failures for the impact duration.\n* Cloud Load Balancing - Affected users experienced elevated 500 error rates from load balancers for traffic passing through asia-southeast1, us-central1, us-west4.\n* Google Compute Engine - Autoscaler\n* Cloud Run - Affected users experienced elevated error rates (400 or 500 errors), request time outs, and control plane request failures. Retrying the requests may have succeeded in some cases.\n* Cloud App Engine - Affected users experienced elevated error rates (400 or 500 errors), request time outs, and control plane request failures. Retrying the requests may have succeeded in some cases.\n* Cloud Functions - Affected users experienced elevated error rates (400 or 500 errors), request time outs, and control plane request failures. Retrying the requests may have succeeded in some cases.\n* Cloud VPN - Affected users experienced elevated packet loss in us-east4, asia-southeast1, southamerica-east1, us-east7, us-west4.\n* Identity and Access Management - Affected users experienced NOT_FOUND, PERMISSION_DENIED, DEADLINE_EXCEEDED and UNAVAILABLE errors.\n* Cloud Pub/sub – Affected users experienced availability issues.\n* Google Cloud Storage- Affected users experienced “unavailable” errors\n* Cloud Firestore— Affected users experienced issues with Firestore service availability.\n* Cloud Data Loss Prevention - Affected users experienced elevated RPC error rates.\n* Cloud Memorystore - Affected users experienced increased latency and deadline exceeded errors for some requests like GetInstance, ListInstance, ExportInstance. Some users experienced issues with creating new Memorystore for Redis instances.\n**Workspace services:**\n* Gmail - Affected users experienced elevated error rates\n* Google Calendar - Affected users experienced availability issues with the calendar.\n* Google Chat - Affected users experienced issues with chat interactions on web and mobile\n* Google Meet - Affected users experienced failures to join a meeting. Retry attempt to join the meeting succeeded for most of the affected users.\n* Google Docs - Affected users experienced errors when loading or accessing a document.\n* Google Drive - Affected users experienced elevated errors.\n* Google Tasks - Affected users experienced availability issues with tasks.\n* Google Voice - Affected users experienced elevated error rate when interacting with Voice API.\nIn most of the cases for Workspace services, retrying or refreshing the request had a chance of succeeding. A subset of users experienced some persistent (more than ~3-10 servers errors in a 10 minute timespan) unavailability.",
       "status": "AVAILABLE",
       "affected_locations": [
         {
