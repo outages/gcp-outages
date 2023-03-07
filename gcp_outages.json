@@ -1704,62 +1704,6 @@
     ]
   },
   {
-    "id": "y7wwfrMbL3UNpsrfCYxN",
-    "number": "16945586819957540344",
-    "begin": "2023-03-03T20:20:23+00:00",
-    "created": "2023-03-03T20:50:01+00:00",
-    "end": "2023-03-03T21:13:35+00:00",
-    "modified": "2023-03-03T21:13:35+00:00",
-    "external_desc": "Cloud SQL Create Operations Failing Globally",
-    "updates": [
-      {
-        "created": "2023-03-03T21:13:32+00:00",
-        "modified": "2023-03-03T21:13:36+00:00",
-        "when": "2023-03-03T21:13:32+00:00",
-        "text": "The issue with Google Cloud SQL has been resolved for all affected projects as of Friday, 2023-03-03 13:07 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2023-03-03T21:04:44+00:00",
-        "modified": "2023-03-03T21:04:46+00:00",
-        "when": "2023-03-03T21:04:44+00:00",
-        "text": "Summary: Cloud SQL Create Operations Failing Globally\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2023-03-03 13:30 US/Pacific.\nDiagnosis: Cloud SQL Create Operations Failing Globally\nWorkaround: None at this time.",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": []
-      },
-      {
-        "created": "2023-03-03T20:49:59+00:00",
-        "modified": "2023-03-03T20:50:02+00:00",
-        "when": "2023-03-03T20:49:59+00:00",
-        "text": "Summary: Cloud SQL Create Operations Failing Globally\nDescription: We've received a report of an issue with Google Cloud SQL as of Friday, 2023-03-03 12:20 US/Pacific.\nWe will provide more information by Friday, 2023-03-03 13:20 US/Pacific.\nDiagnosis: Cloud SQL Create Operations Failing Globally\nWorkaround: None at this time.",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": []
-      }
-    ],
-    "most_recent_update": {
-      "created": "2023-03-03T21:13:32+00:00",
-      "modified": "2023-03-03T21:13:36+00:00",
-      "when": "2023-03-03T21:13:32+00:00",
-      "text": "The issue with Google Cloud SQL has been resolved for all affected projects as of Friday, 2023-03-03 13:07 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-      "status": "AVAILABLE",
-      "affected_locations": []
-    },
-    "status_impact": "SERVICE_OUTAGE",
-    "severity": "high",
-    "service_key": "hV87iK5DcEXKgWU2kDri",
-    "service_name": "Google Cloud SQL",
-    "affected_products": [
-      {
-        "title": "Google Cloud SQL",
-        "id": "hV87iK5DcEXKgWU2kDri"
-      }
-    ],
-    "uri": "incidents/y7wwfrMbL3UNpsrfCYxN",
-    "currently_affected_locations": [],
-    "previously_affected_locations": []
-  },
-  {
     "id": "3t3AhHBSxfDL9cyd5unv",
     "number": "13354928278206352596",
     "begin": "2023-03-03T19:53:34+00:00",
@@ -1812,6 +1756,70 @@
       }
     ],
     "uri": "incidents/3t3AhHBSxfDL9cyd5unv",
+    "currently_affected_locations": [],
+    "previously_affected_locations": []
+  },
+  {
+    "id": "y7wwfrMbL3UNpsrfCYxN",
+    "number": "16945586819957540344",
+    "begin": "2023-03-03T19:18:00+00:00",
+    "created": "2023-03-03T20:50:01+00:00",
+    "end": "2023-03-03T20:45:00+00:00",
+    "modified": "2023-03-07T17:00:53+00:00",
+    "external_desc": "Cloud SQL Create Operations Failing Globally",
+    "updates": [
+      {
+        "created": "2023-03-07T17:00:40+00:00",
+        "modified": "2023-03-07T17:00:40+00:00",
+        "when": "2023-03-07T17:00:40+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 3 March 2023 11:18\n**Incident End:** 3 March 2023 12:45\n**Duration:** 1 hour, 27 minutes\n**Affected Services and Features:**\nCloudSQL- Create operations failing with `ERROR_SN_CREATE_SUBNETWORK_FAILURE`\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud SQL customers failed to create instances for a duration of 1 hour, 27 minutes. From preliminary analysis, the root cause of the issue is a backlog of queue processing which increased memory usage.\n**Customer Impact:**\nAffected customers experienced Create operation failures with the error code:`ERROR_SN_CREATE_SUBNETWORK_FAILURE` and debug information contained the error `Failed to create subnetwork. An internal exception occurred.’",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2023-03-03T21:13:32+00:00",
+        "modified": "2023-03-03T21:13:36+00:00",
+        "when": "2023-03-03T21:13:32+00:00",
+        "text": "The issue with Google Cloud SQL has been resolved for all affected projects as of Friday, 2023-03-03 13:07 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2023-03-03T21:04:44+00:00",
+        "modified": "2023-03-03T21:04:46+00:00",
+        "when": "2023-03-03T21:04:44+00:00",
+        "text": "Summary: Cloud SQL Create Operations Failing Globally\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2023-03-03 13:30 US/Pacific.\nDiagnosis: Cloud SQL Create Operations Failing Globally\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": []
+      },
+      {
+        "created": "2023-03-03T20:49:59+00:00",
+        "modified": "2023-03-03T20:50:02+00:00",
+        "when": "2023-03-03T20:49:59+00:00",
+        "text": "Summary: Cloud SQL Create Operations Failing Globally\nDescription: We've received a report of an issue with Google Cloud SQL as of Friday, 2023-03-03 12:20 US/Pacific.\nWe will provide more information by Friday, 2023-03-03 13:20 US/Pacific.\nDiagnosis: Cloud SQL Create Operations Failing Globally\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": []
+      }
+    ],
+    "most_recent_update": {
+      "created": "2023-03-07T17:00:40+00:00",
+      "modified": "2023-03-07T17:00:40+00:00",
+      "when": "2023-03-07T17:00:40+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 3 March 2023 11:18\n**Incident End:** 3 March 2023 12:45\n**Duration:** 1 hour, 27 minutes\n**Affected Services and Features:**\nCloudSQL- Create operations failing with `ERROR_SN_CREATE_SUBNETWORK_FAILURE`\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud SQL customers failed to create instances for a duration of 1 hour, 27 minutes. From preliminary analysis, the root cause of the issue is a backlog of queue processing which increased memory usage.\n**Customer Impact:**\nAffected customers experienced Create operation failures with the error code:`ERROR_SN_CREATE_SUBNETWORK_FAILURE` and debug information contained the error `Failed to create subnetwork. An internal exception occurred.’",
+      "status": "AVAILABLE",
+      "affected_locations": []
+    },
+    "status_impact": "SERVICE_OUTAGE",
+    "severity": "high",
+    "service_key": "hV87iK5DcEXKgWU2kDri",
+    "service_name": "Google Cloud SQL",
+    "affected_products": [
+      {
+        "title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri"
+      }
+    ],
+    "uri": "incidents/y7wwfrMbL3UNpsrfCYxN",
     "currently_affected_locations": [],
     "previously_affected_locations": []
   },
