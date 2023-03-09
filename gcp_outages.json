@@ -1,5 +1,67 @@
 [
   {
+    "id": "x2v4tcT2ACDxCaCV1sCP",
+    "number": "11422147615008446117",
+    "begin": "2023-03-09T07:28:36+00:00",
+    "created": "2023-03-09T07:37:00+00:00",
+    "modified": "2023-03-09T07:37:00+00:00",
+    "external_desc": "Packet loss observed in asia-south1-b zone",
+    "updates": [
+      {
+        "created": "2023-03-09T07:36:57+00:00",
+        "modified": "2023-03-09T07:37:01+00:00",
+        "when": "2023-03-09T07:36:57+00:00",
+        "text": "Summary: Packet loss observed in asia-south1-b zone\nDescription: We are experiencing an issue with Google Cloud Networking.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2023-03-09 00:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: User in asia-south1-b may observe the packet loss while using network\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2023-03-09T07:36:57+00:00",
+      "modified": "2023-03-09T07:37:01+00:00",
+      "when": "2023-03-09T07:36:57+00:00",
+      "text": "Summary: Packet loss observed in asia-south1-b zone\nDescription: We are experiencing an issue with Google Cloud Networking.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2023-03-09 00:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: User in asia-south1-b may observe the packet loss while using network\nWorkaround: None at this time.",
+      "status": "SERVICE_INFORMATION",
+      "affected_locations": [
+        {
+          "title": "Mumbai (asia-south1)",
+          "id": "asia-south1"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Google Compute Engine",
+        "id": "L3ggmi3Jy4xJmgodFA9K"
+      },
+      {
+        "title": "Google Cloud Bigtable",
+        "id": "LfZSuE3xdQU46YMFV5fy"
+      },
+      {
+        "title": "Google Cloud Networking",
+        "id": "VNJxzcH58QmTt5H6pnT6"
+      }
+    ],
+    "uri": "incidents/x2v4tcT2ACDxCaCV1sCP",
+    "currently_affected_locations": [
+      {
+        "title": "Mumbai (asia-south1)",
+        "id": "asia-south1"
+      }
+    ],
+    "previously_affected_locations": []
+  },
+  {
     "id": "BcWTEDWaLpW5zw6FmNNS",
     "number": "4556184471888100030",
     "begin": "2023-03-06T22:03:55+00:00",
@@ -71067,178 +71129,6 @@
     ]
   },
   {
-    "id": "XVq5om2XEDSqLtJZUvcH",
-    "number": "5289378925036056618",
-    "begin": "2022-07-19T13:33:00+00:00",
-    "created": "2022-07-19T17:13:38+00:00",
-    "end": "2022-07-21T04:20:00+00:00",
-    "modified": "2022-07-29T21:05:41+00:00",
-    "external_desc": "Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2.",
-    "updates": [
-      {
-        "created": "2022-07-29T21:05:41+00:00",
-        "modified": "2022-07-29T21:05:41+00:00",
-        "when": "2022-07-29T21:05:41+00:00",
-        "text": "For a full Incident Report, please refer to https://status.cloud.google.com/incidents/fmEL9i2fArADKawkZAa2",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-21T19:06:31+00:00",
-        "modified": "2022-07-29T21:05:07+00:00",
-        "when": "2022-07-21T19:06:31+00:00",
-        "text": "For a preliminary Incident Report (Mini IR) , please refer to https://status.cloud.google.com/incidents/fmEL9i2fArADKawkZAa2",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-20T03:45:25+00:00",
-        "modified": "2022-07-20T03:45:26+00:00",
-        "when": "2022-07-20T03:45:25+00:00",
-        "text": "There was a cooling related failure in one of our buildings that hosts a portion of capacity for zone europe-west2-a for region europe-west2 that is now resolved. GCE, Persistent Disk and Autoscaling impacts have been addressed. Customers can launch VMs in all zones of europe-west2. A small number of HDD backed Persistent Disk volumes are still experiencing impact and will exhibit IO errors. If you are continuing to experience issues with these services, please contact Google Cloud Product Support and reference this message.\nThe issue has been resolved for all affected users as of Tuesday, 2022-07-19 20:43 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-19T22:29:06+00:00",
-        "modified": "2022-07-19T22:29:07+00:00",
-        "when": "2022-07-19T22:29:06+00:00",
-        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nThere is a cooling related failure in one of our buildings that hosts a portion of capacity for zone europe-west2-a for region europe-west2 that is not yet completely resolved. GCE, Persistent Disk and Autoscaling impacts have been mitigated. Most customers can launch VMs in all zones of europe-west2. A minority of customers might continue to see failures in europe-west2-a. We continue to work on bringing back previously impacted capacity in europe-west2-a to fully restore GCE, Persistent Disk and Autoscaling. If you are continuing to experience issues with these services, please contact Google Cloud Product Support and reference this message.\nCustomers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs.\nWorkaround: Customers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-19T21:08:45+00:00",
-        "modified": "2022-07-19T21:16:34+00:00",
-        "when": "2022-07-19T21:08:45+00:00",
-        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nThere is a cooling related failure in one of our buildings that hosts a portion of capacity for zone europe-west2-a for region europe-west2 that is not yet completely resolved.\nGCE, Persistent Disk and Autoscaling impacts have been mitigated. Most customers can launch VMs in all zones of europe-west2.\nA minority of customers might continue to see failures in europe-west2-a.\nWe continue to work on bringing back previously impacted capacity in europe-west2-a to fully restore GCE, Persistent Disk and Autoscaling. If you are continuing to experience issues with these services, please contact Google Cloud Product Support and reference this message.\nPlease refer to workaround section for additional information about VM deletion.\nWe will provide more information by Tuesday, 2022-07-19 16:00 US/Pacific.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs.\nWorkaround: Customers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-19T19:29:11+00:00",
-        "modified": "2022-07-19T19:29:12+00:00",
-        "when": "2022-07-19T19:29:11+00:00",
-        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. Europe-west2-b and europe-west2-c are not impacted for VMs. We have fixed the previously occurring issues when creating new Persistent Disk devices. Zonal autoscaling for europe-west2-a is impacted for customers who suffered VM terminations.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are working to restore redundancy for any remaining impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 15:00 US/Pacific with current details. We apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in europe-west2-b and europe-west2-c. Customers who currently have running instances in europe-west2-a can continue to use Auto Scaling in europe-west2-a. Regional Auto Scaling continues to work.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-19T19:05:30+00:00",
-        "modified": "2022-07-19T19:05:31+00:00",
-        "when": "2022-07-19T19:05:30+00:00",
-        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. Europe-west2-b and europe-west2-c are not impacted for VMs. We have fixed the previously occurring issues when creating new Persistent Disk devices. Zonal autoscaling for europe-west2-a is impacted.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are working to restore redundancy for any remaining impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 14:00 US/Pacific with current details. We apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in europe-west2-b and europe-west2-c.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-19T18:36:45+00:00",
-        "modified": "2022-07-19T18:36:46+00:00",
-        "when": "2022-07-19T18:36:45+00:00",
-        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted for VMs. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are now running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes and are working to restore redundancy for the impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 13:45 US/Pacific with current details. We apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in other zones of europe-west2.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-19T17:41:40+00:00",
-        "modified": "2022-07-19T17:41:41+00:00",
-        "when": "2022-07-19T17:41:40+00:00",
-        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted for VMs. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are now running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes and are working to restore redundancy for the impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 11:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in other zones of europe-west2.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2022-07-19T17:13:37+00:00",
-        "modified": "2022-07-19T17:13:38+00:00",
-        "when": "2022-07-19T17:13:37+00:00",
-        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are now running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are also working to restore redundancy for the impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 11:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in other zones of europe-west2.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-07-29T21:05:41+00:00",
-      "modified": "2022-07-29T21:05:41+00:00",
-      "when": "2022-07-29T21:05:41+00:00",
-      "text": "For a full Incident Report, please refer to https://status.cloud.google.com/incidents/fmEL9i2fArADKawkZAa2",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "London (europe-west2)",
-          "id": "europe-west2"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
-    "service_key": "L3ggmi3Jy4xJmgodFA9K",
-    "service_name": "Google Compute Engine",
-    "affected_products": [
-      {
-        "title": "Google Compute Engine",
-        "id": "L3ggmi3Jy4xJmgodFA9K"
-      }
-    ],
-    "uri": "incidents/XVq5om2XEDSqLtJZUvcH",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "London (europe-west2)",
-        "id": "europe-west2"
-      }
-    ]
-  },
-  {
     "id": "fmEL9i2fArADKawkZAa2",
     "number": "17286000671883665526",
     "begin": "2022-07-19T13:33:00+00:00",
@@ -71936,6 +71826,178 @@
       }
     ],
     "uri": "incidents/fmEL9i2fArADKawkZAa2",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "London (europe-west2)",
+        "id": "europe-west2"
+      }
+    ]
+  },
+  {
+    "id": "XVq5om2XEDSqLtJZUvcH",
+    "number": "5289378925036056618",
+    "begin": "2022-07-19T13:33:00+00:00",
+    "created": "2022-07-19T17:13:38+00:00",
+    "end": "2022-07-21T04:20:00+00:00",
+    "modified": "2022-07-29T21:05:41+00:00",
+    "external_desc": "Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2.",
+    "updates": [
+      {
+        "created": "2022-07-29T21:05:41+00:00",
+        "modified": "2022-07-29T21:05:41+00:00",
+        "when": "2022-07-29T21:05:41+00:00",
+        "text": "For a full Incident Report, please refer to https://status.cloud.google.com/incidents/fmEL9i2fArADKawkZAa2",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-21T19:06:31+00:00",
+        "modified": "2022-07-29T21:05:07+00:00",
+        "when": "2022-07-21T19:06:31+00:00",
+        "text": "For a preliminary Incident Report (Mini IR) , please refer to https://status.cloud.google.com/incidents/fmEL9i2fArADKawkZAa2",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-20T03:45:25+00:00",
+        "modified": "2022-07-20T03:45:26+00:00",
+        "when": "2022-07-20T03:45:25+00:00",
+        "text": "There was a cooling related failure in one of our buildings that hosts a portion of capacity for zone europe-west2-a for region europe-west2 that is now resolved. GCE, Persistent Disk and Autoscaling impacts have been addressed. Customers can launch VMs in all zones of europe-west2. A small number of HDD backed Persistent Disk volumes are still experiencing impact and will exhibit IO errors. If you are continuing to experience issues with these services, please contact Google Cloud Product Support and reference this message.\nThe issue has been resolved for all affected users as of Tuesday, 2022-07-19 20:43 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-19T22:29:06+00:00",
+        "modified": "2022-07-19T22:29:07+00:00",
+        "when": "2022-07-19T22:29:06+00:00",
+        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nThere is a cooling related failure in one of our buildings that hosts a portion of capacity for zone europe-west2-a for region europe-west2 that is not yet completely resolved. GCE, Persistent Disk and Autoscaling impacts have been mitigated. Most customers can launch VMs in all zones of europe-west2. A minority of customers might continue to see failures in europe-west2-a. We continue to work on bringing back previously impacted capacity in europe-west2-a to fully restore GCE, Persistent Disk and Autoscaling. If you are continuing to experience issues with these services, please contact Google Cloud Product Support and reference this message.\nCustomers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs.\nWorkaround: Customers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-19T21:08:45+00:00",
+        "modified": "2022-07-19T21:16:34+00:00",
+        "when": "2022-07-19T21:08:45+00:00",
+        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nThere is a cooling related failure in one of our buildings that hosts a portion of capacity for zone europe-west2-a for region europe-west2 that is not yet completely resolved.\nGCE, Persistent Disk and Autoscaling impacts have been mitigated. Most customers can launch VMs in all zones of europe-west2.\nA minority of customers might continue to see failures in europe-west2-a.\nWe continue to work on bringing back previously impacted capacity in europe-west2-a to fully restore GCE, Persistent Disk and Autoscaling. If you are continuing to experience issues with these services, please contact Google Cloud Product Support and reference this message.\nPlease refer to workaround section for additional information about VM deletion.\nWe will provide more information by Tuesday, 2022-07-19 16:00 US/Pacific.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs.\nWorkaround: Customers who launched new VMs in zones europe-west2-b and europe-west2-c and would like to delete their previously running VMs in europe-west2-a, can delete VMs via the console or GCE APIs. There might be a delay in processing the deletion and all deletions will be fully processed when all issues in europe-west2-a are resolved.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-19T19:29:11+00:00",
+        "modified": "2022-07-19T19:29:12+00:00",
+        "when": "2022-07-19T19:29:11+00:00",
+        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. Europe-west2-b and europe-west2-c are not impacted for VMs. We have fixed the previously occurring issues when creating new Persistent Disk devices. Zonal autoscaling for europe-west2-a is impacted for customers who suffered VM terminations.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are working to restore redundancy for any remaining impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 15:00 US/Pacific with current details. We apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in europe-west2-b and europe-west2-c. Customers who currently have running instances in europe-west2-a can continue to use Auto Scaling in europe-west2-a. Regional Auto Scaling continues to work.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-19T19:05:30+00:00",
+        "modified": "2022-07-19T19:05:31+00:00",
+        "when": "2022-07-19T19:05:30+00:00",
+        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. Europe-west2-b and europe-west2-c are not impacted for VMs. We have fixed the previously occurring issues when creating new Persistent Disk devices. Zonal autoscaling for europe-west2-a is impacted.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are working to restore redundancy for any remaining impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 14:00 US/Pacific with current details. We apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in europe-west2-b and europe-west2-c.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-19T18:36:45+00:00",
+        "modified": "2022-07-19T18:36:46+00:00",
+        "when": "2022-07-19T18:36:45+00:00",
+        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted for VMs. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are now running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes and are working to restore redundancy for the impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 13:45 US/Pacific with current details. We apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in other zones of europe-west2.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-19T17:41:40+00:00",
+        "modified": "2022-07-19T17:41:41+00:00",
+        "when": "2022-07-19T17:41:40+00:00",
+        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted for VMs. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are now running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are seeing regional impact for a small proportion of newly launched Persistent Disk volumes and are working to restore redundancy for the impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 11:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in other zones of europe-west2.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      },
+      {
+        "created": "2022-07-19T17:13:37+00:00",
+        "modified": "2022-07-19T17:13:38+00:00",
+        "when": "2022-07-19T17:13:37+00:00",
+        "text": "Summary: Cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. The other zones are not impacted.\nDescription: We are experiencing an issue with Google Compute Engine beginning at Tuesday, 2022-07-19 08:10 US/Pacific.\nOur engineering team continues to investigate the issue.\nThere has been a cooling related failure in one of our buildings that hosts zone europe-west2-a for region europe-west2. This caused a partial failure of capacity in that zone, leading to VM terminations and a loss of machines for a small set of our customers. We’re working hard to get the cooling back on-line and create capacity in that zone. We do not anticipate further impact in zone europe-west2-a and currently running VMs should not be impacted. A small percentage of replicated Persistent Disk devices are now running in single redundant mode.\nIn order to prevent damage to machines and an extended outage, we have powered down part of the zone and are limiting GCE preemptible launches. We are also working to restore redundancy for the impacted replicated Persistent Disk devices.\nWe will provide an update by Tuesday, 2022-07-19 11:45 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue would have seen abnormal VM terminations for a small set of their VMs. We’re working on identifying and communicating with all affected customers.\nWorkaround: For customers who have experienced a VM failure in europe-west2-a, we recommend launching new instances in other zones of europe-west2.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-07-29T21:05:41+00:00",
+      "modified": "2022-07-29T21:05:41+00:00",
+      "when": "2022-07-29T21:05:41+00:00",
+      "text": "For a full Incident Report, please refer to https://status.cloud.google.com/incidents/fmEL9i2fArADKawkZAa2",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "London (europe-west2)",
+          "id": "europe-west2"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "L3ggmi3Jy4xJmgodFA9K",
+    "service_name": "Google Compute Engine",
+    "affected_products": [
+      {
+        "title": "Google Compute Engine",
+        "id": "L3ggmi3Jy4xJmgodFA9K"
+      }
+    ],
+    "uri": "incidents/XVq5om2XEDSqLtJZUvcH",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -73620,78 +73682,6 @@
     ]
   },
   {
-    "id": "PCibvK1LbstDfPKPGfRC",
-    "number": "10553856456157171095",
-    "begin": "2022-07-15T02:30:00+00:00",
-    "created": "2022-07-15T20:40:10+00:00",
-    "end": "2022-07-15T22:02:00+00:00",
-    "modified": "2022-07-28T15:09:25+00:00",
-    "external_desc": "BigQuery observing high import/export job latencies in several regions",
-    "updates": [
-      {
-        "created": "2022-07-28T00:46:02+00:00",
-        "modified": "2022-07-28T15:09:25+00:00",
-        "when": "2022-07-28T00:46:02+00:00",
-        "text": "INCIDENT REPORT\n**Summary:**\nGoogle Cloud Networking experienced reduced capacity for lower priority traffic such as batch, streaming and transfer operations from 19:30 US/Pacific on Thursday, 14 July 2022, through 15:02 US/Pacific on Friday, 15 July 2022. High-priority user-facing traffic was not affected. This service disruption resulted from an issue encountered during a combination of repair work and a routine network software upgrade rollout. Due to the nature of the disruption and resilience capabilities of Google Cloud products, the impacted regions and individual impact windows varied substantially. To our customers whose businesses were impacted during this disruption, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s availability.\n**Root Cause:**\nThe root cause was identified as an issue with a new control plane configuration rollout, causing low-priority classified traffic capacity reduction in Google’s internal backbone network connecting data centers. Mitigation efforts were slowed by the capacity reduction, and engineering teams required more than their usual time to safely undo the configuration change. During the period of the rollout and subsequent rollback, constrained traffic in certain cloud zones affected the performance of some Cloud services.\n**Remediation and Prevention:**\nAt approximately 02:00 US/Pacific on Friday, 15 July, as an in-progress rollout expanded to more regions, Google engineers observed performance degradation in Cloud Networking due to reduced capacity. The engineering team then started an investigation into the cause. At 03:50 US/Pacific, Google engineers pushed the first mitigation attempt to halt the ongoing rollout. While this effort succeeded in pausing any new actions, those already in progress continued, which further reduced network capacity.\nSubsequently, the engineering team shifted their mitigation efforts toward a global rollback of the problematic configuration. Their first attempt to mitigate using a configuration push was applied at 08:40 US/Pacific, but it was not successfully applied to all nodes, due in part to the reduced network performance. Google engineers worked through alternate mitigations, and by 12:40 US/Pacific, the configuration was updated correctly, and this mitigated the majority of impact.\nBy 15:02 US/Pacific on 15 July 2022, services for all customers had been restored. The Google Cloud Service Health Dashboard was updated to reflect this.\nGoogle is committed to preventing future recurrence, and we are taking the following\nactions:\nDetection:\n* Improve signals to detect significant changes in traffic for upgraded domains in the backbone network.\n* Improve dashboards that help debugging global- and domain-level control failures and configuration status.\nPrevention:\n* Improve the automated handling of disconnected local Software Defined Networking (SDN) controllers that will reduce overall impact and mitigation time. .\n* Improve the global safety systems that globally halt elective rollouts on Google’s wide area (WAN) networks, when global capacity is reduced.\n* Further isolate production network neighborhoods.\nMitigation:\n* Improve the API to push changes to global and local network controllers during a service disruption.\n* Improve failure domain configuration validation to reject unintended configuration.\n* Improve the feature and testing of emergency tools across different scenarios at regular intervals, and invest in test environments that enable us to do this without impact.\n**Detailed Description of Impact:**\n**Google Cloud Networking**\n* Google Cloud Networking experienced reduced capacity within the Google Cloud regions of us-east1, southamerica-west1, us-central1, and us-central2, starting from Friday 15 July 2022 02:24 US/Pacific. The most severe impact occurred from 03:58 to 12:40.\n* southamerica-west1 experienced reduced capacity between 14:40 and 15:02.\n* southamerica-west1 and southamerica-east1 both experienced egress packet loss between 20% and 30%.\n**Google Cloud Storage (GCS)**\n* Between Thursday, 14 July 2022 21:57 US/Pacific and Friday, 15 July 12:40 US/Pacific, GCS customers may have experienced elevated latency, delays, issues importing, exporting or querying data from GCS buckets, and HTTP 500 errors in the Google Cloud regions of us-east1, southamerica-west1, and us-central2, and for buckets located in us-central1, us-east1, and nam4.\n* This disruption affected 0.007% of GCS requests and impacted customers reading/writing data and metadata.\n**Google BigQuery**\n* Customer workloads running in impacted Google Cloud regions and using the BigQuery Storage Read and Write APIs to read from or write to BigQuery may have experienced elevated latency.\n**Note**\n* Additional services may have been impacted by this event but did not meet the thresholds to be included in this report.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2022-07-18T22:31:46+00:00",
-        "modified": "2022-07-21T20:43:24+00:00",
-        "when": "2022-07-18T22:31:46+00:00",
-        "text": "This is a preliminary Incident Report (Mini-IR). A Full Incident Report with additional details is being prepared and will be posted at a later date.\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 14 July 2022 19:30\n**Incident End:** 15 July 2022 15:02\n**Duration:** 19 hours, 32 minutes\n**Affected Services**\nGoogle Cloud Networking\nGoogle BigQuery\nGoogle Cloud Storage (GCS)\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Networking experienced reduced availability globally for a period of 19 hours and 32 minutes. Because of the nature of the outage and resilience capabilities of GCP products, the impacted regions and individual impacted windows may vary inside of the network impact window. From preliminary analysis, the root cause was due to an issue with a new control plane configuration rollout.\n**Customer Impact:**\nGoogle Cloud Storage - Affected customers would have experienced elevated latencies or HTTP 500 errors in multiple regions, including us-east1, us-central1, and southamerica-west1. - Affected customers reading/writing data from GCS impacted regions or from buckets located in impacted regions would have observed high latency and/or errors. - Affected customers reading/writing metadata for buckets located in impacted regions would have observed high latency and/or errors.\nGoogle BigQuery - Affected customers performing cross-regional table copies would have observed increased latency and/or errors.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2022-07-15T21:17:57+00:00",
-        "modified": "2022-07-15T21:17:59+00:00",
-        "when": "2022-07-15T21:17:57+00:00",
-        "text": "The issue with Google BigQuery has been resolved for all affected users as of Friday, 2022-07-15 14:12 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": []
-      },
-      {
-        "created": "2022-07-15T21:02:16+00:00",
-        "modified": "2022-07-15T21:02:17+00:00",
-        "when": "2022-07-15T21:02:16+00:00",
-        "text": "Summary: BigQuery observing high import/export job latencies in several regions\nDescription: We are experiencing an issue with Google BigQuery beginning at Friday, 2022-07-15 05:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-07-15 15:05 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: BigQuery is observing high import/export job latencies (slowness) in several regions, which may ultimately result in errors.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": []
-      },
-      {
-        "created": "2022-07-15T20:40:10+00:00",
-        "modified": "2022-07-15T20:40:11+00:00",
-        "when": "2022-07-15T20:40:10+00:00",
-        "text": "Summary: BigQuery observing high import/export job latencies in several regions\nDescription: We are experiencing an issue with Google BigQuery beginning at Friday, 2022-07-15 05:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-07-15 15:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: BigQuery is observing high import/export job latencies (slowness) in several regions, which may ultimately result in errors.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": []
-      }
-    ],
-    "most_recent_update": {
-      "created": "2022-07-28T00:46:02+00:00",
-      "modified": "2022-07-28T15:09:25+00:00",
-      "when": "2022-07-28T00:46:02+00:00",
-      "text": "INCIDENT REPORT\n**Summary:**\nGoogle Cloud Networking experienced reduced capacity for lower priority traffic such as batch, streaming and transfer operations from 19:30 US/Pacific on Thursday, 14 July 2022, through 15:02 US/Pacific on Friday, 15 July 2022. High-priority user-facing traffic was not affected. This service disruption resulted from an issue encountered during a combination of repair work and a routine network software upgrade rollout. Due to the nature of the disruption and resilience capabilities of Google Cloud products, the impacted regions and individual impact windows varied substantially. To our customers whose businesses were impacted during this disruption, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s availability.\n**Root Cause:**\nThe root cause was identified as an issue with a new control plane configuration rollout, causing low-priority classified traffic capacity reduction in Google’s internal backbone network connecting data centers. Mitigation efforts were slowed by the capacity reduction, and engineering teams required more than their usual time to safely undo the configuration change. During the period of the rollout and subsequent rollback, constrained traffic in certain cloud zones affected the performance of some Cloud services.\n**Remediation and Prevention:**\nAt approximately 02:00 US/Pacific on Friday, 15 July, as an in-progress rollout expanded to more regions, Google engineers observed performance degradation in Cloud Networking due to reduced capacity. The engineering team then started an investigation into the cause. At 03:50 US/Pacific, Google engineers pushed the first mitigation attempt to halt the ongoing rollout. While this effort succeeded in pausing any new actions, those already in progress continued, which further reduced network capacity.\nSubsequently, the engineering team shifted their mitigation efforts toward a global rollback of the problematic configuration. Their first attempt to mitigate using a configuration push was applied at 08:40 US/Pacific, but it was not successfully applied to all nodes, due in part to the reduced network performance. Google engineers worked through alternate mitigations, and by 12:40 US/Pacific, the configuration was updated correctly, and this mitigated the majority of impact.\nBy 15:02 US/Pacific on 15 July 2022, services for all customers had been restored. The Google Cloud Service Health Dashboard was updated to reflect this.\nGoogle is committed to preventing future recurrence, and we are taking the following\nactions:\nDetection:\n* Improve signals to detect significant changes in traffic for upgraded domains in the backbone network.\n* Improve dashboards that help debugging global- and domain-level control failures and configuration status.\nPrevention:\n* Improve the automated handling of disconnected local Software Defined Networking (SDN) controllers that will reduce overall impact and mitigation time. .\n* Improve the global safety systems that globally halt elective rollouts on Google’s wide area (WAN) networks, when global capacity is reduced.\n* Further isolate production network neighborhoods.\nMitigation:\n* Improve the API to push changes to global and local network controllers during a service disruption.\n* Improve failure domain configuration validation to reject unintended configuration.\n* Improve the feature and testing of emergency tools across different scenarios at regular intervals, and invest in test environments that enable us to do this without impact.\n**Detailed Description of Impact:**\n**Google Cloud Networking**\n* Google Cloud Networking experienced reduced capacity within the Google Cloud regions of us-east1, southamerica-west1, us-central1, and us-central2, starting from Friday 15 July 2022 02:24 US/Pacific. The most severe impact occurred from 03:58 to 12:40.\n* southamerica-west1 experienced reduced capacity between 14:40 and 15:02.\n* southamerica-west1 and southamerica-east1 both experienced egress packet loss between 20% and 30%.\n**Google Cloud Storage (GCS)**\n* Between Thursday, 14 July 2022 21:57 US/Pacific and Friday, 15 July 12:40 US/Pacific, GCS customers may have experienced elevated latency, delays, issues importing, exporting or querying data from GCS buckets, and HTTP 500 errors in the Google Cloud regions of us-east1, southamerica-west1, and us-central2, and for buckets located in us-central1, us-east1, and nam4.\n* This disruption affected 0.007% of GCS requests and impacted customers reading/writing data and metadata.\n**Google BigQuery**\n* Customer workloads running in impacted Google Cloud regions and using the BigQuery Storage Read and Write APIs to read from or write to BigQuery may have experienced elevated latency.\n**Note**\n* Additional services may have been impacted by this event but did not meet the thresholds to be included in this report.",
-      "status": "AVAILABLE",
-      "affected_locations": []
-    },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
-    "service_key": "9CcrhHUcFevXPSVaSxkf",
-    "service_name": "Google BigQuery",
-    "affected_products": [
-      {
-        "title": "Google BigQuery",
-        "id": "9CcrhHUcFevXPSVaSxkf"
-      }
-    ],
-    "uri": "incidents/PCibvK1LbstDfPKPGfRC",
-    "currently_affected_locations": [],
-    "previously_affected_locations": []
-  },
-  {
     "id": "vLsxuKoRvykNHW3nnhsJ",
     "number": "16828167276355000807",
     "begin": "2022-07-15T02:30:00+00:00",
@@ -73874,6 +73864,78 @@
         "id": "us-east1"
       }
     ]
+  },
+  {
+    "id": "PCibvK1LbstDfPKPGfRC",
+    "number": "10553856456157171095",
+    "begin": "2022-07-15T02:30:00+00:00",
+    "created": "2022-07-15T20:40:10+00:00",
+    "end": "2022-07-15T22:02:00+00:00",
+    "modified": "2022-07-28T15:09:25+00:00",
+    "external_desc": "BigQuery observing high import/export job latencies in several regions",
+    "updates": [
+      {
+        "created": "2022-07-28T00:46:02+00:00",
+        "modified": "2022-07-28T15:09:25+00:00",
+        "when": "2022-07-28T00:46:02+00:00",
+        "text": "INCIDENT REPORT\n**Summary:**\nGoogle Cloud Networking experienced reduced capacity for lower priority traffic such as batch, streaming and transfer operations from 19:30 US/Pacific on Thursday, 14 July 2022, through 15:02 US/Pacific on Friday, 15 July 2022. High-priority user-facing traffic was not affected. This service disruption resulted from an issue encountered during a combination of repair work and a routine network software upgrade rollout. Due to the nature of the disruption and resilience capabilities of Google Cloud products, the impacted regions and individual impact windows varied substantially. To our customers whose businesses were impacted during this disruption, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s availability.\n**Root Cause:**\nThe root cause was identified as an issue with a new control plane configuration rollout, causing low-priority classified traffic capacity reduction in Google’s internal backbone network connecting data centers. Mitigation efforts were slowed by the capacity reduction, and engineering teams required more than their usual time to safely undo the configuration change. During the period of the rollout and subsequent rollback, constrained traffic in certain cloud zones affected the performance of some Cloud services.\n**Remediation and Prevention:**\nAt approximately 02:00 US/Pacific on Friday, 15 July, as an in-progress rollout expanded to more regions, Google engineers observed performance degradation in Cloud Networking due to reduced capacity. The engineering team then started an investigation into the cause. At 03:50 US/Pacific, Google engineers pushed the first mitigation attempt to halt the ongoing rollout. While this effort succeeded in pausing any new actions, those already in progress continued, which further reduced network capacity.\nSubsequently, the engineering team shifted their mitigation efforts toward a global rollback of the problematic configuration. Their first attempt to mitigate using a configuration push was applied at 08:40 US/Pacific, but it was not successfully applied to all nodes, due in part to the reduced network performance. Google engineers worked through alternate mitigations, and by 12:40 US/Pacific, the configuration was updated correctly, and this mitigated the majority of impact.\nBy 15:02 US/Pacific on 15 July 2022, services for all customers had been restored. The Google Cloud Service Health Dashboard was updated to reflect this.\nGoogle is committed to preventing future recurrence, and we are taking the following\nactions:\nDetection:\n* Improve signals to detect significant changes in traffic for upgraded domains in the backbone network.\n* Improve dashboards that help debugging global- and domain-level control failures and configuration status.\nPrevention:\n* Improve the automated handling of disconnected local Software Defined Networking (SDN) controllers that will reduce overall impact and mitigation time. .\n* Improve the global safety systems that globally halt elective rollouts on Google’s wide area (WAN) networks, when global capacity is reduced.\n* Further isolate production network neighborhoods.\nMitigation:\n* Improve the API to push changes to global and local network controllers during a service disruption.\n* Improve failure domain configuration validation to reject unintended configuration.\n* Improve the feature and testing of emergency tools across different scenarios at regular intervals, and invest in test environments that enable us to do this without impact.\n**Detailed Description of Impact:**\n**Google Cloud Networking**\n* Google Cloud Networking experienced reduced capacity within the Google Cloud regions of us-east1, southamerica-west1, us-central1, and us-central2, starting from Friday 15 July 2022 02:24 US/Pacific. The most severe impact occurred from 03:58 to 12:40.\n* southamerica-west1 experienced reduced capacity between 14:40 and 15:02.\n* southamerica-west1 and southamerica-east1 both experienced egress packet loss between 20% and 30%.\n**Google Cloud Storage (GCS)**\n* Between Thursday, 14 July 2022 21:57 US/Pacific and Friday, 15 July 12:40 US/Pacific, GCS customers may have experienced elevated latency, delays, issues importing, exporting or querying data from GCS buckets, and HTTP 500 errors in the Google Cloud regions of us-east1, southamerica-west1, and us-central2, and for buckets located in us-central1, us-east1, and nam4.\n* This disruption affected 0.007% of GCS requests and impacted customers reading/writing data and metadata.\n**Google BigQuery**\n* Customer workloads running in impacted Google Cloud regions and using the BigQuery Storage Read and Write APIs to read from or write to BigQuery may have experienced elevated latency.\n**Note**\n* Additional services may have been impacted by this event but did not meet the thresholds to be included in this report.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2022-07-18T22:31:46+00:00",
+        "modified": "2022-07-21T20:43:24+00:00",
+        "when": "2022-07-18T22:31:46+00:00",
+        "text": "This is a preliminary Incident Report (Mini-IR). A Full Incident Report with additional details is being prepared and will be posted at a later date.\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 14 July 2022 19:30\n**Incident End:** 15 July 2022 15:02\n**Duration:** 19 hours, 32 minutes\n**Affected Services**\nGoogle Cloud Networking\nGoogle BigQuery\nGoogle Cloud Storage (GCS)\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Networking experienced reduced availability globally for a period of 19 hours and 32 minutes. Because of the nature of the outage and resilience capabilities of GCP products, the impacted regions and individual impacted windows may vary inside of the network impact window. From preliminary analysis, the root cause was due to an issue with a new control plane configuration rollout.\n**Customer Impact:**\nGoogle Cloud Storage - Affected customers would have experienced elevated latencies or HTTP 500 errors in multiple regions, including us-east1, us-central1, and southamerica-west1. - Affected customers reading/writing data from GCS impacted regions or from buckets located in impacted regions would have observed high latency and/or errors. - Affected customers reading/writing metadata for buckets located in impacted regions would have observed high latency and/or errors.\nGoogle BigQuery - Affected customers performing cross-regional table copies would have observed increased latency and/or errors.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2022-07-15T21:17:57+00:00",
+        "modified": "2022-07-15T21:17:59+00:00",
+        "when": "2022-07-15T21:17:57+00:00",
+        "text": "The issue with Google BigQuery has been resolved for all affected users as of Friday, 2022-07-15 14:12 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2022-07-15T21:02:16+00:00",
+        "modified": "2022-07-15T21:02:17+00:00",
+        "when": "2022-07-15T21:02:16+00:00",
+        "text": "Summary: BigQuery observing high import/export job latencies in several regions\nDescription: We are experiencing an issue with Google BigQuery beginning at Friday, 2022-07-15 05:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-07-15 15:05 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: BigQuery is observing high import/export job latencies (slowness) in several regions, which may ultimately result in errors.\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": []
+      },
+      {
+        "created": "2022-07-15T20:40:10+00:00",
+        "modified": "2022-07-15T20:40:11+00:00",
+        "when": "2022-07-15T20:40:10+00:00",
+        "text": "Summary: BigQuery observing high import/export job latencies in several regions\nDescription: We are experiencing an issue with Google BigQuery beginning at Friday, 2022-07-15 05:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2022-07-15 15:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: BigQuery is observing high import/export job latencies (slowness) in several regions, which may ultimately result in errors.\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": []
+      }
+    ],
+    "most_recent_update": {
+      "created": "2022-07-28T00:46:02+00:00",
+      "modified": "2022-07-28T15:09:25+00:00",
+      "when": "2022-07-28T00:46:02+00:00",
+      "text": "INCIDENT REPORT\n**Summary:**\nGoogle Cloud Networking experienced reduced capacity for lower priority traffic such as batch, streaming and transfer operations from 19:30 US/Pacific on Thursday, 14 July 2022, through 15:02 US/Pacific on Friday, 15 July 2022. High-priority user-facing traffic was not affected. This service disruption resulted from an issue encountered during a combination of repair work and a routine network software upgrade rollout. Due to the nature of the disruption and resilience capabilities of Google Cloud products, the impacted regions and individual impact windows varied substantially. To our customers whose businesses were impacted during this disruption, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s availability.\n**Root Cause:**\nThe root cause was identified as an issue with a new control plane configuration rollout, causing low-priority classified traffic capacity reduction in Google’s internal backbone network connecting data centers. Mitigation efforts were slowed by the capacity reduction, and engineering teams required more than their usual time to safely undo the configuration change. During the period of the rollout and subsequent rollback, constrained traffic in certain cloud zones affected the performance of some Cloud services.\n**Remediation and Prevention:**\nAt approximately 02:00 US/Pacific on Friday, 15 July, as an in-progress rollout expanded to more regions, Google engineers observed performance degradation in Cloud Networking due to reduced capacity. The engineering team then started an investigation into the cause. At 03:50 US/Pacific, Google engineers pushed the first mitigation attempt to halt the ongoing rollout. While this effort succeeded in pausing any new actions, those already in progress continued, which further reduced network capacity.\nSubsequently, the engineering team shifted their mitigation efforts toward a global rollback of the problematic configuration. Their first attempt to mitigate using a configuration push was applied at 08:40 US/Pacific, but it was not successfully applied to all nodes, due in part to the reduced network performance. Google engineers worked through alternate mitigations, and by 12:40 US/Pacific, the configuration was updated correctly, and this mitigated the majority of impact.\nBy 15:02 US/Pacific on 15 July 2022, services for all customers had been restored. The Google Cloud Service Health Dashboard was updated to reflect this.\nGoogle is committed to preventing future recurrence, and we are taking the following\nactions:\nDetection:\n* Improve signals to detect significant changes in traffic for upgraded domains in the backbone network.\n* Improve dashboards that help debugging global- and domain-level control failures and configuration status.\nPrevention:\n* Improve the automated handling of disconnected local Software Defined Networking (SDN) controllers that will reduce overall impact and mitigation time. .\n* Improve the global safety systems that globally halt elective rollouts on Google’s wide area (WAN) networks, when global capacity is reduced.\n* Further isolate production network neighborhoods.\nMitigation:\n* Improve the API to push changes to global and local network controllers during a service disruption.\n* Improve failure domain configuration validation to reject unintended configuration.\n* Improve the feature and testing of emergency tools across different scenarios at regular intervals, and invest in test environments that enable us to do this without impact.\n**Detailed Description of Impact:**\n**Google Cloud Networking**\n* Google Cloud Networking experienced reduced capacity within the Google Cloud regions of us-east1, southamerica-west1, us-central1, and us-central2, starting from Friday 15 July 2022 02:24 US/Pacific. The most severe impact occurred from 03:58 to 12:40.\n* southamerica-west1 experienced reduced capacity between 14:40 and 15:02.\n* southamerica-west1 and southamerica-east1 both experienced egress packet loss between 20% and 30%.\n**Google Cloud Storage (GCS)**\n* Between Thursday, 14 July 2022 21:57 US/Pacific and Friday, 15 July 12:40 US/Pacific, GCS customers may have experienced elevated latency, delays, issues importing, exporting or querying data from GCS buckets, and HTTP 500 errors in the Google Cloud regions of us-east1, southamerica-west1, and us-central2, and for buckets located in us-central1, us-east1, and nam4.\n* This disruption affected 0.007% of GCS requests and impacted customers reading/writing data and metadata.\n**Google BigQuery**\n* Customer workloads running in impacted Google Cloud regions and using the BigQuery Storage Read and Write APIs to read from or write to BigQuery may have experienced elevated latency.\n**Note**\n* Additional services may have been impacted by this event but did not meet the thresholds to be included in this report.",
+      "status": "AVAILABLE",
+      "affected_locations": []
+    },
+    "status_impact": "SERVICE_INFORMATION",
+    "severity": "low",
+    "service_key": "9CcrhHUcFevXPSVaSxkf",
+    "service_name": "Google BigQuery",
+    "affected_products": [
+      {
+        "title": "Google BigQuery",
+        "id": "9CcrhHUcFevXPSVaSxkf"
+      }
+    ],
+    "uri": "incidents/PCibvK1LbstDfPKPGfRC",
+    "currently_affected_locations": [],
+    "previously_affected_locations": []
   },
   {
     "id": "a9sMdFqr1mDB4vCB93M4",
