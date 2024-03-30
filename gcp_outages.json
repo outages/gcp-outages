@@ -4,9 +4,58 @@
     "number": "11074182206360329850",
     "begin": "2024-03-29T22:06:25+00:00",
     "created": "2024-03-29T22:33:44+00:00",
-    "modified": "2024-03-29T23:43:01+00:00",
+    "modified": "2024-03-30T00:13:02+00:00",
     "external_desc": "Chronicle Delays in Data Availability",
     "updates": [
+      {
+        "created": "2024-03-30T00:13:02+00:00",
+        "modified": "2024-03-30T00:13:05+00:00",
+        "when": "2024-03-30T00:13:02+00:00",
+        "text": "Summary: Chronicle Delays in Data Availability\nDescription: Mitigation work is currently underway by our engineering team.\nWe have globally mitigated UEBA risk score. We have mitigated UEBA metrics, Entity Graph and BigQuery data export for UDM aggregates, IOCs, and Entity Graph in most regions. Mitigations are also under way for indexing metrics including prevalence and first seen (which were delayed in the Entity Graph).\nWe will provide more information by Friday, 2024-03-29 17:45 US/Pacific.\nDiagnosis: Customers may experience delays in data availability in all regions for multiple Chronicle system components and product features (Entity Graph, UEBA Simple Analytics, Log Export, Indexing).\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Dammam (me-central2)",
+            "id": "me-central2"
+          },
+          {
+            "title": "Tel Aviv (me-west1)",
+            "id": "me-west1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          }
+        ]
+      },
       {
         "created": "2024-03-29T23:43:00+00:00",
         "modified": "2024-03-29T23:43:02+00:00",
@@ -107,10 +156,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-03-29T23:43:00+00:00",
-      "modified": "2024-03-29T23:43:02+00:00",
-      "when": "2024-03-29T23:43:00+00:00",
-      "text": "Summary: Chronicle Delays in Data Availability\nDescription: Mitigation work is currently underway by our engineering team.\nWe have globally mitigated BigQuery data export for rule detections (for the legacy Looker connector, external Looker connector, and legacy BigQuery direct access). Mitigations are underway for additional BigQuery data exports (UDM aggregates, IOCs, Entity Graph). Mitigations are under way for Entity Graph, Log Export to GCS,\nWe will provide more information by Friday, 2024-03-29 17:00 US/Pacific\nDiagnosis: Customers may experience delays in data availability in all regions for multiple Chronicle system components and product features (Entity Graph, UEBA Simple Analytics, Log Export).\nWorkaround: None at this time.",
+      "created": "2024-03-30T00:13:02+00:00",
+      "modified": "2024-03-30T00:13:05+00:00",
+      "when": "2024-03-30T00:13:02+00:00",
+      "text": "Summary: Chronicle Delays in Data Availability\nDescription: Mitigation work is currently underway by our engineering team.\nWe have globally mitigated UEBA risk score. We have mitigated UEBA metrics, Entity Graph and BigQuery data export for UDM aggregates, IOCs, and Entity Graph in most regions. Mitigations are also under way for indexing metrics including prevalence and first seen (which were delayed in the Entity Graph).\nWe will provide more information by Friday, 2024-03-29 17:45 US/Pacific.\nDiagnosis: Customers may experience delays in data availability in all regions for multiple Chronicle system components and product features (Entity Graph, UEBA Simple Analytics, Log Export, Indexing).\nWorkaround: None at this time.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
