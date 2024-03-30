@@ -7070,6 +7070,91 @@
     ]
   },
   {
+    "id": "JAxa64hv45yMYzCpqx1T",
+    "number": "2264297634052042910",
+    "begin": "2024-02-29T07:50:00+00:00",
+    "created": "2024-02-29T15:34:33+00:00",
+    "end": "2024-02-29T17:50:00+00:00",
+    "modified": "2024-02-29T20:51:47+00:00",
+    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
+    "updates": [
+      {
+        "created": "2024-02-29T20:51:19+00:00",
+        "modified": "2024-02-29T20:51:19+00:00",
+        "when": "2024-02-29T20:51:19+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T16:21:00+00:00",
+        "modified": "2024-02-29T16:21:08+00:00",
+        "when": "2024-02-29T16:21:00+00:00",
+        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T15:34:29+00:00",
+        "modified": "2024-02-29T15:34:36+00:00",
+        "when": "2024-02-29T15:34:29+00:00",
+        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2024-02-29T20:51:19+00:00",
+      "modified": "2024-02-29T20:51:19+00:00",
+      "when": "2024-02-29T20:51:19+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Multi-region: us",
+          "id": "us"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Chronicle Security",
+        "id": "FHwvkSZ6RzzDYAvDZXMM"
+      },
+      {
+        "title": "Chronicle SOAR",
+        "id": "GTT16Lf72XZKWArC9VxA"
+      }
+    ],
+    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Multi-region: us",
+        "id": "us"
+      }
+    ]
+  },
+  {
     "id": "M2qQyWWU9FKvVc2FfcaH",
     "number": "184633653096742397",
     "begin": "2024-02-29T07:50:00+00:00",
@@ -7172,91 +7257,6 @@
       }
     ],
     "uri": "incidents/M2qQyWWU9FKvVc2FfcaH",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Multi-region: us",
-        "id": "us"
-      }
-    ]
-  },
-  {
-    "id": "JAxa64hv45yMYzCpqx1T",
-    "number": "2264297634052042910",
-    "begin": "2024-02-29T07:50:00+00:00",
-    "created": "2024-02-29T15:34:33+00:00",
-    "end": "2024-02-29T17:50:00+00:00",
-    "modified": "2024-02-29T20:51:47+00:00",
-    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
-    "updates": [
-      {
-        "created": "2024-02-29T20:51:19+00:00",
-        "modified": "2024-02-29T20:51:19+00:00",
-        "when": "2024-02-29T20:51:19+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T16:21:00+00:00",
-        "modified": "2024-02-29T16:21:08+00:00",
-        "when": "2024-02-29T16:21:00+00:00",
-        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T15:34:29+00:00",
-        "modified": "2024-02-29T15:34:36+00:00",
-        "when": "2024-02-29T15:34:29+00:00",
-        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2024-02-29T20:51:19+00:00",
-      "modified": "2024-02-29T20:51:19+00:00",
-      "when": "2024-02-29T20:51:19+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Chronicle Security",
-        "id": "FHwvkSZ6RzzDYAvDZXMM"
-      },
-      {
-        "title": "Chronicle SOAR",
-        "id": "GTT16Lf72XZKWArC9VxA"
-      }
-    ],
-    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -109706,238 +109706,6 @@
       {
         "title": "Las Vegas (us-west4)",
         "id": "us-west4"
-      }
-    ]
-  },
-  {
-    "id": "NWHmzRntXN6AeNzjTFHV",
-    "number": "14520474741842422271",
-    "begin": "2023-03-29T19:35:00+00:00",
-    "created": "2023-03-30T23:25:53+00:00",
-    "end": "2023-03-31T10:00:00+00:00",
-    "modified": "2023-03-31T21:01:43+00:00",
-    "external_desc": "Google Cloud Networking experiencing elevated latency in multiple regions",
-    "updates": [
-      {
-        "created": "2023-03-31T20:57:09+00:00",
-        "modified": "2023-03-31T20:57:09+00:00",
-        "when": "2023-03-31T20:57:09+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 29 March 2023 12:35\n**Incident End:** 31 March 2023 03:00\n**Duration:** 38 hours and 25 minutes\n**Affected Services and Features:**\nGoogle Cloud Networking\n**Regions/Zones:** us-central1, us-east4, us-east5\n**Description:**\nGoogle Cloud Networking users experienced packet loss for 70 seconds and slightly elevated latency for 38 hours and 25 minutes for connectivity from us-central1 to us-east4 and us-east5.\nFrom preliminary analysis, the root cause of the packet loss and subsequent latency was two independent instances of physical damage in North America, which left multiple regions operating on longer physical paths.\nService was restored by fixing the physical damage, followed by restoration of traffic on the impacted network. Subsequently, all network flow resumed full operation at 31 March 2023 06:30 US/Pacific.\n**Customer Impact:**\nUsers experienced packet loss for 70 seconds on 29 March 2023 between 12:35 and 12:37. A small percentage of users experienced slightly elevated latency of up to 10 minutes until 31 March 2023 at 03:00 for connectivity between us-central1 to us-east4 and us-east5.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          }
-        ]
-      },
-      {
-        "created": "2023-03-31T13:35:44+00:00",
-        "modified": "2023-03-31T13:35:49+00:00",
-        "when": "2023-03-31T13:35:44+00:00",
-        "text": "The issue with Google Cloud Networking has been resolved for all affected projects as of Friday, 2023-03-31 06:35 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          }
-        ]
-      },
-      {
-        "created": "2023-03-31T12:56:57+00:00",
-        "modified": "2023-03-31T12:57:02+00:00",
-        "when": "2023-03-31T12:56:57+00:00",
-        "text": "Summary: Google Cloud Networking experiencing elevated latency in multiple regions\nDescription: Most of the network flows have recovered to their original latency, with a small percentage of flows still seeing elevated latency.\nThese latencies are gradually recovering and the work is still ongoing to recover capacity as soon as possible and with the highest priority.\nWe will continue to communicate any changes in status and will provide another update by Friday, 2023-03-31 10:00 US/Pacific with current details.\nDiagnosis: Customers experienced packet loss for two events in the approximate time frames 12:30 - 12:40 and 13:40 - 13:50 US/Pacific on Wednesday, 2023-03-29.\nCustomers may experience slightly elevated latency between regions while traffic recovers.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          }
-        ]
-      },
-      {
-        "created": "2023-03-31T12:03:15+00:00",
-        "modified": "2023-03-31T12:03:20+00:00",
-        "when": "2023-03-31T12:03:15+00:00",
-        "text": "Summary: Google Cloud Networking experiencing elevated latency in multiple regions\nDescription: The latencies are gradually recovering (P50 and P95 are now recovered, P99 is decreasing). The work is still ongoing to recover capacity as soon as possible by our onsite teams at the highest priority.\nWe will continue to communicate any changes in status and will provide another update by Friday, 2023-03-31 06:00 US/Pacific with current details.\nDiagnosis: Customers experienced packet loss for two events in the approximate time frames 12:30 - 12:40 and 13:40 - 13:50 US/Pacific on Wednesday, 2023-03-29.\nCustomers may experience slightly elevated latency between regions while traffic recovers.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          }
-        ]
-      },
-      {
-        "created": "2023-03-31T10:56:05+00:00",
-        "modified": "2023-03-31T10:56:11+00:00",
-        "when": "2023-03-31T10:56:05+00:00",
-        "text": "Summary: Google Cloud Networking experiencing elevated latency in multiple regions\nDescription: The latencies are gradually recovering (P50 and P95 are now recovered, P99 is decreasing). The work is still ongoing to recover capacity as soon as possible by our onsite teams at the highest priority.\nWe will continue to communicate any changes in status and will provide another update by Friday, 2023-03-31 05:00 US/Pacific with current details.\nDiagnosis: Customers experienced packet loss for two events in the approximate time frames 12:30 - 12:40 and 13:40 - 13:50 US/Pacific on Wednesday, 2023-03-29.\nCustomers may experience slightly elevated latency between regions while traffic recovers.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          }
-        ]
-      },
-      {
-        "created": "2023-03-31T09:59:54+00:00",
-        "modified": "2023-03-31T10:00:01+00:00",
-        "when": "2023-03-31T09:59:54+00:00",
-        "text": "Summary: Google Cloud Networking experiencing elevated latency in multiple regions\nDescription: While the engineering team continues the efforts to recover the capacity, we believe the issue with Google Cloud Identity-Aware Proxy, Google Cloud Networking, Identity and Access Management is no longer causing any impact due to packet loss.\nHowever, we have identified an increase in latency for Google Cloud Networking affecting some regions, in particular us-central1, us-east4 and us-east5, due to physical damage resulting in a longer inter-regional path.\nThe latencies are gradually recovering but the work is still ongoing to recover capacity as soon as possible by our onsite teams at the highest priority, we will provide a full service restoration ETA once it is available.\nWe will continue to communicate any changes in status and will provide another update by Friday, 2023-03-31 04:00 US/Pacific with current details.\nDiagnosis: Customers experienced packet loss for two events in the approximate time frames 12:30 - 12:40 and 13:40 - 13:50 US/Pacific on Wednesday, 2023-03-29.\nCustomers may experience slightly elevated latency between regions while traffic recovers.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          }
-        ]
-      },
-      {
-        "created": "2023-03-31T06:50:36+00:00",
-        "modified": "2023-03-31T06:50:39+00:00",
-        "when": "2023-03-31T06:50:36+00:00",
-        "text": "Summary: Google Cloud Networking experiencing elevated latency in multiple regions\nDescription: While the engineering team continues the efforts to recover the capacity, we believe the issue with Google Cloud Identity-Aware Proxy, Google Cloud Networking, Identity and Access Management is no longer causing any impact due to packet loss.\nHowever, we have identified an increase in latency for Google Cloud Networking affecting some regions, in particular us-central1, us-east4 and us-east5, due to physical damage resulting in a longer inter-regional path.\nWork is ongoing to recover capacity as soon as possible by our onsite teams at the highest priority, we will provide a full service restoration ETA once it is available.\nWe will continue to communicate any changes in status and will provide another update by Friday, 2023-03-31 03:00 US/Pacific with current details.\nDiagnosis: Customers experienced packet loss for two events in the approximate time frames 12:30 - 12:40 and 13:40 - 13:50 US/Pacific on Wednesday, 2023-03-29.\nCustomers may experience slightly elevated latency between regions while traffic recovers.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          }
-        ]
-      },
-      {
-        "created": "2023-03-31T03:32:56+00:00",
-        "modified": "2023-03-31T03:32:58+00:00",
-        "when": "2023-03-31T03:32:56+00:00",
-        "text": "Summary: Google Cloud Networking experiencing elevated latency in multiple regions\nDescription: While the engineering team continues the efforts to recover the capacity, we believe the issue with Google Cloud Identity-Aware Proxy, Google Cloud Networking, Identity and Access Management is no longer causing any impact due to packet loss.\nHowever, we have identified an increase in latency for Google Cloud Networking affecting some regions, in particular us-central1, us-east4 and us-east5, due to physical damage resulting in a longer inter-regional path.\nWork is ongoing to recover capacity as soon as possible by our onsite teams at the highest priority, we will provide a full service restoration ETA once it is available.\nWe will continue to communicate any changes in status and will provide another update by Friday, 2023-03-31 00:00 US/Pacific with current details.\nDiagnosis: Customers experienced packet loss for two events in the approximate time frames 12:30 - 12:40 and 13:40 - 13:50 US/Pacific on Wednesday, 2023-03-29.\nCustomers may experience slightly elevated latency between regions while traffic recovers.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          }
-        ]
-      },
-      {
-        "created": "2023-03-31T00:45:48+00:00",
-        "modified": "2023-03-31T00:45:55+00:00",
-        "when": "2023-03-31T00:45:48+00:00",
-        "text": "Summary: Google Cloud Networking experiencing elevated latency in multiple regions\nDescription: We believe the issue with Google Cloud Identity-Aware Proxy, Google Cloud Networking, Identity and Access Management is no longer causing any impact due to packet loss.\nHowever, we have identified an increase in latency for Google Cloud Networking affecting some regions, in particular us-central1, us-east4 and us-east5, due to physical damage resulting in a longer inter-regional path.\nWork is ongoing to recover capacity as soon as possible by our onsite teams at the highest priority, we will provide a full service restoration ETA once it is available.\nWe will continue to communicate any changes in status and will provide another update by Thursday, 2023-03-30 21:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers experienced packet loss for two events in the approximate time frames 12:30 - 12:40 and 13:40 - 13:50 US/Pacific on Wednesday, 2023-03-29.\nCustomers may experience slightly elevated latency between regions while traffic recovers.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          }
-        ]
-      },
-      {
-        "created": "2023-03-30T23:25:52+00:00",
-        "modified": "2023-03-30T23:25:53+00:00",
-        "when": "2023-03-30T23:25:52+00:00",
-        "text": "Summary: Google Cloud Networking experiencing elevated latency in multiple regions\nDescription: We believe the issue with Google Cloud Identity-Aware Proxy, Google Cloud Networking, Identity and Access Management is no longer causing any impact due to packet loss.\nHowever, we have identified an increase in latency for Google Cloud Networking affecting some regions, in particular us-central1, us-east4 and us-east5, due to physical damage resulting in a longer inter-regional path.\nWe are continuing to work on recovering capacity as soon as possible by our onsite teams at the highest priority. We do not have an ETA for service restoration.\nWe will provide an update by Thursday, 2023-03-30 18:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers experienced packet loss for two events in the approximate time frames 12:30 - 12:40 and 13:40 - 13:50 US/Pacific on Wednesday, 2023-03-29.\nCustomers may experience slightly elevated latency between regions while traffic recovers.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2023-03-31T20:57:09+00:00",
-      "modified": "2023-03-31T20:57:09+00:00",
-      "when": "2023-03-31T20:57:09+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 29 March 2023 12:35\n**Incident End:** 31 March 2023 03:00\n**Duration:** 38 hours and 25 minutes\n**Affected Services and Features:**\nGoogle Cloud Networking\n**Regions/Zones:** us-central1, us-east4, us-east5\n**Description:**\nGoogle Cloud Networking users experienced packet loss for 70 seconds and slightly elevated latency for 38 hours and 25 minutes for connectivity from us-central1 to us-east4 and us-east5.\nFrom preliminary analysis, the root cause of the packet loss and subsequent latency was two independent instances of physical damage in North America, which left multiple regions operating on longer physical paths.\nService was restored by fixing the physical damage, followed by restoration of traffic on the impacted network. Subsequently, all network flow resumed full operation at 31 March 2023 06:30 US/Pacific.\n**Customer Impact:**\nUsers experienced packet loss for 70 seconds on 29 March 2023 between 12:35 and 12:37. A small percentage of users experienced slightly elevated latency of up to 10 minutes until 31 March 2023 at 03:00 for connectivity between us-central1 to us-east4 and us-east5.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        },
-        {
-          "title": "Northern Virginia (us-east4)",
-          "id": "us-east4"
-        },
-        {
-          "title": "Columbus (us-east5)",
-          "id": "us-east5"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "VNJxzcH58QmTt5H6pnT6",
-    "service_name": "Google Cloud Networking",
-    "affected_products": [
-      {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
-      }
-    ],
-    "uri": "incidents/NWHmzRntXN6AeNzjTFHV",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Iowa (us-central1)",
-        "id": "us-central1"
-      },
-      {
-        "title": "Northern Virginia (us-east4)",
-        "id": "us-east4"
-      },
-      {
-        "title": "Columbus (us-east5)",
-        "id": "us-east5"
       }
     ]
   }
