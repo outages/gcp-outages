@@ -7169,6 +7169,91 @@
     ]
   },
   {
+    "id": "JAxa64hv45yMYzCpqx1T",
+    "number": "2264297634052042910",
+    "begin": "2024-02-29T07:50:00+00:00",
+    "created": "2024-02-29T15:34:33+00:00",
+    "end": "2024-02-29T17:50:00+00:00",
+    "modified": "2024-02-29T20:51:47+00:00",
+    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
+    "updates": [
+      {
+        "created": "2024-02-29T20:51:19+00:00",
+        "modified": "2024-02-29T20:51:19+00:00",
+        "when": "2024-02-29T20:51:19+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T16:21:00+00:00",
+        "modified": "2024-02-29T16:21:08+00:00",
+        "when": "2024-02-29T16:21:00+00:00",
+        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T15:34:29+00:00",
+        "modified": "2024-02-29T15:34:36+00:00",
+        "when": "2024-02-29T15:34:29+00:00",
+        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2024-02-29T20:51:19+00:00",
+      "modified": "2024-02-29T20:51:19+00:00",
+      "when": "2024-02-29T20:51:19+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Multi-region: us",
+          "id": "us"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Chronicle Security",
+        "id": "FHwvkSZ6RzzDYAvDZXMM"
+      },
+      {
+        "title": "Chronicle SOAR",
+        "id": "GTT16Lf72XZKWArC9VxA"
+      }
+    ],
+    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Multi-region: us",
+        "id": "us"
+      }
+    ]
+  },
+  {
     "id": "M2qQyWWU9FKvVc2FfcaH",
     "number": "184633653096742397",
     "begin": "2024-02-29T07:50:00+00:00",
@@ -7271,91 +7356,6 @@
       }
     ],
     "uri": "incidents/M2qQyWWU9FKvVc2FfcaH",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Multi-region: us",
-        "id": "us"
-      }
-    ]
-  },
-  {
-    "id": "JAxa64hv45yMYzCpqx1T",
-    "number": "2264297634052042910",
-    "begin": "2024-02-29T07:50:00+00:00",
-    "created": "2024-02-29T15:34:33+00:00",
-    "end": "2024-02-29T17:50:00+00:00",
-    "modified": "2024-02-29T20:51:47+00:00",
-    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
-    "updates": [
-      {
-        "created": "2024-02-29T20:51:19+00:00",
-        "modified": "2024-02-29T20:51:19+00:00",
-        "when": "2024-02-29T20:51:19+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T16:21:00+00:00",
-        "modified": "2024-02-29T16:21:08+00:00",
-        "when": "2024-02-29T16:21:00+00:00",
-        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T15:34:29+00:00",
-        "modified": "2024-02-29T15:34:36+00:00",
-        "when": "2024-02-29T15:34:29+00:00",
-        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2024-02-29T20:51:19+00:00",
-      "modified": "2024-02-29T20:51:19+00:00",
-      "when": "2024-02-29T20:51:19+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Chronicle Security",
-        "id": "FHwvkSZ6RzzDYAvDZXMM"
-      },
-      {
-        "title": "Chronicle SOAR",
-        "id": "GTT16Lf72XZKWArC9VxA"
-      }
-    ],
-    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -107232,191 +107232,6 @@
       {
         "title": "Salt Lake City (us-west3)",
         "id": "us-west3"
-      }
-    ]
-  },
-  {
-    "id": "EtHubEVR7CQBHiRMnViw",
-    "number": "2559573605542814989",
-    "begin": "2023-04-01T10:30:00+00:00",
-    "created": "2023-04-03T09:11:10+00:00",
-    "end": "2023-04-03T12:30:00+00:00",
-    "modified": "2023-04-10T16:40:40+00:00",
-    "external_desc": "We are investigating an issue with Google BigQuery impacting Customer is the US Region",
-    "updates": [
-      {
-        "created": "2023-04-10T15:40:46+00:00",
-        "modified": "2023-04-10T15:45:47+00:00",
-        "when": "2023-04-10T15:40:46+00:00",
-        "text": "# Incident Report\n## Summary\nBetween Saturday, 01 April 2023 at 03:30 US/Pacific and Monday, 03 April 2023 at 05:30 US/Pacific, BigQuery experienced three separate windows of elevated latency and unavailability errors (503, 500 errors) in the US multi-region for a total duration of 8 hours, 2 minutes. To our BigQuery customers whose business analytics were impacted during this disruption, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s performance and availability. We have conducted an internal investigation and are taking steps to improve our service.\n## Root Cause\nBigQuery’s API provides users the ability to send job requests as outlined in the [public documentation](https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs). Elevated latencies or elevated error rates on these API requests may lead to customers experiencing service unavailability. These job requests are received by job frontend servers which handles the initial processing and routing to BigQuery’s query processing engine. Each server processes these requests in a series of thread pools.\nThe issue was triggered by an unexpected surge of job insert API requests from a single workload in rapid succession. This surge led to excessive load on a small fraction of our metadata serving systems creating a hotspot. This caused increased latencies and backed up requests to read the metadata for the single workload. This, in turn, led to contention of the threadpool, which resulted in elevated latency and timeout failures for other API job requests hitting the affected job frontend servers.\n## Remediation and Prevention\nGoogle engineers were first alerted to the outage by internal monitoring on 01 April 2023 at 04:05 US/Pacific and immediately started an investigation. A single workload was identified as the trigger. While engineers continued to work on identifying the cause and mitigation, the latency subsided, mitigating the issue automatically. After mitigation, our engineers continued investigations to understand the connection between the single workload and the broader impact.\nDuring ongoing investigations, engineers were alerted to a recurrence of the issue on 02 April 2023 at 03:05 US/Pacific. The issue was further escalated, and engineering added CPU resources to the problematic server. This was completed around the same time as when the single workload ended, thereby mitigating the issue. After further monitoring, engineers concluded investigations as the added resources helped mitigate the issue.\nOn 03 April 2023 at 01:34 US/Pacific time, our engineers were alerted to a reappearance of the issue. The engineering team identified and successfully stopped the type of workload that was causing the issue, effectively mitigating the problem. The team has taken additional steps to block that specific workload in the future.\nGoogle is committed to preventing a repeat of this issue in the future and is completing the following actions:\n* Continue to block the problematic workload until we implement additional safeguards for it to run without causing broader impact.\n* Improve API execution by introducing isolation between the threadpools that process different job API calls and by introducing limits on the instantaneous threadpool capacity that can be used by a single workload.\n## Detailed Description of Impact\nOn 01 April 2023 between 03:30 and 05:14 US/Pacific, on 02 April 2023 between 03:00 and 05:08, and on 03 April 2023 between 01:20 and 05:30 :\n**BigQuery:**\nAffected customers in multi-region US experienced elevated latency and unavailability errors (503, 500 errors) when using the jobs API to insert a query job, get information about a job, cancel a job, or get back query results.\n----------------------------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-04T20:17:16+00:00",
-        "modified": "2023-04-10T16:40:40+00:00",
-        "when": "2023-04-04T20:17:16+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n(All Times US/Pacific)\n**Impact Window #1:**\nIncident Start: 1 April 2023 03:30\nIncident End: 1 April 2023 05:14\n**Duration**: 1 hour, 44 minutes\n**Impact Window #2:**\nIncident Start: 2 April 2023 03:00\nIncident End: 2 April 2023 05:08\n**Duration**: 2 hours, 8 minutes\n**Impact Window #3:**\nIncident Start: 3 April 2023 01:20\nIncident End: 3 April 2023 05:30\n**Duration**: 4 hours, 10 minutes\n**Cumulative Duration:** 8 hours, 2 minutes\n**Affected Services and Features:**\nBigQuery\n**Regions/Zones:** Multi-Region US\n**Description:**\nBigQuery experienced elevated latency and error rates in the US multi-region. The incident spanned between 1 April 2023 03:30 and 3 April 2023 05:30 for a cumulative duration of 7 hours, 47 minutes. From preliminary analysis, the root cause of the issue was triggered by an unexpected surge of job API requests from a single workload. The issue was mitigated once Google engineers identified and isolated the problematic workload.\nGoogle will complete a detailed Incident Report in the following days that will provide a full root cause.\n**Customer Impact:**\n- Affected customers experienced elevated latency and unavailability errors (503, 500 errors) while using the jobs API to insert a query job, get information about a job, cancel a job, or get back query results.\n---",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-03T21:42:01+00:00",
-        "modified": "2023-04-03T21:42:03+00:00",
-        "when": "2023-04-03T21:42:01+00:00",
-        "text": "The issue with Google BigQuery has been resolved for all affected users as of Monday, 2023-04-03 05:30 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-03T20:24:04+00:00",
-        "modified": "2023-04-03T20:24:07+00:00",
-        "when": "2023-04-03T20:24:04+00:00",
-        "text": "Summary: We are investigating an issue with Google BigQuery impacting Customer is the US Region\nDescription: Engineers believe that the issue that was causing high latency and unavailable errors has been mitigated, however we are continuing to monitor the service to confirm full recovery.\nWe will provide more information by Monday, 2023-04-03 15:30 US/Pacific.\nDiagnosis: Some Customers will see system high latency / unavailable errors (503, 500 errors) while using the jobs API to insert a query job or get back query results.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-03T19:25:42+00:00",
-        "modified": "2023-04-03T19:25:46+00:00",
-        "when": "2023-04-03T19:25:42+00:00",
-        "text": "Summary: We are investigating an issue with Google BigQuery impacting Customer is the US Region\nDescription: Engineers believe that the issue that was causing high latency and unavailable errors has been mitigated, however we are continuing to monitor the service to confirm full recovery.\nWe will provide more information by Monday, 2023-04-03 13:30 US/Pacific.\nDiagnosis: Some Customers will see system high latency / unavailable errors (503, 500 errors) while using the jobs API to insert a query job or get back query results.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-03T18:53:25+00:00",
-        "modified": "2023-04-03T18:53:28+00:00",
-        "when": "2023-04-03T18:53:25+00:00",
-        "text": "Summary: We are investigating an issue with Google BigQuery impacting Customer is the US Region\nDescription: Engineers believe that the issue that was causing high latency and unavailable errors has been mitigated, and are continuing to monitor the service.\nWe will provide more information by Monday, 2023-04-03 12:30 US/Pacific.\nDiagnosis: Some Customers will see system high latency / unavailable errors (503, 500 errors) while using the jobs API to insert a query job or get back query results.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-03T16:38:54+00:00",
-        "modified": "2023-04-03T16:38:58+00:00",
-        "when": "2023-04-03T16:38:54+00:00",
-        "text": "Summary: We are investigating an issue with Google BigQuery impacting Customer is the US Region\nDescription: Engineers believe that the issue that was causing high latency and unavailable errors has been mitigated, and are continuing to monitor the service.\nWe will provide more information by Monday, 2023-04-03 12:00 US/Pacific.\nDiagnosis: Some Customers will see system high latency / unavailable errors (503, 500 errors) while using the jobs API to insert a query job or get back query results.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-03T11:53:15+00:00",
-        "modified": "2023-04-03T11:53:20+00:00",
-        "when": "2023-04-03T11:53:15+00:00",
-        "text": "Summary: We are investigating an issue with Google BigQuery impacting Customer is the US Region\nDescription: Engineers have localized the issue and mitigation work is currently underway by our engineering team.\nWe believe there is no ongoing impact but will continue to monitor the service. if customer are still impacted please raise a support case.\nWe will provide more information by Monday, 2023-04-03 12:00 US/Pacific.\nDiagnosis: Some Customers will see system high latency / unavailable errors (503, 500 errors) while using the jobs API to insert a query job or get back query results.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-03T09:46:47+00:00",
-        "modified": "2023-04-03T09:46:55+00:00",
-        "when": "2023-04-03T09:46:47+00:00",
-        "text": "Summary: We are investigating an issue with Google BigQuery impacting Customer is the US Region\nDescription: We are experiencing an issue with Google BigQuery.\nAt present there is no ongoing impact, google engineers are continuing to investigate and are monitoring closely. If customers are experiencing issues please raise a support case.\nWe will provide an update by Monday, 2023-04-03 05:00 US/Pacific with current details.\nDiagnosis: Some Customers will see system high latency / unavailable errors (503, 500 errors) while using the jobs API to insert a query job or get back query results.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-03T09:18:49+00:00",
-        "modified": "2023-04-03T09:18:55+00:00",
-        "when": "2023-04-03T09:18:49+00:00",
-        "text": "Summary: We are investigating an issue with Google BigQuery impacting Customer is the US Region\nDescription: We are experiencing an issue with Google BigQuery.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2023-04-03 03:00 US/Pacific with current details.\nDiagnosis: Some Customers will see system high latency / unavailable errors (503, 500 errors) while using the jobs API to insert a query job or get back query results.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-03T09:11:08+00:00",
-        "modified": "2023-04-03T09:11:14+00:00",
-        "when": "2023-04-03T09:11:08+00:00",
-        "text": "Summary: We are investigating an issue with Google BigQuery impacting Customer is the US Region\nDescription: We are experiencing an issue with Google BigQuery.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2023-04-03 03:00 US/Pacific with current details.\nDiagnosis: Some Customers will see system unavailable errors while using the jobs API to insert a query job or get back query results.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2023-04-10T15:40:46+00:00",
-      "modified": "2023-04-10T15:45:47+00:00",
-      "when": "2023-04-10T15:40:46+00:00",
-      "text": "# Incident Report\n## Summary\nBetween Saturday, 01 April 2023 at 03:30 US/Pacific and Monday, 03 April 2023 at 05:30 US/Pacific, BigQuery experienced three separate windows of elevated latency and unavailability errors (503, 500 errors) in the US multi-region for a total duration of 8 hours, 2 minutes. To our BigQuery customers whose business analytics were impacted during this disruption, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s performance and availability. We have conducted an internal investigation and are taking steps to improve our service.\n## Root Cause\nBigQuery’s API provides users the ability to send job requests as outlined in the [public documentation](https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs). Elevated latencies or elevated error rates on these API requests may lead to customers experiencing service unavailability. These job requests are received by job frontend servers which handles the initial processing and routing to BigQuery’s query processing engine. Each server processes these requests in a series of thread pools.\nThe issue was triggered by an unexpected surge of job insert API requests from a single workload in rapid succession. This surge led to excessive load on a small fraction of our metadata serving systems creating a hotspot. This caused increased latencies and backed up requests to read the metadata for the single workload. This, in turn, led to contention of the threadpool, which resulted in elevated latency and timeout failures for other API job requests hitting the affected job frontend servers.\n## Remediation and Prevention\nGoogle engineers were first alerted to the outage by internal monitoring on 01 April 2023 at 04:05 US/Pacific and immediately started an investigation. A single workload was identified as the trigger. While engineers continued to work on identifying the cause and mitigation, the latency subsided, mitigating the issue automatically. After mitigation, our engineers continued investigations to understand the connection between the single workload and the broader impact.\nDuring ongoing investigations, engineers were alerted to a recurrence of the issue on 02 April 2023 at 03:05 US/Pacific. The issue was further escalated, and engineering added CPU resources to the problematic server. This was completed around the same time as when the single workload ended, thereby mitigating the issue. After further monitoring, engineers concluded investigations as the added resources helped mitigate the issue.\nOn 03 April 2023 at 01:34 US/Pacific time, our engineers were alerted to a reappearance of the issue. The engineering team identified and successfully stopped the type of workload that was causing the issue, effectively mitigating the problem. The team has taken additional steps to block that specific workload in the future.\nGoogle is committed to preventing a repeat of this issue in the future and is completing the following actions:\n* Continue to block the problematic workload until we implement additional safeguards for it to run without causing broader impact.\n* Improve API execution by introducing isolation between the threadpools that process different job API calls and by introducing limits on the instantaneous threadpool capacity that can be used by a single workload.\n## Detailed Description of Impact\nOn 01 April 2023 between 03:30 and 05:14 US/Pacific, on 02 April 2023 between 03:00 and 05:08, and on 03 April 2023 between 01:20 and 05:30 :\n**BigQuery:**\nAffected customers in multi-region US experienced elevated latency and unavailability errors (503, 500 errors) when using the jobs API to insert a query job, get information about a job, cancel a job, or get back query results.\n----------------------------",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "9CcrhHUcFevXPSVaSxkf",
-    "service_name": "Google BigQuery",
-    "affected_products": [
-      {
-        "title": "Google BigQuery",
-        "id": "9CcrhHUcFevXPSVaSxkf"
-      }
-    ],
-    "uri": "incidents/EtHubEVR7CQBHiRMnViw",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Multi-region: us",
-        "id": "us"
       }
     ]
   }
