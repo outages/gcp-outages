@@ -109,15 +109,23 @@
   {
     "id": "SPSqWfXYYSGzBmQCXNA4",
     "number": "5212456933930716916",
-    "begin": "2024-04-16T20:08:59+00:00",
+    "begin": "2024-04-16T09:20:00+00:00",
     "created": "2024-04-17T08:45:53+00:00",
-    "end": "2024-04-17T11:41:59+00:00",
-    "modified": "2024-04-17T11:42:03+00:00",
+    "end": "2024-04-17T10:40:00+00:00",
+    "modified": "2024-04-17T16:40:01+00:00",
     "external_desc": "Creation and Upgrades are failing for some Environments while using Cloud Composer 2",
     "updates": [
       {
+        "created": "2024-04-17T16:39:34+00:00",
+        "modified": "2024-04-17T16:40:01+00:00",
+        "when": "2024-04-17T16:39:34+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 16 April 2024 02:20\n**Incident End:** 17 April 2024 03:40\n**Duration:** 1 day 1 hours, 20 minutes\n**Affected Services and Features:**\nGoogle Cloud Composer\n**Regions/Zones:**\nGlobal\n**Description:**\nGoogle Cloud Composer users experienced an elevated failure rate when creating, resizing, or upgrading to newer versions of Cloud Composer 2 Environments with “Private IP” configuration. This was due to an inadvertent issue introduced by a recent change to the latest stable Container Operating System (COS) image used by Cloud Composer in one of its workloads.\nExisting Private IP environments continued to operate normally if they were not upgraded or resized.\nGoogle engineers executed a rollback of the change to mitigate the issue on 17 April 2024 at 03:40 US/Pacific.\nGoogle will complete a full Incident Report in the following days that will provide a detailed root cause.\n**Customer Impact:**\n- Impacted users experienced issues with creating new Composer Environments, upgrades, and resize operations for existing Composer Environments in Private IP configuration.\n- Composer environments with failed upgrades were unhealthy and workloads could fail or experience performance issues\n- Environments might have encountered issues with scaling for increase database-intensive workloads\n**Additional details:**\n- Less than 0.25% of the customer environments encountered upgrade failures and some of the customer environments with “Private IP” configuration that experienced upgrade failures during the incident will now upgrade successfully.\n- A few environments may still experience failures on further upgrades. These environments are still functioning normally and will continue serving workloads without any issues. Our engineers are working internally to identify these environments and take additional actions so that they can be further upgraded successfully. These actions are expected to be completed by early next week.\nIf you are one of the customers that experienced upgrade failure during the incident and still continue to have issues with further upgrades, please reach out to Google Cloud Support using https://cloud.google.com/support for assistance with recovery. Alternatively, you can recreate these environments.\n--------",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-04-17T11:41:59+00:00",
-        "modified": "2024-04-17T11:42:08+00:00",
+        "modified": "2024-04-17T16:39:34+00:00",
         "when": "2024-04-17T11:41:59+00:00",
         "text": "The issue with Google Cloud Composer has been resolved for all affected users as of Wednesday, 2024-04-17 04:09 US/Pacific.\nUsers are now able to create new Composer Environment and upgrade existing ones. Some failed upgrades during the duration of the incident may have been automatically recovered. If you're still experiencing issues, please contact us via a customer support case for our repair procedure.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -375,10 +383,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-04-17T11:41:59+00:00",
-      "modified": "2024-04-17T11:42:08+00:00",
-      "when": "2024-04-17T11:41:59+00:00",
-      "text": "The issue with Google Cloud Composer has been resolved for all affected users as of Wednesday, 2024-04-17 04:09 US/Pacific.\nUsers are now able to create new Composer Environment and upgrade existing ones. Some failed upgrades during the duration of the incident may have been automatically recovered. If you're still experiencing issues, please contact us via a customer support case for our repair procedure.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2024-04-17T16:39:34+00:00",
+      "modified": "2024-04-17T16:40:01+00:00",
+      "when": "2024-04-17T16:39:34+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 16 April 2024 02:20\n**Incident End:** 17 April 2024 03:40\n**Duration:** 1 day 1 hours, 20 minutes\n**Affected Services and Features:**\nGoogle Cloud Composer\n**Regions/Zones:**\nGlobal\n**Description:**\nGoogle Cloud Composer users experienced an elevated failure rate when creating, resizing, or upgrading to newer versions of Cloud Composer 2 Environments with “Private IP” configuration. This was due to an inadvertent issue introduced by a recent change to the latest stable Container Operating System (COS) image used by Cloud Composer in one of its workloads.\nExisting Private IP environments continued to operate normally if they were not upgraded or resized.\nGoogle engineers executed a rollback of the change to mitigate the issue on 17 April 2024 at 03:40 US/Pacific.\nGoogle will complete a full Incident Report in the following days that will provide a detailed root cause.\n**Customer Impact:**\n- Impacted users experienced issues with creating new Composer Environments, upgrades, and resize operations for existing Composer Environments in Private IP configuration.\n- Composer environments with failed upgrades were unhealthy and workloads could fail or experience performance issues\n- Environments might have encountered issues with scaling for increase database-intensive workloads\n**Additional details:**\n- Less than 0.25% of the customer environments encountered upgrade failures and some of the customer environments with “Private IP” configuration that experienced upgrade failures during the incident will now upgrade successfully.\n- A few environments may still experience failures on further upgrades. These environments are still functioning normally and will continue serving workloads without any issues. Our engineers are working internally to identify these environments and take additional actions so that they can be further upgraded successfully. These actions are expected to be completed by early next week.\nIf you are one of the customers that experienced upgrade failure during the incident and still continue to have issues with further upgrades, please reach out to Google Cloud Support using https://cloud.google.com/support for assistance with recovery. Alternatively, you can recreate these environments.\n--------",
       "status": "AVAILABLE",
       "affected_locations": []
     },
