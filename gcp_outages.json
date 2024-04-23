@@ -4,12 +4,25 @@
     "number": "13492242596738600854",
     "begin": "2024-04-22T20:41:50+00:00",
     "created": "2024-04-22T21:11:41+00:00",
-    "modified": "2024-04-23T01:16:57+00:00",
+    "modified": "2024-04-23T04:24:35+00:00",
     "external_desc": "Google Batch - Service Issues - uscentral1",
     "updates": [
       {
+        "created": "2024-04-23T04:24:35+00:00",
+        "modified": "2024-04-23T04:24:39+00:00",
+        "when": "2024-04-23T04:24:35+00:00",
+        "text": "Summary: Google Batch - Service Issues - uscentral1\nDescription: We've received a report of an issue with Batch as of Monday, 2024-04-22 09:00 US/Pacific.\nThis issue is impacting all new incoming requests for batch jobs in the 'us-central1' region.\nOur engineering team continues to work on the mitigation strategy identified. There is no ETA for the completion of the mitigation activities.\nWe will provide more information by Monday, 2024-04-22 23:30 US/Pacific.\nDiagnosis: Customers trying to use Batch would experience delays while changing the status of their batch jobs from Queued to Scheduled.\nWorkaround: Customers could try submitting their jobs from another region as a workaround.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
         "created": "2024-04-23T01:16:57+00:00",
-        "modified": "2024-04-23T01:17:02+00:00",
+        "modified": "2024-04-23T04:24:35+00:00",
         "when": "2024-04-23T01:16:57+00:00",
         "text": "Summary: Google Batch - Service Issues - uscentral1\nDescription: We've received a report of an issue with Batch as of Monday, 2024-04-22 09:00 US/Pacific.\nThis issue is impacting all new incoming requests for batch jobs in us-central1.\n**Our engineering team continues to work on the mitigation strategy identified. There is no ETA for the completion of the mitigation activities.**\n**We will provide more information by Monday, 2024-04-22 21:30 US/Pacific.**\nDiagnosis: Customers trying to use Batch would experience delays while changing the status of their batch jobs from Queued to Scheduled.\nWorkaround: Customers could try submitting their jobs from another region as a workaround.",
         "status": "SERVICE_OUTAGE",
@@ -61,10 +74,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-04-23T01:16:57+00:00",
-      "modified": "2024-04-23T01:17:02+00:00",
-      "when": "2024-04-23T01:16:57+00:00",
-      "text": "Summary: Google Batch - Service Issues - uscentral1\nDescription: We've received a report of an issue with Batch as of Monday, 2024-04-22 09:00 US/Pacific.\nThis issue is impacting all new incoming requests for batch jobs in us-central1.\n**Our engineering team continues to work on the mitigation strategy identified. There is no ETA for the completion of the mitigation activities.**\n**We will provide more information by Monday, 2024-04-22 21:30 US/Pacific.**\nDiagnosis: Customers trying to use Batch would experience delays while changing the status of their batch jobs from Queued to Scheduled.\nWorkaround: Customers could try submitting their jobs from another region as a workaround.",
+      "created": "2024-04-23T04:24:35+00:00",
+      "modified": "2024-04-23T04:24:39+00:00",
+      "when": "2024-04-23T04:24:35+00:00",
+      "text": "Summary: Google Batch - Service Issues - uscentral1\nDescription: We've received a report of an issue with Batch as of Monday, 2024-04-22 09:00 US/Pacific.\nThis issue is impacting all new incoming requests for batch jobs in the 'us-central1' region.\nOur engineering team continues to work on the mitigation strategy identified. There is no ETA for the completion of the mitigation activities.\nWe will provide more information by Monday, 2024-04-22 23:30 US/Pacific.\nDiagnosis: Customers trying to use Batch would experience delays while changing the status of their batch jobs from Queued to Scheduled.\nWorkaround: Customers could try submitting their jobs from another region as a workaround.",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
@@ -104634,230 +104647,6 @@
       {
         "title": "Global",
         "id": "global"
-      }
-    ]
-  },
-  {
-    "id": "QiLuCREiUWYxQ3DiLmZz",
-    "number": "7368046392736819897",
-    "begin": "2023-04-21T00:06:37+00:00",
-    "created": "2023-04-21T00:29:34+00:00",
-    "end": "2023-04-24T04:18:30+00:00",
-    "modified": "2023-04-24T04:18:30+00:00",
-    "external_desc": "New DPMS service created in us-east4, europe-west3 and us-west2 are experiencing failures",
-    "updates": [
-      {
-        "created": "2023-04-24T04:18:29+00:00",
-        "modified": "2023-04-24T04:18:31+00:00",
-        "when": "2023-04-24T04:18:29+00:00",
-        "text": "The issue with Dataproc Metastore has been resolved for all affected users as of Sunday, 2023-04-23 16:13 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-21T19:10:28+00:00",
-        "modified": "2023-04-21T19:10:30+00:00",
-        "when": "2023-04-21T19:10:28+00:00",
-        "text": "Summary: New DPMS service created in us-east4, europe-west3 and us-west2 are experiencing failures\nDescription: Our engineering team has validated the fix and have a mitigation rollout in progress.\nThe mitigation is expected to complete by Monday, 2023-04-24 16:00 US/Pacific.\nWe will provide more information by Monday, 2023-04-24 17:00 US/Pacific.\nDiagnosis: Newly created (Dataproc Metastore) DPMS service in us-east4, europe-west3 and us-west2 are experiencing 500 internal error during creation. Existing service updates will continue to work except for updates to ports, which may fail with a 500 internal error.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-21T15:52:47+00:00",
-        "modified": "2023-04-21T15:52:49+00:00",
-        "when": "2023-04-21T15:52:47+00:00",
-        "text": "Summary: New DPMS service created in us-east4, europe-west3 and us-west2 are experiencing failures\nDescription: Our engineering team has determined that further investigation is required to mitigate the issue.\nWe will provide an update by Saturday, 2023-04-22 12:00 US/Pacific with current details.\nDiagnosis: Newly created (Dataproc Metastore) DPMS service in us-east4, europe-west3 and us-west2 are experiencing 500 internal error during creation. Existing service updates will continue to work except for updates to ports, which may fail with a 500 internal error.\nSome customers may experience issues with GKE clusters autoscaling the nodepool on N1 standard machine types.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-21T06:40:21+00:00",
-        "modified": "2023-04-21T06:40:28+00:00",
-        "when": "2023-04-21T06:40:21+00:00",
-        "text": "Summary: New DPMS service created in us-east4, europe-west3 and us-west2 are experiencing failures\nDescription: Our engineering team continues the testing and validation of the mitigation steps to reduce the customer impact.\nWe will provide an update by Friday, 2023-04-21 09:00 US/Pacific with current details.\nDiagnosis: Newly created (Dataproc Metastore) DPMS service in us-east4, europe-west3 and us-west2 are experiencing 500 internal error during creation. Existing service updates will continue to work except for updates to ports, which may fail with a 500 internal error.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-21T04:34:29+00:00",
-        "modified": "2023-04-21T04:34:31+00:00",
-        "when": "2023-04-21T04:34:29+00:00",
-        "text": "Summary: New DPMS service created in us-east4, europe-west3 and us-west2 are experiencing failures\nDescription: Our engineering team continues the testing and validation of the mitigation steps to reduce the customer impact.\nWe will provide an update by Friday, 2023-04-21 00:30 US/Pacific with current details.\nDiagnosis: Newly created (Dataproc Metastore) DPMS service in us-east4, europe-west3 and us-west2 are experiencing 500 internal error during creation. Existing service updates will continue to work except for updates to ports, which may fail with a 500 internal error.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-21T04:32:02+00:00",
-        "modified": "2023-04-21T04:32:10+00:00",
-        "when": "2023-04-21T04:32:02+00:00",
-        "text": "Summary: New DPMS service created in us-east4, europe-west3 and us-west2 are experiencing failures\nDescription: Our engineering team is continues the testing and validation of the mitigation steps to reduce the customer impact.\nWe will provide an update by Friday, 2023-04-21 00:30 US/Pacific with current details.\nDiagnosis: Newly created DPMS service in us-east4, europe-west3 and us-west2 are experiencing 500 internal error during creation. Existing service updates will continue to work except for updates to ports, which may fail with a 500 internal error.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-21T03:08:22+00:00",
-        "modified": "2023-04-21T03:08:31+00:00",
-        "when": "2023-04-21T03:08:22+00:00",
-        "text": "Summary: New DPMS service created in us-east4, europe-west3 and us-west2 are experiencing failures\nDescription: Our engineering team is continues the testing and validation of the mitigation steps to reduce the customer impact.\nWe will provide an update by Thursday, 2023-04-20 22:00 US/Pacific with current details.\nDiagnosis: Newly created DPMS service in us-east4, europe-west3 and us-west2 are experiencing 500 internal error during creation. Existing service updates will continue to work except for updates to ports, which may fail with a 500 internal error.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-21T01:17:10+00:00",
-        "modified": "2023-04-21T01:17:12+00:00",
-        "when": "2023-04-21T01:17:10+00:00",
-        "text": "Summary: New DPMS service created in us-east4, europe-west3 and us-west2 are experiencing failures\nDescription: Our engineering team is currently testing the mitigation steps to reduce the customer impact.\nWe will provide an update by Thursday, 2023-04-20 20:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Newly created DPMS service in us-east4, europe-west3 and us-west2 are experiencing 500 internal error during creation.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-21T00:46:42+00:00",
-        "modified": "2023-04-21T00:46:43+00:00",
-        "when": "2023-04-21T00:46:42+00:00",
-        "text": "Summary: New DPMS service created in us-east4, europe-west3 and us-west2 are experiencing failures\nDescription: Our engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2023-04-20 18:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Newly created DPMS service in us-east4, europe-west3 and us-west2 are experiencing 500 internal error during creation.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-21T00:29:33+00:00",
-        "modified": "2023-04-21T00:29:35+00:00",
-        "when": "2023-04-21T00:29:33+00:00",
-        "text": "Summary: New DPMS service created in us-east4, europe-west3 and us-west2 are experiencing failures\nDescription: We are experiencing an issue with Dataproc Metastore.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2023-04-20 18:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Newly created DPMS service in us-east4, europe-west3 and us-west2 are experiencing time outs during creation.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2023-04-24T04:18:29+00:00",
-      "modified": "2023-04-24T04:18:31+00:00",
-      "when": "2023-04-24T04:18:29+00:00",
-      "text": "The issue with Dataproc Metastore has been resolved for all affected users as of Sunday, 2023-04-23 16:13 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Frankfurt (europe-west3)",
-          "id": "europe-west3"
-        },
-        {
-          "title": "Northern Virginia (us-east4)",
-          "id": "us-east4"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Dataproc Metastore",
-        "id": "PXZh68NPz9auRyo4tVfy"
-      },
-      {
-        "title": "Google Cloud Dataproc",
-        "id": "yjXrEg3Yvy26BauMwr69"
-      }
-    ],
-    "uri": "incidents/QiLuCREiUWYxQ3DiLmZz",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Frankfurt (europe-west3)",
-        "id": "europe-west3"
-      },
-      {
-        "title": "Northern Virginia (us-east4)",
-        "id": "us-east4"
       }
     ]
   }
