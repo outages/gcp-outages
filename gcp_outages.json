@@ -595,15 +595,23 @@
   {
     "id": "P43dHoyBajdZ82B1kubv",
     "number": "13492242596738600854",
-    "begin": "2024-04-22T20:41:50+00:00",
+    "begin": "2024-04-22T16:00:00+00:00",
     "created": "2024-04-22T21:11:41+00:00",
-    "end": "2024-04-23T05:23:52+00:00",
-    "modified": "2024-04-23T07:40:52+00:00",
+    "end": "2024-04-23T05:18:00+00:00",
+    "modified": "2024-04-23T21:48:30+00:00",
     "external_desc": "Batch - Service Issues in us-central1",
     "updates": [
       {
+        "created": "2024-04-23T21:48:07+00:00",
+        "modified": "2024-04-23T21:48:30+00:00",
+        "when": "2024-04-23T21:48:07+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 22 April 2024 09:00\n**Incident End:** 22 April 2024 22:18\n**Duration:** 13 hours, 18 minutes\n**Affected Services and Features:**\nGoogle Batch (new batch job creation, scheduling of queued jobs)\n**Regions/Zones:** us-central1\n**Description:**\nGoogle Batch experienced an issue with almost all new incoming jobs stuck in Queued state in the us-central1 region for a period of 8 hours, 37 minutes.\nFrom our preliminary analysis, the root cause of the issue is increased transaction contention resulting in significant latency increase. This effect accumulated and further slowed down the system's processing and resulted in the jobs to remain in Queued status instead of progressing to Scheduled status.\nGoogle engineers were alerted by our internal monitoring and immediately started an investigation. Once the nature of impact was clear, our engineering team mitigated the impact by disabling new job scheduling, and cleared the stuck jobs by restarting them.\n**Customer Impact:**\nCustomers from the affected region trying to use Batch experienced delays while changing the status of their batch jobs from Queued to Scheduled. As a workaround, impacted customers were advised to try submitting their jobs from another region wherever possible.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-04-23T05:23:52+00:00",
-        "modified": "2024-04-23T05:23:55+00:00",
+        "modified": "2024-04-23T21:48:07+00:00",
         "when": "2024-04-23T05:23:52+00:00",
         "text": "The issue with Batch has been resolved for all affected users as of Monday, 2024-04-22 22:18 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -676,10 +684,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-04-23T05:23:52+00:00",
-      "modified": "2024-04-23T05:23:55+00:00",
-      "when": "2024-04-23T05:23:52+00:00",
-      "text": "The issue with Batch has been resolved for all affected users as of Monday, 2024-04-22 22:18 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2024-04-23T21:48:07+00:00",
+      "modified": "2024-04-23T21:48:30+00:00",
+      "when": "2024-04-23T21:48:07+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 22 April 2024 09:00\n**Incident End:** 22 April 2024 22:18\n**Duration:** 13 hours, 18 minutes\n**Affected Services and Features:**\nGoogle Batch (new batch job creation, scheduling of queued jobs)\n**Regions/Zones:** us-central1\n**Description:**\nGoogle Batch experienced an issue with almost all new incoming jobs stuck in Queued state in the us-central1 region for a period of 8 hours, 37 minutes.\nFrom our preliminary analysis, the root cause of the issue is increased transaction contention resulting in significant latency increase. This effect accumulated and further slowed down the system's processing and resulted in the jobs to remain in Queued status instead of progressing to Scheduled status.\nGoogle engineers were alerted by our internal monitoring and immediately started an investigation. Once the nature of impact was clear, our engineering team mitigated the impact by disabling new job scheduling, and cleared the stuck jobs by restarting them.\n**Customer Impact:**\nCustomers from the affected region trying to use Batch experienced delays while changing the status of their batch jobs from Queued to Scheduled. As a workaround, impacted customers were advised to try submitting their jobs from another region wherever possible.",
       "status": "AVAILABLE",
       "affected_locations": []
     },
