@@ -4,12 +4,25 @@
     "number": "15409551107479513441",
     "begin": "2024-04-25T21:19:54+00:00",
     "created": "2024-04-25T21:19:59+00:00",
-    "modified": "2024-04-25T21:19:59+00:00",
-    "external_desc": "Google cloud Monitoring experiencing intermittent issues with metric availability",
+    "modified": "2024-04-25T21:58:12+00:00",
+    "external_desc": "Google Cloud Monitoring experiencing intermittent issues with metric availability for GCP resources in US regions.",
     "updates": [
       {
+        "created": "2024-04-25T21:58:10+00:00",
+        "modified": "2024-04-25T21:58:13+00:00",
+        "when": "2024-04-25T21:58:10+00:00",
+        "text": "Summary: Google Cloud Monitoring experiencing intermittent issues with metric availability for GCP resources in US regions.\nDescription: We are experiencing an issue with Cloud Monitoring beginning at Thursday, 2024-04-25 12:30 US/Pacific.\nUpon further investigation, we believe the impact is limited to metrics of GCP resources in US regions.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-04-25 16:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: - Customers impacted by this issue may experience delays and in some cases may not see the metric data in their monitoring dashboard.\n- GCP and third party products and services that consume these metrics via Cloud monitoring API may experience these above stated issues.\n- This includes products that rely on metrics for autoscaling.\n- Alerting mechanisms reliant on this metric data may experience the issue too.\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
         "created": "2024-04-25T21:19:56+00:00",
-        "modified": "2024-04-25T21:19:59+00:00",
+        "modified": "2024-04-25T21:58:10+00:00",
         "when": "2024-04-25T21:19:56+00:00",
         "text": "Summary: Google cloud Monitoring experiencing intermittent issues with metric availability\nDescription: We are experiencing an issue with Cloud Monitoring beginning at Thursday, 2024-04-25 12:30 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-04-25 15:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Multiple cloud services experiencing intermittent issues with metric availability\nWorkaround: None at this time.",
         "status": "SERVICE_OUTAGE",
@@ -22,10 +35,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-04-25T21:19:56+00:00",
-      "modified": "2024-04-25T21:19:59+00:00",
-      "when": "2024-04-25T21:19:56+00:00",
-      "text": "Summary: Google cloud Monitoring experiencing intermittent issues with metric availability\nDescription: We are experiencing an issue with Cloud Monitoring beginning at Thursday, 2024-04-25 12:30 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-04-25 15:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Multiple cloud services experiencing intermittent issues with metric availability\nWorkaround: None at this time.",
+      "created": "2024-04-25T21:58:10+00:00",
+      "modified": "2024-04-25T21:58:13+00:00",
+      "when": "2024-04-25T21:58:10+00:00",
+      "text": "Summary: Google Cloud Monitoring experiencing intermittent issues with metric availability for GCP resources in US regions.\nDescription: We are experiencing an issue with Cloud Monitoring beginning at Thursday, 2024-04-25 12:30 US/Pacific.\nUpon further investigation, we believe the impact is limited to metrics of GCP resources in US regions.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-04-25 16:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: - Customers impacted by this issue may experience delays and in some cases may not see the metric data in their monitoring dashboard.\n- GCP and third party products and services that consume these metrics via Cloud monitoring API may experience these above stated issues.\n- This includes products that rely on metrics for autoscaling.\n- Alerting mechanisms reliant on this metric data may experience the issue too.\nWorkaround: None at this time.",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
