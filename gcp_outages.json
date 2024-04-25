@@ -454,15 +454,23 @@
   {
     "id": "AessYzCE2FaA6yGCHgyw",
     "number": "17015898597561278069",
-    "begin": "2024-04-23T18:27:32+00:00",
+    "begin": "2024-04-23T15:46:00+00:00",
     "created": "2024-04-23T18:55:47+00:00",
-    "end": "2024-04-24T07:29:18+00:00",
-    "modified": "2024-04-24T07:29:21+00:00",
+    "end": "2024-04-24T07:23:00+00:00",
+    "modified": "2024-04-25T00:41:32+00:00",
     "external_desc": "Chronicle Security - Service Issues",
     "updates": [
       {
+        "created": "2024-04-25T00:40:55+00:00",
+        "modified": "2024-04-25T00:41:32+00:00",
+        "when": "2024-04-25T00:40:55+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 23 April 2024 08:46\n**Incident End:** 24 April 2024 00:23\n**Duration:** 15 hours, 37 minutes\n**Affected Services and Features:** Chronicle SIEM\n**Regions/Zones:** US multi-region\n**Description:**\nSome Chronicle customers in the US may have noticed ingestion delays for Third Party Feeds. Delays in the ingested data surfaced delays in detections and impacted other downstream product features. The impact lasted for 15 hours, 37 minutes.\nFrom preliminary analysis, the root cause of the issue is that the service responsible for API transfers was rendered partially unavailable due to a combination of crashes and longer cache refresh times due to overload.\n**Customer Impact:**\n* Some Chronicle customers in the US may have noticed ingestion delays for Third Party API Feeds [1]\n* Any systematic detections dependent on these logs would also be delayed proportionately.\n* The data would automatically catch up post mitigation.\n**Reference(s):**\n[1] - https://cloud.google.com/chronicle/docs/reference/feed-management-api#api-log-types",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-04-24T07:29:18+00:00",
-        "modified": "2024-04-24T07:29:22+00:00",
+        "modified": "2024-04-25T00:40:55+00:00",
         "when": "2024-04-24T07:29:18+00:00",
         "text": "The issue with Chronicle Security has been resolved for all affected users as of Wednesday, 2024-04-24 00:15 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -561,10 +569,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-04-24T07:29:18+00:00",
-      "modified": "2024-04-24T07:29:22+00:00",
-      "when": "2024-04-24T07:29:18+00:00",
-      "text": "The issue with Chronicle Security has been resolved for all affected users as of Wednesday, 2024-04-24 00:15 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2024-04-25T00:40:55+00:00",
+      "modified": "2024-04-25T00:41:32+00:00",
+      "when": "2024-04-25T00:40:55+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 23 April 2024 08:46\n**Incident End:** 24 April 2024 00:23\n**Duration:** 15 hours, 37 minutes\n**Affected Services and Features:** Chronicle SIEM\n**Regions/Zones:** US multi-region\n**Description:**\nSome Chronicle customers in the US may have noticed ingestion delays for Third Party Feeds. Delays in the ingested data surfaced delays in detections and impacted other downstream product features. The impact lasted for 15 hours, 37 minutes.\nFrom preliminary analysis, the root cause of the issue is that the service responsible for API transfers was rendered partially unavailable due to a combination of crashes and longer cache refresh times due to overload.\n**Customer Impact:**\n* Some Chronicle customers in the US may have noticed ingestion delays for Third Party API Feeds [1]\n* Any systematic detections dependent on these logs would also be delayed proportionately.\n* The data would automatically catch up post mitigation.\n**Reference(s):**\n[1] - https://cloud.google.com/chronicle/docs/reference/feed-management-api#api-log-types",
       "status": "AVAILABLE",
       "affected_locations": []
     },
