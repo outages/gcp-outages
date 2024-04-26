@@ -9572,6 +9572,91 @@
     ]
   },
   {
+    "id": "JAxa64hv45yMYzCpqx1T",
+    "number": "2264297634052042910",
+    "begin": "2024-02-29T07:50:00+00:00",
+    "created": "2024-02-29T15:34:33+00:00",
+    "end": "2024-02-29T17:50:00+00:00",
+    "modified": "2024-02-29T20:51:47+00:00",
+    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
+    "updates": [
+      {
+        "created": "2024-02-29T20:51:19+00:00",
+        "modified": "2024-02-29T20:51:19+00:00",
+        "when": "2024-02-29T20:51:19+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T16:21:00+00:00",
+        "modified": "2024-02-29T16:21:08+00:00",
+        "when": "2024-02-29T16:21:00+00:00",
+        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T15:34:29+00:00",
+        "modified": "2024-02-29T15:34:36+00:00",
+        "when": "2024-02-29T15:34:29+00:00",
+        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2024-02-29T20:51:19+00:00",
+      "modified": "2024-02-29T20:51:19+00:00",
+      "when": "2024-02-29T20:51:19+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Multi-region: us",
+          "id": "us"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Chronicle Security",
+        "id": "FHwvkSZ6RzzDYAvDZXMM"
+      },
+      {
+        "title": "Chronicle SOAR",
+        "id": "GTT16Lf72XZKWArC9VxA"
+      }
+    ],
+    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Multi-region: us",
+        "id": "us"
+      }
+    ]
+  },
+  {
     "id": "M2qQyWWU9FKvVc2FfcaH",
     "number": "184633653096742397",
     "begin": "2024-02-29T07:50:00+00:00",
@@ -9674,91 +9759,6 @@
       }
     ],
     "uri": "incidents/M2qQyWWU9FKvVc2FfcaH",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Multi-region: us",
-        "id": "us"
-      }
-    ]
-  },
-  {
-    "id": "JAxa64hv45yMYzCpqx1T",
-    "number": "2264297634052042910",
-    "begin": "2024-02-29T07:50:00+00:00",
-    "created": "2024-02-29T15:34:33+00:00",
-    "end": "2024-02-29T17:50:00+00:00",
-    "modified": "2024-02-29T20:51:47+00:00",
-    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
-    "updates": [
-      {
-        "created": "2024-02-29T20:51:19+00:00",
-        "modified": "2024-02-29T20:51:19+00:00",
-        "when": "2024-02-29T20:51:19+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T16:21:00+00:00",
-        "modified": "2024-02-29T16:21:08+00:00",
-        "when": "2024-02-29T16:21:00+00:00",
-        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T15:34:29+00:00",
-        "modified": "2024-02-29T15:34:36+00:00",
-        "when": "2024-02-29T15:34:29+00:00",
-        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2024-02-29T20:51:19+00:00",
-      "modified": "2024-02-29T20:51:19+00:00",
-      "when": "2024-02-29T20:51:19+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Chronicle Security",
-        "id": "FHwvkSZ6RzzDYAvDZXMM"
-      },
-      {
-        "title": "Chronicle SOAR",
-        "id": "GTT16Lf72XZKWArC9VxA"
-      }
-    ],
-    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -101423,578 +101423,6 @@
       {
         "title": "Multi-region: us",
         "id": "us"
-      }
-    ]
-  },
-  {
-    "id": "dS9ps52MUnxQfyDGPfkY",
-    "number": "13363170808614236695",
-    "begin": "2023-04-25T23:46:00+00:00",
-    "created": "2023-04-26T02:00:12+00:00",
-    "end": "2023-04-27T03:00:00+00:00",
-    "modified": "2023-06-23T22:07:56+00:00",
-    "external_desc": "Multiple Google Cloud services in the europe-west9-a zone are impacted",
-    "updates": [
-      {
-        "created": "2023-06-23T16:12:21+00:00",
-        "modified": "2023-06-23T16:12:21+00:00",
-        "when": "2023-06-23T16:12:21+00:00",
-        "text": "# Incident Report\n## Summary\n**To our customers whose businesses were impacted during this outage, we sincerely apologize. This is not the level of quality and reliability we strive to offer, and we are taking immediate steps to improve the platform’s performance and resilience.**\n### Water Leak and Fire Damage\nOn Tuesday, 25 April 2023 at 16:46 US/Pacific, a cooling system water pipe leak occurred in one of the data centers in the europe-west9 region. The leak originated in a non-Google portion of the facility, entered an associated uninterruptible power supply (UPS) room, and led to a fire. The fire required evacuation of the facility, engagement from the local fire department, and a power shutdown of the entire data center building for several hours. The fire was successfully controlled on 26 April 2023 at 04:11 US/Pacific.\n### Regional Impact\nEurope-west9 contains three buildings with independent cooling, power, and networking. Regional Spanner supports the regional control plane for most Google Cloud services in the region. In europe-west9, regional Spanner’s replicas were not correctly distributed across the three buildings in the region to ensure quorum was available after the impacted building was powered down. As a result, the control plane services for many Google Cloud services were interrupted in europe-west9, causing unavailability and/or elevated error rates for these services in this region. Regional Spanner was restored on 26 April 2023 at 12:47 US/Pacific.\nThe Identity and Authentication Management (IAM) service in europe-west9 depends upon regional Spanner. After regional Spanner came back online, IAM recovered on 26 April 2023 at 14:42 US/Pacific. IAM recovery took longer than expected, driven by the time to refresh the policies for the region as a result of the outage. Some Google Cloud services that were impacted by this event began recovering soon after Spanner and IAM were back online.\nGoogle Compute Engine (GCE) and Persistent Disk (PD) experienced regional impact in both the data plane (GCE Virtual Machines (VMs), PD Volumes) and control plane systems. Both systems had extended recovery periods after Spanner and IAM were restored. GCE VMs and PDs in europe-west9 zones were online by 19:00 US/Pacific, except for 58% of GCE VMs in zone europe-west9-a, which were directly impacted by the water leak. Soon after Spanner, IAM, GCE/PD were online, the europe-west9 region was primarily recovered and operational.\n### Global Service Impact\nGoogle Compute Engine (GCE) control plane provides the underlying control plane for Google Cloud Platform. A small number of methods within the GCE control plane API must collect information from multiple regions or zones by making requests to each regional control plane (called fanout requests). Google Cloud services including Cloud Console depend on these methods. When the GCE control plane for the europe-west9 region and zones went offline, some of these fanout methods did not operate correctly. During the outage, this led to global unavailability for some pages and control plane operations within Cloud Console. The global impact that was observed due to fanout issues in the Google Cloud Console control plane was mitigated by removing the europe-west9 control plane from the set of visible regions on Wednesday, 26 April 2023 at 03:38 US/Pacific.\n## Key Events and Timeline\nIncluded below is a brief timeline of the overall incident. Additional details are provided in the following sections. All times and dates are listed in the US/Pacific time zone.\n### Tuesday, 25 April 2023\n16:46 - Water leakage began on Level 2 above europe-west9-a zone.\n17:31 - Google engineers were proactively alerted about a potential critical impact to one cluster (a collection of servers along with supporting equipment for networking, power, and cooling) supporting our europe-west9-a zone due to water leak in its data center room.\n18:30 - Google started to gradually bring down Google Compute Engine (GCE) virtual machine instances along with Persistent Disk (PD) volumes from this cluster supporting the europe-west9-a zone.\n18:37 - As a preventative measure, engineers decided to preemptively power down all equipment supporting one of the clusters in europe-west9-a.\n19:14 - Smoke was detected in the building with the water leakage.\n19:42 - Completed power down of the impacted cluster with the water leak. 58% percent of GCE instances and 55% of PD volumes taken out of service from europe-west9-a zone.\n19:45 - The local fire department was called.\n20:00 - Fire department arrived on site and took over incident command of the building fire.\n20:08 - Google engineers were alerted to the battery room water leak and fire.\n22:45 - Building fire suppression system water supply ran out.\n22:51 - Google engineers notified that the fire department has ordered building power to be shut down.\n**23:04 - Emergency shutdown commenced for one of the three buildings in europe-west9 on order of the fire marshal. At this time regional impact occurred because Regional Spanner lost quorum. The global outage begins for some fanout Google Cloud APIs and Google Cloud Console operations across a number of services.**\n### Wednesday, 26 April 2023\n00:52 - Battery Room Fire Suppression System Restored\n03:38 - Google engineers removed the europe-west9 region from the list of available regions for Compute Engine. This restored services for Google Cloud Console globally and resumed instance creation for customers whose projects use global scope internal DNS. Global instance creation for Google Cloud SQL is also restored.\n04:11 - Battery room fire reported to be extinguished.\n10:00 - Availability of global dataset/job list operations is restored for BigQuery customers with data in europe-west9 by excluding the europe-west9 region.\n**12:47 - Regional Spanner quorum is restored and internal Spanner operations resume.**\n13:00 - Fire department confirmed the battery temperatures were stabilized, and the majority of the fire crew departed.\n**14:42 - Regional IAM services are restored.**\n15:14 - Google Cloud Storage (GCS) regional services are restored.\n15:30 - Cloud Pub/Sub services are restored.\n17:10 - Google BigQuery service is fully restored for europe-west9 region.\n18:40 - Google Cloud Dataflow services are restored.\n**19:00 - Google Compute Engine Control plane services restored across all zones.**\nFor the cluster in europe-west9-a that was not affected by the water leak, Google Compute Engine instances and Persistent Disk volumes were restored. This resulted in 42% of instances and volumes in zone europe-west9-a being restored. The remaining cluster in europe-west9-a that was affected by the water leak also had smoke damage. The severity of the smoke damage led to the whole cluster being decommissioned. Before decommissioning the cluster, we cleaned it and fully recovered all zonal data from the cluster.\nAfter Spanner, IAM and GCE/PD had recovered at 19:00, the europe-west9 region was primarily recovered and operational.\n## Water Leak, Mitigation, and Prevention\nOn Tuesday, 25 April 2023 at 17:31 US/Pacific, Google engineers were proactively alerted about a potential critical impact to the europe-west9-a cloud zone and immediately started an investigation. Our Europe regional Security Operations Center was immediately engaged, and it was discovered that water had leaked from a non-Google room above onto the first floor of our facility for one of the clusters in zone europe-west9-a. As a preventative measure, engineers decided to preemptively power down all equipment supporting this one cluster with water leak in europe-west9-a at 18:37 US/Pacific.\nAt 19:14 US/Pacific, smoke was detected in the building and at 19:45 US/Pacific, the local fire department was called. When they arrived onsite at 20:00 US/Pacific, the fire marshal informed Google engineers that a full building shutdown was imminent to allow for fire fighting activities. Shortly thereafter, at 20:08 US/Pacific, we were alerted that a battery room had also flooded, and the room had caught fire. At 22:45 US/Pacific, we were informed that the fire suppression system had run out of water. Once firefighters arrived on site, they began the process of connecting the battery room suppression system to the city fire water system.\nAt 22:59 US/Pacific, upon notification from the local fire marshal that a full building shut down was imminent, Google engineers proactively started to migrate the workloads from the building and completely powered it down at 23:29 US/Pacific. At this time regional impact occurred because regional Spanner no longer had quorum, due to a misconfiguration. It had two of its quorum in the building powered down, instead of being correctly spread across the three buildings in the europe-west9 region. At this time, some global APIs that aggregate information from each region by making a request to each regional control plane (called fanout requests) began to fail.\nThe local fire department continued to fight the fire in the UPS battery room on the lower floor of the facility and to control the fire. The facility fire continued to pose a threat of re-igniting until Wednesday, 26 April 2023 at 11:00 US/Pacific.\nUnfortunately, it took nearly 16 hours to extinguish the fire in the battery room, which delayed recovery efforts for the impacted building. Once it was clear to the Google Cloud team that power and cooling would not be further affected by the events impacting europe-west9-a, Google started working to bring back the clusters in the impacted building. The cluster in zone-a that had water intrusion also had smoke damage and continued to remain powered off and access was restricted for safety and security reasons. The fire introduced water and soot contamination to the data center space for this cluster in zone europe-west9-a. The affected racks of servers in the cluster supporting europe-west9-a had to be taken apart, thoroughly cleaned, and re-assembled before they could be powered on again for recovery of the zonal data before decommissioning the cluster.\nAll equipment was thoroughly cleaned using professional cleaning services. These services also began pumping out the standing water on Saturday, 29 April 2023. The cleaning efforts included reducing high humidity levels, clearance of rubble from the facility battery room, cleaning of all physical equipment, and cleaning of greasy soot contaminations (which was observed throughout the impacted cluster in zone europe-west9-a). After the cluster was cleaned we then performed a staged power-on approach for this cluster in zone europe-west9-a to recover customer zonal data. After a successful multi-day power restoration process, Google engineers were able to power on all the equipment in the cluster and recovered all zonal data in europe-west9-a. Customers experienced no data loss from the incident.\nGoogle has controls in place to detect and mitigate the risk of fire safety issues. These controls are audited by both internal teams with due diligence and operational reviews and by Google Cloud’s external auditors. These control objectives apply to all Google Cloud regions in facilities operated by third parties. Google Cloud regions (whether operated by Google Cloud or third parties) are also audited against Business Continuity Management System (BCMS) controls in place that support their ISO 22301 certification [1].\nIn addition, we are executing the following actions to prevent a recurrence of this issue\n- Detailed risk analysis for water intrusion in all data centers that host Google Cloud and implement any corrective actions based on findings.\n- Evaluating installation of drip trays for all Google spaces within multi-story data center locations with water on floors above.\n- Refining our fire and flood recovery playbook to include lessons learned from this event.\n[1] - https://cloud.google.com/security/compliance/iso-22301\n## Google Cloud Services on the critical path for restoring Region\n### Regional Spanner\nGoogle uses an internal version of regional Spanner as a back-end database to several Google Cloud services such as IAM and various control planes that manage our infrastructure and services for a region. The outage had a regional impact as this regional Spanner was not configured correctly across the three buildings in the region for it to maintain its quorum. Regional Spanner should have had one replica in each of the three buildings in the region. Instead, it had two of its three replicas in two different clusters in the building that was powered down. As a result, regional Spanner no longer met quorum across the region impacting IAM and the control planes in the region. On Wednesday, 26 April 2023 at 12:47 US/Pacific, Regional Spanner’s quorum was restored, which then allowed IAM and the region's control planes to begin recovery. We are currently conducting a detailed per-region audit (and conducting any required remediation if needed) of our internal regional Spanner allocations to confirm all regions fully meet Google Cloud expectations for fault isolation to prevent this issue in the future.\n### IAM\nRegional IAM needed regional Spanner available for it to serve and process requests. After regional Spanner was brought back to service, we kept the Cloud IAM in this region offline while it sync’d to get up to date with the global view of Cloud IAM. Most customers’ policies enforced by IAM are global in nature spanning identities, folders, and projects. These policies had received no updates for 13 hours in this region and any security critical updates made by customers during this period would not be available there if we had brought it online without syncing. For example, if a user was taken out of a critical IAM role for a storage bucket, the IAM server in the region would not yet know about it. Out of an abundance of caution, and treating our customers’ security as paramount, we decided to not serve traffic for IAM in europe-west9 until it completed full synchronization, and began serving traffic with up-to-date policies at 14:42 US/Pacific.\nTo address this recovery delay, we are implementing changes to our IAM policy refresh mechanism to ensure any stale policies (as a result of outages) are synchronized and resolved in less than 15 minutes. We are achieving this by providing improvements in replicating policies and parallelizing the synchronization when recovery is needed.\n### Google Compute Engine (GCE) and Persistent Disk (PD)\nGoogle Compute Engine (GCE) and Persistent Disk (PD) experienced regional impact in both the data plane (GCE VMs, PD Volumes) and control plane systems. Both systems had extended recovery periods after Spanner and IAM were restored.\nRegional Persistent Disk (PD) replicates volumes across multiple zones. To ensure proper quorum, Regional PD maintains a lease for each volume in a regional Spanner database. No Regional PD volumes had both replicas in the same building within the region. However, 79% of regional Persistent Disk volumes in the europe-west9 region had one replica in the impacted building. When Spanner was offline in the region, these volumes could not establish quorum, and therefore became read-only as a failsafe measure. If Regional Spanner had not gone offline, Regional Persistent Disk (PD) would have ensured that the Regional PD volumes with one replica would work as expected (as detailed in the RePD documentation[2]) to enable customer workloads to continue operating in the available zone.\nSpanner and IAM were online by 26 April 2023 at 14:42 US/Pacific. Excluding the 58% of GCE VMs in europe-west9-a directly impacted by the water leak, the VMs and PDs in europe-west9-a were online by 19:00 US/Pacific. This time was to validate Persistent Disk integrity, to ensure that all volumes were ready for production operations before customer VMs were restarted, and then re-enable persistent disk operations. This took longer than expected due to a suspected issue with the PD health check verifier that reported errors. These were false positives due to an issue in starting up this many PDs at once. As soon as the team confirmed that the PD volumes were healthy we initiated the recovery process.\nTo ensure we don’t have these additional delays for PD in the future we are:\n1. Updating the PD startup process to eliminate the false positive errors.\n2. Parallelizing the PD start up process to allow it to complete faster.\n3. Improving configuration rollout time across the fleet used in this type of recovery.\nThe GCE control plane experienced a regional impact due to a dependence on regional Spanner. After regional Spanner recovered, the recovery time of the GCE control plane was extended due to the time required to revert service configuration changes that were made as part of the initial mitigation of global control plane impact. During the incident, the GCE control plane experienced some fanout API issues. To mitigate this impact, the GCE control plane was reconfigured on 26 April 2023 at 03:38 US/Pacific to remove the europe-west9 region and zones. When the IAM service was restored, this configuration change was reverted. Restoring europe-west9 to the set of active GCE regions required two sequential configuration changes. Google Cloud configuration changes of this nature are deployed gradually with an incremental rollout. The first configuration change started at 14:53 US/Pacific and completed at 15:33 US/Pacific. The second configuration change, which brought the europe-west9 region and zones back online, started at 15:46 US/Pacific and finished with the last zone at 19:00 US/Pacific. At this point the GCE control plane was fully operational.\nTo improve the mitigation and recovery time in the future GCE will:\n* Improve the testing process of removing and restoring a GCE control plane for a zonal and regional issue.\n* Ensure that API methods which require access to all regions and zones degrade gracefully when a control plane scope is unavailable.\n* Ensure that the Cloud Console continues to operate when a control plane scope is unavailable.\n[2] - https://cloud.google.com/compute/docs/disks#repds\n### Enhanced Zonal & Regional Failure Testing\nWe are adding improvements to our zonal and regional environment to test for and ensure system behavior is as intended across all services in the case of zonal and regional outages. This includes validating that critical services consistently meet our expectations for how they allocate resources within our physical failure domains, that automated verification tests are in place to ensure no regressions, and ensure recovery times are efficient.\n## Global Google Cloud Impact and Restoration\nCloud Console provides a global view of Google Cloud resources. Certain Cloud Console pages rely on GCE backend APIs to perform global aggregated fanout across the regions. Some of these APIs failed to operate correctly while europe-west-9 was unavailable, rather than returning partial data. The global impact that was observed due to fanout issues in the Google Cloud Console control plane was mitigated by removing the europe-west9 control plane from the set of visible regions on Wednesday, 26 April 2023 at 03:38 US/Pacific. We are updating the Cloud Console so that fanout API methods continue to operate as expected to prevent this issue from occuring again. In addition, we are performing an audit (and any required remediation) across our services for any instances of fanout methods that could have similar issues.\nGCE provides an Internal DNS [3] feature to enable customers to look up instance names within their project. This service can be configured to either register instance names in a single Global namespace or in multiple Zonal namespaces. During the outage, customers using the Global namespace for Internal DNS for VM creation were unable to complete if the project had VMs in europe-west9, since it requires coordination with all zones where the project has resources to avoid duplicate instance DNS names. Customers using Zonal namespace for Internal DNS did not experience this impact. It is recommended to use Internal DNS with Zonal namespaces for your project (please see the documentation [3] for details).\n[3] - https://cloud.google.com/compute/docs/internal-dns\n## Mitigation & Prevention of Additional Services\nAfter Regional Spanner, IAM and GCE/PD came back online for the region, almost all of the services in the region fully recovered soon after that. The following services either took longer to recover or had additional impact during the outage.\n- Google Cloud Storage, Google BigQuery, Cloud Bigtable, Cloud SQL, Cloud Pub/Sub, Google Cloud Dataflow\nPlease log a case with our Support team if you would like to receive additional information regarding these services.\nWe thank you for your patience while we worked on resolving the outage and completing our investigation. We apologize to our customers whose businesses were impacted during this outage. This is not the level of quality and reliability we strive to offer, and we are taking immediate steps outlined in this IR and more to improve our platform’s performance and resilience.\n---",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-27T13:39:35+00:00",
-        "modified": "2023-04-27T13:40:50+00:00",
-        "when": "2023-04-27T13:39:35+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9-a zone are impacted\nDescription: Water intrusion in a data center in europe-west9 caused a multi-cluster failure that led to a shutdown of multiple zones. Impact is now limited to services in europe-west9-a. There is no ETA for full recovery of operations in europe-west9-a at this time. We expected to see extended outages for some services. Customers are advised to failover to other zones/regions if they are impacted.\nThe following services have fully recovered in europe-west9: Google Cloud Storage (GCS) Cloud Key Management Service (KMS) Cloud Identity and Access Management (IAM).\nThe following services have recovered in europe-west9-b and europe-west9-c, but continue to be impacted in europe-west9-a: Google Compute Engine (GCE) Cloud Run Google Cloud Load Balancer (GCLB) DataProc Cloud SQL\nWe will provide an update by Thursday, 2023-04-27 11:00 US/Pacific, or upon any significant development.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region.\nWorkaround: Customers can failover to zones in other regions.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-27T09:30:24+00:00",
-        "modified": "2023-04-27T09:31:53+00:00",
-        "when": "2023-04-27T09:30:24+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Water intrusion in a data center in europe-west9 caused a multi-cluster failure that led to a shutdown of multiple zones. We expect some unavailability in the europe-west9 region. There is no current ETA for full recovery of operations in the europe-west9 region at this time. We expected to see an extended outage for some services. Customers are advised to failover to other regions if they are impacted.\nThe following services have fully recovered in europe-west9:\nGoogle Cloud Storage (GCS)\nCloud Key Management Service (KMS)\nCloud Identity and Access Management (IAM)\nGoogle Kubernetes Engine (GKE)\nThe following services have recovered in europe-west9-b and europe-west9-c, but continue to be impacted in europe-west9-a:\nGoogle Compute Engine (GCE)\nCloud Run\nGoogle Cloud Load Balancer (GCLB)\nDataProc\nCloud SQL\nCloud Console: Experienced a global outage, which has been mitigated. Management tasks should be operational again for operations outside the affected region (europe-west9). Primary impact was observed from 2023-04-25 23:15:30 PDT to 2023-04-26 03:38:40 PDT.\nGCE Global Control Plane: Experienced a global outage, which has been mitigated. Primary impact was observed from 2023-04-25 23:15:20 PDT to 2023-04-26 03:45:30 PDT and impacted customers utilizing Global DNS (gDNS). A secondary global impact for aggregated list operation failures for customers with resources in europe-west9 has also been mitigated. Please see migration guide for gDNS to Zonal DNS for more information: https://cloud.google.com/compute/docs/internal-dns#migrating-to-zonal\nCloud Pub/Sub: The issue with Cloud Pub/Sub has been resolved for all affected users as of Wednesday, 2023-04-26 16:07 S/Pacific. For more information please see here: https://status.cloud.google.com/incidents/j6LfsjxCXhVDjmGGPhS7#2c2sBHWU84yPDJ8y1ar4\nBigQuery: The issue with Google BigQuery has been resolved for all affected users as of Wednesday, 2023-04-26 17:05 US/Pacific. For more information please see here: https://status.cloud.google.com/incidents/TbcwMSkKy8MTmeeEiqaq#scTMecZFsPpiygYrQ9sG\nWe will provide an update by Thursday, 2023-04-27 07:00 US/Pacific, or upon any significant development.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region.\nWorkaround: Customers can failover to zones in other regions.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-27T08:54:33+00:00",
-        "modified": "2023-04-27T08:54:53+00:00",
-        "when": "2023-04-27T08:54:33+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Water intrusion in a data center in europe-west9 caused a multi-cluster failure that led to a shutdown of multiple zones. We expect some unavailability in the europe-west9 region. There is no current ETA for full recovery of operations in the europe-west9 region at this time. We expected to see an extended outage for some services. Customers are advised to failover to other regions if they are impacted.\nThe following services have fully recovered in europe-west9:\nGoogle Cloud Storage (GCS)\nCloud Key Management Service (KMS)\nCloud Identity and Access Management (IAM)\nGoogle Kubernetes Engine (GKE)\nThe following services have recovered in europe-west9-b and europe-west9-c, but continue to be impacted in europe-west9-a:\nGoogle Compute Engine (GCE)\nCloud Run\nGoogle Cloud Load Balancer (GCLB)\nDataProc\nCloud SQL\nCloud Console: Experienced a global outage, which has been mitigated. Management tasks should be operational again for operations outside the affected region (europe-west9). Primary impact was observed from 2023-04-25 23:15:30 PDT to 2023-04-26 03:38:40 PDT.\nGCE Global Control Plane: Experienced a global outage, which has been mitigated. Primary impact was observed from 2023-04-25 23:15:20 PDT to 2023-04-26 03:45:30 PDT and impacted customers utilizing Global DNS (gDNS). A secondary global impact for aggregated list operation failures for customers with resources in europe-west9 has also been mitigated. Please see migration guide for gDNS to Zonal DNS for more information: https://cloud.google.com/compute/docs/internal-dns#migrating-to-zonal\nCloud Pub/Sub: For information related to ongoing Cloud Pub/Sub impact, please see the latest status here: https://status.cloud.google.com/incidents/j6LfsjxCXhVDjmGGPhS7#2c2sBHWU84yPDJ8y1ar4\nBigQuery: The issue with Google BigQuery has been resolved for all affected users as of Wednesday, 2023-04-26 17:05 US/Pacific. For more information please see here: https://status.cloud.google.com/incidents/TbcwMSkKy8MTmeeEiqaq#scTMecZFsPpiygYrQ9sG\nWe will provide an update by Thursday, 2023-04-27 03:00 US/Pacific, or upon any significant development.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region.\nWorkaround: Customers can failover to zones in other regions.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-27T05:49:10+00:00",
-        "modified": "2023-04-27T05:49:23+00:00",
-        "when": "2023-04-27T05:49:10+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Water intrusion in a data center in europe-west9 caused a multi-cluster failure that led to a shutdown of multiple zones. We expect some unavailability in the europe-west9 region. There is no current ETA for full recovery of operations in the europe-west9 region at this time. We expected to see an extended outage for some services. Customers are advised to failover to other regions if they are impacted.\nThe following services have fully recovered in europe-west9:\nGoogle Cloud Storage (GCS)\nCloud Key Management Service (KMS)\nCloud Identity and Access Management (IAM)\nGoogle Kubernetes Engine (GKE)\nThe following services have recovered in europe-west9-b and europe-west9-c, but continue to be impacted in europe-west9-a:\nGoogle Compute Engine (GCE)\nCloud Run\nGoogle Cloud Load Balancer (GCLB)\nDataProc\nCloud SQL\nCloud Console: Experienced a global outage, which has been mitigated. Management tasks should be operational again for operations outside the affected region (europe-west9). Primary impact was observed from 2023-04-25 23:15:30 PDT to 2023-04-26 03:38:40 PDT.\nGCE Global Control Plane: Experienced a global outage, which has been mitigated. Primary impact was observed from 2023-04-25 23:15:20 PDT to 2023-04-26 03:45:30 PDT and impacted customers utilizing Global DNS (gDNS). A secondary global impact for aggregated list operation failures for customers with resources in europe-west9 has also been mitigated. Please see migration guide for gDNS to Zonal DNS for more information: https://cloud.google.com/compute/docs/internal-dns#migrating-to-zonal\nCloud Pub/Sub: For information related to ongoing Cloud Pub/Sub impact, please see the latest status here: https://status.cloud.google.com/incidents/j6LfsjxCXhVDjmGGPhS7#2c2sBHWU84yPDJ8y1ar4\nBigQuery: The issue with Google BigQuery has been resolved for all affected users as of Wednesday, 2023-04-26 17:05 US/Pacific. For more information please see here: https://status.cloud.google.com/incidents/TbcwMSkKy8MTmeeEiqaq#scTMecZFsPpiygYrQ9sG\nWe will provide an update by Thursday, 2023-04-27 03:00 US/Pacific, or upon any significant development.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region.\nWorkaround: Customers can failover to zones in other regions.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-27T02:52:44+00:00",
-        "modified": "2023-04-27T11:07:14+00:00",
-        "when": "2023-04-27T02:52:44+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Description: Water intrusion in a datacenter in europe-west9 has caused a multi-cluster failure and has led to a shutdown of multiple zones. We expect general unavailability of the europe-west9 region. There is no current ETA for recovery of operations in the europe-west9 region at this time, but it is expected to be an extended outage. Customers are advised to failover to other regions if they are impacted.\nCloud Console: Experienced a global outage, which has been mitigated. Management tasks should be operational again for operations outside the affected region (europe-west9). Primary impact was observed from 2023-04-25 23:15:30 PDT to 2023-04-26 03:38:40 PDT.\nGCE Global Control Plane: Experienced a global outage, which has been mitigated. Primary impact was observed from 2023-04-25 23:15:20 PDT to 2023-04-26 03:45:30 PDT and impacted customers utilizing Global DNS (gDNS). A secondary global impact for aggregated list operation failures for customers with resources in europe-west9 has also been mitigated. Please see migration guide for gDNS to Zonal DNS for more information: https://cloud.google.com/compute/docs/internal-dns#migrating-to-zonal\nCloud Pub/Sub: For information related to ongoing Cloud Pub/Sub impact, please see the latest status here: https://status.cloud.google.com/incidents/j6LfsjxCXhVDjmGGPhS7#2c2sBHWU84yPDJ8y1ar4\nBigQuery: For information related to ongoing BigQuery impact, please see the latest status here: https://status.cloud.google.com/incidents/TbcwMSkKy8MTmeeEiqaq#scTMecZFsPpiygYrQ9sG\nWe will provide an update by Thursday, 2023-04-27 00:00 US/Pacific, or upon any significant development.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region.\nWorkaround: Customers can failover to zones in other regions.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T23:01:58+00:00",
-        "modified": "2023-04-27T11:07:33+00:00",
-        "when": "2023-04-26T23:01:58+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Water intrusion in a data center in europe-west9 has caused a multi-cluster failure and has led to a shutdown of multiple zones. We expect general unavailability of the europe-west9 region. There is no current ETA for recovery of operations in the europe-west9 region at this time, but it is expected to be an extended outage. Customers are advised to failover to other regions if they are impacted.\nCloud Console: Experienced a global outage, which has been mitigated. Management tasks should be operational again for operations outside the affected region (europe-west9). Primary impact was observed from 2023-04-25 23:15:30 PDT to 2023-04-26 03:38:40 PDT.\nGCE Global Control Plane: Experienced a global outage, which has been mitigated. Primary impact was observed from 2023-04-25 23:15:20 PDT to 2023-04-26 03:45:30 PDT and impacted customers utilizing Global DNS (gDNS). A secondary global impact for aggregated list operation failures for customers with resources in europe-west9 has also been mitigated. Please see migration guide for gDNS to Zonal DNS for more information: https://cloud.google.com/compute/docs/internal-dns#migrating-to-zonal\nCloud Pub/Sub: For information related to ongoing Cloud Pub/Sub impact, please see the latest status here: https://status.cloud.google.com/incidents/j6LfsjxCXhVDjmGGPhS7#2c2sBHWU84yPDJ8y1ar4\nBigQuery: For information related to ongoing BigQuery impact, please see the latest status here: https://status.cloud.google.com/incidents/TbcwMSkKy8MTmeeEiqaq#scTMecZFsPpiygYrQ9sG\nWe will provide an update by Wednesday, 2023-04-26 20:00 US/Pacific, or upon any significant development.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region.\nWorkaround: Customers can failover to zones in other regions.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T18:59:38+00:00",
-        "modified": "2023-04-27T11:07:43+00:00",
-        "when": "2023-04-26T18:59:38+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Water intrusion in a data center in europe-west9 has caused a multi-cluster failure and has led to a shutdown of multiple zones. We expect general unavailability of the europe-west9 region. There is no current ETA for recovery of operations in the europe-west9 region at this time, but it is expected to be an extended outage. Customers are advised to failover to other regions if they are impacted.\nCloud Console: Experienced global outages which have been mitigated. Management tasks should be operational again for operations outside the affected region (europe-west9). Primary impact was observed from 2023-04-25 23:15:30 PDT to 2023-04-26 03:38:40 PDT.\nGCE Control Plane: Experienced global outages, which have been mitigated. Primary impact was observed from 2023-04-25 23:15:20 PDT and 2023-04-26 03:45:30 PDT and impacted customers utilizing Global DNS (gDNS). Secondary global impact for aggregated list operation failures for customers with resources in europe-west9 has also been mitigated. Please see migration guide for gDNS to Zonal DNS for more information: https://cloud.google.com/compute/docs/internal-dns#migrating-to-zonal\nCloud Pub/Sub: For information related to ongoing Cloud Pub/Sub impact, please see the latest status here: https://status.cloud.google.com/incidents/j6LfsjxCXhVDjmGGPhS7#2c2sBHWU84yPDJ8y1ar4\nBigQuery: For information related to ongoing BigQuery impact, please see the latest status here: https://status.cloud.google.com/incidents/TbcwMSkKy8MTmeeEiqaq#scTMecZFsPpiygYrQ9sG\nWe will provide an update by Wednesday, 2023-04-26 16:00 US/Pacific, or upon any significant development.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region.\nWorkaround: Customers can failover to zones in other regions.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T14:01:43+00:00",
-        "modified": "2023-04-27T11:07:53+00:00",
-        "when": "2023-04-26T14:01:43+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Water intrusion in a data center in europe-west9 has caused a multi-cluster failure and has led to a shutdown of multiple zones. We expect general unavailability of the europe-west9 region. There is no current ETA for recovery of operations in the europe-west9 region at this time, but it is expected to be an extended outage. Customers are advised to failover to other regions if they are impacted.\nWe will provide an update by Wednesday, 2023-04-26 12:00 US/Pacific, or upon any significant development.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region.\nWorkaround: Customers can failover to zones in other regions",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T13:58:48+00:00",
-        "modified": "2023-04-27T11:08:15+00:00",
-        "when": "2023-04-26T13:58:48+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Water intrusion in a data center in europe-west9 has caused a multi-cluster failure and has led to a shutdown of multiple zones. We expect general unavailability of the europe-west9 region. There is no current ETA for recovery of operations in the europe-west9 region at this time, but it is expected to be an extended outage. Customers are advised to failover to other regions if they are impacted.\nWe will provide an update by Wednesday, 2023-04-26 12:00 US/Pacific, or upon any significant development.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region.\nWorkaround: Customers can failover to zones in other regions",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T12:52:45+00:00",
-        "modified": "2023-04-27T11:08:04+00:00",
-        "when": "2023-04-26T12:52:45+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Water intrusion in europe-west9-a has caused a multi-cluster failure and has led to an emergency shutdown of multiple zones. We expect general unavailability of the europe-west9 region. There is no current ETA for recovery of operations in the europe-west9 region at this time, but it is expected to be an extended outage. Customers are advised to failover to other regions if they are impacted.\nFor management tasks Cloud Console should be operational again for operations outside the affected region (europe-west9).\nWe will provide an update by Wednesday, 2023-04-26 07:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region.\nWorkaround: Customers can failover to zones in other regions",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T12:10:35+00:00",
-        "modified": "2023-04-27T11:08:53+00:00",
-        "when": "2023-04-26T12:10:35+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Water intrusion in europe-west9-a has caused a multi-cluster failure and has led to an emergency shutdown of multiple zones. We expect general unavailability of the europe-west9 region. There is no current ETA for recovery of operations in the europe-west9 region at this time, but it is expected to be an extended outage. Customers are advised to failover to other regions if they are impacted.\nFor management tasks Cloud Console should be operational again for operations outside the affected region (europe-west9)\nWe will provide an update by Wednesday, 2023-04-26 06:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region.\nWorkaround: Customers can failover to zones in other regions",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T12:07:37+00:00",
-        "modified": "2023-04-27T11:08:39+00:00",
-        "when": "2023-04-26T12:07:37+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Water intrusion in europe-west9-a has caused a multi-cluster failure and has led to an emergency shutdown of multiple zones. We expect general unavailability of the europe-west9 region. There is no current ETA for recovery of operations in the europe-west9 region at this time, but it is expected to be an extended outage. Customers are advised to failover to other regions if they are impacted.\nWe will provide an update by Wednesday, 2023-04-26 06:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region.\nWorkaround: Customers can failover to zones in other regions",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T11:51:22+00:00",
-        "modified": "2023-04-27T11:08:30+00:00",
-        "when": "2023-04-26T11:51:22+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Water intrusion in europe-west9-a has caused a multi-cluster failure and has led to an emergency shutdown of multiple zones. We expect general unavailability of the europe-west9 region. There is no current ETA for recovery of operations in the europe-west9 region at this time, but it is expected to be an extended outage. Customers are advised to failover to other regions if they are impacted.\nWe will provide an update by Wednesday, 2023-04-26 06:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region.\nWorkaround: Customers can failover to zones in other regions\nCustomer should use gcloud commands instead of Cloud Console for management tasks",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T10:39:56+00:00",
-        "modified": "2023-04-27T11:09:05+00:00",
-        "when": "2023-04-26T10:39:56+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Water intrusion in europe-west9-a has caused a multi-cluster failure and has led to an emergency shutdown of multiple zones. We expect general unavailability of the europe-west9 region. There is no current ETA for recovery of operations in the europe-west9 region at this time, but it is expected to be an extended outage. Customers are advised to failover to other regions if they are impacted.\nWe will provide an update by Wednesday, 2023-04-26 05:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region.\nWorkaround: Customers can failover to zones in other regions\nCustomer should use gcloud commands instead of Cloud Console for management tasks",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T09:42:30+00:00",
-        "modified": "2023-04-27T11:09:35+00:00",
-        "when": "2023-04-26T09:42:30+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Water intrusion in europe-west9-a has caused a multi-cluster failure and has led to an emergency shutdown of multiple zones. We expect general unavailability of the europe-west9 region. There is no current ETA for recovery of operations in the europe-west9 region at this time, but it is expected to be an extended outage. Customers are advised to failover to other regions if they are impacted.\nWe will provide an update by Wednesday, 2023-04-26 04:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region.\nCustomer using Cloud Console globally are unable to open and view the Compute Engine related pages like:\nInstance creation page\nDisk creation page\nInstance templates page\nInstance Groups page\nWorkaround: Customers can failover to zones in other regions\nCustomer should use gcloud commands instead of Cloud Console for management tasks",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T09:25:22+00:00",
-        "modified": "2023-04-27T11:09:13+00:00",
-        "when": "2023-04-26T09:25:22+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Water intrusion in europe-west9-a has caused a multi-cluster failure and has led to an emergency shutdown of multiple zones. We expect general unavailability of the europe-west9 region. There is no current ETA for recovery of operations in the europe-west9 region at this time, but it is expected to be an extended outage. Customers are advised to failover to other regions if they are impacted.\nWe will provide an update by Wednesday, 2023-04-26 03:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region.\nCustomer using Cloud Console globally are unable to open and view the Compute Engine related pages like:\nInstance creation page\nDisk creation page\nInstance templates page\nInstance Groups page\nWorkaround: Customers can failover to zones in other regions\nCustomer should use gcloud commands instead of Cloud Console for management tasks",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T08:50:41+00:00",
-        "modified": "2023-04-27T11:09:42+00:00",
-        "when": "2023-04-26T08:50:41+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Water intrusion in europe-west9-a has caused a multi-cluster failure and has led to an emergency shutdown of multiple zones. We expect general unavailability of the europe-west9 region. There is no current ETA for recovery of operations in the europe-west9 region at this time, but it is expected to be an extended outage. Customers are advised to failover to other regions if they are impacted.\nWe will provide an update by Wednesday, 2023-04-26 03:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region\nWorkaround: Customers can failover to zones in other regions",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T07:35:35+00:00",
-        "modified": "2023-04-27T11:10:30+00:00",
-        "when": "2023-04-26T07:35:35+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted.\nDescription: Water intrusion in europe-west9-a has caused a multi-cluster failure and has led to an emergency shutdown of multiple zones. We expect general unavailability of the europe-west9 region. There is no current ETA for recovery of operations in the europe-west9 region at this time, but it is expected to be an extended outage. Customers are advised to failover to other regions if they are impacted.\nWe will provide an update by Wednesday, 2023-04-26 02:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region\nWorkaround: Customers can failover to zones in other regions",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T06:05:27+00:00",
-        "modified": "2023-04-27T11:10:36+00:00",
-        "when": "2023-04-26T06:05:27+00:00",
-        "text": "Summary: Multiple Google Cloud services in the europe-west9 region are impacted\nDescription: Water intrusion in europe-west9-a has caused a multi-cluster failure and has led to an emergency shutdown of multiple zones. We expect general unavailability of the europe-west9 region. There is no current ETA for recovery of operations in the europe-west9 region at this time, but it is expected to be an extended outage. Customers are advised to failover to other regions if they are impacted.\nWe will provide an update by Wednesday, 2023-04-26 00:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9 region\nWorkaround: Customers can failover to zones in other regions",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T05:21:41+00:00",
-        "modified": "2023-04-27T11:10:20+00:00",
-        "when": "2023-04-26T05:21:41+00:00",
-        "text": "Summary: We are investigating an issue affecting multiple Cloud services in the europe-west9-a zone\nDescription: Water intrusion in europe-west9-a led to an emergency shutdown of some hardware in that zone. There is no current ETA for recovery of operations in europe-west9-a, but it is expected to be an extended outage. Customers are advised to fail over to other zones if they are impacted.\nWe will provide an update by Wednesday, 2023-04-26 00:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9-a\nWorkaround: Customers can fail over to other zones",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T05:18:06+00:00",
-        "modified": "2023-04-27T11:10:54+00:00",
-        "when": "2023-04-26T05:18:06+00:00",
-        "text": "Summary: We are investigating an issue affecting multiple Cloud services in the europe-west9-a zone\nDescription: Water intrusion in europe-west9-a led to an emergency shutdown of some hardware in that zone. There is no current ETA for recovery of operations in europe-west9-a, but it is expected to be an extended outage. Customers are advised to fail over to other zones in europe-west9 if they are impacted.\nWe will provide an update by Wednesday, 2023-04-26 00:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9-a\nWorkaround: Customers can fail over to other zones within europe-west9",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T05:16:03+00:00",
-        "modified": "2023-04-27T11:10:47+00:00",
-        "when": "2023-04-26T05:16:03+00:00",
-        "text": "Summary: We are investigating an issue affecting multiple Cloud services in the europe-west9-a zone\nDescription: Water intrusion in europe-west9-a led to an emergency shutdown of some hardware in that zone. There is no current ETA for recovery of operations in europe-west9-a, but it is expected to be an extended outage. Customers are advised to fail over to other zones in europe-west9 if they are impacted.\nWe will provide an update by Wednesday, 2023-04-26 00:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9-a\nWorkaround: Customers can fail over to other available zones",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T03:51:56+00:00",
-        "modified": "2023-04-27T11:10:08+00:00",
-        "when": "2023-04-26T03:51:56+00:00",
-        "text": "Summary: We are investigating an issue affecting multiple Cloud services in the europe-west9-a zone\nDescription: Water intrusion in europe-west9-a led to an emergency shutdown of some hardware in that zone. There is no current ETA for recovery of operations in europe-west9-a, but it is expected to be an extended outage. Customers are advised to fail over to other zones in europe-west9 if they are impacted.\nWe will provide an update by Tuesday, 2023-04-25 22:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9-a\nWorkaround: Customers can fail over to other zones within europe-west9",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T02:56:23+00:00",
-        "modified": "2023-04-27T11:10:02+00:00",
-        "when": "2023-04-26T02:56:23+00:00",
-        "text": "Summary: We are investigating an issue affecting multiple Cloud services in the europe-west9-a zone\nDescription: We are investigating an issue affecting multiple Cloud services in the europe-west9-a zone Our engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2023-04-25 21:00 US/Pacific with current details.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9-a\nWorkaround: Customers can fail over to other zones within europe-west9",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T02:25:04+00:00",
-        "modified": "2023-04-27T11:09:58+00:00",
-        "when": "2023-04-26T02:25:04+00:00",
-        "text": "Summary: We are investigating an issue affecting multiple Cloud services in the europe-west9-a zone\nDescription: We are investigating an issue affecting multiple Cloud services in the europe-west9-a zone\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2023-04-25 20:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9-a\nWorkaround: Customers can fail over to other zones within europe-west9",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          }
-        ]
-      },
-      {
-        "created": "2023-04-26T02:00:05+00:00",
-        "modified": "2023-04-27T11:09:52+00:00",
-        "when": "2023-04-26T02:00:05+00:00",
-        "text": "Summary: We are investigating an issue affecting multiple Cloud services in the europe-west9-a zone\nDescription: We are investigating an issue affecting multiple Cloud services in the europe-west9-a zone\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2023-04-25 19:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may be unable to access Cloud resources in europe-west9-a\nWorkaround: Customers can fail over to other zones within europe-west9",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": []
-      }
-    ],
-    "most_recent_update": {
-      "created": "2023-06-23T16:12:21+00:00",
-      "modified": "2023-06-23T16:12:21+00:00",
-      "when": "2023-06-23T16:12:21+00:00",
-      "text": "# Incident Report\n## Summary\n**To our customers whose businesses were impacted during this outage, we sincerely apologize. This is not the level of quality and reliability we strive to offer, and we are taking immediate steps to improve the platform’s performance and resilience.**\n### Water Leak and Fire Damage\nOn Tuesday, 25 April 2023 at 16:46 US/Pacific, a cooling system water pipe leak occurred in one of the data centers in the europe-west9 region. The leak originated in a non-Google portion of the facility, entered an associated uninterruptible power supply (UPS) room, and led to a fire. The fire required evacuation of the facility, engagement from the local fire department, and a power shutdown of the entire data center building for several hours. The fire was successfully controlled on 26 April 2023 at 04:11 US/Pacific.\n### Regional Impact\nEurope-west9 contains three buildings with independent cooling, power, and networking. Regional Spanner supports the regional control plane for most Google Cloud services in the region. In europe-west9, regional Spanner’s replicas were not correctly distributed across the three buildings in the region to ensure quorum was available after the impacted building was powered down. As a result, the control plane services for many Google Cloud services were interrupted in europe-west9, causing unavailability and/or elevated error rates for these services in this region. Regional Spanner was restored on 26 April 2023 at 12:47 US/Pacific.\nThe Identity and Authentication Management (IAM) service in europe-west9 depends upon regional Spanner. After regional Spanner came back online, IAM recovered on 26 April 2023 at 14:42 US/Pacific. IAM recovery took longer than expected, driven by the time to refresh the policies for the region as a result of the outage. Some Google Cloud services that were impacted by this event began recovering soon after Spanner and IAM were back online.\nGoogle Compute Engine (GCE) and Persistent Disk (PD) experienced regional impact in both the data plane (GCE Virtual Machines (VMs), PD Volumes) and control plane systems. Both systems had extended recovery periods after Spanner and IAM were restored. GCE VMs and PDs in europe-west9 zones were online by 19:00 US/Pacific, except for 58% of GCE VMs in zone europe-west9-a, which were directly impacted by the water leak. Soon after Spanner, IAM, GCE/PD were online, the europe-west9 region was primarily recovered and operational.\n### Global Service Impact\nGoogle Compute Engine (GCE) control plane provides the underlying control plane for Google Cloud Platform. A small number of methods within the GCE control plane API must collect information from multiple regions or zones by making requests to each regional control plane (called fanout requests). Google Cloud services including Cloud Console depend on these methods. When the GCE control plane for the europe-west9 region and zones went offline, some of these fanout methods did not operate correctly. During the outage, this led to global unavailability for some pages and control plane operations within Cloud Console. The global impact that was observed due to fanout issues in the Google Cloud Console control plane was mitigated by removing the europe-west9 control plane from the set of visible regions on Wednesday, 26 April 2023 at 03:38 US/Pacific.\n## Key Events and Timeline\nIncluded below is a brief timeline of the overall incident. Additional details are provided in the following sections. All times and dates are listed in the US/Pacific time zone.\n### Tuesday, 25 April 2023\n16:46 - Water leakage began on Level 2 above europe-west9-a zone.\n17:31 - Google engineers were proactively alerted about a potential critical impact to one cluster (a collection of servers along with supporting equipment for networking, power, and cooling) supporting our europe-west9-a zone due to water leak in its data center room.\n18:30 - Google started to gradually bring down Google Compute Engine (GCE) virtual machine instances along with Persistent Disk (PD) volumes from this cluster supporting the europe-west9-a zone.\n18:37 - As a preventative measure, engineers decided to preemptively power down all equipment supporting one of the clusters in europe-west9-a.\n19:14 - Smoke was detected in the building with the water leakage.\n19:42 - Completed power down of the impacted cluster with the water leak. 58% percent of GCE instances and 55% of PD volumes taken out of service from europe-west9-a zone.\n19:45 - The local fire department was called.\n20:00 - Fire department arrived on site and took over incident command of the building fire.\n20:08 - Google engineers were alerted to the battery room water leak and fire.\n22:45 - Building fire suppression system water supply ran out.\n22:51 - Google engineers notified that the fire department has ordered building power to be shut down.\n**23:04 - Emergency shutdown commenced for one of the three buildings in europe-west9 on order of the fire marshal. At this time regional impact occurred because Regional Spanner lost quorum. The global outage begins for some fanout Google Cloud APIs and Google Cloud Console operations across a number of services.**\n### Wednesday, 26 April 2023\n00:52 - Battery Room Fire Suppression System Restored\n03:38 - Google engineers removed the europe-west9 region from the list of available regions for Compute Engine. This restored services for Google Cloud Console globally and resumed instance creation for customers whose projects use global scope internal DNS. Global instance creation for Google Cloud SQL is also restored.\n04:11 - Battery room fire reported to be extinguished.\n10:00 - Availability of global dataset/job list operations is restored for BigQuery customers with data in europe-west9 by excluding the europe-west9 region.\n**12:47 - Regional Spanner quorum is restored and internal Spanner operations resume.**\n13:00 - Fire department confirmed the battery temperatures were stabilized, and the majority of the fire crew departed.\n**14:42 - Regional IAM services are restored.**\n15:14 - Google Cloud Storage (GCS) regional services are restored.\n15:30 - Cloud Pub/Sub services are restored.\n17:10 - Google BigQuery service is fully restored for europe-west9 region.\n18:40 - Google Cloud Dataflow services are restored.\n**19:00 - Google Compute Engine Control plane services restored across all zones.**\nFor the cluster in europe-west9-a that was not affected by the water leak, Google Compute Engine instances and Persistent Disk volumes were restored. This resulted in 42% of instances and volumes in zone europe-west9-a being restored. The remaining cluster in europe-west9-a that was affected by the water leak also had smoke damage. The severity of the smoke damage led to the whole cluster being decommissioned. Before decommissioning the cluster, we cleaned it and fully recovered all zonal data from the cluster.\nAfter Spanner, IAM and GCE/PD had recovered at 19:00, the europe-west9 region was primarily recovered and operational.\n## Water Leak, Mitigation, and Prevention\nOn Tuesday, 25 April 2023 at 17:31 US/Pacific, Google engineers were proactively alerted about a potential critical impact to the europe-west9-a cloud zone and immediately started an investigation. Our Europe regional Security Operations Center was immediately engaged, and it was discovered that water had leaked from a non-Google room above onto the first floor of our facility for one of the clusters in zone europe-west9-a. As a preventative measure, engineers decided to preemptively power down all equipment supporting this one cluster with water leak in europe-west9-a at 18:37 US/Pacific.\nAt 19:14 US/Pacific, smoke was detected in the building and at 19:45 US/Pacific, the local fire department was called. When they arrived onsite at 20:00 US/Pacific, the fire marshal informed Google engineers that a full building shutdown was imminent to allow for fire fighting activities. Shortly thereafter, at 20:08 US/Pacific, we were alerted that a battery room had also flooded, and the room had caught fire. At 22:45 US/Pacific, we were informed that the fire suppression system had run out of water. Once firefighters arrived on site, they began the process of connecting the battery room suppression system to the city fire water system.\nAt 22:59 US/Pacific, upon notification from the local fire marshal that a full building shut down was imminent, Google engineers proactively started to migrate the workloads from the building and completely powered it down at 23:29 US/Pacific. At this time regional impact occurred because regional Spanner no longer had quorum, due to a misconfiguration. It had two of its quorum in the building powered down, instead of being correctly spread across the three buildings in the europe-west9 region. At this time, some global APIs that aggregate information from each region by making a request to each regional control plane (called fanout requests) began to fail.\nThe local fire department continued to fight the fire in the UPS battery room on the lower floor of the facility and to control the fire. The facility fire continued to pose a threat of re-igniting until Wednesday, 26 April 2023 at 11:00 US/Pacific.\nUnfortunately, it took nearly 16 hours to extinguish the fire in the battery room, which delayed recovery efforts for the impacted building. Once it was clear to the Google Cloud team that power and cooling would not be further affected by the events impacting europe-west9-a, Google started working to bring back the clusters in the impacted building. The cluster in zone-a that had water intrusion also had smoke damage and continued to remain powered off and access was restricted for safety and security reasons. The fire introduced water and soot contamination to the data center space for this cluster in zone europe-west9-a. The affected racks of servers in the cluster supporting europe-west9-a had to be taken apart, thoroughly cleaned, and re-assembled before they could be powered on again for recovery of the zonal data before decommissioning the cluster.\nAll equipment was thoroughly cleaned using professional cleaning services. These services also began pumping out the standing water on Saturday, 29 April 2023. The cleaning efforts included reducing high humidity levels, clearance of rubble from the facility battery room, cleaning of all physical equipment, and cleaning of greasy soot contaminations (which was observed throughout the impacted cluster in zone europe-west9-a). After the cluster was cleaned we then performed a staged power-on approach for this cluster in zone europe-west9-a to recover customer zonal data. After a successful multi-day power restoration process, Google engineers were able to power on all the equipment in the cluster and recovered all zonal data in europe-west9-a. Customers experienced no data loss from the incident.\nGoogle has controls in place to detect and mitigate the risk of fire safety issues. These controls are audited by both internal teams with due diligence and operational reviews and by Google Cloud’s external auditors. These control objectives apply to all Google Cloud regions in facilities operated by third parties. Google Cloud regions (whether operated by Google Cloud or third parties) are also audited against Business Continuity Management System (BCMS) controls in place that support their ISO 22301 certification [1].\nIn addition, we are executing the following actions to prevent a recurrence of this issue\n- Detailed risk analysis for water intrusion in all data centers that host Google Cloud and implement any corrective actions based on findings.\n- Evaluating installation of drip trays for all Google spaces within multi-story data center locations with water on floors above.\n- Refining our fire and flood recovery playbook to include lessons learned from this event.\n[1] - https://cloud.google.com/security/compliance/iso-22301\n## Google Cloud Services on the critical path for restoring Region\n### Regional Spanner\nGoogle uses an internal version of regional Spanner as a back-end database to several Google Cloud services such as IAM and various control planes that manage our infrastructure and services for a region. The outage had a regional impact as this regional Spanner was not configured correctly across the three buildings in the region for it to maintain its quorum. Regional Spanner should have had one replica in each of the three buildings in the region. Instead, it had two of its three replicas in two different clusters in the building that was powered down. As a result, regional Spanner no longer met quorum across the region impacting IAM and the control planes in the region. On Wednesday, 26 April 2023 at 12:47 US/Pacific, Regional Spanner’s quorum was restored, which then allowed IAM and the region's control planes to begin recovery. We are currently conducting a detailed per-region audit (and conducting any required remediation if needed) of our internal regional Spanner allocations to confirm all regions fully meet Google Cloud expectations for fault isolation to prevent this issue in the future.\n### IAM\nRegional IAM needed regional Spanner available for it to serve and process requests. After regional Spanner was brought back to service, we kept the Cloud IAM in this region offline while it sync’d to get up to date with the global view of Cloud IAM. Most customers’ policies enforced by IAM are global in nature spanning identities, folders, and projects. These policies had received no updates for 13 hours in this region and any security critical updates made by customers during this period would not be available there if we had brought it online without syncing. For example, if a user was taken out of a critical IAM role for a storage bucket, the IAM server in the region would not yet know about it. Out of an abundance of caution, and treating our customers’ security as paramount, we decided to not serve traffic for IAM in europe-west9 until it completed full synchronization, and began serving traffic with up-to-date policies at 14:42 US/Pacific.\nTo address this recovery delay, we are implementing changes to our IAM policy refresh mechanism to ensure any stale policies (as a result of outages) are synchronized and resolved in less than 15 minutes. We are achieving this by providing improvements in replicating policies and parallelizing the synchronization when recovery is needed.\n### Google Compute Engine (GCE) and Persistent Disk (PD)\nGoogle Compute Engine (GCE) and Persistent Disk (PD) experienced regional impact in both the data plane (GCE VMs, PD Volumes) and control plane systems. Both systems had extended recovery periods after Spanner and IAM were restored.\nRegional Persistent Disk (PD) replicates volumes across multiple zones. To ensure proper quorum, Regional PD maintains a lease for each volume in a regional Spanner database. No Regional PD volumes had both replicas in the same building within the region. However, 79% of regional Persistent Disk volumes in the europe-west9 region had one replica in the impacted building. When Spanner was offline in the region, these volumes could not establish quorum, and therefore became read-only as a failsafe measure. If Regional Spanner had not gone offline, Regional Persistent Disk (PD) would have ensured that the Regional PD volumes with one replica would work as expected (as detailed in the RePD documentation[2]) to enable customer workloads to continue operating in the available zone.\nSpanner and IAM were online by 26 April 2023 at 14:42 US/Pacific. Excluding the 58% of GCE VMs in europe-west9-a directly impacted by the water leak, the VMs and PDs in europe-west9-a were online by 19:00 US/Pacific. This time was to validate Persistent Disk integrity, to ensure that all volumes were ready for production operations before customer VMs were restarted, and then re-enable persistent disk operations. This took longer than expected due to a suspected issue with the PD health check verifier that reported errors. These were false positives due to an issue in starting up this many PDs at once. As soon as the team confirmed that the PD volumes were healthy we initiated the recovery process.\nTo ensure we don’t have these additional delays for PD in the future we are:\n1. Updating the PD startup process to eliminate the false positive errors.\n2. Parallelizing the PD start up process to allow it to complete faster.\n3. Improving configuration rollout time across the fleet used in this type of recovery.\nThe GCE control plane experienced a regional impact due to a dependence on regional Spanner. After regional Spanner recovered, the recovery time of the GCE control plane was extended due to the time required to revert service configuration changes that were made as part of the initial mitigation of global control plane impact. During the incident, the GCE control plane experienced some fanout API issues. To mitigate this impact, the GCE control plane was reconfigured on 26 April 2023 at 03:38 US/Pacific to remove the europe-west9 region and zones. When the IAM service was restored, this configuration change was reverted. Restoring europe-west9 to the set of active GCE regions required two sequential configuration changes. Google Cloud configuration changes of this nature are deployed gradually with an incremental rollout. The first configuration change started at 14:53 US/Pacific and completed at 15:33 US/Pacific. The second configuration change, which brought the europe-west9 region and zones back online, started at 15:46 US/Pacific and finished with the last zone at 19:00 US/Pacific. At this point the GCE control plane was fully operational.\nTo improve the mitigation and recovery time in the future GCE will:\n* Improve the testing process of removing and restoring a GCE control plane for a zonal and regional issue.\n* Ensure that API methods which require access to all regions and zones degrade gracefully when a control plane scope is unavailable.\n* Ensure that the Cloud Console continues to operate when a control plane scope is unavailable.\n[2] - https://cloud.google.com/compute/docs/disks#repds\n### Enhanced Zonal & Regional Failure Testing\nWe are adding improvements to our zonal and regional environment to test for and ensure system behavior is as intended across all services in the case of zonal and regional outages. This includes validating that critical services consistently meet our expectations for how they allocate resources within our physical failure domains, that automated verification tests are in place to ensure no regressions, and ensure recovery times are efficient.\n## Global Google Cloud Impact and Restoration\nCloud Console provides a global view of Google Cloud resources. Certain Cloud Console pages rely on GCE backend APIs to perform global aggregated fanout across the regions. Some of these APIs failed to operate correctly while europe-west-9 was unavailable, rather than returning partial data. The global impact that was observed due to fanout issues in the Google Cloud Console control plane was mitigated by removing the europe-west9 control plane from the set of visible regions on Wednesday, 26 April 2023 at 03:38 US/Pacific. We are updating the Cloud Console so that fanout API methods continue to operate as expected to prevent this issue from occuring again. In addition, we are performing an audit (and any required remediation) across our services for any instances of fanout methods that could have similar issues.\nGCE provides an Internal DNS [3] feature to enable customers to look up instance names within their project. This service can be configured to either register instance names in a single Global namespace or in multiple Zonal namespaces. During the outage, customers using the Global namespace for Internal DNS for VM creation were unable to complete if the project had VMs in europe-west9, since it requires coordination with all zones where the project has resources to avoid duplicate instance DNS names. Customers using Zonal namespace for Internal DNS did not experience this impact. It is recommended to use Internal DNS with Zonal namespaces for your project (please see the documentation [3] for details).\n[3] - https://cloud.google.com/compute/docs/internal-dns\n## Mitigation & Prevention of Additional Services\nAfter Regional Spanner, IAM and GCE/PD came back online for the region, almost all of the services in the region fully recovered soon after that. The following services either took longer to recover or had additional impact during the outage.\n- Google Cloud Storage, Google BigQuery, Cloud Bigtable, Cloud SQL, Cloud Pub/Sub, Google Cloud Dataflow\nPlease log a case with our Support team if you would like to receive additional information regarding these services.\nWe thank you for your patience while we worked on resolving the outage and completing our investigation. We apologize to our customers whose businesses were impacted during this outage. This is not the level of quality and reliability we strive to offer, and we are taking immediate steps outlined in this IR and more to improve our platform’s performance and resilience.\n---",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Paris (europe-west9)",
-          "id": "europe-west9"
-        },
-        {
-          "title": "Global",
-          "id": "global"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Google Compute Engine",
-        "id": "L3ggmi3Jy4xJmgodFA9K"
-      },
-      {
-        "title": "Google Kubernetes Engine",
-        "id": "LCSbT57h59oR4W98NHuz"
-      },
-      {
-        "title": "Google Cloud Bigtable",
-        "id": "LfZSuE3xdQU46YMFV5fy"
-      },
-      {
-        "title": "Persistent Disk",
-        "id": "SzESm2Ux129pjDGKWD68"
-      },
-      {
-        "title": "Google Cloud SQL",
-        "id": "hV87iK5DcEXKgWU2kDri"
-      },
-      {
-        "title": "Cloud Filestore",
-        "id": "jog4nyYkquiLeSK5s26q"
-      },
-      {
-        "title": "AlloyDB for PostgreSQL",
-        "id": "fPovtKbaWN9UTepMm3kJ"
-      },
-      {
-        "title": "Apigee",
-        "id": "9Y13BNFy4fJydvjdsN3X"
-      },
-      {
-        "title": "Artifact Registry",
-        "id": "QbBuuiRdsLpMr9WmGwm5"
-      },
-      {
-        "title": "Cloud Armor",
-        "id": "Kakg69gTC3xFyeJCY2va"
-      },
-      {
-        "title": "Cloud Key Management Service",
-        "id": "67cSySTL7dwJZo9JWUGU"
-      },
-      {
-        "title": "Cloud Load Balancing",
-        "id": "ix7u9beT8ivBdjApTif3"
-      },
-      {
-        "title": "Cloud Logging",
-        "id": "PuCJ6W2ovoDhLcyvZ1xa"
-      },
-      {
-        "title": "Cloud Memorystore",
-        "id": "LGPLu3M5pcUAKU1z6eP3"
-      },
-      {
-        "title": "Cloud NAT",
-        "id": "hCNpnTQHkUCCGxJy35Yq"
-      },
-      {
-        "title": "Cloud Run",
-        "id": "9D7d2iNBQWN24zc1VamE"
-      },
-      {
-        "title": "Cloud Spanner",
-        "id": "EcNGGUgBtBLrtm4mWvqC"
-      },
-      {
-        "title": "Database Migration Service",
-        "id": "vY4CRgRFNbqUXWWyYGFS"
-      },
-      {
-        "title": "Datastream",
-        "id": "ibJgP4CNKnFojHHw8L3s"
-      },
-      {
-        "title": "Eventarc",
-        "id": "YaFawoMaXnqgY4keUBnW"
-      },
-      {
-        "title": "Google BigQuery",
-        "id": "9CcrhHUcFevXPSVaSxkf"
-      },
-      {
-        "title": "Google Cloud Composer",
-        "id": "YxkG5FfcC42cQmvBCk4j"
-      },
-      {
-        "title": "Google Cloud Console",
-        "id": "Wdsr1n5vyDvCt78qEifm"
-      },
-      {
-        "title": "Google Cloud Dataflow",
-        "id": "T9bFoXPqG8w8g1YbWTKY"
-      },
-      {
-        "title": "Google Cloud Dataproc",
-        "id": "yjXrEg3Yvy26BauMwr69"
-      },
-      {
-        "title": "Google Cloud DNS",
-        "id": "TUZUsWSJUVJGW97Jq2sH"
-      },
-      {
-        "title": "Google Cloud Identity-Aware Proxy",
-        "id": "tgA7cGBbPQWAbzVdyixN"
-      },
-      {
-        "title": "Google Cloud Pub/Sub",
-        "id": "dFjdLh2v6zuES6t9ADCB"
-      },
-      {
-        "title": "Google Cloud Storage",
-        "id": "UwaYoXQ5bHYHG6EdiPB8"
-      },
-      {
-        "title": "Identity and Access Management",
-        "id": "adnGEDEt9zWzs8uF1oKA"
-      },
-      {
-        "title": "Managed Service for Microsoft Active Directory (AD)",
-        "id": "m2BYeday5NQNxnEnY56V"
-      },
-      {
-        "title": "Secret Manager",
-        "id": "kzGfErQK3HzkFhptoeHH"
-      },
-      {
-        "title": "Service Directory",
-        "id": "vmq8TsEZwitKYM6V9BaM"
-      },
-      {
-        "title": "Traffic Director",
-        "id": "NroZwL2UMMionesUGP87"
-      },
-      {
-        "title": "Vertex AI Batch Prediction",
-        "id": "yVW8aiPWipjd3j67XzDL"
-      },
-      {
-        "title": "Virtual Private Cloud (VPC)",
-        "id": "BSGtCUnz6ZmyajsjgTKv"
-      },
-      {
-        "title": "Memorystore for Memcached",
-        "id": "paC6vmsvnjCHsBkp4Wva"
-      },
-      {
-        "title": "Memorystore for Redis",
-        "id": "3yFciKa9NQH7pmbnUYUs"
-      }
-    ],
-    "uri": "incidents/dS9ps52MUnxQfyDGPfkY",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Paris (europe-west9)",
-        "id": "europe-west9"
-      },
-      {
-        "title": "Global",
-        "id": "global"
       }
     ]
   }
