@@ -2,15 +2,23 @@
   {
     "id": "UMy7btMrvSjDLd9zkMRK",
     "number": "15409551107479513441",
-    "begin": "2024-04-25T21:19:54+00:00",
+    "begin": "2024-04-25T17:30:00+00:00",
     "created": "2024-04-25T21:19:59+00:00",
-    "end": "2024-04-25T22:50:34+00:00",
-    "modified": "2024-04-25T22:50:36+00:00",
+    "end": "2024-04-25T21:00:00+00:00",
+    "modified": "2024-04-26T20:08:05+00:00",
     "external_desc": "Google Cloud Monitoring experiencing intermittent issues with metric availability for GCP resources in US regions.",
     "updates": [
       {
+        "created": "2024-04-26T20:05:24+00:00",
+        "modified": "2024-04-26T20:08:05+00:00",
+        "when": "2024-04-26T20:05:24+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 25 April 2024 10:30\n**Incident End:** 25 April 2024 14:00\n**Duration:** 3 hours, 30 minutes\n**Affected Services and Features:**\n- Google Bigtable - Monitoring metrics\n- Cloud Spanner - Monitoring metrics\n**Regions/Zones:** US regions\n**Description:**\nGoogle Cloud Monitoring experienced issues with metric data availability impacting metric data for Cloud Bigtable and Cloud Spanner for a duration of approximately 3 hours, 30 minutes. The issue was limited to Cloud Bigtable and Cloud Spanner resources in US regions.\nFrom preliminary analysis, the root cause of the issue is a code change in Google Cloud Monitoring that caused delays in processing metric data and the timely delivery of those metrics to Google Cloud Customers.\nThe issue was fully mitigated once our engineers rolled back the code change.\n**Customer Impact:**\n- Customers may have experienced telemetry delays and in some cases metric gaps in their monitoring dashboards for the affected timeline. GCP and third-party services consuming these metrics on Google Cloud Monitoring API may also have experienced metric gaps, including those dependent on metrics for autoscaling.\n---",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-04-25T22:50:34+00:00",
-        "modified": "2024-04-25T22:50:37+00:00",
+        "modified": "2024-04-26T20:05:24+00:00",
         "when": "2024-04-25T22:50:34+00:00",
         "text": "After deep dive investigations, Our engineers determined that the impact was limited to BigTable and Cloud Spanner metrics.\nFrom our preliminary analysis, the suspected root cause of the issue is a recent roll out. This was rolled back by our engineers to the last known stable version.\nThe roll back has mitigated all known issues with Cloud Monitoring as of Thursday, 2024-04-25 12:35 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.\nThank you for choosing us!",
         "status": "AVAILABLE",
@@ -44,10 +52,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-04-25T22:50:34+00:00",
-      "modified": "2024-04-25T22:50:37+00:00",
-      "when": "2024-04-25T22:50:34+00:00",
-      "text": "After deep dive investigations, Our engineers determined that the impact was limited to BigTable and Cloud Spanner metrics.\nFrom our preliminary analysis, the suspected root cause of the issue is a recent roll out. This was rolled back by our engineers to the last known stable version.\nThe roll back has mitigated all known issues with Cloud Monitoring as of Thursday, 2024-04-25 12:35 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.\nThank you for choosing us!",
+      "created": "2024-04-26T20:05:24+00:00",
+      "modified": "2024-04-26T20:08:05+00:00",
+      "when": "2024-04-26T20:05:24+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 25 April 2024 10:30\n**Incident End:** 25 April 2024 14:00\n**Duration:** 3 hours, 30 minutes\n**Affected Services and Features:**\n- Google Bigtable - Monitoring metrics\n- Cloud Spanner - Monitoring metrics\n**Regions/Zones:** US regions\n**Description:**\nGoogle Cloud Monitoring experienced issues with metric data availability impacting metric data for Cloud Bigtable and Cloud Spanner for a duration of approximately 3 hours, 30 minutes. The issue was limited to Cloud Bigtable and Cloud Spanner resources in US regions.\nFrom preliminary analysis, the root cause of the issue is a code change in Google Cloud Monitoring that caused delays in processing metric data and the timely delivery of those metrics to Google Cloud Customers.\nThe issue was fully mitigated once our engineers rolled back the code change.\n**Customer Impact:**\n- Customers may have experienced telemetry delays and in some cases metric gaps in their monitoring dashboards for the affected timeline. GCP and third-party services consuming these metrics on Google Cloud Monitoring API may also have experienced metric gaps, including those dependent on metrics for autoscaling.\n---",
       "status": "AVAILABLE",
       "affected_locations": []
     },
