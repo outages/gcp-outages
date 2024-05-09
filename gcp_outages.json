@@ -4,12 +4,12 @@
     "number": "978879062657371275",
     "begin": "2024-05-09T02:00:00+00:00",
     "created": "2024-05-09T03:29:48+00:00",
-    "modified": "2024-05-09T03:29:49+00:00",
+    "modified": "2024-05-09T04:05:04+00:00",
     "external_desc": "Multiple services impacted in australia-southeast1.",
     "updates": [
       {
         "created": "2024-05-09T03:29:43+00:00",
-        "modified": "2024-05-09T03:29:49+00:00",
+        "modified": "2024-05-09T04:05:04+00:00",
         "when": "2024-05-09T03:29:43+00:00",
         "text": "Summary: Multiple services impacted in australia-southeast1.\nDescription: We are experiencing an issue with Big Query, Google filestore, Cloud PubSub beginning at Wednesday, 2024-05-08 18:45 US/Pacific.\nMitigation strategy has been identified. The services are now recovering.\nWe will provide an update by Wednesday, 2024-05-08 21:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Multiple GCP services are experiencing issues in australia-southeast1 region.\n**Persistent Disk:** While most devices have restored their functionality, some users might encounter slow or unavailable devices.\n**Google Cloud Dataflow:** Users experienced issues for streaming jobs with Watermark increasing. The issue with Google Cloud Dataflow is mitigated at 2024-05-08 19:47:27 PDT.\n**Google Cloud Pub/Sub:** The PubSub impact is mitigated.\n**Google BigQuery:** The impacted users may experience failures with the bigquery jobs in the australia-southeast1 Region.\n**Google Compute Engine:** VM’s went into repair for around 45 minutes and have started recovering. The issue with the Compute Engine is mitigated at 2024-05-08 19:43:43 PDT.\n**Cloud Filestore:** The impacted customers are unable to access the NFS Filestores in the australia-southeast1-a Zone.\nWorkaround: None at this time.",
         "status": "SERVICE_OUTAGE",
@@ -23,7 +23,7 @@
     ],
     "most_recent_update": {
       "created": "2024-05-09T03:29:43+00:00",
-      "modified": "2024-05-09T03:29:49+00:00",
+      "modified": "2024-05-09T04:05:04+00:00",
       "when": "2024-05-09T03:29:43+00:00",
       "text": "Summary: Multiple services impacted in australia-southeast1.\nDescription: We are experiencing an issue with Big Query, Google filestore, Cloud PubSub beginning at Wednesday, 2024-05-08 18:45 US/Pacific.\nMitigation strategy has been identified. The services are now recovering.\nWe will provide an update by Wednesday, 2024-05-08 21:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Multiple GCP services are experiencing issues in australia-southeast1 region.\n**Persistent Disk:** While most devices have restored their functionality, some users might encounter slow or unavailable devices.\n**Google Cloud Dataflow:** Users experienced issues for streaming jobs with Watermark increasing. The issue with Google Cloud Dataflow is mitigated at 2024-05-08 19:47:27 PDT.\n**Google Cloud Pub/Sub:** The PubSub impact is mitigated.\n**Google BigQuery:** The impacted users may experience failures with the bigquery jobs in the australia-southeast1 Region.\n**Google Compute Engine:** VM’s went into repair for around 45 minutes and have started recovering. The issue with the Compute Engine is mitigated at 2024-05-08 19:43:43 PDT.\n**Cloud Filestore:** The impacted customers are unable to access the NFS Filestores in the australia-southeast1-a Zone.\nWorkaround: None at this time.",
       "status": "SERVICE_OUTAGE",
@@ -58,6 +58,10 @@
       {
         "title": "Google Cloud Pub/Sub",
         "id": "dFjdLh2v6zuES6t9ADCB"
+      },
+      {
+        "title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri"
       },
       {
         "title": "Google Compute Engine",
