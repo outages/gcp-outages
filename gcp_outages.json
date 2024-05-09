@@ -4,12 +4,25 @@
     "number": "978879062657371275",
     "begin": "2024-05-09T02:00:00+00:00",
     "created": "2024-05-09T03:29:48+00:00",
-    "modified": "2024-05-09T04:05:04+00:00",
+    "modified": "2024-05-09T04:32:45+00:00",
     "external_desc": "Multiple services impacted in australia-southeast1.",
     "updates": [
       {
+        "created": "2024-05-09T04:32:41+00:00",
+        "modified": "2024-05-09T04:32:46+00:00",
+        "when": "2024-05-09T04:32:41+00:00",
+        "text": "Summary: Multiple services impacted in australia-southeast1.\nDescription: We are experiencing an issue with Persistent Disk, Google Cloud Dataflow, Google Cloud Pub/Sub, Google BigQuery, Google Compute Engine, Cloud Filestore, Virtual Private Cloud (VPC), Cloud logging, Cloud SQL, Cloud Bigtable, Apigee beginning at Wednesday, 2024-05-08 18:45 US/Pacific.\nMitigation strategy has been identified. The services are now recovering.\nWe will provide an update by Wednesday, 2024-05-08 23:00 US/Pacific with current details.\nDiagnosis: Multiple GCP services are experiencing issues in australia-southeast1 region.\n**Persistent Disk:** While most devices have restored their functionality, some users might encounter slow or unavailable devices.\n**Google Cloud Dataflow:** Users experienced issues for streaming jobs with Watermark increasing. The issue with Google Cloud Dataflow is mitigated at 2024-05-08 19:47:27 PDT.\n**Google Cloud Pub/Sub:** The PubSub impact is mitigated.\n**Google BigQuery:** The impacted users experienced failures with the bigquery jobs in the australia-southeast1 Region. The issue with Google Bigquery has been resolved for all the affected users as of Wednesday, 2024-05-08 21:13 US/Pacific.\n**Google Compute Engine:** VM’s went into repair for around 45 minutes and have started recovering.\n**Cloud Filestore:** The Filestore is partially recovered. However, a small subset of users would not able to access the NFS filestore in the australia-southeast1-a zone.\n**Virtual Private Cloud (VPC):** The impacted users may face delays while creating new VMs and packet loss / unreachability for existing VMs.\n**Cloud SQL:** A subset of the Cloud SQL users are experiencing errors when accessing their Cloud SQL database instances in the australia-southeast1-a zone.\n**Cloud logging:** All requests are failing at the send request step. The issue with Cloud logging has been resolved for all the affected users as of Wednesday, 2024-05-08 21:16:07 US/Pacific.\n**Cloud Bigtable:** Cloud Bigtable experienced a high error rate for 25 minutes in australia-southeast1-a due to a power event. The issue with Cloud Bigtable has been resolved for all the affected users as of Wednesday, 2024-05-08 20:08:30 US/Pacific.\n**Apigee:** There was a minor outage due to the GKE error which caused all of the nodes to restart. The GKE cluster is currently undergoing repair. This resulted in a 30 minute outage for the customer. The issue with Apigee has been resolved for all the affected users as of Wednesday 2024-05-08 20:34:47 US/Pacific.\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          }
+        ]
+      },
+      {
         "created": "2024-05-09T03:29:43+00:00",
-        "modified": "2024-05-09T04:05:04+00:00",
+        "modified": "2024-05-09T04:32:45+00:00",
         "when": "2024-05-09T03:29:43+00:00",
         "text": "Summary: Multiple services impacted in australia-southeast1.\nDescription: We are experiencing an issue with Big Query, Google filestore, Cloud PubSub beginning at Wednesday, 2024-05-08 18:45 US/Pacific.\nMitigation strategy has been identified. The services are now recovering.\nWe will provide an update by Wednesday, 2024-05-08 21:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Multiple GCP services are experiencing issues in australia-southeast1 region.\n**Persistent Disk:** While most devices have restored their functionality, some users might encounter slow or unavailable devices.\n**Google Cloud Dataflow:** Users experienced issues for streaming jobs with Watermark increasing. The issue with Google Cloud Dataflow is mitigated at 2024-05-08 19:47:27 PDT.\n**Google Cloud Pub/Sub:** The PubSub impact is mitigated.\n**Google BigQuery:** The impacted users may experience failures with the bigquery jobs in the australia-southeast1 Region.\n**Google Compute Engine:** VM’s went into repair for around 45 minutes and have started recovering. The issue with the Compute Engine is mitigated at 2024-05-08 19:43:43 PDT.\n**Cloud Filestore:** The impacted customers are unable to access the NFS Filestores in the australia-southeast1-a Zone.\nWorkaround: None at this time.",
         "status": "SERVICE_OUTAGE",
@@ -22,10 +35,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-05-09T03:29:43+00:00",
-      "modified": "2024-05-09T04:05:04+00:00",
-      "when": "2024-05-09T03:29:43+00:00",
-      "text": "Summary: Multiple services impacted in australia-southeast1.\nDescription: We are experiencing an issue with Big Query, Google filestore, Cloud PubSub beginning at Wednesday, 2024-05-08 18:45 US/Pacific.\nMitigation strategy has been identified. The services are now recovering.\nWe will provide an update by Wednesday, 2024-05-08 21:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Multiple GCP services are experiencing issues in australia-southeast1 region.\n**Persistent Disk:** While most devices have restored their functionality, some users might encounter slow or unavailable devices.\n**Google Cloud Dataflow:** Users experienced issues for streaming jobs with Watermark increasing. The issue with Google Cloud Dataflow is mitigated at 2024-05-08 19:47:27 PDT.\n**Google Cloud Pub/Sub:** The PubSub impact is mitigated.\n**Google BigQuery:** The impacted users may experience failures with the bigquery jobs in the australia-southeast1 Region.\n**Google Compute Engine:** VM’s went into repair for around 45 minutes and have started recovering. The issue with the Compute Engine is mitigated at 2024-05-08 19:43:43 PDT.\n**Cloud Filestore:** The impacted customers are unable to access the NFS Filestores in the australia-southeast1-a Zone.\nWorkaround: None at this time.",
+      "created": "2024-05-09T04:32:41+00:00",
+      "modified": "2024-05-09T04:32:46+00:00",
+      "when": "2024-05-09T04:32:41+00:00",
+      "text": "Summary: Multiple services impacted in australia-southeast1.\nDescription: We are experiencing an issue with Persistent Disk, Google Cloud Dataflow, Google Cloud Pub/Sub, Google BigQuery, Google Compute Engine, Cloud Filestore, Virtual Private Cloud (VPC), Cloud logging, Cloud SQL, Cloud Bigtable, Apigee beginning at Wednesday, 2024-05-08 18:45 US/Pacific.\nMitigation strategy has been identified. The services are now recovering.\nWe will provide an update by Wednesday, 2024-05-08 23:00 US/Pacific with current details.\nDiagnosis: Multiple GCP services are experiencing issues in australia-southeast1 region.\n**Persistent Disk:** While most devices have restored their functionality, some users might encounter slow or unavailable devices.\n**Google Cloud Dataflow:** Users experienced issues for streaming jobs with Watermark increasing. The issue with Google Cloud Dataflow is mitigated at 2024-05-08 19:47:27 PDT.\n**Google Cloud Pub/Sub:** The PubSub impact is mitigated.\n**Google BigQuery:** The impacted users experienced failures with the bigquery jobs in the australia-southeast1 Region. The issue with Google Bigquery has been resolved for all the affected users as of Wednesday, 2024-05-08 21:13 US/Pacific.\n**Google Compute Engine:** VM’s went into repair for around 45 minutes and have started recovering.\n**Cloud Filestore:** The Filestore is partially recovered. However, a small subset of users would not able to access the NFS filestore in the australia-southeast1-a zone.\n**Virtual Private Cloud (VPC):** The impacted users may face delays while creating new VMs and packet loss / unreachability for existing VMs.\n**Cloud SQL:** A subset of the Cloud SQL users are experiencing errors when accessing their Cloud SQL database instances in the australia-southeast1-a zone.\n**Cloud logging:** All requests are failing at the send request step. The issue with Cloud logging has been resolved for all the affected users as of Wednesday, 2024-05-08 21:16:07 US/Pacific.\n**Cloud Bigtable:** Cloud Bigtable experienced a high error rate for 25 minutes in australia-southeast1-a due to a power event. The issue with Cloud Bigtable has been resolved for all the affected users as of Wednesday, 2024-05-08 20:08:30 US/Pacific.\n**Apigee:** There was a minor outage due to the GKE error which caused all of the nodes to restart. The GKE cluster is currently undergoing repair. This resulted in a 30 minute outage for the customer. The issue with Apigee has been resolved for all the affected users as of Wednesday 2024-05-08 20:34:47 US/Pacific.\nWorkaround: None at this time.",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
@@ -40,12 +53,24 @@
     "service_name": "Multiple Products",
     "affected_products": [
       {
+        "title": "Apigee",
+        "id": "9Y13BNFy4fJydvjdsN3X"
+      },
+      {
         "title": "Cloud Filestore",
         "id": "jog4nyYkquiLeSK5s26q"
       },
       {
+        "title": "Cloud Logging",
+        "id": "PuCJ6W2ovoDhLcyvZ1xa"
+      },
+      {
         "title": "Google BigQuery",
         "id": "9CcrhHUcFevXPSVaSxkf"
+      },
+      {
+        "title": "Google Cloud Bigtable",
+        "id": "LfZSuE3xdQU46YMFV5fy"
       },
       {
         "title": "Google Cloud Dataflow",
@@ -66,6 +91,10 @@
       {
         "title": "Google Compute Engine",
         "id": "L3ggmi3Jy4xJmgodFA9K"
+      },
+      {
+        "title": "Operations",
+        "id": "DixAowEQm45KgqXKP5tR"
       },
       {
         "title": "Persistent Disk",
