@@ -11795,91 +11795,6 @@
     ]
   },
   {
-    "id": "JAxa64hv45yMYzCpqx1T",
-    "number": "2264297634052042910",
-    "begin": "2024-02-29T07:50:00+00:00",
-    "created": "2024-02-29T15:34:33+00:00",
-    "end": "2024-02-29T17:50:00+00:00",
-    "modified": "2024-02-29T20:51:47+00:00",
-    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
-    "updates": [
-      {
-        "created": "2024-02-29T20:51:19+00:00",
-        "modified": "2024-02-29T20:51:19+00:00",
-        "when": "2024-02-29T20:51:19+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T16:21:00+00:00",
-        "modified": "2024-02-29T16:21:08+00:00",
-        "when": "2024-02-29T16:21:00+00:00",
-        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T15:34:29+00:00",
-        "modified": "2024-02-29T15:34:36+00:00",
-        "when": "2024-02-29T15:34:29+00:00",
-        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2024-02-29T20:51:19+00:00",
-      "modified": "2024-02-29T20:51:19+00:00",
-      "when": "2024-02-29T20:51:19+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Chronicle Security",
-        "id": "FHwvkSZ6RzzDYAvDZXMM"
-      },
-      {
-        "title": "Chronicle SOAR",
-        "id": "GTT16Lf72XZKWArC9VxA"
-      }
-    ],
-    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Multi-region: us",
-        "id": "us"
-      }
-    ]
-  },
-  {
     "id": "M2qQyWWU9FKvVc2FfcaH",
     "number": "184633653096742397",
     "begin": "2024-02-29T07:50:00+00:00",
@@ -11982,6 +11897,91 @@
       }
     ],
     "uri": "incidents/M2qQyWWU9FKvVc2FfcaH",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Multi-region: us",
+        "id": "us"
+      }
+    ]
+  },
+  {
+    "id": "JAxa64hv45yMYzCpqx1T",
+    "number": "2264297634052042910",
+    "begin": "2024-02-29T07:50:00+00:00",
+    "created": "2024-02-29T15:34:33+00:00",
+    "end": "2024-02-29T17:50:00+00:00",
+    "modified": "2024-02-29T20:51:47+00:00",
+    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
+    "updates": [
+      {
+        "created": "2024-02-29T20:51:19+00:00",
+        "modified": "2024-02-29T20:51:19+00:00",
+        "when": "2024-02-29T20:51:19+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T16:21:00+00:00",
+        "modified": "2024-02-29T16:21:08+00:00",
+        "when": "2024-02-29T16:21:00+00:00",
+        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T15:34:29+00:00",
+        "modified": "2024-02-29T15:34:36+00:00",
+        "when": "2024-02-29T15:34:29+00:00",
+        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2024-02-29T20:51:19+00:00",
+      "modified": "2024-02-29T20:51:19+00:00",
+      "when": "2024-02-29T20:51:19+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Multi-region: us",
+          "id": "us"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Chronicle Security",
+        "id": "FHwvkSZ6RzzDYAvDZXMM"
+      },
+      {
+        "title": "Chronicle SOAR",
+        "id": "GTT16Lf72XZKWArC9VxA"
+      }
+    ],
+    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -97995,370 +97995,6 @@
       {
         "title": "Paris (europe-west9)",
         "id": "europe-west9"
-      }
-    ]
-  },
-  {
-    "id": "CT9nzPCgdeUA7j5ZgCy2",
-    "number": "10388338139999174163",
-    "begin": "2023-05-11T09:04:48+00:00",
-    "created": "2023-05-11T20:14:23+00:00",
-    "end": "2023-05-12T02:00:06+00:00",
-    "modified": "2023-05-12T02:00:06+00:00",
-    "external_desc": "Multi Region: Vertex AI Batch Prediction & Vertex AI Online Prediction Model Deployment Issues",
-    "updates": [
-      {
-        "created": "2023-05-12T02:00:05+00:00",
-        "modified": "2023-05-12T02:00:07+00:00",
-        "when": "2023-05-12T02:00:05+00:00",
-        "text": "The issue with Vertex AI Batch Prediction, Vertex AI Online Prediction has been resolved for all affected users as of Thursday, 2023-05-11 18:59 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          },
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          },
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Netherlands (europe-west4)",
-            "id": "europe-west4"
-          },
-          {
-            "title": "Zurich (europe-west6)",
-            "id": "europe-west6"
-          },
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          },
-          {
-            "title": "Toronto (northamerica-northeast2)",
-            "id": "northamerica-northeast2"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          }
-        ]
-      },
-      {
-        "created": "2023-05-11T20:14:21+00:00",
-        "modified": "2023-05-11T20:14:24+00:00",
-        "when": "2023-05-11T20:14:21+00:00",
-        "text": "Summary: Multi Region: Vertex AI Batch Prediction & Vertex AI Online Prediction Model Deployment Issues\nDescription: Our engineers have identified the issue and a fix is being rolled out. Online Prediction is mitigated as of 2023-05-11 12:30 US/Pacific. Batch Prediction is expected to rollout the fix by 2023-05-11 18:00 US/Pacific.\nThe issue is currently contained in the following four regions: us-west2, europe-west3, asia-east2, us-east1.\nWe will provide more information by Thursday, 2023-05-11 19:00 US/Pacific.\nDiagnosis: Customers are unable to deploy new models on Online Prediction, when a new GKE cluster is created. Some customers Batch Prediction jobs are experiencing timeouts.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          },
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          },
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Netherlands (europe-west4)",
-            "id": "europe-west4"
-          },
-          {
-            "title": "Zurich (europe-west6)",
-            "id": "europe-west6"
-          },
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          },
-          {
-            "title": "Toronto (northamerica-northeast2)",
-            "id": "northamerica-northeast2"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2023-05-12T02:00:05+00:00",
-      "modified": "2023-05-12T02:00:07+00:00",
-      "when": "2023-05-12T02:00:05+00:00",
-      "text": "The issue with Vertex AI Batch Prediction, Vertex AI Online Prediction has been resolved for all affected users as of Thursday, 2023-05-11 18:59 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Taiwan (asia-east1)",
-          "id": "asia-east1"
-        },
-        {
-          "title": "Hong Kong (asia-east2)",
-          "id": "asia-east2"
-        },
-        {
-          "title": "Tokyo (asia-northeast1)",
-          "id": "asia-northeast1"
-        },
-        {
-          "title": "Seoul (asia-northeast3)",
-          "id": "asia-northeast3"
-        },
-        {
-          "title": "Mumbai (asia-south1)",
-          "id": "asia-south1"
-        },
-        {
-          "title": "Singapore (asia-southeast1)",
-          "id": "asia-southeast1"
-        },
-        {
-          "title": "Sydney (australia-southeast1)",
-          "id": "australia-southeast1"
-        },
-        {
-          "title": "Belgium (europe-west1)",
-          "id": "europe-west1"
-        },
-        {
-          "title": "London (europe-west2)",
-          "id": "europe-west2"
-        },
-        {
-          "title": "Frankfurt (europe-west3)",
-          "id": "europe-west3"
-        },
-        {
-          "title": "Netherlands (europe-west4)",
-          "id": "europe-west4"
-        },
-        {
-          "title": "Zurich (europe-west6)",
-          "id": "europe-west6"
-        },
-        {
-          "title": "Montréal (northamerica-northeast1)",
-          "id": "northamerica-northeast1"
-        },
-        {
-          "title": "Toronto (northamerica-northeast2)",
-          "id": "northamerica-northeast2"
-        },
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        },
-        {
-          "title": "South Carolina (us-east1)",
-          "id": "us-east1"
-        },
-        {
-          "title": "Northern Virginia (us-east4)",
-          "id": "us-east4"
-        },
-        {
-          "title": "Oregon (us-west1)",
-          "id": "us-west1"
-        },
-        {
-          "title": "Los Angeles (us-west2)",
-          "id": "us-west2"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Vertex AI Online Prediction",
-        "id": "sdXM79fz1FS6ekNpu37K"
-      },
-      {
-        "title": "Vertex AI Batch Prediction",
-        "id": "yVW8aiPWipjd3j67XzDL"
-      },
-      {
-        "title": "Cloud Machine Learning",
-        "id": "z9PfKanGZYvYNUbnKzRJ"
-      }
-    ],
-    "uri": "incidents/CT9nzPCgdeUA7j5ZgCy2",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Taiwan (asia-east1)",
-        "id": "asia-east1"
-      },
-      {
-        "title": "Hong Kong (asia-east2)",
-        "id": "asia-east2"
-      },
-      {
-        "title": "Tokyo (asia-northeast1)",
-        "id": "asia-northeast1"
-      },
-      {
-        "title": "Seoul (asia-northeast3)",
-        "id": "asia-northeast3"
-      },
-      {
-        "title": "Mumbai (asia-south1)",
-        "id": "asia-south1"
-      },
-      {
-        "title": "Singapore (asia-southeast1)",
-        "id": "asia-southeast1"
-      },
-      {
-        "title": "Sydney (australia-southeast1)",
-        "id": "australia-southeast1"
-      },
-      {
-        "title": "Belgium (europe-west1)",
-        "id": "europe-west1"
-      },
-      {
-        "title": "London (europe-west2)",
-        "id": "europe-west2"
-      },
-      {
-        "title": "Frankfurt (europe-west3)",
-        "id": "europe-west3"
-      },
-      {
-        "title": "Netherlands (europe-west4)",
-        "id": "europe-west4"
-      },
-      {
-        "title": "Zurich (europe-west6)",
-        "id": "europe-west6"
-      },
-      {
-        "title": "Montréal (northamerica-northeast1)",
-        "id": "northamerica-northeast1"
-      },
-      {
-        "title": "Toronto (northamerica-northeast2)",
-        "id": "northamerica-northeast2"
-      },
-      {
-        "title": "Iowa (us-central1)",
-        "id": "us-central1"
-      },
-      {
-        "title": "South Carolina (us-east1)",
-        "id": "us-east1"
-      },
-      {
-        "title": "Northern Virginia (us-east4)",
-        "id": "us-east4"
-      },
-      {
-        "title": "Oregon (us-west1)",
-        "id": "us-west1"
-      },
-      {
-        "title": "Los Angeles (us-west2)",
-        "id": "us-west2"
       }
     ]
   }
