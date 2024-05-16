@@ -4,12 +4,12 @@
     "number": "5427664776422626960",
     "begin": "2024-05-16T22:51:22+00:00",
     "created": "2024-05-16T23:24:05+00:00",
-    "modified": "2024-05-16T23:27:06+00:00",
+    "modified": "2024-05-16T23:43:45+00:00",
     "external_desc": "Programming failures for New Virtual Private Cloud endpoints globally affecting New GCE VM network programming and Cloud Run using Direct VPC.",
     "updates": [
       {
         "created": "2024-05-16T23:24:02+00:00",
-        "modified": "2024-05-16T23:27:06+00:00",
+        "modified": "2024-05-16T23:43:45+00:00",
         "when": "2024-05-16T23:24:02+00:00",
         "text": "Summary: Programming failures for New Virtual Private Cloud endpoints globally affecting New GCE VM network programming and Cloud Run using Direct VPC.\nDescription: We are experiencing an issue with Virtual Private Cloud (VPC) beginning on Thursday, 2024-05-16 14:44 US/Pacific.\nOur engineering team continues to investigate the issue\nWe will provide an update by Thursday, 2024-05-16 16:57 US/Pacific with current details.\nDiagnosis: Customers impacted by this issue may see slow programming in the Cloud Networking control plane. New VMs or newly migrated VMs may have delayed network programming.\nFor Cloud Run DirectVPC customers, Cloud Run scaling, including from 0 may not work.\nServerless VPC Connectors cannot be created or scale.\nApp Engine Flex deployments cannot be created or scale.\nWorkaround: None at this time.",
         "status": "SERVICE_OUTAGE",
@@ -179,7 +179,7 @@
     ],
     "most_recent_update": {
       "created": "2024-05-16T23:24:02+00:00",
-      "modified": "2024-05-16T23:27:06+00:00",
+      "modified": "2024-05-16T23:43:45+00:00",
       "when": "2024-05-16T23:24:02+00:00",
       "text": "Summary: Programming failures for New Virtual Private Cloud endpoints globally affecting New GCE VM network programming and Cloud Run using Direct VPC.\nDescription: We are experiencing an issue with Virtual Private Cloud (VPC) beginning on Thursday, 2024-05-16 14:44 US/Pacific.\nOur engineering team continues to investigate the issue\nWe will provide an update by Thursday, 2024-05-16 16:57 US/Pacific with current details.\nDiagnosis: Customers impacted by this issue may see slow programming in the Cloud Networking control plane. New VMs or newly migrated VMs may have delayed network programming.\nFor Cloud Run DirectVPC customers, Cloud Run scaling, including from 0 may not work.\nServerless VPC Connectors cannot be created or scale.\nApp Engine Flex deployments cannot be created or scale.\nWorkaround: None at this time.",
       "status": "SERVICE_OUTAGE",
@@ -352,12 +352,24 @@
     "service_name": "Multiple Products",
     "affected_products": [
       {
+        "title": "Cloud NAT",
+        "id": "hCNpnTQHkUCCGxJy35Yq"
+      },
+      {
         "title": "Cloud Run",
         "id": "9D7d2iNBQWN24zc1VamE"
       },
       {
+        "title": "Firebase Test Lab",
+        "id": "rn3e8YyTQJ3fTNTfJ41k"
+      },
+      {
         "title": "Google Cloud Networking",
         "id": "VNJxzcH58QmTt5H6pnT6"
+      },
+      {
+        "title": "Hybrid Connectivity",
+        "id": "5x6CGnZvSHQZ26KtxpK1"
       },
       {
         "title": "Virtual Private Cloud (VPC)",
