@@ -4,12 +4,21 @@
     "number": "5427664776422626960",
     "begin": "2024-05-16T22:51:22+00:00",
     "created": "2024-05-16T23:24:05+00:00",
-    "modified": "2024-05-17T01:37:27+00:00",
+    "end": "2024-05-17T01:40:17+00:00",
+    "modified": "2024-05-17T01:40:24+00:00",
     "external_desc": "Multiple cloud products are experiencing network connectivity issues. New instances of several cloud products will come up without a network in many regions.",
     "updates": [
       {
+        "created": "2024-05-17T01:40:17+00:00",
+        "modified": "2024-05-17T01:40:26+00:00",
+        "when": "2024-05-17T01:40:17+00:00",
+        "text": "The issue with Network programming of Apigee, Backup and DR, Cloud Build, Cloud Data Fusion, Cloud Filestore, Cloud Load Balancing, Cloud NAT, Cloud Run, Cloud Workstations, Colab Enterprise, Contact Center AI Platform, Dataproc Metastore, Firebase Test Lab, Google App Engine, Google Cloud Composer, Google Cloud Dataflow, Google Cloud Dataproc, Google Cloud Deploy, Google Cloud Networking, Google Compute Engine, Google Kubernetes Engine, Hybrid Connectivity, Memorystore for Memcached, Memorystore for Redis, Vertex AI Workbench Instances, Virtual Private Cloud (VPC) has been resolved for all affected projects as of Thursday, 2024-05-16 18:10 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-05-17T01:37:22+00:00",
-        "modified": "2024-05-17T01:37:29+00:00",
+        "modified": "2024-05-17T01:40:24+00:00",
         "when": "2024-05-17T01:37:22+00:00",
         "text": "Summary: Multiple cloud products are experiencing network connectivity issues. New instances of several cloud products will come up without a network in many regions.\nDescription: We are seeing recovery for most of the affected products across all regions.\nCloud Functions, Cloud Run, and App Engine Flex are recovered as of 18:06 US/Pacific\nGoogle engineers are actively working to fully restore control plane functionality for all affected products and regions.\nWe do not have an ETA for complete mitigation at this point\nWe will provide an update by Thursday, 2024-05-16 18:55 US/Pacific with current details.\nDiagnosis:\n- Customers impacted by this issue may see slow programming in the Cloud Networking control plane. New VMs or newly migrated VMs may have delayed network programming.\n- New connections via Google Cloud Load Balancer may also fail to establish.\n- For GKE cluster creation and deletion, node pool creation and deletion, scale ups, upgrades, as well as changes to networking configuration are impacted.\n- For Cloud Run DirectVPC customers, Cloud Run scaling, including from 0 will not work.\n- Serverless VPC Connectors cannot be created or scale.\n- App Engine Flex deployments cannot be created or scale.\nWorkaround: None at this time.",
         "status": "SERVICE_OUTAGE",
@@ -862,177 +871,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-05-17T01:37:22+00:00",
-      "modified": "2024-05-17T01:37:29+00:00",
-      "when": "2024-05-17T01:37:22+00:00",
-      "text": "Summary: Multiple cloud products are experiencing network connectivity issues. New instances of several cloud products will come up without a network in many regions.\nDescription: We are seeing recovery for most of the affected products across all regions.\nCloud Functions, Cloud Run, and App Engine Flex are recovered as of 18:06 US/Pacific\nGoogle engineers are actively working to fully restore control plane functionality for all affected products and regions.\nWe do not have an ETA for complete mitigation at this point\nWe will provide an update by Thursday, 2024-05-16 18:55 US/Pacific with current details.\nDiagnosis:\n- Customers impacted by this issue may see slow programming in the Cloud Networking control plane. New VMs or newly migrated VMs may have delayed network programming.\n- New connections via Google Cloud Load Balancer may also fail to establish.\n- For GKE cluster creation and deletion, node pool creation and deletion, scale ups, upgrades, as well as changes to networking configuration are impacted.\n- For Cloud Run DirectVPC customers, Cloud Run scaling, including from 0 will not work.\n- Serverless VPC Connectors cannot be created or scale.\n- App Engine Flex deployments cannot be created or scale.\nWorkaround: None at this time.",
-      "status": "SERVICE_OUTAGE",
-      "affected_locations": [
-        {
-          "title": "Johannesburg (africa-south1)",
-          "id": "africa-south1"
-        },
-        {
-          "title": "Taiwan (asia-east1)",
-          "id": "asia-east1"
-        },
-        {
-          "title": "Hong Kong (asia-east2)",
-          "id": "asia-east2"
-        },
-        {
-          "title": "Tokyo (asia-northeast1)",
-          "id": "asia-northeast1"
-        },
-        {
-          "title": "Osaka (asia-northeast2)",
-          "id": "asia-northeast2"
-        },
-        {
-          "title": "Seoul (asia-northeast3)",
-          "id": "asia-northeast3"
-        },
-        {
-          "title": "Mumbai (asia-south1)",
-          "id": "asia-south1"
-        },
-        {
-          "title": "Delhi (asia-south2)",
-          "id": "asia-south2"
-        },
-        {
-          "title": "Singapore (asia-southeast1)",
-          "id": "asia-southeast1"
-        },
-        {
-          "title": "Jakarta (asia-southeast2)",
-          "id": "asia-southeast2"
-        },
-        {
-          "title": "Sydney (australia-southeast1)",
-          "id": "australia-southeast1"
-        },
-        {
-          "title": "Melbourne (australia-southeast2)",
-          "id": "australia-southeast2"
-        },
-        {
-          "title": "Warsaw (europe-central2)",
-          "id": "europe-central2"
-        },
-        {
-          "title": "Finland (europe-north1)",
-          "id": "europe-north1"
-        },
-        {
-          "title": "Madrid (europe-southwest1)",
-          "id": "europe-southwest1"
-        },
-        {
-          "title": "Belgium (europe-west1)",
-          "id": "europe-west1"
-        },
-        {
-          "title": "Berlin (europe-west10)",
-          "id": "europe-west10"
-        },
-        {
-          "title": "Turin (europe-west12)",
-          "id": "europe-west12"
-        },
-        {
-          "title": "London (europe-west2)",
-          "id": "europe-west2"
-        },
-        {
-          "title": "Frankfurt (europe-west3)",
-          "id": "europe-west3"
-        },
-        {
-          "title": "Netherlands (europe-west4)",
-          "id": "europe-west4"
-        },
-        {
-          "title": "Zurich (europe-west6)",
-          "id": "europe-west6"
-        },
-        {
-          "title": "Milan (europe-west8)",
-          "id": "europe-west8"
-        },
-        {
-          "title": "Paris (europe-west9)",
-          "id": "europe-west9"
-        },
-        {
-          "title": "Global",
-          "id": "global"
-        },
-        {
-          "title": "Doha (me-central1)",
-          "id": "me-central1"
-        },
-        {
-          "title": "Dammam (me-central2)",
-          "id": "me-central2"
-        },
-        {
-          "title": "Tel Aviv (me-west1)",
-          "id": "me-west1"
-        },
-        {
-          "title": "Montréal (northamerica-northeast1)",
-          "id": "northamerica-northeast1"
-        },
-        {
-          "title": "Toronto (northamerica-northeast2)",
-          "id": "northamerica-northeast2"
-        },
-        {
-          "title": "São Paulo (southamerica-east1)",
-          "id": "southamerica-east1"
-        },
-        {
-          "title": "Santiago (southamerica-west1)",
-          "id": "southamerica-west1"
-        },
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        },
-        {
-          "title": "South Carolina (us-east1)",
-          "id": "us-east1"
-        },
-        {
-          "title": "Northern Virginia (us-east4)",
-          "id": "us-east4"
-        },
-        {
-          "title": "Columbus (us-east5)",
-          "id": "us-east5"
-        },
-        {
-          "title": "Dallas (us-south1)",
-          "id": "us-south1"
-        },
-        {
-          "title": "Oregon (us-west1)",
-          "id": "us-west1"
-        },
-        {
-          "title": "Los Angeles (us-west2)",
-          "id": "us-west2"
-        },
-        {
-          "title": "Salt Lake City (us-west3)",
-          "id": "us-west3"
-        },
-        {
-          "title": "Las Vegas (us-west4)",
-          "id": "us-west4"
-        }
-      ]
+      "created": "2024-05-17T01:40:17+00:00",
+      "modified": "2024-05-17T01:40:26+00:00",
+      "when": "2024-05-17T01:40:17+00:00",
+      "text": "The issue with Network programming of Apigee, Backup and DR, Cloud Build, Cloud Data Fusion, Cloud Filestore, Cloud Load Balancing, Cloud NAT, Cloud Run, Cloud Workstations, Colab Enterprise, Contact Center AI Platform, Dataproc Metastore, Firebase Test Lab, Google App Engine, Google Cloud Composer, Google Cloud Dataflow, Google Cloud Dataproc, Google Cloud Deploy, Google Cloud Networking, Google Compute Engine, Google Kubernetes Engine, Hybrid Connectivity, Memorystore for Memcached, Memorystore for Redis, Vertex AI Workbench Instances, Virtual Private Cloud (VPC) has been resolved for all affected projects as of Thursday, 2024-05-16 18:10 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
+      "affected_locations": []
     },
     "status_impact": "SERVICE_OUTAGE",
     "severity": "high",
@@ -1169,7 +1013,8 @@
       }
     ],
     "uri": "incidents/xVSEV3kVaJBmS7SZbnre",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Johannesburg (africa-south1)",
         "id": "africa-south1"
@@ -1334,8 +1179,7 @@
         "title": "Las Vegas (us-west4)",
         "id": "us-west4"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "j6rYCkFSaV4ZCzNtYgnM",
