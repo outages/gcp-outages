@@ -4,12 +4,25 @@
     "number": "11987473090564497149",
     "begin": "2024-05-24T16:33:44+00:00",
     "created": "2024-05-24T17:27:00+00:00",
-    "modified": "2024-05-24T19:38:10+00:00",
+    "modified": "2024-05-24T20:54:03+00:00",
     "external_desc": "Failure in loading of one of the pages in Chronicle Security.",
     "updates": [
       {
+        "created": "2024-05-24T20:54:03+00:00",
+        "modified": "2024-05-24T20:54:06+00:00",
+        "when": "2024-05-24T20:54:03+00:00",
+        "text": "Summary: Failure in loading of one of the pages in Chronicle Security.\nDescription: We are experiencing an issue with Chronicle Security beginning on Friday, 2024-05-24 07:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2024-05-24 16:00 US/Pacific with current details.\nDiagnosis: Customers may see failure in the loading of the Curated Detections page. Customers in the impacted region may also experience delays in curated rules, and elevated latency in retrieving detections.\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          }
+        ]
+      },
+      {
         "created": "2024-05-24T19:38:09+00:00",
-        "modified": "2024-05-24T19:38:13+00:00",
+        "modified": "2024-05-24T20:54:03+00:00",
         "when": "2024-05-24T19:38:09+00:00",
         "text": "Summary: Failure in loading of one of the pages in Chronicle Security.\nDescription: We are experiencing an issue with Chronicle Security beginning on Friday, 2024-05-24 07:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2024-05-24 14:00 US/Pacific with current details.\nDiagnosis: Customers may see failure in the loading of the Curated Detections page. Customers in the impacted region may also experience delays in curated rules, and elevated latency in retrieving detections.\nWorkaround: None at this time.",
         "status": "SERVICE_INFORMATION",
@@ -56,10 +69,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-05-24T19:38:09+00:00",
-      "modified": "2024-05-24T19:38:13+00:00",
-      "when": "2024-05-24T19:38:09+00:00",
-      "text": "Summary: Failure in loading of one of the pages in Chronicle Security.\nDescription: We are experiencing an issue with Chronicle Security beginning on Friday, 2024-05-24 07:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2024-05-24 14:00 US/Pacific with current details.\nDiagnosis: Customers may see failure in the loading of the Curated Detections page. Customers in the impacted region may also experience delays in curated rules, and elevated latency in retrieving detections.\nWorkaround: None at this time.",
+      "created": "2024-05-24T20:54:03+00:00",
+      "modified": "2024-05-24T20:54:06+00:00",
+      "when": "2024-05-24T20:54:03+00:00",
+      "text": "Summary: Failure in loading of one of the pages in Chronicle Security.\nDescription: We are experiencing an issue with Chronicle Security beginning on Friday, 2024-05-24 07:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2024-05-24 16:00 US/Pacific with current details.\nDiagnosis: Customers may see failure in the loading of the Curated Detections page. Customers in the impacted region may also experience delays in curated rules, and elevated latency in retrieving detections.\nWorkaround: None at this time.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
@@ -90,15 +103,23 @@
   {
     "id": "g1qS6Fj8LihRWYQmCjDJ",
     "number": "3592887658658343689",
-    "begin": "2024-05-24T10:57:49+00:00",
+    "begin": "2024-05-24T10:53:00+00:00",
     "created": "2024-05-24T11:16:49+00:00",
-    "end": "2024-05-24T16:36:40+00:00",
-    "modified": "2024-05-24T16:36:44+00:00",
+    "end": "2024-05-24T16:30:00+00:00",
+    "modified": "2024-05-24T21:05:36+00:00",
     "external_desc": "EdgeContainer API cannot create and upgrade clusters",
     "updates": [
       {
+        "created": "2024-05-24T21:04:48+00:00",
+        "modified": "2024-05-24T21:05:36+00:00",
+        "when": "2024-05-24T21:04:48+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 24 May, 2024 03:53\n**Incident End:** 24 May, 2024 09:30\n**Duration:** 5 hours, 36 minutes\n**Affected Services and Features:** Google Distributed Cloud Edge\n**Regions/Zones:** Global\n**Description:**\nGoogle Distributed Cloud Edge users were unable to execute cluster creation and cluster upgrade globally for a duration of 5 hours, 36 minutes.\nFrom preliminary analysis, the root cause of the issue was activation of “safe mode” in a backend system that GDCE depends upon for initiation of certain management operations. These management operations that are blocked by the safe mode activation include certain components of the workflows corresponding to cluster creation and upgrade.\n**Customer Impact:**\nDuring the incident timeframe users in GDC connected regions were unable to\n- Execute cluster creation\n- Upgrade clusters\nThe incident only prevented the operations listed above from being executed, it did not affect existing clusters or normal cluster operations.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-05-24T16:36:40+00:00",
-        "modified": "2024-05-24T16:36:45+00:00",
+        "modified": "2024-05-24T21:04:48+00:00",
         "when": "2024-05-24T16:36:40+00:00",
         "text": "The issue with Google Distributed Cloud Edge has been resolved for all affected users as of Friday, 2024-05-24 09:36 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -1195,10 +1216,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-05-24T16:36:40+00:00",
-      "modified": "2024-05-24T16:36:45+00:00",
-      "when": "2024-05-24T16:36:40+00:00",
-      "text": "The issue with Google Distributed Cloud Edge has been resolved for all affected users as of Friday, 2024-05-24 09:36 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2024-05-24T21:04:48+00:00",
+      "modified": "2024-05-24T21:05:36+00:00",
+      "when": "2024-05-24T21:04:48+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 24 May, 2024 03:53\n**Incident End:** 24 May, 2024 09:30\n**Duration:** 5 hours, 36 minutes\n**Affected Services and Features:** Google Distributed Cloud Edge\n**Regions/Zones:** Global\n**Description:**\nGoogle Distributed Cloud Edge users were unable to execute cluster creation and cluster upgrade globally for a duration of 5 hours, 36 minutes.\nFrom preliminary analysis, the root cause of the issue was activation of “safe mode” in a backend system that GDCE depends upon for initiation of certain management operations. These management operations that are blocked by the safe mode activation include certain components of the workflows corresponding to cluster creation and upgrade.\n**Customer Impact:**\nDuring the incident timeframe users in GDC connected regions were unable to\n- Execute cluster creation\n- Upgrade clusters\nThe incident only prevented the operations listed above from being executed, it did not affect existing clusters or normal cluster operations.",
       "status": "AVAILABLE",
       "affected_locations": []
     },
