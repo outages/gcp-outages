@@ -15228,6 +15228,91 @@
     ]
   },
   {
+    "id": "JAxa64hv45yMYzCpqx1T",
+    "number": "2264297634052042910",
+    "begin": "2024-02-29T07:50:00+00:00",
+    "created": "2024-02-29T15:34:33+00:00",
+    "end": "2024-02-29T17:50:00+00:00",
+    "modified": "2024-02-29T20:51:47+00:00",
+    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
+    "updates": [
+      {
+        "created": "2024-02-29T20:51:19+00:00",
+        "modified": "2024-02-29T20:51:19+00:00",
+        "when": "2024-02-29T20:51:19+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T16:21:00+00:00",
+        "modified": "2024-02-29T16:21:08+00:00",
+        "when": "2024-02-29T16:21:00+00:00",
+        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T15:34:29+00:00",
+        "modified": "2024-02-29T15:34:36+00:00",
+        "when": "2024-02-29T15:34:29+00:00",
+        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2024-02-29T20:51:19+00:00",
+      "modified": "2024-02-29T20:51:19+00:00",
+      "when": "2024-02-29T20:51:19+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Multi-region: us",
+          "id": "us"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Chronicle Security",
+        "id": "FHwvkSZ6RzzDYAvDZXMM"
+      },
+      {
+        "title": "Chronicle SOAR",
+        "id": "GTT16Lf72XZKWArC9VxA"
+      }
+    ],
+    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Multi-region: us",
+        "id": "us"
+      }
+    ]
+  },
+  {
     "id": "M2qQyWWU9FKvVc2FfcaH",
     "number": "184633653096742397",
     "begin": "2024-02-29T07:50:00+00:00",
@@ -15330,91 +15415,6 @@
       }
     ],
     "uri": "incidents/M2qQyWWU9FKvVc2FfcaH",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Multi-region: us",
-        "id": "us"
-      }
-    ]
-  },
-  {
-    "id": "JAxa64hv45yMYzCpqx1T",
-    "number": "2264297634052042910",
-    "begin": "2024-02-29T07:50:00+00:00",
-    "created": "2024-02-29T15:34:33+00:00",
-    "end": "2024-02-29T17:50:00+00:00",
-    "modified": "2024-02-29T20:51:47+00:00",
-    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
-    "updates": [
-      {
-        "created": "2024-02-29T20:51:19+00:00",
-        "modified": "2024-02-29T20:51:19+00:00",
-        "when": "2024-02-29T20:51:19+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T16:21:00+00:00",
-        "modified": "2024-02-29T16:21:08+00:00",
-        "when": "2024-02-29T16:21:00+00:00",
-        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T15:34:29+00:00",
-        "modified": "2024-02-29T15:34:36+00:00",
-        "when": "2024-02-29T15:34:29+00:00",
-        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2024-02-29T20:51:19+00:00",
-      "modified": "2024-02-29T20:51:19+00:00",
-      "when": "2024-02-29T20:51:19+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Chronicle Security",
-        "id": "FHwvkSZ6RzzDYAvDZXMM"
-      },
-      {
-        "title": "Chronicle SOAR",
-        "id": "GTT16Lf72XZKWArC9VxA"
-      }
-    ],
-    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -98147,125 +98147,6 @@
       {
         "title": "Los Angeles (us-west2)",
         "id": "us-west2"
-      }
-    ]
-  },
-  {
-    "id": "DyCcy7iGtWqLYEyJBWrC",
-    "number": "2563377151792424535",
-    "begin": "2023-06-04T13:02:00+00:00",
-    "created": "2023-06-04T13:40:50+00:00",
-    "end": "2023-06-04T14:45:00+00:00",
-    "modified": "2023-06-06T14:27:02+00:00",
-    "external_desc": "us-east1: Multiple Google Cloud Services Impacted",
-    "updates": [
-      {
-        "created": "2023-06-06T14:26:50+00:00",
-        "modified": "2023-06-06T14:26:50+00:00",
-        "when": "2023-06-06T14:26:50+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 4 June 2023 06:02\n**Incident End:** 4 June 2023 07:45\n**Duration:** 1 hour, 43 minutes\n**Affected Services and Features:**\nGoogle Compute Engine, Google Kubernetes Engine, Google Cloud Dataflow, Google Cloud SQL\n**Regions/Zones:** us-east1-b, us-east1-c, and us-east1-d\n**Description:**\nGoogle Compute Engine experienced errors and elevated latency when creating, deleting, or updating instances. This also impacted Google Kubernetes Engine, Google Cloud Dataflow and Google Cloud SQL.\nThe issue started after a partial failure of cooling systems in the region. During the mitigation process, one of the internal infrastructure components used to manage compute resources was accidentally disabled. Google engineering team shall review the internal procedures to ensure mitigation processes are applied as intended.\n**Customer Impact:**\n- **Google Kubernetes Engine:** Affected customers were unable to create, upgrade or delete new clusters, or create new node pools.\n- **Google Compute Engine:** Affected customers were unable to create or delete instances. However, instances that were already running were unaffected.\n- **Google Cloud Dataflow:** Affected customers experienced issues launching jobs (both batch and streaming jobs) due to the inability to launch instances for worker pools. Existing jobs may have experienced slowness due to the inability to scale up worker pools.\n- **Google Cloud SQL:** Affected customers were unable to create, recreate, or update instances.\n---",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-04T15:18:52+00:00",
-        "modified": "2023-06-04T15:18:54+00:00",
-        "when": "2023-06-04T15:18:52+00:00",
-        "text": "The issue with Google Cloud Dataflow, Google Cloud SQL, Google Compute Engine, Google Kubernetes Engine has been resolved for all affected users as of Sunday, 2023-06-04 08:14 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-04T14:52:25+00:00",
-        "modified": "2023-06-04T14:52:26+00:00",
-        "when": "2023-06-04T14:52:25+00:00",
-        "text": "Summary: us-east1: Multiple Google Cloud Services Impacted\nDescription: Google Cloud experienced a cooling issue in one of its data centers. During mitigation, steps were taken that caused elevated latency and failures of instance creation operations in some zones in us-east1. Teams are investigating whether additional services are impacted by the event.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Sunday, 2023-06-04 09:00 US/Pacific with current details.\nDiagnosis: GCE - Customers may see elevated latency and failures when creating instances in us-east1-b, us-east1-c, or us-east1-d.\nDataFlow - Customers may experience issues launching batch jobs and will need to be relaunched. Streaming jobs may experience latency.\nWorkaround: GCE - Customers can create VMs in zone us-east1-a or another region.\nDataFlow - None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-04T14:27:34+00:00",
-        "modified": "2023-06-04T14:27:37+00:00",
-        "when": "2023-06-04T14:27:34+00:00",
-        "text": "Summary: us-east1: GCE instance creation failures\nDescription: Google Compute Engine experienced a cooling issue in one of its data centers. During mitigation, steps were taken that caused elevated latency and failures of instance creation operations in some zones in us-east1. Teams are investigating whether VM performance is impacted by the event.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Sunday, 2023-06-04 08:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may see elevated latency and failures when creating instances in us-east1-b, us-east1-c, or us-east1-d.\nWorkaround: Customers can create VMs in zone us-east1-a or another region.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-04T13:40:48+00:00",
-        "modified": "2023-06-04T13:40:51+00:00",
-        "when": "2023-06-04T13:40:48+00:00",
-        "text": "Summary: We are investigating a problem with GCE VM creation in us-east1 region\nDescription: We are experiencing an issue with Google Compute Engine.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Sunday, 2023-06-04 07:15 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2023-06-06T14:26:50+00:00",
-      "modified": "2023-06-06T14:26:50+00:00",
-      "when": "2023-06-06T14:26:50+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 4 June 2023 06:02\n**Incident End:** 4 June 2023 07:45\n**Duration:** 1 hour, 43 minutes\n**Affected Services and Features:**\nGoogle Compute Engine, Google Kubernetes Engine, Google Cloud Dataflow, Google Cloud SQL\n**Regions/Zones:** us-east1-b, us-east1-c, and us-east1-d\n**Description:**\nGoogle Compute Engine experienced errors and elevated latency when creating, deleting, or updating instances. This also impacted Google Kubernetes Engine, Google Cloud Dataflow and Google Cloud SQL.\nThe issue started after a partial failure of cooling systems in the region. During the mitigation process, one of the internal infrastructure components used to manage compute resources was accidentally disabled. Google engineering team shall review the internal procedures to ensure mitigation processes are applied as intended.\n**Customer Impact:**\n- **Google Kubernetes Engine:** Affected customers were unable to create, upgrade or delete new clusters, or create new node pools.\n- **Google Compute Engine:** Affected customers were unable to create or delete instances. However, instances that were already running were unaffected.\n- **Google Cloud Dataflow:** Affected customers experienced issues launching jobs (both batch and streaming jobs) due to the inability to launch instances for worker pools. Existing jobs may have experienced slowness due to the inability to scale up worker pools.\n- **Google Cloud SQL:** Affected customers were unable to create, recreate, or update instances.\n---",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "South Carolina (us-east1)",
-          "id": "us-east1"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Google Compute Engine",
-        "id": "L3ggmi3Jy4xJmgodFA9K"
-      },
-      {
-        "title": "Google Kubernetes Engine",
-        "id": "LCSbT57h59oR4W98NHuz"
-      },
-      {
-        "title": "Google Cloud Dataflow",
-        "id": "T9bFoXPqG8w8g1YbWTKY"
-      },
-      {
-        "title": "Google Cloud SQL",
-        "id": "hV87iK5DcEXKgWU2kDri"
-      }
-    ],
-    "uri": "incidents/DyCcy7iGtWqLYEyJBWrC",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "South Carolina (us-east1)",
-        "id": "us-east1"
       }
     ]
   }
