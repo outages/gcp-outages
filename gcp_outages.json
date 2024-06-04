@@ -4,12 +4,25 @@
     "number": "3089702292998495295",
     "begin": "2024-06-04T04:46:18+00:00",
     "created": "2024-06-04T06:01:45+00:00",
-    "modified": "2024-06-04T06:01:46+00:00",
-    "external_desc": "Google Cloud Task is experiencing elevated errors while executing the task APIs in the us-central1 region.",
+    "modified": "2024-06-04T06:38:47+00:00",
+    "external_desc": "Google Cloud Task and Cloud Scheduler are experiencing elevated errors while executing the task APIs in the us-central1 region.",
     "updates": [
       {
+        "created": "2024-06-04T06:38:43+00:00",
+        "modified": "2024-06-04T06:38:48+00:00",
+        "when": "2024-06-04T06:38:43+00:00",
+        "text": "Summary: Google Cloud Task and Cloud Scheduler are experiencing elevated errors while executing the task APIs in the us-central1 region.\nDescription: Our engineering teams are actively working to implement the mitigation fix.\n**The mitigation has been completed for the Google Cloud Scheduler, Customer would see the service recovery.**\nThe mitigation for Google Cloud Task is underway and expected to be completed by Tuesday, 2024-06-04 00:15 US/Pacific.\nWe will provide more information by Tuesday, 2024-06-04 00:45 US/Pacific.\nDiagnosis: The impacted customers in the us-central1 region would experience increased errors when using Tasks API and for Task execution. This may result in tasks not being processed as expected, leading to delays or failures in dependent processes.\nAdditionally, there were failures for some scheduler jobs execution which is not mitigated.\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
         "created": "2024-06-04T06:01:42+00:00",
-        "modified": "2024-06-04T06:01:46+00:00",
+        "modified": "2024-06-04T06:38:47+00:00",
         "when": "2024-06-04T06:01:42+00:00",
         "text": "Summary: Google Cloud Task is experiencing elevated errors while executing the task APIs in the us-central1 region.\nDescription: Our engineering teams are actively working to implement the mitigation fix.\nThe mitigation fix is expected to be completed by Tuesday, 2024-06-04 00:00 US/Pacific.\nWe will provide more information by Tuesday, 2024-06-04 00:30 US/Pacific.\nDiagnosis: The impacted customers in the us-central1 region would experience increased errors when using Tasks API and for Task execution. This may result in tasks not being processed as expected, leading to delays or failures in dependent processes.\nWorkaround: None at this time.",
         "status": "SERVICE_INFORMATION",
@@ -22,10 +35,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-06-04T06:01:42+00:00",
-      "modified": "2024-06-04T06:01:46+00:00",
-      "when": "2024-06-04T06:01:42+00:00",
-      "text": "Summary: Google Cloud Task is experiencing elevated errors while executing the task APIs in the us-central1 region.\nDescription: Our engineering teams are actively working to implement the mitigation fix.\nThe mitigation fix is expected to be completed by Tuesday, 2024-06-04 00:00 US/Pacific.\nWe will provide more information by Tuesday, 2024-06-04 00:30 US/Pacific.\nDiagnosis: The impacted customers in the us-central1 region would experience increased errors when using Tasks API and for Task execution. This may result in tasks not being processed as expected, leading to delays or failures in dependent processes.\nWorkaround: None at this time.",
+      "created": "2024-06-04T06:38:43+00:00",
+      "modified": "2024-06-04T06:38:48+00:00",
+      "when": "2024-06-04T06:38:43+00:00",
+      "text": "Summary: Google Cloud Task and Cloud Scheduler are experiencing elevated errors while executing the task APIs in the us-central1 region.\nDescription: Our engineering teams are actively working to implement the mitigation fix.\n**The mitigation has been completed for the Google Cloud Scheduler, Customer would see the service recovery.**\nThe mitigation for Google Cloud Task is underway and expected to be completed by Tuesday, 2024-06-04 00:15 US/Pacific.\nWe will provide more information by Tuesday, 2024-06-04 00:45 US/Pacific.\nDiagnosis: The impacted customers in the us-central1 region would experience increased errors when using Tasks API and for Task execution. This may result in tasks not being processed as expected, leading to delays or failures in dependent processes.\nAdditionally, there were failures for some scheduler jobs execution which is not mitigated.\nWorkaround: None at this time.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
@@ -36,9 +49,13 @@
     },
     "status_impact": "SERVICE_INFORMATION",
     "severity": "low",
-    "service_key": "tMWyzhyKK4rAzAf7x62h",
-    "service_name": "Google Cloud Tasks",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
     "affected_products": [
+      {
+        "title": "Google Cloud Scheduler",
+        "id": "Y9fKAQ6BVTQUYomrNN9A"
+      },
       {
         "title": "Google Cloud Tasks",
         "id": "tMWyzhyKK4rAzAf7x62h"
