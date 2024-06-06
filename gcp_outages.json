@@ -5,12 +5,20 @@
     "begin": "2024-06-06T11:27:58+00:00",
     "created": "2024-06-06T11:51:16+00:00",
     "end": "2024-06-06T13:47:23+00:00",
-    "modified": "2024-06-06T13:47:34+00:00",
+    "modified": "2024-06-06T16:10:28+00:00",
     "external_desc": "Apigee Edge customers may observe 5xx errors in us-central1 region",
     "updates": [
       {
+        "created": "2024-06-06T16:10:28+00:00",
+        "modified": "2024-06-06T16:10:28+00:00",
+        "when": "2024-06-06T16:10:28+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 6 June 2024 00:00\n**Incident End:** 6 June 2024 06:00\n**Duration:** 6 hours\n**Affected Services and Features:**\nApigee Edge Public Cloud\n**Regions/Zones:** us-central1\n**Description:**\nApigee Edge Public Cloud customers located in the us-central1 region observed errors and their traffic may have been interrupted. From preliminary analysis, the root cause of the issue is a misconfiguration of the Apigee Edge NATs (Network Address Translation) that caused the expected Elastic IPs not to be present on the NAT nodes.\n**Customer Impact:**\nApigee Edge Public Cloud customers located in the us-central1 region experienced:\nErrors for all traffic routed through the affected NAT instances\nTraffic interruptions\n**Additional details:**\nElastic IPs attached to NAT instances in us-central1 were unintentionally removed. A manual fix was applied to reattach the correct Elastic IPs.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-06-06T13:47:23+00:00",
-        "modified": "2024-06-06T13:47:41+00:00",
+        "modified": "2024-06-06T16:10:28+00:00",
         "when": "2024-06-06T13:47:23+00:00",
         "text": "The issue with Apigee Edge has been resolved for all affected users as of Thursday, 2024-06-06 06:30 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -70,10 +78,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-06-06T13:47:23+00:00",
-      "modified": "2024-06-06T13:47:41+00:00",
-      "when": "2024-06-06T13:47:23+00:00",
-      "text": "The issue with Apigee Edge has been resolved for all affected users as of Thursday, 2024-06-06 06:30 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2024-06-06T16:10:28+00:00",
+      "modified": "2024-06-06T16:10:28+00:00",
+      "when": "2024-06-06T16:10:28+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 6 June 2024 00:00\n**Incident End:** 6 June 2024 06:00\n**Duration:** 6 hours\n**Affected Services and Features:**\nApigee Edge Public Cloud\n**Regions/Zones:** us-central1\n**Description:**\nApigee Edge Public Cloud customers located in the us-central1 region observed errors and their traffic may have been interrupted. From preliminary analysis, the root cause of the issue is a misconfiguration of the Apigee Edge NATs (Network Address Translation) that caused the expected Elastic IPs not to be present on the NAT nodes.\n**Customer Impact:**\nApigee Edge Public Cloud customers located in the us-central1 region experienced:\nErrors for all traffic routed through the affected NAT instances\nTraffic interruptions\n**Additional details:**\nElastic IPs attached to NAT instances in us-central1 were unintentionally removed. A manual fix was applied to reattach the correct Elastic IPs.",
       "status": "AVAILABLE",
       "affected_locations": []
     },
