@@ -5,12 +5,20 @@
     "begin": "2024-06-11T01:07:17+00:00",
     "created": "2024-06-11T01:36:37+00:00",
     "end": "2024-06-11T03:09:07+00:00",
-    "modified": "2024-06-11T03:09:10+00:00",
+    "modified": "2024-06-11T16:11:12+00:00",
     "external_desc": "Issue with BigQuery Streaming API and Cloud Logging in US Multiregion",
     "updates": [
       {
+        "created": "2024-06-11T16:11:12+00:00",
+        "modified": "2024-06-11T16:11:12+00:00",
+        "when": "2024-06-11T16:11:12+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n(All Times US/Pacific)\n**Incident Start:** 10 June 2024 16:45\n**Incident End:** 10 June 2024 20:00\n**Duration:** 3 hours and 15 minutes\n**Affected Services and Features:**\nGoogle BigQuery and Google Cloud Logging\n**Regions/Zones:** Multi-regions: US\n**Description:**\nBigQuery experienced elevated errors across multiple APIs in the US Multi-region due to the concurrent mitigation of simultaneous degradations, which impacted the BigQuery projects hosted in two degraded clusters. Google will complete a full IR in the following days that will provide a full root cause.\n**Customer Impact:**\nBigQuery: A subset of customers would have experienced HTTP 500 errors while executing calls to insertAll and storage write APIs in the US Multi-region. Additionally, some customers may have experienced system errors using the Jobs and Query API.\nCloud Logging: Cloud Logging customers using Log Analytics faced log ingestion delays up to 2 hours for their analytics buckets if they ingested logs via Cloud regions us-central1 or us-central2. Logs Explorer queries in the Google Cloud console were not impacted.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-06-11T03:09:07+00:00",
-        "modified": "2024-06-11T03:09:11+00:00",
+        "modified": "2024-06-11T16:11:12+00:00",
         "when": "2024-06-11T03:09:07+00:00",
         "text": "The issue with Cloud Logging, Google BigQuery has been resolved for all affected users as of Monday, 2024-06-10 20:00 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -44,10 +52,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-06-11T03:09:07+00:00",
-      "modified": "2024-06-11T03:09:11+00:00",
-      "when": "2024-06-11T03:09:07+00:00",
-      "text": "The issue with Cloud Logging, Google BigQuery has been resolved for all affected users as of Monday, 2024-06-10 20:00 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2024-06-11T16:11:12+00:00",
+      "modified": "2024-06-11T16:11:12+00:00",
+      "when": "2024-06-11T16:11:12+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n(All Times US/Pacific)\n**Incident Start:** 10 June 2024 16:45\n**Incident End:** 10 June 2024 20:00\n**Duration:** 3 hours and 15 minutes\n**Affected Services and Features:**\nGoogle BigQuery and Google Cloud Logging\n**Regions/Zones:** Multi-regions: US\n**Description:**\nBigQuery experienced elevated errors across multiple APIs in the US Multi-region due to the concurrent mitigation of simultaneous degradations, which impacted the BigQuery projects hosted in two degraded clusters. Google will complete a full IR in the following days that will provide a full root cause.\n**Customer Impact:**\nBigQuery: A subset of customers would have experienced HTTP 500 errors while executing calls to insertAll and storage write APIs in the US Multi-region. Additionally, some customers may have experienced system errors using the Jobs and Query API.\nCloud Logging: Cloud Logging customers using Log Analytics faced log ingestion delays up to 2 hours for their analytics buckets if they ingested logs via Cloud regions us-central1 or us-central2. Logs Explorer queries in the Google Cloud console were not impacted.",
       "status": "AVAILABLE",
       "affected_locations": []
     },
