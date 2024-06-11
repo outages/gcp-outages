@@ -4,12 +4,25 @@
     "number": "6102218050934964879",
     "begin": "2024-06-11T01:07:17+00:00",
     "created": "2024-06-11T01:36:37+00:00",
-    "modified": "2024-06-11T01:36:37+00:00",
-    "external_desc": "Issue with BigQuery Streaming API and Cloud Logging",
+    "modified": "2024-06-11T02:06:44+00:00",
+    "external_desc": "Issue with BigQuery Streaming API and Cloud Logging in US Multiregion",
     "updates": [
       {
+        "created": "2024-06-11T02:06:40+00:00",
+        "modified": "2024-06-11T02:06:45+00:00",
+        "when": "2024-06-11T02:06:40+00:00",
+        "text": "Summary: Issue with BigQuery Streaming API and Cloud Logging in US Multiregion\nDescription: Google engineers are working on mitigating the problem and we are observing the error rate for the impacted APIs dropping. We are closely monitoring the progress of the problem mitigation.\nWe will provide more information by Monday, 2024-06-10 20:30 US/Pacific.\nDiagnosis: Google BigQuery: Customers impacted by this issue may see 500 errors while executing BigQuery statements.\nCloud Logging: Ingestion delays to analytics buckets with local global. Logs Explorer queries are not affected.\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
         "created": "2024-06-11T01:36:34+00:00",
-        "modified": "2024-06-11T01:36:37+00:00",
+        "modified": "2024-06-11T02:06:40+00:00",
         "when": "2024-06-11T01:36:34+00:00",
         "text": "Summary: Issue with BigQuery Streaming API and Cloud Logging\nDescription: We are experiencing an issue with Google BigQuery Streaming API, Cloud Logging beginning on Monday, 2024-06-10 16:46 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2024-06-10 18:59 US/Pacific with current details.\nDiagnosis: Google BigQuery: Customers impacted by this issue may see 500 errors while executing BigQuery statements.\nCloud Logging: Ingestion delays to analytics buckets with local global. Logs Explorer queries are not affected.\nWorkaround: None at this time.",
         "status": "SERVICE_OUTAGE",
@@ -22,10 +35,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-06-11T01:36:34+00:00",
-      "modified": "2024-06-11T01:36:37+00:00",
-      "when": "2024-06-11T01:36:34+00:00",
-      "text": "Summary: Issue with BigQuery Streaming API and Cloud Logging\nDescription: We are experiencing an issue with Google BigQuery Streaming API, Cloud Logging beginning on Monday, 2024-06-10 16:46 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2024-06-10 18:59 US/Pacific with current details.\nDiagnosis: Google BigQuery: Customers impacted by this issue may see 500 errors while executing BigQuery statements.\nCloud Logging: Ingestion delays to analytics buckets with local global. Logs Explorer queries are not affected.\nWorkaround: None at this time.",
+      "created": "2024-06-11T02:06:40+00:00",
+      "modified": "2024-06-11T02:06:45+00:00",
+      "when": "2024-06-11T02:06:40+00:00",
+      "text": "Summary: Issue with BigQuery Streaming API and Cloud Logging in US Multiregion\nDescription: Google engineers are working on mitigating the problem and we are observing the error rate for the impacted APIs dropping. We are closely monitoring the progress of the problem mitigation.\nWe will provide more information by Monday, 2024-06-10 20:30 US/Pacific.\nDiagnosis: Google BigQuery: Customers impacted by this issue may see 500 errors while executing BigQuery statements.\nCloud Logging: Ingestion delays to analytics buckets with local global. Logs Explorer queries are not affected.\nWorkaround: None at this time.",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
