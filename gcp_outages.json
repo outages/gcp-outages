@@ -4,12 +4,25 @@
     "number": "3908792195560824591",
     "begin": "2024-06-13T17:46:52+00:00",
     "created": "2024-06-13T18:04:28+00:00",
-    "modified": "2024-06-13T20:23:26+00:00",
+    "modified": "2024-06-13T21:38:08+00:00",
     "external_desc": "Chronicle Security is experiencing delays with BigQuery exports, Multi event rules, and Normalization in US multi-region",
     "updates": [
       {
+        "created": "2024-06-13T21:38:08+00:00",
+        "modified": "2024-06-13T21:38:10+00:00",
+        "when": "2024-06-13T21:38:08+00:00",
+        "text": "Summary: Chronicle Security is experiencing delays with BigQuery exports, Multi event rules, and Normalization in US multi-region\nDescription: We have completed mitigations for BigQuery export delay and multi event rules, after which we have been observing a steady reduction in delays. We expect the delays to completely subside in the next 5 hours.\nOur engineers have been able to successfully identify the reason for Normalization delays and have applied the required mitigation. We expect any related delays to be completely mitigated in the next 6 hours.\nWe will provide more information by Thursday, 2024-06-13 20:00 US/Pacific.\nDiagnosis:\n- Chronicle security is experiencing delays in Big Query Export, in the processing of Multi event rules, and delays in Normalization (The process of converting a raw log to a UDM record) in the US multi region.\n- Single event rules are still being processed and Unified Data Model (UDM) Search and Raw Log Search are still available.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
         "created": "2024-06-13T20:23:25+00:00",
-        "modified": "2024-06-13T20:23:28+00:00",
+        "modified": "2024-06-13T21:38:08+00:00",
         "when": "2024-06-13T20:23:25+00:00",
         "text": "Summary: Chronicle Security is experiencing delays with BigQuery exports, Multi event rules, and Normalization in US multi-region\nDescription: We have completed mitigations for BigQuery export delay and multi event rules and we are seeing gradual reduction in delays. We expect the delays to completely subside in the next 6 hours.\nThe Normalization delays is being investigated by our engineering team.\nWe will provide more information by Thursday, 2024-06-13 15:00 US/Pacific.\nDiagnosis:\n- Chronicle security is experiencing delays in Big Query Export, in the processing of Multi event rules, and delays in Normalization (The process of converting a raw log to a UDM record) in the US multi region.\n- Single event rules are still being processed and Unified Data Model (UDM) Search and Raw Log Search are still available.\nWorkaround: None at this time.",
         "status": "SERVICE_DISRUPTION",
@@ -48,10 +61,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-06-13T20:23:25+00:00",
-      "modified": "2024-06-13T20:23:28+00:00",
-      "when": "2024-06-13T20:23:25+00:00",
-      "text": "Summary: Chronicle Security is experiencing delays with BigQuery exports, Multi event rules, and Normalization in US multi-region\nDescription: We have completed mitigations for BigQuery export delay and multi event rules and we are seeing gradual reduction in delays. We expect the delays to completely subside in the next 6 hours.\nThe Normalization delays is being investigated by our engineering team.\nWe will provide more information by Thursday, 2024-06-13 15:00 US/Pacific.\nDiagnosis:\n- Chronicle security is experiencing delays in Big Query Export, in the processing of Multi event rules, and delays in Normalization (The process of converting a raw log to a UDM record) in the US multi region.\n- Single event rules are still being processed and Unified Data Model (UDM) Search and Raw Log Search are still available.\nWorkaround: None at this time.",
+      "created": "2024-06-13T21:38:08+00:00",
+      "modified": "2024-06-13T21:38:10+00:00",
+      "when": "2024-06-13T21:38:08+00:00",
+      "text": "Summary: Chronicle Security is experiencing delays with BigQuery exports, Multi event rules, and Normalization in US multi-region\nDescription: We have completed mitigations for BigQuery export delay and multi event rules, after which we have been observing a steady reduction in delays. We expect the delays to completely subside in the next 5 hours.\nOur engineers have been able to successfully identify the reason for Normalization delays and have applied the required mitigation. We expect any related delays to be completely mitigated in the next 6 hours.\nWe will provide more information by Thursday, 2024-06-13 20:00 US/Pacific.\nDiagnosis:\n- Chronicle security is experiencing delays in Big Query Export, in the processing of Multi event rules, and delays in Normalization (The process of converting a raw log to a UDM record) in the US multi region.\n- Single event rules are still being processed and Unified Data Model (UDM) Search and Raw Log Search are still available.\nWorkaround: None at this time.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
