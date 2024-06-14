@@ -138,15 +138,23 @@
   {
     "id": "HcNDMn4YeG57exykghT7",
     "number": "14640709118330191358",
-    "begin": "2024-06-12T21:20:35+00:00",
+    "begin": "2024-06-12T19:06:00+00:00",
     "created": "2024-06-12T21:48:30+00:00",
-    "end": "2024-06-13T00:21:54+00:00",
-    "modified": "2024-06-13T00:21:58+00:00",
+    "end": "2024-06-12T22:59:00+00:00",
+    "modified": "2024-06-14T15:50:39+00:00",
     "external_desc": "Vertex AI Online Prediction, Dialogflow CX, and Agent Assist are experiencing elevated error rates in multiple regions.",
     "updates": [
       {
+        "created": "2024-06-14T15:48:56+00:00",
+        "modified": "2024-06-14T15:50:39+00:00",
+        "when": "2024-06-14T15:48:56+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 June, 2024 12:06\n**Incident End:** 12 June, 2024 15:59\n**Duration:** 3 hours, 53 minutes\n**Affected Services and Features:**\nVertex AI Online Prediction\nDialogflow CX\nAgent Assist\nContact Centre AI\n**Regions/Zones:** us-central1, asia-southeast1, europe-west3, europe-west4, us-east1, us-west1, northamerica-northeast1, us-east4\n**Description:**\nGoogle Vertex AI, Dialogflow, Agent Assist users experienced elevated errors in multiple regions, impacting the respective product functionality for the duration of 3 hours, 53 minutes. From preliminary analysis, the root cause of the issue was a bug in the recent change to the Vertex AI online prediction platform that led to issues with processing generative requests. A proactive fix was rolled out while new issues were being reported. The incident was validated as resolved once the rollout was complete.\n**Customer Impact:**\n**Vertex AI Online Prediction:**\nGoogle Vertex AI experienced high latency and elevated 500, 502 error rates, while executing prediction tasks.\nCustomers may have also experienced failure in running prediction requests with “CANCELLED” errors.\n**Dialogflow CX**\nDialogflow CX Generators, Generative Fallback, and ML entities experienced elevated “INTERNAL” and “DEADLINE_EXCEEDED” errors and in some cases timeouts.\n**Agent Assist:**\nAgent Assist features including (Proactive) Generative Knowledge Assist experienced elevated error rates in LLM Summarization and topic modeling features, including Summarization baseline V2 and Summarization with custom sections (powered by generator).\n**Contact Center AI:**\nContact Center AI Insights features including LLM summarization and LLM topic modeling also experienced elevated error rates.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-06-13T00:21:54+00:00",
-        "modified": "2024-06-13T00:21:59+00:00",
+        "modified": "2024-06-14T15:48:56+00:00",
         "when": "2024-06-13T00:21:54+00:00",
         "text": "The issue with Agent Assist, Dialogflow CX, Vertex AI Online Prediction has been resolved for all affected projects as of Wednesday, 2024-06-12 17:21 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -262,10 +270,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-06-13T00:21:54+00:00",
-      "modified": "2024-06-13T00:21:59+00:00",
-      "when": "2024-06-13T00:21:54+00:00",
-      "text": "The issue with Agent Assist, Dialogflow CX, Vertex AI Online Prediction has been resolved for all affected projects as of Wednesday, 2024-06-12 17:21 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2024-06-14T15:48:56+00:00",
+      "modified": "2024-06-14T15:50:39+00:00",
+      "when": "2024-06-14T15:48:56+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 June, 2024 12:06\n**Incident End:** 12 June, 2024 15:59\n**Duration:** 3 hours, 53 minutes\n**Affected Services and Features:**\nVertex AI Online Prediction\nDialogflow CX\nAgent Assist\nContact Centre AI\n**Regions/Zones:** us-central1, asia-southeast1, europe-west3, europe-west4, us-east1, us-west1, northamerica-northeast1, us-east4\n**Description:**\nGoogle Vertex AI, Dialogflow, Agent Assist users experienced elevated errors in multiple regions, impacting the respective product functionality for the duration of 3 hours, 53 minutes. From preliminary analysis, the root cause of the issue was a bug in the recent change to the Vertex AI online prediction platform that led to issues with processing generative requests. A proactive fix was rolled out while new issues were being reported. The incident was validated as resolved once the rollout was complete.\n**Customer Impact:**\n**Vertex AI Online Prediction:**\nGoogle Vertex AI experienced high latency and elevated 500, 502 error rates, while executing prediction tasks.\nCustomers may have also experienced failure in running prediction requests with “CANCELLED” errors.\n**Dialogflow CX**\nDialogflow CX Generators, Generative Fallback, and ML entities experienced elevated “INTERNAL” and “DEADLINE_EXCEEDED” errors and in some cases timeouts.\n**Agent Assist:**\nAgent Assist features including (Proactive) Generative Knowledge Assist experienced elevated error rates in LLM Summarization and topic modeling features, including Summarization baseline V2 and Summarization with custom sections (powered by generator).\n**Contact Center AI:**\nContact Center AI Insights features including LLM summarization and LLM topic modeling also experienced elevated error rates.",
       "status": "AVAILABLE",
       "affected_locations": []
     },
