@@ -16815,91 +16815,6 @@
     ]
   },
   {
-    "id": "JAxa64hv45yMYzCpqx1T",
-    "number": "2264297634052042910",
-    "begin": "2024-02-29T07:50:00+00:00",
-    "created": "2024-02-29T15:34:33+00:00",
-    "end": "2024-02-29T17:50:00+00:00",
-    "modified": "2024-02-29T20:51:47+00:00",
-    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
-    "updates": [
-      {
-        "created": "2024-02-29T20:51:19+00:00",
-        "modified": "2024-02-29T20:51:19+00:00",
-        "when": "2024-02-29T20:51:19+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T16:21:00+00:00",
-        "modified": "2024-02-29T16:21:08+00:00",
-        "when": "2024-02-29T16:21:00+00:00",
-        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T15:34:29+00:00",
-        "modified": "2024-02-29T15:34:36+00:00",
-        "when": "2024-02-29T15:34:29+00:00",
-        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2024-02-29T20:51:19+00:00",
-      "modified": "2024-02-29T20:51:19+00:00",
-      "when": "2024-02-29T20:51:19+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Chronicle Security",
-        "id": "FHwvkSZ6RzzDYAvDZXMM"
-      },
-      {
-        "title": "Chronicle SOAR",
-        "id": "GTT16Lf72XZKWArC9VxA"
-      }
-    ],
-    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Multi-region: us",
-        "id": "us"
-      }
-    ]
-  },
-  {
     "id": "M2qQyWWU9FKvVc2FfcaH",
     "number": "184633653096742397",
     "begin": "2024-02-29T07:50:00+00:00",
@@ -17002,6 +16917,91 @@
       }
     ],
     "uri": "incidents/M2qQyWWU9FKvVc2FfcaH",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Multi-region: us",
+        "id": "us"
+      }
+    ]
+  },
+  {
+    "id": "JAxa64hv45yMYzCpqx1T",
+    "number": "2264297634052042910",
+    "begin": "2024-02-29T07:50:00+00:00",
+    "created": "2024-02-29T15:34:33+00:00",
+    "end": "2024-02-29T17:50:00+00:00",
+    "modified": "2024-02-29T20:51:47+00:00",
+    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
+    "updates": [
+      {
+        "created": "2024-02-29T20:51:19+00:00",
+        "modified": "2024-02-29T20:51:19+00:00",
+        "when": "2024-02-29T20:51:19+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T16:21:00+00:00",
+        "modified": "2024-02-29T16:21:08+00:00",
+        "when": "2024-02-29T16:21:00+00:00",
+        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T15:34:29+00:00",
+        "modified": "2024-02-29T15:34:36+00:00",
+        "when": "2024-02-29T15:34:29+00:00",
+        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2024-02-29T20:51:19+00:00",
+      "modified": "2024-02-29T20:51:19+00:00",
+      "when": "2024-02-29T20:51:19+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Multi-region: us",
+          "id": "us"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Chronicle Security",
+        "id": "FHwvkSZ6RzzDYAvDZXMM"
+      },
+      {
+        "title": "Chronicle SOAR",
+        "id": "GTT16Lf72XZKWArC9VxA"
+      }
+    ],
+    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -90067,276 +90067,6 @@
       {
         "title": "Las Vegas (us-west4)",
         "id": "us-west4"
-      }
-    ]
-  },
-  {
-    "id": "X3683kovx3cNYjorkosn",
-    "number": "3514459853692940751",
-    "begin": "2023-06-19T14:29:00+00:00",
-    "created": "2023-06-19T18:02:13+00:00",
-    "end": "2023-06-19T21:14:00+00:00",
-    "modified": "2023-06-28T17:10:55+00:00",
-    "external_desc": "Multiple products reporting 403 access denied issue in us-west1 and multiregion-us",
-    "updates": [
-      {
-        "created": "2023-06-28T17:10:55+00:00",
-        "modified": "2023-06-28T17:10:55+00:00",
-        "when": "2023-06-28T17:10:55+00:00",
-        "text": "# Incident Report\n## Summary\nOn 19 June 2023 at 07:29 US/Pacific, some Google Cloud customers in us-west1 and multiregion-us received intermittent “403 access denied errors” while using Google Kubernetes Engine (GKE) or attempting to access Google Cloud Storage (GCS) for a duration of 6 hours and 45 minutes.\n## Root Cause\nGoogle Cloud’s common authentication infrastructure provides short-lived, forwardable internal credentials for establishing user presence. Production jobs use a public key to verify the signature from this authentication platform. This public key is periodically rotated to increase security.\nIn this case, updated public keys were successfully rolled out to >99.99% of machines but failed to roll out to one machine before the previous keys became stale. Tasks scheduled on machines with stale keys returned an internal authentication failure that was translated to an access-denied error (HTTP 403) in the us-west1 region and the US-multi-region. This resulted in a small number of customers experiencing intermittent access denied errors despite having correct credentials.\n## Remediation and Prevention\nGoogle engineers were alerted to the issue via a customer support case on 19 June 2023 at 07:29 US/Pacific and immediately started an investigation. Engineers identified an affected machine that was using a stale public key as part of our internal authentication infrastructure. Engineers took standard mitigating actions, by stopping the serving path process within 10 minutes of identifying the affected machine, and confirmed full mitigation within another 4 minutes. Services were fully recovered on 19 June 2023 at 14:14 US/Pacific,\nGoogle is committed to preventing future recurrence, and we are taking the following actions:\n- Immediately complete an audit of all machines containing public keys to find the rare cases of unobserved stale public keys and reinstall those machines to prevent unnecessary authorization failures.\n- Optimize detection of stale public keys.\n- Design and implement a long term solution eliminating rare edge case failures in key rotation for Cloud authentication infrastructure.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-20T23:50:35+00:00",
-        "modified": "2023-06-20T23:50:35+00:00",
-        "when": "2023-06-20T23:50:35+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 19 June 2023 at 07:29\n**Incident End:** 19 June 2023 at 14:14\n**Duration:** 6 hours, 45 minutes\n**Affected Services and Features:**\nGoogle Kubernetes Engine (GKE), Google Cloud Storage (GCS)\n**Regions/Zones:** us-west1, multiregion-us\n**Description:**\nGoogle Kubernetes Engine in the us-west1 region and Google Cloud Storage services in us-west1 and multiregion-us regions returned intermittent 403 errors for customers for a period of 6 hours and 45 minutes.\nFrom our preliminary analysis, the incident was caused by inconsistent keys being used by one of our machines as part of our internal authenticator infrastructure. This led to a failure to verify all requests that were handled by the affected machine.\nGoogle will share a full Incident Report in the following days that will provide a detailed root cause. Google is immediately starting an audit of other machines containing authorization tokens to ensure that the incident is not repeated. We are also working on a permanent fix to prevent this situation from happening in the future, and improving our ability to quickly detect this issue if it ever happens again.\n**Customer Impact:**\nGoogle Cloud Storage customers in the impacted regions would have received intermittent 403 errors on accessing and/or writing into the GCS bucket. Customers may have also received errors stating that the request had invalid authentication credentials, despite using a valid account.\nA small amount of Google Kubernetes Engine customers in the us-west1 region may have received intermittent 403 errors on GKE node when calling GKE APIs.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-19T21:54:25+00:00",
-        "modified": "2023-06-19T21:54:26+00:00",
-        "when": "2023-06-19T21:54:25+00:00",
-        "text": "The issue with Google Cloud Storage, Google Kubernetes Engine has been resolved for all affected projects as of Monday, 2023-06-19 14:13 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-19T21:42:01+00:00",
-        "modified": "2023-06-19T21:42:03+00:00",
-        "when": "2023-06-19T21:42:01+00:00",
-        "text": "Summary: Multiple products reporting 403 access denied issue in us-west1 and multiregion-us\nDescription: We are experiencing an issue with GCS and GKE products beginning on Monday, 2023-06-19 7:30 US/Pacific.\nMitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Monday, 2023-06-19 15:15 US/Pacific.\nDiagnosis: Customers may experience 403 access denied errors while accessing these products\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-19T21:16:53+00:00",
-        "modified": "2023-06-19T21:16:54+00:00",
-        "when": "2023-06-19T21:16:53+00:00",
-        "text": "Summary: Multiple products reporting 403 access denied issue in us-west1 and multiregion-us\nDescription: We are experiencing an issue with GCS and GKE products beginning on Monday, 2023-06-19 7:30 US/Pacific.\nOur engineering team continues to investigate the root cause of the issue. We have not confirmed any impact on other Google Cloud services. We continue to investigate.\nWe will provide an update by Monday, 2023-06-19 14:45 US/Pacific with current details.\nDiagnosis: Customers may experience 403 access denied errors while accessing these products\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-19T20:42:58+00:00",
-        "modified": "2023-06-19T20:43:00+00:00",
-        "when": "2023-06-19T20:42:58+00:00",
-        "text": "Summary: Multiple products reporting 403 access denied issue in us-west1 and multiregion-us\nDescription: We are experiencing an issue with GCS and GKE products beginning on Monday, 2023-06-19 7:30 US/Pacific.\nOur engineering team continues to investigate the root cause of the issue. We have not confirmed any impact on other Google Cloud services. We continue to investigate.\nWe will provide an update by Monday, 2023-06-19 14:15 US/Pacific with current details.\nDiagnosis: Customers may experience 403 access denied errors while accessing these products\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-19T20:13:24+00:00",
-        "modified": "2023-06-19T20:13:25+00:00",
-        "when": "2023-06-19T20:13:24+00:00",
-        "text": "Summary: Multiple products reporting 403 access denied issue in us-west1 and multiregion-us\nDescription: We are experiencing an issue with GCS and GKE products beginning on Monday, 2023-06-19 7:30 US/Pacific.\nOur engineering team continues to investigate the root cause of the issue. We are also investigating any impact on all our GCP products and making sure they are functioning as expected.\nWe will provide an update by Monday, 2023-06-19 13:45 US/Pacific with current details.\nDiagnosis: Customers may experience 403 access denied errors while accessing these products\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-19T19:43:18+00:00",
-        "modified": "2023-06-19T19:43:20+00:00",
-        "when": "2023-06-19T19:43:18+00:00",
-        "text": "Summary: Multiple products reporting 403 access denied issue in us-west1 and multiregion-us\nDescription: We are experiencing an issue with GCS and GKE products beginning on Monday, 2023-06-19 7:30 US/Pacific.\nOur engineering team continues to investigate the root cause of the issue.\nWe will provide an update by Monday, 2023-06-19 13:15 US/Pacific with current details.\nDiagnosis: Customers may experience 403 access denied errors while accessing these products\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-19T19:14:20+00:00",
-        "modified": "2023-06-19T19:14:21+00:00",
-        "when": "2023-06-19T19:14:20+00:00",
-        "text": "Summary: Multiple products reporting 403 access denied issue in us-west1 and multiregion-us\nDescription: We are experiencing an issue with GCS and GKE products beginning at Monday, 2023-06-19 7:30 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2023-06-19 12:45 US/Pacific with current details.\nDiagnosis: Customers may experience 403 access denied errors while accessing these products\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-19T18:33:15+00:00",
-        "modified": "2023-06-19T18:33:17+00:00",
-        "when": "2023-06-19T18:33:15+00:00",
-        "text": "Summary: Multiple products reporting 403 access denied issue in us-west1 and multiregion-us\nDescription: We are experiencing an issue with multiple products beginning at Monday, 2023-06-19 7:30 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2023-06-19 12:15 US/Pacific with current details.\nDiagnosis: Customers may experience 403 access denied errors while accessing these products\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-19T18:15:50+00:00",
-        "modified": "2023-06-19T18:15:52+00:00",
-        "when": "2023-06-19T18:15:50+00:00",
-        "text": "Summary: We are investigating a potential issue with multiple products in us-west1 and us-west2 regions\nDescription: We are experiencing an issue with multiple products beginning at Monday, 2023-06-19 7:30 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2023-06-19 12:00 US/Pacific with current details.\nDiagnosis: Customers may experience 403 access denied errors while accessing these products\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-19T18:02:06+00:00",
-        "modified": "2023-06-19T18:02:16+00:00",
-        "when": "2023-06-19T18:02:06+00:00",
-        "text": "Summary: We are investigating a potential issue with multiple products in us-west1 and us-west2 regions\nDescription: We are experiencing an issue with Google Kubernetes Engine, Google Cloud Storage beginning at Monday, 2023-06-19 7:38 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2023-06-19 11:59 US/Pacific with current details.\nDiagnosis: Customers may experience 403 access denied errors while accessing these products\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2023-06-28T17:10:55+00:00",
-      "modified": "2023-06-28T17:10:55+00:00",
-      "when": "2023-06-28T17:10:55+00:00",
-      "text": "# Incident Report\n## Summary\nOn 19 June 2023 at 07:29 US/Pacific, some Google Cloud customers in us-west1 and multiregion-us received intermittent “403 access denied errors” while using Google Kubernetes Engine (GKE) or attempting to access Google Cloud Storage (GCS) for a duration of 6 hours and 45 minutes.\n## Root Cause\nGoogle Cloud’s common authentication infrastructure provides short-lived, forwardable internal credentials for establishing user presence. Production jobs use a public key to verify the signature from this authentication platform. This public key is periodically rotated to increase security.\nIn this case, updated public keys were successfully rolled out to >99.99% of machines but failed to roll out to one machine before the previous keys became stale. Tasks scheduled on machines with stale keys returned an internal authentication failure that was translated to an access-denied error (HTTP 403) in the us-west1 region and the US-multi-region. This resulted in a small number of customers experiencing intermittent access denied errors despite having correct credentials.\n## Remediation and Prevention\nGoogle engineers were alerted to the issue via a customer support case on 19 June 2023 at 07:29 US/Pacific and immediately started an investigation. Engineers identified an affected machine that was using a stale public key as part of our internal authentication infrastructure. Engineers took standard mitigating actions, by stopping the serving path process within 10 minutes of identifying the affected machine, and confirmed full mitigation within another 4 minutes. Services were fully recovered on 19 June 2023 at 14:14 US/Pacific,\nGoogle is committed to preventing future recurrence, and we are taking the following actions:\n- Immediately complete an audit of all machines containing public keys to find the rare cases of unobserved stale public keys and reinstall those machines to prevent unnecessary authorization failures.\n- Optimize detection of stale public keys.\n- Design and implement a long term solution eliminating rare edge case failures in key rotation for Cloud authentication infrastructure.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        },
-        {
-          "title": "Oregon (us-west1)",
-          "id": "us-west1"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Google Kubernetes Engine",
-        "id": "LCSbT57h59oR4W98NHuz"
-      },
-      {
-        "title": "Google Cloud Storage",
-        "id": "UwaYoXQ5bHYHG6EdiPB8"
-      }
-    ],
-    "uri": "incidents/X3683kovx3cNYjorkosn",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Belgium (europe-west1)",
-        "id": "europe-west1"
-      },
-      {
-        "title": "Multi-region: us",
-        "id": "us"
-      },
-      {
-        "title": "Oregon (us-west1)",
-        "id": "us-west1"
-      },
-      {
-        "title": "Los Angeles (us-west2)",
-        "id": "us-west2"
       }
     ]
   }
