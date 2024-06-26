@@ -52,12 +52,29 @@
     "number": "1065855965479054690",
     "begin": "2024-06-26T14:27:17+00:00",
     "created": "2024-06-26T14:57:35+00:00",
-    "modified": "2024-06-26T18:15:45+00:00",
+    "modified": "2024-06-26T22:24:46+00:00",
     "external_desc": "Chronicle Security is experiencing data ingestion delay for some 3rd party API feeds in the US region.",
     "updates": [
       {
+        "created": "2024-06-26T22:24:46+00:00",
+        "modified": "2024-06-26T22:24:49+00:00",
+        "when": "2024-06-26T22:24:46+00:00",
+        "text": "Summary: Chronicle Security is experiencing data ingestion delay for some 3rd party API feeds in the US region.\nDescription: Mitigation work is currently underway by our engineering team.\nMandiant Managed Defense is also impacted due this incident.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2024-06-26 19:30 US/Pacific.\nDiagnosis: Data ingestion is delayed by > 17 hours for some 3rd party API feeds.\nWorkaround: None at this time",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          },
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
         "created": "2024-06-26T18:15:45+00:00",
-        "modified": "2024-06-26T18:15:48+00:00",
+        "modified": "2024-06-26T22:24:46+00:00",
         "when": "2024-06-26T18:15:45+00:00",
         "text": "Summary: Chronicle Security is experiencing data ingestion delay for some 3rd party API feeds in the US region.\nDescription: Mitigation work is currently underway by our engineering team.\nMandiant Managed Defense is also impacted due this incident.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2024-06-26 15:30 US/Pacific.\nDiagnosis: Data ingestion is delayed by > 17 hours for some 3rd party API feeds.\nWorkaround: None at this time",
         "status": "SERVICE_DISRUPTION",
@@ -113,10 +130,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-06-26T18:15:45+00:00",
-      "modified": "2024-06-26T18:15:48+00:00",
-      "when": "2024-06-26T18:15:45+00:00",
-      "text": "Summary: Chronicle Security is experiencing data ingestion delay for some 3rd party API feeds in the US region.\nDescription: Mitigation work is currently underway by our engineering team.\nMandiant Managed Defense is also impacted due this incident.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2024-06-26 15:30 US/Pacific.\nDiagnosis: Data ingestion is delayed by > 17 hours for some 3rd party API feeds.\nWorkaround: None at this time",
+      "created": "2024-06-26T22:24:46+00:00",
+      "modified": "2024-06-26T22:24:49+00:00",
+      "when": "2024-06-26T22:24:46+00:00",
+      "text": "Summary: Chronicle Security is experiencing data ingestion delay for some 3rd party API feeds in the US region.\nDescription: Mitigation work is currently underway by our engineering team.\nMandiant Managed Defense is also impacted due this incident.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2024-06-26 19:30 US/Pacific.\nDiagnosis: Data ingestion is delayed by > 17 hours for some 3rd party API feeds.\nWorkaround: None at this time",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
@@ -2170,12 +2187,20 @@
     "begin": "2024-06-11T01:07:17+00:00",
     "created": "2024-06-11T01:36:37+00:00",
     "end": "2024-06-11T03:09:07+00:00",
-    "modified": "2024-06-11T16:11:12+00:00",
+    "modified": "2024-06-26T22:08:25+00:00",
     "external_desc": "Issue with BigQuery Streaming API and Cloud Logging in US Multiregion",
     "updates": [
       {
+        "created": "2024-06-26T22:08:25+00:00",
+        "modified": "2024-06-26T22:08:25+00:00",
+        "when": "2024-06-26T22:08:25+00:00",
+        "text": "# Incident Report\n## Summary\nBetween Thursday, 30 May 2024 and Thursday, 13 June 2024 at 23:45 US/Pacific on, BigQuery customers experienced elevated query latencies across the multiregions:us and multiregions:eu. As a result, operations requiring compute resources (queries, loads, extracts) would have also experienced resource contention during the same period, and some customers with queries or operations relying on the BigQuery Autoscaler would have been unable to scale up to the desired limits.\nAdditionally, between 16:46 to 20:00 US/Pacific on Monday, 10 June 2024, BigQuery experienced elevated errors across multiple APIs (Jobs, Query, Load, Extract, Storage Read and Write APIs) in the multiregion:us region.\n## Root Cause\nBigQuery uses a distributed shuffle infrastructure for execution of large and complex joins, aggregations and analytic operations needed for query execution. Shuffle storage is a tiered architecture, optimizing for storing data in-memory, but uses SSD then HDD as backing stores to flush to as the aggregate needs increase. The incident was caused by a combination of factors.\n1. Colossus, Google's distributed file system [1] , was migrating to a newer version. This migration caused a gradual increase in traffic to the new system per zone across the fleet.\n2. The SSD cache configuration for flushing was not appropriately set up for the newer file system version.\n3. As a result, BigQuery gradually lost portions of its SSD cache in the relevant zones, proportional to the traffic migrated to the new system.\n4. Queries needing to flush to disk experienced increased latency as flushing directly to HDD increasingly dominated.\nDiverting the network traffic from an affected zone is a mitigation usually taken while determining the root cause of a problem. However, an operator error resulted in reduction of capacity in multiple zones simultaneously on Monday 10 June, 2024 at 16:46 US/Pacific. This led to elevated errors across BigQuery APIs until 20:00 PST the same day when the impact of excessive traffic redirection was mitigated.\n[1] : https://cloud.google.com/blog/products/storage-data-transfer/a-peek-behind-colossus-googles-file-system\n## Remediation and Prevention\n* At 10:23 US/Pacific on Thursday, 30 May 2024, Google engineers were alerted to occasional increased latency of operations materializing data into storage in one zone in the US region. BigQuery automation redirected traffic out of the zone and investigation started to find the root cause.\n* By Wednesday, 5 June 2024, Google engineers expedited the investigation by coordinating between BigQuery engineering and several GCP infrastructure teams.\n* By Monday, 10 June 2024, other BigQuery zones alerted for similar symptoms, with automation being prevented from redirecting traffic as mitigation. Customer reports of slowness began accumulating.\n* **[Wider Impact Starts]** At 16:46 on Monday, 10 June, 2024, an excessive redirection of traffic erroneously occurred. At 18:07 US/Pacific, the incident escalated further with multiple infrastructure, BigQuery engineering, and incident and customer management teams involved.\n* At 18:28 the excessive traffic redirection was rectified. Google engineers then took several actions to quickly absorb the incoming traffic by adding front end capacity and shifting traffic between zones while internal caches recovered.\n* **[Wider Impact Fully Mitigated]** At 20:00 on Monday, 10 June, 2024, traffic returned to baseline before the major sub-incident. Elevated incident management to root cause the original symptoms of storage slowness continued.\n* Due to the nature of the root cause, zone traffic redirection which is the fastest and most reliable mitigation for users impacted by a zone slowness caused the problem to shift to other BigQuery customers elsewhere. This unfortunately complicated investigation and remediation for users during the investigation and extended the duration of impact until the true root cause and trigger were identified.\n* **[Incident Fully Mitigated]** At 21:00, on Thursday June 13, 2024, the fundamental root cause of the gradual loss of SSD caching, and its secondary and tertiary impact on shuffle flush performance and query latency was confirmed. Google engineers rectified the SSD cache configuration (the size of which was already increased in many zones as mitigation) and the incident was fully mitigated.\nWe apologize for the length and severity of this incident. We are taking immediate steps to prevent a recurrence and improve reliability in the future.\n* **Enhanced Detection :** - Enhance BigQuery’s telemetry to detect anomalies in SSD cache utilization faster and more efficiently.\n* Increase the SSD cache capacity for BigQuery Shuffle flushing across the fleet and rectify the SSD cache configuration to restore shuffle flushing performance to shorten mitigation time for any future occurrences.\n* **Preventive Action Items :** - Increase the safeguards against excessive traffic redirection by any means (manual and automatic). - Improve BigQuery’s resilience to sudden increases in traffic for the Streaming APIs to recover faster.\n## Detailed Description of Impact\n**BigQuery:**\n* A subset of customers would have experienced 500 errors while executing calls to insertAll and storage write APIs in the US Multi-region. Additionally, some customers may have experienced system errors using the Jobs and Query API.\n* BigQuery customers would have also experienced periods of reduced query performance and longer latencies. As a side effect, resource contention within user reservations would have also increased.\n* Some BigQuery customers experienced periods of inability to scale up resources using the BigQuery Autoscaler consistently.\n**Cloud Logging:** Ingestion delays to analytics buckets with local global. Logs Explorer queries were not affected.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-06-11T16:11:12+00:00",
-        "modified": "2024-06-11T16:11:12+00:00",
+        "modified": "2024-06-26T22:08:25+00:00",
         "when": "2024-06-11T16:11:12+00:00",
         "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n(All Times US/Pacific)\n**Incident Start:** 10 June 2024 16:45\n**Incident End:** 10 June 2024 20:00\n**Duration:** 3 hours and 15 minutes\n**Affected Services and Features:**\nGoogle BigQuery and Google Cloud Logging\n**Regions/Zones:** Multi-regions: US\n**Description:**\nBigQuery experienced elevated errors across multiple APIs in the US Multi-region due to the concurrent mitigation of simultaneous degradations, which impacted the BigQuery projects hosted in two degraded clusters. Google will complete a full IR in the following days that will provide a full root cause.\n**Customer Impact:**\nBigQuery: A subset of customers would have experienced HTTP 500 errors while executing calls to insertAll and storage write APIs in the US Multi-region. Additionally, some customers may have experienced system errors using the Jobs and Query API.\nCloud Logging: Cloud Logging customers using Log Analytics faced log ingestion delays up to 2 hours for their analytics buckets if they ingested logs via Cloud regions us-central1 or us-central2. Logs Explorer queries in the Google Cloud console were not impacted.",
         "status": "AVAILABLE",
@@ -2217,10 +2242,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-06-11T16:11:12+00:00",
-      "modified": "2024-06-11T16:11:12+00:00",
-      "when": "2024-06-11T16:11:12+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n(All Times US/Pacific)\n**Incident Start:** 10 June 2024 16:45\n**Incident End:** 10 June 2024 20:00\n**Duration:** 3 hours and 15 minutes\n**Affected Services and Features:**\nGoogle BigQuery and Google Cloud Logging\n**Regions/Zones:** Multi-regions: US\n**Description:**\nBigQuery experienced elevated errors across multiple APIs in the US Multi-region due to the concurrent mitigation of simultaneous degradations, which impacted the BigQuery projects hosted in two degraded clusters. Google will complete a full IR in the following days that will provide a full root cause.\n**Customer Impact:**\nBigQuery: A subset of customers would have experienced HTTP 500 errors while executing calls to insertAll and storage write APIs in the US Multi-region. Additionally, some customers may have experienced system errors using the Jobs and Query API.\nCloud Logging: Cloud Logging customers using Log Analytics faced log ingestion delays up to 2 hours for their analytics buckets if they ingested logs via Cloud regions us-central1 or us-central2. Logs Explorer queries in the Google Cloud console were not impacted.",
+      "created": "2024-06-26T22:08:25+00:00",
+      "modified": "2024-06-26T22:08:25+00:00",
+      "when": "2024-06-26T22:08:25+00:00",
+      "text": "# Incident Report\n## Summary\nBetween Thursday, 30 May 2024 and Thursday, 13 June 2024 at 23:45 US/Pacific on, BigQuery customers experienced elevated query latencies across the multiregions:us and multiregions:eu. As a result, operations requiring compute resources (queries, loads, extracts) would have also experienced resource contention during the same period, and some customers with queries or operations relying on the BigQuery Autoscaler would have been unable to scale up to the desired limits.\nAdditionally, between 16:46 to 20:00 US/Pacific on Monday, 10 June 2024, BigQuery experienced elevated errors across multiple APIs (Jobs, Query, Load, Extract, Storage Read and Write APIs) in the multiregion:us region.\n## Root Cause\nBigQuery uses a distributed shuffle infrastructure for execution of large and complex joins, aggregations and analytic operations needed for query execution. Shuffle storage is a tiered architecture, optimizing for storing data in-memory, but uses SSD then HDD as backing stores to flush to as the aggregate needs increase. The incident was caused by a combination of factors.\n1. Colossus, Google's distributed file system [1] , was migrating to a newer version. This migration caused a gradual increase in traffic to the new system per zone across the fleet.\n2. The SSD cache configuration for flushing was not appropriately set up for the newer file system version.\n3. As a result, BigQuery gradually lost portions of its SSD cache in the relevant zones, proportional to the traffic migrated to the new system.\n4. Queries needing to flush to disk experienced increased latency as flushing directly to HDD increasingly dominated.\nDiverting the network traffic from an affected zone is a mitigation usually taken while determining the root cause of a problem. However, an operator error resulted in reduction of capacity in multiple zones simultaneously on Monday 10 June, 2024 at 16:46 US/Pacific. This led to elevated errors across BigQuery APIs until 20:00 PST the same day when the impact of excessive traffic redirection was mitigated.\n[1] : https://cloud.google.com/blog/products/storage-data-transfer/a-peek-behind-colossus-googles-file-system\n## Remediation and Prevention\n* At 10:23 US/Pacific on Thursday, 30 May 2024, Google engineers were alerted to occasional increased latency of operations materializing data into storage in one zone in the US region. BigQuery automation redirected traffic out of the zone and investigation started to find the root cause.\n* By Wednesday, 5 June 2024, Google engineers expedited the investigation by coordinating between BigQuery engineering and several GCP infrastructure teams.\n* By Monday, 10 June 2024, other BigQuery zones alerted for similar symptoms, with automation being prevented from redirecting traffic as mitigation. Customer reports of slowness began accumulating.\n* **[Wider Impact Starts]** At 16:46 on Monday, 10 June, 2024, an excessive redirection of traffic erroneously occurred. At 18:07 US/Pacific, the incident escalated further with multiple infrastructure, BigQuery engineering, and incident and customer management teams involved.\n* At 18:28 the excessive traffic redirection was rectified. Google engineers then took several actions to quickly absorb the incoming traffic by adding front end capacity and shifting traffic between zones while internal caches recovered.\n* **[Wider Impact Fully Mitigated]** At 20:00 on Monday, 10 June, 2024, traffic returned to baseline before the major sub-incident. Elevated incident management to root cause the original symptoms of storage slowness continued.\n* Due to the nature of the root cause, zone traffic redirection which is the fastest and most reliable mitigation for users impacted by a zone slowness caused the problem to shift to other BigQuery customers elsewhere. This unfortunately complicated investigation and remediation for users during the investigation and extended the duration of impact until the true root cause and trigger were identified.\n* **[Incident Fully Mitigated]** At 21:00, on Thursday June 13, 2024, the fundamental root cause of the gradual loss of SSD caching, and its secondary and tertiary impact on shuffle flush performance and query latency was confirmed. Google engineers rectified the SSD cache configuration (the size of which was already increased in many zones as mitigation) and the incident was fully mitigated.\nWe apologize for the length and severity of this incident. We are taking immediate steps to prevent a recurrence and improve reliability in the future.\n* **Enhanced Detection :** - Enhance BigQuery’s telemetry to detect anomalies in SSD cache utilization faster and more efficiently.\n* Increase the SSD cache capacity for BigQuery Shuffle flushing across the fleet and rectify the SSD cache configuration to restore shuffle flushing performance to shorten mitigation time for any future occurrences.\n* **Preventive Action Items :** - Increase the safeguards against excessive traffic redirection by any means (manual and automatic). - Improve BigQuery’s resilience to sudden increases in traffic for the Streaming APIs to recover faster.\n## Detailed Description of Impact\n**BigQuery:**\n* A subset of customers would have experienced 500 errors while executing calls to insertAll and storage write APIs in the US Multi-region. Additionally, some customers may have experienced system errors using the Jobs and Query API.\n* BigQuery customers would have also experienced periods of reduced query performance and longer latencies. As a side effect, resource contention within user reservations would have also increased.\n* Some BigQuery customers experienced periods of inability to scale up resources using the BigQuery Autoscaler consistently.\n**Cloud Logging:** Ingestion delays to analytics buckets with local global. Logs Explorer queries were not affected.",
       "status": "AVAILABLE",
       "affected_locations": []
     },
@@ -90366,87 +90391,6 @@
       {
         "title": "South Carolina (us-east1)",
         "id": "us-east1"
-      }
-    ]
-  },
-  {
-    "id": "8zoeroQFSrZX9S2mFWsG",
-    "number": "13458119708815977684",
-    "begin": "2023-06-27T19:26:27+00:00",
-    "created": "2023-06-27T19:44:08+00:00",
-    "end": "2023-06-27T22:09:15+00:00",
-    "modified": "2023-06-27T22:09:15+00:00",
-    "external_desc": "Google Cloud Chronicle Security customers may experience ingestion API tasks failing.",
-    "updates": [
-      {
-        "created": "2023-06-27T22:09:10+00:00",
-        "modified": "2023-06-27T22:09:16+00:00",
-        "when": "2023-06-27T22:09:10+00:00",
-        "text": "The issue with Chronicle Security has been resolved for all affected users as of Tuesday, 2023-06-27 14:59 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-27T20:49:07+00:00",
-        "modified": "2023-06-27T20:49:10+00:00",
-        "when": "2023-06-27T20:49:07+00:00",
-        "text": "Summary: Google Cloud Chronicle Security customers may experience ingestion API tasks failing.\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Tuesday, 2023-06-27 14:30 US/Pacific.\nWe will provide more information by Tuesday, 2023-06-27 15:00 US/Pacific.\nDiagnosis: Ingestion of logs should be unavailable since all tasks are down.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      },
-      {
-        "created": "2023-06-27T19:43:57+00:00",
-        "modified": "2023-06-27T19:44:09+00:00",
-        "when": "2023-06-27T19:43:57+00:00",
-        "text": "Summary: Google Cloud Chronicle Security customers may experience ingestion API tasks failing.\nDescription: We are experiencing an issue with Chronicle Security.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2023-06-27 14:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Ingestion of logs should be unavailable since all tasks are down.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2023-06-27T22:09:10+00:00",
-      "modified": "2023-06-27T22:09:16+00:00",
-      "when": "2023-06-27T22:09:10+00:00",
-      "text": "The issue with Chronicle Security has been resolved for all affected users as of Tuesday, 2023-06-27 14:59 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "London (europe-west2)",
-          "id": "europe-west2"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
-    "service_key": "FHwvkSZ6RzzDYAvDZXMM",
-    "service_name": "Chronicle Security",
-    "affected_products": [
-      {
-        "title": "Chronicle Security",
-        "id": "FHwvkSZ6RzzDYAvDZXMM"
-      }
-    ],
-    "uri": "incidents/8zoeroQFSrZX9S2mFWsG",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "London (europe-west2)",
-        "id": "europe-west2"
       }
     ]
   }
