@@ -4,12 +4,25 @@
     "number": "10566857602630374527",
     "begin": "2024-06-25T19:28:59+00:00",
     "created": "2024-06-25T19:48:50+00:00",
-    "modified": "2024-06-26T02:49:25+00:00",
+    "modified": "2024-06-26T04:46:19+00:00",
     "external_desc": "Chronicle Security is experiencing a service degradation with a few features in the US/multiregions.",
     "updates": [
       {
+        "created": "2024-06-26T04:46:19+00:00",
+        "modified": "2024-06-26T04:46:23+00:00",
+        "when": "2024-06-26T04:46:19+00:00",
+        "text": "Summary: Chronicle Security is experiencing a service degradation with a few features in the US/multiregions.\nDescription: We are experiencing an issue with Chronicle Security beginning on Tuesday, 2024-06-25 12:00 US/Pacific.\nOur engineering team has determined the root cause of the issue and has prevented any impact in all regions outside the US multi-region.\nMitigation and restoration is underway to restore full system functionality. We will provide more information by Wednesday, 2024-06-26 02:15 US/Pacific\nDiagnosis: The customers across US/multiregion would experience the following issues with the Raw Log search feature within Chronicle Security Console. However, the remaining features are unaffected by this issue.\n* **Parser UI **: The parser UI is now functioning and displaying active parsers.\n* **Feeds UI**: The feeds UI functionality is degraded in the US region (the feed name is not currently shown).\n* **Raw Log Search Timestamp Selector Malfunction:** * The timestamp selector does not allow users to select earlier dates, limiting search functionality. * A mitigation to this issue is rolling out.\n* **Raw Log Search UI Display Error:** The raw log search UI displays available data for all log types as 0kB.\n* **Raw Log Search Historic Availability:** Raw log search for historic data beyond 48hrs after ingestion is currently unavailable for raw log search. There is no impact to the data integrity of raw logs in Chronicle.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
         "created": "2024-06-26T02:47:09+00:00",
-        "modified": "2024-06-26T02:49:25+00:00",
+        "modified": "2024-06-26T04:46:19+00:00",
         "when": "2024-06-26T02:47:09+00:00",
         "text": "Summary: Chronicle Security is experiencing a service degradation with a few features in the US/multiregions.\nDescription: We are experiencing an issue with Chronicle Security beginning on Tuesday, 2024-06-25 12:00 US/Pacific.\nOur engineering team has determined the root cause of the issue and has prevented any impact in all regions outside the US multi-region.\nMitigation and restoration is underway to restore full system functionality. We will provide more information by Tuesday, 2024-06-25 22:30 US/Pacific\nDiagnosis: The customers across US/multiregion would experience the following issues with the Raw Log search feature within Chronicle Security Console. However, the remaining features are unaffected by this issue.\n* **Parser UI**: The parser UI is now functioning and displaying active parsers.\n* **Feeds UI**: The feeds UI functionality is degraded in the US region (the feed name is not currently shown).\n* **Raw Log Search Timestamp Selector Malfunction:** * The timestamp selector does not allow users to select earlier dates, limiting search functionality. * A mitigation to this issue is rolling out.\n* **Raw Log Search UI Display Error:** The raw log search UI displays available data for all log types as 0kB.\n* **Raw Log Search Historic Availability:** Raw log search for historic data beyond 48hrs after ingestion is currently unavailable for raw log search. There is no impact to the data integrity of raw logs in Chronicle.\nWorkaround: None at this time.",
         "status": "SERVICE_DISRUPTION",
@@ -87,10 +100,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-06-26T02:47:09+00:00",
-      "modified": "2024-06-26T02:49:25+00:00",
-      "when": "2024-06-26T02:47:09+00:00",
-      "text": "Summary: Chronicle Security is experiencing a service degradation with a few features in the US/multiregions.\nDescription: We are experiencing an issue with Chronicle Security beginning on Tuesday, 2024-06-25 12:00 US/Pacific.\nOur engineering team has determined the root cause of the issue and has prevented any impact in all regions outside the US multi-region.\nMitigation and restoration is underway to restore full system functionality. We will provide more information by Tuesday, 2024-06-25 22:30 US/Pacific\nDiagnosis: The customers across US/multiregion would experience the following issues with the Raw Log search feature within Chronicle Security Console. However, the remaining features are unaffected by this issue.\n* **Parser UI**: The parser UI is now functioning and displaying active parsers.\n* **Feeds UI**: The feeds UI functionality is degraded in the US region (the feed name is not currently shown).\n* **Raw Log Search Timestamp Selector Malfunction:** * The timestamp selector does not allow users to select earlier dates, limiting search functionality. * A mitigation to this issue is rolling out.\n* **Raw Log Search UI Display Error:** The raw log search UI displays available data for all log types as 0kB.\n* **Raw Log Search Historic Availability:** Raw log search for historic data beyond 48hrs after ingestion is currently unavailable for raw log search. There is no impact to the data integrity of raw logs in Chronicle.\nWorkaround: None at this time.",
+      "created": "2024-06-26T04:46:19+00:00",
+      "modified": "2024-06-26T04:46:23+00:00",
+      "when": "2024-06-26T04:46:19+00:00",
+      "text": "Summary: Chronicle Security is experiencing a service degradation with a few features in the US/multiregions.\nDescription: We are experiencing an issue with Chronicle Security beginning on Tuesday, 2024-06-25 12:00 US/Pacific.\nOur engineering team has determined the root cause of the issue and has prevented any impact in all regions outside the US multi-region.\nMitigation and restoration is underway to restore full system functionality. We will provide more information by Wednesday, 2024-06-26 02:15 US/Pacific\nDiagnosis: The customers across US/multiregion would experience the following issues with the Raw Log search feature within Chronicle Security Console. However, the remaining features are unaffected by this issue.\n* **Parser UI **: The parser UI is now functioning and displaying active parsers.\n* **Feeds UI**: The feeds UI functionality is degraded in the US region (the feed name is not currently shown).\n* **Raw Log Search Timestamp Selector Malfunction:** * The timestamp selector does not allow users to select earlier dates, limiting search functionality. * A mitigation to this issue is rolling out.\n* **Raw Log Search UI Display Error:** The raw log search UI displays available data for all log types as 0kB.\n* **Raw Log Search Historic Availability:** Raw log search for historic data beyond 48hrs after ingestion is currently unavailable for raw log search. There is no impact to the data integrity of raw logs in Chronicle.\nWorkaround: None at this time.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
