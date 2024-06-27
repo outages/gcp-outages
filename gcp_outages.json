@@ -176,12 +176,21 @@
     "number": "1065855965479054690",
     "begin": "2024-06-26T14:27:17+00:00",
     "created": "2024-06-26T14:57:35+00:00",
-    "modified": "2024-06-27T02:25:05+00:00",
-    "external_desc": "Chronicle Security is experiencing data ingestion delay for some 3rd party API feeds in the US region.",
+    "end": "2024-06-27T05:09:22+00:00",
+    "modified": "2024-06-27T05:09:28+00:00",
+    "external_desc": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/PtQCvMMdqsRLZLbdC11p",
     "updates": [
       {
+        "created": "2024-06-27T05:09:22+00:00",
+        "modified": "2024-06-27T05:09:28+00:00",
+        "when": "2024-06-27T05:09:22+00:00",
+        "text": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/PtQCvMMdqsRLZLbdC11p",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-06-27T02:25:05+00:00",
-        "modified": "2024-06-27T02:25:08+00:00",
+        "modified": "2024-06-27T05:09:22+00:00",
         "when": "2024-06-27T02:25:05+00:00",
         "text": "Summary: Chronicle Security is experiencing data ingestion delay for some 3rd party API feeds in the US region.\nDescription: We believe the issue with Chronicle Security, Mandiant Managed Defense is partially resolved.\nFull resolution (backlog clearance) is expected to complete by Thursday, 2024-06-27 09:00 US/Pacific.\nWe will provide an update by Thursday, 2024-06-27 00:00 US/Pacific with details on the progress.\nDiagnosis: Data ingestion is delayed by > 17 hours for some 3rd party API feeds.\nWorkaround: None at this time",
         "status": "SERVICE_DISRUPTION",
@@ -271,21 +280,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-06-27T02:25:05+00:00",
-      "modified": "2024-06-27T02:25:08+00:00",
-      "when": "2024-06-27T02:25:05+00:00",
-      "text": "Summary: Chronicle Security is experiencing data ingestion delay for some 3rd party API feeds in the US region.\nDescription: We believe the issue with Chronicle Security, Mandiant Managed Defense is partially resolved.\nFull resolution (backlog clearance) is expected to complete by Thursday, 2024-06-27 09:00 US/Pacific.\nWe will provide an update by Thursday, 2024-06-27 00:00 US/Pacific with details on the progress.\nDiagnosis: Data ingestion is delayed by > 17 hours for some 3rd party API feeds.\nWorkaround: None at this time",
-      "status": "SERVICE_DISRUPTION",
-      "affected_locations": [
-        {
-          "title": "Global",
-          "id": "global"
-        },
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
+      "created": "2024-06-27T05:09:22+00:00",
+      "modified": "2024-06-27T05:09:28+00:00",
+      "when": "2024-06-27T05:09:22+00:00",
+      "text": "This incident is being merged with an existing incident. All future updates will be provided there: https://status.cloud.google.com/incidents/PtQCvMMdqsRLZLbdC11p",
+      "status": "AVAILABLE",
+      "affected_locations": []
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
@@ -302,7 +302,8 @@
       }
     ],
     "uri": "incidents/eRgqHQLkbb87LA13Z9wB",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Global",
         "id": "global"
@@ -311,8 +312,7 @@
         "title": "Multi-region: us",
         "id": "us"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "hTx18xZFMjkbrtJkKmdd",
@@ -500,16 +500,20 @@
     "number": "10566857602630374527",
     "begin": "2024-06-25T19:28:59+00:00",
     "created": "2024-06-25T19:48:50+00:00",
-    "modified": "2024-06-26T23:41:30+00:00",
+    "modified": "2024-06-27T05:09:25+00:00",
     "external_desc": "Chronicle Security is experiencing a service degradation with a few features in the US/multiregion.",
     "updates": [
       {
         "created": "2024-06-26T23:41:29+00:00",
-        "modified": "2024-06-26T23:41:31+00:00",
+        "modified": "2024-06-27T05:09:25+00:00",
         "when": "2024-06-26T23:41:29+00:00",
         "text": "Summary: Chronicle Security is experiencing a service degradation with a few features in the US/multiregion.\nDescription: Mitigation work is still underway by our engineering team.\nCurrently the primary impact is to historical raw log searches for data beyond 48 hours, which are not updated with late arriving events.\nOur engineering team is actively working to address the backlog and implement a complete mitigation for users in the affected regions.\nWe will provide more information by Thursday, 2024-06-27 10:00 US/Pacific.\nDiagnosis: Customers across US/multiregion would experience the following issues within Chronicle security. However, the remaining features are unaffected by this issue.\n**Parser UI**: The parser UI is now functioning and displaying active parsers.\n**Feeds UI**: The feeds UI functionality is working as expected\n**Raw Log Search Timestamp Selector Malfunction**: Mitigated and fixed in the production environment\n**Raw Log Search UI Display Error**: Mitigated and fixed in the production environment .\n**Raw Log Search Historic Availability**: Historic data beyond 48hrs after ingestion is available, however such data is not updated with late arriving events. Mitigation is in progress.\n**IOC matches page**: The issue with Feed Source Names not shown correctly is now mitigated.\nWorkaround: None at this time.",
         "status": "SERVICE_DISRUPTION",
         "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          },
           {
             "title": "Multi-region: us",
             "id": "us"
@@ -662,11 +666,15 @@
     ],
     "most_recent_update": {
       "created": "2024-06-26T23:41:29+00:00",
-      "modified": "2024-06-26T23:41:31+00:00",
+      "modified": "2024-06-27T05:09:25+00:00",
       "when": "2024-06-26T23:41:29+00:00",
       "text": "Summary: Chronicle Security is experiencing a service degradation with a few features in the US/multiregion.\nDescription: Mitigation work is still underway by our engineering team.\nCurrently the primary impact is to historical raw log searches for data beyond 48 hours, which are not updated with late arriving events.\nOur engineering team is actively working to address the backlog and implement a complete mitigation for users in the affected regions.\nWe will provide more information by Thursday, 2024-06-27 10:00 US/Pacific.\nDiagnosis: Customers across US/multiregion would experience the following issues within Chronicle security. However, the remaining features are unaffected by this issue.\n**Parser UI**: The parser UI is now functioning and displaying active parsers.\n**Feeds UI**: The feeds UI functionality is working as expected\n**Raw Log Search Timestamp Selector Malfunction**: Mitigated and fixed in the production environment\n**Raw Log Search UI Display Error**: Mitigated and fixed in the production environment .\n**Raw Log Search Historic Availability**: Historic data beyond 48hrs after ingestion is available, however such data is not updated with late arriving events. Mitigation is in progress.\n**IOC matches page**: The issue with Feed Source Names not shown correctly is now mitigated.\nWorkaround: None at this time.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
+        {
+          "title": "Global",
+          "id": "global"
+        },
         {
           "title": "Multi-region: us",
           "id": "us"
@@ -675,16 +683,24 @@
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
-    "service_key": "FHwvkSZ6RzzDYAvDZXMM",
-    "service_name": "Chronicle Security",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
     "affected_products": [
       {
         "title": "Chronicle Security",
         "id": "FHwvkSZ6RzzDYAvDZXMM"
+      },
+      {
+        "title": "Mandiant Managed Defense",
+        "id": "9aKw9s8p43AYeBmo4Gvx"
       }
     ],
     "uri": "incidents/PtQCvMMdqsRLZLbdC11p",
     "currently_affected_locations": [
+      {
+        "title": "Global",
+        "id": "global"
+      },
       {
         "title": "Multi-region: us",
         "id": "us"
