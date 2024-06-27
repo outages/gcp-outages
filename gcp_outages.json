@@ -500,20 +500,16 @@
     "number": "10566857602630374527",
     "begin": "2024-06-25T19:28:59+00:00",
     "created": "2024-06-25T19:48:50+00:00",
-    "modified": "2024-06-27T17:03:22+00:00",
+    "modified": "2024-06-27T18:16:06+00:00",
     "external_desc": "Chronicle Security is experiencing a service degradation with multiple features in the US/multiregion.",
     "updates": [
       {
         "created": "2024-06-27T16:56:12+00:00",
-        "modified": "2024-06-27T17:03:22+00:00",
+        "modified": "2024-06-27T18:16:06+00:00",
         "when": "2024-06-27T16:56:12+00:00",
         "text": "Summary: Chronicle Security is experiencing a service degradation with multiple features in the US/multiregion.\nDescription: The Raw Log Search historic availability issue is now mitigated.\nThe issue of data ingestion delays is resolved for all 3rd party API sources including Mandiant Managed Defense. Backfill for most log types are complete.\nOur engineering team will continue working to backfill data for log types Proofpoint On Demand and Proofpoint Tap Alerts for the timeframe of Tuesday, 2024-06-25 12:30 to Wednesday, 2024–06-26 18:30 US/Pacific.\nThe ETA for completion of the backfills is Friday, 2024-06-28 10:00 US/Pacific.\nWe will provide more information by Thursday, 2024-06-27 14:30 US/Pacific.\nDiagnosis: The customers across US/multiregion would experience the following issues within Chronicle security. However, the remaining features are unaffected by this issue.\n* **Parser UI:** The parser UI functionality is working as expected.\n* **Feeds UI:** The feeds UI functionality is working as expected.\n* **Raw Log Search Timestamp Selector Malfunction:** Mitigated and fixed.\n* **Raw Log Search UI Display Error:** Mitigated and fixed.\n* **Raw Log Search Historic Availability:** Mitigated and fixed.\n* **IOC matches page:** Mitigated and fixed.\n* **Data ingestion:** Delay of > 17 hours for some 3rd party API feeds is now mitigated. Backfill pending for two log types: Proofpoint On Demand and Proofpoint Tap Alerts.\nWorkaround: None at this time.",
         "status": "SERVICE_DISRUPTION",
         "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          },
           {
             "title": "Multi-region: us",
             "id": "us"
@@ -696,15 +692,11 @@
     ],
     "most_recent_update": {
       "created": "2024-06-27T16:56:12+00:00",
-      "modified": "2024-06-27T17:03:22+00:00",
+      "modified": "2024-06-27T18:16:06+00:00",
       "when": "2024-06-27T16:56:12+00:00",
       "text": "Summary: Chronicle Security is experiencing a service degradation with multiple features in the US/multiregion.\nDescription: The Raw Log Search historic availability issue is now mitigated.\nThe issue of data ingestion delays is resolved for all 3rd party API sources including Mandiant Managed Defense. Backfill for most log types are complete.\nOur engineering team will continue working to backfill data for log types Proofpoint On Demand and Proofpoint Tap Alerts for the timeframe of Tuesday, 2024-06-25 12:30 to Wednesday, 2024–06-26 18:30 US/Pacific.\nThe ETA for completion of the backfills is Friday, 2024-06-28 10:00 US/Pacific.\nWe will provide more information by Thursday, 2024-06-27 14:30 US/Pacific.\nDiagnosis: The customers across US/multiregion would experience the following issues within Chronicle security. However, the remaining features are unaffected by this issue.\n* **Parser UI:** The parser UI functionality is working as expected.\n* **Feeds UI:** The feeds UI functionality is working as expected.\n* **Raw Log Search Timestamp Selector Malfunction:** Mitigated and fixed.\n* **Raw Log Search UI Display Error:** Mitigated and fixed.\n* **Raw Log Search Historic Availability:** Mitigated and fixed.\n* **IOC matches page:** Mitigated and fixed.\n* **Data ingestion:** Delay of > 17 hours for some 3rd party API feeds is now mitigated. Backfill pending for two log types: Proofpoint On Demand and Proofpoint Tap Alerts.\nWorkaround: None at this time.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
-        {
-          "title": "Global",
-          "id": "global"
-        },
         {
           "title": "Multi-region: us",
           "id": "us"
@@ -713,24 +705,16 @@
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
+    "service_key": "FHwvkSZ6RzzDYAvDZXMM",
+    "service_name": "Chronicle Security",
     "affected_products": [
       {
         "title": "Chronicle Security",
         "id": "FHwvkSZ6RzzDYAvDZXMM"
-      },
-      {
-        "title": "Mandiant Managed Defense",
-        "id": "9aKw9s8p43AYeBmo4Gvx"
       }
     ],
     "uri": "incidents/PtQCvMMdqsRLZLbdC11p",
     "currently_affected_locations": [
-      {
-        "title": "Global",
-        "id": "global"
-      },
       {
         "title": "Multi-region: us",
         "id": "us"
