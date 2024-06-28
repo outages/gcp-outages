@@ -500,12 +500,21 @@
     "number": "10566857602630374527",
     "begin": "2024-06-25T19:28:59+00:00",
     "created": "2024-06-25T19:48:50+00:00",
-    "modified": "2024-06-28T11:29:48+00:00",
+    "end": "2024-06-28T19:16:58+00:00",
+    "modified": "2024-06-28T19:17:01+00:00",
     "external_desc": "Chronicle Security is experiencing a service degradation with multiple features in the US/multiregion.",
     "updates": [
       {
+        "created": "2024-06-28T19:16:58+00:00",
+        "modified": "2024-06-28T19:17:02+00:00",
+        "when": "2024-06-28T19:16:58+00:00",
+        "text": "The issue with Chronicle Security has been mitigated for all affected users as of Friday, 2024-06-28 11:00AM US/Pacific.\n* Parser UI: The parser UI functionality is working as expected.\n* Feeds UI: The feeds UI functionality is working as expected.\n* Raw Log Search Timestamp Selector Malfunction: Mitigated and fixed.\n* Raw Log Search UI Display Error: Mitigated and fixed.\n* Raw Log Search Historic Availability: Mitigated and fixed.\n* IOC matches page: Mitigated and fixed.\n* Data ingestion: Mitigated and fixed and data backfilled.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-06-28T11:29:48+00:00",
-        "modified": "2024-06-28T11:29:56+00:00",
+        "modified": "2024-06-28T19:17:01+00:00",
         "when": "2024-06-28T11:29:48+00:00",
         "text": "Summary: Chronicle Security is experiencing a service degradation with multiple features in the US/multiregion.\nDescription: The Raw Log Search historic availability issue is now mitigated.\nThe issue of data ingestion delays is resolved for all 3rd party API sources including Mandiant Managed Defense. Backfill for most log types are complete.\nThe backfill for Proofpoint Tap Alerts for the timeframe of Tuesday, 2024-06-25 12:30 to Wednesday, 2024–06-26 18:30 US/Pacific has been successfully completed.\nOur engineering team will continue working to backfill data for log types Proofpoint On Demand for the timeframe of Tuesday, 2024-06-25 12:30 to Wednesday, 2024–06-26 18:30 US/Pacific.\nThe ETA for completion of most of the backfills is Friday, 2024-06-28 13:00 US/Pacific.\nWe will provide more information by Friday, 2024-06-28 14:00 US/Pacific\nDiagnosis: The customers across US/multiregion would experience the following issues within Chronicle security. However, the remaining features are unaffected by this issue.\n**Parser UI:** The parser UI functionality is working as expected.\n**Feeds UI:** The feeds UI functionality is working as expected.\n**Raw Log Search Timestamp Selector Malfunction:** Mitigated and fixed.\n**Raw Log Search UI Display Error:** Mitigated and fixed.\n**Raw Log Search Historic Availability:** Mitigated and fixed.\n**IOC matches page:** Mitigated and fixed.\n**Data ingestion:** Delay of > 17 hours for some 3rd party API feeds is now mitigated. Backfill pending for log types: Proofpoint On Demand\nWorkaround: None at this time.",
         "status": "SERVICE_DISRUPTION",
@@ -755,17 +764,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-06-28T11:29:48+00:00",
-      "modified": "2024-06-28T11:29:56+00:00",
-      "when": "2024-06-28T11:29:48+00:00",
-      "text": "Summary: Chronicle Security is experiencing a service degradation with multiple features in the US/multiregion.\nDescription: The Raw Log Search historic availability issue is now mitigated.\nThe issue of data ingestion delays is resolved for all 3rd party API sources including Mandiant Managed Defense. Backfill for most log types are complete.\nThe backfill for Proofpoint Tap Alerts for the timeframe of Tuesday, 2024-06-25 12:30 to Wednesday, 2024–06-26 18:30 US/Pacific has been successfully completed.\nOur engineering team will continue working to backfill data for log types Proofpoint On Demand for the timeframe of Tuesday, 2024-06-25 12:30 to Wednesday, 2024–06-26 18:30 US/Pacific.\nThe ETA for completion of most of the backfills is Friday, 2024-06-28 13:00 US/Pacific.\nWe will provide more information by Friday, 2024-06-28 14:00 US/Pacific\nDiagnosis: The customers across US/multiregion would experience the following issues within Chronicle security. However, the remaining features are unaffected by this issue.\n**Parser UI:** The parser UI functionality is working as expected.\n**Feeds UI:** The feeds UI functionality is working as expected.\n**Raw Log Search Timestamp Selector Malfunction:** Mitigated and fixed.\n**Raw Log Search UI Display Error:** Mitigated and fixed.\n**Raw Log Search Historic Availability:** Mitigated and fixed.\n**IOC matches page:** Mitigated and fixed.\n**Data ingestion:** Delay of > 17 hours for some 3rd party API feeds is now mitigated. Backfill pending for log types: Proofpoint On Demand\nWorkaround: None at this time.",
-      "status": "SERVICE_DISRUPTION",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
+      "created": "2024-06-28T19:16:58+00:00",
+      "modified": "2024-06-28T19:17:02+00:00",
+      "when": "2024-06-28T19:16:58+00:00",
+      "text": "The issue with Chronicle Security has been mitigated for all affected users as of Friday, 2024-06-28 11:00AM US/Pacific.\n* Parser UI: The parser UI functionality is working as expected.\n* Feeds UI: The feeds UI functionality is working as expected.\n* Raw Log Search Timestamp Selector Malfunction: Mitigated and fixed.\n* Raw Log Search UI Display Error: Mitigated and fixed.\n* Raw Log Search Historic Availability: Mitigated and fixed.\n* IOC matches page: Mitigated and fixed.\n* Data ingestion: Mitigated and fixed and data backfilled.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
+      "affected_locations": []
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
@@ -778,13 +782,13 @@
       }
     ],
     "uri": "incidents/PtQCvMMdqsRLZLbdC11p",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Multi-region: us",
         "id": "us"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "DabTxrTX98aUjxfNMLKc",
