@@ -19188,91 +19188,6 @@
     ]
   },
   {
-    "id": "JAxa64hv45yMYzCpqx1T",
-    "number": "2264297634052042910",
-    "begin": "2024-02-29T07:50:00+00:00",
-    "created": "2024-02-29T15:34:33+00:00",
-    "end": "2024-02-29T17:50:00+00:00",
-    "modified": "2024-02-29T20:51:47+00:00",
-    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
-    "updates": [
-      {
-        "created": "2024-02-29T20:51:19+00:00",
-        "modified": "2024-02-29T20:51:19+00:00",
-        "when": "2024-02-29T20:51:19+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T16:21:00+00:00",
-        "modified": "2024-02-29T16:21:08+00:00",
-        "when": "2024-02-29T16:21:00+00:00",
-        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T15:34:29+00:00",
-        "modified": "2024-02-29T15:34:36+00:00",
-        "when": "2024-02-29T15:34:29+00:00",
-        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2024-02-29T20:51:19+00:00",
-      "modified": "2024-02-29T20:51:19+00:00",
-      "when": "2024-02-29T20:51:19+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Chronicle Security",
-        "id": "FHwvkSZ6RzzDYAvDZXMM"
-      },
-      {
-        "title": "Chronicle SOAR",
-        "id": "GTT16Lf72XZKWArC9VxA"
-      }
-    ],
-    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Multi-region: us",
-        "id": "us"
-      }
-    ]
-  },
-  {
     "id": "M2qQyWWU9FKvVc2FfcaH",
     "number": "184633653096742397",
     "begin": "2024-02-29T07:50:00+00:00",
@@ -19375,6 +19290,91 @@
       }
     ],
     "uri": "incidents/M2qQyWWU9FKvVc2FfcaH",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Multi-region: us",
+        "id": "us"
+      }
+    ]
+  },
+  {
+    "id": "JAxa64hv45yMYzCpqx1T",
+    "number": "2264297634052042910",
+    "begin": "2024-02-29T07:50:00+00:00",
+    "created": "2024-02-29T15:34:33+00:00",
+    "end": "2024-02-29T17:50:00+00:00",
+    "modified": "2024-02-29T20:51:47+00:00",
+    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
+    "updates": [
+      {
+        "created": "2024-02-29T20:51:19+00:00",
+        "modified": "2024-02-29T20:51:19+00:00",
+        "when": "2024-02-29T20:51:19+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T16:21:00+00:00",
+        "modified": "2024-02-29T16:21:08+00:00",
+        "when": "2024-02-29T16:21:00+00:00",
+        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T15:34:29+00:00",
+        "modified": "2024-02-29T15:34:36+00:00",
+        "when": "2024-02-29T15:34:29+00:00",
+        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2024-02-29T20:51:19+00:00",
+      "modified": "2024-02-29T20:51:19+00:00",
+      "when": "2024-02-29T20:51:19+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Multi-region: us",
+          "id": "us"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Chronicle Security",
+        "id": "FHwvkSZ6RzzDYAvDZXMM"
+      },
+      {
+        "title": "Chronicle SOAR",
+        "id": "GTT16Lf72XZKWArC9VxA"
+      }
+    ],
+    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -88276,136 +88276,6 @@
       {
         "title": "Multi-region: us",
         "id": "us"
-      }
-    ]
-  },
-  {
-    "id": "Sen4ACpGsFmquzb8FxRj",
-    "number": "15699221937704792138",
-    "begin": "2023-07-05T01:47:00+00:00",
-    "created": "2023-07-05T03:04:09+00:00",
-    "end": "2023-07-05T04:03:00+00:00",
-    "modified": "2023-07-05T23:35:50+00:00",
-    "external_desc": "Cloud Spanner unavailability or elevated errors",
-    "updates": [
-      {
-        "created": "2023-07-05T23:35:38+00:00",
-        "modified": "2023-07-05T23:35:38+00:00",
-        "when": "2023-07-05T23:35:38+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 4 July 2023 at 18:47\n**Incident End:** 4 July 2023 at 21:03\n**Duration:** 2 hours, 16 minutes\n**Affected Services and Features:**\nCloud Spanner\n**Regions/Zones:** us-central1, asia-south1, europe-west2, europe-west9\n**Description:**\nA limited number of Cloud Spanner users experienced errors while using control plane APIs and while creating new sessions in the us-central1 for a duration of 2 hours and 16 minutes. A limited number of users of europe-west2, europe-west9 and asia-south1 regions were impacted intermittently for a duration of 5 mins between 20:11 and 21:03 PDT. From our preliminary analysis, the root cause was an incorrect configuration in the way operational metadata was handled, causing an overload on metadata operations for the regions mentioned.\n**Customer Impact:** Customers could have experienced one or more of the following :\n- Customers with existing sessions may not have observed any errors, However, upon reconnection, customers may have experienced errors stating “deadline exceeded” when creating new sessions.\n- Errors stating ”deadline exceeded” when using the Control Plane API.\n- Errors or missing entries while viewing their instances and databases in Cloud Console.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          },
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2023-07-05T04:15:22+00:00",
-        "modified": "2023-07-05T04:15:24+00:00",
-        "when": "2023-07-05T04:15:22+00:00",
-        "text": "The issue with Cloud Spanner has been resolved for all affected users as of Tuesday, 2023-07-04 21:09 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2023-07-05T03:48:45+00:00",
-        "modified": "2023-07-05T03:48:47+00:00",
-        "when": "2023-07-05T03:48:45+00:00",
-        "text": "Summary: Cloud Spanner unavailability or elevated errors\nDescription: Starting at 2023-07-04 19:00 US/Pacific, some Cloud Spanner customers started receiving intermittent deadline exceeded errors while creating sessions or querying control plane APIs and missing instances in the cloud console. Existing sessions continue to work. This issue is occurring in the following locations [us-central1] and is currently ongoing. Engineers are working on a resolution.\nWe will provide an update by Tuesday, 2023-07-04 23:00 US/Pacific with current details.\nDiagnosis: Customers may be receiving errors or elevated latencies in query executions\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2023-07-05T03:04:08+00:00",
-        "modified": "2023-07-05T03:50:17+00:00",
-        "when": "2023-07-05T03:04:08+00:00",
-        "text": "Summary: Cloud Spanner unavailability or elevated errors\nDescription: Starting at 2023-07-04 19:00 US/Pacific, a few Cloud Spanner customers began experiencing elevated intermittent latency when reading and writing data to their instances in us-central1. The problem is currently ongoing. Engineers are working on a resolution.\nWe will provide an update by Tuesday, 2023-07-04 21:30 US/Pacific with current details.\nDiagnosis: Customers may be receiving errors or elevated latencies in query executions\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2023-07-05T23:35:38+00:00",
-      "modified": "2023-07-05T23:35:38+00:00",
-      "when": "2023-07-05T23:35:38+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 4 July 2023 at 18:47\n**Incident End:** 4 July 2023 at 21:03\n**Duration:** 2 hours, 16 minutes\n**Affected Services and Features:**\nCloud Spanner\n**Regions/Zones:** us-central1, asia-south1, europe-west2, europe-west9\n**Description:**\nA limited number of Cloud Spanner users experienced errors while using control plane APIs and while creating new sessions in the us-central1 for a duration of 2 hours and 16 minutes. A limited number of users of europe-west2, europe-west9 and asia-south1 regions were impacted intermittently for a duration of 5 mins between 20:11 and 21:03 PDT. From our preliminary analysis, the root cause was an incorrect configuration in the way operational metadata was handled, causing an overload on metadata operations for the regions mentioned.\n**Customer Impact:** Customers could have experienced one or more of the following :\n- Customers with existing sessions may not have observed any errors, However, upon reconnection, customers may have experienced errors stating “deadline exceeded” when creating new sessions.\n- Errors stating ”deadline exceeded” when using the Control Plane API.\n- Errors or missing entries while viewing their instances and databases in Cloud Console.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Mumbai (asia-south1)",
-          "id": "asia-south1"
-        },
-        {
-          "title": "London (europe-west2)",
-          "id": "europe-west2"
-        },
-        {
-          "title": "Paris (europe-west9)",
-          "id": "europe-west9"
-        },
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "EcNGGUgBtBLrtm4mWvqC",
-    "service_name": "Cloud Spanner",
-    "affected_products": [
-      {
-        "title": "Cloud Spanner",
-        "id": "EcNGGUgBtBLrtm4mWvqC"
-      }
-    ],
-    "uri": "incidents/Sen4ACpGsFmquzb8FxRj",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Mumbai (asia-south1)",
-        "id": "asia-south1"
-      },
-      {
-        "title": "London (europe-west2)",
-        "id": "europe-west2"
-      },
-      {
-        "title": "Paris (europe-west9)",
-        "id": "europe-west9"
-      },
-      {
-        "title": "Iowa (us-central1)",
-        "id": "us-central1"
       }
     ]
   }
