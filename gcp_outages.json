@@ -4,12 +4,21 @@
     "number": "17371485787041351543",
     "begin": "2024-07-15T16:29:50+00:00",
     "created": "2024-07-15T17:44:07+00:00",
-    "modified": "2024-07-15T18:07:55+00:00",
+    "end": "2024-07-15T18:50:32+00:00",
+    "modified": "2024-07-15T18:50:39+00:00",
     "external_desc": "us-central1: Elevated Errors and Degraded Query Performance with Monitoring Metrics",
     "updates": [
       {
+        "created": "2024-07-15T18:50:32+00:00",
+        "modified": "2024-07-15T18:50:41+00:00",
+        "when": "2024-07-15T18:50:32+00:00",
+        "text": "The issue with Cloud Monitoring metrics has been resolved for all affected users as of Monday, 2024-07-15 10:52 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-07-15T18:07:54+00:00",
-        "modified": "2024-07-15T18:08:00+00:00",
+        "modified": "2024-07-15T18:50:39+00:00",
         "when": "2024-07-15T18:07:54+00:00",
         "text": "Summary: us-central1: Elevated Errors and Degraded Query Performance with Monitoring Metrics\nDescription: We are experiencing issues querying Monitoring metrics with Cloud Monitoring, affecting system metrics from multiple Cloud products and user-defined metrics.\nWe’ve implemented a mitigation which is showing improvements and engineers will continue to monitor.\nWe will provide more information by Monday, 2024-07-15 12:00 US/Pacific.\nDiagnosis: - Affected customers may observe errors and/or latency when trying to query monitoring data, autoscaling, dashboards, for metrics in the us-central1 and global regions.\n- Alert evaluations are also impacted which means customers may not see expected alerts or may see some false positive alerts.\n- The issue impacts any operations that rely on monitoring metrics.\nWorkaround: None at this time.",
         "status": "SERVICE_OUTAGE",
@@ -60,21 +69,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-07-15T18:07:54+00:00",
-      "modified": "2024-07-15T18:08:00+00:00",
-      "when": "2024-07-15T18:07:54+00:00",
-      "text": "Summary: us-central1: Elevated Errors and Degraded Query Performance with Monitoring Metrics\nDescription: We are experiencing issues querying Monitoring metrics with Cloud Monitoring, affecting system metrics from multiple Cloud products and user-defined metrics.\nWe’ve implemented a mitigation which is showing improvements and engineers will continue to monitor.\nWe will provide more information by Monday, 2024-07-15 12:00 US/Pacific.\nDiagnosis: - Affected customers may observe errors and/or latency when trying to query monitoring data, autoscaling, dashboards, for metrics in the us-central1 and global regions.\n- Alert evaluations are also impacted which means customers may not see expected alerts or may see some false positive alerts.\n- The issue impacts any operations that rely on monitoring metrics.\nWorkaround: None at this time.",
-      "status": "SERVICE_OUTAGE",
-      "affected_locations": [
-        {
-          "title": "Global",
-          "id": "global"
-        },
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        }
-      ]
+      "created": "2024-07-15T18:50:32+00:00",
+      "modified": "2024-07-15T18:50:41+00:00",
+      "when": "2024-07-15T18:50:32+00:00",
+      "text": "The issue with Cloud Monitoring metrics has been resolved for all affected users as of Monday, 2024-07-15 10:52 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
+      "affected_locations": []
     },
     "status_impact": "SERVICE_OUTAGE",
     "severity": "high",
@@ -103,7 +103,8 @@
       }
     ],
     "uri": "incidents/ERzzrJqeGR2GCW51XKFv",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Global",
         "id": "global"
@@ -112,8 +113,7 @@
         "title": "Iowa (us-central1)",
         "id": "us-central1"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "6SCpW417YmwFN2Cq8ogN",
