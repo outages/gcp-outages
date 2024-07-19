@@ -4,12 +4,181 @@
     "number": "215195772340650488",
     "begin": "2024-07-19T06:48:43+00:00",
     "created": "2024-07-19T06:48:47+00:00",
-    "modified": "2024-07-19T06:48:47+00:00",
+    "modified": "2024-07-19T07:15:19+00:00",
     "external_desc": "Windows VM are crashing and going into unexpected reboot",
     "updates": [
       {
+        "created": "2024-07-19T07:15:19+00:00",
+        "modified": "2024-07-19T07:15:23+00:00",
+        "when": "2024-07-19T07:15:19+00:00",
+        "text": "Summary: Windows VM are crashing and going into unexpected reboot\nDescription: We are experiencing an issue with Google Compute Engine.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2024-07-19 01:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Windows VM are crashing and going into unexpected reboot.\nImpacted users may observe Serial port 1 showing the call trace,\nSYSTEM_THREAD_EXCEPTION_NOT_HANDLED\nCsagent.sys (part of the Crowdstrike Application package)\n0xFFFFFFFFC0000005 0xFFFFF80E88CF033D 0xFFFF858A870FAC58 0xFFFF858A870FA4A0 Dumping stack trace: 0xFFFFF809E35317BF (pvpanic.sys+0x17BF) 0xFFFFF809E35316CB (pvpanic.sys+0x16CB) 0xFFFFF80335941B27 (ntoskrnl.exe+0x292B27) 0xFFFFF80335940AD9 (ntoskrnl.exe+0x291AD9) 0xFFFFF80335868CE7 (ntoskrnl.exe+0x1B9CE7) 0xFFFFF8033588447C (ntoskrnl.exe+0x1D547C) 0xFFFFF803358416BF (ntoskrnl.exe+0x1926BF) 0xFFFFF8033587335F (ntoskrnl.exe+0x1C435F) 0xFFFFF803356D77D0 (ntoskrnl.exe+0x0287D0) 0xFFFFF8033579D214 (ntoskrnl.exe+0x0EE214) 0xFFFFF8033587CF42 (ntoskrnl.exe+0x1CDF42) 0xFFFFF8033587893D (ntoskrnl.exe+0x1C993D) 0xFFFFF809E314033D (csagent.sys+0x0E033D) 0xFFFFF809E3115EEE (csagent.sys+0x0B5EEE) 0xFFFFF809E3117185 (csagent.sys+0x0B7185) 0xFFFFF809E334A037 (csagent.sys+0x2EA037) 0xFFFFF809E3346BB4 (csagent.sys+0x2E6BB4) 0xFFFFF809E30C68C1 (csagent.sys+0x0668C1) 0xFFFFF809E30C597E (csagent.sys+0x06597E) 0xFFFFF809E30C56EB (csagent.sys+0x0656EB) 0xFFFFF809E316883A (csagent.sys+0x10883A) 0xFFFFF809E30BDD3B (csagent.sys+0x05DD3B) 0xFFFFF809E30BDB57 (csagent.sys+0x05DB57) 0xFFFFF809E315D4D1 (csagent.sys+0x0FD4D1) 0xFFFFF803357B4A85 (ntoskrnl.exe+0x105A85) 0xFFFFF803358719FC (ntoskrnl.exe+0x1C29FC)\nWorkaround: We recommend the affected users to work with the application package provider.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Johannesburg (africa-south1)",
+            "id": "africa-south1"
+          },
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "Berlin (europe-west10)",
+            "id": "europe-west10"
+          },
+          {
+            "title": "Turin (europe-west12)",
+            "id": "europe-west12"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Doha (me-central1)",
+            "id": "me-central1"
+          },
+          {
+            "title": "Dammam (me-central2)",
+            "id": "me-central2"
+          },
+          {
+            "title": "Tel Aviv (me-west1)",
+            "id": "me-west1"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Dallas (us-south1)",
+            "id": "us-south1"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
+      {
         "created": "2024-07-19T06:48:45+00:00",
-        "modified": "2024-07-19T06:48:47+00:00",
+        "modified": "2024-07-19T07:15:19+00:00",
         "when": "2024-07-19T06:48:45+00:00",
         "text": "Summary: Windows VM are crashing and going into unexpected reboot\nDescription: We are experiencing an issue with Google Compute Engine.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2024-07-19 00:15 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Windows VM are crashing and going into unexpected reboot\nWorkaround: None at this time.",
         "status": "SERVICE_OUTAGE",
@@ -178,10 +347,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-07-19T06:48:45+00:00",
-      "modified": "2024-07-19T06:48:47+00:00",
-      "when": "2024-07-19T06:48:45+00:00",
-      "text": "Summary: Windows VM are crashing and going into unexpected reboot\nDescription: We are experiencing an issue with Google Compute Engine.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2024-07-19 00:15 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Windows VM are crashing and going into unexpected reboot\nWorkaround: None at this time.",
+      "created": "2024-07-19T07:15:19+00:00",
+      "modified": "2024-07-19T07:15:23+00:00",
+      "when": "2024-07-19T07:15:19+00:00",
+      "text": "Summary: Windows VM are crashing and going into unexpected reboot\nDescription: We are experiencing an issue with Google Compute Engine.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2024-07-19 01:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Windows VM are crashing and going into unexpected reboot.\nImpacted users may observe Serial port 1 showing the call trace,\nSYSTEM_THREAD_EXCEPTION_NOT_HANDLED\nCsagent.sys (part of the Crowdstrike Application package)\n0xFFFFFFFFC0000005 0xFFFFF80E88CF033D 0xFFFF858A870FAC58 0xFFFF858A870FA4A0 Dumping stack trace: 0xFFFFF809E35317BF (pvpanic.sys+0x17BF) 0xFFFFF809E35316CB (pvpanic.sys+0x16CB) 0xFFFFF80335941B27 (ntoskrnl.exe+0x292B27) 0xFFFFF80335940AD9 (ntoskrnl.exe+0x291AD9) 0xFFFFF80335868CE7 (ntoskrnl.exe+0x1B9CE7) 0xFFFFF8033588447C (ntoskrnl.exe+0x1D547C) 0xFFFFF803358416BF (ntoskrnl.exe+0x1926BF) 0xFFFFF8033587335F (ntoskrnl.exe+0x1C435F) 0xFFFFF803356D77D0 (ntoskrnl.exe+0x0287D0) 0xFFFFF8033579D214 (ntoskrnl.exe+0x0EE214) 0xFFFFF8033587CF42 (ntoskrnl.exe+0x1CDF42) 0xFFFFF8033587893D (ntoskrnl.exe+0x1C993D) 0xFFFFF809E314033D (csagent.sys+0x0E033D) 0xFFFFF809E3115EEE (csagent.sys+0x0B5EEE) 0xFFFFF809E3117185 (csagent.sys+0x0B7185) 0xFFFFF809E334A037 (csagent.sys+0x2EA037) 0xFFFFF809E3346BB4 (csagent.sys+0x2E6BB4) 0xFFFFF809E30C68C1 (csagent.sys+0x0668C1) 0xFFFFF809E30C597E (csagent.sys+0x06597E) 0xFFFFF809E30C56EB (csagent.sys+0x0656EB) 0xFFFFF809E316883A (csagent.sys+0x10883A) 0xFFFFF809E30BDD3B (csagent.sys+0x05DD3B) 0xFFFFF809E30BDB57 (csagent.sys+0x05DB57) 0xFFFFF809E315D4D1 (csagent.sys+0x0FD4D1) 0xFFFFF803357B4A85 (ntoskrnl.exe+0x105A85) 0xFFFFF803358719FC (ntoskrnl.exe+0x1C29FC)\nWorkaround: We recommend the affected users to work with the application package provider.",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
