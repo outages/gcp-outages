@@ -22432,6 +22432,91 @@
     ]
   },
   {
+    "id": "JAxa64hv45yMYzCpqx1T",
+    "number": "2264297634052042910",
+    "begin": "2024-02-29T07:50:00+00:00",
+    "created": "2024-02-29T15:34:33+00:00",
+    "end": "2024-02-29T17:50:00+00:00",
+    "modified": "2024-02-29T20:51:47+00:00",
+    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
+    "updates": [
+      {
+        "created": "2024-02-29T20:51:19+00:00",
+        "modified": "2024-02-29T20:51:19+00:00",
+        "when": "2024-02-29T20:51:19+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T16:21:00+00:00",
+        "modified": "2024-02-29T16:21:08+00:00",
+        "when": "2024-02-29T16:21:00+00:00",
+        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T15:34:29+00:00",
+        "modified": "2024-02-29T15:34:36+00:00",
+        "when": "2024-02-29T15:34:29+00:00",
+        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2024-02-29T20:51:19+00:00",
+      "modified": "2024-02-29T20:51:19+00:00",
+      "when": "2024-02-29T20:51:19+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Multi-region: us",
+          "id": "us"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Chronicle Security",
+        "id": "FHwvkSZ6RzzDYAvDZXMM"
+      },
+      {
+        "title": "Chronicle SOAR",
+        "id": "GTT16Lf72XZKWArC9VxA"
+      }
+    ],
+    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Multi-region: us",
+        "id": "us"
+      }
+    ]
+  },
+  {
     "id": "M2qQyWWU9FKvVc2FfcaH",
     "number": "184633653096742397",
     "begin": "2024-02-29T07:50:00+00:00",
@@ -22534,91 +22619,6 @@
       }
     ],
     "uri": "incidents/M2qQyWWU9FKvVc2FfcaH",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Multi-region: us",
-        "id": "us"
-      }
-    ]
-  },
-  {
-    "id": "JAxa64hv45yMYzCpqx1T",
-    "number": "2264297634052042910",
-    "begin": "2024-02-29T07:50:00+00:00",
-    "created": "2024-02-29T15:34:33+00:00",
-    "end": "2024-02-29T17:50:00+00:00",
-    "modified": "2024-02-29T20:51:47+00:00",
-    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
-    "updates": [
-      {
-        "created": "2024-02-29T20:51:19+00:00",
-        "modified": "2024-02-29T20:51:19+00:00",
-        "when": "2024-02-29T20:51:19+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T16:21:00+00:00",
-        "modified": "2024-02-29T16:21:08+00:00",
-        "when": "2024-02-29T16:21:00+00:00",
-        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T15:34:29+00:00",
-        "modified": "2024-02-29T15:34:36+00:00",
-        "when": "2024-02-29T15:34:29+00:00",
-        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2024-02-29T20:51:19+00:00",
-      "modified": "2024-02-29T20:51:19+00:00",
-      "when": "2024-02-29T20:51:19+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Chronicle Security",
-        "id": "FHwvkSZ6RzzDYAvDZXMM"
-      },
-      {
-        "title": "Chronicle SOAR",
-        "id": "GTT16Lf72XZKWArC9VxA"
-      }
-    ],
-    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -83934,469 +83934,6 @@
       {
         "title": "Oregon (us-west1)",
         "id": "us-west1"
-      },
-      {
-        "title": "Los Angeles (us-west2)",
-        "id": "us-west2"
-      }
-    ]
-  },
-  {
-    "id": "4nR6XkpFyo6VZcdrE5Ap",
-    "number": "8706601695109245926",
-    "begin": "2023-07-13T14:55:00+00:00",
-    "created": "2023-07-20T05:07:32+00:00",
-    "end": "2023-07-21T09:29:00+00:00",
-    "modified": "2023-07-21T21:18:24+00:00",
-    "external_desc": "Cloud Data Fusion instance update failure.",
-    "updates": [
-      {
-        "created": "2023-07-21T21:11:51+00:00",
-        "modified": "2023-07-21T21:11:51+00:00",
-        "when": "2023-07-21T21:11:51+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 13 July 2023 at 07:55\n**Incident End:** 21 July 2023 at 02:29\n**Duration:** 7 days, 18 hours, 34 minutes\n**Affected Services and Features:**\nCloud Data Fusion\n**Regions/Zones:** asia-northeast2, me-west1, us-east1, us-east4, us-east5, us-central1, us-south1, us-west2\n**Description:**\nCloud Data Fusion experienced an issue where updating an instance created before 14 July 2023 would fail.\nOur preliminary analysis indicates that the root cause is a recent change made to access controls on Google Kubernetes Engine (GKE) clusters in order to improve security. Due to this change, the Cloud Data Fusion instances using older service accounts did not have the appropriate permissions to apply instance updates.\nGoogle Engineers mitigated the issue by updating affected instances to use the correct service account.\n**Customer Impact:**\nCustomers from the impacted regions would have observed failures during instance updates for instances that were created before 14 July 2023. However, there was no known instance usage impact for the customers who did not update their instances.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          }
-        ]
-      },
-      {
-        "created": "2023-07-21T09:55:48+00:00",
-        "modified": "2023-07-21T09:55:53+00:00",
-        "when": "2023-07-21T09:55:48+00:00",
-        "text": "The issue with Cloud Data Fusion has been resolved for all affected users as of Friday, 2023-07-21 02:55 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          }
-        ]
-      },
-      {
-        "created": "2023-07-21T09:30:09+00:00",
-        "modified": "2023-07-21T21:18:24+00:00",
-        "when": "2023-07-21T09:30:09+00:00",
-        "text": "Summary: Cloud Data Fusion instance update failure.\nDescription: Mitigation work is still underway by our engineering team.\nCurrently our engineers have mitigated us-east5, us-south1, asia-northeast2, us-west2, us-east4 and me-west1,us-central1\nWe are actively working on mitigating us-east1\nWe will provide more information by Friday, 2023-07-21 04:30 US/Pacific.\nDiagnosis: Cloud Data Fusion instances created before July 14, 2023 failing during instance upgrade in a few regions. However, the instance usage will not be impacted.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          }
-        ]
-      },
-      {
-        "created": "2023-07-21T07:43:54+00:00",
-        "modified": "2023-07-21T21:18:15+00:00",
-        "when": "2023-07-21T07:43:54+00:00",
-        "text": "Summary: Cloud Data Fusion instance update failure.\nDescription: Mitigation work is still underway by our engineering team.\nCurrently our engineers have mitigated us-east5, us-south1, asia-northeast2, us-west2, us-east4 and me-west1.\nWe are actively working on mitigating us-east1 and us-central1.\nWe will provide more information by Friday, 2023-07-21 03:00 US/Pacific.\nDiagnosis: Cloud Data Fusion instances created before July 14, 2023 failing during instance upgrade in a few regions. However, the instance usage will not be impacted.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          }
-        ]
-      },
-      {
-        "created": "2023-07-21T04:12:26+00:00",
-        "modified": "2023-07-21T21:18:07+00:00",
-        "when": "2023-07-21T04:12:26+00:00",
-        "text": "Summary: Cloud Data Fusion instance update failure.\nDescription: Mitigation work is still underway by our engineering team. Currently our engineers have mitigated us-east5, us-south1, asia-northeast2, us-west2, and me-west1 and are actively working on mitigating other regions.\nWe will provide more information by Friday, 2023-07-21 01:00 US/Pacific.\nDiagnosis: Cloud Data Fusion instances created before July 14, 2023 failing during instance upgrade in a few regions. However, the instance usage will not be impacted.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          }
-        ]
-      },
-      {
-        "created": "2023-07-21T00:09:17+00:00",
-        "modified": "2023-07-21T21:17:53+00:00",
-        "when": "2023-07-21T00:09:17+00:00",
-        "text": "Summary: Cloud Data Fusion instance update failure.\nDescription: Mitigation work is still underway by our engineering team. Currently our engineers have mitigated us-east5 and us-south1 and are actively working on mitigating other regions.\nWe will provide more information by Thursday, 2023-07-20 21:30 US/Pacific.\nDiagnosis: Cloud Data Fusion instances created before July 14, 2023 failing during instance upgrade in a few regions. However, the instance usage will not be impacted.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          }
-        ]
-      },
-      {
-        "created": "2023-07-20T22:29:58+00:00",
-        "modified": "2023-07-21T21:17:45+00:00",
-        "when": "2023-07-20T22:29:58+00:00",
-        "text": "Summary: Cloud Data Fusion instance update failure.\nDescription: Mitigation work is still underway by our engineering team.\nWe will provide more information by Thursday, 2023-07-20 17:30 US/Pacific.\nDiagnosis: Cloud Data Fusion instances created before July 14, 2023 failing during instance upgrade in a few regions. However, the instance usage will not be impacted.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          }
-        ]
-      },
-      {
-        "created": "2023-07-20T21:15:23+00:00",
-        "modified": "2023-07-21T21:17:36+00:00",
-        "when": "2023-07-20T21:15:23+00:00",
-        "text": "Summary: Cloud Data Fusion instance update failure.\nDescription: Mitigation work is still underway by our engineering team.\nWe will provide more information by Thursday, 2023-07-20 15:30 US/Pacific.\nDiagnosis: Cloud Data Fusion instances created before July 14, 2023 failing during instance upgrade in a few regions. However, the instance usage will not be impacted.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          }
-        ]
-      },
-      {
-        "created": "2023-07-20T21:14:57+00:00",
-        "modified": "2023-07-21T21:17:25+00:00",
-        "when": "2023-07-20T21:14:57+00:00",
-        "text": "Summary: Cloud Data Fusion instance update failure.\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2023-07-20 13:30 US/Pacific.\nWe will provide more information by Thursday, 2023-07-20 15:30 US/Pacific.\nDiagnosis: Cloud Data Fusion instances created before July 14, 2023 failing during instance upgrade in a few regions. However, the instance usage will not be impacted.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          }
-        ]
-      },
-      {
-        "created": "2023-07-20T20:48:59+00:00",
-        "modified": "2023-07-21T21:17:17+00:00",
-        "when": "2023-07-20T20:48:59+00:00",
-        "text": "Summary: Cloud Data Fusion instance update failure.\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2023-07-20 13:30 US/Pacific.\nWe will provide more information by Thursday, 2023-07-20 14:30 US/Pacific.\nDiagnosis: Cloud Data Fusion instances created before July 14, 2023 failing during instance upgrade in a few regions. However, the instance usage will not be impacted.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          }
-        ]
-      },
-      {
-        "created": "2023-07-20T09:59:40+00:00",
-        "modified": "2023-07-21T21:17:08+00:00",
-        "when": "2023-07-20T09:59:40+00:00",
-        "text": "Summary: Cloud Data Fusion instance update failure.\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Thursday, 2023-07-20 13:30 US/Pacific.\nWe will provide more information by Thursday, 2023-07-20 14:00 US/Pacific.\nDiagnosis: Cloud Data Fusion instances created before July 14, 2023 failing during instance upgrade in a few regions. However, the instance usage will not be impacted.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          }
-        ]
-      },
-      {
-        "created": "2023-07-20T06:12:04+00:00",
-        "modified": "2023-07-21T21:13:30+00:00",
-        "when": "2023-07-20T06:12:04+00:00",
-        "text": "Summary: Cloud Data Fusion instance update failure.\nDescription: We are experiencing an issue with Cloud Data Fusion, the instance usage will not be impacted.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2023-07-20 03:30 US/Pacific with current details.\nDiagnosis: Cloud Data Fusion instances created before July 14, 2023 failing during instance upgrade in a few regions. However, the instance usage will not be impacted.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          }
-        ]
-      },
-      {
-        "created": "2023-07-20T05:07:30+00:00",
-        "modified": "2023-07-21T21:13:20+00:00",
-        "when": "2023-07-20T05:07:30+00:00",
-        "text": "Summary: Cloud Data Fusion instance update failure.\nDescription: We are experiencing an issue with Cloud Data Fusion.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2023-07-19 23:20 US/Pacific with current details.\nDiagnosis: Cloud Data Fusion instances created before July 14, 2023 failing during instance upgrade in a few regions.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2023-07-21T21:11:51+00:00",
-      "modified": "2023-07-21T21:11:51+00:00",
-      "when": "2023-07-21T21:11:51+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 13 July 2023 at 07:55\n**Incident End:** 21 July 2023 at 02:29\n**Duration:** 7 days, 18 hours, 34 minutes\n**Affected Services and Features:**\nCloud Data Fusion\n**Regions/Zones:** asia-northeast2, me-west1, us-east1, us-east4, us-east5, us-central1, us-south1, us-west2\n**Description:**\nCloud Data Fusion experienced an issue where updating an instance created before 14 July 2023 would fail.\nOur preliminary analysis indicates that the root cause is a recent change made to access controls on Google Kubernetes Engine (GKE) clusters in order to improve security. Due to this change, the Cloud Data Fusion instances using older service accounts did not have the appropriate permissions to apply instance updates.\nGoogle Engineers mitigated the issue by updating affected instances to use the correct service account.\n**Customer Impact:**\nCustomers from the impacted regions would have observed failures during instance updates for instances that were created before 14 July 2023. However, there was no known instance usage impact for the customers who did not update their instances.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Osaka (asia-northeast2)",
-          "id": "asia-northeast2"
-        },
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        },
-        {
-          "title": "South Carolina (us-east1)",
-          "id": "us-east1"
-        },
-        {
-          "title": "Northern Virginia (us-east4)",
-          "id": "us-east4"
-        },
-        {
-          "title": "Dallas (us-south1)",
-          "id": "us-south1"
-        },
-        {
-          "title": "Los Angeles (us-west2)",
-          "id": "us-west2"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "rLKDHeeaBiXTeutF1air",
-    "service_name": "Cloud Data Fusion",
-    "affected_products": [
-      {
-        "title": "Cloud Data Fusion",
-        "id": "rLKDHeeaBiXTeutF1air"
-      }
-    ],
-    "uri": "incidents/4nR6XkpFyo6VZcdrE5Ap",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Osaka (asia-northeast2)",
-        "id": "asia-northeast2"
-      },
-      {
-        "title": "Iowa (us-central1)",
-        "id": "us-central1"
-      },
-      {
-        "title": "South Carolina (us-east1)",
-        "id": "us-east1"
-      },
-      {
-        "title": "Northern Virginia (us-east4)",
-        "id": "us-east4"
-      },
-      {
-        "title": "Dallas (us-south1)",
-        "id": "us-south1"
       },
       {
         "title": "Los Angeles (us-west2)",
