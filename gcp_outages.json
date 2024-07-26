@@ -4,12 +4,181 @@
     "number": "11485975573026607437",
     "begin": "2024-07-26T19:10:04+00:00",
     "created": "2024-07-26T19:24:11+00:00",
-    "modified": "2024-07-26T20:15:31+00:00",
+    "modified": "2024-07-26T21:17:20+00:00",
     "external_desc": "Persistent Disk (PD) is experiencing issues with disk delete and update operations in turn affecting other disk related operations globally.",
     "updates": [
       {
+        "created": "2024-07-26T21:17:20+00:00",
+        "modified": "2024-07-26T21:17:23+00:00",
+        "when": "2024-07-26T21:17:20+00:00",
+        "text": "Summary: Persistent Disk (PD) is experiencing issues with disk delete and update operations in turn affecting other disk related operations globally.\nDescription: Our engineers identified the root cause of the issue and have executed measures to mitigate the same. We are currently monitoring the rate of progress for the backlogs being cleared, while working on addressing any anomalies that may be encountered during this process.\nWe do not have an ETA for mitigation at this time.\nWe will provide an update by Friday, 2024-07-26 15:30 US/Pacific with current details.\nDiagnosis: Impacted customers may experience issues where the following operations remain in pending state for an extended period of time:\n- Disk deletions\n- Disk update operations such as resizes\n- VM deletions are also affected due to issues with disk deletions.\n- Managed Instance Groups scale down operations\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Johannesburg (africa-south1)",
+            "id": "africa-south1"
+          },
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "Berlin (europe-west10)",
+            "id": "europe-west10"
+          },
+          {
+            "title": "Turin (europe-west12)",
+            "id": "europe-west12"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Doha (me-central1)",
+            "id": "me-central1"
+          },
+          {
+            "title": "Dammam (me-central2)",
+            "id": "me-central2"
+          },
+          {
+            "title": "Tel Aviv (me-west1)",
+            "id": "me-west1"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Dallas (us-south1)",
+            "id": "us-south1"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
+      {
         "created": "2024-07-26T20:15:31+00:00",
-        "modified": "2024-07-26T20:15:39+00:00",
+        "modified": "2024-07-26T21:17:20+00:00",
         "when": "2024-07-26T20:15:31+00:00",
         "text": "Summary: Persistent Disk (PD) is experiencing issues with disk delete and update operations in turn affecting other disk related operations globally.\nDescription: Our engineers identified the root cause of the issue and are rolling out a mitigation. Once the roll out completes, the backlog will be processed.\nWe do not have an ETA for mitigation at this time.\nWe will provide an update by Friday, 2024-07-26 14:30 US/Pacific with current details.\nDiagnosis: Impacted customers may experience issues where the following operations remain in pending state for an extended period of time:\n- Disk deletions\n- Disk update operations such as resizes\n- VM deletions are also affected due to issues with disk deletions.\n- Managed Instance Groups scale down operations\nWorkaround: None at this time.",
         "status": "SERVICE_OUTAGE",
@@ -347,10 +516,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-07-26T20:15:31+00:00",
-      "modified": "2024-07-26T20:15:39+00:00",
-      "when": "2024-07-26T20:15:31+00:00",
-      "text": "Summary: Persistent Disk (PD) is experiencing issues with disk delete and update operations in turn affecting other disk related operations globally.\nDescription: Our engineers identified the root cause of the issue and are rolling out a mitigation. Once the roll out completes, the backlog will be processed.\nWe do not have an ETA for mitigation at this time.\nWe will provide an update by Friday, 2024-07-26 14:30 US/Pacific with current details.\nDiagnosis: Impacted customers may experience issues where the following operations remain in pending state for an extended period of time:\n- Disk deletions\n- Disk update operations such as resizes\n- VM deletions are also affected due to issues with disk deletions.\n- Managed Instance Groups scale down operations\nWorkaround: None at this time.",
+      "created": "2024-07-26T21:17:20+00:00",
+      "modified": "2024-07-26T21:17:23+00:00",
+      "when": "2024-07-26T21:17:20+00:00",
+      "text": "Summary: Persistent Disk (PD) is experiencing issues with disk delete and update operations in turn affecting other disk related operations globally.\nDescription: Our engineers identified the root cause of the issue and have executed measures to mitigate the same. We are currently monitoring the rate of progress for the backlogs being cleared, while working on addressing any anomalies that may be encountered during this process.\nWe do not have an ETA for mitigation at this time.\nWe will provide an update by Friday, 2024-07-26 15:30 US/Pacific with current details.\nDiagnosis: Impacted customers may experience issues where the following operations remain in pending state for an extended period of time:\n- Disk deletions\n- Disk update operations such as resizes\n- VM deletions are also affected due to issues with disk deletions.\n- Managed Instance Groups scale down operations\nWorkaround: None at this time.",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
