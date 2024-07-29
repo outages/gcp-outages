@@ -5,12 +5,20 @@
     "begin": "2024-07-26T19:10:04+00:00",
     "created": "2024-07-26T19:24:11+00:00",
     "end": "2024-07-27T01:17:01+00:00",
-    "modified": "2024-07-27T01:17:03+00:00",
+    "modified": "2024-07-29T15:07:03+00:00",
     "external_desc": "Persistent Disk (PD) is experiencing issues with disk delete and update operations in turn affecting other disk related operations globally.",
     "updates": [
       {
+        "created": "2024-07-29T15:07:03+00:00",
+        "modified": "2024-07-29T15:07:03+00:00",
+        "when": "2024-07-29T15:07:03+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 26 July, 2024 09:57\n**Incident End:** 26 July, 2024 18:11\n**Duration:** 8 hours, 14 mins\n**Affected Services and Features:** Persistent Disk\n**Regions/Zones:** Global\n**Description:**\nPersistent Disk experienced issues with disk delete and update operations for a period of 8 hours and 14 minutes, potentially affecting our customers in all regions. Based on our preliminary analysis, the root cause of the issue was miscoordination of internal software updates.\nGoogle will complete a full IR in the following days that will provide a full root cause.\n**Customer Impact:**\nImpacted customers may have experienced issues where the following operations remained in a pending state for an extended period of time:\n- Disk deletions\n- Disk update operations; such as resize\n- VM deletions\n- Managed Instance Groups scale-down operations\n**Additional details:**\nMiscoordination of internal software updates caused blocking of disk deletion and update operations as well as other related operations. This caused these operations to remain in pending state for an extended period of time. Once the issue was resolved the operations were unblocked and resumed to completion.\n---",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-07-27T01:17:01+00:00",
-        "modified": "2024-07-27T01:17:04+00:00",
+        "modified": "2024-07-29T15:07:03+00:00",
         "when": "2024-07-27T01:17:01+00:00",
         "text": "The issue with Persistent Disk has been resolved for all affected users as of Friday, 2024-07-26 18:11 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -863,10 +871,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-07-27T01:17:01+00:00",
-      "modified": "2024-07-27T01:17:04+00:00",
-      "when": "2024-07-27T01:17:01+00:00",
-      "text": "The issue with Persistent Disk has been resolved for all affected users as of Friday, 2024-07-26 18:11 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2024-07-29T15:07:03+00:00",
+      "modified": "2024-07-29T15:07:03+00:00",
+      "when": "2024-07-29T15:07:03+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 26 July, 2024 09:57\n**Incident End:** 26 July, 2024 18:11\n**Duration:** 8 hours, 14 mins\n**Affected Services and Features:** Persistent Disk\n**Regions/Zones:** Global\n**Description:**\nPersistent Disk experienced issues with disk delete and update operations for a period of 8 hours and 14 minutes, potentially affecting our customers in all regions. Based on our preliminary analysis, the root cause of the issue was miscoordination of internal software updates.\nGoogle will complete a full IR in the following days that will provide a full root cause.\n**Customer Impact:**\nImpacted customers may have experienced issues where the following operations remained in a pending state for an extended period of time:\n- Disk deletions\n- Disk update operations; such as resize\n- VM deletions\n- Managed Instance Groups scale-down operations\n**Additional details:**\nMiscoordination of internal software updates caused blocking of disk deletion and update operations as well as other related operations. This caused these operations to remain in pending state for an extended period of time. Once the issue was resolved the operations were unblocked and resumed to completion.\n---",
       "status": "AVAILABLE",
       "affected_locations": []
     },
