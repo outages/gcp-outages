@@ -4,12 +4,21 @@
     "number": "4971483720084595795",
     "begin": "2024-07-30T09:36:28+00:00",
     "created": "2024-07-30T09:36:32+00:00",
-    "modified": "2024-07-30T18:54:13+00:00",
+    "end": "2024-07-30T19:44:57+00:00",
+    "modified": "2024-07-30T19:44:59+00:00",
     "external_desc": "Private Cloud Certificate’s renewal (DigiCert)",
     "updates": [
       {
+        "created": "2024-07-30T19:44:57+00:00",
+        "modified": "2024-07-30T19:45:00+00:00",
+        "when": "2024-07-30T19:44:57+00:00",
+        "text": "The issue with VMWare engine has been resolved for all affected projects as of Tuesday, 2024-07-30 12:30 US/Pacific.\nGoogle engineers have completed renewal of all certificates. We thank you for your patience while we worked on resolving the issue.\nCertificate renewals were done on NSX, V-Center and HCX virtual machines.\n3rd party products might still see failures due to an SSL thumbprint mismatch. Customers should check third party applications to ensure backups, replication and other third party tools are working properly with vCenter. If there are any issues noted, please reach out to Google Cloud Support.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-07-30T18:54:13+00:00",
-        "modified": "2024-07-30T18:54:17+00:00",
+        "modified": "2024-07-30T19:44:59+00:00",
         "when": "2024-07-30T18:54:13+00:00",
         "text": "Summary: Private Cloud Certificate’s renewal (DigiCert)\nDescription: DigiCert is a digital certificate authority that issues certificates used in your Google Cloud VMware Engine Private Cloud. DigiCert informed us of a recent [incident](https://www.digicert.com/support/certificate-revocation-incident) in which they found a problem with their Domain Control Validation (DCV). As a result, by July 30, 2024, 19:30 UTC (12:30 US/Pacific), all certificates must be revoked without exception.\nGoogle engineers are actively working to renew the certificates on your private cloud before 19:30 UTC (12:30 US/Pacific).\nCertificate renewals are being done on NSX, V-Center and HCX virtual machines and will not have any impact on accessing any workload VMs. During the certificate renewal (which typically takes 30 mins), currently active backup & replication tasks and management tasks such as node addition/removal may fail. These tasks and new migration can't be started during this period.\nAfter the certificates are renewed, 3rd party products might still see failures due to thumbprint mismatch. Customers should check for third party applications. If there are any issues noted, please reach out to Google Cloud Support.\nWe will provide an update by Tuesday, 2024-07-30 12:30 US/Pacific with current details.\nDiagnosis: No current impact to the customers.\nWorkaround: None at this time.",
         "status": "SERVICE_INFORMATION",
@@ -264,89 +273,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-07-30T18:54:13+00:00",
-      "modified": "2024-07-30T18:54:17+00:00",
-      "when": "2024-07-30T18:54:13+00:00",
-      "text": "Summary: Private Cloud Certificate’s renewal (DigiCert)\nDescription: DigiCert is a digital certificate authority that issues certificates used in your Google Cloud VMware Engine Private Cloud. DigiCert informed us of a recent [incident](https://www.digicert.com/support/certificate-revocation-incident) in which they found a problem with their Domain Control Validation (DCV). As a result, by July 30, 2024, 19:30 UTC (12:30 US/Pacific), all certificates must be revoked without exception.\nGoogle engineers are actively working to renew the certificates on your private cloud before 19:30 UTC (12:30 US/Pacific).\nCertificate renewals are being done on NSX, V-Center and HCX virtual machines and will not have any impact on accessing any workload VMs. During the certificate renewal (which typically takes 30 mins), currently active backup & replication tasks and management tasks such as node addition/removal may fail. These tasks and new migration can't be started during this period.\nAfter the certificates are renewed, 3rd party products might still see failures due to thumbprint mismatch. Customers should check for third party applications. If there are any issues noted, please reach out to Google Cloud Support.\nWe will provide an update by Tuesday, 2024-07-30 12:30 US/Pacific with current details.\nDiagnosis: No current impact to the customers.\nWorkaround: None at this time.",
-      "status": "SERVICE_INFORMATION",
-      "affected_locations": [
-        {
-          "title": "Tokyo (asia-northeast1)",
-          "id": "asia-northeast1"
-        },
-        {
-          "title": "Mumbai (asia-south1)",
-          "id": "asia-south1"
-        },
-        {
-          "title": "Delhi (asia-south2)",
-          "id": "asia-south2"
-        },
-        {
-          "title": "Singapore (asia-southeast1)",
-          "id": "asia-southeast1"
-        },
-        {
-          "title": "Sydney (australia-southeast1)",
-          "id": "australia-southeast1"
-        },
-        {
-          "title": "Turin (europe-west12)",
-          "id": "europe-west12"
-        },
-        {
-          "title": "London (europe-west2)",
-          "id": "europe-west2"
-        },
-        {
-          "title": "Frankfurt (europe-west3)",
-          "id": "europe-west3"
-        },
-        {
-          "title": "Netherlands (europe-west4)",
-          "id": "europe-west4"
-        },
-        {
-          "title": "Zurich (europe-west6)",
-          "id": "europe-west6"
-        },
-        {
-          "title": "Milan (europe-west8)",
-          "id": "europe-west8"
-        },
-        {
-          "title": "Tel Aviv (me-west1)",
-          "id": "me-west1"
-        },
-        {
-          "title": "Montréal (northamerica-northeast1)",
-          "id": "northamerica-northeast1"
-        },
-        {
-          "title": "Toronto (northamerica-northeast2)",
-          "id": "northamerica-northeast2"
-        },
-        {
-          "title": "São Paulo (southamerica-east1)",
-          "id": "southamerica-east1"
-        },
-        {
-          "title": "Santiago (southamerica-west1)",
-          "id": "southamerica-west1"
-        },
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        },
-        {
-          "title": "Northern Virginia (us-east4)",
-          "id": "us-east4"
-        },
-        {
-          "title": "Los Angeles (us-west2)",
-          "id": "us-west2"
-        }
-      ]
+      "created": "2024-07-30T19:44:57+00:00",
+      "modified": "2024-07-30T19:45:00+00:00",
+      "when": "2024-07-30T19:44:57+00:00",
+      "text": "The issue with VMWare engine has been resolved for all affected projects as of Tuesday, 2024-07-30 12:30 US/Pacific.\nGoogle engineers have completed renewal of all certificates. We thank you for your patience while we worked on resolving the issue.\nCertificate renewals were done on NSX, V-Center and HCX virtual machines.\n3rd party products might still see failures due to an SSL thumbprint mismatch. Customers should check third party applications to ensure backups, replication and other third party tools are working properly with vCenter. If there are any issues noted, please reach out to Google Cloud Support.",
+      "status": "AVAILABLE",
+      "affected_locations": []
     },
     "status_impact": "SERVICE_INFORMATION",
     "severity": "low",
@@ -363,7 +295,8 @@
       }
     ],
     "uri": "incidents/XUq643xVy4pEEmPziyqh",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Tokyo (asia-northeast1)",
         "id": "asia-northeast1"
@@ -440,8 +373,7 @@
         "title": "Los Angeles (us-west2)",
         "id": "us-west2"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "ueutwY19MFNTod5YVR9D",
