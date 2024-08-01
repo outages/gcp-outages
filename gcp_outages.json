@@ -24173,6 +24173,91 @@
     ]
   },
   {
+    "id": "JAxa64hv45yMYzCpqx1T",
+    "number": "2264297634052042910",
+    "begin": "2024-02-29T07:50:00+00:00",
+    "created": "2024-02-29T15:34:33+00:00",
+    "end": "2024-02-29T17:50:00+00:00",
+    "modified": "2024-02-29T20:51:47+00:00",
+    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
+    "updates": [
+      {
+        "created": "2024-02-29T20:51:19+00:00",
+        "modified": "2024-02-29T20:51:19+00:00",
+        "when": "2024-02-29T20:51:19+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T16:21:00+00:00",
+        "modified": "2024-02-29T16:21:08+00:00",
+        "when": "2024-02-29T16:21:00+00:00",
+        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T15:34:29+00:00",
+        "modified": "2024-02-29T15:34:36+00:00",
+        "when": "2024-02-29T15:34:29+00:00",
+        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2024-02-29T20:51:19+00:00",
+      "modified": "2024-02-29T20:51:19+00:00",
+      "when": "2024-02-29T20:51:19+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Multi-region: us",
+          "id": "us"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Chronicle Security",
+        "id": "FHwvkSZ6RzzDYAvDZXMM"
+      },
+      {
+        "title": "Chronicle SOAR",
+        "id": "GTT16Lf72XZKWArC9VxA"
+      }
+    ],
+    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Multi-region: us",
+        "id": "us"
+      }
+    ]
+  },
+  {
     "id": "M2qQyWWU9FKvVc2FfcaH",
     "number": "184633653096742397",
     "begin": "2024-02-29T07:50:00+00:00",
@@ -24275,91 +24360,6 @@
       }
     ],
     "uri": "incidents/M2qQyWWU9FKvVc2FfcaH",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Multi-region: us",
-        "id": "us"
-      }
-    ]
-  },
-  {
-    "id": "JAxa64hv45yMYzCpqx1T",
-    "number": "2264297634052042910",
-    "begin": "2024-02-29T07:50:00+00:00",
-    "created": "2024-02-29T15:34:33+00:00",
-    "end": "2024-02-29T17:50:00+00:00",
-    "modified": "2024-02-29T20:51:47+00:00",
-    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
-    "updates": [
-      {
-        "created": "2024-02-29T20:51:19+00:00",
-        "modified": "2024-02-29T20:51:19+00:00",
-        "when": "2024-02-29T20:51:19+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T16:21:00+00:00",
-        "modified": "2024-02-29T16:21:08+00:00",
-        "when": "2024-02-29T16:21:00+00:00",
-        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T15:34:29+00:00",
-        "modified": "2024-02-29T15:34:36+00:00",
-        "when": "2024-02-29T15:34:29+00:00",
-        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2024-02-29T20:51:19+00:00",
-      "modified": "2024-02-29T20:51:19+00:00",
-      "when": "2024-02-29T20:51:19+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Chronicle Security",
-        "id": "FHwvkSZ6RzzDYAvDZXMM"
-      },
-      {
-        "title": "Chronicle SOAR",
-        "id": "GTT16Lf72XZKWArC9VxA"
-      }
-    ],
-    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -82218,406 +82218,6 @@
       {
         "title": "Dallas (us-south1)",
         "id": "us-south1"
-      },
-      {
-        "title": "Salt Lake City (us-west3)",
-        "id": "us-west3"
-      }
-    ]
-  },
-  {
-    "id": "1ZyKFNVutyrwCYpwWUMp",
-    "number": "6530039861603312255",
-    "begin": "2023-08-02T06:00:00+00:00",
-    "created": "2023-08-02T08:52:43+00:00",
-    "end": "2023-08-02T10:45:00+00:00",
-    "modified": "2023-08-02T20:15:17+00:00",
-    "external_desc": "Cloud Composer 2 customers experiencing create, update and snapshot operation failures in multiple regions.",
-    "updates": [
-      {
-        "created": "2023-08-02T18:21:52+00:00",
-        "modified": "2023-08-02T18:26:22+00:00",
-        "when": "2023-08-02T18:21:52+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n(All Times US/Pacific)\n**Incident Start:** 1 August 2023 at 23:00\n**Incident End:** 2 August 2023 at 03:45\n**Duration:** 4 hours, 45 minutes\n**Affected Services and Features:**\nCloud Composer\n**Regions/Zones:** - asia-east1 - asia-east2\n- asia-northeast1\n- asia-northeast2\n- asia-northeast3\n- australia-southeast2\n- europe-west2\n- us-central1\n- europe-west1\n- europe-west9\n**Description:**\nCloud Composer 2 environments experienced creation, update, and snapshots operation failures for a duration of 4 hours and 45 minutes in multiple regions. From preliminary analysis, the root cause was the invalid proxy configuration, which blocked outgoing traffic to Google Kubernetes Engine (GKE).\n**Customer Impact:**\nCustomers experienced failures when attempting the following actions:\n- Create new Composer 2 environment\n- Update existing Composer 2 environment\n- Save and load Composer 2 environment snapshots\nDAGs executions were not impacted by the outage as long as configuration changes were not being introduced.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          },
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          },
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          },
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2023-08-02T11:50:09+00:00",
-        "modified": "2023-08-02T11:50:15+00:00",
-        "when": "2023-08-02T11:50:09+00:00",
-        "text": "The issue with Google Cloud Composer has been resolved for all affected projects as of Wednesday, 2023-08-02 04:49 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          },
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          },
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          },
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2023-08-02T11:43:14+00:00",
-        "modified": "2023-08-02T11:43:20+00:00",
-        "when": "2023-08-02T11:43:14+00:00",
-        "text": "Summary: Cloud Composer 2 customers experiencing create, update and snapshot operation failures in multiple regions.\nDescription: Mitigation work is currently underway and we believe the issue is mostly resolved at this time.\nWe're performing checks to confirm and we will provide an update by Wednesday, 2023-08-02 06:00 US/Pacific.\nDiagnosis: Cloud Composer 2 customers impacted by this issue may see create and/or update and snapshot operation failing.\nWorkaround: Customers are recommended to not perform any update operations until this incident is over and refrain from creating Composer environments in the impacted regions.\nDAG executions in existing environments should work fine assuming that the customer doesn’t try to introduce changes related to Airflow components reconfiguration.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          },
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          },
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          },
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2023-08-02T10:27:37+00:00",
-        "modified": "2023-08-02T10:30:32+00:00",
-        "when": "2023-08-02T10:27:37+00:00",
-        "text": "Summary: Cloud Composer 2 customers experiencing create, update and snapshot operation failures in multiple regions: - asia-east1 - asia-east2 - asia-northeast1 - asia-northeast2 - asia-northeast3 - australia-southeast2 - europe-southwest1 - europe-west1 - europe-west2 - europe-west9 - me-central1 - southamerica-west1 - us-central1\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2023-08-02 05:00 US/Pacific.\nDiagnosis: Cloud Composer 2 customers impacted by this issue may see create and/or update and snapshot operation failing.\n**Workaround:** Customers are recommended to not perform any update operations until this incident is over and refrain from creating Composer environments in the impacted regions.\nDAG executions in existing environments should work fine assuming that the customer doesn’t try to introduce changes related to Airflow components reconfiguration.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          },
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          },
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          },
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2023-08-02T09:13:35+00:00",
-        "modified": "2023-08-02T09:26:08+00:00",
-        "when": "2023-08-02T09:13:35+00:00",
-        "text": "Summary: Cloud Composer 2 customers experiencing create and update operation failures in multiple regions: - asia-east1 - asia-east2 - asia-northeast1 - asia-northeast2 - asia-northeast3 - australia-southeast2 - europe-west2 - me-central1 - us-central1 - europe-southwest1 - europe-west1 - europe-west9\n  - southamerica-west1\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2023-08-02 04:00 US/Pacific.\nDiagnosis: Cloud Composer 2 customers impacted by this issue may see create and/or update operation failing\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          },
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "Salt Lake City (us-west3)",
-            "id": "us-west3"
-          }
-        ]
-      },
-      {
-        "created": "2023-08-02T08:52:38+00:00",
-        "modified": "2023-08-02T08:52:44+00:00",
-        "when": "2023-08-02T08:52:38+00:00",
-        "text": "Summary: Cloud Composer 2 customers experiencing create and update operation failures in multiple regions\nDescription: We are experiencing an issue with Google Cloud Composer 2 beginning on Wednesday, 2023-08-01 22:30 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2023-08-02 03:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Cloud Composer 2 customers impacted by this issue may see create and/or update operation failing\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          },
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2023-08-02T18:21:52+00:00",
-      "modified": "2023-08-02T18:26:22+00:00",
-      "when": "2023-08-02T18:21:52+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n(All Times US/Pacific)\n**Incident Start:** 1 August 2023 at 23:00\n**Incident End:** 2 August 2023 at 03:45\n**Duration:** 4 hours, 45 minutes\n**Affected Services and Features:**\nCloud Composer\n**Regions/Zones:** - asia-east1 - asia-east2\n- asia-northeast1\n- asia-northeast2\n- asia-northeast3\n- australia-southeast2\n- europe-west2\n- us-central1\n- europe-west1\n- europe-west9\n**Description:**\nCloud Composer 2 environments experienced creation, update, and snapshots operation failures for a duration of 4 hours and 45 minutes in multiple regions. From preliminary analysis, the root cause was the invalid proxy configuration, which blocked outgoing traffic to Google Kubernetes Engine (GKE).\n**Customer Impact:**\nCustomers experienced failures when attempting the following actions:\n- Create new Composer 2 environment\n- Update existing Composer 2 environment\n- Save and load Composer 2 environment snapshots\nDAGs executions were not impacted by the outage as long as configuration changes were not being introduced.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Taiwan (asia-east1)",
-          "id": "asia-east1"
-        },
-        {
-          "title": "Hong Kong (asia-east2)",
-          "id": "asia-east2"
-        },
-        {
-          "title": "Tokyo (asia-northeast1)",
-          "id": "asia-northeast1"
-        },
-        {
-          "title": "Osaka (asia-northeast2)",
-          "id": "asia-northeast2"
-        },
-        {
-          "title": "Seoul (asia-northeast3)",
-          "id": "asia-northeast3"
-        },
-        {
-          "title": "Melbourne (australia-southeast2)",
-          "id": "australia-southeast2"
-        },
-        {
-          "title": "Belgium (europe-west1)",
-          "id": "europe-west1"
-        },
-        {
-          "title": "London (europe-west2)",
-          "id": "europe-west2"
-        },
-        {
-          "title": "Paris (europe-west9)",
-          "id": "europe-west9"
-        },
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "YxkG5FfcC42cQmvBCk4j",
-    "service_name": "Google Cloud Composer",
-    "affected_products": [
-      {
-        "title": "Google Cloud Composer",
-        "id": "YxkG5FfcC42cQmvBCk4j"
-      }
-    ],
-    "uri": "incidents/1ZyKFNVutyrwCYpwWUMp",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Taiwan (asia-east1)",
-        "id": "asia-east1"
-      },
-      {
-        "title": "Hong Kong (asia-east2)",
-        "id": "asia-east2"
-      },
-      {
-        "title": "Tokyo (asia-northeast1)",
-        "id": "asia-northeast1"
-      },
-      {
-        "title": "Osaka (asia-northeast2)",
-        "id": "asia-northeast2"
-      },
-      {
-        "title": "Seoul (asia-northeast3)",
-        "id": "asia-northeast3"
-      },
-      {
-        "title": "Melbourne (australia-southeast2)",
-        "id": "australia-southeast2"
-      },
-      {
-        "title": "Belgium (europe-west1)",
-        "id": "europe-west1"
-      },
-      {
-        "title": "London (europe-west2)",
-        "id": "europe-west2"
-      },
-      {
-        "title": "Paris (europe-west9)",
-        "id": "europe-west9"
-      },
-      {
-        "title": "Iowa (us-central1)",
-        "id": "us-central1"
       },
       {
         "title": "Salt Lake City (us-west3)",
