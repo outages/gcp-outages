@@ -4,14 +4,14 @@
     "number": "7959660124891669086",
     "begin": "2024-08-02T16:30:00+00:00",
     "created": "2024-08-02T16:49:11+00:00",
-    "modified": "2024-08-02T17:00:15+00:00",
+    "modified": "2024-08-02T17:18:41+00:00",
     "external_desc": "Customers using AutoML translations may experience high latency and resource exhausted failures.",
     "updates": [
       {
-        "created": "2024-08-02T16:56:56+00:00",
-        "modified": "2024-08-02T17:00:15+00:00",
-        "when": "2024-08-02T16:56:56+00:00",
-        "text": "Summary: Customers using AutoML translations may experience high latency and resource exhausted failures.\nDescription: We are experiencing an issue with AutoML translations\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2024-08-02 11:08 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: AutoML translations may experience high latency and resource exhausted failures.\nWorkaround: None at this time.",
+        "created": "2024-08-02T17:18:37+00:00",
+        "modified": "2024-08-02T17:18:43+00:00",
+        "when": "2024-08-02T17:18:37+00:00",
+        "text": "Summary: Customers using AutoML translations may experience high latency and resource exhausted failures.\nDescription: We believe the issue with AutoML Translation is mitigated as per our monitoring.\nOur engineering team is currently validating further to ensure the issue is fully resolved for all our customers.\nWe will provide an update by Friday, 2024-08-02 12:00 US/Pacific with current details.\nDiagnosis: When users use translation with custom models, most requests will either fail with timeout/resource exhausted, or have latency up to 2 mins.\nWorkaround: None at this time.",
         "status": "SERVICE_INFORMATION",
         "affected_locations": [
           {
@@ -19,8 +19,21 @@
             "id": "europe-west4"
           },
           {
-            "title": "Global",
-            "id": "global"
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2024-08-02T16:56:56+00:00",
+        "modified": "2024-08-02T17:18:41+00:00",
+        "when": "2024-08-02T16:56:56+00:00",
+        "text": "Summary: Customers using AutoML translations may experience high latency and resource exhausted failures.\nDescription: We are experiencing an issue with AutoML translations\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2024-08-02 11:08 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: AutoML translations may experience high latency and resource exhausted failures.\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
           },
           {
             "title": "Iowa (us-central1)",
@@ -38,19 +51,15 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-08-02T16:56:56+00:00",
-      "modified": "2024-08-02T17:00:15+00:00",
-      "when": "2024-08-02T16:56:56+00:00",
-      "text": "Summary: Customers using AutoML translations may experience high latency and resource exhausted failures.\nDescription: We are experiencing an issue with AutoML translations\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2024-08-02 11:08 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: AutoML translations may experience high latency and resource exhausted failures.\nWorkaround: None at this time.",
+      "created": "2024-08-02T17:18:37+00:00",
+      "modified": "2024-08-02T17:18:43+00:00",
+      "when": "2024-08-02T17:18:37+00:00",
+      "text": "Summary: Customers using AutoML translations may experience high latency and resource exhausted failures.\nDescription: We believe the issue with AutoML Translation is mitigated as per our monitoring.\nOur engineering team is currently validating further to ensure the issue is fully resolved for all our customers.\nWe will provide an update by Friday, 2024-08-02 12:00 US/Pacific with current details.\nDiagnosis: When users use translation with custom models, most requests will either fail with timeout/resource exhausted, or have latency up to 2 mins.\nWorkaround: None at this time.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
           "title": "Netherlands (europe-west4)",
           "id": "europe-west4"
-        },
-        {
-          "title": "Global",
-          "id": "global"
         },
         {
           "title": "Iowa (us-central1)",
@@ -77,10 +86,6 @@
       {
         "title": "Netherlands (europe-west4)",
         "id": "europe-west4"
-      },
-      {
-        "title": "Global",
-        "id": "global"
       },
       {
         "title": "Iowa (us-central1)",
