@@ -5,12 +5,20 @@
     "begin": "2024-08-12T13:38:46+00:00",
     "created": "2024-08-12T14:19:49+00:00",
     "end": "2024-08-12T15:34:47+00:00",
-    "modified": "2024-08-12T15:34:56+00:00",
+    "modified": "2024-08-12T19:27:43+00:00",
     "external_desc": "[Cloud CDN, Cloud Load Balancing, Hybrid Connectivity] elevated latency in the UK (europe-west2)",
     "updates": [
       {
+        "created": "2024-08-12T19:19:19+00:00",
+        "modified": "2024-08-12T19:27:43+00:00",
+        "when": "2024-08-12T19:19:19+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**GCP Impact Time:**\n**Incident Start:** 12 August 2024 06:20\n**Incident End:** 12 August 2024 08:32\n**Duration:** 2 hours, 12 minutes\n**Workspace Impact Time:**\n**Incident Start:** 12 August 2024 06:20\n**Incident End:** 12 August 2024 07:00\n**Duration:** 40 minutes\n**Affected Services and Features:**\nGCP: Cloud CDN, Cloud Load Balancing, Hybrid Connectivity, Virtual Private Cloud (VPC)\nWorkspace: Gmail, Google Calendar, Google Chat, Google Docs, Google Drive, Google Meet and Google Tasks\n**Regions/Zones:** europe-west2\n**Description:**\n**GCP:**\nCloud CDN, Cloud Load Balancing, Hybrid Connectivity and Virtual Private Cloud (VPC) customers experienced intermittent timeouts (500s) from 06:20 to 07:00 US/Pacific followed by elevated latency in europe-west2 until 08:32 US/Pacific for a total duration of 2 hours and 12 minutes.\n**Workspace:**\nGmail, Google Calendar, Google Chat, Google Docs, Google Drive, Google Meet and Google Tasks users connecting to Workspace services from the UK region may have experienced connectivity issues for a duration of 40 minutes.\nFrom preliminary analysis, the root cause of the issue was a loss of power to networking equipment in the London data center.\nGoogle will complete a full Incident Report in the following days that will provide a full root cause.\n**Customer Impact:**\n**GCP:**\n* Customers experienced intermittent timeout (500s) followed by elevated latency.\n**Workspace:**\n* Users connecting to Workspace services served from the UK region may have experienced connectivity issues.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-08-12T15:34:47+00:00",
-        "modified": "2024-08-12T15:34:57+00:00",
+        "modified": "2024-08-12T19:19:19+00:00",
         "when": "2024-08-12T15:34:47+00:00",
         "text": "The issue with Cloud CDN, Cloud Load Balancing, Hybrid Connectivity, Virtual Private Cloud (VPC) has been resolved for all affected users as of Monday, 2024-08-12 08:19 US/Pacific.\nDuring the issue, users connecting to GCP services from the UK region may have experienced elevated latency, intermittent 500 error rates.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -31,10 +39,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-08-12T15:34:47+00:00",
-      "modified": "2024-08-12T15:34:57+00:00",
-      "when": "2024-08-12T15:34:47+00:00",
-      "text": "The issue with Cloud CDN, Cloud Load Balancing, Hybrid Connectivity, Virtual Private Cloud (VPC) has been resolved for all affected users as of Monday, 2024-08-12 08:19 US/Pacific.\nDuring the issue, users connecting to GCP services from the UK region may have experienced elevated latency, intermittent 500 error rates.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2024-08-12T19:19:19+00:00",
+      "modified": "2024-08-12T19:27:43+00:00",
+      "when": "2024-08-12T19:19:19+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**GCP Impact Time:**\n**Incident Start:** 12 August 2024 06:20\n**Incident End:** 12 August 2024 08:32\n**Duration:** 2 hours, 12 minutes\n**Workspace Impact Time:**\n**Incident Start:** 12 August 2024 06:20\n**Incident End:** 12 August 2024 07:00\n**Duration:** 40 minutes\n**Affected Services and Features:**\nGCP: Cloud CDN, Cloud Load Balancing, Hybrid Connectivity, Virtual Private Cloud (VPC)\nWorkspace: Gmail, Google Calendar, Google Chat, Google Docs, Google Drive, Google Meet and Google Tasks\n**Regions/Zones:** europe-west2\n**Description:**\n**GCP:**\nCloud CDN, Cloud Load Balancing, Hybrid Connectivity and Virtual Private Cloud (VPC) customers experienced intermittent timeouts (500s) from 06:20 to 07:00 US/Pacific followed by elevated latency in europe-west2 until 08:32 US/Pacific for a total duration of 2 hours and 12 minutes.\n**Workspace:**\nGmail, Google Calendar, Google Chat, Google Docs, Google Drive, Google Meet and Google Tasks users connecting to Workspace services from the UK region may have experienced connectivity issues for a duration of 40 minutes.\nFrom preliminary analysis, the root cause of the issue was a loss of power to networking equipment in the London data center.\nGoogle will complete a full Incident Report in the following days that will provide a full root cause.\n**Customer Impact:**\n**GCP:**\n* Customers experienced intermittent timeout (500s) followed by elevated latency.\n**Workspace:**\n* Users connecting to Workspace services served from the UK region may have experienced connectivity issues.",
       "status": "AVAILABLE",
       "affected_locations": []
     },
