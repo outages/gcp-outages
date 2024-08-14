@@ -24998,91 +24998,6 @@
     ]
   },
   {
-    "id": "JAxa64hv45yMYzCpqx1T",
-    "number": "2264297634052042910",
-    "begin": "2024-02-29T07:50:00+00:00",
-    "created": "2024-02-29T15:34:33+00:00",
-    "end": "2024-02-29T17:50:00+00:00",
-    "modified": "2024-02-29T20:51:47+00:00",
-    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
-    "updates": [
-      {
-        "created": "2024-02-29T20:51:19+00:00",
-        "modified": "2024-02-29T20:51:19+00:00",
-        "when": "2024-02-29T20:51:19+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T16:21:00+00:00",
-        "modified": "2024-02-29T16:21:08+00:00",
-        "when": "2024-02-29T16:21:00+00:00",
-        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T15:34:29+00:00",
-        "modified": "2024-02-29T15:34:36+00:00",
-        "when": "2024-02-29T15:34:29+00:00",
-        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2024-02-29T20:51:19+00:00",
-      "modified": "2024-02-29T20:51:19+00:00",
-      "when": "2024-02-29T20:51:19+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Chronicle Security",
-        "id": "FHwvkSZ6RzzDYAvDZXMM"
-      },
-      {
-        "title": "Chronicle SOAR",
-        "id": "GTT16Lf72XZKWArC9VxA"
-      }
-    ],
-    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Multi-region: us",
-        "id": "us"
-      }
-    ]
-  },
-  {
     "id": "M2qQyWWU9FKvVc2FfcaH",
     "number": "184633653096742397",
     "begin": "2024-02-29T07:50:00+00:00",
@@ -25185,6 +25100,91 @@
       }
     ],
     "uri": "incidents/M2qQyWWU9FKvVc2FfcaH",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Multi-region: us",
+        "id": "us"
+      }
+    ]
+  },
+  {
+    "id": "JAxa64hv45yMYzCpqx1T",
+    "number": "2264297634052042910",
+    "begin": "2024-02-29T07:50:00+00:00",
+    "created": "2024-02-29T15:34:33+00:00",
+    "end": "2024-02-29T17:50:00+00:00",
+    "modified": "2024-02-29T20:51:47+00:00",
+    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
+    "updates": [
+      {
+        "created": "2024-02-29T20:51:19+00:00",
+        "modified": "2024-02-29T20:51:19+00:00",
+        "when": "2024-02-29T20:51:19+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T16:21:00+00:00",
+        "modified": "2024-02-29T16:21:08+00:00",
+        "when": "2024-02-29T16:21:00+00:00",
+        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T15:34:29+00:00",
+        "modified": "2024-02-29T15:34:36+00:00",
+        "when": "2024-02-29T15:34:29+00:00",
+        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2024-02-29T20:51:19+00:00",
+      "modified": "2024-02-29T20:51:19+00:00",
+      "when": "2024-02-29T20:51:19+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Multi-region: us",
+          "id": "us"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Chronicle Security",
+        "id": "FHwvkSZ6RzzDYAvDZXMM"
+      },
+      {
+        "title": "Chronicle SOAR",
+        "id": "GTT16Lf72XZKWArC9VxA"
+      }
+    ],
+    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -77899,204 +77899,6 @@
       {
         "title": "Iowa (us-central1)",
         "id": "us-central1"
-      }
-    ]
-  },
-  {
-    "id": "ZQFpiLgvHB7a7Ua7o26T",
-    "number": "2000401331357364195",
-    "begin": "2023-08-14T23:11:00+00:00",
-    "created": "2023-08-15T01:35:57+00:00",
-    "end": "2023-08-15T18:22:00+00:00",
-    "modified": "2023-08-17T20:40:18+00:00",
-    "external_desc": "Google Cloud Interconnect in Montreal, Canada is experiencing availability issues.",
-    "updates": [
-      {
-        "created": "2023-08-17T20:40:18+00:00",
-        "modified": "2023-08-17T20:40:18+00:00",
-        "when": "2023-08-17T20:40:18+00:00",
-        "text": "# Incident Report\n## Summary\nOn Monday, 14 August 2023 starting at 16:11 US/Pacific, Google Cloud Interconnect experienced an outage with underground fiber cables in Montreal, Canada. Customers in the impacted location experienced availability issues and were unable to access Google Cloud services via physical connections for a period of 19 hours and 11 minutes. To our customers whose businesses were impacted during this outage, we sincerely apologize. This is not the level of quality and reliability we strive to offer, and we are taking immediate steps to improve the platform’s performance and availability.\n## Root Cause\nThe outage occurred due to a fire in an underground, third-party owned cable chamber that affected a larger leased fiber cable below street level, impacting the availability of the only physical path to the Edge Availability Domains (EADs) [yul-zone1-1944 and yul-zone2-1944](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/choosing-colocation-facilities#locations-table). The fire affected a fiber conduit that is leveraged by Google to provide inter-zone connectivity.\nAt the time of the fire, this was the only physical path providing interconnect to customers from these EADs. This is not the expected redundancy.\nThe Edge Availability Domains, [yul-zone1-1944 and yul-zone2-1944](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/choosing-colocation-facilities#locations-table), are planned and built for full redundancy of fiber connections back to the Google backbone network, with no single points of failure in equipment, and fiber paths are verified to be physically diverse along the whole route between Google network locations.\nThe EADs were operating without a usable redundant path due to previous fiber cuts that remained unrepaired. The repairs were not completed due to prematurely updated documentation in our systems to reflect our plans for future migrations, which caused us to believe the inactive fiber status was intentional.\nOther than the impact to Cloud Interconnect, the northamerica-northeast1 (YUL) region was unaffected.\n## Remediation and Prevention\nGoogle engineers were alerted to the outage via our internal systems on 14 August, 16:11 US/Pacific and immediately started an investigation.\nGoogle engineering teams worked with the third-party fiber vendor and restored service for Cloud Interconnect location [yul-zone1-1944](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/choosing-colocation-facilities#locations-table), on Tuesday, 15 August 2023 at 01:06 US/Pacific. Service for [yul-zone2-1944](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/choosing-colocation-facilities#locations-table), was restored on Tuesday, 15 August at 11:22 US/Pacific.\nThe fire-damaged fiber could not be repaired in place, so the damaged underground cable chamber had to be bypassed physically. This required splicing several hundred fiber links, including the ones leased by Google, which extended the repair timeline.\nSimultaneously, Google attempted to return to service the redundant physical path not affected by the fire. However, this was not immediately successful, and the incident was resolved by the repair of the primary path.\nGoogle restored full redundancy for both EADs (both primary and redundant paths) on 16 August, at 14:55 US/Pacific.\nGoogle Cloud Interconnect offers a 99.99% reliability SLA, for customers who deploy at least two connections in each of two interconnect regions. Customers that had deployed this architecture were not affected by this outage. For more information on this feature, see the following: [Topology for production-level applications overview](https://cloud.google.com/network-connectivity/docs/interconnect/tutorials/production-level-overview)\nAdditionally, Google is committed to preventing future recurrence by taking the following actions:\n- Improve rules within Google's internal repair prioritization system so that any issue that results in a loss of redundancy for more than one EAD in a region is treated at the highest repair priority, where Google's target is a 24 hour return to service.\n- Ensure that exceptions that occur between the migration and repair process for fibers have a documented escalation process, and that migration processes do not change fiber documentation until immediately after the migration is complete.\n- Complete the migration (both in Montreal and elsewhere) that moves all Interconnect zones to fully active-active connections. This builds upon our existing standard of \"no single failure can affect both EADs in a region\" to a stronger commitment of \"no single failure can affect any EAD\".\n- Ensure that clear notifications for isolation outages are sent proactively to customers.\n## Detailed Description of Impact\n* Starting on 14 August, 16:11 US/Pacific, 100% of customers using Cloud Interconnect in Montreal, Canada experienced unavailability, with customers unable to access Google Cloud services via physical connections in that location.\n* The interconnect location “yul-zone1-1944” was restored 10 hours, 16 minutes before yul-zone2-1944, allowing customers with redundant connectivity to access services via yul-zone1-1944 until yul-zone2-1944 was restored.\n* Other Google Cloud services in northamerica-northeast1 were accessible from interconnects outside of Montreal, Canada.\n---------------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          }
-        ]
-      },
-      {
-        "created": "2023-08-17T15:36:36+00:00",
-        "modified": "2023-08-17T15:47:16+00:00",
-        "when": "2023-08-17T15:36:36+00:00",
-        "text": "Google restored full redundancy for both Edge Availability Domains (both primary and redundant paths) on 16 August, at 14:55 US/Pacific\nWe will complete a full IR in the following days that will provide additional details.\n--------------------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          }
-        ]
-      },
-      {
-        "created": "2023-08-15T22:42:48+00:00",
-        "modified": "2023-08-16T06:14:48+00:00",
-        "when": "2023-08-15T22:42:48+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**yul-zone1-1944 Incident Start:** 14 August 2023, 16:11\n**yul-zone1-1944 Incident End:** 15 August 2023, 01:06\n**Duration:** 8 hours, 55 minutes\n**yul-zone2-1944 Incident Start:** 14 August 2023, 16:11\n**yul-zone2-1944 Incident End:** 15 August 2023, 11:22\n**Duration:** 19 hours, 11 minutes\n**Affected Services and Features:**\nGoogle Cloud Interconnect.\n**Regions/Zones:** Montreal, Canada Interconnect locations.\n**Description:**\nGoogle Cloud Interconnect experienced an outage with underground fiber cables in Montreal, Canada. The customer impact during the outage was due to two unrelated issues:\nThe [Edge Availability Domains](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/terminology#edge-availability-domain) - [yul-zone1-1944 and yul-zone2-1944](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/choosing-colocation-facilities#locations-table) were operating without a usable redundant path due to a previous fiber cut that remained unrepaired. The repairs were not completed due to prematurely updating the documentation in our systems to reflect our plans for future migrations.\nThe outage occurred when a fire broke out in an underground third-party owned cable chamber, which affected a large leased fiber cable below street level, impacting the availability of the only remaining physical path to these Edge Availability Domains. The fire-affected large fiber cable is leveraged by Google to provide inter-zone connectivity. At the time of the fire this was the only physical path between the affected routers providing interconnect to customers.\nGoogle engineering teams worked with the third party fiber vendor and restored service for Cloud Interconnect location [yul-zone1-1944](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/choosing-colocation-facilities#locations-table) on Tuesday, 2023-08-15 at 01:06 US/Pacific and restored service for [yul-zone2-1944](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/choosing-colocation-facilities#locations-table) on Tuesday, 2023-08-15 at 11:22 US/Pacific.\nThe fire-damaged fiber could not be repaired in place, so the damaged underground cable chamber had to be bypassed physically. This required splicing over a few hundred fiber links, including the ones leased by Google, which extended the repair timeline.\nSimultaneously, Google attempted to return to service the redundant physical path not affected by the fire, however, this was not immediately successful before splicing efforts completed, resolving the outage. Google is continuing to work with third party vendors to establish all redundant physical paths.\nGoogle will complete a full IR in the following days that will provide additional details.\n**Customer Impact:**\n- Customers using Cloud Interconnect in Montreal, Canada could have experienced availability issues, with customers unable to access Google Cloud services via physical connections in that location. The interconnect location “yul-zone1-1944” was restored 10 hours, 16 minutes before yul-zone2-1944, allowing customers with redundant connectivity to access services via yul-zone1-1944 until yul-zone2-1944 was restored.\n- Google Cloud services in northamerica-northeast1 were accessible from interconnects outside of Montreal, Canada.\n---------------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          }
-        ]
-      },
-      {
-        "created": "2023-08-15T19:32:06+00:00",
-        "modified": "2023-08-15T19:32:09+00:00",
-        "when": "2023-08-15T19:32:06+00:00",
-        "text": "The issue with Google Cloud Interconnect in Montreal, Canada has been resolved for all affected users as of Tuesday, 2023-08-15 11:22 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          }
-        ]
-      },
-      {
-        "created": "2023-08-15T18:46:28+00:00",
-        "modified": "2023-08-15T18:46:30+00:00",
-        "when": "2023-08-15T18:46:28+00:00",
-        "text": "Summary: Google Cloud Interconnect in Montreal, Canada is experiencing availability issues.\nDescription: Google Cloud Interconnect locations [\" yul-zone1-1944\" and \" yul-zone2-1944\"](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/choosing-colocation-facilities#locations-table) in Montreal, Canada are now fully restored. Internal monitoring shows traffic on the physical connections.\nOur Engineering team is continuing to closely monitor the traffic.\nWe will provide an update by Tuesday, 2023-08-15 12:30 US/Pacific.\nDiagnosis: Customers using Cloud interconnect in Montreal, Canada may experience availability issues, with customers not being able to access GCP services via physical connections in that location.\nOther GCP services in northamerica-northeast1 are not affected. The region should be accessible from interconnects outside of Montreal, Canada.\nWorkaround: Customers with redundant interconnects in multiple peering locations can use global dynamic routing to failover their Cloud Interconnect traffic to those locations.",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          }
-        ]
-      },
-      {
-        "created": "2023-08-15T16:57:51+00:00",
-        "modified": "2023-08-15T16:57:57+00:00",
-        "when": "2023-08-15T16:57:51+00:00",
-        "text": "Summary: Google Cloud Interconnect in Montreal, Canada is experiencing availability issues.\nDescription: We are experiencing an issue with physical connections in Google Cloud Interconnect in Montreal, Canada. Multiple [Edge Availability Domains](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/terminology) are affected.\nService restoration for interconnect location [yul-zone1-1944](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/choosing-colocation-facilities#locations-table) was completed on Tuesday, 2023-08-15 01:06 US/Pacific.\nOur engineering team is continuing to work with the hardware vendor for service restoration in [yul-zone2-1944](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/choosing-colocation-facilities#locations-table)\nWe do not have an ETA for complete mitigation at this point.\nWe will provide an update by Tuesday, 2023-08-15 12:00 US/Pacific.\nDiagnosis: Customers using Cloud interconnect in Montreal, Canada may experience availability issues, with customers not being able to access GCP services via physical connections in that location.\nOther GCP services in northamerica-northeast1 are not affected. The region should be accessible from interconnects outside of Montreal, Canada.\nWorkaround: Customers with redundant interconnects in multiple peering locations can use global dynamic routing to failover their Cloud Interconnect traffic to those locations.",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          }
-        ]
-      },
-      {
-        "created": "2023-08-15T05:27:17+00:00",
-        "modified": "2023-08-15T05:27:24+00:00",
-        "when": "2023-08-15T05:27:17+00:00",
-        "text": "Summary: Google Cloud Interconnect in Montreal, Canada is experiencing availability issues.\nDescription: We are experiencing an issue with physical connections in Google Cloud Interconnect in Montreal, Canada. Multiple [Edge Availability Domains](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/terminology) are affected.\nMitigation work is underway by our engineering team.\nWe will provide an update by Tuesday, 2023-08-15 10:00 US/Pacific.\nDiagnosis: Customers using Cloud interconnect in Montreal, Canada may experience availability issues, with customers not being able to access GCP services via physical connections in that location.\nOther GCP services in northamerica-northeast1 are not affected. The region should be accessible from interconnects outside of Montreal, Canada.\nWorkaround: Customers with redundant interconnects in multiple peering locations can use global dynamic routing to failover their Cloud Interconnect traffic to those locations.",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          }
-        ]
-      },
-      {
-        "created": "2023-08-15T04:29:23+00:00",
-        "modified": "2023-08-15T04:29:26+00:00",
-        "when": "2023-08-15T04:29:23+00:00",
-        "text": "Summary: Google Cloud Interconnect in Montreal, Canada is experiencing availability issues.\nDescription: We are experiencing an issue with physical connections in Google Cloud Interconnect in Montreal, Canada. Multiple [Edge Availability Domains](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/terminology) are affected.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2023-08-14 23:00 US/Pacific.\nDiagnosis: Customers using Cloud interconnect in Montreal, Canada may experience availability issues, with customers not being able to access GCP services via physical connections in that location.\nOther GCP services in northamerica-northeast1 are not affected. The region should be accessible from interconnects outside of Montreal, Canada.\nWorkaround: Customers with redundant interconnects in multiple peering locations can use global dynamic routing to failover their Cloud Interconnect traffic to those locations.",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          }
-        ]
-      },
-      {
-        "created": "2023-08-15T03:33:56+00:00",
-        "modified": "2023-08-15T03:33:59+00:00",
-        "when": "2023-08-15T03:33:56+00:00",
-        "text": "Summary: Google Cloud Interconnect in Montreal, Canada is experiencing availability issues.\nDescription: We are experiencing an issue with physical connections in Google Cloud Interconnect in Montreal, Canada. Multiple [Edge Availability Domains](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/terminology) are affected.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2023-08-14 21:45 US/Pacific.\nDiagnosis: Customers using Cloud interconnect in Montreal, Canada may experience availability issues, with customers not being able to access GCP services via physical connections in that location.\nOther GCP services in northamerica-northeast1 are not affected. The region should be accessible from interconnects outside of Montreal, Canada.\nWorkaround: Customers with redundant interconnects in multiple peering locations can use global dynamic routing to failover their Cloud Interconnect traffic to those locations.",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          }
-        ]
-      },
-      {
-        "created": "2023-08-15T02:04:51+00:00",
-        "modified": "2023-08-15T02:04:53+00:00",
-        "when": "2023-08-15T02:04:51+00:00",
-        "text": "Summary: Google Cloud Networking is experiencing interconnect issues\nDescription: We are experiencing an issue with Google Cloud Networking.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2023-08-14 21:30 US/Pacific with current details.\nDiagnosis: Some Google Cloud Interconnect customers in the Montréal Canada area connecting to northamerica-northeast1 may observe link down on their attachments.\nWorkaround: None at this time.",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          }
-        ]
-      },
-      {
-        "created": "2023-08-15T01:43:23+00:00",
-        "modified": "2023-08-15T01:43:25+00:00",
-        "when": "2023-08-15T01:43:23+00:00",
-        "text": "Summary: Google Cloud Networking is experiencing interconnect issues\nDescription: We are experiencing an issue with Google Cloud Networking.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2023-08-14 21:30 US/Pacific with current details.\nDiagnosis: Some Google Cloud Interconnect customers in the Montréal Canada area connecting to northamerica-northeast1 may observe link down on their attachments.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          }
-        ]
-      },
-      {
-        "created": "2023-08-15T01:35:51+00:00",
-        "modified": "2023-08-15T01:35:58+00:00",
-        "when": "2023-08-15T01:35:51+00:00",
-        "text": "Summary: Google Cloud Networking is experiencing interconnect issues\nDescription: We are experiencing an issue with Google Cloud Networking.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2023-08-14 19:00 US/Pacific with current details.\nDiagnosis: Some Google Cloud Interconnect customers in the Montréal Canada area connecting to northamerica-northeast1 may observe link down on their attachments.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2023-08-17T20:40:18+00:00",
-      "modified": "2023-08-17T20:40:18+00:00",
-      "when": "2023-08-17T20:40:18+00:00",
-      "text": "# Incident Report\n## Summary\nOn Monday, 14 August 2023 starting at 16:11 US/Pacific, Google Cloud Interconnect experienced an outage with underground fiber cables in Montreal, Canada. Customers in the impacted location experienced availability issues and were unable to access Google Cloud services via physical connections for a period of 19 hours and 11 minutes. To our customers whose businesses were impacted during this outage, we sincerely apologize. This is not the level of quality and reliability we strive to offer, and we are taking immediate steps to improve the platform’s performance and availability.\n## Root Cause\nThe outage occurred due to a fire in an underground, third-party owned cable chamber that affected a larger leased fiber cable below street level, impacting the availability of the only physical path to the Edge Availability Domains (EADs) [yul-zone1-1944 and yul-zone2-1944](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/choosing-colocation-facilities#locations-table). The fire affected a fiber conduit that is leveraged by Google to provide inter-zone connectivity.\nAt the time of the fire, this was the only physical path providing interconnect to customers from these EADs. This is not the expected redundancy.\nThe Edge Availability Domains, [yul-zone1-1944 and yul-zone2-1944](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/choosing-colocation-facilities#locations-table), are planned and built for full redundancy of fiber connections back to the Google backbone network, with no single points of failure in equipment, and fiber paths are verified to be physically diverse along the whole route between Google network locations.\nThe EADs were operating without a usable redundant path due to previous fiber cuts that remained unrepaired. The repairs were not completed due to prematurely updated documentation in our systems to reflect our plans for future migrations, which caused us to believe the inactive fiber status was intentional.\nOther than the impact to Cloud Interconnect, the northamerica-northeast1 (YUL) region was unaffected.\n## Remediation and Prevention\nGoogle engineers were alerted to the outage via our internal systems on 14 August, 16:11 US/Pacific and immediately started an investigation.\nGoogle engineering teams worked with the third-party fiber vendor and restored service for Cloud Interconnect location [yul-zone1-1944](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/choosing-colocation-facilities#locations-table), on Tuesday, 15 August 2023 at 01:06 US/Pacific. Service for [yul-zone2-1944](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/choosing-colocation-facilities#locations-table), was restored on Tuesday, 15 August at 11:22 US/Pacific.\nThe fire-damaged fiber could not be repaired in place, so the damaged underground cable chamber had to be bypassed physically. This required splicing several hundred fiber links, including the ones leased by Google, which extended the repair timeline.\nSimultaneously, Google attempted to return to service the redundant physical path not affected by the fire. However, this was not immediately successful, and the incident was resolved by the repair of the primary path.\nGoogle restored full redundancy for both EADs (both primary and redundant paths) on 16 August, at 14:55 US/Pacific.\nGoogle Cloud Interconnect offers a 99.99% reliability SLA, for customers who deploy at least two connections in each of two interconnect regions. Customers that had deployed this architecture were not affected by this outage. For more information on this feature, see the following: [Topology for production-level applications overview](https://cloud.google.com/network-connectivity/docs/interconnect/tutorials/production-level-overview)\nAdditionally, Google is committed to preventing future recurrence by taking the following actions:\n- Improve rules within Google's internal repair prioritization system so that any issue that results in a loss of redundancy for more than one EAD in a region is treated at the highest repair priority, where Google's target is a 24 hour return to service.\n- Ensure that exceptions that occur between the migration and repair process for fibers have a documented escalation process, and that migration processes do not change fiber documentation until immediately after the migration is complete.\n- Complete the migration (both in Montreal and elsewhere) that moves all Interconnect zones to fully active-active connections. This builds upon our existing standard of \"no single failure can affect both EADs in a region\" to a stronger commitment of \"no single failure can affect any EAD\".\n- Ensure that clear notifications for isolation outages are sent proactively to customers.\n## Detailed Description of Impact\n* Starting on 14 August, 16:11 US/Pacific, 100% of customers using Cloud Interconnect in Montreal, Canada experienced unavailability, with customers unable to access Google Cloud services via physical connections in that location.\n* The interconnect location “yul-zone1-1944” was restored 10 hours, 16 minutes before yul-zone2-1944, allowing customers with redundant connectivity to access services via yul-zone1-1944 until yul-zone2-1944 was restored.\n* Other Google Cloud services in northamerica-northeast1 were accessible from interconnects outside of Montreal, Canada.\n---------------",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Montréal (northamerica-northeast1)",
-          "id": "northamerica-northeast1"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_OUTAGE",
-    "severity": "high",
-    "service_key": "5x6CGnZvSHQZ26KtxpK1",
-    "service_name": "Hybrid Connectivity",
-    "affected_products": [
-      {
-        "title": "Hybrid Connectivity",
-        "id": "5x6CGnZvSHQZ26KtxpK1"
-      }
-    ],
-    "uri": "incidents/ZQFpiLgvHB7a7Ua7o26T",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Montréal (northamerica-northeast1)",
-        "id": "northamerica-northeast1"
       }
     ]
   },
