@@ -4,12 +4,25 @@
     "number": "18280384668079865207",
     "begin": "2024-09-04T13:29:53+00:00",
     "created": "2024-09-04T13:50:22+00:00",
-    "modified": "2024-09-04T15:07:54+00:00",
+    "modified": "2024-09-04T16:55:47+00:00",
     "external_desc": "Virtual Private Cloud (VPC) customers located in us-central1 may observe an issue with VPC Service Controls for newly created VMs or networks.",
     "updates": [
       {
+        "created": "2024-09-04T16:55:47+00:00",
+        "modified": "2024-09-04T16:55:55+00:00",
+        "when": "2024-09-04T16:55:47+00:00",
+        "text": "Summary: Virtual Private Cloud (VPC) customers located in us-central1 may observe an issue with VPC Service Controls for newly created VMs or networks.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2024-09-04 12:00 US/Pacific.\nDiagnosis: VPC network data for newly created VMs or networks might not be available when requests to Google APIs originate from these VMs/networks. This can cause VPC Service Control restrictions to deny requests for clients that should otherwise be allowed. This may also affect newly created VMs or networks that are non-RFC1918 private networks from using Private Google Access.\nWorkaround: None at this time.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
         "created": "2024-09-04T15:07:42+00:00",
-        "modified": "2024-09-04T15:07:54+00:00",
+        "modified": "2024-09-04T16:55:47+00:00",
         "when": "2024-09-04T15:07:42+00:00",
         "text": "Summary: Virtual Private Cloud (VPC) customers located in us-central1 may observe an issue with VPC Service Controls for newly created VMs or networks.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2024-09-04 10:00 US/Pacific.\nDiagnosis: VPC network data for newly created VMs or networks might not be available when requests to Google APIs originate from these VMs/networks. This can cause VPC Service Control restrictions to deny requests for clients that should otherwise be allowed. This may also affect newly created VMs or networks that are non-RFC1918 private networks from using Private Google Access.\nWorkaround: None at this time.",
         "status": "SERVICE_INFORMATION",
@@ -35,10 +48,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-09-04T15:07:42+00:00",
-      "modified": "2024-09-04T15:07:54+00:00",
-      "when": "2024-09-04T15:07:42+00:00",
-      "text": "Summary: Virtual Private Cloud (VPC) customers located in us-central1 may observe an issue with VPC Service Controls for newly created VMs or networks.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2024-09-04 10:00 US/Pacific.\nDiagnosis: VPC network data for newly created VMs or networks might not be available when requests to Google APIs originate from these VMs/networks. This can cause VPC Service Control restrictions to deny requests for clients that should otherwise be allowed. This may also affect newly created VMs or networks that are non-RFC1918 private networks from using Private Google Access.\nWorkaround: None at this time.",
+      "created": "2024-09-04T16:55:47+00:00",
+      "modified": "2024-09-04T16:55:55+00:00",
+      "when": "2024-09-04T16:55:47+00:00",
+      "text": "Summary: Virtual Private Cloud (VPC) customers located in us-central1 may observe an issue with VPC Service Controls for newly created VMs or networks.\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2024-09-04 12:00 US/Pacific.\nDiagnosis: VPC network data for newly created VMs or networks might not be available when requests to Google APIs originate from these VMs/networks. This can cause VPC Service Control restrictions to deny requests for clients that should otherwise be allowed. This may also affect newly created VMs or networks that are non-RFC1918 private networks from using Private Google Access.\nWorkaround: None at this time.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
