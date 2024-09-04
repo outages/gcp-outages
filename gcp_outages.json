@@ -4,12 +4,185 @@
     "number": "14369965491598016289",
     "begin": "2024-09-04T17:54:59+00:00",
     "created": "2024-09-04T19:09:56+00:00",
-    "modified": "2024-09-04T19:09:56+00:00",
+    "modified": "2024-09-04T19:26:14+00:00",
     "external_desc": "Global: Multiple Cloud Products Experiencing Deployment Failures",
     "updates": [
       {
+        "created": "2024-09-04T19:25:06+00:00",
+        "modified": "2024-09-04T19:26:14+00:00",
+        "when": "2024-09-04T19:25:06+00:00",
+        "text": "Summary: Global: Multiple Cloud Products Experiencing Deployment Failures\nDescription: We are experiencing an issue with Google Cloud Composer, Google Cloud Marketplace, App Engine Flexible, Cloud Run, App Engine Flexible, and Cloud Functions beginning on Wednesday, 2024-09-04 09:21 US/Pacific.\nMitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide an update by Wednesday, 2024-09-04 13:00 US/Pacific with current details.\nDiagnosis: Cloud Composer:\n- All Composer 1 operations (creations/updates/deletions) are failing globally.\n- Running Composer 1 environments are not affected.\n- All other versions (Composer 2, Composer 3) are not affected.\nCloud Marketplace\n- Customers experience errors when deploying Deployment Manager based solutions on Google Cloud Marketplace.\n- Cloud Deployment Manager services are unreachable, causing outages for all deployments and the Deployment Manager UI in the Cloud Console.\nApp Engine Flexible\n- App Engine Flexible new version deployments are experiencing failures in us-central1.\nServerless VPC Access\n- App Engine Standard, Cloud Functions, and Cloud Run will not be able to create VPC Access connectors.\n- Existing connectors are not affected.\nWorkaround:\n- Affected Google Cloud Composer customers should avoid running any operations on Cloud Composer 1 environments.\n- There are no workarounds for Deployment Manager failures.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Johannesburg (africa-south1)",
+            "id": "africa-south1"
+          },
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Hong Kong (asia-east2)",
+            "id": "asia-east2"
+          },
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "Finland (europe-north1)",
+            "id": "europe-north1"
+          },
+          {
+            "title": "Madrid (europe-southwest1)",
+            "id": "europe-southwest1"
+          },
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "Berlin (europe-west10)",
+            "id": "europe-west10"
+          },
+          {
+            "title": "Turin (europe-west12)",
+            "id": "europe-west12"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "Milan (europe-west8)",
+            "id": "europe-west8"
+          },
+          {
+            "title": "Paris (europe-west9)",
+            "id": "europe-west9"
+          },
+          {
+            "title": "Global",
+            "id": "global"
+          },
+          {
+            "title": "Doha (me-central1)",
+            "id": "me-central1"
+          },
+          {
+            "title": "Dammam (me-central2)",
+            "id": "me-central2"
+          },
+          {
+            "title": "Tel Aviv (me-west1)",
+            "id": "me-west1"
+          },
+          {
+            "title": "Montréal (northamerica-northeast1)",
+            "id": "northamerica-northeast1"
+          },
+          {
+            "title": "Toronto (northamerica-northeast2)",
+            "id": "northamerica-northeast2"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Santiago (southamerica-west1)",
+            "id": "southamerica-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Columbus (us-east5)",
+            "id": "us-east5"
+          },
+          {
+            "title": "Dallas (us-south1)",
+            "id": "us-south1"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
+      {
         "created": "2024-09-04T19:09:53+00:00",
-        "modified": "2024-09-04T19:09:56+00:00",
+        "modified": "2024-09-04T19:25:09+00:00",
         "when": "2024-09-04T19:09:53+00:00",
         "text": "Summary: Global: Multiple Cloud Products Experiencing Deployment Failures\nDescription: We are experiencing an issue with Google Cloud Composer, Google Cloud Marketplace, and App Engine Flexible beginning on Wednesday, 2024-09-04 09:21 US/Pacific.\nOur engineering team continues to work on identifying a mitigation strategy.\nWe will provide an update by Wednesday, 2024-09-04 12:40 US/Pacific with current details.\nDiagnosis: Cloud Composer:\n- All Composer 1 operations (creations/updates/deletions) are failing globally.\n- Running Composer 1 environments are not affected.\n- All other versions (Composer 2, Composer 3) are not affected.\nCloud Marketplace\n- Customers experience errors when deploying Deployment Manager based solutions on Google Cloud Marketplace.\n- Cloud Deployment Manager services are unreachable, causing outages for all deployments and the Deployment Manager UI in the Cloud Console.\nApp Engine Flexible\n- App Engine Flexible new version deployments are experiencing failures in us-central1.\nWorkaround: - Affected Google Cloud Composer customers should avoid running any operations on Cloud Composer 1 environments.\n- There are no workarounds for Deployment Manager failures.",
         "status": "SERVICE_DISRUPTION",
@@ -178,12 +351,16 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-09-04T19:09:53+00:00",
-      "modified": "2024-09-04T19:09:56+00:00",
-      "when": "2024-09-04T19:09:53+00:00",
-      "text": "Summary: Global: Multiple Cloud Products Experiencing Deployment Failures\nDescription: We are experiencing an issue with Google Cloud Composer, Google Cloud Marketplace, and App Engine Flexible beginning on Wednesday, 2024-09-04 09:21 US/Pacific.\nOur engineering team continues to work on identifying a mitigation strategy.\nWe will provide an update by Wednesday, 2024-09-04 12:40 US/Pacific with current details.\nDiagnosis: Cloud Composer:\n- All Composer 1 operations (creations/updates/deletions) are failing globally.\n- Running Composer 1 environments are not affected.\n- All other versions (Composer 2, Composer 3) are not affected.\nCloud Marketplace\n- Customers experience errors when deploying Deployment Manager based solutions on Google Cloud Marketplace.\n- Cloud Deployment Manager services are unreachable, causing outages for all deployments and the Deployment Manager UI in the Cloud Console.\nApp Engine Flexible\n- App Engine Flexible new version deployments are experiencing failures in us-central1.\nWorkaround: - Affected Google Cloud Composer customers should avoid running any operations on Cloud Composer 1 environments.\n- There are no workarounds for Deployment Manager failures.",
+      "created": "2024-09-04T19:25:06+00:00",
+      "modified": "2024-09-04T19:26:14+00:00",
+      "when": "2024-09-04T19:25:06+00:00",
+      "text": "Summary: Global: Multiple Cloud Products Experiencing Deployment Failures\nDescription: We are experiencing an issue with Google Cloud Composer, Google Cloud Marketplace, App Engine Flexible, Cloud Run, App Engine Flexible, and Cloud Functions beginning on Wednesday, 2024-09-04 09:21 US/Pacific.\nMitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide an update by Wednesday, 2024-09-04 13:00 US/Pacific with current details.\nDiagnosis: Cloud Composer:\n- All Composer 1 operations (creations/updates/deletions) are failing globally.\n- Running Composer 1 environments are not affected.\n- All other versions (Composer 2, Composer 3) are not affected.\nCloud Marketplace\n- Customers experience errors when deploying Deployment Manager based solutions on Google Cloud Marketplace.\n- Cloud Deployment Manager services are unreachable, causing outages for all deployments and the Deployment Manager UI in the Cloud Console.\nApp Engine Flexible\n- App Engine Flexible new version deployments are experiencing failures in us-central1.\nServerless VPC Access\n- App Engine Standard, Cloud Functions, and Cloud Run will not be able to create VPC Access connectors.\n- Existing connectors are not affected.\nWorkaround:\n- Affected Google Cloud Composer customers should avoid running any operations on Cloud Composer 1 environments.\n- There are no workarounds for Deployment Manager failures.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
+        {
+          "title": "Johannesburg (africa-south1)",
+          "id": "africa-south1"
+        },
         {
           "title": "Taiwan (asia-east1)",
           "id": "asia-east1"
@@ -352,6 +529,10 @@
     "service_name": "Multiple Products",
     "affected_products": [
       {
+        "title": "Cloud Run",
+        "id": "9D7d2iNBQWN24zc1VamE"
+      },
+      {
         "title": "Google App Engine",
         "id": "kchyUtnkMHJWaAva8aYc"
       },
@@ -364,12 +545,20 @@
         "id": "Wdsr1n5vyDvCt78qEifm"
       },
       {
+        "title": "Google Cloud Functions",
+        "id": "oW4vJ7VNqyxTWNzSHopX"
+      },
+      {
         "title": "Google Cloud Marketplace",
         "id": "M34rUHuRgyHXMfbUCSq9"
       }
     ],
     "uri": "incidents/twcreT5UAMxRTKm7Y4Q9",
     "currently_affected_locations": [
+      {
+        "title": "Johannesburg (africa-south1)",
+        "id": "africa-south1"
+      },
       {
         "title": "Taiwan (asia-east1)",
         "id": "asia-east1"
