@@ -67,12 +67,20 @@
     "begin": "2024-09-04T17:54:59+00:00",
     "created": "2024-09-04T19:09:56+00:00",
     "end": "2024-09-04T20:24:55+00:00",
-    "modified": "2024-09-04T20:24:57+00:00",
+    "modified": "2024-09-05T14:16:44+00:00",
     "external_desc": "Global: Multiple Cloud Products Experiencing Deployment Failures",
     "updates": [
       {
+        "created": "2024-09-05T14:16:44+00:00",
+        "modified": "2024-09-05T14:16:44+00:00",
+        "when": "2024-09-05T14:16:44+00:00",
+        "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support (All Times US/Pacific)\n**Incident Start:** 4 September, 2024 08:16\n**Incident End:** 4 September, 2024 12:25\n**Duration:** 4 hours, 9 minutes\n**Affected Services and Features:**\nCloud Run, Google App Engine, Google Cloud Composer, Google Cloud Console, Google Cloud Functions, Google Cloud Marketplace, Cloud Deployment Manager\n**Regions/Zones:** Global\n**Description:**\nGlobally, multiple cloud products experienced deployment failures due to the inaccessibility of Cloud Deployment Manager (CDM) services. This resulted in outages affecting all deployments and the CDM user interface within the cloud console for a duration of 4 hours and 9 minutes.\nFrom preliminary analysis, the root cause of the issue was a regressive change in our rollout strategy. This change inadvertently caused all incoming requests to be discarded, resulting in widespread RPC errors for both internal systems and external customers.\n**Customer Impact:**\nCloud Composer:\nAll Composer 1 operations (creations/updates/deletions) were failing globally.\nRunning Composer 1 environments were not affected.\nAll other versions (Composer 2, Composer 3) were not affected.\nCloud Marketplace:\nCustomers experienced errors when deploying Deployment Manager based solutions on Google Cloud Marketplace.\nCloud Deployment Manager services were unreachable, caused outages for all deployments and the Deployment Manager UI in the Cloud Console.\nApp Engine Flexible:\nApp Engine Flexible experienced failures in delete flows in us-central1.\n70-100% of all delete requests failed for ~90 min. spread across when the DM was unavailable.\nServing plane was not affected.\nServerless VPC Access:\nApp Engine Standard, Cloud Functions, and Cloud Run were not able to create, update or delete VPC Access Connectors globally.\nExisting connectors were not affected.\nCloud Deployment Manager:\nAll Cloud Deployment Manager operations (create/update/deletes) were failing globally\nCustomers were unable to view, update or delete the deployments via the Google Cloud Console\nAll beta functionalities of Cloud Deployment Manager (Type Providers, Actions) were failing globally.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-09-04T20:24:55+00:00",
-        "modified": "2024-09-04T20:24:58+00:00",
+        "modified": "2024-09-05T14:16:44+00:00",
         "when": "2024-09-04T20:24:55+00:00",
         "text": "The issue with Cloud Run, Google App Engine, Google Cloud Composer, Google Cloud Functions, Google Cloud Marketplace, Firebase Extensions has been resolved for all affected users as of Wednesday, 2024-09-04 12:25 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -422,10 +430,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-09-04T20:24:55+00:00",
-      "modified": "2024-09-04T20:24:58+00:00",
-      "when": "2024-09-04T20:24:55+00:00",
-      "text": "The issue with Cloud Run, Google App Engine, Google Cloud Composer, Google Cloud Functions, Google Cloud Marketplace, Firebase Extensions has been resolved for all affected users as of Wednesday, 2024-09-04 12:25 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2024-09-05T14:16:44+00:00",
+      "modified": "2024-09-05T14:16:44+00:00",
+      "when": "2024-09-05T14:16:44+00:00",
+      "text": "We apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support (All Times US/Pacific)\n**Incident Start:** 4 September, 2024 08:16\n**Incident End:** 4 September, 2024 12:25\n**Duration:** 4 hours, 9 minutes\n**Affected Services and Features:**\nCloud Run, Google App Engine, Google Cloud Composer, Google Cloud Console, Google Cloud Functions, Google Cloud Marketplace, Cloud Deployment Manager\n**Regions/Zones:** Global\n**Description:**\nGlobally, multiple cloud products experienced deployment failures due to the inaccessibility of Cloud Deployment Manager (CDM) services. This resulted in outages affecting all deployments and the CDM user interface within the cloud console for a duration of 4 hours and 9 minutes.\nFrom preliminary analysis, the root cause of the issue was a regressive change in our rollout strategy. This change inadvertently caused all incoming requests to be discarded, resulting in widespread RPC errors for both internal systems and external customers.\n**Customer Impact:**\nCloud Composer:\nAll Composer 1 operations (creations/updates/deletions) were failing globally.\nRunning Composer 1 environments were not affected.\nAll other versions (Composer 2, Composer 3) were not affected.\nCloud Marketplace:\nCustomers experienced errors when deploying Deployment Manager based solutions on Google Cloud Marketplace.\nCloud Deployment Manager services were unreachable, caused outages for all deployments and the Deployment Manager UI in the Cloud Console.\nApp Engine Flexible:\nApp Engine Flexible experienced failures in delete flows in us-central1.\n70-100% of all delete requests failed for ~90 min. spread across when the DM was unavailable.\nServing plane was not affected.\nServerless VPC Access:\nApp Engine Standard, Cloud Functions, and Cloud Run were not able to create, update or delete VPC Access Connectors globally.\nExisting connectors were not affected.\nCloud Deployment Manager:\nAll Cloud Deployment Manager operations (create/update/deletes) were failing globally\nCustomers were unable to view, update or delete the deployments via the Google Cloud Console\nAll beta functionalities of Cloud Deployment Manager (Type Providers, Actions) were failing globally.",
       "status": "AVAILABLE",
       "affected_locations": []
     },
