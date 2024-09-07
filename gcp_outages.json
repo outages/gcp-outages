@@ -4,14 +4,36 @@
     "number": "17505036385643096421",
     "begin": "2024-09-07T11:38:33+00:00",
     "created": "2024-09-07T13:11:15+00:00",
-    "modified": "2024-09-07T13:42:13+00:00",
-    "external_desc": "Google Compute Engine (GCE) VM instance creation/ deletion operations, Google Cloud Dataflow and Cloud Build are failing in the asia-northeast region.",
+    "end": "2024-09-07T14:15:36+00:00",
+    "modified": "2024-09-07T14:25:22+00:00",
+    "external_desc": "Google Compute Engine (GCE) VM instance creation/ deletion and all related operations for other products were failing in the asia-northeast1 region.",
     "updates": [
       {
+        "created": "2024-09-07T14:15:36+00:00",
+        "modified": "2024-09-07T14:15:41+00:00",
+        "when": "2024-09-07T14:15:36+00:00",
+        "text": "The issue with Cloud Build, Google Cloud Dataflow, Google Cloud Deploy, Google Cloud SQL, Google Compute Engine, Google Kubernetes Engine has been resolved for all affected customers as of Saturday, 2024-09-07 06:10 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2024-09-07T14:13:15+00:00",
+        "modified": "2024-09-07T14:24:44+00:00",
+        "when": "2024-09-07T14:13:15+00:00",
+        "text": "Summary: Google Compute Engine (GCE) VM instance creation/ deletion and all related operations for other products were failing in the asia-northeast1 region.\nDescription: Engineering team has rolled out the fix which mitigated the impact on Saturday, 2024-09-07 06:10 US/Pacific.\nWe will provide more information by Saturday, 2024-09-07 07:30 US/Pacific.\nDiagnosis: GCE Customers impacted by this issue were experiencing \"Internal error. Please try again or contact Google Support. (Code: '-1343002181035865699')\" while attempting instance creation.\nCloud Build customers were observing their builds not being executed.\nGoogle Cloud Dataflow customers were unable to create jobs or scale existing jobs.\nWorkaround: Customers may retry their operation in case they experience failures.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          }
+        ]
+      },
+      {
         "created": "2024-09-07T13:11:11+00:00",
-        "modified": "2024-09-07T13:42:13+00:00",
+        "modified": "2024-09-07T14:25:22+00:00",
         "when": "2024-09-07T13:11:11+00:00",
-        "text": "Summary: Google Compute Engine (GCE) VM instance creation/ deletion operations, Google Cloud Dataflow and Cloud Build are failing in the asia-northeast region.\nDescription: Mitigation work is currently underway by our engineering teams.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Saturday, 2024-09-07 07:30 US/Pacific.\nDiagnosis: GCE Customers impacted by this issue may experience \"Internal error. Please try again or contact Google Support. (Code: '-1343002181035865699')\" while attempting instance creation.\nCloud Build customers may observe their builds not being executed.\nGoogle Cloud Dataflow customers are unable to create jobs or scale existing jobs.\nWorkaround: Customers may attempt their GCVE, Cloud Build and Cloud Dataflow operations in other region.",
+        "text": "Summary: Google Compute Engine (GCE) VM instance creation/ deletion operations, Google Cloud Dataflow and Cloud Build are failing in the asia-northeast1 region.\nDescription: Mitigation work is currently underway by our engineering teams.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Saturday, 2024-09-07 07:30 US/Pacific.\nDiagnosis: GCE Customers impacted by this issue may experience \"Internal error. Please try again or contact Google Support. (Code: '-1343002181035865699')\" while attempting instance creation.\nCloud Build customers may observe their builds not being executed.\nGoogle Cloud Dataflow customers are unable to create jobs or scale existing jobs.\nWorkaround: Customers may attempt their GCVE, Cloud Build and Cloud Dataflow operations in other region.",
         "status": "SERVICE_OUTAGE",
         "affected_locations": [
           {
@@ -22,17 +44,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-09-07T13:11:11+00:00",
-      "modified": "2024-09-07T13:42:13+00:00",
-      "when": "2024-09-07T13:11:11+00:00",
-      "text": "Summary: Google Compute Engine (GCE) VM instance creation/ deletion operations, Google Cloud Dataflow and Cloud Build are failing in the asia-northeast region.\nDescription: Mitigation work is currently underway by our engineering teams.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Saturday, 2024-09-07 07:30 US/Pacific.\nDiagnosis: GCE Customers impacted by this issue may experience \"Internal error. Please try again or contact Google Support. (Code: '-1343002181035865699')\" while attempting instance creation.\nCloud Build customers may observe their builds not being executed.\nGoogle Cloud Dataflow customers are unable to create jobs or scale existing jobs.\nWorkaround: Customers may attempt their GCVE, Cloud Build and Cloud Dataflow operations in other region.",
-      "status": "SERVICE_OUTAGE",
-      "affected_locations": [
-        {
-          "title": "Tokyo (asia-northeast1)",
-          "id": "asia-northeast1"
-        }
-      ]
+      "created": "2024-09-07T14:15:36+00:00",
+      "modified": "2024-09-07T14:15:41+00:00",
+      "when": "2024-09-07T14:15:36+00:00",
+      "text": "The issue with Cloud Build, Google Cloud Dataflow, Google Cloud Deploy, Google Cloud SQL, Google Compute Engine, Google Kubernetes Engine has been resolved for all affected customers as of Saturday, 2024-09-07 06:10 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
+      "affected_locations": []
     },
     "status_impact": "SERVICE_OUTAGE",
     "severity": "high",
@@ -56,18 +73,26 @@
         "id": "6z5SnvJrJMJQSdJmUQjH"
       },
       {
+        "title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri"
+      },
+      {
         "title": "Google Compute Engine",
         "id": "L3ggmi3Jy4xJmgodFA9K"
+      },
+      {
+        "title": "Google Kubernetes Engine",
+        "id": "LCSbT57h59oR4W98NHuz"
       }
     ],
     "uri": "incidents/XwnegjADrYy2GHJphG2V",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Tokyo (asia-northeast1)",
         "id": "asia-northeast1"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "r8xkgSV1f88yYMQMW7rQ",
