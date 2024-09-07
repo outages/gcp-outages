@@ -4,12 +4,12 @@
     "number": "17505036385643096421",
     "begin": "2024-09-07T11:38:33+00:00",
     "created": "2024-09-07T13:11:15+00:00",
-    "modified": "2024-09-07T13:11:16+00:00",
+    "modified": "2024-09-07T13:42:13+00:00",
     "external_desc": "Google Compute Engine (GCE) VM instance creation/ deletion operations, Google Cloud Dataflow and Cloud Build are failing in the asia-northeast region.",
     "updates": [
       {
         "created": "2024-09-07T13:11:11+00:00",
-        "modified": "2024-09-07T13:11:16+00:00",
+        "modified": "2024-09-07T13:42:13+00:00",
         "when": "2024-09-07T13:11:11+00:00",
         "text": "Summary: Google Compute Engine (GCE) VM instance creation/ deletion operations, Google Cloud Dataflow and Cloud Build are failing in the asia-northeast region.\nDescription: Mitigation work is currently underway by our engineering teams.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Saturday, 2024-09-07 07:30 US/Pacific.\nDiagnosis: GCE Customers impacted by this issue may experience \"Internal error. Please try again or contact Google Support. (Code: '-1343002181035865699')\" while attempting instance creation.\nCloud Build customers may observe their builds not being executed.\nGoogle Cloud Dataflow customers are unable to create jobs or scale existing jobs.\nWorkaround: Customers may attempt their GCVE, Cloud Build and Cloud Dataflow operations in other region.",
         "status": "SERVICE_OUTAGE",
@@ -23,7 +23,7 @@
     ],
     "most_recent_update": {
       "created": "2024-09-07T13:11:11+00:00",
-      "modified": "2024-09-07T13:11:16+00:00",
+      "modified": "2024-09-07T13:42:13+00:00",
       "when": "2024-09-07T13:11:11+00:00",
       "text": "Summary: Google Compute Engine (GCE) VM instance creation/ deletion operations, Google Cloud Dataflow and Cloud Build are failing in the asia-northeast region.\nDescription: Mitigation work is currently underway by our engineering teams.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Saturday, 2024-09-07 07:30 US/Pacific.\nDiagnosis: GCE Customers impacted by this issue may experience \"Internal error. Please try again or contact Google Support. (Code: '-1343002181035865699')\" while attempting instance creation.\nCloud Build customers may observe their builds not being executed.\nGoogle Cloud Dataflow customers are unable to create jobs or scale existing jobs.\nWorkaround: Customers may attempt their GCVE, Cloud Build and Cloud Dataflow operations in other region.",
       "status": "SERVICE_OUTAGE",
@@ -50,6 +50,10 @@
       {
         "title": "Google Cloud Dataflow",
         "id": "T9bFoXPqG8w8g1YbWTKY"
+      },
+      {
+        "title": "Google Cloud Deploy",
+        "id": "6z5SnvJrJMJQSdJmUQjH"
       },
       {
         "title": "Google Compute Engine",
