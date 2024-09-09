@@ -5,12 +5,20 @@
     "begin": "2024-09-07T11:38:33+00:00",
     "created": "2024-09-07T13:11:15+00:00",
     "end": "2024-09-07T14:15:36+00:00",
-    "modified": "2024-09-07T14:25:22+00:00",
+    "modified": "2024-09-09T13:35:09+00:00",
     "external_desc": "Google Compute Engine (GCE) VM instance creation/ deletion and all related operations for other products were failing in the asia-northeast1 region.",
     "updates": [
       {
+        "created": "2024-09-09T13:35:09+00:00",
+        "modified": "2024-09-09T13:35:09+00:00",
+        "when": "2024-09-09T13:35:09+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below.\nPlease note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues.\nIf you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 07 September, 2024 04:20\n**Incident End:** 07 September, 2024 06:10\n**Duration:** 01 hours, 50 minutes\n**Affected Services and Features:**\n- Google Cloud Build\n- Google Cloud Dataflow\n- Google Cloud Deploy\n- Google Cloud SQL\n- Google Compute Engine\n- Google Kubernetes Engine\n**Regions/Zones:** asia-northeast1\n**Description:**\nSeveral Google Cloud products experienced a service degradation of varying impact, or were unavailable for a duration of 01 hours, 50 minutes in asia-northeast1 region.\nGoogle Engineers have identified the cause to be a change rollout to an internal component. This change was subsequently rolled back which mitigated all known impacts.\nGoogle will complete a full Incident Report (IR) in the following days that will provide a full root cause.\n**Customer Impact:**\nThrough the incident duration, the impacted Google Cloud services experienced different kinds of service degradations as detailed below.\n- Google Compute Engine requests and operations like creating, deleting, starting or modifying VMs were not executed.\n- Google Cloud Build deployed via the Cloud Build API or via CloudBuild Integrations were not being executed.\n- Google Cloud Dataflow jobs failed at start up, existing job autoscale functionality was disrupted.\n- Google Cloud Deploy actions (render, deploy, verify, pre- and post-deploy hooks) were unresponsive and unable to complete their tasks.\n- Google Cloud SQL, dependent on Google Compute Engine, which experienced operational issues during this incident. No databases were able to be created or deleted during the incident.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-09-07T14:15:36+00:00",
-        "modified": "2024-09-07T14:15:41+00:00",
+        "modified": "2024-09-09T13:35:09+00:00",
         "when": "2024-09-07T14:15:36+00:00",
         "text": "The issue with Cloud Build, Google Cloud Dataflow, Google Cloud Deploy, Google Cloud SQL, Google Compute Engine, Google Kubernetes Engine has been resolved for all affected customers as of Saturday, 2024-09-07 06:10 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -44,10 +52,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-09-07T14:15:36+00:00",
-      "modified": "2024-09-07T14:15:41+00:00",
-      "when": "2024-09-07T14:15:36+00:00",
-      "text": "The issue with Cloud Build, Google Cloud Dataflow, Google Cloud Deploy, Google Cloud SQL, Google Compute Engine, Google Kubernetes Engine has been resolved for all affected customers as of Saturday, 2024-09-07 06:10 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2024-09-09T13:35:09+00:00",
+      "modified": "2024-09-09T13:35:09+00:00",
+      "when": "2024-09-09T13:35:09+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below.\nPlease note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues.\nIf you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 07 September, 2024 04:20\n**Incident End:** 07 September, 2024 06:10\n**Duration:** 01 hours, 50 minutes\n**Affected Services and Features:**\n- Google Cloud Build\n- Google Cloud Dataflow\n- Google Cloud Deploy\n- Google Cloud SQL\n- Google Compute Engine\n- Google Kubernetes Engine\n**Regions/Zones:** asia-northeast1\n**Description:**\nSeveral Google Cloud products experienced a service degradation of varying impact, or were unavailable for a duration of 01 hours, 50 minutes in asia-northeast1 region.\nGoogle Engineers have identified the cause to be a change rollout to an internal component. This change was subsequently rolled back which mitigated all known impacts.\nGoogle will complete a full Incident Report (IR) in the following days that will provide a full root cause.\n**Customer Impact:**\nThrough the incident duration, the impacted Google Cloud services experienced different kinds of service degradations as detailed below.\n- Google Compute Engine requests and operations like creating, deleting, starting or modifying VMs were not executed.\n- Google Cloud Build deployed via the Cloud Build API or via CloudBuild Integrations were not being executed.\n- Google Cloud Dataflow jobs failed at start up, existing job autoscale functionality was disrupted.\n- Google Cloud Deploy actions (render, deploy, verify, pre- and post-deploy hooks) were unresponsive and unable to complete their tasks.\n- Google Cloud SQL, dependent on Google Compute Engine, which experienced operational issues during this incident. No databases were able to be created or deleted during the incident.",
       "status": "AVAILABLE",
       "affected_locations": []
     },
