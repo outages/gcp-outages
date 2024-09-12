@@ -27004,91 +27004,6 @@
     ]
   },
   {
-    "id": "JAxa64hv45yMYzCpqx1T",
-    "number": "2264297634052042910",
-    "begin": "2024-02-29T07:50:00+00:00",
-    "created": "2024-02-29T15:34:33+00:00",
-    "end": "2024-02-29T17:50:00+00:00",
-    "modified": "2024-02-29T20:51:47+00:00",
-    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
-    "updates": [
-      {
-        "created": "2024-02-29T20:51:19+00:00",
-        "modified": "2024-02-29T20:51:19+00:00",
-        "when": "2024-02-29T20:51:19+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T16:21:00+00:00",
-        "modified": "2024-02-29T16:21:08+00:00",
-        "when": "2024-02-29T16:21:00+00:00",
-        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T15:34:29+00:00",
-        "modified": "2024-02-29T15:34:36+00:00",
-        "when": "2024-02-29T15:34:29+00:00",
-        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2024-02-29T20:51:19+00:00",
-      "modified": "2024-02-29T20:51:19+00:00",
-      "when": "2024-02-29T20:51:19+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Chronicle Security",
-        "id": "FHwvkSZ6RzzDYAvDZXMM"
-      },
-      {
-        "title": "Chronicle SOAR",
-        "id": "GTT16Lf72XZKWArC9VxA"
-      }
-    ],
-    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Multi-region: us",
-        "id": "us"
-      }
-    ]
-  },
-  {
     "id": "M2qQyWWU9FKvVc2FfcaH",
     "number": "184633653096742397",
     "begin": "2024-02-29T07:50:00+00:00",
@@ -27191,6 +27106,91 @@
       }
     ],
     "uri": "incidents/M2qQyWWU9FKvVc2FfcaH",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Multi-region: us",
+        "id": "us"
+      }
+    ]
+  },
+  {
+    "id": "JAxa64hv45yMYzCpqx1T",
+    "number": "2264297634052042910",
+    "begin": "2024-02-29T07:50:00+00:00",
+    "created": "2024-02-29T15:34:33+00:00",
+    "end": "2024-02-29T17:50:00+00:00",
+    "modified": "2024-02-29T20:51:47+00:00",
+    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
+    "updates": [
+      {
+        "created": "2024-02-29T20:51:19+00:00",
+        "modified": "2024-02-29T20:51:19+00:00",
+        "when": "2024-02-29T20:51:19+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T16:21:00+00:00",
+        "modified": "2024-02-29T16:21:08+00:00",
+        "when": "2024-02-29T16:21:00+00:00",
+        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T15:34:29+00:00",
+        "modified": "2024-02-29T15:34:36+00:00",
+        "when": "2024-02-29T15:34:29+00:00",
+        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2024-02-29T20:51:19+00:00",
+      "modified": "2024-02-29T20:51:19+00:00",
+      "when": "2024-02-29T20:51:19+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Multi-region: us",
+          "id": "us"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Chronicle Security",
+        "id": "FHwvkSZ6RzzDYAvDZXMM"
+      },
+      {
+        "title": "Chronicle SOAR",
+        "id": "GTT16Lf72XZKWArC9VxA"
+      }
+    ],
+    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -71263,163 +71263,6 @@
       {
         "title": "Las Vegas (us-west4)",
         "id": "us-west4"
-      }
-    ]
-  },
-  {
-    "id": "71zrZxw3PRkiNYhM1JsZ",
-    "number": "5617529818487394110",
-    "begin": "2023-09-13T06:46:00+00:00",
-    "created": "2023-09-13T08:51:25+00:00",
-    "end": "2023-09-13T10:32:00+00:00",
-    "modified": "2023-09-19T23:57:12+00:00",
-    "external_desc": "Multiple services for Google Cloud Platform are impacted in us-central1-a",
-    "updates": [
-      {
-        "created": "2023-09-19T23:04:02+00:00",
-        "modified": "2023-09-19T23:57:12+00:00",
-        "when": "2023-09-19T23:04:02+00:00",
-        "text": "# Incident Report\n## Summary\nOn Tuesday, 12 September 2023, multiple Google Cloud products experienced elevated error rates and request failures mostly in the us-central1-a zone. The total duration of this incident was 3 hours and 46 minutes.\nTo our Google Cloud customers whose businesses were impacted during this outage, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s performance and availability.\n## Root Cause\nGoogle’s data centers rely on a distributed strongly-consistent file distribution system to perform operations such as name resolution in the data plane, and consist of servers that are used for distributing widely-used data.\nThe root cause of the issue was a significant increase in traffic due to internal changes that generated more tasks than expected. This caused the file distribution system to begin crashing.\n## Remediation and Prevention\nGoogle engineers were alerted to the issue via internal monitoring on 12 September 2023 at 23:46 US/Pacific and immediately started an investigation. Once the nature and scope of the issue became clear, Google engineers began redirecting traffic away from the affected servers, and added more memory resources. This procedure took a few hours because it is a manual process requiring extra care, due to the criticality of the service and it being foundational to data center operations. During this time, some services saw recovery before others, and impact was fully mitigated for all services on 13 September 2023 at 03:32 US/Pacific.\nGoogle is committed preventing a repeat of this issue in the future and is completing the following actions:\n* Reviewing our procedures to increase coordination of high-volume internal changes.\n* Investigating ways to minimize recovery time for similar classes of problems in the future.\n* Further improving the resilience of critical data center infrastructure in the face of large load spikes.\nWe apologize for the impact this incident had on our customers and their businesses in the us-central1 region. We are taking immediate steps to prevent a recurrence in the future.\n## Detailed Description of Impact\nOn Tuesday, 12 September 2023 from 23:46 to Wednesday, 13 September 2023 at 03:32 US/Pacific, multiple Google Cloud products experienced elevated error rates and request failures in us-central1 which are detailed below:\n### **Google Compute Engine :**\n* Customers may have experienced errors or elevated latencies for API requests compute.instances.insert and compute.instances.start in us-central1, as well as requests to aggregatedList globally.\n* Failed HTTP requests: 24% of projects were impacted\n* Failed VM start and creation: 31% of projects were impacted\nImpact began on Wednesday, 13 September 2023 at 00:05 and was mitigated at 02:40 US/Pacific. Total duration of impact was 2 hours, 35 minutes.\n### **Persistent Disk:**\n* Persistent Disk I/O operations for newly created VMs and newly attached disks may have experienced timeouts in us-central1-a. Approximately 0.5% of PD devices were impacted during the incident.\n* Some PD snapshot creation and restore requests were delayed or failed in us-central1-a.\nImpact began on Wednesday, 13 September 2023 at 00:28 and was mitigated at 02:53 US/Pacific. Total duration of impact was 3 hours, 5 minutes.\n### **Google Kubernetes Engine:**\n* Customers may have experienced failed Cluster Creation requests. Up to 4% of such requests failed in us-central1-a (zonal) and us-central1 (regional) during the incident. Additionally, 0.01% of clusters in these locations may have experienced unavailability in their cluster control plane as a result of a cluster upgrade during the incident (zonal clusters only).\nImpact began on Wednesday, 13 September 2023 at 00:55 and was mitigated at 04:00 US/Pacific. Total duration of impact was 3 hours, 5 minutes.\n### **Google Cloud Bigtable:**\n* Affected Cloud Bigtable clusters had elevated latency and error rates in us-central1 for requests to the data api ‘bigtable.googleapis.com ’ in us-central1.\n* Approximately 23.7% of projects experienced over 0.5% error rate during the outage.\nImpact began on Tuesday, 12 September 2023 at 23:57. The first symptoms were detected on Wednesday, 13 September 2023 at 01:00, and the incident was mitigated at 02:20 US/Pacific. Total duration of impact was 2 hours, 23 minutes.\n### **Google Cloud Dataflow:**\n* Less than 1% of new Dataflow Batch and Streaming jobs were unable to initialize in us-central1. Approximately 35% of Dataflow Batch and <1% of Streaming jobs that were running in us-central1 during the incident had performance regressions.\nImpact began on Wednesday, 13 September 2023 at 00:07 and was mitigated at 01:15 US/Pacific. Total duration of impact was 1 hour, 8 minutes.\n### **Google Cloud App Engine:**\n* Google App Engine Flexible deployments, version updates, and deletes failed with DEADLINE_EXCEEDED and INTERNAL errors in us-central1-a.\n* At the peak, 100% of deployments failed during the incident, and on average, 50% of deployments failed.\nImpact began on Wednesday, 13 September 2023 at 00:15 and was mitigated at 00:56 US/Pacific. Total duration of impact was 41 minutes.\n### **Google Cloud SQL:**\n* Google Cloud SQL experienced elevated latency and error rates for instance creations and upgrades in us-central1.\n* At the peak, about 10% of such requests failed or experienced higher latencies.\nImpact began on Wednesday, 13 September 2023 at 00:11 and was mitigated at 00:45 US/Pacific. Total duration of impact was 34 minutes.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2023-09-13T19:16:50+00:00",
-        "modified": "2023-09-13T19:16:50+00:00",
-        "when": "2023-09-13T19:16:50+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 12 September 2023 23:46\n**Incident End:** 13 September 2023 03:32\n**Duration:** 3 hours, 46 minutes\n**Affected Services and Features:**\n* Google Compute Engine (GCE)\n* Persistent Disk\n* Google Kubernetes Engine (GKE)\n* Google Cloud Bigtable\n* Google Cloud Dataflow\n* Google Cloud App Engine\n* Google Cloud SQL\n**Regions/Zones:** us-central1\n**Description:**\nMultiple Google Cloud products experienced elevated error rates and request failures in us-central1 for a duration of 3 hours, 46 minutes. From preliminary analysis, the root cause of the issue is task failures in the caching proxy of Google's distributed lock service in us-central1-a due to high memory usage.\nOur engineers mitigated the issue by redirecting the traffic away from the affected servers and by adding more memory resources. While the mitigation activities were ongoing, some products saw service recovery before others.\nGoogle will complete a full Incident Report in the following days that will provide a full root cause.\n**Customer Impact:**\n**Google Compute Engine :**\n* Customers might have experienced errors or elevated latencies for API requests compute.instances.insert and compute.instances.start in us-central1, as well as requests to aggregatedList globally\n**Persistent Disk:**\n* Persistent Disk I/O operations for newly created VMs and newly attached disks may have experienced timeouts in us-central1-a.\n* Some PD snapshot creation and restore requests were delayed or failed in us-central1-a.\n**Google Kubernetes Engine:**\n* Cluster creation and upgrade operations failed in us-central1-a and us-central1\n**Google Cloud Bigtable:**\n* Affected Cloud Bigtable clusters had elevated latency and elevated error rates in us-central1\n**Google Cloud Dataflow:**\n* New Dataflow Batch and Streaming jobs were unable to initialize in us-central1-a. Batch and Streaming Dataflow jobs that were running in us-central1-a during the incident had performance regressions.\n**Google Cloud App Engine:**\n* Google App Engine Flexible deployments, version updates, and deletes failed with DEADLINE_EXCEEDED and INTERNAL errors in us-central1-a.\n**Google Cloud SQL:**\n* Google Cloud SQL experienced elevated latency and elevated error rates for instance creations and upgrades in us-central1\n---------------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2023-09-13T11:03:48+00:00",
-        "modified": "2023-09-13T13:15:57+00:00",
-        "when": "2023-09-13T11:03:48+00:00",
-        "text": "The issue with Google App Engine, Google Cloud Bigtable, Google Cloud Dataflow, Google Cloud SQL, Google Kubernetes Engine, Persistent Disk has been resolved for all affected projects as of Wednesday, 2023-09-13 04:01 US/Pacific.\n**Google Compute Engine**\nThe issue for GCE has been resolved on Wednesday, 2023-09-13 01:13 US/Pacific.\n**Persistent Disk**\nThe issue for Persistent Disk has been resolved on Wednesday, 2023-09-13 03:07 US/Pacific.\n**Google App Engine**\nThe issue for Google App Engine has been resolved on Wednesday, 2023-09-13 03:40 US/Pacific.\n**Cloud Dataflow**\nThe issue for Cloud Dataflow has been resolved on Wednesday, 2023-09-13 03:14 US/Pacific.\n**Google Kubernetes Engine**\nThe issue for Google Kubernetes Engine has been resolved on Wednesday, 2023-09-13 04:01 US/Pacific.\n**Cloud Bigtable**\nCloud Bigtable had elevated latency and elevated error rates us-central1 but was mitigated on Wednesday, 2023-09-13 02:57 US/Pacific.\n**Google Cloud SQL**\nGoogle Cloud SQL had elevated latency and elevated error rates for instance creations and upgrades in us-central1 and was mitigated on Wednesday, 2023-09-13 00:45 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2023-09-13T10:47:19+00:00",
-        "modified": "2023-09-13T11:05:48+00:00",
-        "when": "2023-09-13T10:47:19+00:00",
-        "text": "Summary: Multiple services for Google Cloud Platform are impacted in us-central1-a\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Wednesday, 2023-09-13 04:30 US/Pacific.\nWe will provide more information by Wednesday, 2023-09-13 04:30 US/Pacific.\nDiagnosis:\n**Google Compute Engine**\nThe issue for GCE has been resolved on Wednesday, 2023-09-13 01:13 US/Pacific.\n**Persistent Disk**\nThe issue for Persistent Disk has been resolved on Wednesday, 2023-09-13 03:07 US/Pacific.\n**Google App Engine**\nThe issue for Google App Engine has been resolved on Wednesday, 2023-09-13 03:40 US/Pacific.\n**Cloud Dataflow**\nThe issue for Cloud Dataflow has been resolved on Wednesday, 2023-09-13 03:14 US/Pacific.\n**Google Kubernetes Engine**\nCluster creation and upgrade operations are failing in us-central1-a.\n**Cloud Bigtable**\nCloud Bigtable had elevated latency and elevated error rates us-central1 but was mitigated on Wednesday, 2023-09-13 02:57 US/Pacific.\nWorkaround: None at this time.",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2023-09-13T10:05:20+00:00",
-        "modified": "2023-09-13T11:06:09+00:00",
-        "when": "2023-09-13T10:05:20+00:00",
-        "text": "Summary: Multiple services for Google Cloud Platform are impacted in us-central1-a\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Wednesday, 2023-09-13 04:00 US/Pacific.\nWe will provide more information by Wednesday, 2023-09-13 04:00 US/Pacific.\nDiagnosis:\n**Google Compute Engine** - The issue for GCE has been resolved on Wednesday, 2023-09-13 01:13 US/Pacific.\n**Persistent Disk** - Input Output operation from Virtual Machine to Persistent Disk is not completing and is stuck in us-central1-a\n**Google App Engine** - Google App Engine Flexible deployments and version updates and deletes are failing in us-central1-a since 2023-09-13 00:15 PT. Users see DEADLINE_EXCEEDED and INTERNAL errors.\n**Cloud Dataflow** - Unable to start and run Dataflow jobs in us-central1-a\n**Google Kubernetes Engine** - Cluster creation and upgrade operations are failing in us-central1-a.\n**Cloud Bigtable** - Cloud Bigtable had elevated latency and elevated error rates us-central1 but was mitigated on Wednesday, 2023-09-13 02:57 US/Pacific.\nWorkaround: None at this time.",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2023-09-13T09:32:42+00:00",
-        "modified": "2023-09-13T11:06:01+00:00",
-        "when": "2023-09-13T09:32:42+00:00",
-        "text": "Summary: Multiple services for Google Cloud Platform are impacted in us-central1-a\nDescription: Mitigation work is currently underway by our engineering team.\nThe regional impact has been mitigated on Wednesday, 2023-09-13 01:05 US/Pacific but the impact in us-central1-a is still ongoing.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2023-09-13 03:30 US/Pacific.\nDiagnosis:\n**Google Compute Engine**\nAn issue that is preventing VM creation in us-central1 clusters. Also, HTTP requests to GCE API in us-central1-a are failing intermittently.\n**Persistent Disk**\nInput Output operation from Virtual Machine to Persistent Disk is not completing and is stuck in us-central1-a\n**Google App Engine**\nGoogle App Engine Flexible deployments and version updates and deletes fail in us-central1-a\n**Cloud Dataflow**\nUnable to start and run Dataflow jobs in us-central1-a\n**Google Kubernetes Engine**\nCluster creation and upgrade operations are failing in us-central1-a.\nWorkaround: None at this time.",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      },
-      {
-        "created": "2023-09-13T08:51:24+00:00",
-        "modified": "2023-09-13T11:05:54+00:00",
-        "when": "2023-09-13T08:51:24+00:00",
-        "text": "Summary: Multiple services for Google Cloud Platform are impacted in us-central1\nDescription: We are experiencing an issue with Google Cloud Dataflow, Google Compute Engine, Google App Engine, Google Kubernetes Engine, Persistent Disk beginning at Wednesday, 2023-09-13 00:30 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2023-09-13 03:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis:\n**Google Compute Engine**\nAn issue that is preventing VM creation in us-central1 clusters. Also, HTTP requests to GCE API in us-central1 and it's zones are failing intermittently.\n**Persistent Disk**\nInput Output operation from Virtual Machine to Persistent Disk is not completing and is stuck.\n**Google App Engine**\nGoogle App Engine Flexible deployments and version updates and deletes fail in us-central1\n**Cloud Dataflow**\nUnable to start and run Dataflow jobs.\n**Google Kubernetes Engine**\nCluster creation operations are failing in us-central1 and us-central1-a.\nWorkaround: None at this time.",
-        "status": "SERVICE_OUTAGE",
-        "affected_locations": [
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2023-09-19T23:04:02+00:00",
-      "modified": "2023-09-19T23:57:12+00:00",
-      "when": "2023-09-19T23:04:02+00:00",
-      "text": "# Incident Report\n## Summary\nOn Tuesday, 12 September 2023, multiple Google Cloud products experienced elevated error rates and request failures mostly in the us-central1-a zone. The total duration of this incident was 3 hours and 46 minutes.\nTo our Google Cloud customers whose businesses were impacted during this outage, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s performance and availability.\n## Root Cause\nGoogle’s data centers rely on a distributed strongly-consistent file distribution system to perform operations such as name resolution in the data plane, and consist of servers that are used for distributing widely-used data.\nThe root cause of the issue was a significant increase in traffic due to internal changes that generated more tasks than expected. This caused the file distribution system to begin crashing.\n## Remediation and Prevention\nGoogle engineers were alerted to the issue via internal monitoring on 12 September 2023 at 23:46 US/Pacific and immediately started an investigation. Once the nature and scope of the issue became clear, Google engineers began redirecting traffic away from the affected servers, and added more memory resources. This procedure took a few hours because it is a manual process requiring extra care, due to the criticality of the service and it being foundational to data center operations. During this time, some services saw recovery before others, and impact was fully mitigated for all services on 13 September 2023 at 03:32 US/Pacific.\nGoogle is committed preventing a repeat of this issue in the future and is completing the following actions:\n* Reviewing our procedures to increase coordination of high-volume internal changes.\n* Investigating ways to minimize recovery time for similar classes of problems in the future.\n* Further improving the resilience of critical data center infrastructure in the face of large load spikes.\nWe apologize for the impact this incident had on our customers and their businesses in the us-central1 region. We are taking immediate steps to prevent a recurrence in the future.\n## Detailed Description of Impact\nOn Tuesday, 12 September 2023 from 23:46 to Wednesday, 13 September 2023 at 03:32 US/Pacific, multiple Google Cloud products experienced elevated error rates and request failures in us-central1 which are detailed below:\n### **Google Compute Engine :**\n* Customers may have experienced errors or elevated latencies for API requests compute.instances.insert and compute.instances.start in us-central1, as well as requests to aggregatedList globally.\n* Failed HTTP requests: 24% of projects were impacted\n* Failed VM start and creation: 31% of projects were impacted\nImpact began on Wednesday, 13 September 2023 at 00:05 and was mitigated at 02:40 US/Pacific. Total duration of impact was 2 hours, 35 minutes.\n### **Persistent Disk:**\n* Persistent Disk I/O operations for newly created VMs and newly attached disks may have experienced timeouts in us-central1-a. Approximately 0.5% of PD devices were impacted during the incident.\n* Some PD snapshot creation and restore requests were delayed or failed in us-central1-a.\nImpact began on Wednesday, 13 September 2023 at 00:28 and was mitigated at 02:53 US/Pacific. Total duration of impact was 3 hours, 5 minutes.\n### **Google Kubernetes Engine:**\n* Customers may have experienced failed Cluster Creation requests. Up to 4% of such requests failed in us-central1-a (zonal) and us-central1 (regional) during the incident. Additionally, 0.01% of clusters in these locations may have experienced unavailability in their cluster control plane as a result of a cluster upgrade during the incident (zonal clusters only).\nImpact began on Wednesday, 13 September 2023 at 00:55 and was mitigated at 04:00 US/Pacific. Total duration of impact was 3 hours, 5 minutes.\n### **Google Cloud Bigtable:**\n* Affected Cloud Bigtable clusters had elevated latency and error rates in us-central1 for requests to the data api ‘bigtable.googleapis.com ’ in us-central1.\n* Approximately 23.7% of projects experienced over 0.5% error rate during the outage.\nImpact began on Tuesday, 12 September 2023 at 23:57. The first symptoms were detected on Wednesday, 13 September 2023 at 01:00, and the incident was mitigated at 02:20 US/Pacific. Total duration of impact was 2 hours, 23 minutes.\n### **Google Cloud Dataflow:**\n* Less than 1% of new Dataflow Batch and Streaming jobs were unable to initialize in us-central1. Approximately 35% of Dataflow Batch and <1% of Streaming jobs that were running in us-central1 during the incident had performance regressions.\nImpact began on Wednesday, 13 September 2023 at 00:07 and was mitigated at 01:15 US/Pacific. Total duration of impact was 1 hour, 8 minutes.\n### **Google Cloud App Engine:**\n* Google App Engine Flexible deployments, version updates, and deletes failed with DEADLINE_EXCEEDED and INTERNAL errors in us-central1-a.\n* At the peak, 100% of deployments failed during the incident, and on average, 50% of deployments failed.\nImpact began on Wednesday, 13 September 2023 at 00:15 and was mitigated at 00:56 US/Pacific. Total duration of impact was 41 minutes.\n### **Google Cloud SQL:**\n* Google Cloud SQL experienced elevated latency and error rates for instance creations and upgrades in us-central1.\n* At the peak, about 10% of such requests failed or experienced higher latencies.\nImpact began on Wednesday, 13 September 2023 at 00:11 and was mitigated at 00:45 US/Pacific. Total duration of impact was 34 minutes.",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_OUTAGE",
-    "severity": "high",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Google Compute Engine",
-        "id": "L3ggmi3Jy4xJmgodFA9K"
-      },
-      {
-        "title": "Google Kubernetes Engine",
-        "id": "LCSbT57h59oR4W98NHuz"
-      },
-      {
-        "title": "Google Cloud Bigtable",
-        "id": "LfZSuE3xdQU46YMFV5fy"
-      },
-      {
-        "title": "Persistent Disk",
-        "id": "SzESm2Ux129pjDGKWD68"
-      },
-      {
-        "title": "Google Cloud Dataflow",
-        "id": "T9bFoXPqG8w8g1YbWTKY"
-      },
-      {
-        "title": "Google App Engine",
-        "id": "kchyUtnkMHJWaAva8aYc"
-      },
-      {
-        "title": "Google Cloud SQL",
-        "id": "hV87iK5DcEXKgWU2kDri"
-      }
-    ],
-    "uri": "incidents/71zrZxw3PRkiNYhM1JsZ",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Iowa (us-central1)",
-        "id": "us-central1"
       }
     ]
   }
