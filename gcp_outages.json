@@ -4,12 +4,85 @@
     "number": "811151781677777788",
     "begin": "2024-09-18T20:33:39+00:00",
     "created": "2024-09-18T21:57:07+00:00",
-    "modified": "2024-09-18T21:57:08+00:00",
-    "external_desc": "Increased latency and error rates observed on Google App Engine and Google Cloud Functions gen 1.",
+    "modified": "2024-09-18T22:19:30+00:00",
+    "external_desc": "Increased latency and error rates observed on Google App Engine, Cloud Firestore, and Google Cloud Functions gen 1.",
     "updates": [
       {
+        "created": "2024-09-18T22:19:22+00:00",
+        "modified": "2024-09-18T22:19:31+00:00",
+        "when": "2024-09-18T22:19:22+00:00",
+        "text": "Summary: Increased latency and error rates observed on Google App Engine, Cloud Firestore, and Google Cloud Functions gen 1.\nDescription: Mitigation has been successfully applied by our engineering team. We are currently monitoring our environment to ensure stability.\nWe will provide more information by Wednesday, 2024-09-18 16:00 US/Pacific.\nDiagnosis: Affected users may encounter elevated latency or an elevated error rate for the impacted products.\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Taiwan (asia-east1)",
+            "id": "asia-east1"
+          },
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Warsaw (europe-central2)",
+            "id": "europe-central2"
+          },
+          {
+            "title": "London (europe-west2)",
+            "id": "europe-west2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          },
+          {
+            "title": "Zurich (europe-west6)",
+            "id": "europe-west6"
+          },
+          {
+            "title": "São Paulo (southamerica-east1)",
+            "id": "southamerica-east1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Salt Lake City (us-west3)",
+            "id": "us-west3"
+          }
+        ]
+      },
+      {
         "created": "2024-09-18T21:57:04+00:00",
-        "modified": "2024-09-18T21:57:08+00:00",
+        "modified": "2024-09-18T22:19:30+00:00",
         "when": "2024-09-18T21:57:04+00:00",
         "text": "Summary: Increased latency and error rates observed on Google App Engine and Google Cloud Functions gen 1.\nDescription: Mitigation work is currently underway by our engineering team. Based on the investigation thus far, our engineers have identified that Cloud Run is not currently impacted.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2024-09-18 16:00 US/Pacific.\nDiagnosis: Affected users may encounter elevated latency or an elevated error rate for the impacted products.\nWorkaround: None at this time.",
         "status": "SERVICE_OUTAGE",
@@ -82,10 +155,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-09-18T21:57:04+00:00",
-      "modified": "2024-09-18T21:57:08+00:00",
-      "when": "2024-09-18T21:57:04+00:00",
-      "text": "Summary: Increased latency and error rates observed on Google App Engine and Google Cloud Functions gen 1.\nDescription: Mitigation work is currently underway by our engineering team. Based on the investigation thus far, our engineers have identified that Cloud Run is not currently impacted.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Wednesday, 2024-09-18 16:00 US/Pacific.\nDiagnosis: Affected users may encounter elevated latency or an elevated error rate for the impacted products.\nWorkaround: None at this time.",
+      "created": "2024-09-18T22:19:22+00:00",
+      "modified": "2024-09-18T22:19:31+00:00",
+      "when": "2024-09-18T22:19:22+00:00",
+      "text": "Summary: Increased latency and error rates observed on Google App Engine, Cloud Firestore, and Google Cloud Functions gen 1.\nDescription: Mitigation has been successfully applied by our engineering team. We are currently monitoring our environment to ensure stability.\nWe will provide more information by Wednesday, 2024-09-18 16:00 US/Pacific.\nDiagnosis: Affected users may encounter elevated latency or an elevated error rate for the impacted products.\nWorkaround: None at this time.",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
@@ -159,6 +232,10 @@
     "service_key": "zall",
     "service_name": "Multiple Products",
     "affected_products": [
+      {
+        "title": "Cloud Firestore",
+        "id": "CETSkT92V21G6A1x28me"
+      },
       {
         "title": "Google App Engine",
         "id": "kchyUtnkMHJWaAva8aYc"
