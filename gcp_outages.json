@@ -27389,6 +27389,91 @@
     ]
   },
   {
+    "id": "JAxa64hv45yMYzCpqx1T",
+    "number": "2264297634052042910",
+    "begin": "2024-02-29T07:50:00+00:00",
+    "created": "2024-02-29T15:34:33+00:00",
+    "end": "2024-02-29T17:50:00+00:00",
+    "modified": "2024-02-29T20:51:47+00:00",
+    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
+    "updates": [
+      {
+        "created": "2024-02-29T20:51:19+00:00",
+        "modified": "2024-02-29T20:51:19+00:00",
+        "when": "2024-02-29T20:51:19+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T16:21:00+00:00",
+        "modified": "2024-02-29T16:21:08+00:00",
+        "when": "2024-02-29T16:21:00+00:00",
+        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T15:34:29+00:00",
+        "modified": "2024-02-29T15:34:36+00:00",
+        "when": "2024-02-29T15:34:29+00:00",
+        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2024-02-29T20:51:19+00:00",
+      "modified": "2024-02-29T20:51:19+00:00",
+      "when": "2024-02-29T20:51:19+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Multi-region: us",
+          "id": "us"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Chronicle Security",
+        "id": "FHwvkSZ6RzzDYAvDZXMM"
+      },
+      {
+        "title": "Chronicle SOAR",
+        "id": "GTT16Lf72XZKWArC9VxA"
+      }
+    ],
+    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Multi-region: us",
+        "id": "us"
+      }
+    ]
+  },
+  {
     "id": "M2qQyWWU9FKvVc2FfcaH",
     "number": "184633653096742397",
     "begin": "2024-02-29T07:50:00+00:00",
@@ -27491,91 +27576,6 @@
       }
     ],
     "uri": "incidents/M2qQyWWU9FKvVc2FfcaH",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Multi-region: us",
-        "id": "us"
-      }
-    ]
-  },
-  {
-    "id": "JAxa64hv45yMYzCpqx1T",
-    "number": "2264297634052042910",
-    "begin": "2024-02-29T07:50:00+00:00",
-    "created": "2024-02-29T15:34:33+00:00",
-    "end": "2024-02-29T17:50:00+00:00",
-    "modified": "2024-02-29T20:51:47+00:00",
-    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
-    "updates": [
-      {
-        "created": "2024-02-29T20:51:19+00:00",
-        "modified": "2024-02-29T20:51:19+00:00",
-        "when": "2024-02-29T20:51:19+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T16:21:00+00:00",
-        "modified": "2024-02-29T16:21:08+00:00",
-        "when": "2024-02-29T16:21:00+00:00",
-        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T15:34:29+00:00",
-        "modified": "2024-02-29T15:34:36+00:00",
-        "when": "2024-02-29T15:34:29+00:00",
-        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2024-02-29T20:51:19+00:00",
-      "modified": "2024-02-29T20:51:19+00:00",
-      "when": "2024-02-29T20:51:19+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Chronicle Security",
-        "id": "FHwvkSZ6RzzDYAvDZXMM"
-      },
-      {
-        "title": "Chronicle SOAR",
-        "id": "GTT16Lf72XZKWArC9VxA"
-      }
-    ],
-    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -65450,195 +65450,6 @@
       {
         "title": "Los Angeles (us-west2)",
         "id": "us-west2"
-      }
-    ]
-  },
-  {
-    "id": "skbvoobU4btcxyAthEmu",
-    "number": "2630663544054467239",
-    "begin": "2023-09-22T06:30:00+00:00",
-    "created": "2023-09-22T15:47:34+00:00",
-    "end": "2023-09-23T06:34:00+00:00",
-    "modified": "2023-09-28T18:07:36+00:00",
-    "external_desc": "Global: Elevated HTTP 4xx Errors on External Application Load Balancer",
-    "updates": [
-      {
-        "created": "2023-09-28T17:56:41+00:00",
-        "modified": "2023-09-28T18:07:36+00:00",
-        "when": "2023-09-28T17:56:41+00:00",
-        "text": "# Incident Report\n## Summary\nOn Thursday, 21 September 2023, Cloud Load Balancing experienced a configuration propagation issue resulting in a failure to serve traffic for some customers. To our Cloud Load Balancing customers whose businesses were impacted during this disruption, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s performance and availability.\n## Root Cause\nThe root cause of the issue was a change in the leader election process of a component of Google Cloud Load Balancer’s configuration management pipeline. This change triggered a race condition in a downstream component in the pipeline, resulting in overwriting some customer configurations with empty configurations.\nThis change of leader election was being done as part of a roll out to increase the resiliency of the system. Google engineers rolled out the change gradually and made use of a canary process to gate progress on correct functionality; however our automated rollout verification did not detect this issue, as in isolation the component rolling out was performing correctly. While the roll out was in progress, the issue was detected by our dataplane monitoring due to the increased rate of 4xx errors being served.\n## Remediation and Prevention\nGoogle engineers were alerted to an issue on 22 September 2023 at 04:51 US/Pacific from dataplane monitoring for HTTP 4xx responses and froze the configuration pipeline to avoid further impact.\nAt 05:15 US/pacific, Google engineers reinstated a snapshot of known good config for the impacted config type, mitigating the dataplane errors for which we had been alerted. At 07:15 US/Pacific the configuration pipeline was un-frozen, following our standard process. However our validations identified an underlying issue that was still present and that impact to the data plane resurfaced after the configuration pipeline was unfrozen.\nBetween 07:15 and 12:40 Google engineers focused on root cause investigation and continuous manual mitigation of impacted project configurations, which were being affected due to natural leader election flips. During this time we identified the root cause component but due to the nature of the issue, were unable to follow our standard rollback procedure resulting in a delay until 16:58, when Google engineers started a custom rollback of the relevant management plane component, which was completed at 23:34.\nOnce this rollback was completed, Google engineers performed additional validations by triggering leader election changes and ensuring that these changes no longer caused the unintended behavior.\nAffected customers were recommended to try making changes to the configuration of their External Application Load Balancer. This resolved URL loading failure issues for impacted customers.\nWe apologize for the length and severity of this incident. We are taking multiple steps to prevent a recurrence and improve reliability in the future.\n- Identify and resolve the underlying race condition in our configuration lifecycle that resulted in the unintended modifications.\n- Improve tooling and processes to more quickly and safely rollback components in the configuration management system.\n- Improve Google's internal monitoring and visualization to better assess and understand source of 4XX response alerting to expedite detection.\n- The Configuration Management System used by Global Load Balancer is scoped to operate at a project level within the global scope today. This architecture was a key reason for customers experiencing global impact. We had already initiated a program to make these operations happen at a regional level, in every region as part of our ongoing reliability improvement roadmap. This would reduce the impact of a similar outage to a region instead of global.\n## Detailed Description of Impact\nStarting at 23:30 on 21 September 2023, some customers experienced a global outage to their Global External Load Balancer data plane for affected projects for the period their configuration was in the bad state. This manifested as HTTP 4xx errors until either the suggested workaround or the Google mitigation was applied. The incident lasted for a period of 1 day, 4 minutes. However, individual customers were impacted for a much shorter period.\nCustomer impact was noted mostly in one specific configuration type of Google front end (GFE) that is used for Internet Network End Groups (NEG) [1] where up to 20% of customers’ queries failed due to missing configuration. At peak, this impact was observed in up to 9.3% of customer’s projects hosted in this specific type of configuration. Impact to customers using other configuration types was minimal to negligible.\n[1] - https://cloud.google.com/load-balancing/docs/negs",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-09-25T22:07:25+00:00",
-        "modified": "2023-09-25T22:07:25+00:00",
-        "when": "2023-09-25T22:07:25+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 21 Sep 2023 23:30\n**Incident End:** 22 Sep 2023 23:34\n**Duration:** 1 day and 4 minutes\n**Affected Services and Features:**\nGoogle Cloud Load Balancing\n**Regions/Zones:** Global\n**Description:**\nGoogle Cloud Load Balancing experienced elevated HTTP 4xx errors for a period of 1 day, 4 minutes.\nFrom preliminary analysis the root cause of the issue is a change in leader election process of a component of Google Cloud Load Balancer’s management pipeline that triggered a race condition in a downstream component in the pipeline, resulting in the unintended modification of some customer configurations.\nGoogle will complete a full incident report in the following days that will provide a detailed root cause.\n**Customer Impact:**\nCustomers would have experienced a global outage to their data plane for the period their config was in the bad state and would have observed 4xx errors from external load balancers resulting in failure of loading of URLs",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-09-23T08:14:48+00:00",
-        "modified": "2023-09-23T08:14:50+00:00",
-        "when": "2023-09-23T08:14:48+00:00",
-        "text": "The issue with Cloud Load Balancing has been resolved for all affected users as of Saturday, 2023-09-23 01:10 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-09-23T07:15:51+00:00",
-        "modified": "2023-09-23T07:15:54+00:00",
-        "when": "2023-09-23T07:15:51+00:00",
-        "text": "Summary: Global: Elevated HTTP 4xx Errors on External Application Load Balancer\nDescription: Mitigation efforts are ongoing with our engineering team, and almost all impact has been mitigated. The impact is now limited to extremely rare cases of individual load balancers experiencing a spike in errors of at most three minutes. Engineering teams are continuing to monitor the situation and are working to resolve the root cause of the problem\nWe do not have an ETA for full mitigation at this point.\nWe will provide more information by Saturday, 2023-09-23 10:00 US/Pacific.\nDiagnosis: Some customers may see errors in particular HTTP 4xx errors on External Application Load Balancer.\nWorkaround: Affected customers are recommended to try making any change to the configuration of their External Application Load Balancer. Projects with recently updated configuration should be unaffected by the problem.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-09-22T23:56:13+00:00",
-        "modified": "2023-09-22T23:56:16+00:00",
-        "when": "2023-09-22T23:56:13+00:00",
-        "text": "Summary: Global: Elevated HTTP 4xx Errors on External Application Load Balancer\nDescription: Mitigation work is still underway with our engineering team and the majority of impact has been mitigated. Engineering teams are continuing to monitor the situation and are working to resolve the source of the problem.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Saturday, 2023-09-23 10:00 US/Pacific.\nDiagnosis: Some customers may see errors in particular HTTP 4xx errors on External Application Load Balancer.\nWorkaround: Affected customers are recommended to try making any change to the configuration of their External Application Load Balancer. Projects with recently updated configuration should be unaffected by the problem.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-09-22T22:52:32+00:00",
-        "modified": "2023-09-22T22:52:35+00:00",
-        "when": "2023-09-22T22:52:32+00:00",
-        "text": "Summary: Global: Elevated HTTP 4xx Errors on External Application Load Balancer\nDescription: Mitigation work is still underway with our engineering team and the majority of impact has been mitigated. Engineering teams are continuing to monitor to confirm full recovery.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2023-09-22 17:00 US/Pacific.\nDiagnosis: Some customers may see errors in particular HTTP 4xx errors on External Application Load Balancer.\nWorkaround: Affected customers are recommended to try making any change to the configuration of their External Application Load Balancer. Projects with recently updated configuration should be unaffected by the problem.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-09-22T20:19:33+00:00",
-        "modified": "2023-09-22T20:19:35+00:00",
-        "when": "2023-09-22T20:19:33+00:00",
-        "text": "Summary: Global: Elevated HTTP 4xx Errors on External Application Load Balancer\nDescription: Mitigation work is currently underway by our engineering team and the majority of impact is mitigated. Engineering teams are continuing to monitor to confirm full recovery.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2023-09-22 16:00 US/Pacific.\nDiagnosis: Some customers may see errors in particular HTTP 4xx errors on External Application Load Balancer.\nWorkaround: Affected customers are recommended to try making any change to the configuration of their External Application Load Balancer. Projects with recently updated configuration should be unaffected by the problem.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-09-22T17:21:34+00:00",
-        "modified": "2023-09-22T17:21:36+00:00",
-        "when": "2023-09-22T17:21:34+00:00",
-        "text": "Summary: Global: Elevated HTTP 4xx Errors on External Application Load Balancer\nDescription: Mitigation work is currently underway and our engineering team continues to investigate the root cause of the issue.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2023-09-22 13:00 US/Pacific.\nDiagnosis: Some customers may see errors in particular HTTP 4xx errors on External Application Load Balancer.\nWorkaround: Affected customers are recommended to try making any change to the configuration of their External Application Load Balancer. Projects with recently updated configuration should be unaffected by the problem.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-09-22T16:34:56+00:00",
-        "modified": "2023-09-22T16:34:58+00:00",
-        "when": "2023-09-22T16:34:56+00:00",
-        "text": "Summary: Global: Elevated HTTP 4xx Errors on External Application Load Balancer\nDescription: Mitigation work is currently underway and our engineering team continues to investigate the root cause of the issue.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2023-09-22 11:00 US/Pacific.\nDiagnosis: Some customers may see errors in particular HTTP 4xx errors on External Application Load Balancer.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-09-22T15:49:31+00:00",
-        "modified": "2023-09-22T15:49:32+00:00",
-        "when": "2023-09-22T15:49:31+00:00",
-        "text": "Summary: Global: Elevated HTTP 4xx Errors on External Application Load Balancer\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2023-09-22 09:51 US/Pacific.\nDiagnosis: Some customers may see errors in particular HTTP 4xx errors on External Application Load Balancer.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      },
-      {
-        "created": "2023-09-22T15:47:33+00:00",
-        "modified": "2023-09-22T15:51:00+00:00",
-        "when": "2023-09-22T15:47:33+00:00",
-        "text": "Summary: We are experiencing an issue with Cloud Load Balancing.\nDescription: We are experiencing an issue with Cloud Load Balancing.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2023-09-22 09:20 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers may experience elevated 400 errors.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Global",
-            "id": "global"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2023-09-28T17:56:41+00:00",
-      "modified": "2023-09-28T18:07:36+00:00",
-      "when": "2023-09-28T17:56:41+00:00",
-      "text": "# Incident Report\n## Summary\nOn Thursday, 21 September 2023, Cloud Load Balancing experienced a configuration propagation issue resulting in a failure to serve traffic for some customers. To our Cloud Load Balancing customers whose businesses were impacted during this disruption, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s performance and availability.\n## Root Cause\nThe root cause of the issue was a change in the leader election process of a component of Google Cloud Load Balancer’s configuration management pipeline. This change triggered a race condition in a downstream component in the pipeline, resulting in overwriting some customer configurations with empty configurations.\nThis change of leader election was being done as part of a roll out to increase the resiliency of the system. Google engineers rolled out the change gradually and made use of a canary process to gate progress on correct functionality; however our automated rollout verification did not detect this issue, as in isolation the component rolling out was performing correctly. While the roll out was in progress, the issue was detected by our dataplane monitoring due to the increased rate of 4xx errors being served.\n## Remediation and Prevention\nGoogle engineers were alerted to an issue on 22 September 2023 at 04:51 US/Pacific from dataplane monitoring for HTTP 4xx responses and froze the configuration pipeline to avoid further impact.\nAt 05:15 US/pacific, Google engineers reinstated a snapshot of known good config for the impacted config type, mitigating the dataplane errors for which we had been alerted. At 07:15 US/Pacific the configuration pipeline was un-frozen, following our standard process. However our validations identified an underlying issue that was still present and that impact to the data plane resurfaced after the configuration pipeline was unfrozen.\nBetween 07:15 and 12:40 Google engineers focused on root cause investigation and continuous manual mitigation of impacted project configurations, which were being affected due to natural leader election flips. During this time we identified the root cause component but due to the nature of the issue, were unable to follow our standard rollback procedure resulting in a delay until 16:58, when Google engineers started a custom rollback of the relevant management plane component, which was completed at 23:34.\nOnce this rollback was completed, Google engineers performed additional validations by triggering leader election changes and ensuring that these changes no longer caused the unintended behavior.\nAffected customers were recommended to try making changes to the configuration of their External Application Load Balancer. This resolved URL loading failure issues for impacted customers.\nWe apologize for the length and severity of this incident. We are taking multiple steps to prevent a recurrence and improve reliability in the future.\n- Identify and resolve the underlying race condition in our configuration lifecycle that resulted in the unintended modifications.\n- Improve tooling and processes to more quickly and safely rollback components in the configuration management system.\n- Improve Google's internal monitoring and visualization to better assess and understand source of 4XX response alerting to expedite detection.\n- The Configuration Management System used by Global Load Balancer is scoped to operate at a project level within the global scope today. This architecture was a key reason for customers experiencing global impact. We had already initiated a program to make these operations happen at a regional level, in every region as part of our ongoing reliability improvement roadmap. This would reduce the impact of a similar outage to a region instead of global.\n## Detailed Description of Impact\nStarting at 23:30 on 21 September 2023, some customers experienced a global outage to their Global External Load Balancer data plane for affected projects for the period their configuration was in the bad state. This manifested as HTTP 4xx errors until either the suggested workaround or the Google mitigation was applied. The incident lasted for a period of 1 day, 4 minutes. However, individual customers were impacted for a much shorter period.\nCustomer impact was noted mostly in one specific configuration type of Google front end (GFE) that is used for Internet Network End Groups (NEG) [1] where up to 20% of customers’ queries failed due to missing configuration. At peak, this impact was observed in up to 9.3% of customer’s projects hosted in this specific type of configuration. Impact to customers using other configuration types was minimal to negligible.\n[1] - https://cloud.google.com/load-balancing/docs/negs",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Global",
-          "id": "global"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Google Cloud Networking",
-        "id": "VNJxzcH58QmTt5H6pnT6"
-      },
-      {
-        "title": "Cloud Load Balancing",
-        "id": "ix7u9beT8ivBdjApTif3"
-      }
-    ],
-    "uri": "incidents/skbvoobU4btcxyAthEmu",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Global",
-        "id": "global"
       }
     ]
   },
