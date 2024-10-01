@@ -2,15 +2,23 @@
   {
     "id": "mNDbSnPAQnJehVvXMhtU",
     "number": "10174426061614754388",
-    "begin": "2024-10-01T16:38:12+00:00",
+    "begin": "2024-10-01T16:28:00+00:00",
     "created": "2024-10-01T17:28:14+00:00",
-    "end": "2024-10-01T18:14:52+00:00",
-    "modified": "2024-10-01T18:14:56+00:00",
+    "end": "2024-10-01T17:03:00+00:00",
+    "modified": "2024-10-01T21:40:55+00:00",
     "external_desc": "Vertex AI Search seeing elevated failures for 50% of queries for SearchService",
     "updates": [
       {
+        "created": "2024-10-01T21:40:24+00:00",
+        "modified": "2024-10-01T21:40:55+00:00",
+        "when": "2024-10-01T21:40:24+00:00",
+        "text": "## Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 01 October, 2024 09:28\n**Incident End:** 01 October, 2024 10:03\n**Duration:** 35 minutes\n**Affected Services and Features:**\nVertex AI Search for Retail\n**Regions/Zones:**\nGlobal\n**Description:**\nVertex AI Search for Retail queries on the Search API experienced elevated error rates and latencies for a duration of 35 minutes. Preliminary analysis indicates the root cause is an issue introduced by a new version release of an internal service which the Search API relies on which caused failures on our Search API.\nThe issue was mitigated by rolling out a patch for our internal service to resolve the disruption.\n**Customer Impact:**\nVertex AI Search for Retail customers experienced elevated error rates and elevated latencies for a subset of queries.\n**Additional Information:**\nAt the time of the outage, we believed that this issue was also impacting Recommendation AI. Upon further investigation, we concluded that this issue had no impact on Recommendation AI.\n-------",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-10-01T18:14:52+00:00",
-        "modified": "2024-10-01T18:14:57+00:00",
+        "modified": "2024-10-01T21:40:24+00:00",
         "when": "2024-10-01T18:14:52+00:00",
         "text": "We experienced an issue with Vertex AI Search, Recommendation AI beginning on Tuesday, 2024-10-01 09:29 US/Pacific.\nOur monitoring indicates that the errors have stopped occurring as of 2024-10-01 10:05 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -68,10 +76,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-10-01T18:14:52+00:00",
-      "modified": "2024-10-01T18:14:57+00:00",
-      "when": "2024-10-01T18:14:52+00:00",
-      "text": "We experienced an issue with Vertex AI Search, Recommendation AI beginning on Tuesday, 2024-10-01 09:29 US/Pacific.\nOur monitoring indicates that the errors have stopped occurring as of 2024-10-01 10:05 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2024-10-01T21:40:24+00:00",
+      "modified": "2024-10-01T21:40:55+00:00",
+      "when": "2024-10-01T21:40:24+00:00",
+      "text": "## Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 01 October, 2024 09:28\n**Incident End:** 01 October, 2024 10:03\n**Duration:** 35 minutes\n**Affected Services and Features:**\nVertex AI Search for Retail\n**Regions/Zones:**\nGlobal\n**Description:**\nVertex AI Search for Retail queries on the Search API experienced elevated error rates and latencies for a duration of 35 minutes. Preliminary analysis indicates the root cause is an issue introduced by a new version release of an internal service which the Search API relies on which caused failures on our Search API.\nThe issue was mitigated by rolling out a patch for our internal service to resolve the disruption.\n**Customer Impact:**\nVertex AI Search for Retail customers experienced elevated error rates and elevated latencies for a subset of queries.\n**Additional Information:**\nAt the time of the outage, we believed that this issue was also impacting Recommendation AI. Upon further investigation, we concluded that this issue had no impact on Recommendation AI.\n-------",
       "status": "AVAILABLE",
       "affected_locations": []
     },
@@ -85,10 +93,6 @@
         "id": "z9PfKanGZYvYNUbnKzRJ"
       },
       {
-        "title": "Recommendation AI",
-        "id": "jWSoZzR1kkyiDi9C5GMM"
-      },
-      {
         "title": "Vertex AI Search",
         "id": "vNncXxtSVvqyhvSkQ6PJ"
       }
@@ -97,16 +101,8 @@
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
-        "title": "Multi-region: eu",
-        "id": "eu"
-      },
-      {
         "title": "Global",
         "id": "global"
-      },
-      {
-        "title": "Multi-region: us",
-        "id": "us"
       }
     ]
   },
