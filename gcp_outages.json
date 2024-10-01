@@ -4,12 +4,33 @@
     "number": "10174426061614754388",
     "begin": "2024-10-01T16:38:12+00:00",
     "created": "2024-10-01T17:28:14+00:00",
-    "modified": "2024-10-01T17:35:33+00:00",
+    "modified": "2024-10-01T17:37:57+00:00",
     "external_desc": "Vertex AI Search seeing elevated failures for 50% of queries for SearchService",
     "updates": [
       {
+        "created": "2024-10-01T17:37:55+00:00",
+        "modified": "2024-10-01T17:37:58+00:00",
+        "when": "2024-10-01T17:37:55+00:00",
+        "text": "Summary: Vertex AI Search seeing elevated failures for 50% of queries for SearchService\nDescription: We are experiencing an issue with Vertex AI Search, Recommendation AI beginning on Tuesday, 2024-10-01 09:29 US/Pacific.\nOur engineering team continues to investigate the issue with the highest priority\nWe will provide an update by Tuesday, 2024-10-01 12:00 US/Pacific with current details.\nDiagnosis: Customers may observe elevated errors while performing search for products.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: eu",
+            "id": "eu"
+          },
+          {
+            "title": "Global",
+            "id": "global"
+          },
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
         "created": "2024-10-01T17:35:30+00:00",
-        "modified": "2024-10-01T17:35:33+00:00",
+        "modified": "2024-10-01T17:37:57+00:00",
         "when": "2024-10-01T17:35:30+00:00",
         "text": "Summary: Vertex AI Search seeing elevated failures for 50% of queries for SearchService\nDescription: We are experiencing an issue with Vertex AI Search, Recommendation AI beginning on Tuesday, 2024-10-01 09:29 US/Pacific.\nOur engineering team continues to investigate the issue with the highest priority\nWe will provide an update by Tuesday, 2024-10-01 12:00 US/Pacific with current details.\nDiagnosis: Customers may observe elevated errors while performing search for products.\nWorkaround: None at this time.",
         "status": "SERVICE_INFORMATION",
@@ -38,11 +59,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-10-01T17:35:30+00:00",
-      "modified": "2024-10-01T17:35:33+00:00",
-      "when": "2024-10-01T17:35:30+00:00",
+      "created": "2024-10-01T17:37:55+00:00",
+      "modified": "2024-10-01T17:37:58+00:00",
+      "when": "2024-10-01T17:37:55+00:00",
       "text": "Summary: Vertex AI Search seeing elevated failures for 50% of queries for SearchService\nDescription: We are experiencing an issue with Vertex AI Search, Recommendation AI beginning on Tuesday, 2024-10-01 09:29 US/Pacific.\nOur engineering team continues to investigate the issue with the highest priority\nWe will provide an update by Tuesday, 2024-10-01 12:00 US/Pacific with current details.\nDiagnosis: Customers may observe elevated errors while performing search for products.\nWorkaround: None at this time.",
-      "status": "SERVICE_INFORMATION",
+      "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
           "title": "Multi-region: eu",
@@ -58,8 +79,8 @@
         }
       ]
     },
-    "status_impact": "SERVICE_INFORMATION",
-    "severity": "low",
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
     "service_key": "zall",
     "service_name": "Multiple Products",
     "affected_products": [
