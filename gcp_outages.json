@@ -4,14 +4,36 @@
     "number": "5456042628083118901",
     "begin": "2024-10-16T07:43:42+00:00",
     "created": "2024-10-16T08:48:19+00:00",
-    "modified": "2024-10-16T09:42:50+00:00",
+    "end": "2024-10-16T09:59:06+00:00",
+    "modified": "2024-10-16T10:05:50+00:00",
     "external_desc": "Multiple GCP products impacted in us-west2 region / us-west2-a zone",
     "updates": [
       {
+        "created": "2024-10-16T09:59:06+00:00",
+        "modified": "2024-10-16T09:59:26+00:00",
+        "when": "2024-10-16T09:59:06+00:00",
+        "text": "The issue with Google Cloud SQL, Google Compute Engine, Virtual Private Cloud (VPC), Google Cloud Dataflow, Hybrid Connectivity, Google Cloud Networking, Identity and Access Management, Artifact Registry, Persistent Disk, Google Cloud Deploy, Google Cloud Bigtable, AlloyDB for PostgreSQL has been resolved for all affected users as of Wednesday, 2024-10-16 02:49 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2024-10-16T09:48:20+00:00",
+        "modified": "2024-10-16T09:59:20+00:00",
+        "when": "2024-10-16T09:48:20+00:00",
+        "text": "Summary: Multiple GCP products impacted in us-west2 region / us-west2-a zone\nDescription: We are experiencing an issue with multiple GCP products.\nInitial mitigation steps have been successfully completed but still some work is underway by our engineering team.\nWe will provide more information by Wednesday, 2024-10-16 03:30 US/Pacific.\n**Diagnosis:**\n- **Google Cloud SQL**: Some operations such as instance create and backup may fail. - **Cloud Interconnect**: **[mitigated]** Cloud Interconnect attachments to us-west2 cannot be created, updated, or deleted. - **Google Compute Engine**: **[mitigated]** Customers will see some of their VMs unavailable in us-west2-a, where they will not be able to SSH, modify or delete them. New VM creations are working for the zone and those VMs will be healthy. - **Google Cloud Bigtable**: Increase in CANCELED and UNAVAILABLE errors for some resources in us-west2-a - **Google Cloud Dataflow**: **[mitigated]** Impacted customers may have experienced latency (slowness) while running both batch and streaming jobs. This has been mitigated and no further impact is expected. - **Artifact Registry (AR)**: Asynchronous API operations to create new AR repositories saw an increased failure rate - **Persistent Disk**: Snapshots might fail in this zone. - **Cloud Deploy**: Cloud Deploy's render, predeploy, deploy, verify and postdeploy operations in us-west2 are unable to complete. - **Cloud Pub/Sub**: **[mitigated]** The impact for Pub/sub is already mitigated as traffic is diverted away from the impacted location. - **Identity and Access Management**: **[mitigated]** The impact is already mitigated as traffic is diverted away from the impacted location.\n**Workaround:** - **Google Cloud SQL**: Users can perform these operations in a region other than us-west2 for new instance creation. There is no workaround for backups on existing instances at this time. - **Message Streams**: Users can create new VMs. Current VMs are unavailable",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          }
+        ]
+      },
+      {
         "created": "2024-10-16T09:32:53+00:00",
-        "modified": "2024-10-16T09:42:50+00:00",
+        "modified": "2024-10-16T10:05:50+00:00",
         "when": "2024-10-16T09:32:53+00:00",
-        "text": "Summary: Multiple GCP products impacted in us-west2 region / us-west2-a zone\n**Diagnosis:**\n* **Google Cloud SQL:** Some operations such as instance create and backup may fail.\n* **Cloud Interconnect:** Cloud Interconnect attachments to us-west2 cannot be created, updated, or deleted.\n* **Google Compute Engine:** [mitigated] Customers will see some of their VMs unavailable in us-west2-a, where they will not be able to SSH, modify or delete them. New VM creations are working for the zone and those VMs will be healthy.\n* **Google Cloud Bigtable**: Increase in CANCELED and UNAVAILABLE errors for some resources in us-west2-a\n* **Google Cloud Dataflow:** Impacted customers may have experienced latency (slowness) while running both batch and streaming jobs. This has been mitigated and no further impact is expected.\n* **Artifact Registry (AR)**: Asynchronous API operations to create new AR repositories saw an increased failure rate\n* Persistent Disk: Snapshots might fail in this zone.\n* **Cloud Deploy:** Cloud Deploy's render, predeploy, deploy, verify and postdeploy operations in us-west2 are unable to complete.\n* **Cloud Pub/Sub:** The impact for Pub/sub is already mitigated as traffic is diverted away from the impacted location.\n* **Identity and Access Management: **The impact is already mitigated as traffic is diverted away from the impacted location\n* **Google Cloud Networking:**\n* **Virtual Private Cloud (VPC):**\n**Workaround:**\n* **Google Cloud SQL**: Users can perform these operations in a region other than us-west2 for new instance creation. There is no workaround for backups on existing instances at this time.\n* **Message Streams**: Users can create new VMs. Current VMs are unavailable",
+        "text": "Summary: Multiple GCP products impacted in us-west2 region / us-west2-a zone\n**Diagnosis:**\n* **Google Cloud SQL:** Some operations such as instance create and backup may fail.\n* **Cloud Interconnect:** Cloud Interconnect attachments to us-west2 cannot be created, updated, or deleted.\n* **Google Compute Engine:** [mitigated] Customers will see some of their VMs unavailable in us-west2-a, where they will not be able to SSH, modify or delete them. New VM creations are working for the zone and those VMs will be healthy.\n* **Google Cloud Bigtable**: Increase in CANCELED and UNAVAILABLE errors for some resources in us-west2-a\n* **Google Cloud Dataflow:** Impacted customers may have experienced latency (slowness) while running both batch and streaming jobs. This has been mitigated and no further impact is expected.\n* **Artifact Registry (AR)**: Asynchronous API operations to create new AR repositories saw an increased failure rate\n* **Persistent Disk**: Snapshots might fail in this zone.\n* **Cloud Deploy:** Cloud Deploy's render, predeploy, deploy, verify and postdeploy operations in us-west2 are unable to complete.\n* **Cloud Pub/Sub:** The impact for Pub/sub is already mitigated as traffic is diverted away from the impacted location.\n* **Identity and Access Management:** The impact is already mitigated as traffic is diverted away from the impacted location\n* **Google Cloud Networking:**\n* **Virtual Private Cloud (VPC):**\n**Workaround:**\n* **Google Cloud SQL**: Users can perform these operations in a region other than us-west2 for new instance creation. There is no workaround for backups on existing instances at this time.\n* **Message Streams**: Users can create new VMs. Current VMs are unavailable",
         "status": "SERVICE_OUTAGE",
         "affected_locations": [
           {
@@ -61,17 +83,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-10-16T09:32:53+00:00",
-      "modified": "2024-10-16T09:42:50+00:00",
-      "when": "2024-10-16T09:32:53+00:00",
-      "text": "Summary: Multiple GCP products impacted in us-west2 region / us-west2-a zone\n**Diagnosis:**\n* **Google Cloud SQL:** Some operations such as instance create and backup may fail.\n* **Cloud Interconnect:** Cloud Interconnect attachments to us-west2 cannot be created, updated, or deleted.\n* **Google Compute Engine:** [mitigated] Customers will see some of their VMs unavailable in us-west2-a, where they will not be able to SSH, modify or delete them. New VM creations are working for the zone and those VMs will be healthy.\n* **Google Cloud Bigtable**: Increase in CANCELED and UNAVAILABLE errors for some resources in us-west2-a\n* **Google Cloud Dataflow:** Impacted customers may have experienced latency (slowness) while running both batch and streaming jobs. This has been mitigated and no further impact is expected.\n* **Artifact Registry (AR)**: Asynchronous API operations to create new AR repositories saw an increased failure rate\n* Persistent Disk: Snapshots might fail in this zone.\n* **Cloud Deploy:** Cloud Deploy's render, predeploy, deploy, verify and postdeploy operations in us-west2 are unable to complete.\n* **Cloud Pub/Sub:** The impact for Pub/sub is already mitigated as traffic is diverted away from the impacted location.\n* **Identity and Access Management: **The impact is already mitigated as traffic is diverted away from the impacted location\n* **Google Cloud Networking:**\n* **Virtual Private Cloud (VPC):**\n**Workaround:**\n* **Google Cloud SQL**: Users can perform these operations in a region other than us-west2 for new instance creation. There is no workaround for backups on existing instances at this time.\n* **Message Streams**: Users can create new VMs. Current VMs are unavailable",
-      "status": "SERVICE_OUTAGE",
-      "affected_locations": [
-        {
-          "title": "Los Angeles (us-west2)",
-          "id": "us-west2"
-        }
-      ]
+      "created": "2024-10-16T09:59:06+00:00",
+      "modified": "2024-10-16T09:59:26+00:00",
+      "when": "2024-10-16T09:59:06+00:00",
+      "text": "The issue with Google Cloud SQL, Google Compute Engine, Virtual Private Cloud (VPC), Google Cloud Dataflow, Hybrid Connectivity, Google Cloud Networking, Identity and Access Management, Artifact Registry, Persistent Disk, Google Cloud Deploy, Google Cloud Bigtable, AlloyDB for PostgreSQL has been resolved for all affected users as of Wednesday, 2024-10-16 02:49 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
+      "affected_locations": []
     },
     "status_impact": "SERVICE_OUTAGE",
     "severity": "high",
@@ -132,13 +149,13 @@
       }
     ],
     "uri": "incidents/RAGcW4N9jHRkrAjnX2v7",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Los Angeles (us-west2)",
         "id": "us-west2"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "ZJyESmcEajZg2wMDJUg6",
