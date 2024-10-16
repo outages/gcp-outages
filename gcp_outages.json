@@ -4,12 +4,25 @@
     "number": "5456042628083118901",
     "begin": "2024-10-16T07:43:42+00:00",
     "created": "2024-10-16T08:48:19+00:00",
-    "modified": "2024-10-16T08:48:20+00:00",
+    "modified": "2024-10-16T09:05:35+00:00",
     "external_desc": "Multiple GCP products impacted in us-west2 region / us-west2-a zone",
     "updates": [
       {
+        "created": "2024-10-16T09:05:11+00:00",
+        "modified": "2024-10-16T09:05:42+00:00",
+        "when": "2024-10-16T09:05:11+00:00",
+        "text": "Summary: Multiple GCP products impacted in us-west2 region / us-west2-a zone\nDescription: We are experiencing an issue with several GCP products including Google Cloud SQL, Google Compute Engine, Virtual Private Cloud (VPC), Google Cloud Networking, Cloud Bigtable, Hybrid Connectivity, Identity and Access Management and Google Cloud Dataflow. Our engineering teams continue to remain fully engaged, and focusing on finding a mitigation. We will provide an update by Wednesday, 2024-10-16 02:30 US/Pacific with current details.\nDiagnosis: CloudSQL : Some operations performed via the console or gCloud API, such as instance create and backup may fail\nWorkaround: CloudSQL: Users can perform these operations in a region other than us-west2",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Los Angeles (us-west2)",
+            "id": "us-west2"
+          }
+        ]
+      },
+      {
         "created": "2024-10-16T08:48:15+00:00",
-        "modified": "2024-10-16T08:48:20+00:00",
+        "modified": "2024-10-16T09:05:35+00:00",
         "when": "2024-10-16T08:48:15+00:00",
         "text": "Summary: Multiple GCP products impacted in us-west2 region / us-west2-a zone\nDescription: We are experiencing an issue with several GCP products including Google Cloud SQL, Google Compute Engine, Virtual Private Cloud (VPC), Google Cloud Networking, Hybrid Connectivity, Identity and Access Management and Google Cloud Dataflow.\nOur engineering teams continue to remain fully engaged, and focusing on finding a mitigation. We will provide an update by Wednesday, 2024-10-16 02:30 US/Pacific with current details.\nDiagnosis: CloudSQL : Some operations performed via the console or gCloud API, such as instance create and backup may fail\nWorkaround: CloudSQL: Users can perform these operations in a region other than us-west2",
         "status": "SERVICE_OUTAGE",
@@ -22,10 +35,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-10-16T08:48:15+00:00",
-      "modified": "2024-10-16T08:48:20+00:00",
-      "when": "2024-10-16T08:48:15+00:00",
-      "text": "Summary: Multiple GCP products impacted in us-west2 region / us-west2-a zone\nDescription: We are experiencing an issue with several GCP products including Google Cloud SQL, Google Compute Engine, Virtual Private Cloud (VPC), Google Cloud Networking, Hybrid Connectivity, Identity and Access Management and Google Cloud Dataflow.\nOur engineering teams continue to remain fully engaged, and focusing on finding a mitigation. We will provide an update by Wednesday, 2024-10-16 02:30 US/Pacific with current details.\nDiagnosis: CloudSQL : Some operations performed via the console or gCloud API, such as instance create and backup may fail\nWorkaround: CloudSQL: Users can perform these operations in a region other than us-west2",
+      "created": "2024-10-16T09:05:11+00:00",
+      "modified": "2024-10-16T09:05:42+00:00",
+      "when": "2024-10-16T09:05:11+00:00",
+      "text": "Summary: Multiple GCP products impacted in us-west2 region / us-west2-a zone\nDescription: We are experiencing an issue with several GCP products including Google Cloud SQL, Google Compute Engine, Virtual Private Cloud (VPC), Google Cloud Networking, Cloud Bigtable, Hybrid Connectivity, Identity and Access Management and Google Cloud Dataflow. Our engineering teams continue to remain fully engaged, and focusing on finding a mitigation. We will provide an update by Wednesday, 2024-10-16 02:30 US/Pacific with current details.\nDiagnosis: CloudSQL : Some operations performed via the console or gCloud API, such as instance create and backup may fail\nWorkaround: CloudSQL: Users can perform these operations in a region other than us-west2",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
@@ -48,8 +61,16 @@
         "id": "BGJQ6jbGK4kUuBTQFZ1G"
       },
       {
+        "title": "Google Cloud Bigtable",
+        "id": "LfZSuE3xdQU46YMFV5fy"
+      },
+      {
         "title": "Google Cloud Dataflow",
         "id": "T9bFoXPqG8w8g1YbWTKY"
+      },
+      {
+        "title": "Google Cloud Deploy",
+        "id": "6z5SnvJrJMJQSdJmUQjH"
       },
       {
         "title": "Google Cloud Networking",
