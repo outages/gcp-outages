@@ -28817,6 +28817,91 @@
     ]
   },
   {
+    "id": "JAxa64hv45yMYzCpqx1T",
+    "number": "2264297634052042910",
+    "begin": "2024-02-29T07:50:00+00:00",
+    "created": "2024-02-29T15:34:33+00:00",
+    "end": "2024-02-29T17:50:00+00:00",
+    "modified": "2024-02-29T20:51:47+00:00",
+    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
+    "updates": [
+      {
+        "created": "2024-02-29T20:51:19+00:00",
+        "modified": "2024-02-29T20:51:19+00:00",
+        "when": "2024-02-29T20:51:19+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T16:21:00+00:00",
+        "modified": "2024-02-29T16:21:08+00:00",
+        "when": "2024-02-29T16:21:00+00:00",
+        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      },
+      {
+        "created": "2024-02-29T15:34:29+00:00",
+        "modified": "2024-02-29T15:34:36+00:00",
+        "when": "2024-02-29T15:34:29+00:00",
+        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Multi-region: us",
+            "id": "us"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2024-02-29T20:51:19+00:00",
+      "modified": "2024-02-29T20:51:19+00:00",
+      "when": "2024-02-29T20:51:19+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
+      "status": "AVAILABLE",
+      "affected_locations": [
+        {
+          "title": "Multi-region: us",
+          "id": "us"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Chronicle Security",
+        "id": "FHwvkSZ6RzzDYAvDZXMM"
+      },
+      {
+        "title": "Chronicle SOAR",
+        "id": "GTT16Lf72XZKWArC9VxA"
+      }
+    ],
+    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
+      {
+        "title": "Multi-region: us",
+        "id": "us"
+      }
+    ]
+  },
+  {
     "id": "M2qQyWWU9FKvVc2FfcaH",
     "number": "184633653096742397",
     "begin": "2024-02-29T07:50:00+00:00",
@@ -28919,91 +29004,6 @@
       }
     ],
     "uri": "incidents/M2qQyWWU9FKvVc2FfcaH",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Multi-region: us",
-        "id": "us"
-      }
-    ]
-  },
-  {
-    "id": "JAxa64hv45yMYzCpqx1T",
-    "number": "2264297634052042910",
-    "begin": "2024-02-29T07:50:00+00:00",
-    "created": "2024-02-29T15:34:33+00:00",
-    "end": "2024-02-29T17:50:00+00:00",
-    "modified": "2024-02-29T20:51:47+00:00",
-    "external_desc": "Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us",
-    "updates": [
-      {
-        "created": "2024-02-29T20:51:19+00:00",
-        "modified": "2024-02-29T20:51:19+00:00",
-        "when": "2024-02-29T20:51:19+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T16:21:00+00:00",
-        "modified": "2024-02-29T16:21:08+00:00",
-        "when": "2024-02-29T16:21:00+00:00",
-        "text": "The issue with Chronicle Security, Chronicle SOAR has been resolved for all affected projects as of Thursday, 2024-02-29 08:20 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2024-02-29T15:34:29+00:00",
-        "modified": "2024-02-29T15:34:36+00:00",
-        "when": "2024-02-29T15:34:29+00:00",
-        "text": "Summary: Chronicle Security, Chronicle SOAR. High Remote Procedure Calls (RPC) error rate in Multiregion/us\nDescription: We are experiencing an issue with Chronicle Security, Chronicle SOAR.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Thursday, 2024-02-29 09:00 US/Pacific with current details.\nDiagnosis: Impacted users may experience high failure rate for Backstory API calls\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      }
-    ],
-    "most_recent_update": {
-      "created": "2024-02-29T20:51:19+00:00",
-      "modified": "2024-02-29T20:51:19+00:00",
-      "when": "2024-02-29T20:51:19+00:00",
-      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 28 February 2024 23:50\n**Incident End:** 29 February 2024 09:50\n**Duration:** 10 hours\n**Affected Services and Features:**\n* Chronicle Security - Security Information and Event Management (SIEM)\n* Chronicle Security Orchestration, Automation and Response (SOAR)\n**Regions/Zones:** US/multi-region\n**Description:**\nChronicle Security SIEM and Chronicle SOAR experienced elevated Remote Procedure Calls (RPC) error rate for Backstory API calls in US/multi-region for a total duration of 10 hours. A new service was activated which caused additional traffic to be generated and resource contention, which impacted overall RPC performance, latency, and error rate.\nOur engineers identified a subset of the root cause processes and eliminated them on Thursday, 29 February 2024 06:18 US/Pacific. However, some of these processes were missed in the initial analysis, causing additional traffic and resource contention at 7:13. Engineers took additional steps, further mitigating the issue at 09:50.\nAt this time, we do not believe any additional actions are needed to prevent recurrence of this issue.\n**Customer Impact:**\n* Backstory API calls would have failed with Remote Procedure Calls (RPC) errors.\n------",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "zall",
-    "service_name": "Multiple Products",
-    "affected_products": [
-      {
-        "title": "Chronicle Security",
-        "id": "FHwvkSZ6RzzDYAvDZXMM"
-      },
-      {
-        "title": "Chronicle SOAR",
-        "id": "GTT16Lf72XZKWArC9VxA"
-      }
-    ],
-    "uri": "incidents/JAxa64hv45yMYzCpqx1T",
     "currently_affected_locations": [],
     "previously_affected_locations": [
       {
@@ -60222,636 +60222,6 @@
       {
         "title": "Global",
         "id": "global"
-      }
-    ]
-  },
-  {
-    "id": "hwsiBA1sa9TF49BoiGYm",
-    "number": "4434342843855445011",
-    "begin": "2023-10-16T21:00:00+00:00",
-    "created": "2023-10-16T23:45:28+00:00",
-    "end": "2023-10-17T02:00:00+00:00",
-    "modified": "2023-10-23T16:28:16+00:00",
-    "external_desc": "Google BigQuery LOAD jobs are experiencing elevated error rates.",
-    "updates": [
-      {
-        "created": "2023-10-23T16:28:16+00:00",
-        "modified": "2023-10-23T16:28:16+00:00",
-        "when": "2023-10-23T16:28:16+00:00",
-        "text": "# Incident Report\n## Summary\nOn Monday, 16 October 2023, Google BigQuery’s load job API started rejecting load jobs with the error message: [INVALID_INPUT] message=Column Name Character Map is not supported for this format. errorProto=code: \"INVALID_VALUE\"\nargument: \"Column Name Character Map is not supported for this format.\nThe issue lasted five hours. To our BigQuery customers whose business analytics were impacted during this disruption, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s availability.\n## Root Cause\nThe issue originated from a recent rollout to support more features for flexible column name[1] (currently in Preview), in order to support a richer set of additional characters in the column name. Once the feature reaches General Availability (GA), these characters will be able to have full support across various BigQuery features, including column schema in load.\nA subset of these new characters have historically been handled by normalization and were converted to underscore(_) during load when generating table column schema. In order to maintain backwards compatibility for a set of customers, while allowing all customers to have the flexibility to use the richer set of additional characters as is during load, this rollout is intended as one of the steps to: 1. Enable additional user control to choose between the previous and new behavior for load with such characters in column names. 2. Set normalization as the default for a group of customers that historically have been using this behavior in production, as a backward compatibility support.\nDue to an incomplete configuration during the rollout, BigQuery load APIs were not enabled to handle the introduced normalization setting as the default. This led to errors from load API for all formats for a group of customers who were configured with the backward compatibility support.\n## Remediation and Prevention\nGoogle engineers were alerted to the load job failures via a support case on 16 October 2023 16:24 US/Pacific and immediately started an investigation. Google engineers quickly identified the root cause was an ongoing configuration rollout. They first halted the ongoing configuration rollout and limited the impact to three regions (US multi-region, asia-southeast1, azure-eastus2). At 16:56 US/Pacific, rollback for the configuration in the impacted region started, finishing at 19:00 US/Pacific.\nGoogle is committed to preventing a repeat of this issue in the future and is completing the following actions:\n* Immediately start the work to fix the code issues which led to misconfiguration during the rollout.\n* Add additional monitoring and alerting to detect and resolve such issues faster in future.\n* Review and improve gradual roll out policy for configuration changes.\n## Detailed Description of Impact\nOn Monday 16 October, 2023 from 14:00 to 19:00 US/Pacific, BigQuery experienced load job errors in three regions (US multi-region, asia-southeast1, azure-eastus2). Google BigQuery’s load job api started rejecting load jobs with the error message: [INVALID_INPUT] message=Column Name Character Map is not supported for this format. errorProto=code: \"INVALID_VALUE\"\nargument: \"Column Name Character Map is not supported for this format.\nFor affected customers, 100 percent of their load jobs failed during the incident window. The Load Data SQL statement[2] was not affected.\n[1] https://cloud.google.com/bigquery/docs/schemas#flexible-column-names\n[2] https://cloud.google.com/bigquery/docs/reference/standard-sql/other-statements#load_data_statement",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2023-10-17T16:06:21+00:00",
-        "modified": "2023-10-17T16:07:31+00:00",
-        "when": "2023-10-17T16:06:21+00:00",
-        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 16 October, 2023 14:00\n**Incident End:** 16 October, 2023 19:00\n**Duration:** 5 hours\n**Affected Services and Features:**\nLoad Jobs in Google BigQuery\n**Regions/Zones:** - US multi-region\n- asia-southeast1\n- azure-eastus2\n**Description:**\nGoogle BigQuery users experienced ‘Column Name Character Map is not supported for this format’ errors when running load jobs in BigQuery.\nFrom our preliminary analysis, the trigger was a recent roll out to support the [flexible column name feature](https://cloud.google.com/bigquery/docs/schemas#flexible-column-names). The roll out uncovered an unexpected side effect caused by a configuration change, causing BigQuery load jobs to fail. The issue was fully mitigated by rolling back the change.\nGoogle will complete a detailed Incident Report in the following days that will provide a full root cause.\n**Customer Impact:**\nCustomer experienced load job fails with error message:\n[INVALID_INPUT] message=Column Name Character Map is not supported for this format. errorProto=code: \"INVALID_VALUE\"\nargument: \"Column Name Character Map is not supported for this format.\n------------------",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2023-10-17T02:14:23+00:00",
-        "modified": "2023-10-17T02:14:25+00:00",
-        "when": "2023-10-17T02:14:23+00:00",
-        "text": "The issue with BigQuery LOAD jobs has been resolved for all affected projects as of Monday, 2023-10-16 19:00 US/Pacific.\nFrom preliminary analysis, we believe that the issue was caused by an unexpected side effect of a configuration change that was rolled out between 14:00-14:30 US/Pacific. The issue was mitigated by rolling back the change.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
-        "status": "AVAILABLE",
-        "affected_locations": [
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2023-10-17T01:35:13+00:00",
-        "modified": "2023-10-17T01:35:15+00:00",
-        "when": "2023-10-17T01:35:13+00:00",
-        "text": "Summary: Google BigQuery LOAD jobs are experiencing elevated error rates.\nDescription: Mitigation work completed in asia-southeast1 and azure-eastus2. Our engineering team is closely monitoring the error rates in these two regions to ensure full resolution.\nMitigation is currently underway in the US multi-region and is expected to complete by Monday, 2023-10-16 19:15 US/Pacific.\nWe will provide more information by Monday, 2023-10-16 19:15 US/Pacific.\nDiagnosis:\n- BigQuery LOAD jobs are failing with error message \"Column Name Character Map is not supported for this format\".\n- The issue is currently affecting jobs in US multi-region.\n- The issue is mitigated in asia-southeast1, and azure-eastus2.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2023-10-17T00:58:11+00:00",
-        "modified": "2023-10-17T01:00:33+00:00",
-        "when": "2023-10-17T00:58:11+00:00",
-        "text": "Summary: Google BigQuery jobs experiencing elevated error rate\nDescription: Mitigation work is currently underway by our engineering team and is still on track.\nThe mitigation is expected to complete by Monday, 2023-10-16 19:15 US/Pacific.\nWe will provide more information by Monday, 2023-10-16 19:15 US/Pacific.\nDiagnosis:\n- BigQuery jobs are failing with error message \"Column Name Character Map is not supported for this format\".\n- The issue is affecting jobs in us multi-region, asia-southeast1, and azure-eastus2.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2023-10-17T00:19:18+00:00",
-        "modified": "2023-10-17T00:59:59+00:00",
-        "when": "2023-10-17T00:19:18+00:00",
-        "text": "Summary: Google BigQuery jobs experiencing elevated error rate\nDescription: Mitigation work is currently underway by our engineering team.\nThe mitigation is expected to complete by Monday, 2023-10-16 19:15 US/Pacific.\nWe will provide more information by Monday, 2023-10-16 18:00 US/Pacific.\nDiagnosis:\n- BigQuery jobs are failing with error message \"Column Name Character Map is not supported for this format\".\n- The issue is affecting jobs in us multi-region, asia-southeast1, and azure-eastus2.\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          }
-        ]
-      },
-      {
-        "created": "2023-10-16T23:53:30+00:00",
-        "modified": "2023-10-16T23:53:32+00:00",
-        "when": "2023-10-16T23:53:30+00:00",
-        "text": "Summary: Google BigQuery jobs experiencing elevated error rate\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Monday, 2023-10-16 17:30 US/Pacific.\nDiagnosis: BigQuery jobs are failing with error message \"Column Name Character Map is not supported for this format\"\nWorkaround: None at this time.",
-        "status": "SERVICE_DISRUPTION",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Delhi (asia-south2)",
-            "id": "asia-south2"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          },
-          {
-            "title": "Multi-region: eu",
-            "id": "eu"
-          },
-          {
-            "title": "Warsaw (europe-central2)",
-            "id": "europe-central2"
-          },
-          {
-            "title": "Finland (europe-north1)",
-            "id": "europe-north1"
-          },
-          {
-            "title": "Madrid (europe-southwest1)",
-            "id": "europe-southwest1"
-          },
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          },
-          {
-            "title": "Turin (europe-west12)",
-            "id": "europe-west12"
-          },
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          },
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Netherlands (europe-west4)",
-            "id": "europe-west4"
-          },
-          {
-            "title": "Zurich (europe-west6)",
-            "id": "europe-west6"
-          },
-          {
-            "title": "Milan (europe-west8)",
-            "id": "europe-west8"
-          },
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Doha (me-central1)",
-            "id": "me-central1"
-          },
-          {
-            "title": "Tel Aviv (me-west1)",
-            "id": "me-west1"
-          },
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          },
-          {
-            "title": "Toronto (northamerica-northeast2)",
-            "id": "northamerica-northeast2"
-          },
-          {
-            "title": "São Paulo (southamerica-east1)",
-            "id": "southamerica-east1"
-          },
-          {
-            "title": "Santiago (southamerica-west1)",
-            "id": "southamerica-west1"
-          },
-          {
-            "title": "Multi-region: us",
-            "id": "us"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          },
-          {
-            "title": "Salt Lake City (us-west3)",
-            "id": "us-west3"
-          },
-          {
-            "title": "Las Vegas (us-west4)",
-            "id": "us-west4"
-          }
-        ]
-      },
-      {
-        "created": "2023-10-16T23:49:55+00:00",
-        "modified": "2023-10-16T23:49:56+00:00",
-        "when": "2023-10-16T23:49:55+00:00",
-        "text": "Summary: Google BigQuery jobs experiencing elevated error rate\nDescription: We are experiencing an issue with Google BigQuery.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2023-10-16 17:59 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: BigQuery jobs are failing with error message \"Column Name Character Map is not supported for this format\"\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": [
-          {
-            "title": "Taiwan (asia-east1)",
-            "id": "asia-east1"
-          },
-          {
-            "title": "Hong Kong (asia-east2)",
-            "id": "asia-east2"
-          },
-          {
-            "title": "Tokyo (asia-northeast1)",
-            "id": "asia-northeast1"
-          },
-          {
-            "title": "Osaka (asia-northeast2)",
-            "id": "asia-northeast2"
-          },
-          {
-            "title": "Seoul (asia-northeast3)",
-            "id": "asia-northeast3"
-          },
-          {
-            "title": "Mumbai (asia-south1)",
-            "id": "asia-south1"
-          },
-          {
-            "title": "Delhi (asia-south2)",
-            "id": "asia-south2"
-          },
-          {
-            "title": "Singapore (asia-southeast1)",
-            "id": "asia-southeast1"
-          },
-          {
-            "title": "Jakarta (asia-southeast2)",
-            "id": "asia-southeast2"
-          },
-          {
-            "title": "Sydney (australia-southeast1)",
-            "id": "australia-southeast1"
-          },
-          {
-            "title": "Melbourne (australia-southeast2)",
-            "id": "australia-southeast2"
-          },
-          {
-            "title": "Warsaw (europe-central2)",
-            "id": "europe-central2"
-          },
-          {
-            "title": "Finland (europe-north1)",
-            "id": "europe-north1"
-          },
-          {
-            "title": "Madrid (europe-southwest1)",
-            "id": "europe-southwest1"
-          },
-          {
-            "title": "Belgium (europe-west1)",
-            "id": "europe-west1"
-          },
-          {
-            "title": "Turin (europe-west12)",
-            "id": "europe-west12"
-          },
-          {
-            "title": "London (europe-west2)",
-            "id": "europe-west2"
-          },
-          {
-            "title": "Frankfurt (europe-west3)",
-            "id": "europe-west3"
-          },
-          {
-            "title": "Netherlands (europe-west4)",
-            "id": "europe-west4"
-          },
-          {
-            "title": "Zurich (europe-west6)",
-            "id": "europe-west6"
-          },
-          {
-            "title": "Milan (europe-west8)",
-            "id": "europe-west8"
-          },
-          {
-            "title": "Paris (europe-west9)",
-            "id": "europe-west9"
-          },
-          {
-            "title": "Doha (me-central1)",
-            "id": "me-central1"
-          },
-          {
-            "title": "Tel Aviv (me-west1)",
-            "id": "me-west1"
-          },
-          {
-            "title": "Montréal (northamerica-northeast1)",
-            "id": "northamerica-northeast1"
-          },
-          {
-            "title": "Toronto (northamerica-northeast2)",
-            "id": "northamerica-northeast2"
-          },
-          {
-            "title": "São Paulo (southamerica-east1)",
-            "id": "southamerica-east1"
-          },
-          {
-            "title": "Santiago (southamerica-west1)",
-            "id": "southamerica-west1"
-          },
-          {
-            "title": "Iowa (us-central1)",
-            "id": "us-central1"
-          },
-          {
-            "title": "South Carolina (us-east1)",
-            "id": "us-east1"
-          },
-          {
-            "title": "Northern Virginia (us-east4)",
-            "id": "us-east4"
-          },
-          {
-            "title": "Columbus (us-east5)",
-            "id": "us-east5"
-          },
-          {
-            "title": "Dallas (us-south1)",
-            "id": "us-south1"
-          },
-          {
-            "title": "Oregon (us-west1)",
-            "id": "us-west1"
-          },
-          {
-            "title": "Los Angeles (us-west2)",
-            "id": "us-west2"
-          },
-          {
-            "title": "Salt Lake City (us-west3)",
-            "id": "us-west3"
-          },
-          {
-            "title": "Las Vegas (us-west4)",
-            "id": "us-west4"
-          }
-        ]
-      },
-      {
-        "created": "2023-10-16T23:45:27+00:00",
-        "modified": "2023-10-16T23:45:29+00:00",
-        "when": "2023-10-16T23:45:27+00:00",
-        "text": "Summary: We've received a report of an issue with Google BigQuery\nDescription: We've received a report of an issue with Google BigQuery as of Monday, 2023-10-16 16:37 US/Pacific.\nWe will provide more information by Monday, 2023-10-16 17:15 US/Pacific.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
-        "status": "SERVICE_INFORMATION",
-        "affected_locations": []
-      }
-    ],
-    "most_recent_update": {
-      "created": "2023-10-23T16:28:16+00:00",
-      "modified": "2023-10-23T16:28:16+00:00",
-      "when": "2023-10-23T16:28:16+00:00",
-      "text": "# Incident Report\n## Summary\nOn Monday, 16 October 2023, Google BigQuery’s load job API started rejecting load jobs with the error message: [INVALID_INPUT] message=Column Name Character Map is not supported for this format. errorProto=code: \"INVALID_VALUE\"\nargument: \"Column Name Character Map is not supported for this format.\nThe issue lasted five hours. To our BigQuery customers whose business analytics were impacted during this disruption, we sincerely apologize. This is not the level of quality and reliability we strive to offer you, and we are taking immediate steps to improve the platform’s availability.\n## Root Cause\nThe issue originated from a recent rollout to support more features for flexible column name[1] (currently in Preview), in order to support a richer set of additional characters in the column name. Once the feature reaches General Availability (GA), these characters will be able to have full support across various BigQuery features, including column schema in load.\nA subset of these new characters have historically been handled by normalization and were converted to underscore(_) during load when generating table column schema. In order to maintain backwards compatibility for a set of customers, while allowing all customers to have the flexibility to use the richer set of additional characters as is during load, this rollout is intended as one of the steps to: 1. Enable additional user control to choose between the previous and new behavior for load with such characters in column names. 2. Set normalization as the default for a group of customers that historically have been using this behavior in production, as a backward compatibility support.\nDue to an incomplete configuration during the rollout, BigQuery load APIs were not enabled to handle the introduced normalization setting as the default. This led to errors from load API for all formats for a group of customers who were configured with the backward compatibility support.\n## Remediation and Prevention\nGoogle engineers were alerted to the load job failures via a support case on 16 October 2023 16:24 US/Pacific and immediately started an investigation. Google engineers quickly identified the root cause was an ongoing configuration rollout. They first halted the ongoing configuration rollout and limited the impact to three regions (US multi-region, asia-southeast1, azure-eastus2). At 16:56 US/Pacific, rollback for the configuration in the impacted region started, finishing at 19:00 US/Pacific.\nGoogle is committed to preventing a repeat of this issue in the future and is completing the following actions:\n* Immediately start the work to fix the code issues which led to misconfiguration during the rollout.\n* Add additional monitoring and alerting to detect and resolve such issues faster in future.\n* Review and improve gradual roll out policy for configuration changes.\n## Detailed Description of Impact\nOn Monday 16 October, 2023 from 14:00 to 19:00 US/Pacific, BigQuery experienced load job errors in three regions (US multi-region, asia-southeast1, azure-eastus2). Google BigQuery’s load job api started rejecting load jobs with the error message: [INVALID_INPUT] message=Column Name Character Map is not supported for this format. errorProto=code: \"INVALID_VALUE\"\nargument: \"Column Name Character Map is not supported for this format.\nFor affected customers, 100 percent of their load jobs failed during the incident window. The Load Data SQL statement[2] was not affected.\n[1] https://cloud.google.com/bigquery/docs/schemas#flexible-column-names\n[2] https://cloud.google.com/bigquery/docs/reference/standard-sql/other-statements#load_data_statement",
-      "status": "AVAILABLE",
-      "affected_locations": [
-        {
-          "title": "Singapore (asia-southeast1)",
-          "id": "asia-southeast1"
-        },
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        }
-      ]
-    },
-    "status_impact": "SERVICE_DISRUPTION",
-    "severity": "medium",
-    "service_key": "9CcrhHUcFevXPSVaSxkf",
-    "service_name": "Google BigQuery",
-    "affected_products": [
-      {
-        "title": "Google BigQuery",
-        "id": "9CcrhHUcFevXPSVaSxkf"
-      }
-    ],
-    "uri": "incidents/hwsiBA1sa9TF49BoiGYm",
-    "currently_affected_locations": [],
-    "previously_affected_locations": [
-      {
-        "title": "Taiwan (asia-east1)",
-        "id": "asia-east1"
-      },
-      {
-        "title": "Hong Kong (asia-east2)",
-        "id": "asia-east2"
-      },
-      {
-        "title": "Tokyo (asia-northeast1)",
-        "id": "asia-northeast1"
-      },
-      {
-        "title": "Osaka (asia-northeast2)",
-        "id": "asia-northeast2"
-      },
-      {
-        "title": "Seoul (asia-northeast3)",
-        "id": "asia-northeast3"
-      },
-      {
-        "title": "Mumbai (asia-south1)",
-        "id": "asia-south1"
-      },
-      {
-        "title": "Delhi (asia-south2)",
-        "id": "asia-south2"
-      },
-      {
-        "title": "Singapore (asia-southeast1)",
-        "id": "asia-southeast1"
-      },
-      {
-        "title": "Jakarta (asia-southeast2)",
-        "id": "asia-southeast2"
-      },
-      {
-        "title": "Sydney (australia-southeast1)",
-        "id": "australia-southeast1"
-      },
-      {
-        "title": "Melbourne (australia-southeast2)",
-        "id": "australia-southeast2"
-      },
-      {
-        "title": "Multi-region: eu",
-        "id": "eu"
-      },
-      {
-        "title": "Warsaw (europe-central2)",
-        "id": "europe-central2"
-      },
-      {
-        "title": "Finland (europe-north1)",
-        "id": "europe-north1"
-      },
-      {
-        "title": "Madrid (europe-southwest1)",
-        "id": "europe-southwest1"
-      },
-      {
-        "title": "Belgium (europe-west1)",
-        "id": "europe-west1"
-      },
-      {
-        "title": "Turin (europe-west12)",
-        "id": "europe-west12"
-      },
-      {
-        "title": "London (europe-west2)",
-        "id": "europe-west2"
-      },
-      {
-        "title": "Frankfurt (europe-west3)",
-        "id": "europe-west3"
-      },
-      {
-        "title": "Netherlands (europe-west4)",
-        "id": "europe-west4"
-      },
-      {
-        "title": "Zurich (europe-west6)",
-        "id": "europe-west6"
-      },
-      {
-        "title": "Milan (europe-west8)",
-        "id": "europe-west8"
-      },
-      {
-        "title": "Paris (europe-west9)",
-        "id": "europe-west9"
-      },
-      {
-        "title": "Doha (me-central1)",
-        "id": "me-central1"
-      },
-      {
-        "title": "Tel Aviv (me-west1)",
-        "id": "me-west1"
-      },
-      {
-        "title": "Montréal (northamerica-northeast1)",
-        "id": "northamerica-northeast1"
-      },
-      {
-        "title": "Toronto (northamerica-northeast2)",
-        "id": "northamerica-northeast2"
-      },
-      {
-        "title": "São Paulo (southamerica-east1)",
-        "id": "southamerica-east1"
-      },
-      {
-        "title": "Santiago (southamerica-west1)",
-        "id": "southamerica-west1"
-      },
-      {
-        "title": "Multi-region: us",
-        "id": "us"
-      },
-      {
-        "title": "Iowa (us-central1)",
-        "id": "us-central1"
-      },
-      {
-        "title": "South Carolina (us-east1)",
-        "id": "us-east1"
-      },
-      {
-        "title": "Northern Virginia (us-east4)",
-        "id": "us-east4"
-      },
-      {
-        "title": "Columbus (us-east5)",
-        "id": "us-east5"
-      },
-      {
-        "title": "Dallas (us-south1)",
-        "id": "us-south1"
-      },
-      {
-        "title": "Oregon (us-west1)",
-        "id": "us-west1"
-      },
-      {
-        "title": "Los Angeles (us-west2)",
-        "id": "us-west2"
-      },
-      {
-        "title": "Salt Lake City (us-west3)",
-        "id": "us-west3"
-      },
-      {
-        "title": "Las Vegas (us-west4)",
-        "id": "us-west4"
       }
     ]
   }
