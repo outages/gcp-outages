@@ -4,12 +4,21 @@
     "number": "1637890976653413021",
     "begin": "2024-10-24T01:44:10+00:00",
     "created": "2024-10-24T02:56:31+00:00",
-    "modified": "2024-10-24T08:27:48+00:00",
+    "end": "2024-10-24T09:14:57+00:00",
+    "modified": "2024-10-24T09:15:16+00:00",
     "external_desc": "Multiple GCP services impacted in the europe-west3-c zone",
     "updates": [
       {
+        "created": "2024-10-24T09:14:57+00:00",
+        "modified": "2024-10-24T09:15:23+00:00",
+        "when": "2024-10-24T09:14:57+00:00",
+        "text": "The issue with Google Cloud Pub/Sub, Google Compute Engine, Persistent Disk, Google Cloud Dataflow, Google Cloud Dataproc, Google Kubernetes Engine, Cloud Build, Vertex AI Batch Prediction has been resolved for all affected users as of Thursday, 2024-10-24 02:09 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-10-24T08:25:13+00:00",
-        "modified": "2024-10-24T08:27:48+00:00",
+        "modified": "2024-10-24T09:15:16+00:00",
         "when": "2024-10-24T08:25:13+00:00",
         "text": "Summary: Multiple GCP services impacted in the europe-west3-c zone\nDescription: We are experiencing an issue with multiple GCP services including Google Compute Engine, Persistent Disk, Google Cloud Dataflow in the europe-west3-c zone due to power and a cooling issue.\nMitigation work is still underway by our engineering team and we do not have an ETA at the moment.\nWe will provide more information by Thursday, 2024-10-24 02:30 US/Pacific.\nDiagnosis: The majority of the services impact is now limited to the zonal level. Vertex AI Batch Prediction continues to be impacted at the regional level.\nServices impacted include:\n**Google Compute Engine:**\nThe loss of power has led to capacity failure in the region. Customers may experience:\nA percentage of Virtual Machines (VMs) being terminated and not available until power is restored.\nA percentage of VMs may have lost access to their Persistent Disk and may be crashlooping.\nA percentage of regional Persistent Disks may be running in a degraded state.\nThe incident is affecting the Compute API in the following ways:\nCreation of new VMs or disks in europe-west3-c may fail.\nA percentage of customers attempting to consume VM reservations will be unable to do so.\nA percentage of customers who would like to delete their previously running VMs in europe-west3, can delete VMs via the console or GCE APIs. However, there may be a delay in processing these deletions. All deletions will be fully processed when issues in europe-west3-c are resolved.\n**Google Kubernetes Engine:**\nThe Google Kubernetes Engine nodes in the impacted location may be inaccessible and creation of new nodes may fail.\n**Google Cloud Dataflow:**\nSome existing batch jobs may experience delays when scaling workers. In addition streaming jobs may not be progressing or scaling up workers.\n**Google Cloud Dataproc:**\nWhile the existing clusters are not impacted, creation of new clusters may fail.\n**Cloud Build:**\nBuilds in Custom Worker pools take a long time to start.\n**Vertex AI Batch Prediction:**\nA Vertex batch prediction job may fail with an error, \"Unable to prepare an infrastructure for serving within time\".\n**Google Cloud Pub/Sub:**\nThere is no ongoing impact for the users at the moment.\n**Workaround:**\n1. If you are impacted, please migrate the workload or operations from the europe-west3-c zone to other available zones or regions.\n2. For the customers with a degraded Regional Persistent Disk, we recommend you take regular snapshots of your disk.",
         "status": "SERVICE_OUTAGE",
@@ -126,17 +135,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-10-24T08:25:13+00:00",
-      "modified": "2024-10-24T08:27:48+00:00",
-      "when": "2024-10-24T08:25:13+00:00",
-      "text": "Summary: Multiple GCP services impacted in the europe-west3-c zone\nDescription: We are experiencing an issue with multiple GCP services including Google Compute Engine, Persistent Disk, Google Cloud Dataflow in the europe-west3-c zone due to power and a cooling issue.\nMitigation work is still underway by our engineering team and we do not have an ETA at the moment.\nWe will provide more information by Thursday, 2024-10-24 02:30 US/Pacific.\nDiagnosis: The majority of the services impact is now limited to the zonal level. Vertex AI Batch Prediction continues to be impacted at the regional level.\nServices impacted include:\n**Google Compute Engine:**\nThe loss of power has led to capacity failure in the region. Customers may experience:\nA percentage of Virtual Machines (VMs) being terminated and not available until power is restored.\nA percentage of VMs may have lost access to their Persistent Disk and may be crashlooping.\nA percentage of regional Persistent Disks may be running in a degraded state.\nThe incident is affecting the Compute API in the following ways:\nCreation of new VMs or disks in europe-west3-c may fail.\nA percentage of customers attempting to consume VM reservations will be unable to do so.\nA percentage of customers who would like to delete their previously running VMs in europe-west3, can delete VMs via the console or GCE APIs. However, there may be a delay in processing these deletions. All deletions will be fully processed when issues in europe-west3-c are resolved.\n**Google Kubernetes Engine:**\nThe Google Kubernetes Engine nodes in the impacted location may be inaccessible and creation of new nodes may fail.\n**Google Cloud Dataflow:**\nSome existing batch jobs may experience delays when scaling workers. In addition streaming jobs may not be progressing or scaling up workers.\n**Google Cloud Dataproc:**\nWhile the existing clusters are not impacted, creation of new clusters may fail.\n**Cloud Build:**\nBuilds in Custom Worker pools take a long time to start.\n**Vertex AI Batch Prediction:**\nA Vertex batch prediction job may fail with an error, \"Unable to prepare an infrastructure for serving within time\".\n**Google Cloud Pub/Sub:**\nThere is no ongoing impact for the users at the moment.\n**Workaround:**\n1. If you are impacted, please migrate the workload or operations from the europe-west3-c zone to other available zones or regions.\n2. For the customers with a degraded Regional Persistent Disk, we recommend you take regular snapshots of your disk.",
-      "status": "SERVICE_OUTAGE",
-      "affected_locations": [
-        {
-          "title": "Frankfurt (europe-west3)",
-          "id": "europe-west3"
-        }
-      ]
+      "created": "2024-10-24T09:14:57+00:00",
+      "modified": "2024-10-24T09:15:23+00:00",
+      "when": "2024-10-24T09:14:57+00:00",
+      "text": "The issue with Google Cloud Pub/Sub, Google Compute Engine, Persistent Disk, Google Cloud Dataflow, Google Cloud Dataproc, Google Kubernetes Engine, Cloud Build, Vertex AI Batch Prediction has been resolved for all affected users as of Thursday, 2024-10-24 02:09 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
+      "affected_locations": []
     },
     "status_impact": "SERVICE_OUTAGE",
     "severity": "high",
@@ -185,13 +189,13 @@
       }
     ],
     "uri": "incidents/e3yQSE1ysCGjCVEn2q1h",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Frankfurt (europe-west3)",
         "id": "europe-west3"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "cyHovCjtDs1RPbZAKsme",
