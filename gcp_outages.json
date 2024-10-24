@@ -4,12 +4,25 @@
     "number": "1637890976653413021",
     "begin": "2024-10-24T01:44:10+00:00",
     "created": "2024-10-24T02:56:31+00:00",
-    "modified": "2024-10-24T02:59:55+00:00",
+    "modified": "2024-10-24T03:32:27+00:00",
     "external_desc": "Multiple GCP services impacted in europe-west3-c zone",
     "updates": [
       {
+        "created": "2024-10-24T03:32:23+00:00",
+        "modified": "2024-10-24T03:32:28+00:00",
+        "when": "2024-10-24T03:32:23+00:00",
+        "text": "Summary: Multiple GCP services impacted in europe-west3-c zone\nDescription: We are experiencing an issue with Google Cloud Pub/Sub, Google Compute Engine, Persistent Disk, Google Cloud Dataflow.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2024-10-23 21:30 US/Pacific with current details.\nDiagnosis: Multiple services are impacted in europe-west3-c:\nGoogle Compute Engine: Impacted users may observe VM creation failing and some instances may not be available for operations in this zone.\nPersistent Disk: The persistent disk instances might be unreachable for operations.\nGoogle Cloud Dataflow: While the existing clusters are not impacted, creating new clusters may fail.\nGoogle Cloud Dataproc: While the existing clusters are not impacted, creating new clusters may fail.\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          }
+        ]
+      },
+      {
         "created": "2024-10-24T02:56:27+00:00",
-        "modified": "2024-10-24T02:59:55+00:00",
+        "modified": "2024-10-24T03:32:27+00:00",
         "when": "2024-10-24T02:56:27+00:00",
         "text": "Summary: Multiple GCP services impacted in europe-west3-c zone\nDescription: We are experiencing an issue with Google Cloud Pub/Sub, Google Compute Engine, Persistent Disk beginning at Wednesday, 2024-10-23 18:24 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2024-10-23 20:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
         "status": "SERVICE_OUTAGE",
@@ -22,10 +35,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-10-24T02:56:27+00:00",
-      "modified": "2024-10-24T02:59:55+00:00",
-      "when": "2024-10-24T02:56:27+00:00",
-      "text": "Summary: Multiple GCP services impacted in europe-west3-c zone\nDescription: We are experiencing an issue with Google Cloud Pub/Sub, Google Compute Engine, Persistent Disk beginning at Wednesday, 2024-10-23 18:24 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2024-10-23 20:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: None at this time.\nWorkaround: None at this time.",
+      "created": "2024-10-24T03:32:23+00:00",
+      "modified": "2024-10-24T03:32:28+00:00",
+      "when": "2024-10-24T03:32:23+00:00",
+      "text": "Summary: Multiple GCP services impacted in europe-west3-c zone\nDescription: We are experiencing an issue with Google Cloud Pub/Sub, Google Compute Engine, Persistent Disk, Google Cloud Dataflow.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2024-10-23 21:30 US/Pacific with current details.\nDiagnosis: Multiple services are impacted in europe-west3-c:\nGoogle Compute Engine: Impacted users may observe VM creation failing and some instances may not be available for operations in this zone.\nPersistent Disk: The persistent disk instances might be unreachable for operations.\nGoogle Cloud Dataflow: While the existing clusters are not impacted, creating new clusters may fail.\nGoogle Cloud Dataproc: While the existing clusters are not impacted, creating new clusters may fail.\nWorkaround: None at this time.",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
@@ -42,6 +55,10 @@
       {
         "title": "Google Cloud Dataflow",
         "id": "T9bFoXPqG8w8g1YbWTKY"
+      },
+      {
+        "title": "Google Cloud Dataproc",
+        "id": "yjXrEg3Yvy26BauMwr69"
       },
       {
         "title": "Google Cloud Pub/Sub",
