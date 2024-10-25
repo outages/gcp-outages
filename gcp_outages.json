@@ -2,15 +2,23 @@
   {
     "id": "fmTFD58FDR7Qy6qq6H6U",
     "number": "9313833927984552571",
-    "begin": "2024-10-25T09:15:35+00:00",
+    "begin": "2024-10-25T09:15:00+00:00",
     "created": "2024-10-25T11:13:37+00:00",
-    "end": "2024-10-25T15:06:56+00:00",
-    "modified": "2024-10-25T15:07:03+00:00",
+    "end": "2024-10-25T15:03:00+00:00",
+    "modified": "2024-10-25T17:10:08+00:00",
     "external_desc": "Cloud Build - builds execution is degraded in us-central1",
     "updates": [
       {
+        "created": "2024-10-25T17:09:42+00:00",
+        "modified": "2024-10-25T17:10:08+00:00",
+        "when": "2024-10-25T17:09:42+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 25 October, 2024 02:15\n**Incident End:** 25 October, 2024 08:03\n**Duration:** 5 hours, 48 minutes\n**Affected Services and Features:**\n* Cloud Build\n* Google Cloud Deploy\n**Regions/Zones:** us-central1\n**Description:**\nCloud Build and Cloud Deploy customers in the us-central1 region experienced a service disruption lasting 5 hours and 48 minutes. During this time, 100% of builds were either stuck in the queued phase and subsequently expired, or faced significant execution delays. The root cause was identified as a bug in how Cloud Build interacts with Google Compute Engine (GCE) to provision compute resources. Due to organic traffic growth, Cloud Build exceeded its GCE quota, triggering a retry-storm instead of graceful degradation. This prevented the creation of new worker instances, leading to a regional outage as existing builds could not be processed.\nGoogle will complete a full IR in the following days that will provide a full root cause.\n**Customer Impact:**\n* Cloud Build: During the incident, builds were queued for execution but not actually executed and would have appeared as stuck. That applied both to builds created manually and via triggers. Upon this incident’s resolution, most of the builds would have exceeded the amount of time the build can be queued and were marked as expired. These builds will not be executed any more and must be re-created.\n* Google Cloud Deploy: New releases and rollouts (whether initiated manually or through automation) could be created, but the resources became stuck in an 'in-progress' state. Essentially, the Cloud Deploy service was not operational in the us-central1 region, as no deployments were being executed.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-10-25T15:06:56+00:00",
-        "modified": "2024-10-25T15:07:04+00:00",
+        "modified": "2024-10-25T17:09:42+00:00",
         "when": "2024-10-25T15:06:56+00:00",
         "text": "The issue with Cloud Build, Google Cloud Deploy has been resolved for all affected projects as of Friday, 2024-10-25 08:06 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -83,10 +91,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-10-25T15:06:56+00:00",
-      "modified": "2024-10-25T15:07:04+00:00",
-      "when": "2024-10-25T15:06:56+00:00",
-      "text": "The issue with Cloud Build, Google Cloud Deploy has been resolved for all affected projects as of Friday, 2024-10-25 08:06 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2024-10-25T17:09:42+00:00",
+      "modified": "2024-10-25T17:10:08+00:00",
+      "when": "2024-10-25T17:09:42+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support.\n(All Times US/Pacific)\n**Incident Start:** 25 October, 2024 02:15\n**Incident End:** 25 October, 2024 08:03\n**Duration:** 5 hours, 48 minutes\n**Affected Services and Features:**\n* Cloud Build\n* Google Cloud Deploy\n**Regions/Zones:** us-central1\n**Description:**\nCloud Build and Cloud Deploy customers in the us-central1 region experienced a service disruption lasting 5 hours and 48 minutes. During this time, 100% of builds were either stuck in the queued phase and subsequently expired, or faced significant execution delays. The root cause was identified as a bug in how Cloud Build interacts with Google Compute Engine (GCE) to provision compute resources. Due to organic traffic growth, Cloud Build exceeded its GCE quota, triggering a retry-storm instead of graceful degradation. This prevented the creation of new worker instances, leading to a regional outage as existing builds could not be processed.\nGoogle will complete a full IR in the following days that will provide a full root cause.\n**Customer Impact:**\n* Cloud Build: During the incident, builds were queued for execution but not actually executed and would have appeared as stuck. That applied both to builds created manually and via triggers. Upon this incident’s resolution, most of the builds would have exceeded the amount of time the build can be queued and were marked as expired. These builds will not be executed any more and must be re-created.\n* Google Cloud Deploy: New releases and rollouts (whether initiated manually or through automation) could be created, but the resources became stuck in an 'in-progress' state. Essentially, the Cloud Deploy service was not operational in the us-central1 region, as no deployments were being executed.",
       "status": "AVAILABLE",
       "affected_locations": []
     },
