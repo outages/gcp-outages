@@ -4,12 +4,25 @@
     "number": "9313833927984552571",
     "begin": "2024-10-25T09:15:35+00:00",
     "created": "2024-10-25T11:13:37+00:00",
-    "modified": "2024-10-25T14:03:13+00:00",
-    "external_desc": "Cloud Build - no builds are being executed in us-central1",
+    "modified": "2024-10-25T14:18:24+00:00",
+    "external_desc": "Cloud Build - builds execution is degraded in us-central1",
     "updates": [
       {
+        "created": "2024-10-25T14:18:14+00:00",
+        "modified": "2024-10-25T14:18:30+00:00",
+        "when": "2024-10-25T14:18:14+00:00",
+        "text": "Summary: Cloud Build - builds execution is degraded in us-central1\nDescription: We believe the issue with Cloud Build, Google Cloud Deploy is partially resolved. Builds should be now getting executed, however the delays are possible.\nWe are still working on a full resolution. We do not have an ETA for full resolution at this point.\nWe will provide an update by Friday, 2024-10-25 09:30 US/Pacific with current details.\nDiagnosis: Customers might still observe scheduled builds time-out or being stuck in the queued phase or being executed with delays.\nWorkaround: Customers may try to use another Cloud region.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
         "created": "2024-10-25T14:03:13+00:00",
-        "modified": "2024-10-25T14:03:32+00:00",
+        "modified": "2024-10-25T14:18:24+00:00",
         "when": "2024-10-25T14:03:13+00:00",
         "text": "Summary: Cloud Build - no builds are being executed in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nWe will provide more information by Friday, 2024-10-25 09:00 US/Pacific.\nDiagnosis: Customers would observe scheduled builds time-out or being stuck in the queued phase.\nWorkaround: Customers may try to use another Cloud region.",
         "status": "SERVICE_OUTAGE",
@@ -61,11 +74,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-10-25T14:03:13+00:00",
-      "modified": "2024-10-25T14:03:32+00:00",
-      "when": "2024-10-25T14:03:13+00:00",
-      "text": "Summary: Cloud Build - no builds are being executed in us-central1\nDescription: Mitigation work is still underway by our engineering team.\nWe will provide more information by Friday, 2024-10-25 09:00 US/Pacific.\nDiagnosis: Customers would observe scheduled builds time-out or being stuck in the queued phase.\nWorkaround: Customers may try to use another Cloud region.",
-      "status": "SERVICE_OUTAGE",
+      "created": "2024-10-25T14:18:14+00:00",
+      "modified": "2024-10-25T14:18:30+00:00",
+      "when": "2024-10-25T14:18:14+00:00",
+      "text": "Summary: Cloud Build - builds execution is degraded in us-central1\nDescription: We believe the issue with Cloud Build, Google Cloud Deploy is partially resolved. Builds should be now getting executed, however the delays are possible.\nWe are still working on a full resolution. We do not have an ETA for full resolution at this point.\nWe will provide an update by Friday, 2024-10-25 09:30 US/Pacific with current details.\nDiagnosis: Customers might still observe scheduled builds time-out or being stuck in the queued phase or being executed with delays.\nWorkaround: Customers may try to use another Cloud region.",
+      "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
           "title": "Iowa (us-central1)",
@@ -73,8 +86,8 @@
         }
       ]
     },
-    "status_impact": "SERVICE_OUTAGE",
-    "severity": "high",
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
     "service_key": "zall",
     "service_name": "Multiple Products",
     "affected_products": [
