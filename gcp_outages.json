@@ -4,12 +4,38 @@
     "number": "11402175160313377268",
     "begin": "2024-10-29T23:28:41+00:00",
     "created": "2024-10-30T00:17:56+00:00",
-    "modified": "2024-10-30T00:29:14+00:00",
-    "external_desc": "Multiple GCP products impacted in australia-southeast2",
+    "modified": "2024-10-30T01:47:27+00:00",
+    "external_desc": "Some GCP products in australia-southeast2 may have intermittent network connectivity.",
     "updates": [
       {
+        "created": "2024-10-30T01:47:23+00:00",
+        "modified": "2024-10-30T01:47:29+00:00",
+        "when": "2024-10-30T01:47:23+00:00",
+        "text": "Summary: Some GCP products in australia-southeast2 may have intermittent network connectivity.\nDescription: We are experiencing an issue with Google Cloud Networking, Cloud Run, Resource Manager API, Google Cloud Dataflow, Google Cloud SQL, Google Cloud Storage, Google Kubernetes Engine, Google Compute Engine beginning at Tuesday, 2024-10-29 16:28 US/Pacific.\nBased on the internal metrics the following products have seen recovery.\n- Apigee and Apigee Edge Public Cloud\n- Cloud IAM\n- Cloud KMS\n- Persistent disk\n- Google BigQuery\n- Virtual Private Cloud (VPC)\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2024-10-29 19:30 US/Pacific with current details.\nDiagnosis: Customers impacted by this may see issues with new deployment.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          }
+        ]
+      },
+      {
+        "created": "2024-10-30T00:59:39+00:00",
+        "modified": "2024-10-30T01:47:27+00:00",
+        "when": "2024-10-30T00:59:39+00:00",
+        "text": "Summary: Multiple GCP products impacted in australia-southeast2 with intermittent network connectivity.\nDescription: We are experiencing an issue with Google Cloud Networking, Cloud Run, Resource Manager API, Virtual Private Cloud (VPC), Google Cloud Dataflow, Google Compute Engine, Google Cloud SQL, Google Cloud Storage, Google BigQuery beginning at Tuesday, 2024-10-29 16:28 US/Pacific.\nBased on the internal metrics the following products have seen recovery.\n- Apigee and Apigee Edge Public Cloud\n- Cloud IAM\n- Cloud KMS\n- Persistent disk\nOur engineering team continues to investigate the issue.\nWe will provide an update by Wednesday, 2024-10-30 00:41 US/Pacific with current details.\nDiagnosis: Customers impacted by this may see issues with new deployment.\nWorkaround: None at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          }
+        ]
+      },
+      {
         "created": "2024-10-30T00:29:08+00:00",
-        "modified": "2024-10-30T00:29:14+00:00",
+        "modified": "2024-10-30T00:59:43+00:00",
         "when": "2024-10-30T00:29:08+00:00",
         "text": "Summary: Multiple GCP products impacted in australia-southeast2\nDescription: We are experiencing an issue with Google Cloud Networking, Cloud Run, Identity and Access Management, Resource Manager API, Persistent Disk, Virtual Private Cloud (VPC), Google Cloud Dataflow, Google Compute Engine beginning at Tuesday, 2024-10-29 16:21US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2024-10-29 18:00 US/Pacific with current details.\nDiagnosis: Customers impacted by this may see issues with new deployment.\nWorkaround: None at this time.",
         "status": "SERVICE_OUTAGE",
@@ -35,11 +61,11 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-10-30T00:29:08+00:00",
-      "modified": "2024-10-30T00:29:14+00:00",
-      "when": "2024-10-30T00:29:08+00:00",
-      "text": "Summary: Multiple GCP products impacted in australia-southeast2\nDescription: We are experiencing an issue with Google Cloud Networking, Cloud Run, Identity and Access Management, Resource Manager API, Persistent Disk, Virtual Private Cloud (VPC), Google Cloud Dataflow, Google Compute Engine beginning at Tuesday, 2024-10-29 16:21US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2024-10-29 18:00 US/Pacific with current details.\nDiagnosis: Customers impacted by this may see issues with new deployment.\nWorkaround: None at this time.",
-      "status": "SERVICE_OUTAGE",
+      "created": "2024-10-30T01:47:23+00:00",
+      "modified": "2024-10-30T01:47:29+00:00",
+      "when": "2024-10-30T01:47:23+00:00",
+      "text": "Summary: Some GCP products in australia-southeast2 may have intermittent network connectivity.\nDescription: We are experiencing an issue with Google Cloud Networking, Cloud Run, Resource Manager API, Google Cloud Dataflow, Google Cloud SQL, Google Cloud Storage, Google Kubernetes Engine, Google Compute Engine beginning at Tuesday, 2024-10-29 16:28 US/Pacific.\nBased on the internal metrics the following products have seen recovery.\n- Apigee and Apigee Edge Public Cloud\n- Cloud IAM\n- Cloud KMS\n- Persistent disk\n- Google BigQuery\n- Virtual Private Cloud (VPC)\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2024-10-29 19:30 US/Pacific with current details.\nDiagnosis: Customers impacted by this may see issues with new deployment.\nWorkaround: None at this time.",
+      "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
           "title": "Melbourne (australia-southeast2)",
@@ -47,8 +73,8 @@
         }
       ]
     },
-    "status_impact": "SERVICE_OUTAGE",
-    "severity": "high",
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
     "service_key": "zall",
     "service_name": "Multiple Products",
     "affected_products": [
@@ -57,8 +83,16 @@
         "id": "9Y13BNFy4fJydvjdsN3X"
       },
       {
+        "title": "Apigee Edge Public Cloud",
+        "id": "SumcdgBT6GQBzp1vmdXu"
+      },
+      {
         "title": "Cloud Run",
         "id": "9D7d2iNBQWN24zc1VamE"
+      },
+      {
+        "title": "Google BigQuery",
+        "id": "9CcrhHUcFevXPSVaSxkf"
       },
       {
         "title": "Google Cloud Dataflow",
@@ -69,8 +103,20 @@
         "id": "VNJxzcH58QmTt5H6pnT6"
       },
       {
+        "title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri"
+      },
+      {
+        "title": "Google Cloud Storage",
+        "id": "UwaYoXQ5bHYHG6EdiPB8"
+      },
+      {
         "title": "Google Compute Engine",
         "id": "L3ggmi3Jy4xJmgodFA9K"
+      },
+      {
+        "title": "Google Kubernetes Engine",
+        "id": "LCSbT57h59oR4W98NHuz"
       },
       {
         "title": "Identity and Access Management",
