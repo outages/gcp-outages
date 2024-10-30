@@ -5,12 +5,12 @@
     "begin": "2024-10-29T23:21:00+00:00",
     "created": "2024-10-30T00:17:56+00:00",
     "end": "2024-10-30T02:34:00+00:00",
-    "modified": "2024-10-30T19:36:13+00:00",
+    "modified": "2024-10-30T19:49:04+00:00",
     "external_desc": "All the impacted GCP products in australia-southeast2 have recovered.",
     "updates": [
       {
         "created": "2024-10-30T19:30:45+00:00",
-        "modified": "2024-10-30T19:36:13+00:00",
+        "modified": "2024-10-30T19:49:04+00:00",
         "when": "2024-10-30T19:30:45+00:00",
         "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n(All Times US/Pacific)\n**Incident Start:** 29 October 2024 16:21\n**Incident End:** 29 October 2024 19:34\n**Duration:** 3 hours, 13 minutes\n**Affected Services and Features:**\nApigee, Apigee Edge Public Cloud, Batch, Cloud Filestore, Cloud Firestore, Cloud Key Management Service, Cloud NAT, Cloud Run, Google BigQuery, Google Cloud Dataflow, Google Cloud Dataproc, Google Cloud Networking, Google Cloud Pub/Sub, Google Cloud SQL, Google Cloud Storage, Google Compute Engine, Google Kubernetes Engine, Identity and Access Management, Persistent Disk, Resource Manager API, Virtual Private Cloud (VPC)\n**Regions/Zones:** australia-southeast2\n**Description:**\nMultiple Google Cloud products experienced service disruptions of varying impact and duration, with the longest lasting 2 hours, 3 minutes in the australia-southeast2 region.\nFrom preliminary analysis, the root cause of the issue was a power interruption causing network and optical infrastructure to reboot in a subset of the sites in the australia-southeast2 region.\nGoogle will complete a full Incident Report in the following days that will provide a detailed root cause.\n**Customer Impact:**\n**Apigee** - Impacted users experienced issues with the pod scheduling from 16:40 to 19:34.\n**Apigee Edge Public Cloud** - Impacted users observed increased runtime, latency and an increase in 5XX errors for runtime from 16:21 to 17:46.\n**Batch** - New batch jobs that were created in the australia-southeast2 region remained in SCHEDULED status and did not progress. Customers had the option to switch to different regions.\n**Cloud Filestore** - Instance creation/deletion operations failed in the region. Instances with virtual machines in these clusters were not reachable from other regions. Regional instances, depending on the placement of the majority of the virtual machines, went into lockdown.\n**Cloud Firestore** - Customers in the australia-southeast2 region experienced limited to no availability from 16:21 to 16:44.\n**Cloud Key Management Service** - KMS was not reachable in the australia-southeast2 region. Approximately 60% of the traffic was lost during the impacted period.\n**Cloud NAT** - Customers experienced loss of connectivity in the australia-southeast2 region.\n**Cloud Run** - Impacted users experienced dropped requests and high error rates from 16:20 to 17:14.\n**Google BigQuery** - Impacted users observed delay/errors in handling the requests from 16:20 to 16:55.\n**Google Cloud Dataflow** - Impacted users had limited to no availability in the australia-southeast2 region between 16:21 to 17:40.\n**Google Cloud Dataproc** - Impacted users observed that all dataproc services were down from 17:13 to 19:10.\n**Google Cloud Networking** - Impacted users experienced up to 100% of the requests being dropped from 16:21 to 16:43.\n**Google Cloud Pub/Sub** - Cloud Pub/Sub had limited to no availability in the australia-southeast2 region between 16:21 to 17:06.\n**Google Cloud SQL** - Multiple instances of Cloud SQL were unavailable between 16:23 and 17:52.\n**Google Cloud Storage** - Impacted users/projects experienced request timeout or unavailable errors between 16:21 and 17:12.\n**Google Compute Engine** - Impacted users observed GCE operations such as compute.instances.insert fail from 16:40 to 19:34.\n**Google Kubernetes Engine** - Impacted users were unable to make changes to their workloads on GKE clusters from 16:20 to 17:30.\n**Identity and Access Management** - Impacted users experienced loss of traffic and visible latency/unavailability within the region from 16:28 to 17:14.\n**Persistent Disk** - Customers experienced high latency up to several minutes for I/O operations in the australia-southeast2 region. Customers had the workaround to restore snapshots in another region or use asynchronous failover replicas out of this impacted region.\n**Virtual Private Cloud (VPC)** - Impacted users experienced a network outage in and out of the impacted region from 16:35 to 18:41.\n**Resource Manager API** - Impacted users experienced loss of traffic and visible latency/unavailability within the region from 16:28 to 17:14.",
         "status": "AVAILABLE",
@@ -79,7 +79,7 @@
     ],
     "most_recent_update": {
       "created": "2024-10-30T19:30:45+00:00",
-      "modified": "2024-10-30T19:36:13+00:00",
+      "modified": "2024-10-30T19:49:04+00:00",
       "when": "2024-10-30T19:30:45+00:00",
       "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n(All Times US/Pacific)\n**Incident Start:** 29 October 2024 16:21\n**Incident End:** 29 October 2024 19:34\n**Duration:** 3 hours, 13 minutes\n**Affected Services and Features:**\nApigee, Apigee Edge Public Cloud, Batch, Cloud Filestore, Cloud Firestore, Cloud Key Management Service, Cloud NAT, Cloud Run, Google BigQuery, Google Cloud Dataflow, Google Cloud Dataproc, Google Cloud Networking, Google Cloud Pub/Sub, Google Cloud SQL, Google Cloud Storage, Google Compute Engine, Google Kubernetes Engine, Identity and Access Management, Persistent Disk, Resource Manager API, Virtual Private Cloud (VPC)\n**Regions/Zones:** australia-southeast2\n**Description:**\nMultiple Google Cloud products experienced service disruptions of varying impact and duration, with the longest lasting 2 hours, 3 minutes in the australia-southeast2 region.\nFrom preliminary analysis, the root cause of the issue was a power interruption causing network and optical infrastructure to reboot in a subset of the sites in the australia-southeast2 region.\nGoogle will complete a full Incident Report in the following days that will provide a detailed root cause.\n**Customer Impact:**\n**Apigee** - Impacted users experienced issues with the pod scheduling from 16:40 to 19:34.\n**Apigee Edge Public Cloud** - Impacted users observed increased runtime, latency and an increase in 5XX errors for runtime from 16:21 to 17:46.\n**Batch** - New batch jobs that were created in the australia-southeast2 region remained in SCHEDULED status and did not progress. Customers had the option to switch to different regions.\n**Cloud Filestore** - Instance creation/deletion operations failed in the region. Instances with virtual machines in these clusters were not reachable from other regions. Regional instances, depending on the placement of the majority of the virtual machines, went into lockdown.\n**Cloud Firestore** - Customers in the australia-southeast2 region experienced limited to no availability from 16:21 to 16:44.\n**Cloud Key Management Service** - KMS was not reachable in the australia-southeast2 region. Approximately 60% of the traffic was lost during the impacted period.\n**Cloud NAT** - Customers experienced loss of connectivity in the australia-southeast2 region.\n**Cloud Run** - Impacted users experienced dropped requests and high error rates from 16:20 to 17:14.\n**Google BigQuery** - Impacted users observed delay/errors in handling the requests from 16:20 to 16:55.\n**Google Cloud Dataflow** - Impacted users had limited to no availability in the australia-southeast2 region between 16:21 to 17:40.\n**Google Cloud Dataproc** - Impacted users observed that all dataproc services were down from 17:13 to 19:10.\n**Google Cloud Networking** - Impacted users experienced up to 100% of the requests being dropped from 16:21 to 16:43.\n**Google Cloud Pub/Sub** - Cloud Pub/Sub had limited to no availability in the australia-southeast2 region between 16:21 to 17:06.\n**Google Cloud SQL** - Multiple instances of Cloud SQL were unavailable between 16:23 and 17:52.\n**Google Cloud Storage** - Impacted users/projects experienced request timeout or unavailable errors between 16:21 and 17:12.\n**Google Compute Engine** - Impacted users observed GCE operations such as compute.instances.insert fail from 16:40 to 19:34.\n**Google Kubernetes Engine** - Impacted users were unable to make changes to their workloads on GKE clusters from 16:20 to 17:30.\n**Identity and Access Management** - Impacted users experienced loss of traffic and visible latency/unavailability within the region from 16:28 to 17:14.\n**Persistent Disk** - Customers experienced high latency up to several minutes for I/O operations in the australia-southeast2 region. Customers had the workaround to restore snapshots in another region or use asynchronous failover replicas out of this impacted region.\n**Virtual Private Cloud (VPC)** - Impacted users experienced a network outage in and out of the impacted region from 16:35 to 18:41.\n**Resource Manager API** - Impacted users experienced loss of traffic and visible latency/unavailability within the region from 16:28 to 17:14.",
       "status": "AVAILABLE",
@@ -103,6 +103,22 @@
         "id": "8XjnU88URVtZrAL8KRvA"
       },
       {
+        "title": "Cloud Filestore",
+        "id": "jog4nyYkquiLeSK5s26q"
+      },
+      {
+        "title": "Cloud Firestore",
+        "id": "CETSkT92V21G6A1x28me"
+      },
+      {
+        "title": "Cloud Key Management Service",
+        "id": "67cSySTL7dwJZo9JWUGU"
+      },
+      {
+        "title": "Cloud NAT",
+        "id": "hCNpnTQHkUCCGxJy35Yq"
+      },
+      {
         "title": "Cloud Run",
         "id": "9D7d2iNBQWN24zc1VamE"
       },
@@ -115,8 +131,20 @@
         "id": "T9bFoXPqG8w8g1YbWTKY"
       },
       {
+        "title": "Google Cloud Dataproc",
+        "id": "yjXrEg3Yvy26BauMwr69"
+      },
+      {
+        "title": "Google Cloud Deploy",
+        "id": "6z5SnvJrJMJQSdJmUQjH"
+      },
+      {
         "title": "Google Cloud Networking",
         "id": "VNJxzcH58QmTt5H6pnT6"
+      },
+      {
+        "title": "Google Cloud Pub/Sub",
+        "id": "dFjdLh2v6zuES6t9ADCB"
       },
       {
         "title": "Google Cloud SQL",
