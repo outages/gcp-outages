@@ -761,12 +761,12 @@
     "begin": "2024-10-22T21:08:00+00:00",
     "created": "2024-11-04T21:17:49+00:00",
     "end": "2024-11-05T04:30:00+00:00",
-    "modified": "2024-11-05T19:32:54+00:00",
+    "modified": "2024-11-05T19:34:34+00:00",
     "external_desc": "Large Vertex Model Garden Deployment may experience failures.",
     "updates": [
       {
         "created": "2024-11-05T19:31:54+00:00",
-        "modified": "2024-11-05T19:32:54+00:00",
+        "modified": "2024-11-05T19:34:34+00:00",
         "when": "2024-11-05T19:31:54+00:00",
         "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 22 October 2024, 14:08\n**Incident End:** 4 November 2024, 20:30\n**Duration:** 13 days, 6 hours, 22 minutes\n**Affected Services and Features:**\nVertex AI Online Prediction (Vertex Model Garden Deployments)\n**Regions/Zones:** All regions except asia-southeast1, europe-west4, us-central1, us-east1, us-east4\n**Description:**\nDeployment of large models (those that require more than 100GB of disk size) in Vertex AI Online Prediction (Vertex Model Garden Deployments) failed in most of the regions for a duration of up to 13 days, 6 hours, 22 minutes starting on Tuesday, 22 October 2024 at 14:08 US/Pacific.\nFrom preliminary analysis, the root cause of the issue is an internal storage provisioning configuration error that was implemented as part of a recent change.\nGoogle engineers mitigated the impact by rolling back the configuration change that caused the issue.\n**Customer Impact:**\n- Customers would have received errors stating “Model server never became ready”, while performing deployments during the period of impact.\n**Additional details:**\n- As a workaround, customers were able to deploy in one of the non-impacted regions noted above.",
         "status": "AVAILABLE",
@@ -1218,7 +1218,7 @@
     ],
     "most_recent_update": {
       "created": "2024-11-05T19:31:54+00:00",
-      "modified": "2024-11-05T19:32:54+00:00",
+      "modified": "2024-11-05T19:34:34+00:00",
       "when": "2024-11-05T19:31:54+00:00",
       "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support\n(All Times US/Pacific)\n**Incident Start:** 22 October 2024, 14:08\n**Incident End:** 4 November 2024, 20:30\n**Duration:** 13 days, 6 hours, 22 minutes\n**Affected Services and Features:**\nVertex AI Online Prediction (Vertex Model Garden Deployments)\n**Regions/Zones:** All regions except asia-southeast1, europe-west4, us-central1, us-east1, us-east4\n**Description:**\nDeployment of large models (those that require more than 100GB of disk size) in Vertex AI Online Prediction (Vertex Model Garden Deployments) failed in most of the regions for a duration of up to 13 days, 6 hours, 22 minutes starting on Tuesday, 22 October 2024 at 14:08 US/Pacific.\nFrom preliminary analysis, the root cause of the issue is an internal storage provisioning configuration error that was implemented as part of a recent change.\nGoogle engineers mitigated the impact by rolling back the configuration change that caused the issue.\n**Customer Impact:**\n- Customers would have received errors stating “Model server never became ready”, while performing deployments during the period of impact.\n**Additional details:**\n- As a workaround, customers were able to deploy in one of the non-impacted regions noted above.",
       "status": "AVAILABLE",
@@ -1266,10 +1266,6 @@
         "id": "asia-south1"
       },
       {
-        "title": "Singapore (asia-southeast1)",
-        "id": "asia-southeast1"
-      },
-      {
         "title": "Jakarta (asia-southeast2)",
         "id": "asia-southeast2"
       },
@@ -1304,10 +1300,6 @@
       {
         "title": "Frankfurt (europe-west3)",
         "id": "europe-west3"
-      },
-      {
-        "title": "Netherlands (europe-west4)",
-        "id": "europe-west4"
       },
       {
         "title": "Zurich (europe-west6)",
@@ -1348,18 +1340,6 @@
       {
         "title": "Santiago (southamerica-west1)",
         "id": "southamerica-west1"
-      },
-      {
-        "title": "Iowa (us-central1)",
-        "id": "us-central1"
-      },
-      {
-        "title": "South Carolina (us-east1)",
-        "id": "us-east1"
-      },
-      {
-        "title": "Northern Virginia (us-east4)",
-        "id": "us-east4"
       },
       {
         "title": "Columbus (us-east5)",
