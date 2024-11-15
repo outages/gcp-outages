@@ -4,12 +4,21 @@
     "number": "5871883127490818711",
     "begin": "2024-11-15T06:09:07+00:00",
     "created": "2024-11-15T06:45:21+00:00",
-    "modified": "2024-11-15T12:46:39+00:00",
+    "end": "2024-11-15T13:07:37+00:00",
+    "modified": "2024-11-15T13:07:41+00:00",
     "external_desc": "Issues opening cases",
     "updates": [
       {
+        "created": "2024-11-15T13:07:37+00:00",
+        "modified": "2024-11-15T13:07:46+00:00",
+        "when": "2024-11-15T13:07:37+00:00",
+        "text": "The issue with Google Cloud Support has been resolved for all affected users as of Friday, 2024-11-15 04:36 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-11-15T12:46:39+00:00",
-        "modified": "2024-11-15T12:46:59+00:00",
+        "modified": "2024-11-15T13:07:41+00:00",
         "when": "2024-11-15T12:46:39+00:00",
         "text": "Summary: Issues opening cases\nDescription: Mitigation work is still underway by our engineering team.\nCurrent data indicates that the current mitigation strategy is working and the team continues to see positive results.\nWe will provide more information by Friday, 2024-11-15 05:30 US/Pacific.\nDiagnosis: Customers will have issues opening cases.\nWorkaround: Customers can use the Contact Us Form (CUF) which will be automatically generated when following the normal case creation process to create cases as a backup mechanism.",
         "status": "SERVICE_OUTAGE",
@@ -74,17 +83,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-11-15T12:46:39+00:00",
-      "modified": "2024-11-15T12:46:59+00:00",
-      "when": "2024-11-15T12:46:39+00:00",
-      "text": "Summary: Issues opening cases\nDescription: Mitigation work is still underway by our engineering team.\nCurrent data indicates that the current mitigation strategy is working and the team continues to see positive results.\nWe will provide more information by Friday, 2024-11-15 05:30 US/Pacific.\nDiagnosis: Customers will have issues opening cases.\nWorkaround: Customers can use the Contact Us Form (CUF) which will be automatically generated when following the normal case creation process to create cases as a backup mechanism.",
-      "status": "SERVICE_OUTAGE",
-      "affected_locations": [
-        {
-          "title": "Global",
-          "id": "global"
-        }
-      ]
+      "created": "2024-11-15T13:07:37+00:00",
+      "modified": "2024-11-15T13:07:46+00:00",
+      "when": "2024-11-15T13:07:37+00:00",
+      "text": "The issue with Google Cloud Support has been resolved for all affected users as of Friday, 2024-11-15 04:36 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
+      "affected_locations": []
     },
     "status_impact": "SERVICE_OUTAGE",
     "severity": "high",
@@ -97,25 +101,70 @@
       }
     ],
     "uri": "incidents/NEtbe4S7pMgACeuopMaZ",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Global",
         "id": "global"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "db3E4dVfQzxfTrhsdZLw",
     "number": "14934870579306172809",
     "begin": "2024-11-13T15:51:14+00:00",
     "created": "2024-11-15T07:39:02+00:00",
-    "modified": "2024-11-15T12:48:53+00:00",
+    "modified": "2024-11-15T13:09:01+00:00",
     "external_desc": "An issue with Vertex Gemini API in multiple regions of Asia and America",
     "updates": [
       {
+        "created": "2024-11-15T13:08:47+00:00",
+        "modified": "2024-11-15T13:09:07+00:00",
+        "when": "2024-11-15T13:08:47+00:00",
+        "text": "Summary: An issue with Vertex Gemini API in multiple regions of Asia and America\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2024-11-15 07:00 US/Pacific.\nDiagnosis: Customers impacted by this issue may observe long context requests to Gemini 1.5 Pro 002 are served with errors or extremely long latency in some clusters in the impacted regions.\nWorkaround: The impacted users may try using the Europe based regions to use the Vertex Gemini API configurations or operations.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
+      {
         "created": "2024-11-15T12:48:46+00:00",
-        "modified": "2024-11-15T12:48:56+00:00",
+        "modified": "2024-11-15T13:09:01+00:00",
         "when": "2024-11-15T12:48:46+00:00",
         "text": "Summary: An issue with Vertex Gemini API in multiple regions of Asia and America\nDescription: We are experiencing an intermittent issue with Vertex Gemini API beginning at Wednesday, 2024-11-13 03:21 US/Pacific.\nWhile our engineering team continues to investigate the issue, please reach out to Google Cloud Support if you need assistance.\nWe will provide an update by Friday, 2024-11-15 06:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue may observe long context requests to Gemini 1.5 Pro 002 are served with errors or extremely long latency in some clusters in the impacted regions.\nWorkaround: The impacted users may try using the Europe based regions to use the Vertex Gemini API configurations or operations.",
         "status": "SERVICE_INFORMATION",
@@ -306,20 +355,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-11-15T12:48:46+00:00",
-      "modified": "2024-11-15T12:48:56+00:00",
-      "when": "2024-11-15T12:48:46+00:00",
-      "text": "Summary: An issue with Vertex Gemini API in multiple regions of Asia and America\nDescription: We are experiencing an intermittent issue with Vertex Gemini API beginning at Wednesday, 2024-11-13 03:21 US/Pacific.\nWhile our engineering team continues to investigate the issue, please reach out to Google Cloud Support if you need assistance.\nWe will provide an update by Friday, 2024-11-15 06:00 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Customers impacted by this issue may observe long context requests to Gemini 1.5 Pro 002 are served with errors or extremely long latency in some clusters in the impacted regions.\nWorkaround: The impacted users may try using the Europe based regions to use the Vertex Gemini API configurations or operations.",
+      "created": "2024-11-15T13:08:47+00:00",
+      "modified": "2024-11-15T13:09:07+00:00",
+      "when": "2024-11-15T13:08:47+00:00",
+      "text": "Summary: An issue with Vertex Gemini API in multiple regions of Asia and America\nDescription: Mitigation work is currently underway by our engineering team.\nWe do not have an ETA for mitigation at this point.\nWe will provide more information by Friday, 2024-11-15 07:00 US/Pacific.\nDiagnosis: Customers impacted by this issue may observe long context requests to Gemini 1.5 Pro 002 are served with errors or extremely long latency in some clusters in the impacted regions.\nWorkaround: The impacted users may try using the Europe based regions to use the Vertex Gemini API configurations or operations.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
-        {
-          "title": "Taiwan (asia-east1)",
-          "id": "asia-east1"
-        },
-        {
-          "title": "Hong Kong (asia-east2)",
-          "id": "asia-east2"
-        },
         {
           "title": "Tokyo (asia-northeast1)",
           "id": "asia-northeast1"
@@ -337,24 +378,16 @@
           "id": "asia-southeast1"
         },
         {
+          "title": "Sydney (australia-southeast1)",
+          "id": "australia-southeast1"
+        },
+        {
           "title": "Iowa (us-central1)",
           "id": "us-central1"
         },
         {
-          "title": "South Carolina (us-east1)",
-          "id": "us-east1"
-        },
-        {
           "title": "Northern Virginia (us-east4)",
           "id": "us-east4"
-        },
-        {
-          "title": "Columbus (us-east5)",
-          "id": "us-east5"
-        },
-        {
-          "title": "Dallas (us-south1)",
-          "id": "us-south1"
         },
         {
           "title": "Oregon (us-west1)",
@@ -379,14 +412,6 @@
     "uri": "incidents/db3E4dVfQzxfTrhsdZLw",
     "currently_affected_locations": [
       {
-        "title": "Taiwan (asia-east1)",
-        "id": "asia-east1"
-      },
-      {
-        "title": "Hong Kong (asia-east2)",
-        "id": "asia-east2"
-      },
-      {
         "title": "Tokyo (asia-northeast1)",
         "id": "asia-northeast1"
       },
@@ -403,24 +428,16 @@
         "id": "asia-southeast1"
       },
       {
+        "title": "Sydney (australia-southeast1)",
+        "id": "australia-southeast1"
+      },
+      {
         "title": "Iowa (us-central1)",
         "id": "us-central1"
       },
       {
-        "title": "South Carolina (us-east1)",
-        "id": "us-east1"
-      },
-      {
         "title": "Northern Virginia (us-east4)",
         "id": "us-east4"
-      },
-      {
-        "title": "Columbus (us-east5)",
-        "id": "us-east5"
-      },
-      {
-        "title": "Dallas (us-south1)",
-        "id": "us-south1"
       },
       {
         "title": "Oregon (us-west1)",
