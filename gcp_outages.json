@@ -4,12 +4,21 @@
     "number": "5834988663039889887",
     "begin": "2024-11-15T23:02:37+00:00",
     "created": "2024-11-16T00:32:48+00:00",
-    "modified": "2024-11-16T00:32:48+00:00",
+    "end": "2024-11-16T00:52:48+00:00",
+    "modified": "2024-11-16T00:52:49+00:00",
     "external_desc": "We are investigating reports of issues with Google Cloud Support.",
     "updates": [
       {
+        "created": "2024-11-16T00:52:48+00:00",
+        "modified": "2024-11-16T00:52:50+00:00",
+        "when": "2024-11-16T00:52:48+00:00",
+        "text": "The issue with Google Cloud Support has been resolved for all affected customers as of Friday, 2024-11-15 16:35 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-11-16T00:32:46+00:00",
-        "modified": "2024-11-16T00:32:48+00:00",
+        "modified": "2024-11-16T00:52:49+00:00",
         "when": "2024-11-16T00:32:46+00:00",
         "text": "Summary: We are investigating reports of issues with Google Cloud Support.\nDescription: We are investigating reports of issues with Google Cloud Support beginning on Friday, 2024-11-15 13:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2024-11-15 17:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Impacted customers may experience issues with creating and managing the vector cases. The operations like case creation, read and updates may have been impacted.\nWorkaround: None at this time.",
         "status": "SERVICE_INFORMATION",
@@ -22,17 +31,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-11-16T00:32:46+00:00",
-      "modified": "2024-11-16T00:32:48+00:00",
-      "when": "2024-11-16T00:32:46+00:00",
-      "text": "Summary: We are investigating reports of issues with Google Cloud Support.\nDescription: We are investigating reports of issues with Google Cloud Support beginning on Friday, 2024-11-15 13:00 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Friday, 2024-11-15 17:30 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Impacted customers may experience issues with creating and managing the vector cases. The operations like case creation, read and updates may have been impacted.\nWorkaround: None at this time.",
-      "status": "SERVICE_INFORMATION",
-      "affected_locations": [
-        {
-          "title": "Global",
-          "id": "global"
-        }
-      ]
+      "created": "2024-11-16T00:52:48+00:00",
+      "modified": "2024-11-16T00:52:50+00:00",
+      "when": "2024-11-16T00:52:48+00:00",
+      "text": "The issue with Google Cloud Support has been resolved for all affected customers as of Friday, 2024-11-15 16:35 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
+      "affected_locations": []
     },
     "status_impact": "SERVICE_INFORMATION",
     "severity": "low",
@@ -45,13 +49,13 @@
       }
     ],
     "uri": "incidents/kq8vzGmgzfjMfASCdmoV",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Global",
         "id": "global"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "NEtbe4S7pMgACeuopMaZ",
@@ -176,12 +180,57 @@
     "number": "14934870579306172809",
     "begin": "2024-11-13T15:51:14+00:00",
     "created": "2024-11-15T07:39:02+00:00",
-    "modified": "2024-11-15T19:59:38+00:00",
+    "modified": "2024-11-16T01:21:05+00:00",
     "external_desc": "An issue with Vertex Gemini API in multiple regions of Asia and America",
     "updates": [
       {
+        "created": "2024-11-16T01:21:05+00:00",
+        "modified": "2024-11-16T01:21:08+00:00",
+        "when": "2024-11-16T01:21:05+00:00",
+        "text": "Summary: An issue with Vertex Gemini API in multiple regions of Asia and America\nDescription: Mitigation work is still underway by our engineering team, and error rates and latency are showing continued improvement.\nWe do not have an ETA for full mitigation at this point.\nWe will provide more information by Monday, 2024-11-18 11:00 US/Pacific.\nDiagnosis: Customers impacted by this issue may observe long context requests to Gemini 1.5 Pro 002 are served with errors or extremely long latency in some clusters in the impacted regions.\nWorkaround: The impacted users may try using the Europe based regions to use the Vertex Gemini API configurations or operations.",
+        "status": "SERVICE_INFORMATION",
+        "affected_locations": [
+          {
+            "title": "Tokyo (asia-northeast1)",
+            "id": "asia-northeast1"
+          },
+          {
+            "title": "Seoul (asia-northeast3)",
+            "id": "asia-northeast3"
+          },
+          {
+            "title": "Mumbai (asia-south1)",
+            "id": "asia-south1"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          },
+          {
+            "title": "Las Vegas (us-west4)",
+            "id": "us-west4"
+          }
+        ]
+      },
+      {
         "created": "2024-11-15T19:59:38+00:00",
-        "modified": "2024-11-15T19:59:41+00:00",
+        "modified": "2024-11-16T01:21:05+00:00",
         "when": "2024-11-15T19:59:38+00:00",
         "text": "Summary: An issue with Vertex Gemini API in multiple regions of Asia and America\nDescription: Mitigation work is still underway by our engineering team, and error rates and latency are showing continued improvement.\nWe do not have an ETA for full mitigation at this point.\nWe will provide more information by Friday, 2024-11-15 17:30 US/Pacific.\nDiagnosis: Customers impacted by this issue may observe long context requests to Gemini 1.5 Pro 002 are served with errors or extremely long latency in some clusters in the impacted regions.\nWorkaround: The impacted users may try using the Europe based regions to use the Vertex Gemini API configurations or operations.",
         "status": "SERVICE_INFORMATION",
@@ -552,10 +601,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-11-15T19:59:38+00:00",
-      "modified": "2024-11-15T19:59:41+00:00",
-      "when": "2024-11-15T19:59:38+00:00",
-      "text": "Summary: An issue with Vertex Gemini API in multiple regions of Asia and America\nDescription: Mitigation work is still underway by our engineering team, and error rates and latency are showing continued improvement.\nWe do not have an ETA for full mitigation at this point.\nWe will provide more information by Friday, 2024-11-15 17:30 US/Pacific.\nDiagnosis: Customers impacted by this issue may observe long context requests to Gemini 1.5 Pro 002 are served with errors or extremely long latency in some clusters in the impacted regions.\nWorkaround: The impacted users may try using the Europe based regions to use the Vertex Gemini API configurations or operations.",
+      "created": "2024-11-16T01:21:05+00:00",
+      "modified": "2024-11-16T01:21:08+00:00",
+      "when": "2024-11-16T01:21:05+00:00",
+      "text": "Summary: An issue with Vertex Gemini API in multiple regions of Asia and America\nDescription: Mitigation work is still underway by our engineering team, and error rates and latency are showing continued improvement.\nWe do not have an ETA for full mitigation at this point.\nWe will provide more information by Monday, 2024-11-18 11:00 US/Pacific.\nDiagnosis: Customers impacted by this issue may observe long context requests to Gemini 1.5 Pro 002 are served with errors or extremely long latency in some clusters in the impacted regions.\nWorkaround: The impacted users may try using the Europe based regions to use the Vertex Gemini API configurations or operations.",
       "status": "SERVICE_INFORMATION",
       "affected_locations": [
         {
