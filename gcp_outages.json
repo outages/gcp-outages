@@ -4,12 +4,50 @@
     "number": "9761556975820979069",
     "begin": "2024-11-16T08:52:53+00:00",
     "created": "2024-11-16T10:13:35+00:00",
-    "modified": "2024-11-16T11:01:09+00:00",
+    "modified": "2024-11-16T11:17:12+00:00",
     "external_desc": "Multiple GCP Products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing are experiencing issues in the asia-southeast2 region",
     "updates": [
       {
+        "created": "2024-11-16T11:12:06+00:00",
+        "modified": "2024-11-16T11:17:12+00:00",
+        "when": "2024-11-16T11:12:06+00:00",
+        "text": "Summary: Multiple GCP Products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing are experiencing issues in the asia-southeast2 region\nDescription: We are experiencing an issue with Multiple GCP products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing, Cloud Logging, Cloud Firestore, BigQuery, Cloud VPN, Hybrid Connectivity, Cloud Healthcare, Dataplex, GKE fleet management, Artifact Registry, Google Kubernetes Engine (GKE), Identity and Access Management Cloud Data Loss Prevention etc in asia-southeast2 region\nOur engineering team continues to investigate the issue in an effort to resolve the same for all the customers.\nWe will provide an update by Saturday, 2024-11-16 03:45 US/Pacific with current details.\nDiagnosis: Customers impacted by this issue may see the following symptoms:\nVirtual Private Cloud: Cross-region and external connectivity issues.\nCloud Load Balancing: Increased latency for GCLB requests ingressing in asia-southeast2.\nCloud SQL: Elevated latency and error rate for the Cloud SQL Admin API.\nCloud Spanner: Customers using asia-southeast2 would have seen higher latency.\nCloud Logging: Log ingestion and log routing in asia-southeast2 sees high latency.The users might also observe issues when doing operations (e.g. creating bucket) for this region.\nCloud Dataflow: Dataflow jobs are slow or failed to create.\nCloud Data Loss Prevention: Users may observe server unavailable errors\nCloud Firestore: Users experiencing elevated error rates for database get, delete, and creation operations in asia-southeast2.\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          }
+        ]
+      },
+      {
+        "created": "2024-11-16T11:07:27+00:00",
+        "modified": "2024-11-16T11:12:10+00:00",
+        "when": "2024-11-16T11:07:27+00:00",
+        "text": "Summary: Multiple GCP Products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing are experiencing issues in the asia-southeast2 region\nDescription: We are experiencing an issue with Multiple GCP products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing, Cloud Logging, Cloud Firestore, BigQuery, Cloud VPN, Hybrid Connectivity, Cloud Healthcare, Dataplex, GKE fleet management, Artifact Registry, Google Kubernetes Engine (GKE), Identity and Access Management Cloud Data Loss Prevention etc in asia-southeast2 region\nOur engineering team continues to investigate the issue.\nWe will provide an update by Saturday, 2024-11-16 03:45 US/Pacific with current details.\nDiagnosis: Customers impacted by this issue may see the following symptoms:\nVirtual Private Cloud: Cross-region and external connectivity issues.\nCloud Load Balancing: Increased latency for GCLB requests ingressing in asia-southeast2.\nCloud SQL: Elevated latency and error rate for the Cloud SQL Admin API.\nCloud Spanner: Customers using asia-southeast2 would have seen higher latency.\nCloud Logging: Log ingestion and log routing in asia-southeast2 sees high latency.The users might also observe issues when doing operations (e.g. creating bucket) for this region.\nCloud Dataflow: Dataflow jobs are slow or failed to create.\nCloud Data Loss Prevention: Users may observe server unavailable errors\nCloud Firestore: Users experiencing elevated error rates for database get, delete, and creation operations in asia-southeast2.\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Singapore (asia-southeast1)",
+            "id": "asia-southeast1"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          }
+        ]
+      },
+      {
         "created": "2024-11-16T11:01:09+00:00",
-        "modified": "2024-11-16T11:01:13+00:00",
+        "modified": "2024-11-16T11:07:32+00:00",
         "when": "2024-11-16T11:01:09+00:00",
         "text": "Summary: Multiple GCP Products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing are experiencing issues in the asia-southeast2 region\nDescription: We are experiencing an issue with Multiple GCP products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing, Cloud Logging, Cloud Firestore, BigQuery, Cloud VPN, Hybrid Connectivity, Cloud Healthcare, Dataplex, GKE fleet management, Artifact Registry, Google Kubernetes Engine (GKE), Identity and Access Management Cloud Data Loss Prevention etc in asia-southeast2 region\nOur engineering team continues to investigate the issue.\nWe will provide an update by Saturday, 2024-11-16 03:30 US/Pacific with current details.\nDiagnosis: Customers impacted by this issue may see the following symptoms:\nVirtual Private Cloud: Cross-region and external connectivity issues.\nCloud Load Balancing: Increased latency for GCLB requests ingressing in asia-southeast2.\nCloud SQL: Elevated latency and error rate for the Cloud SQL Admin API.\nCloud Spanner: Customers using asia-southeast2 would have seen higher latency.\nCloud Logging: Log ingestion and log routing in asia-southeast2 sees high latency.The users might also observe issues when doing operations (e.g. creating bucket) for this region.\nCloud Dataflow: Dataflow jobs are slow or failed to create.\nCloud Data Loss Prevention: Users may observe server unavailable errors\nCloud Firestore: Users experiencing elevated error rates for database get, delete, and creation operations in asia-southeast2.\nWorkaround: None at this time.",
         "status": "SERVICE_OUTAGE",
@@ -95,15 +133,15 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-11-16T11:01:09+00:00",
-      "modified": "2024-11-16T11:01:13+00:00",
-      "when": "2024-11-16T11:01:09+00:00",
-      "text": "Summary: Multiple GCP Products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing are experiencing issues in the asia-southeast2 region\nDescription: We are experiencing an issue with Multiple GCP products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing, Cloud Logging, Cloud Firestore, BigQuery, Cloud VPN, Hybrid Connectivity, Cloud Healthcare, Dataplex, GKE fleet management, Artifact Registry, Google Kubernetes Engine (GKE), Identity and Access Management Cloud Data Loss Prevention etc in asia-southeast2 region\nOur engineering team continues to investigate the issue.\nWe will provide an update by Saturday, 2024-11-16 03:30 US/Pacific with current details.\nDiagnosis: Customers impacted by this issue may see the following symptoms:\nVirtual Private Cloud: Cross-region and external connectivity issues.\nCloud Load Balancing: Increased latency for GCLB requests ingressing in asia-southeast2.\nCloud SQL: Elevated latency and error rate for the Cloud SQL Admin API.\nCloud Spanner: Customers using asia-southeast2 would have seen higher latency.\nCloud Logging: Log ingestion and log routing in asia-southeast2 sees high latency.The users might also observe issues when doing operations (e.g. creating bucket) for this region.\nCloud Dataflow: Dataflow jobs are slow or failed to create.\nCloud Data Loss Prevention: Users may observe server unavailable errors\nCloud Firestore: Users experiencing elevated error rates for database get, delete, and creation operations in asia-southeast2.\nWorkaround: None at this time.",
+      "created": "2024-11-16T11:12:06+00:00",
+      "modified": "2024-11-16T11:17:12+00:00",
+      "when": "2024-11-16T11:12:06+00:00",
+      "text": "Summary: Multiple GCP Products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing are experiencing issues in the asia-southeast2 region\nDescription: We are experiencing an issue with Multiple GCP products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing, Cloud Logging, Cloud Firestore, BigQuery, Cloud VPN, Hybrid Connectivity, Cloud Healthcare, Dataplex, GKE fleet management, Artifact Registry, Google Kubernetes Engine (GKE), Identity and Access Management Cloud Data Loss Prevention etc in asia-southeast2 region\nOur engineering team continues to investigate the issue in an effort to resolve the same for all the customers.\nWe will provide an update by Saturday, 2024-11-16 03:45 US/Pacific with current details.\nDiagnosis: Customers impacted by this issue may see the following symptoms:\nVirtual Private Cloud: Cross-region and external connectivity issues.\nCloud Load Balancing: Increased latency for GCLB requests ingressing in asia-southeast2.\nCloud SQL: Elevated latency and error rate for the Cloud SQL Admin API.\nCloud Spanner: Customers using asia-southeast2 would have seen higher latency.\nCloud Logging: Log ingestion and log routing in asia-southeast2 sees high latency.The users might also observe issues when doing operations (e.g. creating bucket) for this region.\nCloud Dataflow: Dataflow jobs are slow or failed to create.\nCloud Data Loss Prevention: Users may observe server unavailable errors\nCloud Firestore: Users experiencing elevated error rates for database get, delete, and creation operations in asia-southeast2.\nWorkaround: None at this time.",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
-          "title": "Singapore (asia-southeast1)",
-          "id": "asia-southeast1"
+          "title": "Osaka (asia-northeast2)",
+          "id": "asia-northeast2"
         },
         {
           "title": "Jakarta (asia-southeast2)",
@@ -137,6 +175,18 @@
         "id": "PuCJ6W2ovoDhLcyvZ1xa"
       },
       {
+        "title": "Cloud Memorystore",
+        "id": "LGPLu3M5pcUAKU1z6eP3"
+      },
+      {
+        "title": "Cloud Monitoring",
+        "id": "3zaaDb7antc73BM1UAVT"
+      },
+      {
+        "title": "Cloud Spanner",
+        "id": "EcNGGUgBtBLrtm4mWvqC"
+      },
+      {
         "title": "Dataplex",
         "id": "Xx5qm9U2ovrN11z2Gd9Q"
       },
@@ -145,12 +195,20 @@
         "id": "4osgZCUJuuh3whY4B8tt"
       },
       {
+        "title": "Google BigQuery",
+        "id": "9CcrhHUcFevXPSVaSxkf"
+      },
+      {
         "title": "Google Cloud Dataflow",
         "id": "T9bFoXPqG8w8g1YbWTKY"
       },
       {
         "title": "Google Cloud Networking",
         "id": "VNJxzcH58QmTt5H6pnT6"
+      },
+      {
+        "title": "Google Cloud Pub/Sub",
+        "id": "dFjdLh2v6zuES6t9ADCB"
       },
       {
         "title": "Google Kubernetes Engine",
@@ -165,8 +223,20 @@
         "id": "5x6CGnZvSHQZ26KtxpK1"
       },
       {
+        "title": "Identity and Access Management",
+        "id": "adnGEDEt9zWzs8uF1oKA"
+      },
+      {
+        "title": "Memorystore for Redis",
+        "id": "3yFciKa9NQH7pmbnUYUs"
+      },
+      {
         "title": "Operations",
         "id": "DixAowEQm45KgqXKP5tR"
+      },
+      {
+        "title": "Pub/Sub Lite",
+        "id": "5DWkcStmv4dFHRHLaRXb"
       },
       {
         "title": "Virtual Private Cloud (VPC)",
@@ -176,8 +246,8 @@
     "uri": "incidents/kDBRnSgQCPw93E8vKKat",
     "currently_affected_locations": [
       {
-        "title": "Singapore (asia-southeast1)",
-        "id": "asia-southeast1"
+        "title": "Osaka (asia-northeast2)",
+        "id": "asia-northeast2"
       },
       {
         "title": "Jakarta (asia-southeast2)",
