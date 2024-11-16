@@ -4,12 +4,29 @@
     "number": "9761556975820979069",
     "begin": "2024-11-16T08:52:53+00:00",
     "created": "2024-11-16T10:13:35+00:00",
-    "modified": "2024-11-16T11:17:12+00:00",
+    "modified": "2024-11-16T11:40:43+00:00",
     "external_desc": "Multiple GCP Products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing are experiencing issues in the asia-southeast2 region",
     "updates": [
       {
+        "created": "2024-11-16T11:40:43+00:00",
+        "modified": "2024-11-16T11:40:49+00:00",
+        "when": "2024-11-16T11:40:43+00:00",
+        "text": "Summary: Multiple GCP Products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing are experiencing issues in the asia-southeast2 region\nDescription: We are experiencing an issue with Multiple GCP products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing, Cloud Logging, Cloud Firestore, BigQuery, Cloud VPN, Hybrid Connectivity, Cloud Healthcare, Dataplex, GKE fleet management, Artifact Registry, Google Kubernetes Engine (GKE), Identity and Access Management Cloud Data Loss Prevention etc in asia-southeast2 region.\nNote that the issues with Memorystore for Redis have been mitigated.\nOur engineering team continues to investigate the issues in an effort to resolve the issues same for all the customers.\nWe will provide an update by Saturday, 2024-11-16 04:15 US/Pacific with current details\nDiagnosis: Customers impacted by this issue may see the following symptoms:\nVirtual Private Cloud: Cross-region and external connectivity issues.\nCloud Load Balancing: Increased latency for GCLB requests ingressing in asia-southeast2.\nCloud SQL: Elevated latency and error rate for the Cloud SQL Admin API.\nCloud Spanner: Customers using asia-southeast2 would have seen higher latency.\nCloud Logging: Log ingestion and log routing in asia-southeast2 sees high latency.The users might also observe issues when doing operations (e.g. creating bucket) for this region.\nCloud Dataflow: Dataflow jobs are slow or failed to create.\nCloud Data Loss Prevention: Users may observe server unavailable errors\nCloud Firestore: Users experiencing elevated error rates and latencies for databases in asia-southeast2.\nCloud VPN: Impacted users may observe partial packet loss in the impacted region\nMemorystore for Redis: A small number of customers in the impacted region (asia-southeast2) may have experienced elevated errors when creating instances from 00:35 to 01:10. The issue has been mitigated as of 2:45 US/ Pacific on 16 Nov, 2024\nArtifact Registry: Artifact Registry users may observe API time outs or server errors.\nWorkaround: None at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Osaka (asia-northeast2)",
+            "id": "asia-northeast2"
+          },
+          {
+            "title": "Jakarta (asia-southeast2)",
+            "id": "asia-southeast2"
+          }
+        ]
+      },
+      {
         "created": "2024-11-16T11:12:06+00:00",
-        "modified": "2024-11-16T11:17:12+00:00",
+        "modified": "2024-11-16T11:40:43+00:00",
         "when": "2024-11-16T11:12:06+00:00",
         "text": "Summary: Multiple GCP Products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing are experiencing issues in the asia-southeast2 region\nDescription: We are experiencing an issue with Multiple GCP products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing, Cloud Logging, Cloud Firestore, BigQuery, Cloud VPN, Hybrid Connectivity, Cloud Healthcare, Dataplex, GKE fleet management, Artifact Registry, Google Kubernetes Engine (GKE), Identity and Access Management Cloud Data Loss Prevention etc in asia-southeast2 region\nOur engineering team continues to investigate the issue in an effort to resolve the same for all the customers.\nWe will provide an update by Saturday, 2024-11-16 03:45 US/Pacific with current details.\nDiagnosis: Customers impacted by this issue may see the following symptoms:\nVirtual Private Cloud: Cross-region and external connectivity issues.\nCloud Load Balancing: Increased latency for GCLB requests ingressing in asia-southeast2.\nCloud SQL: Elevated latency and error rate for the Cloud SQL Admin API.\nCloud Spanner: Customers using asia-southeast2 would have seen higher latency.\nCloud Logging: Log ingestion and log routing in asia-southeast2 sees high latency.The users might also observe issues when doing operations (e.g. creating bucket) for this region.\nCloud Dataflow: Dataflow jobs are slow or failed to create.\nCloud Data Loss Prevention: Users may observe server unavailable errors\nCloud Firestore: Users experiencing elevated error rates for database get, delete, and creation operations in asia-southeast2.\nWorkaround: None at this time.",
         "status": "SERVICE_OUTAGE",
@@ -133,10 +150,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-11-16T11:12:06+00:00",
-      "modified": "2024-11-16T11:17:12+00:00",
-      "when": "2024-11-16T11:12:06+00:00",
-      "text": "Summary: Multiple GCP Products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing are experiencing issues in the asia-southeast2 region\nDescription: We are experiencing an issue with Multiple GCP products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing, Cloud Logging, Cloud Firestore, BigQuery, Cloud VPN, Hybrid Connectivity, Cloud Healthcare, Dataplex, GKE fleet management, Artifact Registry, Google Kubernetes Engine (GKE), Identity and Access Management Cloud Data Loss Prevention etc in asia-southeast2 region\nOur engineering team continues to investigate the issue in an effort to resolve the same for all the customers.\nWe will provide an update by Saturday, 2024-11-16 03:45 US/Pacific with current details.\nDiagnosis: Customers impacted by this issue may see the following symptoms:\nVirtual Private Cloud: Cross-region and external connectivity issues.\nCloud Load Balancing: Increased latency for GCLB requests ingressing in asia-southeast2.\nCloud SQL: Elevated latency and error rate for the Cloud SQL Admin API.\nCloud Spanner: Customers using asia-southeast2 would have seen higher latency.\nCloud Logging: Log ingestion and log routing in asia-southeast2 sees high latency.The users might also observe issues when doing operations (e.g. creating bucket) for this region.\nCloud Dataflow: Dataflow jobs are slow or failed to create.\nCloud Data Loss Prevention: Users may observe server unavailable errors\nCloud Firestore: Users experiencing elevated error rates for database get, delete, and creation operations in asia-southeast2.\nWorkaround: None at this time.",
+      "created": "2024-11-16T11:40:43+00:00",
+      "modified": "2024-11-16T11:40:49+00:00",
+      "when": "2024-11-16T11:40:43+00:00",
+      "text": "Summary: Multiple GCP Products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing are experiencing issues in the asia-southeast2 region\nDescription: We are experiencing an issue with Multiple GCP products including Google Cloud Networking, Virtual Private Cloud (VPC), Cloud Load Balancing, Cloud Logging, Cloud Firestore, BigQuery, Cloud VPN, Hybrid Connectivity, Cloud Healthcare, Dataplex, GKE fleet management, Artifact Registry, Google Kubernetes Engine (GKE), Identity and Access Management Cloud Data Loss Prevention etc in asia-southeast2 region.\nNote that the issues with Memorystore for Redis have been mitigated.\nOur engineering team continues to investigate the issues in an effort to resolve the issues same for all the customers.\nWe will provide an update by Saturday, 2024-11-16 04:15 US/Pacific with current details\nDiagnosis: Customers impacted by this issue may see the following symptoms:\nVirtual Private Cloud: Cross-region and external connectivity issues.\nCloud Load Balancing: Increased latency for GCLB requests ingressing in asia-southeast2.\nCloud SQL: Elevated latency and error rate for the Cloud SQL Admin API.\nCloud Spanner: Customers using asia-southeast2 would have seen higher latency.\nCloud Logging: Log ingestion and log routing in asia-southeast2 sees high latency.The users might also observe issues when doing operations (e.g. creating bucket) for this region.\nCloud Dataflow: Dataflow jobs are slow or failed to create.\nCloud Data Loss Prevention: Users may observe server unavailable errors\nCloud Firestore: Users experiencing elevated error rates and latencies for databases in asia-southeast2.\nCloud VPN: Impacted users may observe partial packet loss in the impacted region\nMemorystore for Redis: A small number of customers in the impacted region (asia-southeast2) may have experienced elevated errors when creating instances from 00:35 to 01:10. The issue has been mitigated as of 2:45 US/ Pacific on 16 Nov, 2024\nArtifact Registry: Artifact Registry users may observe API time outs or server errors.\nWorkaround: None at this time.",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
