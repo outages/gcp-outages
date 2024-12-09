@@ -4,12 +4,21 @@
     "number": "11511655505955245697",
     "begin": "2024-12-09T17:33:16+00:00",
     "created": "2024-12-09T18:58:50+00:00",
-    "modified": "2024-12-09T19:38:20+00:00",
+    "end": "2024-12-09T19:50:58+00:00",
+    "modified": "2024-12-09T19:50:59+00:00",
     "external_desc": "We are investigating elevated error rates and latency for streaming ingestion into BigQuery",
     "updates": [
       {
+        "created": "2024-12-09T19:50:58+00:00",
+        "modified": "2024-12-09T19:51:00+00:00",
+        "when": "2024-12-09T19:50:58+00:00",
+        "text": "The issue with Google BigQuery, Google Cloud Dataflow has been resolved for all affected projects as of Monday, 2024-12-09 11:40 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-12-09T19:38:20+00:00",
-        "modified": "2024-12-09T19:38:27+00:00",
+        "modified": "2024-12-09T19:50:59+00:00",
         "when": "2024-12-09T19:38:20+00:00",
         "text": "Summary: We are investigating elevated error rates and latency for streaming ingestion into BigQuery\nDescription: We are experiencing an issue with Google BigQuery, Cloud Dataflow beginning on Monday, 2024-12-09 09:30 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2024-12-09 12:15 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Google BigQuery customers may see elevated 503 errors and increased latency when using either the Storage Write API or insertAll.\nCloud Dataflow customers may observe elevated latency in their streaming jobs.\nWorkaround: None at this time.",
         "status": "SERVICE_OUTAGE",
@@ -75,37 +84,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-12-09T19:38:20+00:00",
-      "modified": "2024-12-09T19:38:27+00:00",
-      "when": "2024-12-09T19:38:20+00:00",
-      "text": "Summary: We are investigating elevated error rates and latency for streaming ingestion into BigQuery\nDescription: We are experiencing an issue with Google BigQuery, Cloud Dataflow beginning on Monday, 2024-12-09 09:30 US/Pacific.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Monday, 2024-12-09 12:15 US/Pacific with current details.\nWe apologize to all who are affected by the disruption.\nDiagnosis: Google BigQuery customers may see elevated 503 errors and increased latency when using either the Storage Write API or insertAll.\nCloud Dataflow customers may observe elevated latency in their streaming jobs.\nWorkaround: None at this time.",
-      "status": "SERVICE_OUTAGE",
-      "affected_locations": [
-        {
-          "title": "Multi-region: us",
-          "id": "us"
-        },
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        },
-        {
-          "title": "South Carolina (us-east1)",
-          "id": "us-east1"
-        },
-        {
-          "title": "Northern Virginia (us-east4)",
-          "id": "us-east4"
-        },
-        {
-          "title": "Oregon (us-west1)",
-          "id": "us-west1"
-        },
-        {
-          "title": "Los Angeles (us-west2)",
-          "id": "us-west2"
-        }
-      ]
+      "created": "2024-12-09T19:50:58+00:00",
+      "modified": "2024-12-09T19:51:00+00:00",
+      "when": "2024-12-09T19:50:58+00:00",
+      "text": "The issue with Google BigQuery, Google Cloud Dataflow has been resolved for all affected projects as of Monday, 2024-12-09 11:40 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
+      "affected_locations": []
     },
     "status_impact": "SERVICE_OUTAGE",
     "severity": "high",
@@ -122,7 +106,8 @@
       }
     ],
     "uri": "incidents/LztMRFrCwWofMbzRENLW",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Multi-region: us",
         "id": "us"
@@ -147,8 +132,7 @@
         "title": "Los Angeles (us-west2)",
         "id": "us-west2"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "RetVopiQ8rTjazXDDBLe",
