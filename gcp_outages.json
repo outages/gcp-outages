@@ -200,12 +200,20 @@
     "begin": "2024-12-09T17:33:16+00:00",
     "created": "2024-12-09T18:58:50+00:00",
     "end": "2024-12-09T19:50:58+00:00",
-    "modified": "2024-12-09T19:50:59+00:00",
+    "modified": "2024-12-10T18:23:38+00:00",
     "external_desc": "We are investigating elevated error rates and latency for streaming ingestion into BigQuery",
     "updates": [
       {
+        "created": "2024-12-10T18:23:38+00:00",
+        "modified": "2024-12-10T18:23:38+00:00",
+        "when": "2024-12-10T18:23:38+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 9 December 2024 09:24\n**Incident End:** 9 December 2024 11:40\n**Duration:** 2 hours, 24 minutes\n**Affected Services and Features:**\nGoogle BigQuery\nCloud Dataflow\n**Regions/Zones:**\n* Google BigQuery - US multi-region\n* Cloud Dataflow - us-west1, us-east1, us-east4, us-west2 & us-central1 were the most impacted but all Dataflow pipelines writing to the BigQuery US multi-region have likely been impacted too.\n**Description:**\nGoogle BigQuery experienced increased latency and elevated error rates in US multi-region for a duration of 2 hours, 24 minutes. Cloud Dataflow customers also observed elevated latency in their streaming jobs to the BigQuery US multi-region. Preliminary analysis indicates that the root cause of the issue was a sudden burst of traffic, which overloaded and slowed the backend in the availability zone. This led to aggressive retries and overloaded the frontend service. The incident was mitigated by rate-limiting requests and by evacuating the slow availability zone.\nGoogle will complete a full IR in the following days that will provide a full root cause.\n**Customer Impact:**\n### Google BigQuery\n* During the incident, customers calling google.cloud.bigquery.v2.TableDataService.InsertAll API method may have experienced transient failures with 5XX status code, which should have succeeded after retries.\n* Customers using google.cloud.bigquery.storage.v1.AppendRows may have experienced increased latency during this incident.\n### Cloud Dataflow\n* Customers would have experienced increased latency for streaming jobs in the us-east1, us-east4, us-west1, us-west2, and us-central1 regions.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-12-09T19:50:58+00:00",
-        "modified": "2024-12-09T19:51:00+00:00",
+        "modified": "2024-12-10T18:23:38+00:00",
         "when": "2024-12-09T19:50:58+00:00",
         "text": "The issue with Google BigQuery, Google Cloud Dataflow has been resolved for all affected projects as of Monday, 2024-12-09 11:40 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -279,10 +287,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-12-09T19:50:58+00:00",
-      "modified": "2024-12-09T19:51:00+00:00",
-      "when": "2024-12-09T19:50:58+00:00",
-      "text": "The issue with Google BigQuery, Google Cloud Dataflow has been resolved for all affected projects as of Monday, 2024-12-09 11:40 US/Pacific.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2024-12-10T18:23:38+00:00",
+      "modified": "2024-12-10T18:23:38+00:00",
+      "when": "2024-12-10T18:23:38+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support or to Google Workspace Support using help article https://support.google.com/a/answer/1047213.\n(All Times US/Pacific)\n**Incident Start:** 9 December 2024 09:24\n**Incident End:** 9 December 2024 11:40\n**Duration:** 2 hours, 24 minutes\n**Affected Services and Features:**\nGoogle BigQuery\nCloud Dataflow\n**Regions/Zones:**\n* Google BigQuery - US multi-region\n* Cloud Dataflow - us-west1, us-east1, us-east4, us-west2 & us-central1 were the most impacted but all Dataflow pipelines writing to the BigQuery US multi-region have likely been impacted too.\n**Description:**\nGoogle BigQuery experienced increased latency and elevated error rates in US multi-region for a duration of 2 hours, 24 minutes. Cloud Dataflow customers also observed elevated latency in their streaming jobs to the BigQuery US multi-region. Preliminary analysis indicates that the root cause of the issue was a sudden burst of traffic, which overloaded and slowed the backend in the availability zone. This led to aggressive retries and overloaded the frontend service. The incident was mitigated by rate-limiting requests and by evacuating the slow availability zone.\nGoogle will complete a full IR in the following days that will provide a full root cause.\n**Customer Impact:**\n### Google BigQuery\n* During the incident, customers calling google.cloud.bigquery.v2.TableDataService.InsertAll API method may have experienced transient failures with 5XX status code, which should have succeeded after retries.\n* Customers using google.cloud.bigquery.storage.v1.AppendRows may have experienced increased latency during this incident.\n### Cloud Dataflow\n* Customers would have experienced increased latency for streaming jobs in the us-east1, us-east4, us-west1, us-west2, and us-central1 regions.",
       "status": "AVAILABLE",
       "affected_locations": []
     },
