@@ -98,12 +98,20 @@
     "begin": "2024-12-19T16:25:08+00:00",
     "created": "2024-12-19T16:57:42+00:00",
     "end": "2024-12-19T19:05:43+00:00",
-    "modified": "2024-12-19T19:05:46+00:00",
+    "modified": "2024-12-19T23:28:39+00:00",
     "external_desc": "We are experiencing an issue with Vertex Gemini API in Asia",
     "updates": [
       {
+        "created": "2024-12-19T23:28:39+00:00",
+        "modified": "2024-12-19T23:28:39+00:00",
+        "when": "2024-12-19T23:28:39+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n(All Times US/Pacific)\n**Incident Start:** 19 December, 2024 08:15\n**Incident End:** 19 December, 2024 10:55\n**Duration:** 2 hours, 40 minutes\n**Affected Services and Features:**\nVertex Gemini API\n**Regions/Zones:** multi-region:asia\n**Description:**\nGoogle Vertex Gemini API customers sending traffic to gemini models in multi-region:asia experienced an increase in 5xx errors up to 100% for a duration of 2 hours, 40 minutes. From preliminary analysis, the root cause of the incident is stemmed from a Vertex service dependency ending up in a bad state due to a configuration process.\nThe situation was mitigated by increasing resources, enabling successful autopilot scaling and reducing customer traffic errors. Additionally, the Vertex service dependency received an update to fix the configuration, preventing recurrence of the Incident.\n**Customer Impact:**\nCustomers sending traffic to gemini models in multi-region:asia experienced an increase in 5xx errors up to 100%.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2024-12-19T19:05:43+00:00",
-        "modified": "2024-12-19T19:05:46+00:00",
+        "modified": "2024-12-19T23:28:39+00:00",
         "when": "2024-12-19T19:05:43+00:00",
         "text": "The issue with Vertex Gemini API has been resolved for all affected projects as of Thursday, 2024-12-19 10:56 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -234,10 +242,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2024-12-19T19:05:43+00:00",
-      "modified": "2024-12-19T19:05:46+00:00",
-      "when": "2024-12-19T19:05:43+00:00",
-      "text": "The issue with Vertex Gemini API has been resolved for all affected projects as of Thursday, 2024-12-19 10:56 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2024-12-19T23:28:39+00:00",
+      "modified": "2024-12-19T23:28:39+00:00",
+      "when": "2024-12-19T23:28:39+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using https://cloud.google.com/support .\n(All Times US/Pacific)\n**Incident Start:** 19 December, 2024 08:15\n**Incident End:** 19 December, 2024 10:55\n**Duration:** 2 hours, 40 minutes\n**Affected Services and Features:**\nVertex Gemini API\n**Regions/Zones:** multi-region:asia\n**Description:**\nGoogle Vertex Gemini API customers sending traffic to gemini models in multi-region:asia experienced an increase in 5xx errors up to 100% for a duration of 2 hours, 40 minutes. From preliminary analysis, the root cause of the incident is stemmed from a Vertex service dependency ending up in a bad state due to a configuration process.\nThe situation was mitigated by increasing resources, enabling successful autopilot scaling and reducing customer traffic errors. Additionally, the Vertex service dependency received an update to fix the configuration, preventing recurrence of the Incident.\n**Customer Impact:**\nCustomers sending traffic to gemini models in multi-region:asia experienced an increase in 5xx errors up to 100%.",
       "status": "AVAILABLE",
       "affected_locations": []
     },
