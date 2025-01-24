@@ -4,12 +4,21 @@
     "number": "12777587082307720292",
     "begin": "2025-01-24T18:09:08+00:00",
     "created": "2025-01-24T18:41:26+00:00",
-    "modified": "2025-01-24T19:26:02+00:00",
+    "end": "2025-01-24T19:55:37+00:00",
+    "modified": "2025-01-24T19:55:39+00:00",
     "external_desc": "Appsheet is unavailable in us-east4 and europe-west4",
     "updates": [
       {
+        "created": "2025-01-24T19:55:37+00:00",
+        "modified": "2025-01-24T19:55:40+00:00",
+        "when": "2025-01-24T19:55:37+00:00",
+        "text": "The issue with AppSheet has been resolved for all affected users as of Friday, 2025-01-24 11:20 US/Pacific.\nPreliminary investigation narrowed down the trigger of the issue to be a schema migration to our backend database which caused all requests to temporarily fail with 500 errors and timeouts. This caused a large amount of traffic in us-east4 and europe-west4. The issue was fully mitigated once the migration completed.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2025-01-24T19:26:02+00:00",
-        "modified": "2025-01-24T19:26:05+00:00",
+        "modified": "2025-01-24T19:55:39+00:00",
         "when": "2025-01-24T19:26:02+00:00",
         "text": "Summary: Appsheet is unavailable in us-east4 and europe-west4\nDescription: Mitigation work is currently underway by our engineering team. We are showing signs of recovery and some users may observe elevated latency while we work towards full recovery.\nWe will provide more information by Friday, 2025-01-24 12:30 US/Pacific.\nDiagnosis: Customers impacted by this issue are unable to load apps via either editor or app load page. Customers may also observe intermittent latency.\nWorkaround: None at this time.",
         "status": "SERVICE_OUTAGE",
@@ -43,21 +52,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2025-01-24T19:26:02+00:00",
-      "modified": "2025-01-24T19:26:05+00:00",
-      "when": "2025-01-24T19:26:02+00:00",
-      "text": "Summary: Appsheet is unavailable in us-east4 and europe-west4\nDescription: Mitigation work is currently underway by our engineering team. We are showing signs of recovery and some users may observe elevated latency while we work towards full recovery.\nWe will provide more information by Friday, 2025-01-24 12:30 US/Pacific.\nDiagnosis: Customers impacted by this issue are unable to load apps via either editor or app load page. Customers may also observe intermittent latency.\nWorkaround: None at this time.",
-      "status": "SERVICE_OUTAGE",
-      "affected_locations": [
-        {
-          "title": "Netherlands (europe-west4)",
-          "id": "europe-west4"
-        },
-        {
-          "title": "Northern Virginia (us-east4)",
-          "id": "us-east4"
-        }
-      ]
+      "created": "2025-01-24T19:55:37+00:00",
+      "modified": "2025-01-24T19:55:40+00:00",
+      "when": "2025-01-24T19:55:37+00:00",
+      "text": "The issue with AppSheet has been resolved for all affected users as of Friday, 2025-01-24 11:20 US/Pacific.\nPreliminary investigation narrowed down the trigger of the issue to be a schema migration to our backend database which caused all requests to temporarily fail with 500 errors and timeouts. This caused a large amount of traffic in us-east4 and europe-west4. The issue was fully mitigated once the migration completed.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+      "status": "AVAILABLE",
+      "affected_locations": []
     },
     "status_impact": "SERVICE_OUTAGE",
     "severity": "high",
@@ -70,7 +70,8 @@
       }
     ],
     "uri": "incidents/qB1du5LQfSHCJjWR88Fi",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Netherlands (europe-west4)",
         "id": "europe-west4"
@@ -79,8 +80,7 @@
         "title": "Northern Virginia (us-east4)",
         "id": "us-east4"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "GsmUFt8Pb4XU3vaTwHS6",
