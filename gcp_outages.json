@@ -2,15 +2,23 @@
   {
     "id": "qB1du5LQfSHCJjWR88Fi",
     "number": "12777587082307720292",
-    "begin": "2025-01-24T18:09:08+00:00",
+    "begin": "2025-01-24T18:00:00+00:00",
     "created": "2025-01-24T18:41:26+00:00",
-    "end": "2025-01-24T19:55:37+00:00",
-    "modified": "2025-01-24T19:55:39+00:00",
+    "end": "2025-01-24T19:20:00+00:00",
+    "modified": "2025-01-24T22:26:38+00:00",
     "external_desc": "Appsheet is unavailable in us-east4 and europe-west4",
     "updates": [
       {
+        "created": "2025-01-24T22:26:38+00:00",
+        "modified": "2025-01-24T22:26:39+00:00",
+        "when": "2025-01-24T22:26:38+00:00",
+        "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Workspace Support using the help article https://support.google.com/a/answer/1047213 .\n(All Times US/Pacific)\nIncident Start: 24 January, 2025 10:00\nIncident End: 24 January, 2025 11:20\nDuration: 1 hour, 20 minutes\nAffected Services and Features:\nAppSheet\nRegions/Zones: us-east4 and europe-west4\nDescription:\nAppSheet experienced availability issues in us-west4 and europe-west4 for a total duration of 1 hour, 20 minutes.\nFrom our preliminary analysis, a schema migration initiated on a backend database caused errors and request timeouts. This led to increased retries from clients, causing a secondary database that manages authentication for us-east4 and europe-west4 to become overloaded. The overload on the authentication database subsequently impacted another dependency licensing server which also became overloaded.\nWhile the original database issues caused by the schema migration were fully resolved, the authentication and licensing servers continued to observe issues. Google engineers mitigated the overloaded authentication database by shifting traffic away from us-east4 and europe-west4 regions, resolving the issue. The licensing server recovered by 11:20 US/Pacific due to organic traffic reduction.\nGoogle will complete a full Incident Report in the following days that will provide a full root cause.\nCustomer Impact:\nAffected customers were unable to load AppSheet apps with the editor app load page.\nAffected customers experienced elevated 500 errors and timeouts.\nSome customers may also have observed intermittent latency.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2025-01-24T19:55:37+00:00",
-        "modified": "2025-01-24T19:55:40+00:00",
+        "modified": "2025-01-24T22:26:38+00:00",
         "when": "2025-01-24T19:55:37+00:00",
         "text": "The issue with AppSheet has been resolved for all affected users as of Friday, 2025-01-24 11:20 US/Pacific.\nPreliminary investigation narrowed down the trigger of the issue to be a schema migration to our backend database which caused all requests to temporarily fail with 500 errors and timeouts. This caused a large amount of traffic in us-east4 and europe-west4. The issue was fully mitigated once the migration completed.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -52,10 +60,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2025-01-24T19:55:37+00:00",
-      "modified": "2025-01-24T19:55:40+00:00",
-      "when": "2025-01-24T19:55:37+00:00",
-      "text": "The issue with AppSheet has been resolved for all affected users as of Friday, 2025-01-24 11:20 US/Pacific.\nPreliminary investigation narrowed down the trigger of the issue to be a schema migration to our backend database which caused all requests to temporarily fail with 500 errors and timeouts. This caused a large amount of traffic in us-east4 and europe-west4. The issue was fully mitigated once the migration completed.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2025-01-24T22:26:38+00:00",
+      "modified": "2025-01-24T22:26:39+00:00",
+      "when": "2025-01-24T22:26:38+00:00",
+      "text": "# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Workspace Support using the help article https://support.google.com/a/answer/1047213 .\n(All Times US/Pacific)\nIncident Start: 24 January, 2025 10:00\nIncident End: 24 January, 2025 11:20\nDuration: 1 hour, 20 minutes\nAffected Services and Features:\nAppSheet\nRegions/Zones: us-east4 and europe-west4\nDescription:\nAppSheet experienced availability issues in us-west4 and europe-west4 for a total duration of 1 hour, 20 minutes.\nFrom our preliminary analysis, a schema migration initiated on a backend database caused errors and request timeouts. This led to increased retries from clients, causing a secondary database that manages authentication for us-east4 and europe-west4 to become overloaded. The overload on the authentication database subsequently impacted another dependency licensing server which also became overloaded.\nWhile the original database issues caused by the schema migration were fully resolved, the authentication and licensing servers continued to observe issues. Google engineers mitigated the overloaded authentication database by shifting traffic away from us-east4 and europe-west4 regions, resolving the issue. The licensing server recovered by 11:20 US/Pacific due to organic traffic reduction.\nGoogle will complete a full Incident Report in the following days that will provide a full root cause.\nCustomer Impact:\nAffected customers were unable to load AppSheet apps with the editor app load page.\nAffected customers experienced elevated 500 errors and timeouts.\nSome customers may also have observed intermittent latency.",
       "status": "AVAILABLE",
       "affected_locations": []
     },
