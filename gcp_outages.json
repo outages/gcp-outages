@@ -2,15 +2,23 @@
   {
     "id": "n8QFYMxUxe65sum9P1gk",
     "number": "6338697417315324530",
-    "begin": "2025-01-31T02:16:50+00:00",
+    "begin": "2025-01-31T00:53:00+00:00",
     "created": "2025-01-31T09:05:14+00:00",
-    "end": "2025-01-31T14:14:33+00:00",
-    "modified": "2025-01-31T14:14:37+00:00",
+    "end": "2025-01-31T14:13:00+00:00",
+    "modified": "2025-01-31T20:14:05+00:00",
     "external_desc": "Chronicle Security - WORKSPACE_ACTIVITY data ingestion observed delays in asia-southeast1 & asia-south1 regions",
     "updates": [
       {
+        "created": "2025-01-31T20:13:45+00:00",
+        "modified": "2025-01-31T20:14:05+00:00",
+        "when": "2025-01-31T20:13:45+00:00",
+        "text": "## \\# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using [***https://cloud.google.com/support***](https://cloud.google.com/support).\n(All Times US/Pacific)\n**Incident Start:** 30 January 2025, 16:53\n**Incident End:** 31 January 2025 06:13\n**Duration:** 13 hours, 20 minutes\n**Affected Services and Features:**\nChronicle Security\n**Regions/Zones:**\nasia-south1, asia-southeast1\n**Description:**\nChronicle Security WORKSPACE\\_ACTIVITY data ingestion observed delays in asia-southeast1 and asia-south1 regions for 13 hours, 20 minutes due to network connectivity issues between the trans-Pacific regions.\nWhile the network connectivity issues are being fixed, the data ingestion delays were mitigated by increasing the Network Quality of Service (QoS) for this traffic to ensure timely processing.\n**Customer Impact:**\n* Chronicle Security customers observed WORKSPACE\\_ACTIVITY data was delayed in the Secops instance. The impacted regions processed only around one third of the actual traffic.\n* Rule detections which depend on WORKSPACE\\_ACTIVITY data may have been delayed.\n* Search on WORKSPACE\\_ACTIVITY data may have shown fewer events due to ingestion delays.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2025-01-31T14:14:33+00:00",
-        "modified": "2025-01-31T14:14:43+00:00",
+        "modified": "2025-01-31T20:13:45+00:00",
         "when": "2025-01-31T14:14:33+00:00",
         "text": "The issue with Chronicle Security has been resolved for all affected users as of Friday, 2025-01-31 06:13 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
         "status": "AVAILABLE",
@@ -69,10 +77,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2025-01-31T14:14:33+00:00",
-      "modified": "2025-01-31T14:14:43+00:00",
-      "when": "2025-01-31T14:14:33+00:00",
-      "text": "The issue with Chronicle Security has been resolved for all affected users as of Friday, 2025-01-31 06:13 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2025-01-31T20:13:45+00:00",
+      "modified": "2025-01-31T20:14:05+00:00",
+      "when": "2025-01-31T20:13:45+00:00",
+      "text": "## \\# Mini Incident Report\nWe apologize for the inconvenience this service disruption/outage may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using [***https://cloud.google.com/support***](https://cloud.google.com/support).\n(All Times US/Pacific)\n**Incident Start:** 30 January 2025, 16:53\n**Incident End:** 31 January 2025 06:13\n**Duration:** 13 hours, 20 minutes\n**Affected Services and Features:**\nChronicle Security\n**Regions/Zones:**\nasia-south1, asia-southeast1\n**Description:**\nChronicle Security WORKSPACE\\_ACTIVITY data ingestion observed delays in asia-southeast1 and asia-south1 regions for 13 hours, 20 minutes due to network connectivity issues between the trans-Pacific regions.\nWhile the network connectivity issues are being fixed, the data ingestion delays were mitigated by increasing the Network Quality of Service (QoS) for this traffic to ensure timely processing.\n**Customer Impact:**\n* Chronicle Security customers observed WORKSPACE\\_ACTIVITY data was delayed in the Secops instance. The impacted regions processed only around one third of the actual traffic.\n* Rule detections which depend on WORKSPACE\\_ACTIVITY data may have been delayed.\n* Search on WORKSPACE\\_ACTIVITY data may have shown fewer events due to ingestion delays.",
       "status": "AVAILABLE",
       "affected_locations": []
     },
