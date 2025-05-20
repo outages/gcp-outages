@@ -5,16 +5,45 @@
     "begin": "2025-05-20T03:23:00+00:00",
     "created": "2025-05-20T11:07:41+00:00",
     "end": "2025-05-20T12:05:00+00:00",
-    "modified": "2025-05-20T12:17:57+00:00",
+    "modified": "2025-05-20T18:59:26+00:00",
     "external_desc": "Google Compute Engine (GCE) issue impacting multiple dependent GCP services across zones",
     "updates": [
       {
-        "created": "2025-05-20T12:17:55+00:00",
-        "modified": "2025-05-20T12:17:57+00:00",
-        "when": "2025-05-20T12:17:55+00:00",
-        "text": "The issue with multiple dependent GCP services has been resolved for all affected users as of Tuesday, 2025-05-20 05:05 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "created": "2025-05-20T18:58:49+00:00",
+        "modified": "2025-05-20T18:59:26+00:00",
+        "when": "2025-05-20T18:58:49+00:00",
+        "text": "## \\# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using [***https://cloud.google.com/support***](https://cloud.google.com/support).\n(All Times US/Pacific)\n**Incident Start:** 19 May 2025 20:23:00\n**Incident End:** 20 May 2025 05:05:00\n**Duration:** 8 hours, 42 minutes\n**Affected Services and Features:**\nGoogle Compute Engine, Google Kubernetes Engine, Cloud Dataflow, Cloud SQL, AlloyDb for PostgreSQL, Cloud Composer, Cloud Build, Cloud Dataproc, Google App Engine, Migrate to Virtual Machines, Vertex GenAI, Cloud Deploy and Memorystore for Redis.\n**Regions/Zones:**\n***VM creation issues:***\n* us-central1 all zones\n* us-east4 all zones\n***VM termination issues:***\nasia-east1, asia-northeast1, asia-south1, asia-southeast1, australia-southeast1, europe-central2, europe-north1, europe-west1, europe-west12, europe-west2, europe-west3, europe-west4, me-central2, southamerica-east1, us-central1, us-east1, us-east4, us-east5, us-west1, us-west2, us-west4\n**Note:** VM terminate operations, products dependent on VM creations and terminations may have seen impact outside the above zones.\n**Description:**\nGoogle Compute Engine (GCE) encountered problems affecting VM creation, termination, and reservation consumption. Consequently, multiple Google Cloud products experienced increased latencies and timeouts during create, update, and terminate operations.\nPreliminary analysis indicates that a recent configuration change negatively impacted GCE handling of routine spot virtual machine (VM) terminations. As a result of this problem, GCE Control Plane services became overloaded causing disruptions for VM Instance creation, termination, and reservation consumption.\nThe issue was mitigated by changing the configuration to the previous state, thereby resolving the impact on all affected products.\nGoogle will complete a full Incident Report in the following days that will provide a full root cause.\n**Customer Impact:**\n**Google Compute Engine:** Customers may have observed elevated latency or timeouts for VM Instance operations like creation, reservation consumption, etc.\n**Google Kubernetes Engine:** Customers may have observed latency while performing operations like creating or deleting clusters, adding or resizing nodepools, etc.\n**Google Cloud Dataproc:** Customers may have observed elevated latency while performing operations like creating or deleting clusters, and scale up and scale down operations, etc.\n**Google Cloud Dataflow:** Customers may have observed elevated latency for start-up / scaleup / shut-downs for Dataflow jobs.\n**Cloud Filestore:** Customers may have observed create instance failures.\n**Cloud Build:** Customers using private pools may have observed elevated latency in build completion or sporadic build failures due to workers failing to start.\n**Cloud SQL:** Customers may have observed failures or elevated latency for instance creation, resizing and high-availability update operations. As a workaround, for failure in the create operations, customers can retry by deleting the failed instances and re-attempt the operation.\n**Cloud Composer:** Customers may have experienced failures in new Composer environment creation and in upgrade of Composer/Airflow versions, as well as delays in up-scaling of new airflow-workers and in KubernetesPodOperator tasks.\n**AlloyDB for PostgreSQL:** Customers may have experienced failures in instance creation operations. In addition, a small number of instance update operations may also see failures.\n**Google App Engine:** Customers may have experienced failures in insert/update/create/delete operations.\n**Migrate to Virtual Machines:** Customers may have experienced timeouts or errors.\n**Vertex GenAI:** Customers may have experienced issues in creating cluster operations.\n**Cloud Deploy:** Customers may have experienced Cloud Deploy operations (e.g. Render, Deploy, Verify, etc.) as “in progress” for a long time or failed to start.\n**Memorystore for Redis:** Customers may have experienced increased latency or timeouts for some CreateCluster operations.\n------",
         "status": "AVAILABLE",
         "affected_locations": []
+      },
+      {
+        "created": "2025-05-20T12:17:55+00:00",
+        "modified": "2025-05-20T18:58:49+00:00",
+        "when": "2025-05-20T12:17:55+00:00",
+        "text": "The issue with multiple dependent GCP services has been resolved for all affected users as of Tuesday, 2025-05-20 05:05 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Belgium (europe-west1)",
+            "id": "europe-west1"
+          },
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          },
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          },
+          {
+            "title": "Northern Virginia (us-east4)",
+            "id": "us-east4"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          }
+        ]
       },
       {
         "created": "2025-05-20T12:05:43+00:00",
@@ -105,10 +134,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2025-05-20T12:17:55+00:00",
-      "modified": "2025-05-20T12:17:57+00:00",
-      "when": "2025-05-20T12:17:55+00:00",
-      "text": "The issue with multiple dependent GCP services has been resolved for all affected users as of Tuesday, 2025-05-20 05:05 US/Pacific.\nWe thank you for your patience while we worked on resolving the issue.",
+      "created": "2025-05-20T18:58:49+00:00",
+      "modified": "2025-05-20T18:59:26+00:00",
+      "when": "2025-05-20T18:58:49+00:00",
+      "text": "## \\# Mini Incident Report\nWe apologize for the inconvenience this service disruption may have caused. We would like to provide some information about this incident below. Please note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. If you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using [***https://cloud.google.com/support***](https://cloud.google.com/support).\n(All Times US/Pacific)\n**Incident Start:** 19 May 2025 20:23:00\n**Incident End:** 20 May 2025 05:05:00\n**Duration:** 8 hours, 42 minutes\n**Affected Services and Features:**\nGoogle Compute Engine, Google Kubernetes Engine, Cloud Dataflow, Cloud SQL, AlloyDb for PostgreSQL, Cloud Composer, Cloud Build, Cloud Dataproc, Google App Engine, Migrate to Virtual Machines, Vertex GenAI, Cloud Deploy and Memorystore for Redis.\n**Regions/Zones:**\n***VM creation issues:***\n* us-central1 all zones\n* us-east4 all zones\n***VM termination issues:***\nasia-east1, asia-northeast1, asia-south1, asia-southeast1, australia-southeast1, europe-central2, europe-north1, europe-west1, europe-west12, europe-west2, europe-west3, europe-west4, me-central2, southamerica-east1, us-central1, us-east1, us-east4, us-east5, us-west1, us-west2, us-west4\n**Note:** VM terminate operations, products dependent on VM creations and terminations may have seen impact outside the above zones.\n**Description:**\nGoogle Compute Engine (GCE) encountered problems affecting VM creation, termination, and reservation consumption. Consequently, multiple Google Cloud products experienced increased latencies and timeouts during create, update, and terminate operations.\nPreliminary analysis indicates that a recent configuration change negatively impacted GCE handling of routine spot virtual machine (VM) terminations. As a result of this problem, GCE Control Plane services became overloaded causing disruptions for VM Instance creation, termination, and reservation consumption.\nThe issue was mitigated by changing the configuration to the previous state, thereby resolving the impact on all affected products.\nGoogle will complete a full Incident Report in the following days that will provide a full root cause.\n**Customer Impact:**\n**Google Compute Engine:** Customers may have observed elevated latency or timeouts for VM Instance operations like creation, reservation consumption, etc.\n**Google Kubernetes Engine:** Customers may have observed latency while performing operations like creating or deleting clusters, adding or resizing nodepools, etc.\n**Google Cloud Dataproc:** Customers may have observed elevated latency while performing operations like creating or deleting clusters, and scale up and scale down operations, etc.\n**Google Cloud Dataflow:** Customers may have observed elevated latency for start-up / scaleup / shut-downs for Dataflow jobs.\n**Cloud Filestore:** Customers may have observed create instance failures.\n**Cloud Build:** Customers using private pools may have observed elevated latency in build completion or sporadic build failures due to workers failing to start.\n**Cloud SQL:** Customers may have observed failures or elevated latency for instance creation, resizing and high-availability update operations. As a workaround, for failure in the create operations, customers can retry by deleting the failed instances and re-attempt the operation.\n**Cloud Composer:** Customers may have experienced failures in new Composer environment creation and in upgrade of Composer/Airflow versions, as well as delays in up-scaling of new airflow-workers and in KubernetesPodOperator tasks.\n**AlloyDB for PostgreSQL:** Customers may have experienced failures in instance creation operations. In addition, a small number of instance update operations may also see failures.\n**Google App Engine:** Customers may have experienced failures in insert/update/create/delete operations.\n**Migrate to Virtual Machines:** Customers may have experienced timeouts or errors.\n**Vertex GenAI:** Customers may have experienced issues in creating cluster operations.\n**Cloud Deploy:** Customers may have experienced Cloud Deploy operations (e.g. Render, Deploy, Verify, etc.) as “in progress” for a long time or failed to start.\n**Memorystore for Redis:** Customers may have experienced increased latency or timeouts for some CreateCluster operations.\n------",
       "status": "AVAILABLE",
       "affected_locations": []
     },
