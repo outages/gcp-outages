@@ -4,12 +4,25 @@
     "number": "15787347096705530732",
     "begin": "2025-07-18T14:06:00+00:00",
     "created": "2025-07-18T15:54:23+00:00",
-    "modified": "2025-07-18T16:43:51+00:00",
+    "modified": "2025-07-18T16:58:34+00:00",
     "external_desc": "We are investigating elevated error rates with multiple products in us-east1",
     "updates": [
       {
+        "created": "2025-07-18T16:58:34+00:00",
+        "modified": "2025-07-18T16:58:35+00:00",
+        "when": "2025-07-18T16:58:34+00:00",
+        "text": "Our engineers have successfully recovered the network control plane in the affected us-east1 zones. We're seeing multiple services reporting full recovery, and product engineers are now validating the remaining services.\nWe'll provide another update with more details by 10:30 AM US/Pacific, July 18, 2025.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          }
+        ]
+      },
+      {
         "created": "2025-07-18T16:29:02+00:00",
-        "modified": "2025-07-18T16:43:51+00:00",
+        "modified": "2025-07-18T16:58:34+00:00",
         "when": "2025-07-18T16:29:02+00:00",
         "text": "Our engineers have confirmed that us-east1-b is partially affected. All other zones in us-east1 are currently operating normally.\nOur engineers have recovered the failed hardware and are currently recovering the network control plane in the affected zones.\nWe'll provide another update by 10:00 AM US/Pacific, July 18, 2025.",
         "status": "SERVICE_DISRUPTION",
@@ -35,10 +48,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2025-07-18T16:29:02+00:00",
-      "modified": "2025-07-18T16:43:51+00:00",
-      "when": "2025-07-18T16:29:02+00:00",
-      "text": "Our engineers have confirmed that us-east1-b is partially affected. All other zones in us-east1 are currently operating normally.\nOur engineers have recovered the failed hardware and are currently recovering the network control plane in the affected zones.\nWe'll provide another update by 10:00 AM US/Pacific, July 18, 2025.",
+      "created": "2025-07-18T16:58:34+00:00",
+      "modified": "2025-07-18T16:58:35+00:00",
+      "when": "2025-07-18T16:58:34+00:00",
+      "text": "Our engineers have successfully recovered the network control plane in the affected us-east1 zones. We're seeing multiple services reporting full recovery, and product engineers are now validating the remaining services.\nWe'll provide another update with more details by 10:30 AM US/Pacific, July 18, 2025.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
@@ -75,6 +88,10 @@
       {
         "title": "Cloud Key Management Service",
         "id": "67cSySTL7dwJZo9JWUGU"
+      },
+      {
+        "title": "Cloud Memorystore",
+        "id": "LGPLu3M5pcUAKU1z6eP3"
       },
       {
         "title": "Cloud Monitoring",
@@ -147,6 +164,18 @@
       {
         "title": "Identity and Access Management",
         "id": "adnGEDEt9zWzs8uF1oKA"
+      },
+      {
+        "title": "Memorystore for Memcached",
+        "id": "paC6vmsvnjCHsBkp4Wva"
+      },
+      {
+        "title": "Memorystore for Redis",
+        "id": "3yFciKa9NQH7pmbnUYUs"
+      },
+      {
+        "title": "Memorystore for Redis Cluster",
+        "id": "pAQRwuhqRn7Y1E2we8ds"
       },
       {
         "title": "Secret Manager",
