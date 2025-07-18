@@ -4,12 +4,25 @@
     "number": "15787347096705530732",
     "begin": "2025-07-18T14:06:00+00:00",
     "created": "2025-07-18T15:54:23+00:00",
-    "modified": "2025-07-18T16:10:35+00:00",
+    "modified": "2025-07-18T16:43:51+00:00",
     "external_desc": "We are investigating elevated error rates with multiple products in us-east1",
     "updates": [
       {
+        "created": "2025-07-18T16:29:02+00:00",
+        "modified": "2025-07-18T16:43:51+00:00",
+        "when": "2025-07-18T16:29:02+00:00",
+        "text": "Our engineers have confirmed that us-east1-b is partially affected. All other zones in us-east1 are currently operating normally.\nOur engineers have recovered the failed hardware and are currently recovering the network control plane in the affected zones.\nWe'll provide another update by 10:00 AM US/Pacific, July 18, 2025.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "South Carolina (us-east1)",
+            "id": "us-east1"
+          }
+        ]
+      },
+      {
         "created": "2025-07-18T15:54:23+00:00",
-        "modified": "2025-07-18T16:10:35+00:00",
+        "modified": "2025-07-18T16:29:02+00:00",
         "when": "2025-07-18T15:54:23+00:00",
         "text": "We're currently experiencing elevated latency and error rates for several Cloud services in the us-east1 region, beginning at 7:06 AM PDT today, July 18, 2025. Our initial investigation points to a hardware infrastructure failure as the likely cause.\nWe apologize for any disruption this may be causing. We'll provide an update with more details by 9:15 AM PDT today.",
         "status": "SERVICE_DISRUPTION",
@@ -22,10 +35,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2025-07-18T15:54:23+00:00",
-      "modified": "2025-07-18T16:10:35+00:00",
-      "when": "2025-07-18T15:54:23+00:00",
-      "text": "We're currently experiencing elevated latency and error rates for several Cloud services in the us-east1 region, beginning at 7:06 AM PDT today, July 18, 2025. Our initial investigation points to a hardware infrastructure failure as the likely cause.\nWe apologize for any disruption this may be causing. We'll provide an update with more details by 9:15 AM PDT today.",
+      "created": "2025-07-18T16:29:02+00:00",
+      "modified": "2025-07-18T16:43:51+00:00",
+      "when": "2025-07-18T16:29:02+00:00",
+      "text": "Our engineers have confirmed that us-east1-b is partially affected. All other zones in us-east1 are currently operating normally.\nOur engineers have recovered the failed hardware and are currently recovering the network control plane in the affected zones.\nWe'll provide another update by 10:00 AM US/Pacific, July 18, 2025.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
@@ -40,8 +53,40 @@
     "service_name": "Multiple Products",
     "affected_products": [
       {
+        "title": "Apigee",
+        "id": "9Y13BNFy4fJydvjdsN3X"
+      },
+      {
+        "title": "Artifact Registry",
+        "id": "QbBuuiRdsLpMr9WmGwm5"
+      },
+      {
+        "title": "Cloud Build",
+        "id": "fw8GzBdZdqy4THau7e1y"
+      },
+      {
+        "title": "Cloud External Key Manager",
+        "id": "GXALzYBgpi3XpsLLxLgu"
+      },
+      {
+        "title": "Cloud HSM",
+        "id": "R3HPPUbVeFrApLaqQB4B"
+      },
+      {
+        "title": "Cloud Key Management Service",
+        "id": "67cSySTL7dwJZo9JWUGU"
+      },
+      {
+        "title": "Cloud Monitoring",
+        "id": "3zaaDb7antc73BM1UAVT"
+      },
+      {
         "title": "Cloud Run",
         "id": "9D7d2iNBQWN24zc1VamE"
+      },
+      {
+        "title": "Dataproc Metastore",
+        "id": "PXZh68NPz9auRyo4tVfy"
       },
       {
         "title": "Dialogflow CX",
@@ -52,12 +97,28 @@
         "id": "kchyUtnkMHJWaAva8aYc"
       },
       {
+        "title": "Google BigQuery",
+        "id": "9CcrhHUcFevXPSVaSxkf"
+      },
+      {
         "title": "Google Cloud Bigtable",
         "id": "LfZSuE3xdQU46YMFV5fy"
       },
       {
+        "title": "Google Cloud Console",
+        "id": "Wdsr1n5vyDvCt78qEifm"
+      },
+      {
+        "title": "Google Cloud Dataflow",
+        "id": "T9bFoXPqG8w8g1YbWTKY"
+      },
+      {
         "title": "Google Cloud Dataproc",
         "id": "yjXrEg3Yvy26BauMwr69"
+      },
+      {
+        "title": "Google Cloud Pub/Sub",
+        "id": "dFjdLh2v6zuES6t9ADCB"
       },
       {
         "title": "Google Cloud SQL",
@@ -82,6 +143,14 @@
       {
         "title": "Hybrid Connectivity",
         "id": "5x6CGnZvSHQZ26KtxpK1"
+      },
+      {
+        "title": "Identity and Access Management",
+        "id": "adnGEDEt9zWzs8uF1oKA"
+      },
+      {
+        "title": "Secret Manager",
+        "id": "kzGfErQK3HzkFhptoeHH"
       },
       {
         "title": "Virtual Private Cloud (VPC)",
