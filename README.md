@@ -4,7 +4,7 @@ This is an *unofficial* repository that provides a Git history of outages at [GC
 
 ## How to use
 
-- Visit the [history for the `gcp_outages.json`](https://github.com/outages/gcp-outages/commits/master/gcp_outages.json) file.
+- Visit the [history for the `gcp_outages.json`](https://github.com/outages/gcp-outages/commits/main/gcp_outages.json) file.
 
 ## Credits
 
