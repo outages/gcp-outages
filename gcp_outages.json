@@ -1,5 +1,63 @@
 [
   {
+    "id": "5fGQt4VbkDnr3Yp8PXPr",
+    "number": "1464522124090870782",
+    "begin": "2026-06-09T18:22:00+00:00",
+    "created": "2026-06-10T01:13:50+00:00",
+    "modified": "2026-06-10T01:13:51+00:00",
+    "external_desc": "Network traffic to Google Cloud originating from Delhi, Chennai, Mumbai and surrounding areas is experiencing intermittent periods of elevated latency and possible packet loss.",
+    "updates": [
+      {
+        "created": "2026-06-10T01:13:50+00:00",
+        "modified": "2026-06-10T01:13:51+00:00",
+        "when": "2026-06-10T01:13:50+00:00",
+        "text": "**Summary**\nNetwork traffic to Google Cloud originating from Delhi, Chennai, Mumbai and surrounding areas is experiencing intermittent periods of elevated latency and possible packet loss.\n**Description**\nA fire at a third-party data center facility required an emergency power shutdown of networking equipment, isolating a non-compute local Point of Presence (POP) in Delhi and reducing available network capacity in the metro area.\nWe rerouted significant traffic from the impacted facility in Delhi to address reduced local serving capabilities. As a result, a subset of Hybrid Connectivity and Virtual Private Cloud (VPC) customers may be impacted by the routing changes made to address reduced local, latency-optimized serving capabilities in Delhi. Affected customers may experience intermittent latency spikes due to demand exceeding capacity across Indian metros and regional ISPs.\nWe are investigating additional traffic mitigations and Internet Edge peering augmentation to alleviate the latency issues affecting our customers.\nWe will provide our next update by Wednesday, 2026-06-10 17:00 PDT.\n**Symptoms**\nCustomers may experience slightly elevated latency and non-optimal network routing into Google Cloud until the affected facility is fully restored.\n**Workaround**\nThere is no workaround at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2026-06-10T01:13:50+00:00",
+      "modified": "2026-06-10T01:13:51+00:00",
+      "when": "2026-06-10T01:13:50+00:00",
+      "text": "**Summary**\nNetwork traffic to Google Cloud originating from Delhi, Chennai, Mumbai and surrounding areas is experiencing intermittent periods of elevated latency and possible packet loss.\n**Description**\nA fire at a third-party data center facility required an emergency power shutdown of networking equipment, isolating a non-compute local Point of Presence (POP) in Delhi and reducing available network capacity in the metro area.\nWe rerouted significant traffic from the impacted facility in Delhi to address reduced local serving capabilities. As a result, a subset of Hybrid Connectivity and Virtual Private Cloud (VPC) customers may be impacted by the routing changes made to address reduced local, latency-optimized serving capabilities in Delhi. Affected customers may experience intermittent latency spikes due to demand exceeding capacity across Indian metros and regional ISPs.\nWe are investigating additional traffic mitigations and Internet Edge peering augmentation to alleviate the latency issues affecting our customers.\nWe will provide our next update by Wednesday, 2026-06-10 17:00 PDT.\n**Symptoms**\nCustomers may experience slightly elevated latency and non-optimal network routing into Google Cloud until the affected facility is fully restored.\n**Workaround**\nThere is no workaround at this time.",
+      "status": "SERVICE_DISRUPTION",
+      "affected_locations": [
+        {
+          "title": "Delhi (asia-south2)",
+          "id": "asia-south2"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Hybrid Connectivity",
+        "id": "5x6CGnZvSHQZ26KtxpK1"
+      },
+      {
+        "title": "Virtual Private Cloud (VPC)",
+        "id": "BSGtCUnz6ZmyajsjgTKv"
+      }
+    ],
+    "uri": "incidents/5fGQt4VbkDnr3Yp8PXPr",
+    "currently_affected_locations": [
+      {
+        "title": "Delhi (asia-south2)",
+        "id": "asia-south2"
+      }
+    ],
+    "previously_affected_locations": []
+  },
+  {
     "id": "41E5S3mkTGDfkZuJZH5k",
     "number": "6876619551109882402",
     "begin": "2026-02-27T12:37:00+00:00",
