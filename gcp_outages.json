@@ -4,12 +4,29 @@
     "number": "1464522124090870782",
     "begin": "2026-06-09T18:22:00+00:00",
     "created": "2026-06-10T01:13:50+00:00",
-    "modified": "2026-06-15T23:11:38+00:00",
+    "modified": "2026-06-17T22:36:07+00:00",
     "external_desc": "Network traffic to Google Cloud originating from Delhi, Chennai, Mumbai and surrounding areas is experiencing intermittent periods of elevated latency and possible packet loss.",
     "updates": [
       {
+        "created": "2026-06-17T22:36:07+00:00",
+        "modified": "2026-06-17T22:36:07+00:00",
+        "when": "2026-06-17T22:36:07+00:00",
+        "text": "**Summary**\nNetwork traffic to Google Cloud originating from Delhi, Chennai, Mumbai and surrounding areas is experiencing intermittent periods of elevated latency and possible packet loss.\n**Description**\nTraffic rerouting from the impacted Delhi facility has caused a subset of Hybrid Connectivity and Virtual Private Cloud (VPC) customers to experience intermittent latency spikes as demand exceeds regional capacity. Media CDN customers may also notice increased latencies.\nInitial traffic mitigations have yielded positive results for some Cloud customers. We have restored a portion of Internet Edge peering capacity to reduce latency in the local Delhi metropolitan area. Further, we are nearly finished with the augmentation of out-of-region Internet Edge regional peering capacity in Chennai to provide additional load-balancing and redundancy to large ISPs in India.\nWe have optimized capacity across network backbones to increase available headroom. Additionally, we have augmented our Delhi backbone capacity. We have also restored additional capacity between Delhi-Chennai and Delhi-Mumbai. We will continue to closely monitor latency deviations and packet drops.\nWe will provide our next update by Monday, 2026-06-22 17:00 PDT.\n**Symptoms**\nCustomers may experience slightly elevated latency and non-optimal network routing into Google Cloud until the affected facility is fully restored.\n**Workaround**\nThere is no workaround at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Delhi (asia-south2)",
+            "id": "asia-south2"
+          },
+          {
+            "title": "Global",
+            "id": "global"
+          }
+        ]
+      },
+      {
         "created": "2026-06-15T23:11:38+00:00",
-        "modified": "2026-06-15T23:11:38+00:00",
+        "modified": "2026-06-17T22:36:07+00:00",
         "when": "2026-06-15T23:11:38+00:00",
         "text": "**Summary**\nNetwork traffic to Google Cloud originating from Delhi, Chennai, Mumbai and surrounding areas is experiencing intermittent periods of elevated latency and possible packet loss.\n**Description**\nA fire at a third-party data center facility required an emergency power shutdown of networking equipment, isolating a non-compute local Point of Presence (POP) in Delhi and reducing available network capacity in the metro area.\nWe rerouted significant traffic from the impacted facility in Delhi to address reduced local serving capabilities. As a result, a subset of Hybrid Connectivity and Virtual Private Cloud (VPC) customers may be impacted by the routing changes made to address reduced local, latency-optimized serving capabilities in Delhi. Affected customers may experience intermittent latency spikes due to demand exceeding capacity across Indian metros and regional ISPs. Media CDN customers may have experienced higher latencies than normal.\nInitial traffic mitigations have yielded positive results for some Cloud customers. We have restored a portion of Internet Edge peering capacity to reduce latency in the local Delhi metropolitan area. Further, we are augmenting out-of-region Internet Edge regional peering capacity in Chennai to provide additional load-balancing and redundancy to large ISPs in India (expected to be done by Wednesday, 2026-06-17 PDT). We have optimized capacity across network backbones to increase available headroom. Additionally, we have augmented our Delhi backbone capacity over the weekend. We will continue to closely monitor latency deviations and packet drops.\nWe will provide our next update by Wednesday, 2026-06-17 at 17:00 PDT.\n**Symptoms**\nCustomers may experience slightly elevated latency and non-optimal network routing into Google Cloud until the affected facility is fully restored.\n**Workaround**\nThere is no workaround at this time.",
         "status": "SERVICE_DISRUPTION",
@@ -78,10 +95,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2026-06-15T23:11:38+00:00",
-      "modified": "2026-06-15T23:11:38+00:00",
-      "when": "2026-06-15T23:11:38+00:00",
-      "text": "**Summary**\nNetwork traffic to Google Cloud originating from Delhi, Chennai, Mumbai and surrounding areas is experiencing intermittent periods of elevated latency and possible packet loss.\n**Description**\nA fire at a third-party data center facility required an emergency power shutdown of networking equipment, isolating a non-compute local Point of Presence (POP) in Delhi and reducing available network capacity in the metro area.\nWe rerouted significant traffic from the impacted facility in Delhi to address reduced local serving capabilities. As a result, a subset of Hybrid Connectivity and Virtual Private Cloud (VPC) customers may be impacted by the routing changes made to address reduced local, latency-optimized serving capabilities in Delhi. Affected customers may experience intermittent latency spikes due to demand exceeding capacity across Indian metros and regional ISPs. Media CDN customers may have experienced higher latencies than normal.\nInitial traffic mitigations have yielded positive results for some Cloud customers. We have restored a portion of Internet Edge peering capacity to reduce latency in the local Delhi metropolitan area. Further, we are augmenting out-of-region Internet Edge regional peering capacity in Chennai to provide additional load-balancing and redundancy to large ISPs in India (expected to be done by Wednesday, 2026-06-17 PDT). We have optimized capacity across network backbones to increase available headroom. Additionally, we have augmented our Delhi backbone capacity over the weekend. We will continue to closely monitor latency deviations and packet drops.\nWe will provide our next update by Wednesday, 2026-06-17 at 17:00 PDT.\n**Symptoms**\nCustomers may experience slightly elevated latency and non-optimal network routing into Google Cloud until the affected facility is fully restored.\n**Workaround**\nThere is no workaround at this time.",
+      "created": "2026-06-17T22:36:07+00:00",
+      "modified": "2026-06-17T22:36:07+00:00",
+      "when": "2026-06-17T22:36:07+00:00",
+      "text": "**Summary**\nNetwork traffic to Google Cloud originating from Delhi, Chennai, Mumbai and surrounding areas is experiencing intermittent periods of elevated latency and possible packet loss.\n**Description**\nTraffic rerouting from the impacted Delhi facility has caused a subset of Hybrid Connectivity and Virtual Private Cloud (VPC) customers to experience intermittent latency spikes as demand exceeds regional capacity. Media CDN customers may also notice increased latencies.\nInitial traffic mitigations have yielded positive results for some Cloud customers. We have restored a portion of Internet Edge peering capacity to reduce latency in the local Delhi metropolitan area. Further, we are nearly finished with the augmentation of out-of-region Internet Edge regional peering capacity in Chennai to provide additional load-balancing and redundancy to large ISPs in India.\nWe have optimized capacity across network backbones to increase available headroom. Additionally, we have augmented our Delhi backbone capacity. We have also restored additional capacity between Delhi-Chennai and Delhi-Mumbai. We will continue to closely monitor latency deviations and packet drops.\nWe will provide our next update by Monday, 2026-06-22 17:00 PDT.\n**Symptoms**\nCustomers may experience slightly elevated latency and non-optimal network routing into Google Cloud until the affected facility is fully restored.\n**Workaround**\nThere is no workaround at this time.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
