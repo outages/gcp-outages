@@ -4,12 +4,33 @@
     "number": "5362718329524538692",
     "begin": "2026-07-14T17:00:00+00:00",
     "created": "2026-07-14T20:24:18+00:00",
-    "modified": "2026-07-14T23:05:33+00:00",
+    "modified": "2026-07-15T00:13:34+00:00",
     "external_desc": "Google Cloud VMware Engine (GCVE) Stretched Cluster customers are experiencing zonal outages impacting network connectivity across multiple regions.",
     "updates": [
       {
+        "created": "2026-07-15T00:13:18+00:00",
+        "modified": "2026-07-15T00:13:34+00:00",
+        "when": "2026-07-15T00:13:18+00:00",
+        "text": "**Summary**\nGoogle Cloud VMware Engine (GCVE) Stretched Cluster customers are experiencing zonal outages impacting network connectivity across multiple regions.\n**Description**\nWe are experiencing an inter-site communication issue with Google Cloud VMware Engine (GCVE) stretched cluster customers beginning Tuesday, 2026-07-14 at 10:00 PDT. We have identified the customers that are affected by this issue and we are working with them on mitigation.\nA remediation rollout is currently in progress to address the underlying network issue.\n**Failover / VM Migration:** Migrating affected VMs to the healthy, secondary zone of your stretch cluster remains the primary mitigation strategy. Because of the complexities surrounding failover risks and secondary zone health, we highly encourage you to open a ticket with Google Cloud Support if you are severely impacted.\nWe do not currently have an ETA for resolution. We will provide another update by Tuesday, 2026-07-14 18:00 PDT with current details.\n**Customer Symptoms**\nSome GCVE customers using Stretched Cluster may experience inter-site communication failures to their GCVE environments within the affected zones.\nUpon further investigation we identified that the northamerica-northeast2 region was not impacted.\n**Workaround**\nWhile we work on restoring full connectivity, we recommend the following workarounds to restore access to your workloads:\n- VM Migration (recommended): Where possible, migrate your affected VMs to the healthy and unaffected side of the stretch cluster. We strongly recommend consulting with Google Support before proceeding.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Sydney (australia-southeast1)",
+            "id": "australia-southeast1"
+          },
+          {
+            "title": "Melbourne (australia-southeast2)",
+            "id": "australia-southeast2"
+          },
+          {
+            "title": "Frankfurt (europe-west3)",
+            "id": "europe-west3"
+          }
+        ]
+      },
+      {
         "created": "2026-07-14T23:05:33+00:00",
-        "modified": "2026-07-14T23:05:34+00:00",
+        "modified": "2026-07-15T00:13:18+00:00",
         "when": "2026-07-14T23:05:33+00:00",
         "text": "**Summary**\nGoogle Cloud VMware Engine (GCVE) Stretched Cluster customers are experiencing zonal outages impacting network connectivity across multiple regions.\n**Description**\nWe are experiencing an inter-site communication issue with Google Cloud VMware Engine (GCVE) stretched cluster customers beginning Tuesday, 2026-07-14 at 10:00 PDT. We have identified the customers that are affected by this issue and we are working with them on mitigation.\nOur investigation has identified a recent configuration update that is the likely cause of the inter-zone network disruption. Teams are working on remediation.\n**Failover / VM Migration:** Migrating affected VMs to the healthy, secondary zone of your stretch cluster remains the primary mitigation strategy. Because of the complexities surrounding failover risks and secondary zone health, we highly encourage you to open a ticket with Google Cloud Support if you are severely impacted.\nWe do not currently have an ETA for resolution. We will provide another update by Tuesday, 2026-07-14 17:00 PDT with current details.\n**Customer Symptoms**\nSome GCVE customers using Stretched Cluster may experience inter-site communication failures to their GCVE environments within the affected zones.\n**Workaround**\nWhile we work on restoring full connectivity, we recommend the following workarounds to restore access to your workloads:\n- VM Migration (recommended): Where possible, migrate your affected VMs to the healthy and unaffected side of the stretch cluster. We strongly recommend consulting with Google Support before proceeding.",
         "status": "SERVICE_DISRUPTION",
@@ -101,10 +122,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2026-07-14T23:05:33+00:00",
-      "modified": "2026-07-14T23:05:34+00:00",
-      "when": "2026-07-14T23:05:33+00:00",
-      "text": "**Summary**\nGoogle Cloud VMware Engine (GCVE) Stretched Cluster customers are experiencing zonal outages impacting network connectivity across multiple regions.\n**Description**\nWe are experiencing an inter-site communication issue with Google Cloud VMware Engine (GCVE) stretched cluster customers beginning Tuesday, 2026-07-14 at 10:00 PDT. We have identified the customers that are affected by this issue and we are working with them on mitigation.\nOur investigation has identified a recent configuration update that is the likely cause of the inter-zone network disruption. Teams are working on remediation.\n**Failover / VM Migration:** Migrating affected VMs to the healthy, secondary zone of your stretch cluster remains the primary mitigation strategy. Because of the complexities surrounding failover risks and secondary zone health, we highly encourage you to open a ticket with Google Cloud Support if you are severely impacted.\nWe do not currently have an ETA for resolution. We will provide another update by Tuesday, 2026-07-14 17:00 PDT with current details.\n**Customer Symptoms**\nSome GCVE customers using Stretched Cluster may experience inter-site communication failures to their GCVE environments within the affected zones.\n**Workaround**\nWhile we work on restoring full connectivity, we recommend the following workarounds to restore access to your workloads:\n- VM Migration (recommended): Where possible, migrate your affected VMs to the healthy and unaffected side of the stretch cluster. We strongly recommend consulting with Google Support before proceeding.",
+      "created": "2026-07-15T00:13:18+00:00",
+      "modified": "2026-07-15T00:13:34+00:00",
+      "when": "2026-07-15T00:13:18+00:00",
+      "text": "**Summary**\nGoogle Cloud VMware Engine (GCVE) Stretched Cluster customers are experiencing zonal outages impacting network connectivity across multiple regions.\n**Description**\nWe are experiencing an inter-site communication issue with Google Cloud VMware Engine (GCVE) stretched cluster customers beginning Tuesday, 2026-07-14 at 10:00 PDT. We have identified the customers that are affected by this issue and we are working with them on mitigation.\nA remediation rollout is currently in progress to address the underlying network issue.\n**Failover / VM Migration:** Migrating affected VMs to the healthy, secondary zone of your stretch cluster remains the primary mitigation strategy. Because of the complexities surrounding failover risks and secondary zone health, we highly encourage you to open a ticket with Google Cloud Support if you are severely impacted.\nWe do not currently have an ETA for resolution. We will provide another update by Tuesday, 2026-07-14 18:00 PDT with current details.\n**Customer Symptoms**\nSome GCVE customers using Stretched Cluster may experience inter-site communication failures to their GCVE environments within the affected zones.\nUpon further investigation we identified that the northamerica-northeast2 region was not impacted.\n**Workaround**\nWhile we work on restoring full connectivity, we recommend the following workarounds to restore access to your workloads:\n- VM Migration (recommended): Where possible, migrate your affected VMs to the healthy and unaffected side of the stretch cluster. We strongly recommend consulting with Google Support before proceeding.",
       "status": "SERVICE_DISRUPTION",
       "affected_locations": [
         {
@@ -118,10 +139,6 @@
         {
           "title": "Frankfurt (europe-west3)",
           "id": "europe-west3"
-        },
-        {
-          "title": "Toronto (northamerica-northeast2)",
-          "id": "northamerica-northeast2"
         }
       ]
     },
@@ -148,10 +165,6 @@
       {
         "title": "Frankfurt (europe-west3)",
         "id": "europe-west3"
-      },
-      {
-        "title": "Toronto (northamerica-northeast2)",
-        "id": "northamerica-northeast2"
       }
     ],
     "previously_affected_locations": []
