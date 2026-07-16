@@ -4,12 +4,34 @@
     "number": "11738310674864064645",
     "begin": "2026-07-15T23:57:00+00:00",
     "created": "2026-07-16T03:30:59+00:00",
-    "modified": "2026-07-16T10:16:29+00:00",
+    "end": "2026-07-16T12:25:00+00:00",
+    "modified": "2026-07-16T12:26:34+00:00",
     "external_desc": "Google Cloud VMware Engine (GCVE), Google Cloud NetApp Volumes, and Bare Metal Solutions (BMS) services are experiencing a service outage in europe-west4-a due to a cooling failure.",
     "updates": [
       {
+        "created": "2026-07-16T12:25:47+00:00",
+        "modified": "2026-07-16T12:26:34+00:00",
+        "when": "2026-07-16T12:25:47+00:00",
+        "text": "**Summary**\nGoogle Cloud VMware Engine (GCVE), Google Cloud NetApp Volumes, and Bare Metal Solution (BMS) services experienced a service outage in europe-west4-a due to a cooling failure.\n**Description**\nThe datacenter serving europe-west4-a for GCVE, BMS, and NetApp has experienced a power failure, which subsequently caused a cooling failure. Google proactively turned down workloads in order to protect customer data from any risks posed by running infrastructure in a high temperature environment.\nCooling and power have been restored at the site. The issue with GCVE and Google Cloud NetApp Volumes has been resolved for all affected users as of Thursday, 2026-07-16 02:31 PDT and 01:00 PDT respectively.\nThe issue with BMS is largely resolved and is believed to be affecting a very small number of customers. Our Engineering will continue to recover this residual impact directly with the impacted customers.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\n**GCVE:** Service restoration is complete across all the Private Clouds. Customers have been informed about this restoration and requested to verify that their VMs are fully operational.\n**Google Cloud NetApp Volumes:** Service restoration is complete, and all affected servers are now operational.\n**BMS:** Service restoration is largely complete. We continue working with a very small number of remaining affected customers to achieve full recovery.\nWe thank you for your patience while we continue to fully resolve the issue.\n**Customer Symptoms**\nThe issue is now resolved for GCVE and Google Cloud NetApp Volumes. The issue with BMS is largely resolved and our engineering will continue to recover this residual impact directly with the impacted customers.\n**GCVE:** Customers would have observed a loss of connectivity to their private cloud.\n**Google Cloud NetApp Volumes:** Customers would have lost connectivity to ONTAP clusters, as they were proactively shut down to protect these clusters from any damage. Only Standard, Premium, and Extreme service levels were affected.\n**BMS:** Customers may have lost connectivity to their servers. As a protective measure for hardware integrity and recovery, we had shut down some servers in this zone.\n**Workaround**\nNone at this time.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2026-07-16T11:39:12+00:00",
+        "modified": "2026-07-16T12:25:47+00:00",
+        "when": "2026-07-16T11:39:12+00:00",
+        "text": "**Summary**\nGoogle Cloud VMware Engine (GCVE), Google Cloud NetApp Volumes, and Bare Metal Solution (BMS) services experienced a service outage in europe-west4-a due to a cooling failure.\n**Description**\nThe datacenter serving europe-west4-a for GCVE, BMS, and NetApp has experienced a power failure, which subsequently caused a cooling failure. Google proactively turned down workloads in order to protect customer data from any risks posed by running infrastructure in a high temperature environment.\nCooling and power have been restored at the site. The issue with GCVE and Google Cloud NetApp Volumes has been resolved for all affected users. We continue to recover the impact for BMS at the moment.\n**GCVE [Mitigated]:** Service restoration is complete across all the Private Clouds. Customers have been informed about this restoration and requested to verify that their VMs are fully operational.\n**Google Cloud NetApp Volumes [Mitigated]:** Service restoration is complete, and all affected servers are now operational. We continue to monitor these for full service recovery.\n**BMS:** Server restoration is largely complete, with most systems now online and reporting a healthy status. We are actively working through the remaining validation efforts to achieve full recovery.\nFor Google Cloud NetApp Volumes and GCVE, if customers are still experiencing impact from this issue, please contact Support, and we will work with you to resolve any residual impact.\nWe will provide the BMS restoration status update by Thursday, 2026-07-16 05:30 PDT with current details.\n**Customer Symptoms**\nThe issue is now resolved for GCVE and Google Cloud NetApp Volumes. We continue to recover the impact for BMS at the moment.\n**GCVE [Mitigated]:** Customers would have observed a loss of connectivity to their private cloud.\n**Google Cloud NetApp Volumes [Mitigated]:** Customers would have lost connectivity to ONTAP clusters, as they were proactively shut down to protect these clusters from any damage. Only Standard, Premium, and Extreme service levels were affected. Customers should now be able to access their volumes again.\n**BMS:** Customers may have lost connectivity to their servers. As a protective measure for hardware integrity and recovery, we had shut down some servers in this zone. We are continuing to restore servers and monitor their health.\n**Workaround**\nNone at this time.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          }
+        ]
+      },
+      {
         "created": "2026-07-16T10:14:07+00:00",
-        "modified": "2026-07-16T10:16:29+00:00",
+        "modified": "2026-07-16T11:39:12+00:00",
         "when": "2026-07-16T10:14:07+00:00",
         "text": "**Summary**\nGoogle Cloud VMware Engine (GCVE), Google Cloud NetApp Volumes, and Bare Metal Solution (BMS) services experienced a service outage in europe-west4-a due to a cooling failure.\n**Description**\nThe datacenter serving europe-west4-a for GCVE, BMS, and NetApp has experienced a power failure, which subsequently caused a cooling failure. Google proactively turned down workloads in order to protect customer data from any risks posed by running infrastructure in a high temperature environment.\nCooling and power have been restored at the site. The issue with GCVE and Google Cloud NetApp Volumes has been resolved for all affected users. We continue to recover the impact for BMS at the moment.\n**GCVE [Mitigated]:** Service restoration is complete across all the Private Clouds. Customers have been informed about this restoration and requested to verify that their VMs are fully operational.\n**Google Cloud NetApp Volumes [Mitigated]:** Service restoration is complete, and all affected servers are now operational. We continue to monitor these for full service recovery.\n**BMS:** Server restoration is largely complete, with most systems now online and reporting a healthy status. We are actively working through the remaining validation efforts to achieve full recovery.\nFor Google Cloud NetApp Volumes and GCVE, if customers are still experiencing impact from this issue, please contact Support, and we will work with you to resolve any residual impact.\nWe will provide the BMS restoration status update by Thursday, 2026-07-16 04:30 PDT with current details.\n**Customer Symptoms**\nThe issue is now resolved for GCVE and Google Cloud NetApp Volumes. We continue to recover the impact for BMS at the moment.\n**GCVE [Mitigated]:** Customers would have observed a loss of connectivity to their private cloud.\n**Google Cloud NetApp Volumes [Mitigated]:** Customers would have lost connectivity to ONTAP clusters, as they were proactively shut down to protect these clusters from any damage. Only Standard, Premium, and Extreme service levels were affected. Customers should now be able to access their volumes again.\n**BMS:** Customers may have lost connectivity to their servers. As a protective measure for hardware integrity and recovery, we had shut down some servers in this zone. We are continuing to restore servers and monitor their health.\n**Workaround**\nNone at this time.",
         "status": "SERVICE_DISRUPTION",
@@ -113,17 +135,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2026-07-16T10:14:07+00:00",
-      "modified": "2026-07-16T10:16:29+00:00",
-      "when": "2026-07-16T10:14:07+00:00",
-      "text": "**Summary**\nGoogle Cloud VMware Engine (GCVE), Google Cloud NetApp Volumes, and Bare Metal Solution (BMS) services experienced a service outage in europe-west4-a due to a cooling failure.\n**Description**\nThe datacenter serving europe-west4-a for GCVE, BMS, and NetApp has experienced a power failure, which subsequently caused a cooling failure. Google proactively turned down workloads in order to protect customer data from any risks posed by running infrastructure in a high temperature environment.\nCooling and power have been restored at the site. The issue with GCVE and Google Cloud NetApp Volumes has been resolved for all affected users. We continue to recover the impact for BMS at the moment.\n**GCVE [Mitigated]:** Service restoration is complete across all the Private Clouds. Customers have been informed about this restoration and requested to verify that their VMs are fully operational.\n**Google Cloud NetApp Volumes [Mitigated]:** Service restoration is complete, and all affected servers are now operational. We continue to monitor these for full service recovery.\n**BMS:** Server restoration is largely complete, with most systems now online and reporting a healthy status. We are actively working through the remaining validation efforts to achieve full recovery.\nFor Google Cloud NetApp Volumes and GCVE, if customers are still experiencing impact from this issue, please contact Support, and we will work with you to resolve any residual impact.\nWe will provide the BMS restoration status update by Thursday, 2026-07-16 04:30 PDT with current details.\n**Customer Symptoms**\nThe issue is now resolved for GCVE and Google Cloud NetApp Volumes. We continue to recover the impact for BMS at the moment.\n**GCVE [Mitigated]:** Customers would have observed a loss of connectivity to their private cloud.\n**Google Cloud NetApp Volumes [Mitigated]:** Customers would have lost connectivity to ONTAP clusters, as they were proactively shut down to protect these clusters from any damage. Only Standard, Premium, and Extreme service levels were affected. Customers should now be able to access their volumes again.\n**BMS:** Customers may have lost connectivity to their servers. As a protective measure for hardware integrity and recovery, we had shut down some servers in this zone. We are continuing to restore servers and monitor their health.\n**Workaround**\nNone at this time.",
-      "status": "SERVICE_DISRUPTION",
-      "affected_locations": [
-        {
-          "title": "Netherlands (europe-west4)",
-          "id": "europe-west4"
-        }
-      ]
+      "created": "2026-07-16T12:25:47+00:00",
+      "modified": "2026-07-16T12:26:34+00:00",
+      "when": "2026-07-16T12:25:47+00:00",
+      "text": "**Summary**\nGoogle Cloud VMware Engine (GCVE), Google Cloud NetApp Volumes, and Bare Metal Solution (BMS) services experienced a service outage in europe-west4-a due to a cooling failure.\n**Description**\nThe datacenter serving europe-west4-a for GCVE, BMS, and NetApp has experienced a power failure, which subsequently caused a cooling failure. Google proactively turned down workloads in order to protect customer data from any risks posed by running infrastructure in a high temperature environment.\nCooling and power have been restored at the site. The issue with GCVE and Google Cloud NetApp Volumes has been resolved for all affected users as of Thursday, 2026-07-16 02:31 PDT and 01:00 PDT respectively.\nThe issue with BMS is largely resolved and is believed to be affecting a very small number of customers. Our Engineering will continue to recover this residual impact directly with the impacted customers.\nIf you have questions or are still impacted, please open a case with the Support Team and we will work with you until this issue is resolved.\n**GCVE:** Service restoration is complete across all the Private Clouds. Customers have been informed about this restoration and requested to verify that their VMs are fully operational.\n**Google Cloud NetApp Volumes:** Service restoration is complete, and all affected servers are now operational.\n**BMS:** Service restoration is largely complete. We continue working with a very small number of remaining affected customers to achieve full recovery.\nWe thank you for your patience while we continue to fully resolve the issue.\n**Customer Symptoms**\nThe issue is now resolved for GCVE and Google Cloud NetApp Volumes. The issue with BMS is largely resolved and our engineering will continue to recover this residual impact directly with the impacted customers.\n**GCVE:** Customers would have observed a loss of connectivity to their private cloud.\n**Google Cloud NetApp Volumes:** Customers would have lost connectivity to ONTAP clusters, as they were proactively shut down to protect these clusters from any damage. Only Standard, Premium, and Extreme service levels were affected.\n**BMS:** Customers may have lost connectivity to their servers. As a protective measure for hardware integrity and recovery, we had shut down some servers in this zone.\n**Workaround**\nNone at this time.",
+      "status": "AVAILABLE",
+      "affected_locations": []
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
@@ -144,13 +161,13 @@
       }
     ],
     "uri": "incidents/3BvH3LVGcupoYqV6F4Nw",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Netherlands (europe-west4)",
         "id": "europe-west4"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "T8gmtofFSTGT5tbhyciF",
