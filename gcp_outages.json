@@ -1,5 +1,93 @@
 [
   {
+    "id": "3BvH3LVGcupoYqV6F4Nw",
+    "number": "11738310674864064645",
+    "begin": "2026-07-15T23:57:00+00:00",
+    "created": "2026-07-16T03:30:59+00:00",
+    "modified": "2026-07-16T04:41:44+00:00",
+    "external_desc": "Google Cloud VMware Engine (GCVE), Google Cloud NetApp Volumes, and Bare Metal Solutions (BMS) services are experiencing temperature alerts in europe-west4-a.",
+    "updates": [
+      {
+        "created": "2026-07-16T04:41:44+00:00",
+        "modified": "2026-07-16T04:41:45+00:00",
+        "when": "2026-07-16T04:41:44+00:00",
+        "text": "**Summary**\nGoogle Cloud VMware Engine (GCVE), Google Cloud NetApp Volumes, and Bare Metal Solutions (BMS) services are experiencing a service outage in europe-west4-a due to a cooling failure\n**Description**\nThe datacenter serving europe-west4-a for GCVE, BMS, and NetApp has experienced a power failure, which subsequently caused a cooling failure. Google has proactively turned down workloads in order to protect customer data from any risks posed by running infrastructure in a high temperature environment. The datacenter operator team is working diligently to bring cooling and power back online so we can safely restart affected workloads. Some cooling has been restored, and we are working to restore affected workloads as available capacity allows.\n**GCVE:** Our engineering teams have shut down private clouds to protect these clouds from any damage. We will notify customers as soon as their private cloud has been powered back up and it is safe to restart the VMs.\n**BMS:** Some Bare Metal Solution servers experienced high temperatures and we proactively shut them down. Customers may have been unable to access their systems, but impacted systems have now been restored.\n**Google Cloud NetApp Volumes:** Our engineering team has proactively shut down ONTAP clusters to protect the data stored on them. Customers may experience unavailability of Cloud NetApp Volumes until this issue is resolved.\nThere is no estimated time for resolution. We will provide an update by Wednesday, 2026-07-15 22:45 PDT with current details.\nWe apologize to all who are affected by the disruption.\n**Customer Symptoms**\n**GCVE:** Customers would have already observed a loss of connectivity to their private cloud. As a protective measure for hardware integrity and recovery, we have shut down all private clouds in this zone.\n**BMS:** Customers may have lost connectivity to their BMS machines. As a protective measure for hardware integrity and recovery, we shut down some servers in this zone, but the impacted servers have been restarted and should be functioning normally.\n**Google Cloud NetApp Volumes:** Customers would have already lost connectivity to ONTAP clusters, as we proactively shut them down to protect these clusters from any damage. Only Standard, Premium, and Extreme service levels are affected.\n**Workaround**\nThere are no workarounds available for this issue at this time. Customers with multi-regional deployments are advised to route traffic to an alternate site.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          }
+        ]
+      },
+      {
+        "created": "2026-07-16T04:17:44+00:00",
+        "modified": "2026-07-16T04:41:44+00:00",
+        "when": "2026-07-16T04:17:44+00:00",
+        "text": "**Summary**\nGoogle Cloud VMware Engine (GCVE), Google Cloud NetApp Volumes, and Bare Metal Solutions (BMS) services are experiencing temperature alerts in europe-west4-a\n**Description**\nThe datacenter serving europe-west4-a for GCVE, BMS, and NetApp has experienced a power failure, which subsequently caused a cooling failure. Google has proactively turned down workloads in order to protect customer data from any risks posed by running infrastructure in a high temperature environment. The datacenter operator team is working diligently to bring cooling and power back online so we can safely restart affected workloads.\n**GCVE:** Our engineering teams have shut down private clouds, and we expect that others will shut down as well. We will notify customers as soon as their private cloud has been powered back up and it is safe to restart the VMs.\n**BMS:** Some Bare Metal Solution servers are experiencing high temperatures and we are in the process of shutting them down. Customers may be unable to access their systems until we resolve the issue.\n**Google Cloud NetApp Volumes** Our engineering team has proactively shut down ONTAP clusters to protect the data stored on them. Customers may experience unavailability of Cloud NetApp Volumes until this issue is resolved. There is no estimated time for resolution. We will provide an update by Wednesday, 2026-07-15 22:30 PDT with current details. We apologize to all who are affected by the disruption.\n**Customer Symptoms**\n**GCVE:** Customers would have already observed a loss of connectivity to their private cloud. As a protective measure for hardware integrity and a recovery, we have shut down all private clouds in this zone.\n**BMS:** Customers may have already lost connectivity to their BMS machines. As a protective measure for hardware integrity and a recovery, we are shutting down some servers in this zone.\n**Google Cloud NetApp Volumes** Customers would have already lost connectivity to ONTAP clusters, as we proactively shut them down for their protection. Only Standard, Premium, and Extreme service levels are affected.\n**Workaround**\nThere are no workarounds available for this issue at this time. Customers with multi-regional deployments are advised to route traffic to an alternate site.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          }
+        ]
+      },
+      {
+        "created": "2026-07-16T03:30:59+00:00",
+        "modified": "2026-07-16T04:17:44+00:00",
+        "when": "2026-07-16T03:30:59+00:00",
+        "text": "**Summary**\nGoogle Cloud VMware Engine (GCVE), Google Cloud NetApp Volumes, and Bare Metal Solutions (BMS) services are experiencing temperature alerts in europe-west4-a.\n**Description**\n**GCVE:** Our engineering teams are currently working with data center facility teams to address the rising temperatures. A shutdown has already occurred for some private clouds, and we expect that others will shut down as well. **We recommend shutting down your VMware workload VMs for precaution so that recovery is safer. A shutdown of all systems started at 19:00 PDT \\[4:00 Local Time (GMT+2)\\]** We will notify you as soon as your Private Cloud has been powered back up and it is safe to restart the VMs.\n**BMS:** Some Bare Metal Solution servers are experiencing high temperatures and we are in the process of shutting them down. Customers may be unable to access their systems until we resolve the issue.\n**Google Cloud NetApp Volumes** Our engineering team has proactively shut down ONTAP clusters to protect the data stored on them. Customers may experience unavailability of Cloud NetApp Volumes until this issue is resolved. There is no estimated time for resolution. We will provide an update by Wednesday, 2026-07-15 21:30 PDT with current details. We apologize to all who are affected by the disruption.\n**Customer Symptoms**\n**GCVE:** Customers may have already observed a loss of connectivity to their private cloud. As a protective measure for hardware integrity and a recovery, we are shutting down all Private Clouds in this zone.\n**BMS:** Customers may have already lost connectivity to their BMS machines. As a protective measure for hardware integrity and a recovery, we are shutting down servers in this zone.\n**Google Cloud NetApp Volumes** Customers may have already lost connectivity to ONTAP clusters, or will lose connectivity to them shortly, as we proactively shut them down for their protection. Only Standard, Premium, and Extreme service levels are affected.\n**Workaround**\nThere are no workarounds available for this issue at this time. Customers with multi-regional deployments are advised to route traffic to an alternate site.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Netherlands (europe-west4)",
+            "id": "europe-west4"
+          }
+        ]
+      }
+    ],
+    "most_recent_update": {
+      "created": "2026-07-16T04:41:44+00:00",
+      "modified": "2026-07-16T04:41:45+00:00",
+      "when": "2026-07-16T04:41:44+00:00",
+      "text": "**Summary**\nGoogle Cloud VMware Engine (GCVE), Google Cloud NetApp Volumes, and Bare Metal Solutions (BMS) services are experiencing a service outage in europe-west4-a due to a cooling failure\n**Description**\nThe datacenter serving europe-west4-a for GCVE, BMS, and NetApp has experienced a power failure, which subsequently caused a cooling failure. Google has proactively turned down workloads in order to protect customer data from any risks posed by running infrastructure in a high temperature environment. The datacenter operator team is working diligently to bring cooling and power back online so we can safely restart affected workloads. Some cooling has been restored, and we are working to restore affected workloads as available capacity allows.\n**GCVE:** Our engineering teams have shut down private clouds to protect these clouds from any damage. We will notify customers as soon as their private cloud has been powered back up and it is safe to restart the VMs.\n**BMS:** Some Bare Metal Solution servers experienced high temperatures and we proactively shut them down. Customers may have been unable to access their systems, but impacted systems have now been restored.\n**Google Cloud NetApp Volumes:** Our engineering team has proactively shut down ONTAP clusters to protect the data stored on them. Customers may experience unavailability of Cloud NetApp Volumes until this issue is resolved.\nThere is no estimated time for resolution. We will provide an update by Wednesday, 2026-07-15 22:45 PDT with current details.\nWe apologize to all who are affected by the disruption.\n**Customer Symptoms**\n**GCVE:** Customers would have already observed a loss of connectivity to their private cloud. As a protective measure for hardware integrity and recovery, we have shut down all private clouds in this zone.\n**BMS:** Customers may have lost connectivity to their BMS machines. As a protective measure for hardware integrity and recovery, we shut down some servers in this zone, but the impacted servers have been restarted and should be functioning normally.\n**Google Cloud NetApp Volumes:** Customers would have already lost connectivity to ONTAP clusters, as we proactively shut them down to protect these clusters from any damage. Only Standard, Premium, and Extreme service levels are affected.\n**Workaround**\nThere are no workarounds available for this issue at this time. Customers with multi-regional deployments are advised to route traffic to an alternate site.",
+      "status": "SERVICE_DISRUPTION",
+      "affected_locations": [
+        {
+          "title": "Netherlands (europe-west4)",
+          "id": "europe-west4"
+        }
+      ]
+    },
+    "status_impact": "SERVICE_DISRUPTION",
+    "severity": "medium",
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "affected_products": [
+      {
+        "title": "Bare Metal Solution",
+        "id": "5gQF7Qk9XfQ32pStX6Hb"
+      },
+      {
+        "title": "Google Cloud NetApp Volumes",
+        "id": "vtzMUyQ4z9CbA1x6z85s"
+      },
+      {
+        "title": "VMWare engine",
+        "id": "9H6gWUHvb2ZubeoxzQ1Y"
+      }
+    ],
+    "uri": "incidents/3BvH3LVGcupoYqV6F4Nw",
+    "currently_affected_locations": [
+      {
+        "title": "Netherlands (europe-west4)",
+        "id": "europe-west4"
+      }
+    ],
+    "previously_affected_locations": []
+  },
+  {
     "id": "T8gmtofFSTGT5tbhyciF",
     "number": "5362718329524538692",
     "begin": "2026-07-14T17:00:00+00:00",
