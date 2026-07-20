@@ -187,13 +187,21 @@
     "number": "5362718329524538692",
     "begin": "2026-07-14T17:00:00+00:00",
     "created": "2026-07-14T20:24:18+00:00",
-    "end": "2026-07-15T04:46:00+00:00",
-    "modified": "2026-07-15T05:34:26+00:00",
+    "end": "2026-07-15T03:40:00+00:00",
+    "modified": "2026-07-20T18:31:26+00:00",
     "external_desc": "Google Cloud VMware Engine (GCVE) Stretched Cluster customers are experiencing zonal outages impacting network connectivity across multiple regions.",
     "updates": [
       {
+        "created": "2026-07-20T18:31:26+00:00",
+        "modified": "2026-07-20T18:31:26+00:00",
+        "when": "2026-07-20T18:31:26+00:00",
+        "text": "## Preliminary Incident Report\nWe sincerely apologize for the disruption this incident caused to your business. We know how much you rely on Google Cloud, and we regret the impact on your productivity. We are working to address the root cause and prevent this from occurring in the future.\nPlease note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. A final Incident Report with preventative actions will be posted once our investigation is complete.\nIf you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using [**https://cloud.google.com/support**](https://cloud.google.com/support).\n## Date/Time of the Issue (All time US/Pacific)\nIncident Start: 14 July 2026 10:00\nIncident End: 14 July 2026 20:40\nDuration: 10 hours, 40 minutes\n## Summary\nOn Tuesday, 14 July 2026, Google Cloud VMware Engine (GCVE) Stretched Cluster customers in the australia-southeast2 and europe-west3 zones experienced inter-site communication failures.\nThe disruption was traced to a network configuration update that introduced a conflict, causing inter-site communication failures, which triggered VMware Stretch Cluster failover events. Google engineers successfully mitigated the disruption by rolling back the configuration change.\n## Preliminary Root Cause\nA configuration change deployed within the Google Cloud network affected traffic between the VMware Engine stretched cluster zones. This resulted in a loss of connectivity between zones in the stretched cluster deployment.\nGoogle engineers are doing a full root cause analysis and will provide additional information once it is available.\n## Remediation\nTo stabilize the environment, engineers identified the working network paths and deployed configuration changes to reroute traffic and restore connectivity. GCVE stretch cluster inter-zonal connectivity was completely restored for all supported locations on Tuesday, 14 July 2026 at 20:40 US/Pacific.\n## Description of Impact\nOn Tuesday, 14 July 2026 from 10:00 to 20:40 US/Pacific, customers utilizing GCVE stretch clusters in the affected zones (australia-southeast2, and europe-west3) experienced inter-site communication failures. For some customers, depending on their architecture, this disruption led to VMWare HA event causing VM restarts/movement across zones as designed, Host disconnects, VSAN alarms and Intermittent access to VMware Management (vCenter/NSX Manager) components.\n---",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
         "created": "2026-07-15T05:34:26+00:00",
-        "modified": "2026-07-15T05:34:27+00:00",
+        "modified": "2026-07-20T18:31:26+00:00",
         "when": "2026-07-15T05:34:26+00:00",
         "text": "**Summary**\nGoogle Cloud VMware Engine (GCVE) Stretched Cluster customers may have experienced zonal outages impacting network connectivity across multiple regions.\n**Description**\nWe experienced an inter-site communication issue with Google Cloud VMware Engine (GCVE) Stretched Cluster customers beginning Tuesday, 2026-07-14 at 10:00 PDT. We identified the affected customers, and have worked with them to fully mitigate the issue by Tuesday, 2026-07-14 at 21:46 PDT.\nPreliminary analysis indicates that a network configuration update was the cause of the inter-zone network disruption. Our engineering team mitigated the issue by rolling back the faulty configuration to its last-known good value.\nIf customers are still experiencing impact from this issue, please contact Support, and we will work with you to resolve any residual impact.\nWe thank you for your patience while we worked to resolve this issue.\n**Customer Symptoms**\nSome GCVE customers using Stretched Cluster may have experienced inter-site communication failures to their GCVE environments within the affected zones.\n**Workaround**\nThe issue is now mitigated.",
         "status": "AVAILABLE",
@@ -381,10 +389,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2026-07-15T05:34:26+00:00",
-      "modified": "2026-07-15T05:34:27+00:00",
-      "when": "2026-07-15T05:34:26+00:00",
-      "text": "**Summary**\nGoogle Cloud VMware Engine (GCVE) Stretched Cluster customers may have experienced zonal outages impacting network connectivity across multiple regions.\n**Description**\nWe experienced an inter-site communication issue with Google Cloud VMware Engine (GCVE) Stretched Cluster customers beginning Tuesday, 2026-07-14 at 10:00 PDT. We identified the affected customers, and have worked with them to fully mitigate the issue by Tuesday, 2026-07-14 at 21:46 PDT.\nPreliminary analysis indicates that a network configuration update was the cause of the inter-zone network disruption. Our engineering team mitigated the issue by rolling back the faulty configuration to its last-known good value.\nIf customers are still experiencing impact from this issue, please contact Support, and we will work with you to resolve any residual impact.\nWe thank you for your patience while we worked to resolve this issue.\n**Customer Symptoms**\nSome GCVE customers using Stretched Cluster may have experienced inter-site communication failures to their GCVE environments within the affected zones.\n**Workaround**\nThe issue is now mitigated.",
+      "created": "2026-07-20T18:31:26+00:00",
+      "modified": "2026-07-20T18:31:26+00:00",
+      "when": "2026-07-20T18:31:26+00:00",
+      "text": "## Preliminary Incident Report\nWe sincerely apologize for the disruption this incident caused to your business. We know how much you rely on Google Cloud, and we regret the impact on your productivity. We are working to address the root cause and prevent this from occurring in the future.\nPlease note, this information is based on our best knowledge at the time of posting and is subject to change as our investigation continues. A final Incident Report with preventative actions will be posted once our investigation is complete.\nIf you have experienced impact outside of what is listed below, please reach out to Google Cloud Support using [**https://cloud.google.com/support**](https://cloud.google.com/support).\n## Date/Time of the Issue (All time US/Pacific)\nIncident Start: 14 July 2026 10:00\nIncident End: 14 July 2026 20:40\nDuration: 10 hours, 40 minutes\n## Summary\nOn Tuesday, 14 July 2026, Google Cloud VMware Engine (GCVE) Stretched Cluster customers in the australia-southeast2 and europe-west3 zones experienced inter-site communication failures.\nThe disruption was traced to a network configuration update that introduced a conflict, causing inter-site communication failures, which triggered VMware Stretch Cluster failover events. Google engineers successfully mitigated the disruption by rolling back the configuration change.\n## Preliminary Root Cause\nA configuration change deployed within the Google Cloud network affected traffic between the VMware Engine stretched cluster zones. This resulted in a loss of connectivity between zones in the stretched cluster deployment.\nGoogle engineers are doing a full root cause analysis and will provide additional information once it is available.\n## Remediation\nTo stabilize the environment, engineers identified the working network paths and deployed configuration changes to reroute traffic and restore connectivity. GCVE stretch cluster inter-zonal connectivity was completely restored for all supported locations on Tuesday, 14 July 2026 at 20:40 US/Pacific.\n## Description of Impact\nOn Tuesday, 14 July 2026 from 10:00 to 20:40 US/Pacific, customers utilizing GCVE stretch clusters in the affected zones (australia-southeast2, and europe-west3) experienced inter-site communication failures. For some customers, depending on their architecture, this disruption led to VMWare HA event causing VM restarts/movement across zones as designed, Host disconnects, VSAN alarms and Intermittent access to VMware Management (vCenter/NSX Manager) components.\n---",
       "status": "AVAILABLE",
       "affected_locations": []
     },
@@ -401,10 +409,6 @@
     "uri": "incidents/T8gmtofFSTGT5tbhyciF",
     "currently_affected_locations": [],
     "previously_affected_locations": [
-      {
-        "title": "Sydney (australia-southeast1)",
-        "id": "australia-southeast1"
-      },
       {
         "title": "Melbourne (australia-southeast2)",
         "id": "australia-southeast2"
