@@ -4,14 +4,31 @@
     "number": "5789456648280872492",
     "begin": "2026-08-20T15:40:00+00:00",
     "created": "2026-08-20T16:44:37+00:00",
-    "modified": "2026-08-20T17:15:25+00:00",
+    "modified": "2026-08-20T17:48:42+00:00",
     "external_desc": "We are investigating an issue where customers may experience timeouts, service degradations, errors, and elevated latencies across multiple products in the us-west1 region.",
     "updates": [
       {
+        "created": "2026-08-20T17:32:15+00:00",
+        "modified": "2026-08-20T17:48:42+00:00",
+        "when": "2026-08-20T17:32:15+00:00",
+        "text": "**Summary**\nWe are investigating an issue where customers may experience timeouts, service degradations, errors, and elevated latencies across multiple products in the us-west1 region.\n**Description**\nMitigation actions are implemented by our engineering teams, recovery trends have been observed across infrastructure layers. Active efforts remain underway to bring impacted cloud services back to full operation.\nWe will provide an update by Thursday, 2026-08-20 11:00 PDT with details.\n**Diagnosis / Customer Symptoms**\nCustomers in us-west1 may experience timeouts, service degradations, errors, and elevated latencies across multiple products.\n**Workaround**\nWe recommend customers to failover to other regions where feasible.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Global",
+            "id": "global"
+          },
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          }
+        ]
+      },
+      {
         "created": "2026-08-20T17:13:59+00:00",
-        "modified": "2026-08-20T17:15:25+00:00",
+        "modified": "2026-08-20T17:32:15+00:00",
         "when": "2026-08-20T17:13:59+00:00",
-        "text": "**Summary**\nWe are investigating an issue where customers may experience timeouts, service degradations, errors, and elevated latencies across multiple products in the us-west1 region.\n**Description**\nMitigation actions are implemented by our engineering teams, recovery trends have been observed across infrastructure layers. Active efforts remain underway to bring impacted cloud services back to full operation.\nWe will provide an update by Thursday, 2026-08-20 10:45 PDT with details.\n**Diagnosis / Customer Symptoms**\nMitigation actions are implemented by our engineering teams, recovery trends have been observed across infrastructure layers. Active efforts remain underway to bring impacted cloud services back to full operation.\nWe will provide an update by Thursday, 2026-08-20 10:45 PDT with details.\n**Workaround**\nWe recommend customers to failover to other regions where feasible.",
+        "text": "**Summary**\nWe are investigating an issue where customers may experience timeouts, service degradations, errors, and elevated latencies across multiple products in the us-west1 region.\n**Description**\nMitigation actions are implemented by our engineering teams, recovery trends have been observed across infrastructure layers. Active efforts remain underway to bring impacted cloud services back to full operation.\nWe will provide an update by Thursday, 2026-08-20 10:45 PDT with details.\n**Diagnosis / Customer Symptoms**\nCustomers in us-west1 may experience timeouts, service degradations, errors, and elevated latencies across multiple products.\n**Workaround**\nWe recommend customers to failover to other regions where feasible.",
         "status": "SERVICE_OUTAGE",
         "affected_locations": [
           {
@@ -43,10 +60,10 @@
       }
     ],
     "most_recent_update": {
-      "created": "2026-08-20T17:13:59+00:00",
-      "modified": "2026-08-20T17:15:25+00:00",
-      "when": "2026-08-20T17:13:59+00:00",
-      "text": "**Summary**\nWe are investigating an issue where customers may experience timeouts, service degradations, errors, and elevated latencies across multiple products in the us-west1 region.\n**Description**\nMitigation actions are implemented by our engineering teams, recovery trends have been observed across infrastructure layers. Active efforts remain underway to bring impacted cloud services back to full operation.\nWe will provide an update by Thursday, 2026-08-20 10:45 PDT with details.\n**Diagnosis / Customer Symptoms**\nMitigation actions are implemented by our engineering teams, recovery trends have been observed across infrastructure layers. Active efforts remain underway to bring impacted cloud services back to full operation.\nWe will provide an update by Thursday, 2026-08-20 10:45 PDT with details.\n**Workaround**\nWe recommend customers to failover to other regions where feasible.",
+      "created": "2026-08-20T17:32:15+00:00",
+      "modified": "2026-08-20T17:48:42+00:00",
+      "when": "2026-08-20T17:32:15+00:00",
+      "text": "**Summary**\nWe are investigating an issue where customers may experience timeouts, service degradations, errors, and elevated latencies across multiple products in the us-west1 region.\n**Description**\nMitigation actions are implemented by our engineering teams, recovery trends have been observed across infrastructure layers. Active efforts remain underway to bring impacted cloud services back to full operation.\nWe will provide an update by Thursday, 2026-08-20 11:00 PDT with details.\n**Diagnosis / Customer Symptoms**\nCustomers in us-west1 may experience timeouts, service degradations, errors, and elevated latencies across multiple products.\n**Workaround**\nWe recommend customers to failover to other regions where feasible.",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
         {
@@ -64,6 +81,11 @@
     "service_key": "zall",
     "service_name": "Multiple Products",
     "affected_products": [
+      {
+        "title": "AlloyDB for PostgreSQL",
+        "id": "fPovtKbaWN9UTepMm3kJ",
+        "current_title": "AlloyDB for PostgreSQL"
+      },
       {
         "title": "Apigee Edge Public Cloud",
         "id": "SumcdgBT6GQBzp1vmdXu",
@@ -88,6 +110,16 @@
         "title": "Cloud Build",
         "id": "fw8GzBdZdqy4THau7e1y",
         "current_title": "Cloud Build"
+      },
+      {
+        "title": "Cloud Data Fusion",
+        "id": "rLKDHeeaBiXTeutF1air",
+        "current_title": "Cloud Data Fusion"
+      },
+      {
+        "title": "Cloud Filestore",
+        "id": "jog4nyYkquiLeSK5s26q",
+        "current_title": "Cloud Filestore"
       },
       {
         "title": "Cloud Key Management Service",
