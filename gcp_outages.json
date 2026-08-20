@@ -4,12 +4,34 @@
     "number": "5789456648280872492",
     "begin": "2026-08-20T15:40:00+00:00",
     "created": "2026-08-20T16:44:37+00:00",
-    "modified": "2026-08-20T18:53:26+00:00",
+    "end": "2026-08-20T19:20:00+00:00",
+    "modified": "2026-08-20T19:37:40+00:00",
     "external_desc": "We are investigating an issue where customers may experience timeouts, service degradations, errors, and elevated latencies across multiple products in the us-west1 region.",
     "updates": [
       {
+        "created": "2026-08-20T19:37:40+00:00",
+        "modified": "2026-08-20T19:37:41+00:00",
+        "when": "2026-08-20T19:37:40+00:00",
+        "text": "**Summary**\nThe issue causing timeouts, degradations, errors, and latencies across multiple us-west1 products has been mitigated.\n**Description**\nWe have mitigated the issue impacting multiple products in our us-west1 region as of Thursday, 2026-08-20 10:22 PDT.\nOur engineering teams have restored capacity on a planned optical maintenance that caused unexpected congestion in Dalles, Oregon metro /us-west1 region. Our systems stabilized and services have recovered once capacity was restored. Our teams are continuing to monitor for any residual impact.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.\n**Diagnosis / Customer Symptoms**\nCustomers in us-west1 may have experienced timeouts, service degradations, errors, and elevated latencies across multiple products.\n**Workaround**\nThis issue is now mitigated.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2026-08-20T19:21:07+00:00",
+        "modified": "2026-08-20T19:37:40+00:00",
+        "when": "2026-08-20T19:21:07+00:00",
+        "text": "**Summary**\nThe issue causing timeouts, degradations, errors, and latencies across multiple us-west1 products has been mitigated and we are working to recover all products.\n**Description**\nMitigation actions have been completed by our engineering teams and we are seeing recovery from multiple products. We are continuing to work to recover the remaining products.\nWe will provide an update by Thursday, 2026-08-20 13:30 PDT with details.\n**Diagnosis / Customer Symptoms**\nCustomers in us-west1 may experience timeouts, service degradations, errors, and elevated latencies across multiple products.\n**Workaround**\nNo workarounds needed at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          }
+        ]
+      },
+      {
         "created": "2026-08-20T18:53:26+00:00",
-        "modified": "2026-08-20T18:53:27+00:00",
+        "modified": "2026-08-20T19:21:07+00:00",
         "when": "2026-08-20T18:53:26+00:00",
         "text": "**Summary**\nThe issue causing timeouts, degradations, errors, and latencies across multiple us-west1 products has been mitigated and we are working to recover all products.\n**Description**\nMitigation actions have been completed by our engineering teams and we are seeing recovery from multiple products. We are continuing to work to recover the remaining products.\nWe will provide an update by Thursday, 2026-08-20 12:30 PDT with details.\n**Diagnosis / Customer Symptoms**\nCustomers in us-west1 may experience timeouts, service degradations, errors, and elevated latencies across multiple products.\n**Workaround**\nNo workarounds needed at this time.",
         "status": "SERVICE_OUTAGE",
@@ -90,17 +112,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2026-08-20T18:53:26+00:00",
-      "modified": "2026-08-20T18:53:27+00:00",
-      "when": "2026-08-20T18:53:26+00:00",
-      "text": "**Summary**\nThe issue causing timeouts, degradations, errors, and latencies across multiple us-west1 products has been mitigated and we are working to recover all products.\n**Description**\nMitigation actions have been completed by our engineering teams and we are seeing recovery from multiple products. We are continuing to work to recover the remaining products.\nWe will provide an update by Thursday, 2026-08-20 12:30 PDT with details.\n**Diagnosis / Customer Symptoms**\nCustomers in us-west1 may experience timeouts, service degradations, errors, and elevated latencies across multiple products.\n**Workaround**\nNo workarounds needed at this time.",
-      "status": "SERVICE_OUTAGE",
-      "affected_locations": [
-        {
-          "title": "Oregon (us-west1)",
-          "id": "us-west1"
-        }
-      ]
+      "created": "2026-08-20T19:37:40+00:00",
+      "modified": "2026-08-20T19:37:41+00:00",
+      "when": "2026-08-20T19:37:40+00:00",
+      "text": "**Summary**\nThe issue causing timeouts, degradations, errors, and latencies across multiple us-west1 products has been mitigated.\n**Description**\nWe have mitigated the issue impacting multiple products in our us-west1 region as of Thursday, 2026-08-20 10:22 PDT.\nOur engineering teams have restored capacity on a planned optical maintenance that caused unexpected congestion in Dalles, Oregon metro /us-west1 region. Our systems stabilized and services have recovered once capacity was restored. Our teams are continuing to monitor for any residual impact.\nWe will publish an analysis of this incident once we have completed our internal investigation.\nWe thank you for your patience while we worked on resolving the issue.\n**Diagnosis / Customer Symptoms**\nCustomers in us-west1 may have experienced timeouts, service degradations, errors, and elevated latencies across multiple products.\n**Workaround**\nThis issue is now mitigated.",
+      "status": "AVAILABLE",
+      "affected_locations": []
     },
     "status_impact": "SERVICE_OUTAGE",
     "severity": "high",
@@ -244,16 +261,15 @@
       }
     ],
     "uri": "incidents/utF3FMFdQfwBzJcGG6vf",
-    "currently_affected_locations": [
-      {
-        "title": "Oregon (us-west1)",
-        "id": "us-west1"
-      }
-    ],
+    "currently_affected_locations": [],
     "previously_affected_locations": [
       {
         "title": "Global",
         "id": "global"
+      },
+      {
+        "title": "Oregon (us-west1)",
+        "id": "us-west1"
       }
     ]
   },
