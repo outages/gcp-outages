@@ -4,12 +4,25 @@
     "number": "5789456648280872492",
     "begin": "2026-08-20T15:40:00+00:00",
     "created": "2026-08-20T16:44:37+00:00",
-    "modified": "2026-08-20T17:48:42+00:00",
+    "modified": "2026-08-20T18:20:19+00:00",
     "external_desc": "We are investigating an issue where customers may experience timeouts, service degradations, errors, and elevated latencies across multiple products in the us-west1 region.",
     "updates": [
       {
+        "created": "2026-08-20T18:03:07+00:00",
+        "modified": "2026-08-20T18:20:19+00:00",
+        "when": "2026-08-20T18:03:07+00:00",
+        "text": "**Summary**\nThe issue causing timeouts, degradations, errors, and latencies across multiple us-west1 products has been mitigated and we are working to recover all products.\n**Description**\nMitigation actions have been completed by our engineering teams and we are seeing recovery from multiple products. We are continuing to work to recover the remaining products.\nWe will provide an update by Thursday, 2026-08-20 11:45 PDT with details.\n**Diagnosis / Customer Symptoms**\nCustomers in us-west1 may experience timeouts, service degradations, errors, and elevated latencies across multiple products.\n**Workaround**\nNo workarounds needed at this time.",
+        "status": "SERVICE_OUTAGE",
+        "affected_locations": [
+          {
+            "title": "Oregon (us-west1)",
+            "id": "us-west1"
+          }
+        ]
+      },
+      {
         "created": "2026-08-20T17:32:15+00:00",
-        "modified": "2026-08-20T17:48:42+00:00",
+        "modified": "2026-08-20T18:03:07+00:00",
         "when": "2026-08-20T17:32:15+00:00",
         "text": "**Summary**\nWe are investigating an issue where customers may experience timeouts, service degradations, errors, and elevated latencies across multiple products in the us-west1 region.\n**Description**\nMitigation actions are implemented by our engineering teams, recovery trends have been observed across infrastructure layers. Active efforts remain underway to bring impacted cloud services back to full operation.\nWe will provide an update by Thursday, 2026-08-20 11:00 PDT with details.\n**Diagnosis / Customer Symptoms**\nCustomers in us-west1 may experience timeouts, service degradations, errors, and elevated latencies across multiple products.\n**Workaround**\nWe recommend customers to failover to other regions where feasible.",
         "status": "SERVICE_OUTAGE",
@@ -60,16 +73,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2026-08-20T17:32:15+00:00",
-      "modified": "2026-08-20T17:48:42+00:00",
-      "when": "2026-08-20T17:32:15+00:00",
-      "text": "**Summary**\nWe are investigating an issue where customers may experience timeouts, service degradations, errors, and elevated latencies across multiple products in the us-west1 region.\n**Description**\nMitigation actions are implemented by our engineering teams, recovery trends have been observed across infrastructure layers. Active efforts remain underway to bring impacted cloud services back to full operation.\nWe will provide an update by Thursday, 2026-08-20 11:00 PDT with details.\n**Diagnosis / Customer Symptoms**\nCustomers in us-west1 may experience timeouts, service degradations, errors, and elevated latencies across multiple products.\n**Workaround**\nWe recommend customers to failover to other regions where feasible.",
+      "created": "2026-08-20T18:03:07+00:00",
+      "modified": "2026-08-20T18:20:19+00:00",
+      "when": "2026-08-20T18:03:07+00:00",
+      "text": "**Summary**\nThe issue causing timeouts, degradations, errors, and latencies across multiple us-west1 products has been mitigated and we are working to recover all products.\n**Description**\nMitigation actions have been completed by our engineering teams and we are seeing recovery from multiple products. We are continuing to work to recover the remaining products.\nWe will provide an update by Thursday, 2026-08-20 11:45 PDT with details.\n**Diagnosis / Customer Symptoms**\nCustomers in us-west1 may experience timeouts, service degradations, errors, and elevated latencies across multiple products.\n**Workaround**\nNo workarounds needed at this time.",
       "status": "SERVICE_OUTAGE",
       "affected_locations": [
-        {
-          "title": "Global",
-          "id": "global"
-        },
         {
           "title": "Oregon (us-west1)",
           "id": "us-west1"
@@ -127,6 +136,11 @@
         "current_title": "Cloud Key Management Service"
       },
       {
+        "title": "Cloud Monitoring",
+        "id": "3zaaDb7antc73BM1UAVT",
+        "current_title": "Cloud Monitoring"
+      },
+      {
         "title": "Cloud Run",
         "id": "9D7d2iNBQWN24zc1VamE",
         "current_title": "Cloud Run"
@@ -135,6 +149,11 @@
         "title": "Contact Center AI Platform",
         "id": "eSAGSSEKoxh8tTJucdYg",
         "current_title": "Contact Center AI Platform"
+      },
+      {
+        "title": "Dataproc Metastore",
+        "id": "PXZh68NPz9auRyo4tVfy",
+        "current_title": "Dataproc Metastore"
       },
       {
         "title": "Google App Engine",
@@ -210,15 +229,16 @@
     "uri": "incidents/utF3FMFdQfwBzJcGG6vf",
     "currently_affected_locations": [
       {
-        "title": "Global",
-        "id": "global"
-      },
-      {
         "title": "Oregon (us-west1)",
         "id": "us-west1"
       }
     ],
-    "previously_affected_locations": []
+    "previously_affected_locations": [
+      {
+        "title": "Global",
+        "id": "global"
+      }
+    ]
   },
   {
     "id": "3BvH3LVGcupoYqV6F4Nw",
