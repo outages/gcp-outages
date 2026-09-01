@@ -4,12 +4,60 @@
     "number": "847028556969787721",
     "begin": "2026-09-01T14:44:00+00:00",
     "created": "2026-09-01T16:03:12+00:00",
-    "modified": "2026-09-01T16:40:57+00:00",
+    "end": "2026-09-01T18:52:00+00:00",
+    "modified": "2026-09-01T19:12:35+00:00",
     "external_desc": "Multiple products in us-central1-b are experiencing network service degradation.",
     "updates": [
       {
+        "created": "2026-09-01T19:12:28+00:00",
+        "modified": "2026-09-01T19:12:35+00:00",
+        "when": "2026-09-01T19:12:28+00:00",
+        "text": "**Summary**\nMultiple products in us-central1-b experienced network service degradation.\n**Description**\nThe issue was affecting a portion of the us-central1-b zone. The remaining zones in the region were unaffected.\nAll the impacted products have recovered.\nFrom preliminary analysis, routine network fabric path maintenance triggered unexpected issues in one cluster in us-central1-b. We have recovered the network capacity that was impacted and restored all zonal and regional services. Maintenance in the region has been halted while proactive audits are carried out.\nWe thank you for your patience while we worked on resolving the issue.\n**Customer Symptoms**\nCustomers experienced elevated packet loss and errors.\n**Workaround**\nThe issue has been mitigated.",
+        "status": "AVAILABLE",
+        "affected_locations": []
+      },
+      {
+        "created": "2026-09-01T18:36:56+00:00",
+        "modified": "2026-09-01T19:12:28+00:00",
+        "when": "2026-09-01T18:36:56+00:00",
+        "text": "**Summary**\nMultiple products in us-central1-b are experiencing network service degradation.\n**Description**\nThe issue is affecting a portion of the us-central1-b zone. The remaining zones in the region are unaffected.\nMost of the products have recovered. The impacted products Cloud Run and App Engine are also seeing recovery and the errors have lowered pre-incident levels. Engineering continues to monitor and validate.\nRoutine network fabric path maintenance triggered unexpected issues in two clusters in us-central1-b. We have recovered the network capacity that was impacted and restored all zonal and regional services. Maintenance in the region has been halted while proactive audits are carried out.\nWe will provide more information by Tuesday, 2026-09-01 12:30 US/Pacific with current details.\n**Customer Symptoms**\nCustomers are experiencing elevated packet loss and errors.\n* Cloud Run\n* App Engine\nFollowing products have recovered\n* BigQuery\n* Cloud Dataflow\n* Cloud Bigtable\n* Compute Engine\n* Cloud Hybrid Connectivity\n* Cloud Filestore\n* Virtual Private Cloud\n* Cloud Spanner\n* Google Kubernetes Engine\n* Cloud SQL\n* AlloyDBCloud VPN\n* Apigee\n* Cloud Interconnect\n* Cloud NAT\n* Looker (Google Cloud core)\n* Google SecOps SOAR\n* Cloud Firestore\n**Workaround**\n* Customers with service layer retries may see successful completions as only a portion of the zone is affected.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2026-09-01T18:01:09+00:00",
+        "modified": "2026-09-01T18:36:56+00:00",
+        "when": "2026-09-01T18:01:09+00:00",
+        "text": "**Summary**\nMultiple products in us-central1-b are experiencing network service degradation.\n**Description**\nThe issue is affecting a portion of the us-central1-b zone. The remaining zones in the region are unaffected.\nMost of the products have recovered and the engineering team is still validating a few remaining product impacts.\nRoutine network maintenance triggered issues in us-central1-b. We have recovered the network capacity that was impacted and restored all zonal and regional services. Maintenance in the region has been halted while proactive audits are carried out.\nWe will provide more information by Tuesday, 2026-09-01 12:30 US/Pacific with current details.\n**Customer Symptoms**\nCustomers are experiencing elevated packet loss and errors.\n* Cloud Run\n* App Engine\nFollowing products have recovered\n* BigQuery\n* Cloud Dataflow\n* Cloud Bigtable\n* Compute Engine\n* Cloud Hybrid Connectivity\n* Cloud Filestore\n* Virtual Private Cloud\n* Cloud Spanner\n* Google Kubernetes Engine\n* Cloud SQL\n* AlloyDBCloud VPN\n* Apigee\n* Cloud Interconnect\n* Cloud NAT\n* Looker (Google Cloud core)\n* Google SecOps SOAR\n* Cloud Firestore\n**Workaround**\n* Customers with service layer retries may see successful completions as only a portion of the zone is affected.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
+        "created": "2026-09-01T17:09:04+00:00",
+        "modified": "2026-09-01T18:01:09+00:00",
+        "when": "2026-09-01T17:09:04+00:00",
+        "text": "**Summary**\nMultiple products in us-central1-b are experiencing network service degradation.\n**Description**\nThe issue is affecting a portion of the us-central1-b zone. The remaining zones in the region are unaffected.\nMost of the products have recovered and the engineering team is still validating a few remaining product impacts.\nWe will provide more information by Tuesday, 2026-09-01 11:00 US/Pacific with current details.\n**Customer Symptoms**\nCustomers are experiencing elevated packet loss and errors.\n* Cloud Run\n* App Engine\nFollowing products have recovered\n* BigQuery\n* Cloud Dataflow\n* Cloud Bigtable\n* Compute Engine\n* Cloud Hybrid Connectivity\n* Cloud Filestore\n* Virtual Private Cloud\n* Cloud Spanner\n* Google Kubernetes Engine\n* Cloud SQL\n* AlloyDBCloud VPN\n* Apigee\n* Cloud Interconnect\n* Cloud NAT\n* Looker (Google Cloud core)\n* Google SecOps SOAR\n* Cloud Firestore\n**Workaround**\n* Customers with service layer retries may see successful completions as only a portion of the zone is affected.\n* Customers that are severely affected and have services available in alternate zones can failover to alternate zones.",
+        "status": "SERVICE_DISRUPTION",
+        "affected_locations": [
+          {
+            "title": "Iowa (us-central1)",
+            "id": "us-central1"
+          }
+        ]
+      },
+      {
         "created": "2026-09-01T16:19:12+00:00",
-        "modified": "2026-09-01T16:40:57+00:00",
+        "modified": "2026-09-01T17:09:04+00:00",
         "when": "2026-09-01T16:19:12+00:00",
         "text": "**Summary**\nMultiple products in us-central1-b are experiencing network service degradation.\n**Description**\nThe issue is affecting a portion of the us-central1-b zone. The remaining zones in the region are unaffected.\nFollowing network-level mitigation efforts, the underlying network infrastructure has fully recovered. Product engineering teams across Cloud are currently validating the recovery status of individual services.\nWe will provide more information by Tuesday, 2026-09-01 10:00 US/Pacific with current details.\n**Customer Symptoms**\nCustomers are experiencing elevated packet loss and errors.\n* BigQuery\n* Cloud Dataflow\n* Cloud SQL\n* App Engine\n* Cloud Run\n* AlloyDB\n* Cloud Bigtable\n* Cloud Spanner\n* Compute Engine\n* Cloud VPN\n* Cloud Interconnect\n* Cloud NAT\n* Cloud Filestore\n* Cloud Hybrid Connectivity\n* Virtual Private Cloud\n* Google Kubernetes Engine\n* Looker (Google Cloud core)\n* Apigee\n* Google SecOps SOAR\n**Workaround**\n* Customers with service layer retries may see successful completions as only a portion of the zone is affected.\n* Customers that are severely affected and have services available in alternate zones can failover to alternate zones.",
         "status": "SERVICE_DISRUPTION",
@@ -35,17 +83,12 @@
       }
     ],
     "most_recent_update": {
-      "created": "2026-09-01T16:19:12+00:00",
-      "modified": "2026-09-01T16:40:57+00:00",
-      "when": "2026-09-01T16:19:12+00:00",
-      "text": "**Summary**\nMultiple products in us-central1-b are experiencing network service degradation.\n**Description**\nThe issue is affecting a portion of the us-central1-b zone. The remaining zones in the region are unaffected.\nFollowing network-level mitigation efforts, the underlying network infrastructure has fully recovered. Product engineering teams across Cloud are currently validating the recovery status of individual services.\nWe will provide more information by Tuesday, 2026-09-01 10:00 US/Pacific with current details.\n**Customer Symptoms**\nCustomers are experiencing elevated packet loss and errors.\n* BigQuery\n* Cloud Dataflow\n* Cloud SQL\n* App Engine\n* Cloud Run\n* AlloyDB\n* Cloud Bigtable\n* Cloud Spanner\n* Compute Engine\n* Cloud VPN\n* Cloud Interconnect\n* Cloud NAT\n* Cloud Filestore\n* Cloud Hybrid Connectivity\n* Virtual Private Cloud\n* Google Kubernetes Engine\n* Looker (Google Cloud core)\n* Apigee\n* Google SecOps SOAR\n**Workaround**\n* Customers with service layer retries may see successful completions as only a portion of the zone is affected.\n* Customers that are severely affected and have services available in alternate zones can failover to alternate zones.",
-      "status": "SERVICE_DISRUPTION",
-      "affected_locations": [
-        {
-          "title": "Iowa (us-central1)",
-          "id": "us-central1"
-        }
-      ]
+      "created": "2026-09-01T19:12:28+00:00",
+      "modified": "2026-09-01T19:12:35+00:00",
+      "when": "2026-09-01T19:12:28+00:00",
+      "text": "**Summary**\nMultiple products in us-central1-b experienced network service degradation.\n**Description**\nThe issue was affecting a portion of the us-central1-b zone. The remaining zones in the region were unaffected.\nAll the impacted products have recovered.\nFrom preliminary analysis, routine network fabric path maintenance triggered unexpected issues in one cluster in us-central1-b. We have recovered the network capacity that was impacted and restored all zonal and regional services. Maintenance in the region has been halted while proactive audits are carried out.\nWe thank you for your patience while we worked on resolving the issue.\n**Customer Symptoms**\nCustomers experienced elevated packet loss and errors.\n**Workaround**\nThe issue has been mitigated.",
+      "status": "AVAILABLE",
+      "affected_locations": []
     },
     "status_impact": "SERVICE_DISRUPTION",
     "severity": "medium",
@@ -129,13 +172,13 @@
       }
     ],
     "uri": "incidents/J5ia5t9p3g9Q5Wi7r8Ev",
-    "currently_affected_locations": [
+    "currently_affected_locations": [],
+    "previously_affected_locations": [
       {
         "title": "Iowa (us-central1)",
         "id": "us-central1"
       }
-    ],
-    "previously_affected_locations": []
+    ]
   },
   {
     "id": "utF3FMFdQfwBzJcGG6vf",
